@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kasperltheater</title>
+<meta name="theme-color" content="#14181f">
+<style>
+:root{--bg:#14181f;--panel:#1e2430;--panel2:#272f3d;--text:#eef2f7;--muted:#9aa6b8;--accent:#ffb020;--red:#b3202a;--radius:14px}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.45}
+main{max-width:900px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem;margin:.2rem 0 .6rem}
+p.hint{color:var(--muted);margin:.3rem 0 .8rem;font-size:.92rem}
+button{font:inherit;color:var(--text);cursor:pointer;border:0;border-radius:10px;padding:.65rem 1rem;background:var(--panel2);transition:transform .08s}
+button:active{transform:scale(.97)}
+button.primary{background:var(--accent);color:#1b1300;font-weight:700}
+button.on{outline:2px solid var(--accent);background:#3a3320}
+button:disabled{opacity:.4;cursor:not-allowed}
+textarea{width:100%;min-height:46vh;background:#10141a;color:var(--text);border:1px solid #3a4456;border-radius:var(--radius);padding:12px;font:inherit;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.row .grow{flex:1}
+[hidden]{display:none!important}
+
+/* Bühne */
+.stage{position:relative;width:100%;aspect-ratio:16/10;max-height:56vh;margin:0 auto;overflow:hidden;border-radius:var(--radius);
+  background:radial-gradient(ellipse at 50% 30%,#3d6fa8 0%,#1d3557 70%,#12233b 100%);border:6px solid #6b4423}
+.curtain{position:absolute;top:0;bottom:0;width:13%;z-index:3;
+  background:repeating-linear-gradient(90deg,#8e1620 0 10px,#c42a36 10px 22px,#8e1620 22px 30px)}
+.curtain.l{left:0;border-bottom-right-radius:60% 30%}
+.curtain.r{right:0;border-bottom-left-radius:60% 30%}
+.valance{position:absolute;left:0;right:0;top:0;height:13%;z-index:4;
+  background:repeating-linear-gradient(90deg,#a81c28 0 26px,#d23340 26px 52px);
+  border-bottom:5px solid #f2c230;border-radius:0 0 50% 50%/0 0 40% 40%}
+.ledge{position:absolute;left:0;right:0;bottom:0;height:12%;z-index:5;
+  background:linear-gradient(#8a5a2e,#5e3b1c);border-top:4px solid #a9753f}
+.slot{position:absolute;bottom:6%;width:36%;height:86%;z-index:2;transform:translateY(105%);transition:transform .45s cubic-bezier(.3,1.3,.5,1),opacity .3s;opacity:.6}
+.slot.a{left:13%}.slot.b{right:13%}
+.slot svg{width:100%;height:100%;display:block}
+.slot.shown{transform:translateY(12%)}
+.slot.active{transform:translateY(0);opacity:1}
+.slot.active svg{animation:bob 1.6s ease-in-out infinite}
+.slot.flip svg{transform:scaleX(-1)}
+.slot.flip.active svg{animation:bobf 1.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg) translateY(-2%)}}
+@keyframes bobf{0%,100%{transform:scaleX(-1) rotate(-2deg)}50%{transform:scaleX(-1) rotate(2deg) translateY(-2%)}}
+.jaw{transform-origin:150px 100px}
+
+/* Text */
+.prompt{background:var(--panel);border-radius:var(--radius);padding:14px 16px;margin-top:12px;min-height:8.5rem}
+.who{font-weight:800;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;font-size:.95rem}
+.who.dir{color:var(--muted)}
+.line{font-size:clamp(1.3rem,4.2vw,2.1rem);line-height:1.25;margin:.15rem 0 .5rem}
+.line.dir{font-style:italic;color:var(--muted)}
+.next{color:var(--muted);font-size:.95rem;border-top:1px solid #333c4c;padding-top:.5rem}
+.meter{width:70px;height:8px;background:#10141a;border-radius:4px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--accent)}
+.count{color:var(--muted);font-variant-numeric:tabular-nums}
+.msg{color:#ffb4b4;font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+
+<!-- Text-Ansicht -->
+<section id="edit">
+  <h1>🎭 Kasperltheater</h1>
+  <p class="hint">Schreib dein Stück: pro Zeile <b>Rolle: Text</b>. Regieanweisungen in (Klammern). Bekannte Figuren: Kasperl, Gretel, Seppel, Großmutter, Räuber, Wachtmeister, Hexe, König, Prinzessin, Krokodil – andere Namen bekommen eine eigene Puppe.</p>
+  <textarea id="script" spellcheck="false"></textarea>
+  <div class="row">
+    <button class="primary" id="start">▶ Vorhang auf!</button>
+    <span class="grow"></span>
+    <button id="sample">Beispielstück laden</button>
+  </div>
+</section>
+
+<!-- Bühnen-Ansicht -->
+<section id="play" hidden>
+  <div class="stage" id="stage">
+    <div class="slot a" id="slotA"></div>
+    <div class="slot b" id="slotB"></div>
+    <div class="curtain l"></div><div class="curtain r"></div>
+    <div class="valance"></div><div class="ledge"></div>
+  </div>
+  <div class="prompt" id="prompt">
+    <div class="who" id="who"></div>
+    <div class="line" id="line"></div>
+    <div class="next" id="next"></div>
+  </div>
+  <div class="row">
+    <button id="prev">◀ Zurück</button>
+    <button class="primary" id="fwd">Weiter ▶</button>
+    <span class="count" id="count"></span>
+    <span class="grow"></span>
+    <div class="meter" title="Mikrofon-Pegel"><i id="lvl"></i></div>
+    <button id="mic">🎤 Mikrofon</button>
+    <button id="tts">🔊 Vorlesen</button>
+    <button id="back">✎ Text</button>
+  </div>
+  <div class="msg" id="msg"></div>
+  <p class="hint">Mit Mikrofon bewegt die Puppe den Mund, wenn du sprichst. „Vorlesen“ lässt den Computer das Stück sprechen (zum Proben). Tasten: Leertaste/→ weiter, ← zurück.</p>
+</section>
+
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const SAMPLE = `(Der Vorhang geht auf. Kasperl kommt.)
+Kasperl: Tri-tra-trallala! Seid ihr alle da?
+Kasperl: Heute hat die Großmutter Geburtstag, und ich hab einen Kuchen gebacken!
+Gretel: Kasperl, Kasperl! Der Kuchen ist weg!
+Kasperl: Was? Weg? Der kann doch nicht einfach davonlaufen!
+Gretel: Ich hab Spuren gesehen. Große, grüne Spuren!
+(Gretel geht ab. Das Krokodil schleicht herein.)
+Krokodil: Mmmh, schnapp, schnapp! So ein feiner Kuchen!
+Kasperl: Aha! Du warst das also, Krokodil!
+Krokodil: Ich hatte doch soooo einen Hunger.
+Kasperl: Dann frag das nächste Mal! Komm mit, bei der Großmutter gibt es genug für alle.
+Großmutter: Na, das ist aber eine schöne Überraschung! Kommt herein, Kinder.
+Krokodil: Danke, Großmutter! Schnapp!
+Kasperl: Und wenn sie nicht geplatzt sind, dann essen sie noch heute. Tschüss, Kinder!
+(Vorhang zu.)`;
+
+/* ---------- Text einlesen ---------- */
+function parse(txt){
+  const out = [];
+  for (const raw of txt.split(/\r?\n/)){
+    const s = raw.trim();
+    if (!s) continue;
+    const m = s.match(/^([^:()]{1,30}):\s*(.+)$/);
+    if (m) out.push({role: m[1].trim(), text: m[2]});
+    else if (s[0] === '(' || !out.length || !out[out.length-1].role) out.push({role: '', text: s.replace(/^\(|\)$/g, '')});
+    else out[out.length-1].text += ' ' + s;            // Fortsetzungszeile
+  }
+  return out;
+}
+
+/* ---------- Puppen zeichnen ---------- */
+const SKIN = '#f6c9a0';
+const TYPES = [
+  {k:['kasper'],            cloth:'#d62828', trim:'#f2c230', hat:'zipfel', nose:11, noseCol:'#e2725b'},
+  {k:['gretel'],            cloth:'#2f6fd0', trim:'#fff',    hat:'zoepfe', hair:'#f0c040'},
+  {k:['seppel','sepp'],     cloth:'#3c8a4a', trim:'#f5efe0', hat:'hut',    hatCol:'#2f5d34', hair:'#8a5a2e'},
+  {k:['großmutter','grossmutter','oma'], cloth:'#7b4fa3', trim:'#e9dcf5', hat:'dutt', hair:'#cfd3d8', glasses:1},
+  {k:['räuber','raeuber'],  cloth:'#3a3a3a', trim:'#8b1e1e', hat:'hut',    hatCol:'#151515', beard:'#2a1c12', skin:'#e0ad84'},
+  {k:['wachtmeister','polizist','polizei'], cloth:'#1f4e8c', trim:'#f2c230', hat:'muetze', hatCol:'#173b6b'},
+  {k:['hexe'],              cloth:'#2b2140', trim:'#7a4fc0', hat:'spitz',  hatCol:'#1b1528', skin:'#a9cf8a', nose:12, noseCol:'#7fb062', hair:'#555'},
+  {k:['könig','koenig'],    cloth:'#8e1620', trim:'#fff',    hat:'krone',  beard:'#ddd'},
+  {k:['prinzessin'],        cloth:'#e98bb5', trim:'#fff',    hat:'krone',  hair:'#c9872e', long:1},
+  {k:['krokodil'],          croc:1},
+];
+function typeOf(role){
+  const r = role.toLowerCase();
+  const t = TYPES.find(t => t.k.some(k => r.includes(k)));
+  if (t) return t;
+  let h = 0; for (const c of r) h = (h*31 + c.charCodeAt(0)) % 360;   // eigene Farbe je Name
+  return {cloth:`hsl(${h} 55% 42%)`, trim:`hsl(${(h+180)%360} 70% 75%)`, hat:'haar', hair:`hsl(${(h+40)%360} 35% 30%)`};
+}
+function puppetSVG(role){
+  const c = typeOf(role);
+  if (c.croc) return `<svg viewBox="0 -20 200 280" aria-label="Krokodil">
+    <path d="M150 110 C120 130 80 190 70 260 L190 260 C192 200 185 140 150 110Z" fill="#3f8f3a"/>
+    <path d="M110 200 Q135 215 160 200M100 230 Q135 246 172 230" stroke="#2c6a2a" stroke-width="4" fill="none"/>
+    <g class="jaw"><path d="M152 98 L34 96 Q20 104 34 114 L152 128Z" fill="#2f7a2e"/>
+      <path d="M42 97 l6 -9 l6 9 M66 97 l6 -9 l6 9 M90 97 l6 -9 l6 9 M114 97 l6 -9 l6 9" fill="#fff"/></g>
+    <path d="M165 100 Q170 40 122 44 L32 74 Q18 84 30 94 L152 100Z" fill="#4aa544"/>
+    <path d="M40 93 l6 9 l6 -9 M64 94 l6 9 l6 -9 M88 95 l6 9 l6 -9 M112 96 l6 9 l6 -9" fill="#fff"/>
+    <circle cx="128" cy="48" r="14" fill="#4aa544"/><circle cx="126" cy="47" r="8" fill="#fff"/><circle cx="123" cy="48" r="4" fill="#111"/>
+    <circle cx="36" cy="80" r="2.5" fill="#1f4d1e"/></svg>`;
+  const skin = c.skin || SKIN, hair = c.hair || '#6b4423', hc = c.hatCol || c.cloth;
+  let back = '', top = '';
+  const cap = `<path d="M54 92 Q50 44 100 44 Q150 44 146 92 Q128 60 100 60 Q72 60 54 92Z" fill="${hair}"/>`;
+  if (c.long) back = `<path d="M52 90 Q40 150 58 175 L142 175 Q160 150 148 90Z" fill="${hair}"/>`;
+  switch (c.hat){
+    case 'zipfel': top = `<path d="M54 78 Q66 26 118 30 Q166 36 180 92 L170 94 Q152 62 144 74 Q100 50 54 78Z" fill="${c.cloth}"/><circle cx="177" cy="98" r="9" fill="${c.trim}"/>`; break;
+    case 'zoepfe': back = `<ellipse cx="48" cy="128" rx="10" ry="30" fill="${hair}"/><ellipse cx="152" cy="128" rx="10" ry="30" fill="${hair}"/><circle cx="48" cy="100" r="7" fill="#d62828"/><circle cx="152" cy="100" r="7" fill="#d62828"/>`; top = cap; break;
+    case 'hut': top = cap + `<path d="M66 58 Q66 20 100 20 Q134 20 134 58Z" fill="${hc}"/><ellipse cx="100" cy="58" rx="60" ry="10" fill="${hc}"/>`; break;
+    case 'spitz': back = `<path d="M54 88 Q40 140 50 170 L70 120Z M146 88 Q160 140 150 170 L130 120Z" fill="${hair}"/>`; top = `<path d="M68 58 L108 -14 L132 58Z" fill="${hc}"/><ellipse cx="100" cy="58" rx="62" ry="10" fill="${hc}"/>`; break;
+    case 'muetze': top = `<path d="M56 62 Q100 22 144 62 L144 70 L56 70Z" fill="${hc}"/><path d="M58 68 Q100 86 142 68Z" fill="#111"/><circle cx="100" cy="52" r="7" fill="#f2c230"/>`; break;
+    case 'krone': top = (c.hair ? cap : '') + `<path d="M62 62 L62 28 L81 46 L100 22 L119 46 L138 28 L138 62Z" fill="#f2c230"/><circle cx="100" cy="50" r="5" fill="#d62828"/>`; break;
+    case 'dutt': top = cap + `<circle cx="100" cy="38" r="15" fill="${hair}"/>`; break;
+    default: top = cap;
+  }
+  return `<svg viewBox="0 -20 200 280" aria-label="${esc(role)}">
+    ${back}
+    <path d="M100 132 C58 138 36 185 28 260 L172 260 C164 185 142 138 100 132Z" fill="${c.cloth}"/>
+    <circle cx="36" cy="196" r="14" fill="${skin}"/><circle cx="164" cy="196" r="14" fill="${skin}"/>
+    <path d="M66 146 Q100 176 134 146 L124 136 Q100 152 76 136Z" fill="${c.trim}"/>
+    <circle cx="100" cy="95" r="46" fill="${skin}"/>
+    <circle cx="70" cy="108" r="9" fill="#e87f7f" opacity=".45"/><circle cx="130" cy="108" r="9" fill="#e87f7f" opacity=".45"/>
+    ${c.beard ? `<path d="M58 104 Q100 182 142 104 Q122 126 100 124 Q78 126 58 104Z" fill="${c.beard}"/>` : ''}
+    <circle cx="83" cy="88" r="5" fill="#222"/><circle cx="117" cy="88" r="5" fill="#222"/>
+    ${c.glasses ? `<g fill="none" stroke="#444" stroke-width="3"><circle cx="83" cy="88" r="12"/><circle cx="117" cy="88" r="12"/><path d="M95 88h10"/></g>` : ''}
+    <ellipse class="mouth" cx="100" cy="122" rx="15" ry="3" fill="#7a1420"/>
+    <circle cx="100" cy="103" r="${c.nose || 7}" fill="${c.noseCol || '#eab08a'}"/>
+    ${top}</svg>`;
+}
+function esc(s){ return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+/* ---------- Aufführung ---------- */
+let lines = [], idx = 0, level = 0, activeSlot = null;
+const slots = [{el: $('slotA'), role: null}, {el: $('slotB'), role: null}];
+
+function show(i){
+  idx = Math.max(0, Math.min(lines.length - 1, i));
+  const l = lines[idx], nx = lines[idx + 1];
+  $('who').textContent = l.role || 'Regie';
+  $('who').className = 'who' + (l.role ? '' : ' dir');
+  $('line').textContent = l.text;
+  $('line').className = 'line' + (l.role ? '' : ' dir');
+  $('next').textContent = nx ? 'Danach – ' + (nx.role || 'Regie') + ': ' + nx.text : 'Ende des Stücks';
+  $('count').textContent = (idx + 1) + ' / ' + lines.length;
+  $('prev').disabled = idx === 0;
+  $('fwd').disabled = idx === lines.length - 1;
+
+  if (l.role){
+    let s = slots.find(s => s.role === l.role);
+    if (!s){
+      s = slots.find(s => !s.role) || slots.find(s => s !== activeSlot) || slots[0];
+      s.role = l.role;
+      s.el.innerHTML = puppetSVG(l.role);
+      // Krokodil schaut nach links: im linken Platz spiegeln, damit es zur Mitte schaut
+      s.el.classList.toggle('flip', !!typeOf(l.role).croc && s === slots[0]);
+    }
+    activeSlot = s;
+  } else activeSlot = null;
+  for (const s of slots){
+    s.el.classList.toggle('shown', !!s.role);
+    s.el.classList.toggle('active', s === activeSlot);
+  }
+  if (ttsOn) speak();
+}
+
+/* Mund bewegen */
+function setMouth(slot, v){
+  const m = slot.el.querySelector('.mouth'), j = slot.el.querySelector('.jaw');
+  if (m) m.setAttribute('ry', (3 + v * 15).toFixed(1));
+  if (j) j.style.transform = `rotate(${(-v * 24).toFixed(1)}deg)`;
+}
+
+/* Mikrofon */
+let analyser = null, buf = null, micStream = null, audioCtx = null;
+async function toggleMic(){
+  $('msg').textContent = '';
+  if (micStream){
+    micStream.getTracks().forEach(t => t.stop()); micStream = null; analyser = null;
+    if (audioCtx) audioCtx.close();
+    $('mic').classList.remove('on'); return;
+  }
+  try {
+    micStream = await navigator.mediaDevices.getUserMedia({audio: true});
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    analyser = audioCtx.createAnalyser(); analyser.fftSize = 1024;
+    audioCtx.createMediaStreamSource(micStream).connect(analyser);
+    buf = new Uint8Array(analyser.fftSize);
+    $('mic').classList.add('on');
+  } catch (e){
+    $('msg').textContent = 'Mikrofon nicht verfügbar – bitte Zugriff erlauben (funktioniert nur über https oder localhost).';
+  }
+}
+
+/* Vorlesen */
+let ttsOn = false, speaking = false;
+function speak(){
+  if (!('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const l = lines[idx];
+  if (!l.role){ setTimeout(() => { if (ttsOn && lines[idx] === l && idx < lines.length - 1) show(idx + 1); }, 1500); return; }
+  const u = new SpeechSynthesisUtterance(l.text);
+  u.lang = 'de-DE';
+  let h = 0; for (const c of l.role) h = (h * 31 + c.charCodeAt(0)) % 100;
+  u.pitch = 0.6 + h / 100 * 1.2;                         // jede Rolle eine eigene Stimmlage
+  u.onstart = () => speaking = true;
+  u.onend = () => { speaking = false; if (ttsOn && lines[idx] === l && idx < lines.length - 1) setTimeout(() => ttsOn && show(idx + 1), 350); };
+  u.onerror = () => speaking = false;
+  speechSynthesis.speak(u);
+}
+function toggleTTS(){
+  if (!('speechSynthesis' in window)){ $('msg').textContent = 'Dieser Browser kann nicht vorlesen.'; return; }
+  ttsOn = !ttsOn; $('tts').classList.toggle('on', ttsOn);
+  if (ttsOn) speak(); else { speechSynthesis.cancel(); speaking = false; }
+}
+
+function tick(t){
+  let target = 0;
+  if (speaking) target = 0.35 + 0.35 * Math.sin(t / 55) * Math.sin(t / 130);
+  else if (analyser){
+    analyser.getByteTimeDomainData(buf);
+    let sum = 0; for (let i = 0; i < buf.length; i++){ const v = (buf[i] - 128) / 128; sum += v * v; }
+    target = Math.min(1, Math.max(0, Math.sqrt(sum / buf.length) * 7 - 0.06));
+  }
+  level += (target - level) * (target > level ? 0.6 : 0.25);
+  $('lvl').style.width = (analyser ? Math.round(level * 100) : 0) + '%';
+  for (const s of slots) if (s.role) setMouth(s, s === activeSlot ? Math.max(0, level) : 0);
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+/* ---------- Bedienung ---------- */
+function save(){ try { localStorage.setItem('kasperl-text', $('script').value); } catch (e){} }
+function start(){
+  lines = parse($('script').value);
+  if (!lines.length){ alert('Bitte zuerst einen Text eingeben.'); return; }
+  save();
+  for (const s of slots){ s.role = null; s.el.innerHTML = ''; s.el.className = s.el.className.replace(/ (shown|active|flip)/g, ''); }
+  activeSlot = null;
+  $('edit').hidden = true; $('play').hidden = false;
+  show(0);
+}
+function toEdit(){
+  if (ttsOn) toggleTTS();
+  $('play').hidden = true; $('edit').hidden = false;
+}
+$('start').onclick = start;
+$('sample').onclick = () => { if (!$('script').value.trim() || confirm('Aktuellen Text durch das Beispielstück ersetzen?')){ $('script').value = SAMPLE; save(); } };
+$('script').oninput = save;
+$('fwd').onclick = () => show(idx + 1);
+$('prev').onclick = () => show(idx - 1);
+$('mic').onclick = toggleMic;
+$('tts').onclick = toggleTTS;
+$('back').onclick = toEdit;
+document.addEventListener('keydown', e => {
+  if ($('play').hidden) return;
+  if (e.key === ' ' || e.key === 'ArrowRight'){ e.preventDefault(); if (idx < lines.length - 1) show(idx + 1); }
+  else if (e.key === 'ArrowLeft'){ e.preventDefault(); if (idx > 0) show(idx - 1); }
+});
+let saved = null; try { saved = localStorage.getItem('kasperl-text'); } catch (e){}
+$('script').value = saved || SAMPLE;
+</script>
+</body>
+</html>
