@@ -1,0 +1,110 @@
+# LF 6 Startsysteme, Vernetzung, Komfortsysteme und Diesel-Motormanagement (3. Klasse KFZ)
+# --- Vorglühanlage
+M Welche Aufgabe hat die Glühkerze im Dieselmotor? | Sie erwärmt den Brennraum, damit der Kraftstoff beim Kaltstart sicher zündet | Sie erzeugt bei jeder Verbrennung einen Zündfunken | Sie misst die Brennraumtemperatur für die Klopfregelung | Sie verdampft das AdBlue
+Z Ordne die Glühphasen zu. | Vorglühen = Vor dem Start, bis die Kontrollleuchte erlischt | Startglühen = Während der Starter dreht | Nachglühen = Nach dem Start bei laufendem Motor | Zwischenglühen = Zur Unterstützung der Partikelfilter-Regeneration
+M Wozu dient das Nachglühen? | Ruhigerer Motorlauf sowie weniger Geräusch und Schadstoffe in der Warmlaufphase | Die Batterie wird schneller geladen | Der Turbolader wird gekühlt | Der Starter wird entlastet
+M Welches Bauteil steuert die Glühkerzen an? | Das Glühzeitsteuergerät bzw. Glühzeitrelais | Der Generatorregler | Die Zündspule | Das Airbag-Steuergerät
+M Wie verhält sich der Widerstand der Regelwendel einer selbstregelnden Glühkerze? | Er steigt mit der Temperatur (PTC), dadurch sinkt der Strom | Er sinkt mit der Temperatur (NTC), dadurch steigt der Strom | Er bleibt immer gleich | Er ist unendlich groß
+M Was bedeutet die Anzeige „OL“ bei der Widerstandsmessung einer Glühkerze? | Unterbrechung: Die Glühkerze ist durchgebrannt oder nicht kontaktiert | Kurzschluss nach Masse | Die Glühkerze ist in Ordnung | Die Batterie des Fahrzeugs ist leer
+M Womit kann man die Stromaufnahme der einzelnen Glühkerzen im eingebauten Zustand prüfen? | Mit der Stromzange an der jeweiligen Zuleitung | Mit dem Abgastester | Mit dem Kompressionsdruckschreiber | Mit dem Refraktometer
+M Warum dürfen moderne Niedervolt-Glühkerzen nicht direkt an 12 V geprüft werden? | Sie sind für eine kleinere Spannung ausgelegt und würden zerstört | Sie brauchen 24 V | Sie brauchen Wechselspannung | Sie leuchten dann zu schwach
+M Was ist beim Ausbau festsitzender Glühkerzen zu beachten? | Das Lösemoment begrenzen und nach Herstellervorgabe vorgehen, sonst reißt die Kerze ab | Mit dem Schlagschrauber und voller Kraft lösen | Die Kerze bei laufendem Motor herausdrehen | Die Kerze mit dem Hammer lockern
+M Der Diesel springt bei Kälte schlecht an und qualmt nach dem Start weiß. Was prüfst du zuerst? | Die Vorglühanlage | Die Klimaanlage | Die Wegfahrsperre | Den Regensensor
+R Bei vielen Motoren erkennt das Steuergerät eine defekte Glühkerze und legt einen Fehler im Fehlerspeicher ab.
+F Glühkerzen glühen bei warmem Motor während der gesamten Fahrt dauerhaft mit. || Geglüht wird nur vor und beim Start, in der Warmlaufphase und bei Bedarf zur Regeneration.
+N Vier Glühkerzen nehmen je 12 A auf. Wie groß ist der Gesamtstrom? | 48 | A | 0 || Die Glühkerzen sind parallel geschaltet, die Ströme addieren sich. >> Parallelschaltung: Teilströme zusammenzählen.
+# --- Startanlage
+Z Ordne die Klemmen am Starter zu. | Klemme 30 = Dauerplus direkt von der Batterie | Klemme 50 = Steuerleitung vom Zündstartschalter | Klemme 31 = Masse | Klemme 15 = Geschaltetes Plus bei Zündung ein
+M Was passiert beim Betätigen des Startschalters im Starter zuerst? | Der Einrückmagnet spurt das Ritzel in den Zahnkranz ein und schließt dann den Hauptstromkontakt | Der Motor zündet sofort | Der Generator beginnt zu laden | Die Kraftstoffpumpe schaltet ab
+M Welche Aufgabe hat der Freilauf am Starterritzel? | Er verhindert, dass der anspringende Motor den Starter mit hoher Drehzahl mitreißt | Er spurt das Ritzel ein | Er erhöht das Drehmoment | Er schaltet den Hauptstrom
+M Welchen Vorteil hat ein Vorgelegestarter mit Planetengetriebe? | Hohes Drehmoment bei kleiner und leichter Bauweise | Er braucht keine Batterie | Er dreht ohne Ritzel | Er lädt beim Starten die Batterie
+M Beim Starten ist nur ein Klacken zu hören, der Starter dreht nicht. Was ist eine wahrscheinliche Ursache? | Batterie zu schwach oder Hauptstromkontakte bzw. Anschlüsse schlecht | Zu viel Kraftstoff im Tank | Defekte Glühlampe | Zu hoher Öldruck
+M Beim Starten passiert gar nichts, auch kein Klacken. Was prüfst du? | Die Ansteuerung an Klemme 50, Wegfahrsperre, Kupplungs- bzw. Wählhebelschalter | Den Reifendruck | Den Luftfilter | Die Abgasanlage
+M Der Starter dreht durch, nimmt den Motor aber nicht mit. Was ist wahrscheinlich defekt? | Der Freilauf bzw. das Einspuren des Ritzels | Die Batterie | Der Generator | Das Zündschloss
+M Wie lange sollte ein Startvorgang höchstens dauern, um Starter und Batterie zu schonen? | Nur einige Sekunden, danach eine Pause einlegen | Etwa zwei Minuten am Stück | Bis die Batterie leer ist | Das spielt keine Rolle
+R Ein hoher Spannungsfall in der Masseleitung zwischen Motor und Karosserie kann zu langsamem Durchdrehen des Starters führen.
+N Beim Starten liegen an der Batterie 10,5 V und an Klemme 30 des Starters 9,8 V. Wie groß ist der Spannungsfall in der Plusleitung? | 0,7 | V | 0 || 10,5 V − 9,8 V = 0,7 V. Das ist zu viel, üblich sind höchstens etwa 0,5 V. >> Spannung an der Batterie minus Spannung am Starter
+# --- Start-Stopp-System
+M Was macht das Start-Stopp-System? | Es stellt den Motor im Stand automatisch ab und startet ihn beim Anfahren wieder | Es bremst das Fahrzeug an der Ampel | Es schaltet das Licht im Tunnel ein | Es verriegelt die Türen beim Losfahren
+M Welche Bedingung muss für einen automatischen Motorstopp unter anderem erfüllt sein? | Batterie ausreichend geladen und Motor betriebswarm | Tank fast leer | Motorhaube geöffnet | Fahrergurt nicht angelegt
+M Warum schaltet das System den Motor nicht ab, wenn die Batterie schwach ist? | Der sichere Wiederstart hat Vorrang | Der Motor braucht dann mehr Öl | Die Bremse würde blockieren | Der Tank würde überlaufen
+M Welche Komponenten sind bei Start-Stopp-Fahrzeugen verstärkt oder zusätzlich verbaut? | Zyklenfeste Batterie, verstärkter Starter und Batteriesensor | Größerer Tank und zweiter Auspuff | Zusätzliche Zündkerzen | Zweite Kupplungsscheibe und stärkere Federn
+M Was verhindert bei geöffneter Motorhaube einen automatischen Motorstart während der Arbeit? | Der Motorhaubenkontaktschalter | Der Öldruckschalter | Der Regensensor | Der Tankgeber
+M Wozu dient der Spannungsstabilisator (DC/DC-Wandler) bei Start-Stopp? | Er hält die Spannung für Radio und Steuergeräte beim Wiederstart stabil | Er lädt die Batterie aus dem Netz | Er erhöht die Zündspannung | Er steuert die Glühkerzen
+F Bei Start-Stopp-Fahrzeugen kann beim Batterietausch jede beliebige Nassbatterie eingebaut werden. || Es muss wieder eine AGM- oder EFB-Batterie eingebaut und angemeldet werden.
+# --- CAN-Bus und Vernetzung
+M Wozu dient ein Datenbus wie der CAN-Bus im Fahrzeug? | Steuergeräte tauschen über wenige Leitungen viele Informationen aus | Er versorgt die Steuergeräte mit Strom | Er ersetzt die Batterie | Er kühlt die Steuergeräte
+M Wie heißen die beiden Leitungen eines CAN-Busses? | CAN-High und CAN-Low | CAN-Plus und CAN-Minus | CAN-Data und CAN-Clock | CAN-In und CAN-Out
+M Warum sind die beiden CAN-Leitungen miteinander verdrillt? | Störeinstrahlungen wirken auf beide Leitungen gleich und heben sich auf | Damit sie mechanisch stabiler sind | Damit sie länger werden | Damit weniger Kupfer gebraucht wird
+M Welche Spannung haben beide Leitungen des Antriebs-CAN im Ruhezustand (rezessiv) ungefähr? | ca. 2,5 V | ca. 0 V | ca. 5 V | ca. 12 V
+M Welche Spannungen liegen beim Antriebs-CAN im dominanten Zustand an? | CAN-High ca. 3,5 V, CAN-Low ca. 1,5 V | CAN-High ca. 12 V, CAN-Low ca. 0 V | Beide ca. 5 V | CAN-High ca. 1,5 V, CAN-Low ca. 3,5 V
+M Welchen Widerstand misst man stromlos zwischen CAN-High und CAN-Low beim High-Speed-CAN mit zwei Abschlusswiderständen? | ca. 60 Ω | ca. 120 Ω | ca. 240 Ω | ca. 10 kΩ || Zwei 120-Ω-Abschlusswiderstände parallel ergeben 60 Ω.
+M Zwischen CAN-High und CAN-Low werden 120 Ω gemessen. Was bedeutet das? | Ein Abschlusswiderstand fehlt oder eine Busleitung ist unterbrochen | Alles ist in Ordnung | Die Leitungen sind kurzgeschlossen | Die Batterie ist leer
+M Wozu dienen die Abschlusswiderstände am CAN-Bus? | Sie verhindern Signalreflexionen an den Leitungsenden | Sie begrenzen den Ladestrom | Sie schützen vor Überspannung der Zündung | Sie erwärmen das Steuergerät
+M Wie wird beim CAN-Bus entschieden, welche Botschaft zuerst gesendet wird? | Über die Priorität im Identifier der Botschaft | Das Steuergerät mit dem längsten Kabel sendet zuerst | Nach dem Alphabet | Der Fahrer wählt es aus
+M Welche Aufgabe hat das Gateway? | Es verbindet verschiedene Bussysteme und übersetzt die Daten zwischen ihnen | Es speichert die Radiosender | Es lädt die Batterie | Es misst die Raddrehzahl
+Z Ordne die Bussysteme ihrem typischen Einsatz zu. | CAN-Antrieb = Motor, Getriebe, ABS und ESP | LIN = Einfache Aktoren und Sensoren, z. B. Fensterheber | FlexRay = Sehr schnelle, sicherheitskritische Systeme | MOST = Infotainment über Lichtwellenleiter
+M Was kennzeichnet den LIN-Bus? | Eindraht-Bus mit einem Master und mehreren Slaves, langsam und kostengünstig | Zweidraht-Bus mit Lichtwellenleiter | Sehr schneller Bus für Fahrwerksregelung | Funkverbindung zwischen Steuergeräten
+M Was passiert bei einem Kurzschluss zwischen CAN-High und CAN-Low am Antriebs-CAN? | Die Kommunikation auf diesem Bus fällt aus | Nichts, der Bus arbeitet normal weiter | Nur das Radio fällt aus | Die Batterie wird schneller geladen
+M Mit welchem Buchstaben beginnen Fehlercodes für Kommunikationsfehler im Netzwerk? | U | P | B | C
+M Wie sieht das Signal eines intakten High-Speed-CAN auf dem Zweikanal-Oszilloskop aus? | CAN-High und CAN-Low verlaufen spiegelbildlich zueinander | Beide Signale sind völlig gleich | Nur eine gerade Linie bei 12 V | Eine Sinuskurve mit 50 Hz
+M Im Fehlerspeicher mehrerer Steuergeräte steht „keine Kommunikation mit Motorsteuergerät“. Was prüfst du zuerst? | Spannungsversorgung und Masse des Motorsteuergeräts sowie dessen Busanschluss | Alle Steuergeräte tauschen | Den Reifendruck | Die Zündkerzen
+M Was bedeutet Busruhe? | Nach dem Abstellen schlafen die Steuergeräte ein und der Bus sendet nicht mehr | Der Bus ist defekt | Der Bus sendet mit halber Geschwindigkeit | Die Abschlusswiderstände sind abgeschaltet
+M Wie werden beschädigte CAN-Leitungen fachgerecht repariert? | Nach Herstellervorgabe mit geeigneten Verbindern, die Verdrillung bleibt möglichst erhalten | Mit beliebig langem, unverdrilltem Lautsprecherkabel | Mit Lüsterklemmen im Motorraum | Gar nicht, es wird immer der ganze Kabelbaum getauscht
+R Über den Diagnoseanschluss kann der Tester mit den am Bus angeschlossenen Steuergeräten kommunizieren.
+F Am CAN-Bus darf der Widerstand bei eingeschalteter Zündung gemessen werden. || Widerstand wird immer spannungsfrei gemessen: Zündung aus, am besten Batterie abgeklemmt.
+N Zwei Abschlusswiderstände mit je 120 Ω sind parallel geschaltet. Welchen Gesamtwiderstand misst man? | 60 | Ω | 0 || Zwei gleiche Widerstände parallel: R / 2 >> Zwei gleiche Widerstände parallel ergeben die Hälfte.
+# --- Schaltplananalyse und systematische Fehlersuche
+M Was bedeutet Klemme 15 im Schaltplan? | Geschaltetes Plus bei eingeschalteter Zündung | Dauerplus von der Batterie | Masse | Startersteuerung
+M Was bedeutet Klemme 30? | Dauerplus von der Batterie | Geschaltetes Plus | Masse | Blinker links
+Z Ordne die Relaisklemmen zu. | 85 und 86 = Steuerstromkreis (Spule) | 30 = Eingang Laststromkreis | 87 = Ausgang Laststromkreis (Schließer) | 87a = Ausgang Öffner
+M Wie prüft man einen Stromkreis auf Kurzschluss nach Masse? | Verbraucher abklemmen und spannungsfrei den Widerstand der Leitung gegen Masse messen | Eine stärkere Sicherung einsetzen und beobachten | Die Batterie verpolen | Den Motor mit Vollgas laufen lassen
+M Eine Sicherung brennt nach dem Ersetzen sofort wieder durch. Was liegt wahrscheinlich vor? | Ein Kurzschluss nach Masse im abgesicherten Stromkreis | Eine Leitungsunterbrechung | Ein zu hoher Übergangswiderstand | Eine zu schwache Batterie
+M Womit findet man einen zu hohen Übergangswiderstand in einem Laststromkreis am besten? | Mit der Spannungsfallmessung bei eingeschaltetem Verbraucher | Mit der Widerstandsmessung bei eingeschaltetem Verbraucher | Mit dem Abgastester | Mit der Durchgangsprüfung an der Batterie
+R Bei der Fehlersuche wird immer erst geprüft und gemessen und erst dann ein Teil getauscht.
+# --- Komfortsysteme
+M Welche Bauteile betätigen bei der Zentralverriegelung die Türschlösser? | Elektrische Stellmotoren in den Türschlössern | Seilzüge vom Lenkrad | Der Unterdruck des Bremskraftverstärkers | Der Starter
+M Wie schützt sich der Funkschlüssel gegen das Aufzeichnen und Wiederverwenden des Signals? | Durch einen Wechselcode, der sich bei jeder Betätigung ändert | Durch eine längere Antenne | Durch einen festen Code für alle Fahrzeuge | Durch eine stärkere Batterie
+M Der Funkschlüssel funktioniert nicht mehr, der mechanische Schlüssel schon. Was prüfst du zuerst? | Die Batterie im Schlüssel | Das Motorsteuergerät | Die Türscharniere | Den Tankdeckel
+M Was bewirkt der Einklemmschutz beim elektrischen Fensterheber? | Die Scheibe stoppt und fährt zurück, wenn sie beim Schließen auf ein Hindernis trifft | Die Scheibe schließt schneller | Die Tür wird verriegelt | Das Fenster öffnet bei Regen
+M Was ist nach dem Abklemmen der Batterie bei elektrischen Fensterhebern mit Automatiklauf oft nötig? | Die Endlagen neu anlernen (normieren) | Die Scheiben tauschen | Die Türen ausbauen | Die Sicherungen verstärken
+M Wie erkennt die elektronische Wegfahrsperre den berechtigten Schlüssel? | Ein Transponder im Schlüssel wird über die Lesespule am Zündschloss abgefragt | An der Form des Schlüsselbarts | Am Gewicht des Schlüssels | An der Farbe des Schlüssels
+M Wie verhält sich ein Fahrzeug typischerweise, wenn die Wegfahrsperre den Schlüssel nicht erkennt? | Der Motor startet nicht oder geht nach kurzem Lauf wieder aus | Der Motor läuft mit doppelter Leistung | Nur das Licht geht nicht | Die Türen lassen sich nicht öffnen
+M Was ist beim Tausch von Schlüsseln oder Steuergeräten der Wegfahrsperre nötig? | Die Teile müssen mit dem Diagnosetester an das Fahrzeug angelernt werden | Nichts, jedes Teil passt sofort | Nur ein neuer Schlüsselanhänger | Ein Ölwechsel
+M Wie arbeitet ein Regensensor? | Er misst optisch, wie stark Infrarotlicht an der nassen Scheibe weniger reflektiert wird | Er wiegt die Wassertropfen | Er misst die Luftfeuchtigkeit im Kofferraum | Er hört die Tropfen mit einem Mikrofon
+M Wodurch bleibt der Scheibenwischer nach dem Ausschalten in der Parkstellung stehen? | Durch den Endlagenkontakt bzw. die Positionserkennung im Wischermotor | Durch eine Feder am Wischerarm | Durch den Regensensor | Durch den Bremslichtschalter
+M Welche Aufgabe hat die Geschwindigkeitsregelanlage (Tempomat)? | Sie hält die vom Fahrer gesetzte Geschwindigkeit | Sie bremst vor jeder Kurve | Sie hält den Abstand ohne Sensoren | Sie begrenzt die Motordrehzahl im Stand
+M Wodurch wird der Tempomat sofort abgeschaltet? | Durch Betätigen der Bremse | Durch Einschalten des Radios | Durch Öffnen des Fensters | Durch Betätigen des Blinkers
+M Welchen Sensor nutzt der Abstandsregeltempomat (ACC) vor allem? | Einen Radarsensor in der Fahrzeugfront | Den Regensensor | Den Klopfsensor | Den Tankgeber
+M Mehrere Komfortfunktionen einer Tür fallen zeitweise aus. Wo liegt häufig die Ursache? | In gebrochenen Leitungen im Kabelstrang zwischen Tür und Karosserie | Im Motoröl | Im Reifenprofil | Im Katalysator
+R Viele Komfortfunktionen lassen sich mit dem Diagnosetester über die Stellglieddiagnose einzeln ansteuern und prüfen.
+F Der Einklemmschutz des Fensterhebers darf zur Reparatur dauerhaft außer Funktion gesetzt werden. || Er ist eine Sicherheitsfunktion und muss nach der Reparatur wieder einwandfrei arbeiten.
+# --- Diesel-Motormanagement: Diagnose
+M Wie beurteilt man den Raildruck mit dem Diagnosetester? | Durch den Vergleich von Sollwert und Istwert in den Messwerten | Durch Abhören des Motors | Durch die Farbe des Kraftstoffs | Durch Messen der Batteriespannung
+M Der Motor geht während der Fahrt aus, der Raildruck bricht zusammen. Was prüfst du zuerst? | Die Niederdruckseite: Kraftstoffvorrat, Vorförderpumpe, Filter, Luft im System | Die Glühkerzen | Die Klimaanlage | Die Wegfahrsperre des Radios
+M Was kann ein verstopfter Kraftstofffilter beim Common-Rail-Motor bewirken? | Leistungsmangel und Abregeln, weil die Hochdruckpumpe zu wenig Kraftstoff bekommt | Höheren Ladedruck | Weißen Rauch im Stand | Ein zu fettes Gemisch im Leerlauf
+M Mit welcher Spannung werden Piezo-Injektoren angesteuert? | Mit deutlich über 100 V | Mit 5 V | Mit 12 V | Mit 0,5 V
+M Wie misst man das Ansteuersignal eines Injektors am sinnvollsten? | Mit dem Oszilloskop und einer Stromzange | Mit der Prüflampe | Mit der Fühlerlehre | Mit dem Reifendruckprüfer
+M Wie verläuft der Strom eines Magnetventil-Injektors bei der Ansteuerung? | Zuerst ein hoher Anzugsstrom, dann ein niedrigerer Haltestrom | Konstant 1 A | Sinusförmig mit 50 Hz | Erst niedrig, dann immer höher bis zum Abschalten
+M Was ist ein Notlaufprogramm? | Das Steuergerät begrenzt bei einem erkannten Fehler Leistung und Drehzahl, um Schäden zu vermeiden | Der Motor läuft mit doppeltem Ladedruck | Der Motor läuft ohne Öl weiter | Die Wegfahrsperre wird abgeschaltet
+M Wie wird der Ladedruck geregelt? | Das Steuergerät vergleicht Soll- und Istwert und verstellt VTG oder Wastegate über einen Steller | Über einen festen Anschlag ohne Sensor | Über den Thermostat | Über die Drehzahl des Generators
+M Welche Folge hat ein Luftmassenmesser, der zu wenig Luftmasse meldet? | Das Steuergerät begrenzt die Einspritzmenge, der Motor hat wenig Leistung | Der Motor hat mehr Leistung | Der Ladedruck steigt unbegrenzt | Die Glühkerzen brennen durch
+M Welche Angaben braucht das Diesel-Steuergerät für die Berechnung der Einspritzmenge vor allem? | Fahrpedalstellung und Motordrehzahl | Reifendruck und Außentemperatur | Tankinhalt und Uhrzeit | Lenkwinkel und Gierrate
+R Die Laufruheregelung gleicht im Leerlauf Unterschiede zwischen den Zylindern über die Einspritzmenge aus, ihre Werte geben Hinweise auf schwache Zylinder.
+F Bei laufendem Common-Rail-Motor darf eine Hochdruckleitung zur Zylinderprüfung gelöst werden. || Das ist wegen des hohen Drucks lebensgefährlich und verboten.
+# --- Sporadische Fehler, Oszilloskop, Diagnoseprotokoll
+M Was ist ein sporadischer Fehler? | Ein Fehler, der nur zeitweise auftritt und beim Prüfen oft nicht vorhanden ist | Ein Fehler, der immer vorhanden ist | Ein Fehler im Reifen | Ein Bedienfehler des Kunden
+M Welche Informationen vom Kunden helfen bei sporadischen Fehlern besonders? | Wann und unter welchen Bedingungen der Fehler auftritt, z. B. Kälte, Nässe, Bodenwellen | Die Lieblingsfarbe des Kunden | Der Kaufpreis des Fahrzeugs | Die Marke der Reifen
+M Wie lassen sich Wackelkontakte in Steckern und Leitungen provozieren? | Durch Rütteln und Bewegen des Kabelstrangs bei laufender Messung | Durch Lackieren der Stecker | Durch Tauschen der Batterie | Durch Erhöhen des Reifendrucks
+M Womit lassen sich Signalverläufe von Sensoren sichtbar machen? | Mit dem Oszilloskop | Mit der Prüflampe | Mit der Fühlerlehre | Mit dem Refraktometer
+M Was stellt man am Oszilloskop mit der Zeitbasis ein? | Wie viel Zeit ein Kästchen in waagrechter Richtung darstellt | Die Helligkeit des Bildes | Die Spannung pro Kästchen | Die Lautstärke
+M Was gibt das Tastverhältnis eines PWM-Signals an? | Den Anteil der Einschaltzeit an der Periodendauer | Die Höhe der Spannung | Die Länge der Leitung | Die Temperatur des Bauteils
+N Ein Signal hat eine Periodendauer von 20 ms. Wie groß ist die Frequenz? | 50 | Hz | 0 || f = 1 / T = 1 / 0,02 s >> f = 1 / T, Millisekunden zuerst in Sekunden umrechnen.
+M Wozu dient das Diagnoseprotokoll vor und nach der Reparatur? | Es dokumentiert Fehlerspeicher und Messwerte und belegt die durchgeführte Arbeit | Es ersetzt die Rechnung | Es ist nur Werbung | Es dient als Garantieschein für Reifen
+# --- Ergänzungen
+M Welche Übertragungsrate hat der Antriebs-CAN typischerweise? | 500 kbit/s | 9,6 kbit/s | 20 kbit/s | 100 Mbit/s
+M Was bedeutet Multi-Master beim CAN-Bus? | Jedes Steuergerät darf senden, sobald der Bus frei ist | Nur ein Steuergerät darf senden, alle anderen hören zu | Jedes Steuergerät hat einen eigenen Bus | Der Tester ist der einzige Sender
+M In welcher Größenordnung liegt der Strom, den ein Pkw-Starter beim Durchdrehen aufnimmt? | Bei deutlich über 100 A | Bei etwa 1 A | Bei etwa 5 A | Bei etwa 15 A
+M Was bewirkt der Trigger am Oszilloskop? | Er legt fest, bei welchem Signalpegel die Darstellung startet, damit das Bild ruhig steht | Er ändert die Farbe der Kurve | Er misst den Widerstand | Er schaltet das Gerät aus
+R Der Regensensor sitzt innen an der Windschutzscheibe, meist im Bereich des Innenspiegels.
+F Der Tempomat regelt auch bei getretenem Bremspedal weiter. || Beim Bremsen schaltet die Regelung sofort ab.

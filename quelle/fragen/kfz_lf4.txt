@@ -1,0 +1,111 @@
+# LF 4 Funktionsstörungen diagnostizieren und beheben (2. Klasse KFZ)
+# --- Achsvermessung und Fahrwerksgeometrie
+Z Ordne die Begriffe der Fahrwerksgeometrie zu. | Spur = Stellung der Räder einer Achse zueinander in Fahrtrichtung | Sturz = Neigung des Rades zur Senkrechten, von vorn gesehen | Nachlauf = Sorgt für Geradeauslauf und Rückstellung der Lenkung | Spreizung = Neigung der Lenkachse quer zur Fahrtrichtung
+M Was bedeutet Vorspur? | Die Räder einer Achse stehen vorne enger zusammen als hinten | Die Räder stehen vorne weiter auseinander als hinten | Die Räder sind oben nach innen geneigt | Die Vorderachse ist breiter als die Hinterachse
+M Was bedeutet negativer Sturz? | Das Rad ist oben zur Fahrzeugmitte hin geneigt | Das Rad ist oben nach außen geneigt | Das Rad steht vorne enger als hinten | Das Rad steht genau senkrecht
+M Welche Wirkung hat der Nachlauf? | Die Räder stellen sich nach der Kurve von selbst gerade, das Fahrzeug läuft stabil geradeaus | Die Reifen verschleißen gleichmäßiger | Der Bremsweg wird kürzer | Die Federung wird weicher
+M Was ist der Lenkrollhalbmesser? | Der Abstand zwischen Mitte der Radaufstandsfläche und dem Durchstoßpunkt der Lenkachse auf der Fahrbahn | Der Radius des Lenkrads | Der kleinste Wendekreis des Fahrzeugs | Der halbe Durchmesser des Reifens
+M Was bewirkt ein negativer Lenkrollhalbmesser? | Das Fahrzeug stabilisiert sich bei einseitig unterschiedlicher Bremskraft selbst | Die Lenkung wird schwergängiger als ohne Servo | Der Reifen verschleißt außen | Der Motor braucht weniger Kraftstoff
+M Ein Reifen ist an der Innenschulter stark abgefahren. Was ist eine mögliche Ursache? | Zu viel negativer Sturz oder zu viel Nachspur | Zu hoher Reifendruck | Zu viel Vorspur und positiver Sturz | Ein defekter Auspuff
+M Welche Vorarbeiten sind vor einer Achsvermessung nötig? | Reifendruck, Reifenzustand, Lenkungs- und Radlagerspiel prüfen | Motoröl wechseln | Bremsflüssigkeit wechseln | Scheinwerfer einstellen
+M Wozu dient die Felgenschlagkompensation bei der Achsvermessung? | Messfehler durch Rundlauffehler von Felge und Messwertaufnehmer werden ausgeglichen | Die Felge wird gerade gebogen | Das Rad wird ausgewuchtet | Der Reifendruck wird korrigiert
+M Welche Achse wird bei der Vermessung zuerst eingestellt? | Die Hinterachse, weil sie die Fahrachse vorgibt | Die Vorderachse, weil sie lenkt | Die Reihenfolge ist beliebig | Immer nur die Achse mit dem größeren Verschleiß
+M Woran wird die Spur an der Vorderachse eingestellt? | An den Spurstangen | Am Stabilisator | Am Schwingungsdämpfer | Am Radlager
+M Was ist nach dem Einstellen der Spur bei Fahrzeugen mit ESP oft nötig? | Den Lenkwinkelsensor kalibrieren | Die Batterie tauschen | Die Bremsen entlüften | Das Getriebeöl wechseln
+M Der Kunde beanstandet, dass das Lenkrad bei Geradeausfahrt schief steht. Was ist die wahrscheinliche Ursache? | Die Spur wurde nicht bei Lenkradmittelstellung eingestellt oder ist verstellt | Zu wenig Motoröl | Abgefahrene Bremsbeläge | Ein defekter Generator
+R Die gemessenen Werte der Achsvermessung werden mit den Sollwerten des Herstellers verglichen.
+F Der Nachlauf lässt sich an jedem Fahrzeug einfach an der Spurstange einstellen. || An der Spurstange wird die Spur eingestellt. Der Nachlauf ist oft gar nicht oder nur am Achsträger bzw. Querlenker einstellbar.
+# --- Elektrische Servolenkung
+M Wie unterstützt die elektrische Servolenkung (EPS) den Fahrer? | Ein Elektromotor bringt abhängig vom Lenkmoment ein Zusatzmoment auf | Eine Pumpe fördert ständig Hydrauliköl | Der Unterdruck des Motors verstärkt die Lenkkraft | Ein Seilzug zieht die Spurstange
+M Welchen Vorteil hat die EPS gegenüber der hydraulischen Servolenkung? | Sie braucht nur Energie, wenn gelenkt wird | Sie funktioniert ohne Steuergerät | Sie braucht keinen Sensor | Sie ist wartungsintensiver
+M Welcher Sensor liefert der EPS die wichtigste Eingangsgröße? | Der Lenkmomentsensor (Drehmomentsensor) | Der Klopfsensor | Die Lambdasonde | Der Öldruckschalter
+# --- Kupplung
+M Welche Aufgabe hat die Kupplung? | Sie trennt und verbindet den Kraftfluss zwischen Motor und Getriebe | Sie erhöht das Drehmoment des Motors | Sie gleicht Drehzahlunterschiede der Räder in Kurven aus | Sie bremst das Fahrzeug ab
+M Aus welchen Hauptteilen besteht eine Einscheiben-Trockenkupplung? | Kupplungsscheibe, Druckplatte mit Membranfeder und Ausrücker | Pumpenrad, Turbinenrad und Leitrad | Sonnenrad, Planetenräder und Hohlrad | Tellerrad, Kegelrad und Ausgleichsräder
+M Was deutet auf eine rutschende Kupplung hin? | Die Motordrehzahl steigt beim Beschleunigen, das Fahrzeug wird aber kaum schneller | Der Motor springt nicht an | Die Lenkung ist schwergängig | Das Bremspedal ist weich
+M Wie kann man eine rutschende Kupplung einfach prüfen? | Handbremse anziehen, hohen Gang einlegen, einkuppeln: Der Motor muss abgewürgt werden | Im Leerlauf Vollgas geben | Das Fahrzeug bergab rollen lassen | Die Batterie abklemmen
+M Die Gänge lassen sich bei laufendem Motor nur mit Kratzen einlegen. Was ist eine wahrscheinliche Ursache? | Die Kupplung trennt nicht vollständig | Die Kupplung rutscht | Der Motor hat zu wenig Öl | Das Differenzial ist defekt
+M Was kann Kupplungsrupfen beim Anfahren verursachen? | Verölte oder verglaste Beläge oder eine verzogene Druckplatte | Zu hoher Reifendruck | Ein neuer Luftfilter | Zu viel Kühlmittel
+M Welche Aufgabe hat das Zweimassenschwungrad (ZMS)? | Es dämpft die Drehschwingungen des Motors, bevor sie ins Getriebe gelangen | Es speichert Bremsenergie | Es erhöht die Höchstdrehzahl | Es treibt die Ölpumpe an
+M Woran erkennt man ein defektes Zweimassenschwungrad? | Klappergeräusche im Leerlauf und beim Abstellen, Vibrationen | Blauer Rauch | Hoher Kühlmittelverbrauch | Schiefes Lenkrad
+M Was bedeutet SAC bei einer Kupplung? | Die Kupplung stellt den Belagverschleiß selbsttätig nach | Die Kupplung läuft im Ölbad | Die Kupplung hat zwei Scheiben | Die Kupplung wird elektrisch betätigt
+M Wozu braucht man beim Einbau der Kupplung einen Zentrierdorn? | Die Kupplungsscheibe wird mittig ausgerichtet, damit die Getriebewelle eingeführt werden kann | Die Druckplatte wird vorgespannt | Das Schwungrad wird blockiert | Das Ausrücklager wird geschmiert
+M Wie arbeitet eine hydraulische Kupplungsbetätigung? | Der Geberzylinder am Pedal drückt Flüssigkeit zum Nehmerzylinder am Getriebe | Ein Seil zieht direkt am Ausrückhebel | Der Unterdruck des Motors rückt aus | Ein Elektromotor zieht die Scheibe ab
+R Kupplungsbeläge müssen frei von Öl und Fett sein.
+F Bei getretenem Kupplungspedal ist der Kraftfluss zwischen Motor und Getriebe geschlossen. || Bei getretenem Pedal ist die Kupplung getrennt.
+# --- Getriebe, Achsantrieb, Differenzial
+M Welche Aufgabe hat das Schaltgetriebe? | Es wandelt Drehzahl und Drehmoment und ermöglicht Rückwärtsfahrt und Leerlauf | Es gleicht die Raddrehzahlen in Kurven aus | Es erzeugt das Drehmoment | Es dämpft Drehschwingungen
+M In welchem Gang ist das Drehmoment an den Antriebsrädern am größten? | Im 1. Gang | Im höchsten Gang | Im Leerlauf | In jedem Gang gleich
+N Das treibende Zahnrad hat 12 Zähne, das getriebene 42 Zähne. Wie groß ist die Übersetzung i? | 3,5 | | 0 || i = z2 / z1 = 42 / 12 >> Zähne getriebenes Rad geteilt durch Zähne treibendes Rad
+N Die Getriebeübersetzung im 3. Gang ist 1,4, die Achsübersetzung 3,5. Wie groß ist die Gesamtübersetzung? | 4,9 | | 0 || i ges = i Getriebe · i Achse = 1,4 · 3,5 >> Einzelübersetzungen werden multipliziert.
+M Welche Aufgabe hat die Synchronisierung? | Sie gleicht die Drehzahlen von Schaltmuffe und Gangrad vor dem Einlegen des Gangs an | Sie verriegelt den Rückwärtsgang | Sie schmiert die Zahnräder | Sie trennt Motor und Getriebe
+M Ein Gang lässt sich nur mit Kratzen einlegen, obwohl die Kupplung sauber trennt. Was ist wahrscheinlich verschlissen? | Der Synchronring dieses Gangs | Das Ausrücklager | Das Differenzial | Die Antriebswelle
+M Ein Gang springt während der Fahrt heraus. Was ist eine mögliche Ursache? | Verschlissene Schaltverzahnung oder Schaltgabel bzw. falsch eingestellte Schaltung | Zu viel Getriebeöl | Eine neue Kupplung | Zu hoher Reifendruck
+M Welche Aufgabe hat das Ausgleichsgetriebe (Differenzial)? | Es ermöglicht unterschiedliche Raddrehzahlen bei Kurvenfahrt | Es erhöht die Motordrehzahl | Es trennt Motor und Getriebe beim Schalten | Es verteilt die Bremskraft
+M Welche Aufgabe hat der Achsantrieb? | Er übersetzt die Drehzahl ins Langsame und erhöht das Drehmoment | Er übersetzt ins Schnelle und senkt das Drehmoment | Er schaltet die Gänge | Er treibt den Generator an
+M Welches Bauteil ersetzt beim Wandlerautomaten die Trockenkupplung? | Der hydrodynamische Drehmomentwandler | Das Differenzial | Die Kardanwelle | Das Zweimassenschwungrad
+M Wie arbeitet ein Doppelkupplungsgetriebe (DSG)? | Zwei Teilgetriebe mit je einer Kupplung, der nächste Gang ist schon vorgewählt | Mit einem Schubgliederband und Kegelscheiben | Mit einem einzigen Planetensatz ohne Kupplung | Rein hydraulisch ohne Zahnräder
+R Für jedes Getriebe ist das vom Hersteller vorgeschriebene Öl zu verwenden.
+F Im direkten Gang mit der Übersetzung 1 : 1 dreht die Getriebeausgangswelle doppelt so schnell wie der Motor. || Bei 1 : 1 drehen Eingang und Ausgang gleich schnell.
+# --- Zylinderkopf und Ventiltrieb
+M Womit prüft man die Planheit der Zylinderkopf-Dichtfläche? | Mit Haarlineal und Fühlerlehre | Mit dem Messschieber | Mit der Wasserwaage | Mit dem Multimeter
+M Wie werden Zylinderkopfschrauben angezogen? | In der vorgeschriebenen Reihenfolge von innen nach außen, mit Drehmoment und Drehwinkel | Von außen nach innen, so fest wie möglich | Der Reihe nach von links nach rechts | Nur handfest, sie ziehen sich im Betrieb nach
+M Warum werden Dehnschrauben am Zylinderkopf nach dem Lösen erneuert? | Sie wurden beim Anziehen bleibend gelängt | Sie rosten sofort | Sie sind zu kurz | Sie passen nicht mehr ins Gewinde
+M Was ist die Folge von zu kleinem Ventilspiel? | Das Ventil schließt nicht mehr richtig und kann verbrennen | Das Ventil öffnet zu spät und klappert | Der Motor verbraucht kein Öl mehr | Die Nockenwelle bleibt stehen
+M Was ist die Folge von zu großem Ventilspiel? | Klappergeräusche, das Ventil öffnet später und weniger weit | Das Ventil verbrennt sofort | Die Kompression steigt | Der Öldruck fällt auf null
+M Welche Aufgabe haben Hydrostößel? | Sie gleichen das Ventilspiel selbsttätig aus | Sie pumpen das Kühlmittel | Sie dichten den Ventilschaft ab | Sie drehen die Nockenwelle
+M Was deutet auf verschlissene Ventilschaftdichtungen hin? | Blauer Rauch nach längerem Leerlauf oder Schubbetrieb und erhöhter Ölverbrauch | Weißer Rauch nur bei Regen | Schwarzer Rauch bei Volllast | Kühlmittel im Öl
+M Welche Ursache hat eine durchgebrannte Zylinderkopfdichtung häufig? | Überhitzung des Motors | Zu neues Motoröl | Zu niedrige Drehzahl | Zu kalte Ansaugluft
+R Vor dem Einbau einer neuen Zylinderkopfdichtung müssen die Dichtflächen sauber und die Gewindebohrungen frei von Öl und Kühlmittel sein.
+# --- Kühlungsprobleme
+M Der Motor überhitzt. Welche Ursache kommt in Frage? | Thermostat öffnet nicht, Lüfter läuft nicht oder Kühlmittel fehlt | Thermostat bleibt immer offen | Zu viel Frostschutz im Winter | Zu niedriger Reifendruck
+M Der Motor erreicht auch nach langer Fahrt seine Betriebstemperatur nicht. Was ist die wahrscheinlichste Ursache? | Der Thermostat bleibt offen | Der Thermostat bleibt geschlossen | Die Kühlmittelpumpe ist ausgefallen | Der Kühler ist verstopft
+M Wie findet man ein Leck im Kühlsystem? | Mit dem Drucktester das System unter Druck setzen und auf Austritt oder Druckabfall achten | Den Motor ohne Kühlmittel laufen lassen | Mit dem Multimeter am Kühler | Mit dem Kompressionsdruckschreiber
+M Welche Aufgabe hat der Verschlussdeckel des Kühlsystems? | Er hält einen Überdruck im System und erhöht so den Siedepunkt | Er pumpt das Kühlmittel | Er misst die Temperatur | Er filtert das Kühlmittel
+F Nach dem Befüllen muss das Kühlsystem nicht entlüftet werden, Luftblasen stören nicht. || Luft im System kann zu Überhitzung und schlechter Heizleistung führen.
+# --- Kurbeltrieb und Motorschmierung
+M Welche Aufgabe hat der Kurbeltrieb? | Er wandelt die Auf- und Abbewegung des Kolbens in eine Drehbewegung um | Er steuert die Ventile | Er verdichtet die Ansaugluft | Er fördert das Motoröl
+M Welche Aufgabe hat das Pleuel? | Es verbindet Kolben und Kurbelwelle | Es öffnet die Ventile | Es dichtet den Brennraum ab | Es treibt die Ölpumpe an
+Z Ordne die Kolbenringe ihrer Aufgabe zu. | Verdichtungsringe = Brennraum gegen das Kurbelgehäuse abdichten | Ölabstreifring = Überschüssiges Öl von der Zylinderwand abstreifen | Kolbenbolzen = Kolben mit dem Pleuel verbinden | Kolbenhemd = Kolben im Zylinder führen
+M Womit misst man den Zylinderdurchmesser und den Verschleiß der Laufbahn? | Mit dem Innenfeinmessgerät | Mit dem Stahlmaßstab | Mit der Fühlerlehre allein | Mit dem Drehmomentschlüssel
+M Womit kann man das Lagerspiel eines Pleuellagers einfach messen? | Mit einem Kunststoff-Messstreifen (Plastigage) | Mit dem Multimeter | Mit dem Refraktometer | Mit der Stroboskoplampe
+M Welche Schmierung haben moderne Viertaktmotoren? | Druckumlaufschmierung | Mischungsschmierung | Reine Tauchschmierung | Fettschmierung
+M Welchen Weg nimmt das Motoröl? | Ölwanne – Ölpumpe – Ölfilter – Schmierstellen – zurück in die Ölwanne | Ölfilter – Ölwanne – Schmierstellen – Ölpumpe | Schmierstellen – Ölpumpe – Kühler – Auspuff | Ölpumpe – Brennraum – Ölwanne
+M Welche Aufgabe hat das Überdruckventil der Ölpumpe? | Es begrenzt den Öldruck, besonders bei kaltem, zähem Öl | Es erhöht den Öldruck im Leerlauf | Es filtert das Öl | Es kühlt das Öl
+M Was ist eine mögliche Ursache für zu niedrigen Öldruck? | Verschlissene Lager, verschlissene Ölpumpe oder zu wenig Öl | Zu neuer Ölfilter | Zu dickes Öl bei Kälte | Zu hohe Batteriespannung
+R Unrundheit und Konizität eines Zylinders werden durch Messen in mehreren Höhen und Richtungen festgestellt.
+# --- Otto-Motormanagement: Sensoren, Aktoren, Zündung
+M Nach welchem Prinzip arbeitet ein Motorsteuergerät? | Eingabe (Sensoren) – Verarbeitung (Steuergerät) – Ausgabe (Aktoren) | Ausgabe – Eingabe – Verarbeitung | Nur Ausgabe ohne Sensoren | Rein mechanisch über Gestänge
+Z Ordne die Bauteile des Motormanagements zu. | Kurbelwellensensor = Liefert Drehzahl und Kurbelwellenstellung | Luftmassenmesser = Erfasst die angesaugte Luftmasse | Einspritzventil = Aktor für die Kraftstoffzumessung | Zündspule = Aktor für den Zündfunken
+M Welcher Sensor liefert dem Motorsteuergerät die Motordrehzahl? | Der Kurbelwellensensor | Der Klopfsensor | Die Lambdasonde | Der Luftmassenmesser
+M Wozu braucht das Steuergerät das Signal des Nockenwellensensors? | Zur Zylindererkennung, also um zu wissen, welcher Zylinder im Verdichtungstakt ist | Zur Messung der Öltemperatur | Zur Messung der Luftmasse | Zur Regelung der Ladespannung
+M Wie verhält sich der Widerstand eines NTC-Temperaturfühlers bei steigender Temperatur? | Er sinkt | Er steigt | Er bleibt gleich | Er wird unendlich groß
+M Ein Kühlmitteltemperaturfühler ist mit einem Festwiderstand im Steuergerät an 5 V in Reihe geschaltet. Wie nennt man diese Schaltung? | Spannungsteiler | Parallelschaltung | Brückengleichrichter | Schwingkreis
+M Was erfasst der Klopfsensor? | Körperschall durch klopfende Verbrennung | Die Abgastemperatur | Den Öldruck | Die Drosselklappenstellung
+M Wie reagiert die Klopfregelung auf klopfende Verbrennung? | Sie verstellt den Zündzeitpunkt in Richtung spät | Sie verstellt den Zündzeitpunkt in Richtung früh | Sie erhöht den Ladedruck | Sie schaltet den Motor ab
+M Nach welchem Prinzip erzeugt die Zündspule die Hochspannung? | Wie ein Transformator durch Induktion beim Abschalten des Primärstroms | Durch Reibung | Durch einen Kondensator allein | Durch chemische Reaktion
+M Wann wird das Gemisch im Ottomotor normalerweise gezündet? | Kurz vor dem oberen Totpunkt im Verdichtungstakt | Genau im unteren Totpunkt | Kurz nach dem OT im Ausstoßtakt | Im Ansaugtakt
+M Was passiert bei Zündaussetzern mit dem Katalysator? | Unverbrannter Kraftstoff verbrennt im Katalysator und kann ihn überhitzen | Der Katalysator wird gereinigt | Der Katalysator kühlt ab | Nichts
+M Was misst die Lambdasonde? | Den Restsauerstoffgehalt im Abgas | Die Abgastemperatur | Den Abgasdruck | Den Kohlenmonoxidgehalt der Ansaugluft
+M Welche Spannung gibt eine Sprung-Lambdasonde bei fettem Gemisch ungefähr ab? | ca. 0,8 V | ca. 0,1 V | ca. 5 V | ca. 12 V
+M Welche Aufgabe hat die zweite Lambdasonde nach dem Katalysator? | Sie überwacht die Funktion des Katalysators | Sie misst die Luftmasse | Sie regelt den Ladedruck | Sie misst die Öltemperatur
+M Was ist ein Regelkreis, zum Beispiel die Lambdaregelung? | Der Istwert wird gemessen, mit dem Sollwert verglichen und die Abweichung laufend ausgeregelt | Ein Wert wird einmal eingestellt und nie mehr überprüft | Ein Stromkreis ohne Sicherung | Eine Schaltung nur aus Relais
+M Wie groß ist der Kraftstoffsystemdruck bei einer Saugrohreinspritzung ungefähr? | ca. 3 bis 4 bar | ca. 0,3 bar | ca. 200 bar | ca. 2000 bar
+M Der Motor startet nicht, die Kraftstoffpumpe läuft beim Einschalten der Zündung nicht an. Was prüfst du zuerst? | Sicherung, Relais und Spannungsversorgung der Pumpe | Die Zündkerzen | Den Katalysator | Die Reifen
+# --- Diagnose, EOBD, elektrische Messungen
+M Wie geht man bei der Fehlersuche systematisch vor? | Kunden befragen, Fehlerspeicher auslesen, Messwerte prüfen, gezielt messen, dann reparieren | Zuerst alle Sensoren tauschen | Das Steuergerät tauschen und abwarten | Nur den Fehlerspeicher löschen
+M Was bedeutet ein Fehlercode, der mit P beginnt? | Der Fehler betrifft den Antrieb (Powertrain) | Der Fehler betrifft die Karosserie | Der Fehler betrifft das Fahrwerk | Der Fehler betrifft die Vernetzung
+M Was sagt ein Fehlerspeichereintrag wie „Signal unplausibel“ aus? | Der Messwert passt nicht zu den anderen Werten, die Ursache muss erst gesucht werden | Das genannte Bauteil ist sicher defekt | Das Steuergerät ist defekt | Der Fehler ist bereits behoben
+M Was sind Freeze-Frame-Daten (Umgebungsdaten)? | Betriebsdaten, die beim Auftreten des Fehlers gespeichert wurden | Die Daten der letzten Inspektion | Die Fahrgestellnummer | Der Kilometerstand beim Kauf
+M Wozu dient die Stellglieddiagnose? | Das Steuergerät steuert Aktoren gezielt an, um ihre Funktion zu prüfen | Sie löscht den Fehlerspeicher | Sie misst den Reifendruck | Sie stellt das Serviceintervall zurück
+M Wie prüft man eine Leitung auf Unterbrechung? | Spannungsfrei mit der Widerstands- bzw. Durchgangsmessung zwischen beiden Enden | Mit der Strommessung parallel zur Batterie | Mit dem Abgastester | Durch Ziehen am Kabel bei laufendem Motor
+M Was zeigt eine Spannungsfallmessung an einer Masseleitung unter Last, wenn der Wert zu hoch ist? | Einen zu hohen Übergangswiderstand, z. B. durch Korrosion | Eine besonders gute Verbindung | Eine volle Batterie | Einen Kurzschluss nach Plus
+M Woraus liest man ab, an welchem Pin des Steuergeräts ein Sensor angeschlossen ist? | Aus dem Stromlaufplan (Schaltplan) | Aus dem Wartungsplan | Aus der Reifentabelle | Aus dem Serviceheft
+R Nach der Reparatur wird der Fehlerspeicher gelöscht und nach einer Probefahrt erneut ausgelesen.
+F Ein im Fehlerspeicher genanntes Bauteil wird immer sofort ohne weitere Prüfung ersetzt. || Der Eintrag zeigt nur den betroffenen Stromkreis. Leitung, Stecker und Versorgung müssen geprüft werden.
+# --- ABS und ESP
+M Welche Aufgabe hat das ABS? | Es verhindert das Blockieren der Räder, das Fahrzeug bleibt lenkbar | Es verkürzt den Bremsweg auf jedem Untergrund auf die Hälfte | Es verstärkt die Fußkraft | Es bremst nur die Hinterräder
+M Welche Sensoren braucht das ABS vor allem? | Raddrehzahlsensoren | Klopfsensoren | Lambdasonden | Öldruckschalter
+M Welche drei Druckphasen regelt das ABS-Hydraulikaggregat? | Druck aufbauen, Druck halten, Druck abbauen | Ansaugen, Verdichten, Ausstoßen | Laden, Halten, Entladen | Öffnen, Zünden, Schließen
+M Wie greift das ESP ein, wenn das Fahrzeug auszubrechen droht? | Es bremst gezielt einzelne Räder ab und nimmt bei Bedarf Motorleistung zurück | Es schaltet den Motor ab | Es lenkt selbstständig gegen | Es löst alle Bremsen
+F Bei leuchtender ABS-Kontrollleuchte ist auch die normale Betriebsbremse ohne Funktion. || Die Betriebsbremse arbeitet weiter, nur die ABS-Regelung ist abgeschaltet.

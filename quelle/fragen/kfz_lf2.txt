@@ -1,0 +1,109 @@
+# LF 2 Verschleißbehaftete Fahrzeugsysteme reparieren und Komponenten austauschen (1. Klasse KFZ)
+# --- Bremsanlage
+M Nach welchem Prinzip arbeitet die hydraulische Bremsanlage? | Druck breitet sich in einer Flüssigkeit nach allen Seiten gleich aus | Flüssigkeiten lassen sich stark zusammendrücken | Luft überträgt die Kraft auf die Räder | Ein Seilzug verbindet Pedal und Radbremse
+M Welches Bauteil erzeugt den hydraulischen Druck in der Bremsanlage? | Der Hauptbremszylinder | Der Bremskraftverstärker | Die Bremsscheibe | Der Ausgleichsbehälter
+M Welche Aufgabe hat der Bremskraftverstärker? | Er verstärkt die Fußkraft des Fahrers | Er verteilt die Bremskraft auf die Achsen | Er verhindert das Blockieren der Räder | Er kühlt die Bremsflüssigkeit
+M Womit arbeitet der übliche Bremskraftverstärker beim Ottomotor? | Mit Unterdruck aus dem Saugrohr oder einer Vakuumpumpe | Mit Überdruck aus dem Reifen | Mit Motoröldruck | Mit Kühlmitteldruck
+M Warum ist die Bremsanlage in zwei Bremskreise aufgeteilt? | Fällt ein Kreis aus, bremst der andere noch | Damit die Beläge langsamer verschleißen | Damit das Pedal leichter geht | Damit weniger Flüssigkeit nötig ist
+M Was drückt bei der Scheibenbremse die Beläge an die Scheibe? | Der Bremskolben im Bremssattel | Die Rückholfeder | Der Radbremszylinder mit Backen | Das Handbremsseil allein
+M Woran erkennt man verschlissene Bremsscheiben? | Mindestdicke unterschritten, tiefe Riefen, Grat am Rand | An der Farbe der Felge | Am Reifendruck | Am Stand der Bremsflüssigkeit allein
+M Womit misst man die Dicke einer Bremsscheibe? | Mit dem Bremsscheiben-Messschieber oder der Messschraube | Mit dem Stahlmaßstab | Mit der Fühlerlehre | Mit dem Gliedermaßstab
+R Bremsbeläge werden immer achsweise, also links und rechts gemeinsam, erneuert. || Sonst bremst das Fahrzeug einseitig.
+F Bremsscheiben einer Achse dürfen einzeln erneuert werden, wenn nur eine Seite verschlissen ist. || Auch Bremsscheiben werden achsweise getauscht, damit die Bremswirkung links und rechts gleich ist.
+M Warum muss Bremsflüssigkeit regelmäßig gewechselt werden? | Sie nimmt Wasser auf, dadurch sinkt der Siedepunkt | Sie wird mit der Zeit zu dickflüssig | Sie verliert ihre Farbe | Sie greift die Bremsbeläge an
+M Was passiert, wenn Bremsflüssigkeit mit hohem Wassergehalt stark erhitzt wird? | Es bilden sich Dampfblasen, das Pedal fällt durch | Die Bremse blockiert sofort | Die Bremsscheibe schrumpft | Die Beläge werden härter
+M Womit prüft man den Zustand der Bremsflüssigkeit? | Mit einem Siedepunkt-Prüfgerät | Mit dem Refraktometer für Kühlmittel | Mit der Fühlerlehre | Mit dem Öldruckprüfer
+F Bremsflüssigkeit auf Glykolbasis (DOT 4) darf mit Mineralöl gemischt werden. || Mineralöl zerstört die Gummidichtungen der Bremsanlage.
+M Was machst du, wenn Bremsflüssigkeit auf den Lack tropft? | Sofort mit viel Wasser abwaschen | Antrocknen lassen | Mit Bremsenreiniger einreiben | Mit Schleifpapier entfernen
+M Wozu wird die Bremsanlage entlüftet? | Luft im System ist zusammendrückbar und macht das Pedal weich | Damit die Beläge schneller einlaufen | Damit die Scheiben nicht rosten | Damit die Flüssigkeit kälter bleibt
+M Warum muss vor dem Zurückdrücken der Bremskolben der Stand im Ausgleichsbehälter beachtet werden? | Die Flüssigkeit steigt und kann überlaufen | Der Behälter saugt sonst Luft an | Der Kolben klemmt sonst | Das ABS schaltet sich sonst ab
+M Was ist nach dem Einbau neuer Bremsbeläge vor der Probefahrt zu tun? | Das Bremspedal mehrmals betätigen, bis die Beläge anliegen | Die Räder auswuchten | Die Bremsflüssigkeit ablassen | Den Fehlerspeicher löschen
+M Was sind typische Bauteile einer Trommelbremse? | Bremsbacken, Radbremszylinder, Rückzugfedern | Bremssattel und Bremsklötze | Bremsscheibe und Staubblech | Belagverschleißsensor und Sattelhalter
+R Neue Bremsbeläge und Bremsscheiben müssen eingefahren werden und haben anfangs noch nicht die volle Wirkung.
+M Was kann die Ursache für Lenkradflattern beim Bremsen sein? | Ungleichmäßig dicke oder verzogene Bremsscheiben | Zu viel Bremsflüssigkeit | Neue Bremsbeläge | Zu hoher Reifendruck hinten
+M Das Fahrzeug zieht beim Bremsen nach einer Seite. Was ist eine mögliche Ursache? | Ein festsitzender Bremskolben oder ein verölter Belag auf einer Seite | Zu neue Bremsflüssigkeit | Ein zu großer Ausgleichsbehälter | Ein neuer Bremskraftverstärker
+M Wozu dient der Belagverschleißanzeiger? | Er meldet dem Fahrer, dass die Beläge erneuert werden müssen | Er misst die Bremsscheibentemperatur | Er regelt den Bremsdruck | Er zeigt den Stand der Bremsflüssigkeit
+F Bremsenstaub darf mit Druckluft ausgeblasen werden. || Der Staub ist gesundheitsschädlich. Er wird mit Bremsenreiniger gebunden oder abgesaugt.
+M Welche Bremsflüssigkeit wird nachgefüllt? | Nur die vom Hersteller vorgeschriebene Spezifikation, z. B. DOT 4 | Jede beliebige, Hauptsache neu | Hydrauliköl aus dem Wagenheber | Destilliertes Wasser
+N Ein Bremspedal hat eine Hebelübersetzung von 4. Der Fahrer tritt mit 200 N. Welche Kraft wirkt auf die Kolbenstange? | 800 | N | 0 || F2 = F1 · i = 200 N · 4 >> Kraft mal Übersetzung
+Z Ordne das Bauteil seiner Aufgabe in der Bremsanlage zu. | Hauptbremszylinder = Erzeugt den hydraulischen Druck | Bremskraftverstärker = Verstärkt die Fußkraft | Bremssattel = Presst die Beläge an die Scheibe | Ausgleichsbehälter = Speichert die Bremsflüssigkeit
+M Welche Wirkung hat die Feststellbremse? | Sie sichert das stehende Fahrzeug gegen Wegrollen | Sie verstärkt die Betriebsbremse bei Vollbremsung | Sie verhindert das Blockieren der Vorderräder | Sie kühlt die Hinterradbremsen
+# --- Abgasanlage
+M Welche Aufgabe hat der Schalldämpfer? | Er verringert das Abgasgeräusch | Er reinigt das Abgas von Schadstoffen | Er erhöht die Abgastemperatur | Er misst den Restsauerstoff
+M Welche Aufgabe hat der Katalysator? | Er wandelt Schadstoffe im Abgas in weniger schädliche Stoffe um | Er dämpft den Schall | Er kühlt das Abgas | Er erhöht die Motorleistung
+M Welche drei Schadstoffe wandelt der Dreiwegekatalysator um? | CO, HC und NOx | CO2, H2O und N2 | Ruß, Schwefel und Blei | O2, N2 und Argon
+M In welcher Reihenfolge sitzen die Teile der Abgasanlage vom Motor aus gesehen? | Krümmer – Katalysator – Vorschalldämpfer – Nachschalldämpfer | Nachschalldämpfer – Krümmer – Katalysator – Vorschalldämpfer | Katalysator – Krümmer – Nachschalldämpfer – Vorschalldämpfer | Vorschalldämpfer – Nachschalldämpfer – Krümmer – Katalysator
+M Woran erkennt man eine undichte Abgasanlage? | Lauteres Abgasgeräusch und Rußspuren an der undichten Stelle | Der Motor verbraucht kein Öl mehr | Die Bremse wird weich | Das Kühlmittel wird braun
+M Wozu dienen die Gummiaufhängungen der Abgasanlage? | Sie halten die Anlage und lassen Bewegungen zu, ohne Schwingungen zu übertragen | Sie dichten die Rohrverbindungen ab | Sie kühlen den Schalldämpfer | Sie leiten Abgas ab
+M Warum rosten Nachschalldämpfer bei Kurzstreckenbetrieb oft von innen durch? | Kondenswasser verdampft nicht und bildet mit Abgasbestandteilen Säure | Der Schalldämpfer wird zu heiß | Es gelangt Motoröl in den Schalldämpfer | Der Fahrtwind fehlt
+M Was kann den Katalysator zerstören? | Zündaussetzer, weil unverbrannter Kraftstoff im Katalysator verbrennt | Zu niedrige Drehzahl | Fahren bei Regen | Ein neuer Luftfilter
+R Die Keramik im Katalysator ist stoßempfindlich und kann bei Schlägen brechen.
+M Was ist vor Schweißarbeiten am Fahrzeug zu beachten? | Brennbare Teile entfernen oder abdecken, Batterie abklemmen, Löschmittel bereitstellen | Den Motor laufen lassen | Den Tank ganz füllen | Die Zündung einschalten
+M Wo wird die Masseklemme beim Schweißen am Fahrzeug angebracht? | Möglichst nahe an der Schweißstelle | An der Batterie | Am Lenkrad | Am gegenüberliegenden Rad
+M Welche Schutzausrüstung braucht man beim Schutzgasschweißen? | Schweißschild, Schweißerhandschuhe und schwer entflammbare Kleidung | Nur eine Sonnenbrille | Nur Gehörschutz | Keine, das Licht ist ungefährlich
+F Abgase dürfen bei laufendem Motor in der geschlossenen Werkstatt frei ausströmen. || Abgas enthält giftiges Kohlenmonoxid. Es muss über die Absauganlage abgeführt werden.
+# --- Fahrwerk: Federn und Schwingungsdämpfer
+M Welche Aufgabe haben die Fahrwerksfedern? | Sie tragen das Fahrzeug und nehmen Fahrbahnstöße auf | Sie dämpfen die Schwingungen | Sie lenken die Räder | Sie übertragen die Bremskraft
+M Welche Aufgabe hat der Schwingungsdämpfer (Stoßdämpfer)? | Er dämpft die Schwingungen von Feder und Rad | Er trägt das Fahrzeuggewicht | Er lenkt die Räder | Er überträgt die Antriebskraft
+M In welche Energieform wandelt der Schwingungsdämpfer die Schwingungsenergie um? | In Wärme | In elektrische Energie | In Druckluft | In Bewegungsenergie des Rades
+M Woran erkennt man einen defekten Schwingungsdämpfer? | Ölverlust, Nachschwingen der Karosserie, Auswaschungen am Reifen | Blaue Abgasfahne | Hoher Kraftstoffverbrauch | Schwergängige Kupplung
+R Schwingungsdämpfer werden achsweise erneuert.
+M Welches Werkzeug braucht man zum Zerlegen eines Federbeins? | Einen Federspanner | Einen Abzieher für Kugelgelenke | Eine Fühlerlehre | Einen Gewindebohrer
+M Warum ist das Zerlegen eines Federbeins gefährlich? | Die vorgespannte Feder speichert viel Energie und kann herausschnellen | Das Dämpferöl ist giftig | Die Feder steht unter Strom | Der Dämpfer steht unter Unterdruck
+M Was bedeutet McPherson-Federbein? | Der Dämpfer führt das Rad mit, die Feder sitzt auf dem Dämpfer | Die Feder liegt quer unter dem Fahrzeug | Es gibt keinen Dämpfer | Die Achse ist starr
+M Welche Folge haben verschlissene Schwingungsdämpfer für die Fahrsicherheit? | Längerer Bremsweg und schlechtere Bodenhaftung | Kürzerer Bremsweg | Höhere Motorleistung | Geringerer Reifenverschleiß
+M Wozu dient der Stabilisator am Fahrwerk? | Er verringert die Seitenneigung der Karosserie in Kurven | Er dämpft das Abgasgeräusch | Er hält die Spur beim Bremsen | Er trägt das Fahrzeuggewicht
+N Eine Fahrwerksfeder federt bei 2000 N Belastung um 50 mm ein. Wie groß ist die Federrate in N/mm? | 40 | N/mm | 0 || c = F / s = 2000 N / 50 mm >> Federrate = Kraft geteilt durch Federweg
+# --- Gelenke, Manschetten, Lenkung, Radaufhängung
+M Was passiert bei einer gerissenen Achsmanschette der Antriebswelle? | Fett tritt aus, Schmutz dringt ein, das Gelenk verschleißt | Der Motor überhitzt | Die Bremse blockiert | Die Batterie entlädt sich
+M Woran erkennt man ein verschlissenes äußeres Antriebswellengelenk? | Knackgeräusche bei eingeschlagener Lenkung unter Last | Quietschen beim Bremsen | Pfeifen im Leerlauf | Flackern der Scheinwerfer
+M Welche Aufgabe haben Gleichlaufgelenke an der Antriebswelle? | Sie übertragen das Drehmoment gleichmäßig auch bei Beugewinkel | Sie dämpfen Fahrbahnstöße | Sie trennen Motor und Getriebe | Sie halten das Rad in der Spur
+M Welche Aufgabe hat das Spurstangengelenk? | Es überträgt die Lenkbewegung von der Spurstange auf den Achsschenkel | Es trägt das Fahrzeuggewicht | Es überträgt das Antriebsmoment | Es dämpft Schwingungen
+M Wie prüft man das Spiel eines Spurstangengelenks? | Rad anheben, seitlich links und rechts fassen und hin- und herbewegen | Reifendruck messen | Bremspedal treten | Motor im Leerlauf laufen lassen
+M Was ist nach dem Tausch eines Spurstangenkopfs nötig? | Die Spur vermessen und einstellen | Die Bremsanlage entlüften | Die Räder neu auswuchten | Das Kühlmittel wechseln
+M Welche Aufgabe haben Silentbuchsen (Gummi-Metall-Lager)? | Sie lagern Fahrwerksteile elastisch und dämpfen Schwingungen und Geräusche | Sie dichten die Bremskolben ab | Sie schmieren die Lenkung | Sie leiten Strom zur Masse
+M Wie werden Silentbuchsen fachgerecht gewechselt? | Mit Presse oder Ein- und Auspresswerkzeug | Mit Hammer und Meißel | Mit dem Schweißbrenner | Mit der Rohrzange
+R Selbstsichernde Muttern an Fahrwerk und Lenkung werden nach dem Lösen grundsätzlich erneuert.
+M Wozu dient ein Kugelgelenk-Abzieher? | Er drückt den Kegelzapfen des Gelenks aus seinem Sitz, ohne Teile zu beschädigen | Er zieht Radlager auf | Er spannt die Feder | Er misst das Gelenkspiel
+M Was deutet auf ein defektes Radlager hin? | Brummgeräusch, das sich mit der Geschwindigkeit und in Kurven ändert | Quietschen nur beim Rückwärtsfahren | Zischen beim Bremsen | Klackern im Stand
+M Wie repariert man ein ausgerissenes Gewinde in einem Aluminiumgehäuse fachgerecht? | Mit einem Gewindeeinsatz, z. B. Drahtgewindeeinsatz | Mit einer längeren Schraube und viel Kraft | Mit Klebeband um die Schraube | Mit einer Holzschraube
+M Welche Dichtung dichtet eine drehende Welle nach außen ab? | Der Radialwellendichtring | Die Flachdichtung | Der Kupferring | Die Papierdichtung
+M Was ist beim Einbau eines Wellendichtrings zu beachten? | Dichtlippe leicht ölen und den Ring gerade und ohne Beschädigung einpressen | Dichtlippe trocken lassen und anschleifen | Den Ring mit dem Hammer direkt einschlagen | Die Feder der Dichtlippe entfernen
+F Flachdichtungen und O-Ringe können nach dem Ausbau in der Regel wiederverwendet werden. || Dichtungen verformen sich und werden grundsätzlich erneuert.
+Z Ordne das Schadensbild der wahrscheinlichen Ursache zu. | Knacken bei Kurvenfahrt = Antriebswellengelenk | Brummen je nach Tempo = Radlager | Poltern auf schlechter Straße = Ausgeschlagene Gelenke oder Koppelstangen | Nachschwingen nach Bodenwellen = Schwingungsdämpfer
+# --- Werkstoffe: Nichteisenmetalle und Kunststoffe
+M Welcher Werkstoff wird wegen seiner guten Leitfähigkeit für elektrische Leitungen verwendet? | Kupfer | Blei | Grauguss | Stahl
+M Warum werden viele Fahrwerks- und Motorteile aus Aluminiumlegierungen gefertigt? | Sie sind deutlich leichter als Stahl | Sie sind härter als gehärteter Stahl | Sie sind magnetisch | Sie rosten schneller
+M Was ist Messing? | Eine Legierung aus Kupfer und Zink | Eine Legierung aus Eisen und Kohlenstoff | Reines Kupfer | Eine Legierung aus Aluminium und Blei
+M Was ist ein Thermoplast? | Ein Kunststoff, der bei Wärme weich wird und sich wieder verformen lässt | Ein Kunststoff, der nach dem Aushärten nicht mehr schmilzt | Ein gummielastischer Kunststoff | Ein Metall mit Kunststoffüberzug
+M Zu welcher Kunststoffgruppe gehört der Gummi eines Reifens? | Elastomere | Thermoplaste | Duroplaste | Leichtmetalle
+M Was versteht man unter Kontaktkorrosion? | Zwei verschiedene Metalle berühren sich unter Feuchtigkeit, das unedlere wird zerstört | Zwei gleiche Metalle reiben aneinander | Kunststoff löst sich in Öl auf | Lack blättert durch Hitze ab
+# --- Starter, Generator, Riementrieb
+M Welche Aufgabe hat der Starter? | Er dreht den Motor auf die nötige Startdrehzahl | Er lädt die Batterie | Er erzeugt den Zündfunken | Er treibt die Kühlmittelpumpe an
+M Welche Aufgabe hat der Generator (Lichtmaschine)? | Er versorgt das Bordnetz und lädt die Batterie bei laufendem Motor | Er startet den Motor | Er speichert elektrische Energie | Er wandelt Gleichstrom in Wechselstrom für das Radio
+M Welche Ladespannung liefert der Generator im 12-V-Bordnetz ungefähr? | ca. 13,8 V bis 14,5 V | ca. 11 V bis 12 V | ca. 16 V bis 18 V | ca. 24 V
+M Was zeigt die Ladekontrollleuchte an, wenn sie bei laufendem Motor leuchtet? | Der Generator lädt die Batterie nicht | Die Batterie ist voll | Der Starter läuft noch | Das Licht ist eingeschaltet
+M Was ist vor dem Ausbau von Starter oder Generator immer zu tun? | Das Massekabel der Batterie abklemmen | Den Motor warmfahren | Das Kühlmittel ablassen | Die Räder abnehmen
+M Was treibt der Keilrippenriemen typischerweise an? | Generator, Klimakompressor und je nach Motor Kühlmittel- oder Lenkhilfepumpe | Die Nockenwelle | Die Ölpumpe im Motor | Die Antriebswellen
+M Woran erkennt man einen verschlissenen Keilrippenriemen? | Risse, ausgefranste Kanten, Quietschen beim Start | Blaue Verfärbung der Riemenscheibe | Wasser im Motoröl | Hoher Reifenverschleiß
+M Welche Aufgabe hat der Einrückmagnet (Magnetschalter) am Starter? | Er spurt das Ritzel ein und schaltet den Hauptstrom | Er lädt die Batterie | Er regelt die Generatorspannung | Er zündet das Gemisch
+M Was macht der Regler am Generator? | Er hält die Bordnetzspannung konstant | Er regelt die Motordrehzahl | Er schaltet den Starter ab | Er begrenzt die Batterietemperatur
+R Im Generator wird Wechselstrom erzeugt, der durch Dioden gleichgerichtet wird.
+M Der Starter dreht den Motor nur langsam durch. Was prüfst du zuerst? | Ladezustand der Batterie und Zustand der Anschlüsse | Den Reifendruck | Die Zündkerzen | Den Kühlmittelstand
+N Ein Starter nimmt bei 12 V einen Strom von 150 A auf. Wie groß ist die aufgenommene Leistung in Watt? | 1800 | W | 0 || P = U · I = 12 V · 150 A >> P = U · I
+# --- Sensoren, Aktoren, Steckverbindungen
+M Was ist ein Sensor? | Ein Bauteil, das eine physikalische Größe erfasst und als elektrisches Signal liefert | Ein Bauteil, das Befehle des Steuergeräts ausführt | Ein Speicher für Fehlercodes | Eine Sicherung
+M Was ist ein Aktor? | Ein Stellglied, das Befehle des Steuergeräts ausführt, z. B. ein Einspritzventil | Ein Bauteil, das Messwerte liefert | Ein Kabelbaum | Ein Diagnosestecker
+M Was ist beim Trennen einer elektrischen Steckverbindung zu beachten? | Zündung aus, Verriegelung lösen und am Stecker ziehen, nicht am Kabel | Bei laufendem Motor kräftig am Kabel ziehen | Den Stecker mit der Zange abdrehen | Den Stecker vorher mit Wasser spülen
+M Was ist eine häufige Ursache für Kontaktprobleme an Steckverbindungen? | Korrosion durch eingedrungene Feuchtigkeit | Zu dicke Kabel | Zu neue Batterie | Zu niedrige Außentemperatur
+Z Ordne die Bauteile richtig zu. | Kühlmitteltemperaturfühler = Sensor | Einspritzventil = Aktor | Raddrehzahlfühler = Sensor am Rad | Kraftstoffpumpe = Aktor im Tank
+# --- Verschleiß, zeitwertgerechte Reparatur, Unfallverhütung
+Z Ordne die Verschleißursache dem Beispiel zu. | Reibung = Abgenutzte Bremsbeläge | Temperatureinfluss = Verglaste Bremsbeläge durch Überhitzung | Mechanische Überbeanspruchung = Gebrochene Fahrwerksfeder | Korrosion = Durchgerosteter Schalldämpfer
+M Was verringert den Verschleiß durch Reibung? | Schmierung | Höhere Temperatur | Mehr Anpressdruck | Trockenlauf
+M Was versteht man unter einer zeitwertgerechten Reparatur? | Eine Reparatur, deren Kosten zum Restwert des Fahrzeugs passen, z. B. mit Austausch- oder Gebrauchtteilen | Eine Reparatur ausschließlich mit den teuersten Originalteilen | Eine Reparatur ohne Rechnung | Eine Reparatur, die möglichst lange dauert
+M Was ist ein Austauschteil? | Ein vom Hersteller oder Fachbetrieb aufgearbeitetes Altteil mit Gewährleistung | Ein beliebiges Teil vom Schrottplatz ohne Prüfung | Ein Teil, das nur geliehen wird | Ein Neuteil eines anderen Fahrzeugtyps
+M Dürfen sicherheitsrelevante Teile wie Bremsschläuche behelfsmäßig geflickt werden? | Nein, sie werden nach Herstellervorgabe erneuert | Ja, mit Isolierband | Ja, wenn der Kunde es wünscht | Ja, wenn es schnell gehen muss
+M Wie geht man bei der Suche nach einem Klappergeräusch sinnvoll vor? | Geräusch bei einer Probefahrt eingrenzen, dann lose Teile, Hitzeschilde und Aufhängungen prüfen | Sofort die Schwingungsdämpfer tauschen | Das Radio lauter stellen | Alle Schrauben am Fahrzeug nachziehen
+R Verschleiß ist der fortschreitende Materialverlust an der Oberfläche eines Bauteils durch mechanische Beanspruchung.
+M Woher bekommst du Anzugsmomente und Arbeitsschritte für eine Reparatur? | Aus der Reparaturanleitung des Herstellers | Aus dem Gefühl | Aus der Betriebsanleitung des Radios | Vom Kunden
+F Unfallverhütungsvorschriften gelten nur für Lehrlinge. || Sie gelten für alle Beschäftigten im Betrieb.

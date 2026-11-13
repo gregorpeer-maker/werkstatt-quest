@@ -1,0 +1,109 @@
+# LF 5 Energieversorgung, Hochvolt, Sicherheitssysteme und Diesel (3. Klasse KFZ)
+# --- Hochvolt: Gefahren, Sicherheitsregeln, Freischalten
+M Ab welcher Gleichspannung spricht man im Kfz von Hochvolt? | über 60 V | über 12 V | über 24 V | über 1000 V
+M Ab welcher Wechselspannung spricht man im Kfz von Hochvolt? | über 30 V | über 12 V | über 230 V | über 400 V
+M Welche Farbe haben Hochvoltleitungen im Fahrzeug? | Orange | Blau | Grün-Gelb | Schwarz
+M Welche Gefahren gehen von einer Hochvoltanlage aus? | Körperdurchströmung, Störlichtbogen und Brand | Nur Lärm | Nur schlechter Geruch | Nur Rost an der Karosserie
+M Wer darf an Hochvoltanlagen von Fahrzeugen arbeiten? | Nur Personen mit der dafür vorgeschriebenen Qualifikation | Jeder Lehrling ab dem ersten Tag | Jeder mit Führerschein | Jeder Kunde am eigenen Fahrzeug
+M Wie heißen die Qualifikationsstufen für elektrische Arbeiten in Italien nach der Norm CEI 11-27? | PES, PAV und PEI | ABS, ESP und ASR | LIN, CAN und MOST | DOT 3, DOT 4 und DOT 5
+Z Ordne die ersten vier der 5 Sicherheitsregeln in der richtigen Reihenfolge zu. | 1. Regel = Freischalten | 2. Regel = Gegen Wiedereinschalten sichern | 3. Regel = Spannungsfreiheit feststellen | 4. Regel = Erden und kurzschließen || 5. Regel: Benachbarte, unter Spannung stehende Teile abdecken oder abschranken.
+M Welche drei Schritte sind beim Freischalten eines Hochvoltfahrzeugs immer nötig? | Freischalten, gegen Wiedereinschalten sichern, Spannungsfreiheit feststellen | Motor starten, Gang einlegen, Handbremse lösen | Batterie laden, Zündung ein, Licht an | Räder abnehmen, Öl ablassen, Kühler ausbauen
+M Was ist die Aufgabe des Service-Disconnect (Wartungsstecker)? | Er trennt den Hochvoltkreis für Arbeiten am Fahrzeug | Er lädt die 12-V-Batterie | Er schaltet das Radio aus | Er startet den Verbrennungsmotor
+M Wie sichert man ein freigeschaltetes HV-Fahrzeug gegen Wiedereinschalten? | Wartungsstecker und Zündschlüssel sicher verwahren, Fahrzeug kennzeichnen | Die Motorhaube schließen | Einen Zettel an den Reifen kleben | Das Fahrzeug in die Sonne stellen
+M Warum muss nach dem Freischalten eine Wartezeit eingehalten werden? | Die Kondensatoren der Leistungselektronik müssen sich erst entladen | Die Batterie muss abkühlen | Der Motor muss ausrollen | Das Kühlmittel muss sich setzen
+M Womit wird die Spannungsfreiheit festgestellt? | Mit einem geeigneten zweipoligen Spannungsprüfer bzw. dem vorgeschriebenen Messgerät | Mit dem Handrücken | Mit einer 12-V-Prüflampe | Mit dem Schraubendreher
+M Wie geht man beim Feststellen der Spannungsfreiheit richtig vor? | Prüfgerät an bekannter Spannungsquelle testen, messen, danach das Prüfgerät erneut testen | Einmal kurz messen genügt | Nur die Kontrollleuchte im Kombiinstrument ansehen | Auf die Aussage des Kunden vertrauen
+M Was ist die Pilotlinie (Sicherheitslinie, Interlock)? | Eine Überwachungsschleife: Wird ein HV-Stecker oder Deckel geöffnet, schaltet das System die Hochspannung ab | Die Fahrspurerkennung der Kamera | Eine Markierung auf dem Werkstattboden | Die Ladeleitung zur Wallbox
+M Welche Bauteile trennen die HV-Batterie vom übrigen Hochvoltnetz? | Die Schütze (Relais) in der Batterie | Die Zündkerzen | Die Radbremszylinder | Die Sicherungen der Innenbeleuchtung
+M Welche persönliche Schutzausrüstung braucht man beim Feststellen der Spannungsfreiheit? | Isolierende Schutzhandschuhe und Gesichtsschutz | Nur Gehörschutz | Nur eine Staubmaske | Keine
+R Ein Hochvoltfahrzeug, an dem gearbeitet wird, wird gekennzeichnet und der Arbeitsplatz abgesperrt.
+F Die 12-V-Batterie eines Hybridfahrzeugs gehört zum Hochvoltsystem und hat orange Leitungen. || Das 12-V-Bordnetz ist ein eigenes Niedervoltnetz.
+F Bei ausgeschalteter Zündung ist die HV-Batterie selbst spannungsfrei. || Die Batterie steht immer unter Spannung. Freischalten trennt nur das übrige HV-Netz von der Batterie.
+M Was machst du, wenn eine Person an einer spannungsführenden Anlage hängt? | Selbstschutz beachten, Anlage abschalten oder die Person mit isolierendem Hilfsmittel trennen, Notruf absetzen | Die Person sofort mit bloßen Händen wegziehen | Wasser darüber schütten | Abwarten, bis die Batterie leer ist
+# --- Hochvolt: Komponenten und Isolationsprüfung
+M Welche Aufgabe hat der Wechselrichter (Leistungselektronik)? | Er wandelt die Gleichspannung der Batterie in Drehstrom für die E-Maschine um | Er lädt die 12-V-Batterie über den Keilriemen | Er kühlt die Batterie | Er misst den Isolationswiderstand
+M Welches Bauteil versorgt im Elektro- und Hybridfahrzeug das 12-V-Bordnetz? | Der DC/DC-Wandler | Ein Generator am Keilrippenriemen | Der Wechselrichter | Der Onboard-Lader
+M Was bedeutet Rekuperation? | Rückgewinnung von Bremsenergie: Die E-Maschine arbeitet als Generator | Schnelles Laden an der Ladesäule | Kühlung der Hochvoltbatterie | Abschaltung des Motors im Stand
+M Was misst die Isolationsprüfung am Hochvoltsystem? | Den Isolationswiderstand zwischen HV-Leitern und der Fahrzeugmasse | Die Kapazität der Batterie | Die Ladeleistung | Die Temperatur der E-Maschine
+M Warum genügt ein normales Multimeter für die Isolationsprüfung nicht? | Es misst nur mit kleiner Spannung, Isolationsfehler zeigen sich erst bei hoher Prüfspannung | Es ist zu genau | Es hat zu lange Messleitungen | Es misst nur Wechselspannung
+M Was macht der Isolationswächter im Fahrzeug? | Er überwacht im Betrieb laufend den Isolationswiderstand und meldet Fehler | Er lädt die Batterie | Er schaltet die Klimaanlage | Er zählt die Ladezyklen
+M Wozu dient der Potenzialausgleich an HV-Komponenten? | Alle Gehäuse sind leitend mit der Karosserie verbunden, damit keine gefährliche Berührungsspannung entsteht | Er erhöht die Reichweite | Er kühlt die Leistungselektronik | Er verbindet Plus und Minus der Batterie
+R Der Isolationswiderstand eines HV-Systems muss möglichst hoch sein.
+M Welche Batterietechnik wird in heutigen Elektrofahrzeugen als Antriebsbatterie überwiegend verwendet? | Lithium-Ionen | Blei-Säure | Nickel-Cadmium | Zink-Kohle
+# --- Energieversorgung: Batterie, Generator, Bordnetz, Ruhestrom
+M Welche Batterie wird bei Fahrzeugen mit Start-Stopp-System verwendet? | AGM- oder EFB-Batterie | Eine einfache Nassbatterie ohne Kennzeichnung | Eine Knopfzelle | Eine Lithium-Ionen-Hochvoltbatterie
+M Was ist nach dem Tausch der Batterie bei Fahrzeugen mit Energiemanagement nötig? | Die neue Batterie im Steuergerät anmelden (anlernen) | Den Generator tauschen | Die Reifen wechseln | Nichts
+M Wo sitzt der Batteriesensor und was misst er? | Am Minuspol: Strom, Spannung und Temperatur der Batterie | Am Pluspol: nur die Säuredichte | Im Kombiinstrument: nur die Uhrzeit | Am Generator: nur die Drehzahl
+M Was macht das Energiemanagement bei schwacher Batterie? | Es schaltet Komfortverbraucher stufenweise ab und kann die Leerlaufdrehzahl anheben | Es schaltet die Bremsen ab | Es öffnet die Fenster | Es entlädt die Batterie schneller
+M Was ist der Ruhestrom? | Der Strom, der bei abgestelltem und verriegeltem Fahrzeug aus der Batterie fließt | Der Strom beim Starten | Der Ladestrom des Generators | Der Strom der Zündspule
+M Welcher Ruhestrom gilt bei einem Pkw nach dem Einschlafen der Steuergeräte als normal? | Wenige zehn Milliampere, etwa unter 50 mA | Etwa 5 A | Etwa 20 A | Genau 0 A
+M Was ist bei der Ruhestrommessung zu beachten? | Abwarten, bis die Steuergeräte eingeschlafen sind, und den Stromkreis dabei nicht unterbrechen | Sofort nach dem Abstellen messen | Bei laufendem Motor messen | Die Türen offen lassen
+M Wie grenzt man einen zu hohen Ruhestrom ein? | Sicherungen einzeln ziehen oder den Spannungsfall an den Sicherungen messen | Die Batterie tauschen | Alle Glühlampen wechseln | Den Motor warmfahren
+N Eine 70-Ah-Batterie wird durch einen Ruhestrom von 0,5 A entladen. Nach wie vielen Stunden ist sie rechnerisch leer? | 140 | h | 0 || t = Q / I = 70 Ah / 0,5 A >> t = Q / I
+M Welche Stromart erzeugt der Generator in seiner Ständerwicklung? | Dreiphasen-Wechselstrom (Drehstrom) | Gleichstrom | Einphasigen Wechselstrom mit 230 V | Impulsstrom
+M Was macht die Diodenbrücke im Generator? | Sie richtet den Drehstrom in Gleichstrom um | Sie regelt die Spannung | Sie startet den Motor | Sie schützt vor Überdrehzahl
+M Wie regelt der Generatorregler die Spannung? | Er verändert den Erregerstrom im Läufer | Er verändert die Motordrehzahl | Er schaltet Verbraucher ab | Er kühlt die Dioden
+M Was zeigt eine starke Welligkeit der Ladespannung auf dem Oszilloskop an? | Eine defekte Diode im Gleichrichter | Eine volle Batterie | Einen neuen Keilrippenriemen | Einen defekten Starter
+M Welche Aufgabe hat der Freilauf an der Generator-Riemenscheibe? | Er entkoppelt den Generator von den Drehungleichförmigkeiten des Motors | Er lädt die Batterie schneller | Er startet den Motor | Er kühlt den Regler
+M Auf welchen Wert darf die Batteriespannung beim Starten ungefähr nicht absinken? | Nicht deutlich unter etwa 9 bis 10 V | Nicht unter 13 V | Nicht unter 5 V | Sie darf beliebig absinken
+M Wie misst man den Spannungsfall in der Starter-Hauptleitung? | Beim Starten mit dem Voltmeter zwischen Batterie-Plus und Starterklemme 30 | Bei ausgebauter Batterie mit dem Ohmmeter | Mit dem Amperemeter parallel zur Batterie | Mit der Prüflampe am Zündschloss
+R Lange Standzeiten und viele Kurzstrecken belasten die Batterie, weil sie nicht ausreichend nachgeladen wird.
+F Der Generator lädt die Batterie mit Wechselstrom. || Die Batterie kann nur mit Gleichstrom geladen werden, deshalb wird gleichgerichtet.
+# --- Airbag, Gurtstraffer, Sicherheitsbatterieklemme
+M Wodurch wird ein Airbag ausgelöst? | Durch einen pyrotechnischen Gasgenerator, den das Airbag-Steuergerät zündet | Durch Druckluft aus dem Reifen | Durch eine Feder im Lenkrad | Durch den Unterdruck des Motors
+M Was ist vor Arbeiten am Airbag-System zu tun? | Batterie abklemmen und die vom Hersteller vorgeschriebene Wartezeit einhalten | Zündung einschalten | Motor warmlaufen lassen | Airbagstecker bei eingeschalteter Zündung abziehen
+M Warum darf der Widerstand eines Airbag-Zünders nicht mit dem Multimeter gemessen werden? | Der Messstrom kann den Airbag auslösen | Der Zünder hat keinen Widerstand | Das Multimeter wird zerstört | Der Wert ist immer gleich
+M Wie wird ein ausgebautes Airbagmodul abgelegt? | Mit der Aufprallseite (Polster) nach oben | Mit der Aufprallseite nach unten | Hochkant an die Wand gelehnt | Auf die Heizung
+M Welche Aufgabe hat der Gurtstraffer? | Er zieht den Gurt beim Unfall in Millisekunden straff an den Körper | Er rollt den Gurt nach dem Aussteigen auf | Er meldet, ob der Gurt angelegt ist | Er verstellt die Gurthöhe
+M Welche Aufgabe hat die Sicherheitsbatterieklemme? | Sie trennt bei einem Unfall die Starter- und Generatorleitung von der Batterie | Sie verhindert das Tiefentladen | Sie misst den Ruhestrom | Sie lädt die Batterie nach
+M Welches Bauteil verbindet den Fahrerairbag im drehenden Lenkrad elektrisch mit dem Fahrzeug? | Die Wickelfeder (Schleifring) | Der Lenkwinkelsensor | Das Zündschloss | Die Lenksäulenverkleidung
+M Was bedeutet es, wenn die Airbag-Kontrollleuchte nach dem Motorstart dauerhaft leuchtet? | Ein Fehler im Rückhaltesystem ist erkannt, das System kann abgeschaltet sein | Der Airbag ist besonders gut geladen | Der Gurt ist angelegt | Der Service ist fällig
+R Ausgelöste Airbags und Gurtstraffer werden grundsätzlich erneuert und nicht repariert.
+F Airbagmodule dürfen wie normaler Schrott im Restmüll entsorgt werden. || Nicht ausgelöste Module sind pyrotechnische Gegenstände und werden nach Vorschrift entsorgt.
+# --- Diesel: Common Rail
+M Wie wird das Gemisch im Dieselmotor entzündet? | Der Kraftstoff entzündet sich an der hoch verdichteten, heißen Luft | Durch den Funken einer Zündkerze | Durch die Glühkerze bei jeder Einspritzung | Durch das heiße Abgas im Krümmer
+M Was ist das Besondere am Common-Rail-System? | Druckerzeugung und Einspritzung sind getrennt, der Druck steht im Rail ständig bereit | Jeder Zylinder hat eine eigene Pumpe mit Nocken | Der Kraftstoff wird ins Saugrohr gespritzt | Der Druck entsteht erst im Injektor
+M Welche Aufgabe hat das Rail? | Es speichert den Kraftstoff unter hohem Druck und gleicht Druckschwankungen aus | Es erzeugt den Hochdruck | Es misst den Raildruck | Es filtert den Kraftstoff
+M Bis zu welchem Druck fördert die Hochdruckpumpe moderner Common-Rail-Systeme? | ca. 2500 bar | ca. 7 bar | ca. 250 bar | ca. 25 000 bar
+M Welcher Sensor meldet dem Steuergerät den Druck im Rail? | Der Raildrucksensor | Der Ladedrucksensor | Der Differenzdrucksensor | Der Öldruckschalter
+M Wie kann der Raildruck geregelt werden? | Über das Druckregelventil am Rail und bzw. oder die Zumesseinheit an der Hochdruckpumpe | Über das Gaspedal direkt per Seilzug | Über den Thermostat | Über die Lambdasonde allein
+M Wie steuert das Steuergerät das Druckregelventil (DRV) an? | Mit einem PWM-Signal | Mit konstanten 12 V | Mechanisch über die Nockenwelle | Nur über den Kraftstoffdruck
+M Welche Aufgabe hat die Zumesseinheit (ZME)? | Sie dosiert die Kraftstoffmenge, die zur Hochdruckpumpe gelangt | Sie misst die Luftmasse | Sie dosiert das AdBlue | Sie regelt den Ladedruck
+M Wozu dient die Voreinspritzung? | Sie macht die Verbrennung weicher und senkt das Verbrennungsgeräusch | Sie reinigt die Düse | Sie kühlt den Kolben | Sie erhöht den Raildruck
+M Was ist nach dem Tausch eines Injektors zwingend nötig? | Den Abgleichcode (IMA-Code) des neuen Injektors ins Steuergerät eingeben | Nichts, das Steuergerät erkennt ihn selbst | Die Zumesseinheit tauschen | Das Rail erneuern || Der Code gleicht Fertigungstoleranzen aus, damit die Einspritzmenge stimmt.
+M Wie findet man einen Injektor mit zu hoher Leckmenge? | Mit der Rücklaufmengenmessung im Vergleich aller Injektoren | Mit dem Abgastester | Mit der Kompressionsprüfung | Mit der Fühlerlehre
+M Warum darf man an der Hochdruckseite nie mit der Hand nach Undichtigkeiten suchen? | Der Kraftstoffstrahl kann die Haut durchdringen und schwere Verletzungen verursachen | Der Kraftstoff ist zu kalt | Die Leitung steht unter Strom | Die Hand wird nur schmutzig
+M Was gilt für die Sauberkeit bei Arbeiten am Hochdrucksystem? | Größte Sauberkeit: geöffnete Anschlüsse sofort verschließen, nur fusselfreie Tücher | Schmutz wird vom Kraftstofffilter sicher aufgefangen | Offene Leitungen mit Druckluft ausblasen | Teile auf dem Werkstattboden ablegen
+R Vor dem Öffnen des Hochdrucksystems muss nach dem Abstellen des Motors die vorgeschriebene Wartezeit für den Druckabbau eingehalten werden.
+F Bei Piezo-Injektoren darf im Motorbetrieb der Stecker zum Zylindertest abgezogen werden. || Der Injektor kann offen stehen bleiben: Gefahr von Kraftstoffschlag und Motorschaden.
+M Welche Folge hat Wasser im Dieselkraftstoff für das Einspritzsystem? | Korrosion und Verschleiß an Hochdruckpumpe und Injektoren | Mehr Leistung | Saubere Düsen | Geringeren Verbrauch
+# --- Abgasturbolader
+M Wozu dient ein Abgasturbolader? | Er nutzt Abgasenergie, um mehr Luft in die Zylinder zu drücken | Er kühlt die Abgase vor dem Katalysator | Er reduziert den Abgaslärm | Er treibt den Generator an
+M Aus welchen zwei Hauptteilen besteht der Abgasturbolader? | Turbine im Abgasstrom und Verdichter im Ansaugtrakt auf einer gemeinsamen Welle | Kolben und Zylinder | Pumpenrad und Leitrad im Ölbad | Rotor und Stator mit Wicklung
+M Welche Aufgabe hat die variable Turbinengeometrie (VTG)? | Verstellbare Leitschaufeln passen den Ladedruck an Drehzahl und Last an | Sie kühlt die Ladeluft | Sie schmiert die Turbinenwelle | Sie filtert die Ansaugluft
+M Welche Aufgabe hat das Wastegate (Bypassventil)? | Es leitet einen Teil des Abgases an der Turbine vorbei und begrenzt so den Ladedruck | Es öffnet die Abgasrückführung | Es kühlt den Lader | Es saugt Frischluft an
+M Wozu dient der Ladeluftkühler? | Er kühlt die verdichtete Luft, dadurch steigen Dichte und Zylinderfüllung | Er kühlt das Abgas vor dem Turbolader | Er kühlt das Motoröl | Er wärmt die Ansaugluft vor
+M Wie wird die Welle des Turboladers geschmiert und gekühlt? | Mit Motoröl aus dem Ölkreislauf des Motors | Mit Fett auf Lebensdauer | Mit Dieselkraftstoff | Mit Bremsflüssigkeit
+M Was kann die Ursache für zu geringen Ladedruck sein? | Undichte Ladeluftstrecke, klemmende VTG oder defekte Ansteuerung | Zu viel Motoröl | Zu neuer Luftfilter | Zu hoher Reifendruck
+M Was deutet auf einen Lagerschaden am Turbolader hin? | Öl im Ansaug- oder Abgastrakt, blauer Rauch und Pfeifgeräusche | Weißer Belag an den Zündkerzen | Quietschende Bremsen | Flackerndes Abblendlicht
+# --- Diesel-Abgasnachbehandlung und Diesel-AU
+M Welche Bedingungen begünstigen die Bildung von Stickoxiden (NOx)? | Hohe Verbrennungstemperatur und Luftüberschuss | Niedrige Temperatur und Luftmangel | Schwefel im Kraftstoff | Kalter Motor im Leerlauf
+M Warum senkt die Abgasrückführung (AGR) die Stickoxidbildung? | Sauerstoffanteil und Verbrennungsspitzentemperatur sinken | Das Abgas verbrennt ein zweites Mal | Der Ladedruck steigt | Es wird mehr Frischluft angesaugt
+R Bei Volllast wird die Abgasrückführung abgeschaltet. || Bei Volllast wird die gesamte Frischluft für die Leistung gebraucht.
+M Was macht der Oxidationskatalysator beim Diesel? | Er oxidiert CO und HC | Er reduziert Stickoxide zu Stickstoff | Er filtert Rußpartikel | Er speichert AdBlue
+M Welche Aufgabe hat der Dieselpartikelfilter (DPF)? | Er hält Rußpartikel zurück, die später abgebrannt werden | Er wandelt NOx in Stickstoff um | Er dämpft den Schall | Er kühlt das Abgas
+M Ab welcher Temperatur verbrennt Ruß im Partikelfilter ohne Additiv? | ab ca. 600 °C | ab ca. 100 °C | ab ca. 250 °C | ab ca. 1200 °C
+M Welcher Sensor erfasst die Beladung des Partikelfilters? | Der Differenzdrucksensor | Der Raildrucksensor | Der Klopfsensor | Der Luftmassenmesser
+M Welches Fahrprofil führt häufig zu einem zugesetzten Partikelfilter? | Überwiegend Kurzstrecke, die Regeneration wird nicht abgeschlossen | Lange Autobahnfahrten | Fahrten mit Anhänger im Gebirge | Fahren mit Tempomat
+M Was bleibt nach der Regeneration im Partikelfilter zurück? | Asche, die nicht verbrennt | Ruß | Dieselkraftstoff | AdBlue
+M Woraus besteht AdBlue? | 32,5 % Harnstofflösung in Wasser | Destilliertes Wasser mit Frostschutz | Ammoniakgas | Biodiesel-Zusatz
+M Was passiert im SCR-Katalysator? | Ammoniak aus dem AdBlue reduziert Stickoxide zu Stickstoff und Wasser | Ruß wird gefiltert | CO wird zu CO2 oxidiert | Kraftstoff wird nachverbrannt
+M Warum sind Tank und Leitungen des AdBlue-Systems beheizt? | AdBlue gefriert bei etwa −11 °C | AdBlue brennt sonst | AdBlue wird sonst zu dünn | AdBlue verdampft bei 0 °C
+M Was passiert, wenn der AdBlue-Tank leer gefahren wird? | Nach Warnmeldungen lässt sich der Motor nicht mehr starten | Nichts, das System ist freiwillig | Der Motor hat mehr Leistung | Der Partikelfilter reinigt sich
+M Was wird bei der Abgasuntersuchung am Diesel gemessen? | Die Trübung des Abgases bei freier Beschleunigung | Der Lambdawert bei erhöhtem Leerlauf | Die Zündspannung | Der Kompressionsdruck
+Z Ordne das Bauteil dem Schadstoff zu, den es vor allem verringert. | Oxidationskatalysator = CO und HC | Partikelfilter = Ruß | SCR-Katalysator = Stickoxide im Abgas | Abgasrückführung = Stickoxide bei der Entstehung
+F AdBlue wird dem Dieselkraftstoff im Tank beigemischt. || AdBlue hat einen eigenen Tank und wird in den Abgasstrang eingespritzt.
+# --- Ergänzungen Hochvolt
+M Welche Aufgabe hat der Onboard-Lader eines Elektrofahrzeugs? | Er wandelt den Wechselstrom aus dem Netz in Gleichstrom für die HV-Batterie um | Er wandelt Gleichstrom in Drehstrom für den Motor | Er versorgt das 12-V-Bordnetz während der Fahrt | Er kühlt die Ladesäule
+N Eine HV-Batterie wird mit 400 V und 100 A geladen. Wie groß ist die Ladeleistung in kW? | 40 | kW | 0 || P = U · I = 400 V · 100 A = 40 000 W >> P = U · I, dann durch 1000 teilen.
+R Bei einer beschädigten HV-Batterie besteht auch noch Stunden nach dem Unfall Brandgefahr, deshalb wird das Fahrzeug im Freien mit Abstand abgestellt.

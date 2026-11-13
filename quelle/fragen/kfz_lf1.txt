@@ -1,0 +1,114 @@
+# LF 1 Wartungs- und Servicearbeiten durchführen (1. Klasse KFZ)
+# Format: M Frage | richtig | falsch | falsch | falsch || Erklärung   ·   R/F Aussage || Erklärung   ·   N Frage | Wert | Einheit | Toleranz || Erklärung >> Tipp   ·   Z Frage | links = rechts | ...
+# --- Fahrzeugaufbau, Stoff- und Energiefluss
+M Welche Baugruppe überträgt die Motorkraft auf die Antriebsräder? | Der Antriebsstrang (Kupplung, Getriebe, Antriebswellen) | Die Lenkung | Die Bremsanlage | Die Karosserie
+M Zu welcher Hauptbaugruppe gehören Federn und Schwingungsdämpfer? | Fahrwerk | Antriebsstrang | Motor | Elektrische Anlage
+M Welche Energieumwandlung findet im Verbrennungsmotor statt? | Chemische Energie des Kraftstoffs wird in Wärme und dann in mechanische Arbeit umgewandelt | Elektrische Energie wird in chemische Energie umgewandelt | Mechanische Energie wird in Kraftstoff umgewandelt | Wärme wird in elektrische Energie umgewandelt
+Z Ordne jedes Bauteil seiner Baugruppe zu. | Bremssattel = Bremsanlage | Zündkerze = Zündanlage | Stoßdämpfer = Fahrwerk | Generator = Elektrische Anlage
+M Was versteht man unter einer selbsttragenden Karosserie? | Die Karosserie übernimmt selbst die tragende Funktion, ein getrennter Rahmen fehlt | Die Karosserie liegt lose auf einem Leiterrahmen | Die Karosserie besteht nur aus Kunststoff | Die Karosserie trägt nur das Dach
+R Der Motor wandelt nur einen Teil der Kraftstoffenergie in mechanische Arbeit um, der Rest geht vor allem als Wärme verloren. || Ein großer Teil der Energie geht über Abgas und Kühlung verloren.
+Z Ordne die Betriebsflüssigkeit ihrem Einsatzort zu. | Motoröl = Motorschmierung | Bremsflüssigkeit = Hydraulische Bremsanlage | Kühlmittel = Motorkühlung | AdBlue = Abgasnachbehandlung Diesel
+# --- Arbeitssicherheit, Erste Hilfe, Gefahrstoffe, Hebebühne
+M Was musst du prüfen, bevor du ein Fahrzeug mit der Hebebühne anhebst? | Die Tragarme sitzen an den vorgeschriebenen Aufnahmepunkten | Der Tank ist voll | Die Handbremse ist gelöst | Die Fenster sind geschlossen
+F Unter einem nur mit dem Wagenheber angehobenen Fahrzeug darf man ohne Unterstellböcke arbeiten. || Ein Wagenheber kann absinken oder wegrutschen. Das Fahrzeug muss immer zusätzlich abgestützt werden.
+M Was machst du, nachdem das Fahrzeug auf der Hebebühne knapp vom Boden abgehoben ist? | Anhalten und den sicheren Sitz des Fahrzeugs auf den Tragarmen kontrollieren | Sofort ganz nach oben fahren | Die Räder abschrauben | Die Türen öffnen
+M Was ist bei einem Unfall mit Verletzten in der Werkstatt der erste Schritt? | Unfallstelle absichern und auf die eigene Sicherheit achten | Weiterarbeiten | Den Verletzten allein nach Hause schicken | Zuerst Fotos machen
+M Wie lautet die europäische Notrufnummer? | 112 | 911 | 100 | 123
+M Was machst du bei einer Verätzung des Auges durch Batteriesäure zuerst? | Das Auge sofort lange mit viel klarem Wasser spülen und dann zum Arzt | Das Auge fest zudrücken und abwarten | Das Auge mit einem Lappen trocken reiben | Augensalbe aus dem Verbandskasten auftragen und weiterarbeiten
+M Welche Schutzausrüstung ist beim Schleifen und Trennen Pflicht? | Schutzbrille | Krawatte | Wollhandschuhe | Kopfhörer mit Musik
+R Benzindämpfe sind schwerer als Luft und können sich in Arbeitsgruben sammeln. || Deshalb besteht in Gruben Brand- und Explosionsgefahr.
+R Lange offene Haare und lose Kleidung sind an drehenden Maschinen gefährlich. || Sie können erfasst und eingezogen werden.
+F An der Ständerbohrmaschine trägt man zum Schutz der Hände Handschuhe. || Handschuhe können vom Bohrer erfasst werden. An drehenden Maschinen sind sie verboten.
+M Was zeigen die Gefahrenpiktogramme auf einem Gebinde an? | Welche Gefahren vom Inhalt ausgehen, z. B. entzündbar oder ätzend | Den Preis des Produkts | Das Herstellungsdatum | Die Füllmenge
+M Wo findest du genaue Angaben zum sicheren Umgang mit einem Gefahrstoff? | Im Sicherheitsdatenblatt | Im Fahrzeugschein | Auf der Rechnung | Im Wartungsplan
+M Ab welcher Stromstärke kann Wechselstrom durch den Körper lebensgefährlich werden? | Schon ab etwa 50 mA | Erst ab 5 A | Erst ab 16 A | Erst ab 100 A || Entscheidend ist der Strom durch den Körper, nicht nur die Spannung.
+M Warum ist das Laden von Bleibatterien nur in gut belüfteten Räumen erlaubt? | Beim Laden entsteht explosives Knallgas | Die Batterie braucht Sauerstoff zum Laden | Die Batterie wird sonst zu kalt | Der Ladestrom wird sonst zu klein
+M Wohin gehört Altöl? | In den gekennzeichneten Altölbehälter zur fachgerechten Entsorgung | In den Ausguss | In den Restmüll | Auf den Boden, um Staub zu binden
+F Ölgetränkte Putzlappen dürfen in den normalen Restmüll. || Sie sind Sonderabfall und kommen in einen eigenen, geschlossenen Behälter. Es besteht auch Selbstentzündungsgefahr.
+# --- Betriebsorganisation, Kundenauftrag, Qualität
+M Was gehört in einen Werkstattauftrag? | Kundendaten, Fahrzeugdaten, die gewünschten Arbeiten und die Unterschrift des Kunden | Nur der Name des Mechanikers | Nur das Kennzeichen | Nur der Preis der Ersatzteile
+M Was machst du, wenn du bei der Inspektion einen zusätzlichen Mangel findest, der nicht im Auftrag steht? | Den Mangel melden, der Kunde entscheidet über eine Auftragserweiterung | Den Mangel ohne Rückfrage beheben und verrechnen | Den Mangel verschweigen | Das Fahrzeug stilllegen und die Schlüssel behalten
+M Wozu dient die Fahrzeugannahme gemeinsam mit dem Kunden am Fahrzeug? | Wünsche klären, vorhandene Schäden festhalten und den Arbeitsumfang abstimmen | Dem Kunden die Werkstatt zeigen | Die Wartezeit des Kunden verkürzen | Den Kilometerstand zurückstellen
+M Was ist das Ziel des Qualitätsmanagements in der Werkstatt? | Gleichbleibend gute Arbeit und zufriedene Kunden durch festgelegte Abläufe | Möglichst viele Arbeitsstunden verrechnen | Weniger Werkzeug verwenden | Die Arbeitszeit der Lehrlinge verlängern
+M Wozu dient eine Checkliste bei der Inspektion? | Kein Arbeitsschritt wird vergessen und die Arbeit ist nachweisbar | Sie ersetzt die Rechnung | Sie ersetzt das Werkzeug | Sie ist nur für den Kunden gedacht
+M Was ist ein Wartungsplan? | Die Vorgabe des Herstellers, welche Arbeiten bei welchem Kilometerstand oder Zeitabstand fällig sind | Der Dienstplan der Werkstatt | Eine Liste aller Ersatzteilpreise | Die Betriebsanleitung der Hebebühne
+M Wonach richtet sich ein flexibles Serviceintervall? | Nach den Einsatzbedingungen und der Ölbelastung, die das Fahrzeug selbst auswertet | Nur nach dem Alter des Fahrers | Nur nach der Reifengröße | Nach der Farbe des Motoröls
+M Was macht man nach der Inspektion mit der Serviceintervallanzeige? | Zurückstellen | Ausbauen | Abkleben | Nichts, sie stellt sich immer selbst zurück
+M Womit liest man den Fehlerspeicher eines Fahrzeugs aus? | Mit dem Diagnosetester über die Diagnosesteckdose | Mit dem Multimeter an der Batterie | Mit der Prüflampe am Sicherungskasten | Mit dem Drehmomentschlüssel
+M Was gehört zu einer Übergabeinspektion bei einem Neufahrzeug? | Transportsicherungen entfernen, Füllstände, Reifendruck und Funktionen prüfen | Zahnriemen wechseln | Motor zerlegen | Bremsbeläge erneuern
+R Durchgeführte Wartungsarbeiten werden im Serviceheft oder im digitalen Servicenachweis dokumentiert.
+# --- Werkstatt-Grundtechnik: Prüfen, Messen, Sägen, Bohren, Gewinde, Drehmoment
+M Was ist der Unterschied zwischen Messen und Lehren? | Beim Messen erhält man einen Zahlenwert, beim Lehren nur die Aussage Gut oder Ausschuss | Messen geht nur mit Strom, Lehren ohne | Lehren ist genauer als Messen | Es gibt keinen Unterschied
+M Wozu dient ein Messschieber? | Zum Messen von Außen-, Innen- und Tiefenmaßen | Zum Messen von Drehmomenten | Zum Messen von Spannungen | Zum Prüfen des Reifendrucks
+M Wie genau kann man mit einer Bügelmessschraube üblicherweise messen? | Auf 0,01 mm | Auf 1 mm | Auf 0,5 mm | Auf 0,1 mm
+M Womit misst man das Ventilspiel oder den Elektrodenabstand einer Zündkerze? | Mit der Fühlerlehre | Mit dem Messschieber | Mit dem Stahlmaßstab | Mit der Wasserwaage
+Z Ordne jedes Werkzeug seiner Verwendung zu. | Drehmomentschlüssel = Schrauben mit vorgeschriebenem Moment anziehen | Messschieber = Längen und Durchmesser messen | Fühlerlehre = Spaltmaße messen | Gewindebohrer = Innengewinde schneiden
+M Was bedeutet die Bezeichnung M10 bei einer Schraube? | Metrisches Gewinde mit 10 mm Nenndurchmesser | 10 mm Schlüsselweite | 10 mm Schraubenlänge | Festigkeitsklasse 10
+N Wie groß ist der Kernlochdurchmesser für ein Gewinde M8 mit Steigung 1,25 mm? | 6,8 | mm | 0,1 || Kernloch = Nenndurchmesser − Steigung = 8 mm − 1,25 mm ≈ 6,8 mm >> Kernloch = Nenndurchmesser − Steigung
+M Womit schneidet man ein Außengewinde? | Mit dem Schneideisen | Mit dem Gewindebohrer | Mit der Reibahle | Mit dem Körner
+M Wozu wird vor dem Bohren gekörnt? | Damit der Bohrer nicht verläuft | Damit das Werkstück härter wird | Damit der Bohrer gekühlt wird | Damit das Loch größer wird
+R Beim Bohren gilt: je größer der Bohrerdurchmesser, desto kleiner die Drehzahl.
+M In welche Richtung müssen die Zähne des Sägeblatts einer Handbügelsäge zeigen? | In Stoßrichtung, also vom Griff weg | Zum Griff hin | Nach oben | Das ist egal
+M Was gibt die Angabe 8.8 auf einem Schraubenkopf an? | Die Festigkeitsklasse der Schraube | Den Durchmesser in mm | Das Anzugsmoment in Nm | Die Gewindesteigung
+N Eine Kraft von 100 N wirkt an einem 0,5 m langen Schlüssel. Wie groß ist das Drehmoment? | 50 | Nm | 0 || M = F · r = 100 N · 0,5 m >> M = F · r
+R Radschrauben werden mit dem Drehmomentschlüssel auf das vom Hersteller vorgeschriebene Anzugsmoment angezogen.
+F Mit dem Drehmomentschlüssel löst man am besten festsitzende Schrauben. || Der Drehmomentschlüssel ist ein Messwerkzeug zum Anziehen. Zum Lösen wird er nicht verwendet.
+# --- Werkstoffkunde
+M Wie werden Werkstoffe grundsätzlich eingeteilt? | Metalle, Nichtmetalle und Verbundwerkstoffe | Harte und weiche Stoffe | Neue und alte Stoffe | Schwere und leichte Stoffe
+M Welcher Werkstoff ist ein Eisenmetall? | Stahl | Aluminium | Kupfer | Messing
+M Was ist Stahl? | Eisen mit einem geringen Anteil Kohlenstoff (unter etwa 2 %) | Reines Eisen ohne Zusätze | Eine Legierung aus Kupfer und Zinn | Ein Kunststoff mit Glasfasern
+M Warum rostet unbehandelter Stahl? | Eisen reagiert mit Sauerstoff und Feuchtigkeit (Korrosion) | Stahl nimmt Öl auf | Stahl wird durch Licht zerstört | Stahl verliert Kohlenstoff an die Luft
+# --- Viertakt-Ottomotor
+M Wie lautet die richtige Reihenfolge der vier Takte? | Ansaugen – Verdichten – Arbeiten – Ausstoßen | Verdichten – Ansaugen – Arbeiten – Ausstoßen | Ansaugen – Arbeiten – Verdichten – Ausstoßen | Arbeiten – Ansaugen – Ausstoßen – Verdichten
+R Ein Viertaktmotor braucht für ein vollständiges Arbeitsspiel zwei Kurbelwellenumdrehungen. || 4 Takte = 720° Kurbelwinkel = 2 Umdrehungen.
+M Wofür steht die Abkürzung OT? | Oberer Totpunkt | Ölthermostat | Optimale Temperatur | Obere Taktlage
+M Welche Ventile sind im Verdichtungstakt geöffnet? | Keines, beide Ventile sind geschlossen | Nur das Einlassventil | Nur das Auslassventil | Beide Ventile
+M In welchem Takt wird Arbeit an die Kurbelwelle abgegeben? | Im Arbeitstakt | Im Ansaugtakt | Im Verdichtungstakt | Im Ausstoßtakt
+M Wie oft dreht sich die Nockenwelle im Verhältnis zur Kurbelwelle? | Halb so schnell | Gleich schnell | Doppelt so schnell | Viermal so schnell || Jedes Ventil öffnet nur einmal pro Arbeitsspiel, also einmal in zwei Kurbelwellenumdrehungen.
+M Wie lautet die übliche Zündfolge eines Vierzylinder-Reihenmotors? | 1 – 3 – 4 – 2 | 1 – 2 – 3 – 4 | 1 – 4 – 2 – 3 | 4 – 3 – 2 – 1
+M Wie wird das Kraftstoff-Luft-Gemisch im Ottomotor entzündet? | Durch den Funken der Zündkerze | Durch die heiße verdichtete Luft allein | Durch die Glühkerze | Durch das heiße Abgas
+N Bei wie viel Grad Kurbelwinkel Abstand zünden die Zylinder eines Vierzylinder-Viertaktmotors nacheinander? | 180 | ° | 0 || 720° geteilt durch 4 Zylinder = 180° >> Ein Arbeitsspiel dauert 720° Kurbelwinkel.
+Z Ordne jedem Takt die Kolbenbewegung und Ventilstellung zu. | Ansaugen = Kolben abwärts, Einlassventil offen | Verdichten = Kolben aufwärts, beide Ventile zu | Arbeiten = Kolben abwärts, beide Ventile zu | Ausstoßen = Kolben aufwärts, Auslassventil offen
+# --- Kühlsystem
+M Welche Aufgabe hat der Kühler? | Er gibt die Wärme des Kühlmittels an die Luft ab | Er kühlt den Kraftstoff vor der Einspritzung | Er speichert Kühlmittel für den Winter | Er reinigt das Kühlmittel
+M Welche Aufgabe hat der Thermostat im Kühlkreislauf? | Er regelt die Kühlmitteltemperatur, indem er den großen Kühlkreislauf öffnet oder schließt | Er pumpt das Kühlmittel um | Er misst den Öldruck | Er kühlt das Motoröl
+R Bei kaltem Motor fließt das Kühlmittel nur im kleinen Kühlkreislauf, damit der Motor schnell warm wird.
+M Woraus besteht das Kühlmittel? | Aus Wasser und Kühlerfrostschutz mit Korrosionsschutz | Nur aus destilliertem Wasser | Aus Wasser und Motoröl | Aus Bremsflüssigkeit und Wasser
+M Warum darf der Kühlerdeckel bei heißem Motor nicht geöffnet werden? | Das System steht unter Druck, heißes Kühlmittel kann herausspritzen | Das Kühlmittel gefriert sonst | Die Kühlmittelpumpe läuft sonst rückwärts | Der Thermostat geht sonst kaputt
+M Womit prüft man den Frostschutz des Kühlmittels? | Mit dem Refraktometer oder der Frostschutzspindel | Mit dem Multimeter | Mit der Fühlerlehre | Mit dem Messschieber
+# --- Ölwechsel, Motorschmierung, Betriebsflüssigkeiten
+M Welche Aufgabe hat das Motoröl nicht? | Den Kraftstoff zünden | Schmieren | Kühlen | Reinigen und abdichten
+M Was gibt die Viskositätsangabe 5W-30 bei einem Motoröl an? | Das Fließverhalten bei Kälte (5W) und bei Betriebstemperatur (30) | Den Preis pro Liter | Das Wechselintervall in 1000 km | Den Schwefelgehalt
+M Was wird beim Ölwechsel normalerweise mit erneuert? | Ölfilter und Dichtring der Ablassschraube | Zündkerzen | Luftmassenmesser | Kupplungsscheibe
+M Wie wird der Ölstand richtig geprüft? | Fahrzeug steht waagrecht, Motor ist aus, einige Minuten warten, dann Messstab ablesen | Bei laufendem Motor mit Vollgas | Direkt nach dem Abstellen ohne zu warten am Hang | Nur bei völlig kaltem Motor im Winter
+F Je mehr Motoröl über der Max-Markierung eingefüllt ist, desto besser wird der Motor geschmiert. || Zu viel Öl kann aufschäumen und Dichtungen sowie den Katalysator schädigen.
+M Wonach wählst du das Motoröl für ein Fahrzeug aus? | Nach der Freigabe bzw. Spezifikation des Fahrzeugherstellers | Nach der Farbe des Öls | Nach dem günstigsten Preis | Nach der Größe des Kanisters
+M Was zeigt die rote Öldruckkontrollleuchte bei laufendem Motor an? | Zu geringen Öldruck: Motor sofort abstellen | Der Ölwechsel ist in 1000 km fällig | Das Öl ist zu kalt | Der Ölfilter ist neu
+M Welche Betriebsflüssigkeit ist hygroskopisch, zieht also Wasser an? | Bremsflüssigkeit | Motoröl | Getriebeöl | Kühlmittel
+N In einen Motor gehören 4,5 Liter Öl. Beim Ölwechsel sind schon 3,8 Liter eingefüllt. Wie viel fehlt noch? | 0,7 | l | 0 >> Gesamtmenge minus eingefüllte Menge
+# --- Räder und Reifen
+M Was bedeutet die Reifenbezeichnung 205/55 R16? | 205 mm Breite, Querschnittsverhältnis 55 %, Radialreifen, 16 Zoll Felgendurchmesser | 205 km/h, 55 kg Traglast, 16 bar | 205 mm Durchmesser, 55 mm Breite, 16 Lagen | 205 Zoll Breite, 55 Zoll Höhe, 16 mm Profil
+M Was gibt die Zahl 91 in der Angabe 91 V auf dem Reifen an? | Den Tragfähigkeitsindex (Lastindex) | Die Höchstgeschwindigkeit in km/h | Das Herstellungsjahr | Den Reifendruck
+M Was gibt die DOT-Nummer 2324 auf der Reifenflanke an? | Herstellung in der 23. Woche des Jahres 2024 | Herstellung am 23. Tag des Jahres 2024 | Zulässige Geschwindigkeit 232 km/h | Reifendruck 2,3 bar
+R Die gesetzliche Mindestprofiltiefe für Pkw-Reifen beträgt in der EU 1,6 mm. || Empfohlen werden deutlich mehr, besonders bei Winterreifen.
+M Wann wird der Reifendruck geprüft? | Bei kalten Reifen | Direkt nach einer langen Autobahnfahrt | Nur im Sommer | Nur bei der Hauptuntersuchung
+M Woran erkennt man zu niedrigen Reifendruck am Verschleißbild? | Die Reifenschultern außen und innen sind stärker abgefahren | Nur die Mitte der Lauffläche ist abgefahren | Der Reifen ist nur an einer Stelle abgefahren | Die Flanke wird heller
+R Beim Auswuchten werden Unwuchten des Rades durch Gegengewichte ausgeglichen.
+M Woran merkt der Fahrer eine Unwucht an den Vorderrädern? | Das Lenkrad zittert bei bestimmten Geschwindigkeiten | Der Motor geht aus | Die Bremse quietscht | Das Fahrzeug zieht beim Bremsen nach links
+M Wie werden die Radschrauben beim Montieren eines Rades angezogen? | Über Kreuz und zum Schluss mit dem Drehmomentschlüssel | Der Reihe nach im Kreis mit voller Kraft | Nur von Hand | Mit dem Schlagschrauber so fest wie möglich
+M Was ist nach der Radmontage und etwa 50 bis 100 km Fahrt zu tun? | Das Anzugsmoment der Radschrauben nachprüfen | Den Reifen wechseln | Das Rad neu auswuchten | Die Radschrauben einfetten
+# --- Sicht- und Spielprüfung am Fahrwerk
+M Wie prüft man das Spiel eines Radlagers? | Das angehobene Rad oben und unten fassen und kippen | Das Rad im Stand mit dem Fuß treten | Den Reifendruck messen | Die Radschrauben lösen
+M Worauf achtet man bei der Sichtprüfung der Achsmanschetten? | Auf Risse und austretendes Fett | Auf die Farbe des Gummis | Auf das Herstellungsdatum | Auf die Profiltiefe
+# --- Beleuchtung und einfache Stromkreise
+R Scheinwerfer werden mit einem Scheinwerfereinstellgerät geprüft und eingestellt.
+M Was muss vor dem Einstellen der Scheinwerfer geprüft werden? | Reifendruck, Beladung und die Stellung der Leuchtweitenregulierung | Der Ölstand | Die Kühlmitteltemperatur | Die Bremsbelagstärke
+M Was ist beim Wechsel einer Halogenlampe zu beachten? | Den Glaskolben nicht mit bloßen Fingern berühren | Die Lampe vorher einfetten | Die Lampe mit Wasser abkühlen | Die Lampe bei eingeschaltetem Licht wechseln
+M Wie wird die Spannung an einer Glühlampe gemessen? | Mit dem Multimeter parallel zur Lampe | Mit dem Multimeter in Reihe zur Lampe | Mit der Fühlerlehre | Nur bei ausgebauter Lampe
+M Ein Abblendlicht leuchtet nicht. Was prüfst du sinnvollerweise zuerst? | Leuchtmittel und Sicherung | Den Generator | Das Motorsteuergerät | Den Reifendruck
+M Wozu dient eine Sicherung im Stromkreis? | Sie unterbricht den Stromkreis bei zu hohem Strom und schützt die Leitung | Sie erhöht die Spannung | Sie speichert Strom | Sie macht das Licht heller
+F Eine durchgebrannte 10-A-Sicherung darf durch eine 30-A-Sicherung ersetzt werden, damit sie nicht mehr auslöst. || Die Leitung kann dann überhitzen und brennen. Es darf nur die vorgeschriebene Stärke eingesetzt werden.
+# --- Batterie
+M Welche Ruhespannung hat eine voll geladene 12-V-Starterbatterie ungefähr? | ca. 12,6 V bis 12,8 V | ca. 10,5 V | ca. 14,8 V | ca. 6 V
+M Welches Polkabel wird beim Ausbau der Batterie zuerst abgeklemmt? | Minus (Masse) | Plus | Das ist egal | Beide gleichzeitig || Sonst droht ein Kurzschluss, wenn das Werkzeug Plus und Karosserie gleichzeitig berührt.
+M Welche Angaben stehen auf einer Starterbatterie? | Nennspannung, Kapazität in Ah und Kälteprüfstrom in A | Nur das Gewicht | Ölsorte und Füllmenge | Reifendruck und Lastindex

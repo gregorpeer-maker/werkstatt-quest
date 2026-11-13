@@ -1,0 +1,112 @@
+# LF 8P Hauptuntersuchung, Abnahme von Umrüstungen, Prüfungsvorbereitung (4. Klasse KFZ)
+# --- Hauptuntersuchung (revisione): Fristen und Ablauf
+M Wie oft muss ein Pkw in Italien zur Hauptuntersuchung (revisione)? | Erstmals nach 4 Jahren, danach alle 2 Jahre | Jedes Jahr | Erstmals nach 3 Jahren, danach alle 2 Jahre | Alle 5 Jahre
+M Für welche Fahrzeuge ist die revisione in Italien jährlich vorgeschrieben? | Zum Beispiel für Taxis, Rettungswagen und Fahrzeuge über 3,5 t | Für alle Pkw mit Dieselmotor | Für alle Motorräder | Für alle Fahrzeuge mit Anhängerkupplung
+M Wo kann die revisione eines Pkw durchgeführt werden? | Bei der Motorisierungsbehörde (Motorizzazione) oder in einer dafür autorisierten Werkstatt | In jeder beliebigen Werkstatt ohne Zulassung | Nur beim Fahrzeughersteller | Bei der Tankstelle
+M Was ist das Ziel der Hauptuntersuchung? | Verkehrssicherheit und Umweltverträglichkeit des Fahrzeugs feststellen | Den Wiederverkaufswert bestimmen | Die Motorleistung erhöhen | Die Versicherungsprämie berechnen
+M Was passiert, wenn bei der Hauptuntersuchung ein erheblicher Mangel festgestellt wird? | Der Mangel muss behoben und das Fahrzeug innerhalb der Frist erneut vorgeführt werden | Das Fahrzeug darf ohne Einschränkung weiterfahren | Der Mangel wird nur notiert, sonst nichts | Das Fahrzeug wird sofort verschrottet
+M Was droht, wenn man mit abgelaufener revisione fährt? | Eine Geldstrafe, und das Fahrzeug darf bis zur bestandenen Prüfung nicht frei benutzt werden | Nichts | Nur eine mündliche Ermahnung beim nächsten Service | Eine Gutschrift bei der Versicherung
+M Wie bereitet die Werkstatt ein Fahrzeug sinnvoll auf die Hauptuntersuchung vor? | Mit einer Durchsicht nach Prüfliste und der Behebung der gefundenen Mängel | Nur mit einer Außenwäsche | Durch Löschen des Fehlerspeichers kurz vor der Prüfung | Durch Abklemmen der Kontrollleuchten
+F Vor der Hauptuntersuchung löscht man am besten den Fehlerspeicher, damit die Motorkontrollleuchte aus ist. || Die Prüfbereitschaft (Readiness) ist dann nicht gesetzt, und die Ursache bleibt bestehen.
+R Bei der Hauptuntersuchung muss der Fahrzeugschein vorgelegt werden.
+# --- Prüfpunkte: Bremsen
+M Was wird auf dem Rollen-Bremsenprüfstand gemessen? | Die Bremskräfte je Rad, die Unterschiede links zu rechts und die Unrundheit | Die Belagstärke | Der Siedepunkt der Bremsflüssigkeit | Die Scheibentemperatur
+M Was versteht man unter Abbremsung? | Das Verhältnis der gesamten Bremskraft zur Gewichtskraft des Fahrzeugs in Prozent | Die Zeit bis zum Stillstand | Den Weg des Bremspedals | Die Dicke der Bremsscheibe
+N Die Summe aller Bremskräfte beträgt 9000 N, die Gewichtskraft des Fahrzeugs 15 000 N. Wie groß ist die Abbremsung in Prozent? | 60 | % | 0 || z = 9000 N / 15 000 N = 0,60 = 60 % >> Bremskraft geteilt durch Gewichtskraft mal 100
+N An der Vorderachse bremst das linke Rad mit 2500 N, das rechte mit 2000 N. Wie groß ist die Differenz in Prozent, bezogen auf den größeren Wert? | 20 | % | 0 || (2500 − 2000) / 2500 = 0,20 = 20 % >> Unterschied geteilt durch den größeren Wert mal 100
+R Eine zu große Bremskraftdifferenz zwischen den Rädern einer Achse ist ein sicherheitsrelevanter Mangel.
+M Die Bremskraft eines Rades schwankt auf dem Prüfstand bei gleichem Pedaldruck stark. Was ist die wahrscheinliche Ursache? | Unrunde Bremstrommel oder Bremsscheibe mit Dickenunterschied bzw. Schlag | Zu neue Bremsflüssigkeit | Zu hoher Reifendruck | Ein defekter Bremslichtschalter
+M Was wird an der Feststellbremse geprüft? | Wirkung auf dem Prüfstand, gleichmäßiger Zug und Leichtgängigkeit der Seile | Nur die Farbe des Hebels | Nur die Kontrollleuchte | Der Reifendruck hinten
+M Worauf prüft man Bremsschläuche und Bremsleitungen? | Auf Risse, Scheuerstellen, Aufquellen, Korrosion und Dichtheit | Auf ihre Farbe | Auf ihr Herstellungsland | Auf die Länge in Zentimetern
+M Was ist bei Allradfahrzeugen auf dem Rollen-Bremsenprüfstand zu beachten? | Die Herstellervorgaben, sonst kann der Antriebsstrang beschädigt werden | Nichts Besonderes | Der Motor muss mit Vollgas laufen | Die Handbremse muss angezogen sein
+# --- Prüfpunkte: Lenkung, Achsen, Räder, Reifen
+M Wie prüft man Gelenke und Lager der Vorderachse bei der Hauptuntersuchung? | Auf der Grube oder Bühne mit dem Gelenkspieltester (Spieldetektor) unter Last | Durch Zuschauen bei der Probefahrt | Mit dem Abgastester | Mit dem Multimeter
+M Was wird an der Lenkung geprüft? | Lenkspiel, Befestigung, Zustand der Gelenke und Manschetten, Dichtheit | Nur die Farbe des Lenkrads | Der Durchmesser des Lenkrads | Die Lautstärke der Hupe
+M Welche Mindestprofiltiefe ist für Pkw-Reifen in der EU gesetzlich vorgeschrieben? | 1,6 mm | 1,0 mm | 3,0 mm | 4,0 mm
+M Was gilt für die Reifen einer Achse? | Sie müssen in Bauart und Größe gleich sein | Sie dürfen beliebig gemischt werden | Links muss immer ein Winterreifen sein | Sie müssen unterschiedliche Profile haben
+M Womit müssen Reifengröße, Tragfähigkeits- und Geschwindigkeitsindex übereinstimmen? | Mit den Angaben in den Fahrzeugpapieren bzw. den zugelassenen Größen | Mit dem Wunsch des Kunden | Mit der Größe des Ersatzrads allein | Mit der Farbe der Felge
+M Welcher Reifenschaden führt bei der Hauptuntersuchung zur Beanstandung? | Beulen, Risse bis auf das Gewebe oder freiliegende Karkasse | Leichter Staub auf der Flanke | Ein neuer Ventildeckel | Ein frisch gewuchtetes Rad
+M Was prüft man an den Radlagern? | Spiel und Laufgeräusch bei angehobenem Rad | Die Farbe des Fetts | Die Schlüsselweite der Radschrauben | Das Reifenalter
+M Was wird an Federn und Schwingungsdämpfern geprüft? | Bruch, Ölverlust, Befestigung und Wirkung | Nur die Farbe | Nur das Herstellungsdatum | Die Länge im ausgebauten Zustand bei jedem Fahrzeug
+R Gerissene Achsmanschetten werden bei der Hauptuntersuchung beanstandet.
+# --- Prüfpunkte: Beleuchtung, Sicht, Elektrik
+M Was wird an den Scheinwerfern geprüft? | Funktion, Zustand der Streuscheibe und des Reflektors sowie die Einstellung | Nur die Marke der Lampe | Nur die Stromaufnahme | Die Länge der Kabel
+N Ein Scheinwerfer soll eine Neigung von 1 % haben. Um wie viele Zentimeter senkt sich die Hell-Dunkel-Grenze auf 10 m Entfernung? | 10 | cm | 0 || 1 % von 10 m = 0,1 m = 10 cm >> 1 % von 1000 cm
+M Welche Farbe müssen die Fahrtrichtungsanzeiger haben? | Gelb (orange) | Rot | Weiß | Blau
+M Welche Farbe hat das Licht der Bremsleuchten? | Rot | Gelb | Weiß | Grün
+M Welcher Schaden an der Windschutzscheibe wird beanstandet? | Risse oder Steinschläge im Sichtfeld des Fahrers | Ein Aufkleber der Werkstatt am unteren Rand außerhalb des Sichtfelds | Regentropfen | Leichter Staub
+M Was wird an der Scheibenwisch- und Waschanlage geprüft? | Funktion und Zustand der Wischerblätter sowie die Waschanlage | Die Farbe des Waschwassers | Die Marke der Wischer | Die Länge des Wischerarms auf den Millimeter
+M Was gilt, wenn die Airbag- oder ABS-Kontrollleuchte dauerhaft leuchtet? | Es liegt ein Fehler in einem Sicherheitssystem vor, der beanstandet wird | Das ist ein Hinweis auf den nächsten Service | Das ist normal bei warmem Motor | Das bedeutet volle Funktion
+M Welche Warneinrichtung muss funktionieren und wird geprüft? | Die Hupe (Schallzeichen) | Das Radio | Die Sitzheizung | Die Uhr
+R Rückspiegel müssen vorhanden, fest und unbeschädigt sein.
+# --- Prüfpunkte: Karosserie, Abgas, Umwelt, Insassenschutz
+M Wo ist Durchrostung besonders kritisch? | An tragenden Teilen wie Schwellern, Längsträgern und Achsaufnahmen | An der Zierleiste | Am Kennzeichenhalter | An der Antenne
+M Was wird an der Abgasanlage geprüft? | Dichtheit, Befestigung, Zustand und Geräuschentwicklung | Die Farbe des Endrohrs | Die Länge des Endrohrs | Die Temperatur im Stand
+M Welcher Ölverlust wird bei der Hauptuntersuchung beanstandet? | Abtropfendes Öl, das die Umwelt gefährdet | Ein trockener, alter Ölfilm | Öl am Messstab | Öl im Einfüllstutzen
+M Was wird an den Sicherheitsgurten geprüft? | Zustand des Gurtbands, Funktion von Schloss und Aufrollautomatik, Befestigung | Nur die Farbe | Nur die Länge | Der Hersteller des Gurts
+M Was wird bei Fahrzeugen mit OBD bei der Abgasprüfung zusätzlich berücksichtigt? | Der Zustand der Motorkontrollleuchte und die Daten der Eigendiagnose | Der Radiosender | Der Kilometerstand der Reifen | Die Sitzposition
+M Welche Ausrüstung muss in Italien im Pkw mitgeführt werden? | Warndreieck und Warnweste | Feuerlöscher und Abschleppstange | Ersatzlampenset und Wagenheber | Verbandskasten und Schneeketten das ganze Jahr
+M Was gilt für die Kennzeichen? | Sie müssen vorhanden, lesbar und fest angebracht sein | Sie dürfen übermalt werden | Sie dürfen im Innenraum liegen | Vorne genügt ein Aufkleber
+F Eine laute Sportabgasanlage ohne Zulassung ist bei der Hauptuntersuchung kein Problem, solange sie dicht ist. || Nicht zugelassene Änderungen an der Abgasanlage werden beanstandet.
+# --- Abnahme einer Fahrwerksumrüstung
+M Was gilt grundsätzlich für technische Änderungen am Fahrzeug, zum Beispiel ein Sportfahrwerk? | Sie müssen zugelassen sein und in die Fahrzeugpapiere eingetragen werden, in Italien über die Motorizzazione | Sie sind immer frei erlaubt | Sie müssen nur der Versicherung gefallen | Sie brauchen nur eine Rechnung
+M Was kann die Folge nicht genehmigter Umbauten sein? | Strafe, Probleme bei der Hauptuntersuchung und beim Versicherungsschutz | Eine Prämie vom Hersteller | Eine längere Garantie | Gar nichts
+M Welche Unterlagen braucht man für die Abnahme einer Umrüstung? | Die Genehmigungs- bzw. Prüfunterlagen der Teile und die Fahrzeugpapiere | Nur den Kassenzettel | Nur ein Foto | Keine
+M Was wird nach dem Einbau eines Tieferlegungsfahrwerks immer nötig? | Eine Achsvermessung und die Einstellung der Scheinwerfer | Ein Ölwechsel | Ein Zahnriemenwechsel | Ein Klimaservice
+M Was prüft man bei der Abnahme von anderen Rädern und Reifen? | Freigängigkeit bei vollem Lenkeinschlag und Einfederung sowie die Radabdeckung | Nur das Aussehen | Nur das Gewicht | Nur den Preis
+M Welche Folge hat ein deutlich größerer Abrollumfang der Reifen? | Tacho und Kilometerzähler zeigen zu wenig an | Der Tacho zeigt zu viel an | Der Motor dreht höher | Die Bremsen werden stärker
+M Was muss bei geänderten Reifen mindestens eingehalten sein? | Tragfähigkeit und Geschwindigkeitsindex passend zum Fahrzeug | Dieselbe Marke wie ab Werk | Dieselbe Farbe der Felge | Dasselbe Herstellungsjahr
+M Was ist bei Distanzscheiben (Spurverbreiterungen) zu beachten? | Sie brauchen eine Zulassung, passende Radschrauben und die Räder müssen abgedeckt bleiben | Sie dürfen beliebig dick sein | Sie ersetzen das Auswuchten | Sie werden nur aufgeklebt
+M Was verändert sich durch eine Tieferlegung am Fahrwerk? | Federweg, Achsgeometrie und Bodenfreiheit | Nur die Farbe der Federn | Der Hubraum | Die Bordnetzspannung
+M Was prüft man nach einer Fahrwerksumrüstung an Leitungen und Schläuchen? | Dass Bremsschläuche, ABS-Leitungen und Kabel bei Lenkeinschlag und Federung nicht scheuern oder spannen | Dass sie die richtige Farbe haben | Dass sie möglichst kurz sind | Nichts
+R Nach einer Fahrwerksumrüstung wird eine Probefahrt durchgeführt und die Verschraubungen werden nach Vorgabe kontrolliert.
+F Kürzere Federn dürfen mit den Serien-Schwingungsdämpfern ohne Prüfung der Freigabe kombiniert werden. || Die Kombination muss vom Teilehersteller freigegeben sein.
+# --- Prüfungsvorbereitung: Motor und Antrieb
+M Wie berechnet man den Hubraum eines Zylinders? | Kolbenfläche mal Hub | Bohrung mal Hub | Kolbenfläche mal Drehzahl | Hub mal Zylinderzahl
+N Hubraum eines Zylinders 450 cm³, Verdichtungsraum 50 cm³. Wie groß ist das Verdichtungsverhältnis? | 10 | | 0 || ε = (Vh + Vc) / Vc = 500 / 50 >> ε = (Vh + Vc) / Vc
+N Ein Motor gibt bei 3000 1/min ein Drehmoment von 150 Nm ab. Wie groß ist die Leistung in kW (auf eine Dezimale)? | 47,1 | kW | 0,3 || P = 2 · π · n · M = 2 · π · 50 1/s · 150 Nm ≈ 47 124 W >> Drehzahl zuerst in 1/s umrechnen, dann P = 2 · π · n · M
+M Worin unterscheiden sich Otto- und Dieselmotor bei der Gemischbildung und Zündung grundsätzlich? | Otto: Fremdzündung durch Zündkerze. Diesel: Selbstzündung durch Verdichtungswärme | Otto: Selbstzündung. Diesel: Fremdzündung | Beide zünden mit Zündkerzen | Beide zünden mit Glühkerzen
+M Warum hat der Dieselmotor ein höheres Verdichtungsverhältnis als der Ottomotor? | Die Luft muss so heiß werden, dass sich der Kraftstoff selbst entzündet | Damit er leiser läuft | Damit er weniger Luft braucht | Damit die Zündkerze länger hält
+M Was versteht man unter klopfender Verbrennung beim Ottomotor? | Unkontrollierte Selbstentzündung von Gemischteilen mit starken Druckspitzen | Das normale Geräusch der Ventile | Ein Geräusch der Kupplung | Das Ticken der Einspritzventile
+M Welche Aufgabe hat die Nockenwellenverstellung? | Sie passt die Steuerzeiten an Drehzahl und Last an | Sie spannt den Zahnriemen | Sie kühlt den Zylinderkopf | Sie regelt den Öldruck
+M Was ist der Unterschied zwischen Saugrohr- und Benzin-Direkteinspritzung? | Bei der Direkteinspritzung wird der Kraftstoff mit hohem Druck direkt in den Brennraum gespritzt | Bei der Direkteinspritzung wird ins Saugrohr gespritzt | Die Saugrohreinspritzung arbeitet mit 2000 bar | Es gibt keinen Unterschied
+M Was bedeutet Front-, Heck- und Allradantrieb? | Angetrieben werden die Vorderräder, die Hinterräder oder alle Räder | Die Lage des Tanks | Die Lage des Motors | Die Anzahl der Türen
+M Welche Aufgabe hat eine Differenzialsperre? | Sie verhindert, dass ein durchdrehendes Rad die gesamte Antriebskraft aufnimmt | Sie sperrt das Lenkrad | Sie verhindert das Schalten | Sie blockiert die Handbremse
+# --- Prüfungsvorbereitung: Elektrik und Elektronik
+N An einem Verbraucher liegen 12 V an, es fließen 4 A. Wie groß ist sein Widerstand? | 3 | Ω | 0 || R = U / I = 12 V / 4 A >> R = U / I
+N Eine Sitzheizung hat 12 V und 96 W. Welcher Strom fließt? | 8 | A | 0 || I = P / U = 96 W / 12 V >> I = P / U
+N Zwei Widerstände mit 4 Ω und 12 Ω sind in Reihe an 12 V geschaltet. Welche Spannung fällt am 12-Ω-Widerstand ab? | 9 | V | 0 || I = 12 V / 16 Ω = 0,75 A, U2 = 0,75 A · 12 Ω = 9 V >> Zuerst den Strom berechnen, dann U = R · I
+M Wie verhalten sich die Ströme in einer Parallelschaltung? | Der Gesamtstrom ist die Summe der Teilströme | Der Strom ist überall gleich | Der Gesamtstrom ist kleiner als jeder Teilstrom | Es fließt kein Strom
+M Wozu wird ein Relais im Fahrzeug verwendet? | Ein kleiner Steuerstrom schaltet einen großen Laststrom | Es wandelt Wechselstrom in Gleichstrom | Es misst den Strom | Es speichert Energie
+M Welche Leitung wählt man für einen Verbraucher mit hohem Strom? | Eine Leitung mit ausreichend großem Querschnitt | Die dünnste verfügbare Leitung | Eine möglichst lange Leitung | Eine Leitung ohne Isolierung
+M Wovon hängt der Spannungsfall an einer Leitung ab? | Von Strom, Länge, Querschnitt und Material der Leitung | Nur von der Farbe der Isolierung | Nur vom Alter des Fahrzeugs | Von der Außentemperatur allein
+M Was lässt eine Diode zu? | Stromfluss nur in einer Richtung | Stromfluss in beide Richtungen gleich | Gar keinen Stromfluss | Nur Wechselstrom
+M Wie wird ein Amperemeter in den Stromkreis geschaltet? | In Reihe zum Verbraucher | Parallel zum Verbraucher | Parallel zur Batterie | Zwischen Plus und Masse ohne Verbraucher
+M Was ist ein Kurzschluss? | Eine direkte, fast widerstandslose Verbindung zwischen Plus und Masse | Eine unterbrochene Leitung | Ein zu hoher Übergangswiderstand | Ein leerer Akku
+# --- Prüfungsvorbereitung: Fahrwerk, Bremsen, Sicherheit, Umwelt
+M Woraus setzt sich der Anhalteweg zusammen? | Aus Reaktionsweg und Bremsweg | Aus Bremsweg und Rollweg | Aus Reaktionsweg und Beschleunigungsweg | Nur aus dem Bremsweg
+N Faustformel: Bremsweg = (Geschwindigkeit / 10) mal (Geschwindigkeit / 10). Wie lang ist der Bremsweg bei 80 km/h? | 64 | m | 0 || 8 · 8 = 64 m >> 80 / 10 = 8
+M Wie verändert sich der Bremsweg bei doppelter Geschwindigkeit ungefähr? | Er vervierfacht sich | Er verdoppelt sich | Er bleibt gleich | Er halbiert sich
+M Was passiert bei Aquaplaning? | Die Reifen schwimmen auf einem Wasserfilm auf und verlieren den Kontakt zur Fahrbahn | Die Bremsen werden zu heiß | Der Motor saugt Wasser an | Die Lenkung wird schwergängig
+M Was bedeutet Untersteuern? | Das Fahrzeug schiebt in der Kurve über die Vorderräder nach außen | Das Heck bricht aus | Das Fahrzeug bremst von selbst | Das Lenkrad vibriert
+M Welche Systeme gehören zur aktiven Sicherheit? | Systeme, die Unfälle vermeiden helfen, z. B. ABS und ESP | Systeme, die Unfallfolgen mindern, z. B. Airbag und Gurt | Das Radio und die Klimaanlage | Der Kofferraum
+M Welche Systeme gehören zur passiven Sicherheit? | Airbag, Sicherheitsgurt und Knautschzone | ABS, ESP und Bremsassistent | Tempomat und Regensensor | Scheinwerfer und Hupe
+M Wie wird Altbatterie-Schrott entsorgt? | Als gefährlicher Abfall über die Rücknahme bzw. einen zugelassenen Entsorger | Im Restmüll | Im Altmetallcontainer ohne Kennzeichnung | In der Biotonne
+M Wo müssen gebrauchte Bremsflüssigkeit und gebrauchtes Kühlmittel gesammelt werden? | Getrennt in eigenen, gekennzeichneten Behältern | Zusammen mit dem Altöl | Im Ausguss | Im Restmüll
+M Was machst du bei ausgelaufenem Öl auf dem Werkstattboden? | Mit Ölbindemittel abstreuen, aufnehmen und als Sonderabfall entsorgen | Mit Wasser in den Kanal spülen | Liegen lassen | Mit Druckluft verteilen
+R Schutzbrille, Sicherheitsschuhe und Gehörschutz gehören je nach Arbeit zur persönlichen Schutzausrüstung.
+F Bei laufendem Motor in der geschlossenen Werkstatt ist keine Abgasabsaugung nötig, wenn das Tor einen Spalt offen ist. || Abgas enthält giftiges CO. Die Absaugung ist Pflicht.
+# --- Prüfungsvorbereitung: Kundenauftrag und Arbeitsweise in der Prüfung
+M Wie geht man einen Arbeitsauftrag in der praktischen Prüfung sinnvoll an? | Auftrag lesen, planen, Unterlagen und Werkzeug bereitstellen, durchführen, kontrollieren, dokumentieren | Sofort mit dem Zerlegen beginnen | Zuerst alle Teile tauschen | Den Prüfer nach der Lösung fragen
+M Woher nimmst du Einstell- und Prüfwerte in der Prüfung? | Aus den bereitgestellten Herstellerunterlagen | Aus dem Gedächtnis eines Mitschülers | Aus einer Schätzung | Aus der Werbung
+M Was gehört zu einer vollständigen Messwertangabe? | Zahlenwert und Einheit | Nur der Zahlenwert | Nur die Einheit | Die Farbe des Messgeräts
+M Warum wird nach jeder Reparatur eine Funktions- und Sichtkontrolle gemacht? | Um sicherzustellen, dass die Arbeit fachgerecht und das Fahrzeug verkehrssicher ist | Um Zeit zu schinden | Weil der Kunde es nicht merkt | Um das Werkzeug zu schonen
+M Wie verhältst du dich, wenn dir in der Prüfung ein Fehler unterläuft? | Den Fehler melden bzw. beheben und sauber dokumentieren | Den Fehler vertuschen | Die Prüfung abbrechen | Das Bauteil verstecken
+R Sauberkeit und Ordnung am Arbeitsplatz, etwa Kotflügelschoner und Sitzbezüge, gehören zur fachgerechten Arbeit.
+Z Ordne die Abkürzungen zu. | ABS = Antiblockiersystem | ESP = Elektronisches Stabilitätsprogramm | OBD = On-Board-Diagnose | AGR = Abgasrückführung
+Z Ordne die Größe ihrer Einheit zu. | Drehmoment = Newtonmeter | Leistung = Kilowatt | Druck = Bar | Elektrischer Widerstand = Ohm
+Z Ordne das Prüfgerät der Prüfung zu. | Rollen-Bremsenprüfstand = Bremskräfte je Rad | Scheinwerfereinstellgerät = Hell-Dunkel-Grenze | Abgastester = CO und Lambda | Gelenkspieltester = Spiel in Achsgelenken
+# --- Ergänzungen
+F Reifen mit 1,6 mm Restprofil haften bei Nässe genauso gut wie neue Reifen. || Mit abnehmender Profiltiefe steigt die Aquaplaninggefahr und der Bremsweg bei Nässe wird länger.
+M Was bedeutet Übersteuern? | Das Heck drängt in der Kurve nach außen | Das Fahrzeug schiebt über die Vorderräder nach außen | Die Lenkung reagiert gar nicht | Das Fahrzeug beschleunigt von selbst
+M Welche Aufgabe hat der Bremsassistent? | Er baut bei einer erkannten Notbremsung sofort den vollen Bremsdruck auf | Er hält das Fahrzeug am Berg | Er verhindert das Durchdrehen der Räder beim Anfahren | Er zeigt den Belagverschleiß an

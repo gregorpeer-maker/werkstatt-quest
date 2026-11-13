@@ -1,0 +1,107 @@
+# LF 3 Große Inspektion durchführen (2. Klasse KFZ)
+# --- Inspektionsplanung, Wartungsintervalle, Abnutzungsvorrat
+M Woraus ergibt sich der Umfang einer Inspektion? | Aus Laufleistung, Zeitabstand, Wartungsvorschrift des Herstellers und Einsatzbedingungen | Nur aus dem Wunsch des Mechanikers | Nur aus dem Alter des Fahrers | Aus der Farbe und Ausstattung des Fahrzeugs
+Z Ordne die Begriffe der Instandhaltung zu. | Inspektion = Istzustand feststellen und beurteilen | Wartung = Sollzustand bewahren | Instandsetzung = Sollzustand wiederherstellen | Verbesserung = Schwachstelle beseitigen
+M Was versteht man unter dem Abnutzungsvorrat eines Bauteils? | Den Vorrat an möglicher Abnutzung bis zur Verschleißgrenze | Den Lagerbestand an Ersatzteilen in der Werkstatt | Die Garantiezeit des Herstellers | Die Menge an Schmierstoff im Bauteil
+M Welche Einsatzbedingungen verkürzen das Wartungsintervall? | Viel Kurzstrecke, Anhängerbetrieb, staubige Umgebung | Regelmäßige Autobahnfahrten mit warmem Motor | Garagenwagen mit wenig Kilometern im Sommer | Fahren mit eingeschaltetem Licht
+M Welche Zusatzarbeit ist unabhängig von der Laufleistung meist alle zwei Jahre fällig? | Bremsflüssigkeitswechsel | Zahnriemenwechsel | Kupplungswechsel | Wechsel der Schwingungsdämpfer
+M Welche Teile werden bei einer großen Inspektion am Ottomotor je nach Plan zusätzlich erneuert? | Zündkerzen, Luftfilter, Innenraumfilter | Kolben, Pleuel, Kurbelwelle | Bremsscheiben und Bremssättel immer komplett | Katalysator und Lambdasonde immer
+M Woher bekommst du den für das Fahrzeug gültigen Inspektionsplan? | Aus dem Informationssystem des Herstellers anhand von Fahrgestellnummer und Laufleistung | Aus einer beliebigen Autozeitschrift | Vom Reifenhändler | Aus dem Verbandskasten
+M Was machst du mit Mängeln, die bei der Inspektion auffallen, aber nicht behoben werden? | Auf dem Prüfprotokoll vermerken und den Kunden informieren | Nicht erwähnen, um den Kunden nicht zu beunruhigen | Nur dem Kollegen erzählen | Erst bei der nächsten Inspektion aufschreiben
+R Ein verschmutzter Luftfilter verschlechtert die Zylinderfüllung und kann den Verbrauch erhöhen.
+F Der Innenraumfilter (Pollenfilter) reinigt die Ansaugluft des Motors. || Er reinigt die Luft für den Fahrgastraum. Die Motorluft reinigt der Luftfilter.
+M Was prüft man bei der Inspektion an den Zündkerzen? | Elektrodenabstand, Abbrand und Kerzenbild | Nur die Farbe des Steckers | Den Öldruck | Die Länge des Zündkabels
+M Was deutet ein rehbraunes bis grauweißes Kerzenbild an? | Normale Verbrennung, Gemisch und Wärmewert passen | Zu fettes Gemisch | Öl im Brennraum | Überhitzung der Kerze
+M Was deutet eine samtartig schwarz verrußte Zündkerze an? | Zu fettes Gemisch oder häufiger Kurzstreckenbetrieb | Zu mageres Gemisch | Zu hoher Wärmewert der Batterie | Einen neuen Luftfilter
+# --- Steuertrieb und Zahnriemenwechsel
+M Welche Aufgabe hat der Zahnriemen? | Er treibt die Nockenwelle synchron zur Kurbelwelle an | Er treibt den Generator und den Klimakompressor an | Er überträgt die Motorkraft zum Getriebe | Er kühlt den Zylinderkopf
+M In welchem Verhältnis ist die Nockenwelle zur Kurbelwelle übersetzt? | 2 : 1, die Nockenwelle dreht halb so schnell | 1 : 1, beide drehen gleich schnell | 1 : 2, die Nockenwelle dreht doppelt so schnell | 4 : 1, die Nockenwelle dreht ein Viertel so schnell
+M Welche Bauteile werden beim Zahnriemenwechsel üblicherweise mit erneuert? | Spannrolle, Umlenkrollen und oft die Kühlmittelpumpe | Zündkerzen und Luftfilter | Kolben und Pleuel | Kupplung und Schwungrad
+M Warum wird die Kühlmittelpumpe oft zusammen mit dem Zahnriemen gewechselt? | Sie wird vom Zahnriemen angetrieben, ein späterer Lagerschaden würde den neuen Riemen zerstören | Sie ist billiger als der Riemen | Sie hält genau so lange wie die Zündkerzen | Sie muss bei jedem Ölwechsel getauscht werden
+R Ein gerissener Zahnriemen kann zu einem schweren Motorschaden führen, weil Ventile und Kolben zusammenstoßen können.
+M Was ist ein Freiläufer-Motor? | Ein Motor, bei dem sich Ventile und Kolben auch bei gerissenem Zahnriemen nicht berühren | Ein Motor ohne Nockenwelle | Ein Motor mit Freilauf im Getriebe | Ein Motor, der ohne Öl laufen kann
+M Wonach richtet sich das Wechselintervall des Zahnriemens? | Nach Kilometerstand oder Alter, je nachdem was zuerst erreicht ist | Nur nach dem Kilometerstand | Nur nach dem Geräusch | Nach dem Ölverbrauch
+M Was machst du vor dem Abnehmen des alten Zahnriemens? | Motor auf OT-Markierung stellen und Kurbel- und Nockenwelle mit Arretierwerkzeug sichern | Den Motor im Leerlauf laufen lassen | Die Zündkerzen fest anziehen | Das Motoröl ablassen
+M Was ist nach der Montage eines neuen Zahnriemens zu tun, bevor der Motor gestartet wird? | Motor zweimal von Hand durchdrehen und Steuerzeiten kontrollieren | Motoröl ablassen | Zündkerzen ausbauen und wegwerfen | Sofort mit Vollgas starten
+M An welcher Stelle und in welche Richtung wird der Motor von Hand durchgedreht? | An der Kurbelwelle in Motordrehrichtung | An der Nockenwelle gegen die Drehrichtung | Am Generator in beliebiger Richtung | Am Schwungrad nur rückwärts
+M Was darf mit einem neuen Zahnriemen nicht passieren? | Er darf nicht geknickt werden und nicht mit Öl in Berührung kommen | Er darf nicht trocken bleiben | Er darf nicht bei Tageslicht montiert werden | Er darf nicht von Hand angefasst werden
+M Was passiert bei zu geringer Zahnriemenspannung? | Der Riemen kann überspringen, die Steuerzeiten stimmen nicht mehr | Die Lager der Rollen werden überlastet und der Riemen heult | Der Motor verbraucht weniger Kraftstoff | Der Öldruck steigt
+M Was ist die Folge einer zu hohen Zahnriemenspannung? | Heulgeräusche und Überlastung der Lager von Rollen und Kühlmittelpumpe | Der Riemen springt sofort über | Der Motor startet nicht mehr | Die Ventile öffnen weiter
+M Was passiert, wenn die Steuerzeiten um einen Zahn versetzt sind? | Der Motor läuft schlecht, hat wenig Leistung oder springt nicht an | Der Motor hat mehr Leistung | Es ändert sich gar nichts | Nur die Ladekontrolle leuchtet
+M Welchen Vorteil hat eine Steuerkette gegenüber dem Zahnriemen? | Sie ist in der Regel auf die Lebensdauer des Motors ausgelegt | Sie läuft trocken und braucht kein Öl | Sie ist leichter und leiser | Sie kann nicht längen
+M Woran erkennt man eine gelängte Steuerkette? | Rasselgeräusche beim Kaltstart und Fehlereinträge zur Nockenwellenstellung | Weißer Rauch aus dem Auspuff | Quietschen beim Bremsen | Schwergängige Lenkung
+F Ein Zahnriemen mit Rissen am Riemenrücken kann bis zum nächsten Intervall weiterlaufen, solange er nicht quietscht. || Ein beschädigter Zahnriemen muss sofort erneuert werden.
+R Die Anzugsmomente der Spann- und Umlenkrollen stehen in der Reparaturanleitung und müssen eingehalten werden.
+M Welche Angabe gehört nach dem Zahnriemenwechsel ins Serviceheft bzw. auf den Aufkleber im Motorraum? | Datum und Kilometerstand des Wechsels | Der Name des Kunden | Die Farbe des Riemens | Der Reifendruck
+N Das Kurbelwellenrad hat 20 Zähne. Wie viele Zähne muss das Nockenwellenrad haben? | 40 | Zähne | 0 || Übersetzung 2 : 1, also doppelt so viele Zähne. >> Die Nockenwelle dreht halb so schnell.
+# --- Zustandsbestimmung des Motors
+M Was wird bei der Kompressionsprüfung gemessen? | Der Verdichtungsdruck in den einzelnen Zylindern | Der Öldruck im Hauptölkanal | Der Ladedruck im Saugrohr | Der Kraftstoffdruck im Rail
+M Welche Voraussetzungen gelten für die Kompressionsprüfung am Ottomotor? | Motor betriebswarm, alle Zündkerzen ausgebaut, Drosselklappe voll geöffnet | Motor kalt, Zündkerzen eingebaut, Drosselklappe zu | Motor läuft im Leerlauf | Motor ohne Öl und ohne Kühlmittel
+M Worauf kommt es bei der Auswertung der Kompressionsprüfung besonders an? | Auf möglichst gleiche Werte aller Zylinder | Auf einen möglichst niedrigen Wert | Nur auf den Wert von Zylinder 1 | Auf die Farbe des Diagrammblatts
+M Ein Zylinder hat deutlich weniger Kompression. Nach dem Einspritzen von etwas Öl steigt der Wert stark an. Was ist die wahrscheinliche Ursache? | Verschlissene Kolbenringe oder Zylinderlaufbahn | Undichte Ventile | Defekte Zylinderkopfdichtung zum Nachbarzylinder | Defekte Zündkerze
+M Was zeigt die Druckverlustprüfung? | Wo und wie stark ein Zylinder undicht ist | Den Kraftstoffverbrauch | Die Zündspannung | Den Zustand der Kupplung
+M In welcher Stellung steht der Kolben bei der Druckverlustprüfung? | Im Zünd-OT, beide Ventile sind geschlossen | Im UT nach dem Ansaugen | Im Überschneidungs-OT | In der Hubmitte
+Z Bei der Druckverlustprüfung strömt Luft aus. Ordne den Ort der Ursache zu. | Am Ansaugtrakt = Einlassventil undicht | Am Auspuff = Auslassventil undicht | Am Öleinfüllstutzen = Kolbenringe undicht | Blasen im Kühlmittel = Zylinderkopfdichtung undicht
+M Woran kann man eine defekte Zylinderkopfdichtung erkennen? | Kühlmittelverlust, weißer Abgasrauch, Öl im Kühlmittel oder Kühlmittel im Öl | Abgenutzte Reifen | Flackernde Blinker | Lautes Bremsenquietschen
+M Womit weist man Abgas im Kühlsystem nach? | Mit einem CO2-Tester am Ausgleichsbehälter | Mit dem Refraktometer | Mit der Stroboskoplampe | Mit dem Reifendruckprüfer
+M Was deutet blauer Abgasrauch an? | Der Motor verbrennt Öl | Der Motor verbrennt Kühlmittel | Das Gemisch ist zu mager | Der Kraftstoff ist zu kalt
+M Was deutet schwarzer Abgasrauch an? | Zu fettes Gemisch bzw. unvollständige Verbrennung | Verbranntes Öl | Verdampftes Kühlmittel | Zu mageres Gemisch
+M Wie prüft man den Öldruck eines Motors? | Mit einem Manometer am Anschluss des Öldruckschalters | Mit dem Ölmessstab | Mit dem Multimeter an der Batterie | Mit dem Kompressionsdruckschreiber
+M Was kann ein milchig-heller Belag am Öleinfülldeckel bedeuten? | Wasser bzw. Kühlmittel im Öl oder viel Kurzstreckenbetrieb | Zu viel Kraftstoff im Tank | Zu hohen Reifendruck | Einen neuen Ölfilter
+R Die Kompressionsdrücke eines Dieselmotors sind deutlich höher als die eines Ottomotors.
+F Bei der Kompressionsprüfung bleibt die Einspritzung eingeschaltet, damit der Motor besser dreht. || Einspritzung und Zündung werden stillgelegt, sonst gelangt Kraftstoff in den Katalysator und es besteht Brandgefahr.
+N Vier Zylinder zeigen 12,0 bar, 11,5 bar, 12,5 bar und 9,0 bar. Wie groß ist der größte Unterschied zwischen zwei Zylindern? | 3,5 | bar | 0 || 12,5 bar − 9,0 bar = 3,5 bar >> Höchster minus niedrigster Wert
+M Was prüft man auf dem Bremsenprüfstand? | Die Bremskräfte je Rad und den Unterschied zwischen links und rechts | Die Dicke der Bremsbeläge | Den Siedepunkt der Bremsflüssigkeit | Die Temperatur der Bremsscheiben
+M Was misst ein Leistungsprüfstand (Rollenprüfstand)? | Die Leistung an den Antriebsrädern, daraus wird die Motorleistung berechnet | Den Hubraum des Motors | Den Kompressionsdruck | Die Bremsbelagstärke
+# --- Klimaanlagenservice
+M Welches Kältemittel wird in neuen Pkw-Klimaanlagen verwendet? | R1234yf | R12 | Ammoniak | Stickstoff
+M Warum wurde das Kältemittel R134a bei Neufahrzeugen durch R1234yf ersetzt? | R134a hat ein sehr hohes Treibhauspotenzial | R134a ist brennbar | R134a kühlt nicht | R134a greift Aluminium an
+M Welche Aufgabe hat der Kompressor der Klimaanlage? | Er saugt gasförmiges Kältemittel an und verdichtet es | Er kühlt die Luft direkt | Er trocknet das Kältemittel | Er verteilt die Luft im Innenraum
+M Was passiert im Kondensator (Verflüssiger)? | Das heiße gasförmige Kältemittel gibt Wärme ab und wird flüssig | Das Kältemittel verdampft und nimmt Wärme auf | Das Kältemittel wird verdichtet | Das Kältemittel wird gefiltert und getrocknet
+M Was passiert im Verdampfer? | Das Kältemittel verdampft und entzieht der Innenraumluft Wärme | Das Kältemittel wird flüssig und gibt Wärme ab | Das Kältemittel wird verdichtet | Das Kältemittel wird mit Öl gemischt
+M Welche Aufgabe hat das Expansionsventil? | Es senkt den Druck und dosiert das Kältemittel vor dem Verdampfer | Es erhöht den Druck vor dem Kondensator | Es schaltet den Kompressor ein | Es filtert Schmutz aus der Luft
+M Welche Aufgabe hat der Trockner im Kältekreislauf? | Er entzieht dem Kältemittel Feuchtigkeit und filtert Verunreinigungen | Er trocknet die Luft im Innenraum | Er erwärmt das Kältemittel | Er regelt die Gebläsedrehzahl
+Z Ordne den Bauteilen den Zustand des Kältemittels am Ausgang zu. | Kompressor = Gasförmig, hoher Druck, heiß | Kondensator = Flüssig, hoher Druck | Expansionsventil = Niedriger Druck, kalt | Verdampfer = Gasförmig, niedriger Druck
+M Wo sitzt der Kondensator im Fahrzeug? | Vorne vor dem Motorkühler | Hinter dem Armaturenbrett | Im Kofferraum | Unter dem Fahrersitz
+M Warum tropft bei eingeschalteter Klimaanlage Wasser unter dem Fahrzeug? | Am kalten Verdampfer kondensiert Luftfeuchtigkeit und läuft ab | Der Kühler ist undicht | Das Kältemittel läuft aus | Die Scheibenwaschanlage ist undicht
+M Was muss ein Mechaniker haben, um an Kältemittelkreisläufen arbeiten zu dürfen? | Einen Sachkundenachweis nach EU-Vorgabe | Nur einen Führerschein | Eine Schweißerprüfung | Keine besondere Ausbildung
+F Altes Kältemittel darf beim Service einfach in die Umgebungsluft abgelassen werden. || Kältemittel muss mit dem Servicegerät abgesaugt werden. Das Ablassen ist verboten.
+M In welcher Reihenfolge läuft der Klimaservice ab? | Absaugen – Evakuieren (Vakuum) – Dichtheit prüfen – Öl und Kältemittel füllen | Füllen – Absaugen – Evakuieren | Evakuieren – Füllen – Absaugen | Öl füllen – Absaugen – Dichtheit prüfen
+M Wozu wird die Anlage vor dem Füllen evakuiert? | Luft und Feuchtigkeit werden entfernt, und ein gehaltenes Vakuum zeigt grobe Dichtheit | Damit das Kältemittel wärmer wird | Damit der Kompressor geschmiert wird | Damit sich der Verdampfer ausdehnt
+M Woher weißt du die richtige Füllmenge des Kältemittels? | Vom Aufkleber im Motorraum oder aus den Herstellerdaten | Aus dem Gefühl | Vom Reifendruckaufkleber | Vom Tankdeckel
+M Womit kann man Undichtigkeiten im Kältekreislauf finden? | Mit UV-Kontrastmittel und UV-Lampe oder einem Lecksuchgerät | Mit dem Multimeter | Mit Wasser aus dem Schlauch | Mit der Fühlerlehre
+M Welche Eigenschaft hat das Kompressoröl (PAG-Öl)? | Es zieht Feuchtigkeit an und muss verschlossen gelagert werden | Es ist mit Motoröl identisch | Es ist ein Kühlmittelzusatz | Es brennt nicht und verdampft sofort
+M Wann wird der Trockner erneuert? | Wenn der Kreislauf längere Zeit offen war oder nach Herstellervorgabe | Bei jedem Ölwechsel | Bei jedem Reifenwechsel | Nie, er hält ewig
+M Was ist eine mögliche Ursache, wenn die Klimaanlage schwach kühlt? | Zu wenig Kältemittel im Kreislauf | Zu viel Scheibenwaschwasser | Zu hoher Reifendruck | Ein neuer Innenraumfilter
+M Was hilft gegen muffigen Geruch aus der Lüftung? | Verdampfer desinfizieren und Innenraumfilter wechseln | Mehr Kältemittel einfüllen | Den Kondensator lackieren | Die Heizung ausbauen
+M Welche Schutzausrüstung trägt man beim Klimaservice? | Schutzbrille und Schutzhandschuhe | Nur Gehörschutz | Schweißschild | Keine
+M Warum ist flüssiges Kältemittel auf der Haut gefährlich? | Es verdampft sofort und verursacht Erfrierungen | Es ist stark ätzend wie Batteriesäure | Es färbt die Haut dauerhaft | Es ist elektrisch leitend
+R R1234yf ist brennbar, deshalb gelten beim Service besondere Vorsichtsmaßnahmen wie Zündquellen fernhalten.
+F R134a und R1234yf dürfen im selben Kreislauf gemischt werden. || Die Kältemittel dürfen nicht gemischt werden. Servicegeräte und Anschlüsse sind getrennt.
+M Wodurch wird der Klimakompressor bei vielen Fahrzeugen zugeschaltet? | Durch eine Magnetkupplung an der Riemenscheibe | Durch ein Seil vom Armaturenbrett | Durch den Thermostat des Motors | Durch den Bremslichtschalter
+M Welche Aufgabe hat der Drucksensor im Kältekreislauf? | Er meldet den Druck, damit der Kompressor bei zu hohem oder zu niedrigem Druck abgeschaltet wird | Er misst die Innenraumtemperatur | Er regelt die Gebläsedrehzahl | Er zählt die Betriebsstunden
+N In eine Klimaanlage gehören 550 g Kältemittel. Abgesaugt wurden 380 g. Wie viel Gramm haben gefehlt? | 170 | g | 0 >> Sollmenge minus abgesaugte Menge
+# --- Abgasuntersuchung
+M Welche Schadstoffe entstehen bei der Verbrennung im Ottomotor? | CO, HC und NOx | Nur Wasser | Nur Stickstoff | Sauerstoff und Argon
+M Welche Abgasbestandteile sind ungiftig? | Stickstoff (N2), Wasserdampf (H2O) und Kohlendioxid (CO2) | Kohlenmonoxid (CO) und Stickoxide (NOx) | Kohlenwasserstoffe (HC) und Ruß | Kohlenmonoxid (CO) und Ruß
+M Warum ist Kohlenmonoxid (CO) so gefährlich? | Es ist geruchlos und verhindert den Sauerstofftransport im Blut | Es riecht stark und reizt nur die Augen | Es ist schwerer als Wasser | Es ist brennbar, aber ungiftig
+M Was bedeutet ein Lambdawert von 1? | Es steht genau so viel Luft zur Verfügung, wie zur vollständigen Verbrennung nötig ist | Das Gemisch ist fett | Das Gemisch ist mager | Der Motor läuft ohne Luft
+M Was bedeutet Lambda kleiner als 1? | Luftmangel, fettes Gemisch | Luftüberschuss, mageres Gemisch | Stöchiometrisches Gemisch | Kein Kraftstoff im Gemisch
+M Welche Werte werden bei der Abgasuntersuchung am Ottomotor mit dem Abgastester gemessen? | Unter anderem der CO-Gehalt und der Lambdawert | Der Öldruck | Die Kompression | Die Rußmasse im Filter
+M Was wird bei der Abgasuntersuchung am Dieselmotor gemessen? | Die Abgastrübung bei freier Beschleunigung | Der Lambdawert im Leerlauf | Der CO-Gehalt bei erhöhtem Leerlauf | Die Zündspannung
+M In welchem Zustand muss der Motor für die Abgasuntersuchung sein? | Betriebswarm | Kalt | Ohne Öl | Mit abgezogener Lambdasonde
+M Was wird bei Fahrzeugen mit OBD im Rahmen der Abgasuntersuchung zusätzlich ausgelesen? | Fehlerspeicher und Prüfbereitschaft (Readiness-Codes) | Der Kilometerstand der Reifen | Die Radiocodes | Die Wegfahrsperre
+M Was bedeutet es, wenn die Motorkontrollleuchte (MIL) bei laufendem Motor dauerhaft leuchtet? | Ein abgasrelevanter Fehler ist gespeichert | Der Service ist fällig | Die Tür ist offen | Der Tank ist voll
+M Was ist bei einer undichten Abgasanlage vor der Sonde für die Abgasmessung zu erwarten? | Falschluft verfälscht die Messwerte | Die Werte werden genauer | Der Motor wird leiser | Der Kat arbeitet besser
+R Bei der Abgasuntersuchung muss die Sonde tief genug im Endrohr stecken, damit keine Umgebungsluft mitgemessen wird.
+F Ein Katalysator arbeitet schon bei kaltem Motor mit voller Wirkung. || Er braucht seine Anspringtemperatur von etwa 250 bis 300 °C.
+M In welchem Abstand muss ein Pkw in Italien zur Hauptuntersuchung (revisione), bei der auch das Abgas geprüft wird? | Erstmals nach 4 Jahren, danach alle 2 Jahre | Jedes Jahr | Erstmals nach 3 Jahren, danach alle 2 Jahre | Alle 5 Jahre
+# --- Qualitätsmanagement und Wirtschaftlichkeit
+M Was gehört zur Endkontrolle nach der Inspektion? | Probefahrt bzw. Funktionsprüfung, Kontrolle der Arbeiten und sauberes Fahrzeug | Nur das Schreiben der Rechnung | Das Entfernen des Serviceaufklebers | Das Nachfüllen des Tanks
+M Was ist ein Arbeitswert (AW) bzw. eine Zeiteinheit in der Werkstatt? | Eine vom Hersteller festgelegte Zeitvorgabe für eine Arbeit | Der Wert des Fahrzeugs | Der Stundenlohn des Lehrlings | Der Preis eines Ersatzteils
+M Warum ist eine Reklamation für die Werkstatt teuer? | Nacharbeit kostet Zeit ohne zusätzlichen Erlös und schadet dem Ruf | Der Kunde zahlt dann das Doppelte | Der Hersteller zahlt eine Prämie | Sie bringt neue Kunden
+M Wozu dient das Prüfprotokoll der Inspektion? | Es dokumentiert die Ergebnisse für Kunde und Betrieb | Es ersetzt den Fahrzeugschein | Es ist nur für das Finanzamt | Es dient als Parkausweis
+N Eine Inspektion ist mit 18 Zeiteinheiten zu je 5 Minuten vorgegeben. Wie viele Stunden sind das? | 1,5 | h | 0 || 18 · 5 min = 90 min = 1,5 h >> 60 Minuten sind eine Stunde.
+N Die Arbeitsstunde kostet 70 €. Was kosten 1,5 Stunden Arbeit ohne Mehrwertsteuer? | 105 | € | 0 >> Stunden mal Stundensatz
+R Zufriedene Kunden kommen wieder und empfehlen die Werkstatt weiter, deshalb gehört Qualität zur Wirtschaftlichkeit.
+M Was gehört zur fachgerechten Übergabe des Fahrzeugs an den Kunden? | Durchgeführte Arbeiten erklären und auf festgestellte Mängel hinweisen | Nur den Schlüssel auf den Tisch legen | Das Fahrzeug ungewaschen und ohne Hinweis hinstellen | Den Kunden auf den nächsten Tag vertrösten
