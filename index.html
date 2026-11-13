@@ -467,22 +467,26 @@ function gOhm(el){let score=0,left=30,cur=null,iv=null,running=false;
   iv=setInterval(()=>{left--;const t=document.getElementById('tl');if(t)t.textContent=left;if(left<=0){clearInterval(iv);running=false;const nb=setBest('ohm',score,false);drawStart(`<p class="big">${score} Punkte ${nb?'🏆':''}</p>`)}},1000)}
  drawStart();stopGame=()=>clearInterval(iv)}
 
-function gRace(el){el.innerHTML=`<canvas id="cv" width="300" height="440"></canvas><div class="row" style="justify-content:center;margin-top:10px"><button id="bl" style="font-size:1.6rem;width:110px">◀</button><button class="primary" id="bs">Start</button><button id="br" style="font-size:1.6rem;width:110px">▶</button></div><p class="muted small">Pfeiltasten oder Knöpfe. Bestwert: ${P().bests.race!=null?P().bests.race:'–'}</p>`;
- const cv=document.getElementById('cv'),c=cv.getContext('2d');let lane=1,obs=[],speed=3,score=0,raf=null,alive=false,spawn=0,stripe=0;
+function gRace(el){el.innerHTML=`<canvas id="cv" width="300" height="440"></canvas><div class="row" style="justify-content:center;margin-top:10px"><button id="bl" style="font-size:1.6rem;width:110px">◀</button><button class="primary" id="bs">Start</button><button id="br" style="font-size:1.6rem;width:110px">▶</button></div><p class="muted small">Start: Knopf, Tippen aufs Spielfeld oder Leertaste. Lenken: Knöpfe, Pfeiltasten oder links/rechts aufs Spielfeld tippen. Bestwert: ${P().bests.race!=null?P().bests.race:'–'}</p>`;
+ const cv=document.getElementById('cv'),c=cv.getContext('2d');let lane=1,obs=[],speed=3,score=0,raf=null,alive=false,spawn=0,stripe=0,tp=0,crashT=-1e9;
  const LX=[50,150,250];
- function reset(){lane=1;obs=[];speed=3;score=0;spawn=0;alive=true;loop()}
+ function reset(){lane=1;obs=[];speed=3;score=0;spawn=0;alive=true;tp=performance.now();cancelAnimationFrame(raf);raf=requestAnimationFrame(loop)}
+ function start(){if(!alive&&performance.now()-crashT>400)reset()}
  function move(d){if(alive)lane=Math.max(0,Math.min(2,lane+d))}
- document.getElementById('bl').onclick=()=>move(-1);document.getElementById('br').onclick=()=>move(1);document.getElementById('bs').onclick=()=>{if(!alive){cancelAnimationFrame(raf);reset()}};
- const key=e=>{if(e.key==='ArrowLeft'){move(-1);e.preventDefault()}if(e.key==='ArrowRight'){move(1);e.preventDefault()}};window.addEventListener('keydown',key);
- function drawScene(){c.fillStyle='#2b2f36';c.fillRect(0,0,300,440);c.fillStyle='#dcdcdc';stripe=(stripe+speed)%40;
+ function banner(a,b){c.fillStyle='rgba(0,0,0,.6)';c.fillRect(0,170,300,90);c.fillStyle='#fff';c.textAlign='center';c.font='bold 22px system-ui';c.fillText(a,150,210);c.font='15px system-ui';c.fillText(b,150,240)}
+ document.getElementById('bl').onclick=()=>move(-1);document.getElementById('br').onclick=()=>move(1);document.getElementById('bs').onclick=start;
+ cv.onpointerdown=e=>{if(!alive){start();return}const r=cv.getBoundingClientRect();move(e.clientX-r.left<r.width/2?-1:1)};
+ const key=e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();if(alive)move(e.key==='ArrowLeft'?-1:1);else if(!e.repeat)start()}
+  else if((e.key===' '||e.key==='Enter')&&!alive&&e.target.tagName!=='BUTTON'){e.preventDefault();if(!e.repeat)start()}};window.addEventListener('keydown',key);
+ function drawScene(k){c.fillStyle='#2b2f36';c.fillRect(0,0,300,440);c.fillStyle='#dcdcdc';stripe=(stripe+k)%40;
   for(let x of[100,200])for(let y=-40+stripe;y<440;y+=40)c.fillRect(x-2,y,4,20);
   c.font='34px serif';c.textAlign='center';obs.forEach(o=>c.fillText('🚧',LX[o.l],o.y));c.fillText('🏎️',LX[lane],410);
   c.fillStyle='#fff';c.font='bold 16px system-ui';c.textAlign='left';c.fillText('Punkte: '+score,10,22)}
- function loop(){if(!alive)return;spawn-=speed;if(spawn<=0){obs.push({l:Math.floor(Math.random()*3),y:-10});spawn=140+Math.random()*80}
-  obs.forEach(o=>o.y+=speed);obs=obs.filter(o=>{if(o.y>460){score++;return false}return true});speed=Math.min(11,3+score*0.12);
-  if(obs.some(o=>o.l===lane&&o.y>375&&o.y<435)){alive=false;drawScene();const nb=setBest('race',score,false);c.fillStyle='rgba(0,0,0,.6)';c.fillRect(0,170,300,90);c.fillStyle='#fff';c.textAlign='center';c.font='bold 22px system-ui';c.fillText('Crash! '+score+' Punkte'+(nb?' 🏆':''),150,210);c.font='15px system-ui';c.fillText('Start drücken für neue Runde',150,240);return}
-  drawScene();raf=requestAnimationFrame(loop)}
- drawScene();stopGame=()=>{alive=false;cancelAnimationFrame(raf);window.removeEventListener('keydown',key)}}
+ function loop(t){if(!alive)return;const k=speed*Math.max(0,Math.min(3,(t-tp)/16.667));tp=t;spawn-=k;if(spawn<=0){obs.push({l:Math.floor(Math.random()*3),y:-10});spawn=140+Math.random()*80}
+  obs.forEach(o=>o.y+=k);obs=obs.filter(o=>{if(o.y>460){score++;return false}return true});speed=Math.min(11,3+score*0.12);
+  if(obs.some(o=>o.l===lane&&o.y>375&&o.y<435)){alive=false;crashT=performance.now();drawScene(0);const nb=setBest('race',score,false);banner('Crash! '+score+' Punkte'+(nb?' 🏆':''),'Tippen oder Start für neue Runde');return}
+  drawScene(k);raf=requestAnimationFrame(loop)}
+ drawScene(0);banner('Bereit?','Tippe hier oder drücke Start');stopGame=()=>{alive=false;cancelAnimationFrame(raf);window.removeEventListener('keydown',key)}}
 
 function gBlink(el){const L=['🔋','🛢️','🌡️','⚠️','💡','⛽'],C=['#e5484d','#ffb020','#4a9bf0','#f2c230','#2ec27e','#c27cf2'];let seq=[],pos=0,busy=true,on=false,score=0,T=[];
  const later=(f,ms)=>T.push(setTimeout(f,ms)),msg=t=>{const m=document.getElementById('bm');if(m)m.textContent=t};
