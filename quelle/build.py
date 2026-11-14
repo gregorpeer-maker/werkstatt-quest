@@ -12,10 +12,10 @@ import pruefen
 qs = pruefen.load_all(os.path.join(here, 'fragen'))
 src = os.path.join(here, 'werkstatt-quest.html')
 s = open(src, encoding='utf-8').read()
-a, b = s.index('/*KFZ_Q_START*/'), s.index('/*KFZ_Q_END*/')
-s = s[:a] + '/*KFZ_Q_START*/\nconst KFZ_Q=' + json.dumps(qs, ensure_ascii=False, separators=(',', ':')) + ';\n' + s[b:]
+a, b = s.index('/*FILE_Q_START*/'), s.index('/*FILE_Q_END*/')
+s = s[:a] + '/*FILE_Q_START*/\nconst FILE_Q=' + json.dumps(qs, ensure_ascii=False, separators=(',', ':')) + ';\n' + s[b:]
 open(src, 'w', encoding='utf-8').write(s)
-print(len(qs), 'KFZ-Fragen eingesetzt')
+print(len(qs), 'Fragen aus Dateien eingesetzt')
 
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(here, 'app')
 t = '<title>Werkstatt-Quest</title>'

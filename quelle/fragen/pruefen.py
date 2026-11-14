@@ -54,15 +54,24 @@ def parse(path, world, level, prefix):
     return out
 
 
-KFZ = [('kfz_lf1', 0), ('kfz_lf2', 1), ('kfz_lf3', 2), ('kfz_lf4', 3), ('kfz_lf5', 4), ('kfz_lf6', 5), ('kfz_lf7', 6), ('kfz_lf8', 7)]
+WELTEN = ['et', 'fr', 'edv', 'it', 'en']
+
+
+def dateien(folder):
+    """(Dateiname ohne Endung, Welt, Level, ID-Präfix) für alle vorhandenen Fragen-Dateien."""
+    out = []
+    for n in range(1, 9):
+        out.append(('kfz_lf%d' % n, 'kfz', n - 1, 'k%d' % n))
+    for w in WELTEN:
+        for l in range(5):
+            out.append(('%s_%d' % (w, l), w, l, '%s%d' % (w, l)))
+    return [x for x in out if os.path.exists(os.path.join(folder, x[0] + '.txt'))]
 
 
 def load_all(folder):
     qs = []
-    for name, lvl in KFZ:
-        p = os.path.join(folder, name + '.txt')
-        if os.path.exists(p):
-            qs += parse(p, 'kfz', lvl, 'k%d' % (lvl + 1))
+    for name, w, lvl, pre in dateien(folder):
+        qs += parse(os.path.join(folder, name + '.txt'), w, lvl, pre)
     return qs
 
 
@@ -73,10 +82,8 @@ if __name__ == '__main__':
     for t, c in seen.items():
         if c > 1:
             print('DOPPELT:', t)
-    for name, lvl in KFZ:
-        L = [q for q in qs if q['level'] == lvl]
-        if not L:
-            continue
+    for name, w, lvl in [(x[0], x[1], x[2]) for x in dateien(folder)]:
+        L = [q for q in qs if q['world'] == w and q['level'] == lvl]
         c = collections.Counter(q['type'] for q in L)
         tf = [q for q in L if q['type'] == 'tf']
         print('%s: %d Fragen %s, R/F richtig=%d falsch=%d' % (name, len(L), dict(c), sum(q['answer'] for q in tf), sum(not q['answer'] for q in tf)))
