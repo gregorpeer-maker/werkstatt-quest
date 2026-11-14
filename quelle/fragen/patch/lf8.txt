@@ -1,0 +1,76 @@
+1 | Erstmals nach 3 Jahren, danach alle 2 Jahre | Erstmals nach 4 Jahren, danach jedes Jahr | Erstmals nach 2 Jahren, danach alle 2 Jahre
+2 | Für alle Pkw, die älter als 10 Jahre sind | Für alle Motorräder und Mopeds | Für alle Fahrzeuge mit Dieselmotor ohne Partikelfilter
+3 | Nur bei der Motorisierungsbehörde, Werkstätten dürfen nur vorbereiten | Bei jedem Vertragshändler der Fahrzeugmarke ohne weitere Zulassung | Bei der Gemeindepolizei am Wohnort des Halters
+4 | Den Zeitwert des Fahrzeugs für die Versicherung ermitteln | Die Einhaltung der Wartungsintervalle des Herstellers kontrollieren | Die Garantieansprüche gegenüber dem Hersteller sichern
+5 | Das Fahrzeug wird sofort stillgelegt und das Kennzeichen eingezogen | Der Mangel wird notiert und bei der nächsten regulären Prüfung kontrolliert | Die Prüfung gilt als bestanden, wenn der Halter die Reparatur schriftlich zusagt
+6 | Nur eine Verwarnung, solange die Versicherung bezahlt ist | Der sofortige Entzug des Führerscheins | Eine Nachfrist von sechs Monaten ohne Strafe
+7 | Den Fehlerspeicher löschen und die Kontrollleuchten prüfen | Nur Bremsen und Beleuchtung prüfen, der Rest wird nicht kontrolliert | Eine große Inspektion nach Wartungsplan durchführen
+8 | Die Bremsverzögerung in m/s² und der Bremsweg | Der Bremsdruck in bar an jedem Rad | Die Temperatur der Bremsscheiben nach der Bremsung
+9 | Das Verhältnis von Bremsweg zu Reaktionsweg | Die Verzögerung des Fahrzeugs in m/s² | Der Unterschied der Bremskräfte zwischen links und rechts in Prozent
+10 | Verglaste Bremsbeläge | Luft im Bremssystem | Ein festsitzender Bremskolben
+11 | Nur die Funktion der Kontrollleuchte | Die Belagstärke der Vorderradbremse | Der Pedalweg der Betriebsbremse
+12 | Auf den richtigen Innendurchmesser | Auf das Herstellungsdatum, nach 5 Jahren werden sie beanstandet | Auf die Farbe der Schutzhülle
+13 | Die Handbremse muss dabei angezogen sein | Es wird immer nur ein Rad einzeln angetrieben | Die Vorderachse wird grundsätzlich nicht geprüft
+14 | Bei entlasteter Achse durch Rütteln am Rad allein | Mit dem Schwingungsdämpfer-Prüfstand | Mit der Achsvermessung
+15 | Nur die Leichtgängigkeit bei laufendem Motor | Der Lenkrollhalbmesser und der Nachlauf | Die Übersetzung des Lenkgetriebes
+16 | 1,0 mm | 2,0 mm | 3,0 mm
+17 | Sie müssen vom selben Hersteller und aus demselben Produktionsjahr stammen | Sie dürfen in der Größe abweichen, wenn das Profil gleich ist | Sie müssen dieselbe Profiltiefe auf den Millimeter haben
+18 | Mit der Bereifung, die bei der letzten Hauptuntersuchung montiert war | Mit den Angaben auf dem Reserverad | Mit der Empfehlung des Reifenhändlers
+19 | Unterschiedliche Profiltiefe von 1 mm zwischen links und rechts | Leichte Verfärbung der Flanke durch Bremsstaub | Ein Reifenalter von mehr als vier Jahren
+20 | Das Anzugsmoment der Radschrauben | Die Fettfüllung durch Abziehen der Kappe | Die Lagertemperatur nach der Probefahrt
+21 | Die Federrate in N/mm | Die Länge der Feder im ausgebauten Zustand | Das Herstellungsdatum der Dämpfer
+22 | Nur die Funktion, die Einstellung wird nicht geprüft | Die Leistungsaufnahme der Leuchtmittel in Watt | Die Farbtemperatur in Kelvin
+23 | Weiß | Rot | Vorne Weiß, hinten Rot
+24 | Gelb | Weiß | Orange
+25 | Leichte Kratzer am oberen Rand außerhalb des Wischfelds | Ein kleiner Steinschlag am Rand außerhalb des Sichtfelds | Eine Tönungsfolie mit Zulassung an den hinteren Seitenscheiben
+26 | Nur der Füllstand des Waschwassers | Die Wischgeschwindigkeit in Hüben pro Minute | Nur der Regensensor
+27 | Das wird nur notiert und hat keine Folgen | Das ist bei Fahrzeugen über 10 Jahren zulässig | Das gilt als geringer Mangel ohne Nachprüfung
+28 | Die Alarmanlage | Der Summer für nicht angelegte Gurte | Die Einparkhilfe
+29 | An Kotflügeln und Motorhaube | An der Auspuffblende | An den Türaußenblechen
+30 | Nur die Farbe des Abgases | Die Temperatur des Katalysators | Der Abgasgegendruck
+31 | Leichtes Schwitzen an einer Dichtung ohne Tropfenbildung | Ölnebel am Kurbelgehäuse-Entlüftungsschlauch | Ein alter, trockener Ölfilm an der Ölwanne
+32 | Nur die Gurtlänge | Das Herstellungsdatum des Gurts | Nur die Funktion des Gurtwarners
+33 | Der Kilometerstand im Motorsteuergerät | Die Codierung des Steuergeräts | Der Softwarestand des Motorsteuergeräts
+34 | Warndreieck, Verbandskasten und Feuerlöscher | Warnweste und Ersatzlampenset | Warndreieck und Abschleppseil
+35 | Sie dürfen mit einer getönten Abdeckung geschützt werden | Vorne genügt eine Kopie hinter der Windschutzscheibe | Sie müssen nur bei Dunkelheit lesbar sein
+36 | Sie sind erlaubt, sobald die Teile ein E-Prüfzeichen tragen, eine Eintragung entfällt immer | Sie müssen nur der Versicherung gemeldet werden | Sie sind erlaubt, wenn eine Fachwerkstatt den Einbau bestätigt
+37 | Nur ein Hinweis im Prüfbericht ohne weitere Folgen | Der Verlust der Herstellergarantie, sonst nichts | Eine höhere Kfz-Steuer
+38 | Nur die Rechnung der Werkstatt | Die Betriebsanleitung des Fahrzeugs | Das Serviceheft mit den Wartungsnachweisen
+39 | Eine Abgasuntersuchung | Das Auswuchten aller Räder | Ein Bremsflüssigkeitswechsel
+40 | Nur die Profiltiefe und das Reifenalter | Den Reifendruck und das Anzugsmoment allein | Die Wuchtgüte und den Rundlauf
+41 | Der Tacho zeigt zu viel an | Der Tacho zeigt gleich viel, nur der Kilometerzähler weicht ab | Die Motordrehzahl steigt bei gleicher Geschwindigkeit
+42 | Derselbe Hersteller wie die Erstausrüstung | Ein höherer Reifendruck als ab Werk | Dieselbe Profilart wie ab Werk
+43 | Sie sind bis 20 mm je Rad immer ohne Zulassung erlaubt | Sie ersetzen eine Achsvermessung | Sie dürfen nur an der Hinterachse montiert werden
+44 | Nur die Optik, die Fahrwerkswerte bleiben gleich | Nur der Reifendruck | Spurweite und Radstand
+45 | Dass sie neu sind | Dass sie mit Kabelbindern am Federbein fixiert sind | Dass der Bremsflüssigkeitsstand stimmt
+46 | Bohrung mal Hub | Kolbenfläche mal Bohrung | Bohrung mal Hub mal π
+47 | Otto: Selbstzündung. Diesel: Fremdzündung durch Glühkerze | Beide zünden fremd, der Diesel mit höherer Zündspannung | Otto: innere Gemischbildung. Diesel: Zündung durch Zündkerze
+48 | Damit der Kraftstoff feiner zerstäubt wird | Damit der Motor mit höherer Drehzahl laufen kann | Damit weniger Stickoxide entstehen
+49 | Zu späte Zündung mit weichem Druckanstieg | Verbrennungsaussetzer durch zu mageres Gemisch | Nachbrennen von Kraftstoff im Abgaskrümmer
+50 | Sie verstellt den Ventilhub stufenlos | Sie gleicht die Längung der Steuerkette aus | Sie schaltet einzelne Zylinder ab
+51 | Bei der Saugrohreinspritzung wird direkt in den Brennraum gespritzt | Die Direkteinspritzung arbeitet mit etwa 3 bis 4 bar | Bei der Direkteinspritzung wird vor die Drosselklappe gespritzt
+52 | Die Lage des Motors vorne, hinten oder in der Mitte | Die Verteilung der Bremskraft auf die Achsen | Die Lage des Getriebes im Fahrzeug
+53 | Sie gleicht Drehzahlunterschiede der Räder in Kurven aus | Sie verteilt die Bremskraft auf beide Räder einer Achse | Sie trennt den Antrieb einer Achse ab
+54 | Der Gesamtstrom ist so groß wie der kleinste Teilstrom | Durch jeden Zweig fließt derselbe Strom | Der Gesamtstrom ist das Produkt der Teilströme
+55 | Ein großer Steuerstrom schaltet einen kleinen Laststrom | Es begrenzt den Strom im Laststromkreis | Es wandelt die Spannung für das Steuergerät um
+56 | Eine möglichst kurze Leitung mit kleinem Querschnitt | Eine Leitung mit dickerer Isolierung | Eine abgeschirmte Leitung
+57 | Nur von der Spannung der Batterie | Nur von der Länge der Leitung | Von der Farbe und Dicke der Isolierung
+58 | Stromfluss in beide Richtungen ab 0,7 V | Nur Wechselstrom | Stromfluss nur oberhalb der Bordnetzspannung
+59 | Parallel zum Verbraucher | Parallel zur Spannungsquelle | Zwischen Verbraucher und Masse parallel zur Sicherung
+60 | Eine Unterbrechung der Leitung | Ein erhöhter Übergangswiderstand an einem Stecker | Eine Verbindung zwischen zwei Signalleitungen gleicher Spannung
+61 | Aus Bremsweg und Ausrollweg | Aus Reaktionsweg und Schwellweg | Aus Reaktionszeit und Bremszeit
+62 | Er verdoppelt sich | Er verdreifacht sich | Er steigt um die Hälfte
+63 | Die Bremsbeläge verlieren durch Nässe ihren Reibwert | Die Reifen überhitzen und verlieren Haftung | Das Wasser dringt in die Radlager ein
+64 | Das Heck drängt in der Kurve nach außen | Das Fahrzeug lenkt stärker ein, als der Fahrer vorgibt | Das Fahrzeug taucht beim Bremsen vorne ein
+65 | Systeme, die Unfallfolgen mindern, z. B. Airbag und Gurtstraffer | Systeme, die nur bei laufendem Motor arbeiten | Systeme, die der Fahrer selbst einschalten muss
+66 | ABS, ESP und Bremsassistent | Airbag, ABS und Abstandsregeltempomat | Sicherheitsgurt, ESP und Spurhalteassistent
+67 | Über den Schrotthändler als Altmetall | Im Sammelbehälter für ölverschmutzte Betriebsmittel | Nach Entleeren der Säure über den Restmüll
+68 | Gemeinsam im Altölbehälter | Gemeinsam in einem Behälter für Flüssigkeiten auf Wasserbasis | Im Ölabscheider der Werkstatt
+69 | Mit Kaltreiniger verdünnen und in den Ölabscheider spülen | Mit Sägespänen abdecken und im Restmüll entsorgen | Mit Putzlappen aufnehmen und diese im Restmüll entsorgen
+70 | Sofort beginnen und die Unterlagen erst bei Problemen heranziehen | Zuerst das Werkzeug bereitlegen, der Auftrag ergibt sich beim Arbeiten | Durchführen, dokumentieren und erst danach planen
+71 | Aus dem Gedächtnis, Nachschlagen kostet Zeit | Aus Werten eines ähnlichen Fahrzeugs | Aus dem Fehlerspeicher des Fahrzeugs
+72 | Zahlenwert und Messgerät | Einheit und Toleranz | Zahlenwert und Datum
+73 | Um die Arbeitswerte abrechnen zu können | Um den Fehlerspeicher zu löschen | Um die Garantie des Herstellers zu verlängern
+74 | Stillschweigend weiterarbeiten, wenn der Prüfer es nicht bemerkt hat | Die Prüfung abbrechen und neu beginnen | Den Fehler erst am Ende im Fachgespräch erwähnen
+75 | Das Fahrzeug schiebt über die Vorderräder nach außen | Das Fahrzeug folgt dem Lenkeinschlag genau | Das Fahrzeug neigt sich in der Kurve stark zur Seite
+76 | Er verhindert das Blockieren der Räder | Er bremst einzelne Räder ab, um das Fahrzeug zu stabilisieren | Er hält das Fahrzeug beim Anfahren am Berg

@@ -1,0 +1,83 @@
+1 | über 48 V | über 120 V | über 400 V
+2 | über 25 V | über 50 V | über 60 V
+3 | Rot | Gelb | Violett
+4 | Nur Körperdurchströmung, Lichtbögen entstehen bei Gleichspannung nicht | Elektromagnetische Strahlung und Lärm | Nur Brandgefahr beim Laden, im Fahrbetrieb besteht keine Gefahr
+5 | Jeder Mechaniker mit abgeschlossener Lehre | Jeder, der vom Kunden schriftlich beauftragt wurde | Jede Person, die eine Sicherheitsunterweisung der Werkstatt unterschrieben hat
+6 | HV1, HV2 und HV3 | PE, PEN und PELV | S1, S2 und S3
+7 | Freischalten, erden und kurzschließen, benachbarte Teile abdecken | Zündung aus, 12-V-Batterie abklemmen, Fahrzeug anheben | Spannungsfreiheit feststellen, freischalten, gegen Wiedereinschalten sichern
+8 | Er entlädt die HV-Batterie vor Arbeiten am Fahrzeug | Er überbrückt die Schütze für die Diagnose | Er trennt das 12-V-Bordnetz von der HV-Batterie
+9 | Zündschlüssel abziehen und das Fahrzeug an die Ladesäule anschließen | Die 12-V-Batterie abklemmen und den Wartungsstecker im Fahrzeug ablegen | Ein Warnschild genügt, der Wartungsstecker bleibt griffbereit am Fahrzeug
+10 | Die HV-Batterie muss erst abkühlen | Die Schütze brauchen Zeit zum Öffnen | Der Isolationswächter muss seine Messung abschließen
+11 | Mit dem einpoligen Phasenprüfer | Mit dem Multimeter im Widerstandsmessbereich | Mit der Stromzange an der HV-Leitung
+12 | Messen genügt, wenn das Prüfgerät neu kalibriert ist | Zuerst messen, dann das Prüfgerät an der HV-Batterie selbst testen | Die Anzeige im Kombiinstrument ablesen und mit dem Tester bestätigen
+13 | Die orange Leitung zwischen Batterie und Leistungselektronik | Die Datenleitung zwischen Ladesäule und Fahrzeug | Eine Leitung, die den Isolationswiderstand misst
+14 | Die Sicherungen im Wartungsstecker | Der Wechselrichter | Der DC/DC-Wandler
+15 | Mechanikerhandschuhe und Schutzbrille | Schweißerschild und Lederhandschuhe | Antistatik-Armband und Sicherheitsschuhe
+16 | Die Person sofort an der Kleidung wegziehen | Zuerst den Notruf absetzen und bis zum Eintreffen abwarten | Die Anlage mit Wasser ablöschen und dann helfen
+17 | Er wandelt die Hochspannung in 12 V für das Bordnetz um | Er wandelt den Netzwechselstrom in Gleichstrom für die Batterie um | Er regelt den Ladestrom an der Schnellladesäule
+18 | Der Wechselrichter | Der Onboard-Lader | Ein riemengetriebener Generator
+19 | Zusätzliche Antriebsleistung beim Beschleunigen (Boosten) | Rollen ohne Antrieb mit abgekoppelter E-Maschine (Segeln) | Laden der Batterie im Stand durch den Verbrennungsmotor
+20 | Den Widerstand zwischen HV-Plus und HV-Minus | Den Innenwiderstand der HV-Batterie | Den Übergangswiderstand des Potenzialausgleichs
+21 | Es hat einen zu kleinen Innenwiderstand | Es misst nur Wechselspannung genau | Es zeigt nur Widerstände bis etwa 1 kΩ an
+22 | Er misst den Ladezustand der HV-Batterie | Er trennt bei einem Unfall die HV-Batterie | Er überwacht die Pilotlinie auf Unterbrechung
+23 | HV-Plus und HV-Minus werden niederohmig miteinander verbunden | Die Spannungen von HV-Batterie und Bordnetz werden angeglichen | Die Gehäuse werden gegeneinander isoliert, damit kein Fehlerstrom fließt
+24 | Nickel-Metallhydrid | Blei-Gel | Natrium-Schwefel
+25 | Standard-Nassbatterie mit höherer Kapazität | Lithium-Eisenphosphat-Batterie in jedem Fahrzeug | Gel-Batterie
+26 | Den Generatorregler ersetzen | Den Batteriesensor erneuern | Die Ruhestromabschaltung deaktivieren
+27 | Am Pluspol: Säuredichte und Ladezustand | Am Generator: Ladestrom und Erregerstrom | Im Sicherungskasten: Spannung an Klemme 15
+28 | Es erhöht die Ladespannung auf über 16 V | Es schaltet zuerst sicherheitsrelevante Verbraucher ab | Es trennt die Batterie vom Bordnetz
+29 | Der Strom, den der Starter im Stillstand aufnimmt | Der Ladestrom bei voller Batterie | Der Strom bei eingeschalteter Zündung und stehendem Motor
+30 | Etwa 0,5 A bis 1 A | Etwa 200 mA bis 500 mA | Unter 1 mA
+31 | Sofort nach dem Verriegeln messen, bevor die Steuergeräte einschlafen | Das Massekabel abnehmen und das Amperemeter dazwischen anschließen | Bei geöffneter Tür messen, damit der Bus aktiv bleibt
+32 | Die Steuergeräte der Reihe nach ersetzen | Den Generator abklemmen und die Ladespannung messen | Die Batterie abklemmen und ihre Ruhespannung messen
+33 | Gleichstrom | Einphasen-Wechselstrom | Pulsierenden Gleichstrom
+34 | Sie regelt die Ladespannung | Sie erzeugt den Erregerstrom | Sie glättet die Spannung wie ein Kondensator
+35 | Er verändert die Drehzahl des Generators | Er schaltet einzelne Dioden zu und ab | Er verändert den Strom in der Ständerwicklung
+36 | Einen defekten Regler | Eine tiefentladene Batterie | Einen rutschenden Keilrippenriemen
+37 | Er verhindert das Überladen der Batterie | Er erhöht die Generatordrehzahl im Leerlauf | Er trennt den Generator beim Starten vom Riementrieb
+38 | Nicht unter 12 V | Nicht unter 11,5 V | Nicht unter 6 V
+39 | Bei stehendem Motor mit dem Ohmmeter über die Leitung | Beim Starten zwischen Batterie-Minus und Motorblock | Bei laufendem Motor zwischen Generator B+ und Batterie-Plus
+40 | Durch Druckgas aus einem Speicher, den ein Ventil öffnet | Durch die Verformung des Lenkrads beim Aufprall | Durch den Gurtstraffer über eine mechanische Kopplung
+41 | Zündung einschalten und den Fehlerspeicher löschen | Batterie abklemmen und sofort mit der Arbeit beginnen | Airbag-Sicherung ziehen, die Batterie bleibt angeschlossen
+42 | Der Zünder hat einen zu hohen Widerstand für das Messgerät | Das Multimeter wird durch die Kondensatorladung zerstört | Der Messwert wird durch die Wickelfeder verfälscht
+43 | Mit der Aufprallseite nach unten | Hochkant auf der Steckerseite | Die Lage spielt keine Rolle, wenn der Stecker abgezogen ist
+44 | Er begrenzt die Gurtkraft, damit der Brustkorb nicht überlastet wird | Er blockiert den Gurt bei starkem Bremsen | Er erkennt, ob der Gurt angelegt ist
+45 | Sie trennt bei Tiefentladung die Verbraucher von der Batterie | Sie trennt bei einem Unfall die HV-Batterie vom Fahrzeug | Sie schützt die Batterie vor Überladung durch den Generator
+46 | Der Lenkwinkelsensor | Ein Schleifkontakt an der Lenksäule ohne Kabel | Der Lenkstockschalter
+47 | Der Selbsttest des Systems läuft noch | Der Beifahrerairbag ist abgeschaltet | Das System ist betriebsbereit
+48 | Durch die Glühkerze bei jedem Arbeitstakt | Durch den Zündfunken einer Zündkerze | Durch die heißen Abgase der Abgasrückführung
+49 | Jeder Zylinder hat ein eigenes Pumpenelement mit Einspritzleitung | Der Einspritzdruck wird im Injektor durch einen Nocken erzeugt | Der Kraftstoff wird mit Niederdruck in das Saugrohr eingespritzt
+50 | Es erzeugt den Hochdruck für die Einspritzung | Es verteilt den Kraftstoff drucklos auf die Injektoren | Es kühlt den Kraftstoff vor der Einspritzung
+51 | ca. 200 bar | ca. 1000 bar | ca. 5000 bar
+52 | Der Ladedrucksensor | Der Kraftstoffdrucksensor im Tank | Der Differenzdrucksensor
+53 | Nur über die Drehzahl der Vorförderpumpe | Über die Öffnungsdauer der Injektoren | Über das Überdruckventil im Kraftstofffilter
+54 | Mit einer konstanten Gleichspannung | Mit einem analogen 0-bis-5-V-Signal | Über den CAN-Bus
+55 | Sie misst die Rücklaufmenge der Injektoren | Sie regelt den Druck im Kraftstoffrücklauf | Sie dosiert die Einspritzmenge je Zylinder
+56 | Sie erhöht die Abgastemperatur für die Regeneration | Sie kühlt die Düsennadel | Sie erhöht die Motorleistung bei Volllast
+57 | Den Fehlerspeicher löschen genügt | Die Hochdruckpumpe neu anlernen | Den Raildrucksensor ersetzen
+58 | Mit der Kompressionsprüfung | Mit der Messung des Raildrucks im Leerlauf | Mit der Abgastrübungsmessung
+59 | Der Kraftstoff ist stark ätzend | Die Leitungen stehen unter Hochspannung | Die Leitungen sind über 200 °C heiß
+60 | Anschlüsse offen lassen, damit Restkraftstoff ablaufen kann | Bauteile mit Druckluft ausblasen und mit Putzlappen reinigen | Schmutz ist unkritisch, weil der Kraftstofffilter nachgeschaltet ist
+61 | Bessere Schmierung der Hochdruckpumpe | Höherer Raildruck | Verkokte Glühkerzen
+62 | Er nutzt Abgasenergie, um den Abgasgegendruck zu senken | Er wird von der Kurbelwelle angetrieben und verdichtet die Luft | Er führt Abgas in den Ansaugtrakt zurück
+63 | Turbine im Ansaugtrakt und Verdichter im Abgasstrom | Verdichter und Elektromotor auf getrennten Wellen | Turbine und Ladeluftkühler in einem Gehäuse
+64 | Ein Bypassventil leitet Abgas an der Turbine vorbei | Verstellbare Schaufeln am Verdichterrad ändern die Ansaugmenge | Zwei verschieden große Lader werden nacheinander zugeschaltet
+65 | Es leitet verdichtete Luft zurück vor den Verdichter | Es verstellt die Leitschaufeln der Turbine | Es öffnet die Abgasrückführung bei Teillast
+66 | Er kühlt das Abgas vor der Turbine | Er kühlt das rückgeführte Abgas | Er erwärmt die Ladeluft für eine bessere Gemischbildung
+67 | Mit Kühlmittel allein | Mit einer Dauerfettfüllung | Mit Kraftstoff aus dem Rücklauf
+68 | Zu hoher Raildruck | Verstopfter Kraftstofffilter | Defekte Glühkerzen
+69 | Schwarzer Rauch und hoher Kraftstoffverbrauch | Weißer Rauch und Kühlmittelverlust | Klopfende Verbrennung im Leerlauf
+70 | Niedrige Verbrennungstemperatur und Luftmangel | Hohe Verbrennungstemperatur und Luftmangel | Niedrige Verbrennungstemperatur und Luftüberschuss
+71 | Die Verbrennungstemperatur steigt und NOx verbrennt | Der Ladedruck steigt und mehr Sauerstoff steht bereit | Das Abgas wird im Brennraum ein zweites Mal gefiltert
+72 | Er reduziert NOx zu Stickstoff | Er speichert Rußpartikel | Er wandelt Harnstoff in Ammoniak um
+73 | Er wandelt CO und HC in CO2 und Wasser um | Er reduziert Stickoxide mit Ammoniak | Er speichert Stickoxide bis zur Regeneration
+74 | ab ca. 250 °C | ab ca. 400 °C | ab ca. 900 °C
+75 | Der Abgastemperatursensor | Die Lambdasonde | Der NOx-Sensor
+76 | Lange Autobahnfahrten mit hoher Last | Anhängerbetrieb bei mittlerer Drehzahl | Überlandfahrten mit konstantem Tempo
+77 | Ruß, der bei der nächsten Regeneration verbrennt | Unverbrannter Kraftstoff | Harnstoffkristalle
+78 | 32,5 % Ammoniaklösung in Wasser | 50 % Harnstofflösung in Wasser | 32,5 % Glykol in destilliertem Wasser
+79 | Harnstoff oxidiert Ruß zu CO2 | Ammoniak oxidiert CO und HC | Stickoxide werden gespeichert und bei fettem Gemisch freigesetzt
+80 | AdBlue gefriert bei etwa 0 °C | AdBlue kristallisiert bei über 30 °C | AdBlue gefriert bei etwa −25 °C
+81 | Der Motor geht während der Fahrt sofort aus | Das Fahrzeug fährt ohne Einschränkung weiter | Der Partikelfilter regeneriert nicht mehr
+82 | Der CO-Gehalt im Leerlauf | Der NOx-Gehalt bei Volllast | Die Rußmasse im Partikelfilter
+83 | Er wandelt den Gleichstrom der Batterie in Drehstrom für die E-Maschine um | Er wandelt die Hochspannung in 12 V um | Er wandelt den Gleichstrom der Schnellladesäule um

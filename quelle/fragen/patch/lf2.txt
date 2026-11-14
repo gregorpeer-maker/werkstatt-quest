@@ -1,0 +1,80 @@
+1 | Flüssigkeiten lassen sich zusammendrücken und speichern so die Bremskraft | Der Druck ist am Hauptbremszylinder am höchsten und nimmt zum Rad hin gleichmäßig ab | Die Flüssigkeit überträgt die Kraft nur in Richtung der Leitung
+2 | Der Bremskraftverstärker | Der Radbremszylinder | Das ABS-Hydraulikaggregat
+3 | Er erhöht den hydraulischen Druck im Bremskreis der Vorderachse | Er verteilt die Bremskraft lastabhängig auf beide Achsen | Er baut bei einer Notbremsung selbstständig Bremsdruck auf
+4 | Mit Überdruck aus dem Abgaskrümmer | Mit dem Öldruck der Motorschmierung | Mit Druckluft aus einem Kompressor
+5 | Die Bremskraft kann so zwischen Vorder- und Hinterachse geregelt werden | Der Pedalweg wird dadurch kürzer | Das ABS kann so jedes Rad einzeln regeln
+6 | Der Radbremszylinder mit den Bremsbacken | Die Membranfeder im Sattelhalter | Der Kolben des Hauptbremszylinders direkt
+7 | Bläuliche Verfärbung, Flugrost und leichter Belagabrieb | Sichtbare Rostschicht nach längerer Standzeit | Dicke über dem Mindestmaß, glatte Oberfläche ohne Riefen
+8 | Mit dem normalen Messschieber über den Rand der Scheibe | Mit der Fühlerlehre zwischen Belag und Scheibe | Mit der Messuhr am Sattelhalter
+9 | Sie verliert Additive, dadurch steigt der Siedepunkt | Sie nimmt Luft auf, dadurch wird sie zusammendrückbar | Sie dickt ein, dadurch reagiert das ABS langsamer
+10 | Die Flüssigkeit dehnt sich aus, die Bremse zieht von selbst an | Das Wasser gefriert und blockiert die Ventile im ABS-Block | Der Pedalweg wird kürzer und das Pedal hart
+11 | Mit dem Säureheber | Mit einem pH-Teststreifen | Mit einer Sichtprüfung der Farbe im Ausgleichsbehälter
+12 | Mit Bremsenreiniger abwischen | Mit einem trockenen Lappen wegwischen und polieren | Antrocknen lassen und dann abwaschen
+13 | Luft im System erhöht den Siedepunkt der Bremsflüssigkeit | Luft im System lässt die Bremse einseitig ziehen | Luft im System macht das Pedal hart und den Pedalweg kurz
+14 | Der Stand sinkt und es kann Luft angesaugt werden | Der Druck im Behälter steigt und löst das ABS aus | Die Flüssigkeit schäumt auf und muss gewechselt werden
+15 | Die Bremsanlage entlüften | Die Bremsflüssigkeit bis zur Max-Markierung auffüllen | Die Beläge auf dem Bremsenprüfstand einbremsen
+16 | Bremsbacken, Bremssattel, Rückzugfedern | Bremsklötze, Radbremszylinder, Sattelhalter | Bremsbacken, Schwimmsattel, Nachstellhebel
+17 | Verglaste Bremsbeläge an der Hinterachse | Zu niedriger Bremsflüssigkeitsstand | Ein defekter Bremskraftverstärker
+18 | Luft im Bremskreis der Hinterachse | Ein undichter Bremskraftverstärker | Gleichmäßig verschlissene Beläge an beiden Vorderrädern
+19 | Er meldet einen zu niedrigen Bremsflüssigkeitsstand | Er überwacht die Dicke der Bremsscheibe | Er stellt die Beläge bei Verschleiß selbsttätig nach
+20 | Eine höhere DOT-Klasse als vorgeschrieben, weil sie immer besser ist | DOT 5 auf Silikonbasis, weil sie kein Wasser aufnimmt | Die Sorte, die farblich zur Flüssigkeit im Behälter passt
+21 | Sie unterstützt die Betriebsbremse bei jeder Bremsung | Sie verhindert das Blockieren der Hinterräder | Sie hält den Bremsdruck im Stand hydraulisch in allen vier Rädern
+22 | Er verringert den Abgasgegendruck | Er senkt die Abgastemperatur für den Katalysator | Er filtert Rußpartikel aus dem Abgas
+23 | Er verbrennt den Restsauerstoff im Abgas | Er filtert Schadstoffe aus dem Abgas und speichert sie | Er senkt den CO2-Ausstoß des Motors
+24 | CO, CO2 und NOx | HC, NOx und Rußpartikel | CO2, H2O und N2
+25 | Krümmer – Vorschalldämpfer – Katalysator – Nachschalldämpfer | Katalysator – Krümmer – Vorschalldämpfer – Nachschalldämpfer | Krümmer – Katalysator – Nachschalldämpfer – Vorschalldämpfer
+26 | Leiseres Abgasgeräusch und Kondenswasser am Endrohr | Blauer Rauch beim Beschleunigen | Weißer Belag am Endrohr und höherer Ölverbrauch
+27 | Sie dichten die Flanschverbindungen der Rohre ab | Sie leiten die Wärme der Anlage an die Karosserie ab | Sie verbinden die Anlage starr mit dem Unterboden
+28 | Der Schalldämpfer wird zu heiß und der Werkstoff verzundert | Unverbrannter Kraftstoff greift den Stahl an | Das Streusalz dringt über das Endrohr ein
+29 | Dauerhaft mageres Gemisch bei Teillast | Lange Autobahnfahrten mit hoher Last | Kraftstoff mit hoher Oktanzahl
+30 | Die Batterie anschließen und die Zündung einschalten, damit Steuergeräte versorgt sind | Die Schweißstelle mit Bremsenreiniger entfetten und sofort schweißen | Den Tank füllen, damit sich keine Dämpfe bilden
+31 | Am Minuspol der Batterie | An einem blanken Teil der Karosserie, möglichst weit entfernt | Am Motorblock
+32 | Schweißschild und kurzärmlige Arbeitskleidung aus Kunstfaser | Getönte Schutzbrille und Mechanikerhandschuhe | Klarsichtvisier und Lederschürze
+33 | Sie dämpfen die Schwingungen der Karosserie | Sie führen das Rad und halten die Spur | Sie verhindern die Seitenneigung in Kurven
+34 | Er trägt das Fahrzeuggewicht mit | Er nimmt die Fahrbahnstöße auf und speichert sie | Er begrenzt die Seitenneigung der Karosserie
+35 | In Lageenergie der Feder | In Druckenergie im Gaspolster | In Bewegungsenergie des Rades
+36 | Schiefstehendes Lenkrad und einseitiger Reifenverschleiß an der Innenschulter | Knackgeräusche beim Einlenken unter Last | Harte Federung und höhere Bodenfreiheit
+37 | Einen Kugelgelenk-Abzieher | Einen Kolbenrücksteller | Eine Presse mit Druckstück
+38 | Der Dämpfer steht unter hohem Gasdruck und kann platzen | Das Dämpferöl steht unter Druck und spritzt heraus | Der Federteller ist heiß und kann sich verziehen
+39 | Die Feder sitzt getrennt vom Dämpfer auf dem Querlenker | Zwei Querlenker führen das Rad, der Dämpfer führt nicht | Der Dämpfer ist starr mit der Achse verbunden und lenkt nicht mit
+40 | Kürzerer Bremsweg, aber schlechterer Komfort | Geringere Aquaplaninggefahr | Höherer Kraftstoffverbrauch bei gleicher Bodenhaftung
+41 | Er dämpft die Federschwingungen an der Hinterachse | Er hält den Sturz beim Einfedern konstant | Er verhindert das Eintauchen beim Bremsen
+42 | Das Gelenk läuft trocken, weil das Getriebeöl ausläuft | Die Antriebswelle bekommt Spiel in der Radnabe | Der Raddrehzahlsensor verschmutzt und das ABS fällt aus
+43 | Brummgeräusch, das mit der Geschwindigkeit lauter wird | Vibrationen beim Bremsen | Klackern im Leerlauf bei getretener Kupplung
+44 | Sie gleichen Längenänderungen der Welle beim Einfedern aus | Sie dämpfen Drehschwingungen des Motors | Sie trennen den Kraftfluss beim Schalten
+45 | Es verbindet den Querlenker mit dem Achsschenkel und trägt die Radlast | Es verbindet den Stabilisator mit dem Federbein | Es führt die Zahnstange im Lenkgetriebe
+46 | Rad anheben, oben und unten fassen und kippen | Rad belastet lassen und am Lenkrad die Rückstellung prüfen | Rad anheben und in Laufrichtung drehen
+47 | Den Sturz einstellen | Das Lenkgetriebe entlüften | Die Räder auswuchten
+48 | Sie schmieren die Gelenke der Radaufhängung | Sie begrenzen den Federweg als Anschlagpuffer | Sie verbinden Fahrwerksteile starr und spielfrei miteinander
+49 | Mit dem Kugelgelenk-Abzieher | Durch Ausbrennen und Einschlagen mit dem Hammer | Mit dem Schlagschrauber und einer Gewindestange ohne Hülsen
+50 | Er misst das Spiel des Kugelgelenks | Er presst die Silentbuchse aus dem Querlenker | Er zieht das Radlager von der Nabe
+51 | Knackgeräusch beim Anfahren mit eingeschlagener Lenkung | Quietschen beim leichten Bremsen | Poltern beim Überfahren von Bodenwellen
+52 | Das Gewinde nachschneiden und dieselbe Schraube mit Schraubensicherung einkleben | Ein größeres Gewinde bohren und eine dickere Schraube ohne Freigabe verwenden | Das Gewinde mit Flüssigmetall auffüllen und neu schneiden
+53 | Der O-Ring | Die Flachdichtung | Die Kupferdichtung
+54 | Dichtlippe trocken und fettfrei montieren und mit dem Hammer einschlagen | Dichtlippe nach außen zeigen lassen, damit Schmutz abgehalten wird | Den Ring vor dem Einbau erwärmen und leicht schräg ansetzen
+55 | Aluminium | Messing | Stahl
+56 | Sie sind fester als gehärteter Stahl | Sie korrodieren im Kontakt mit Stahl nicht | Sie dehnen sich bei Wärme weniger aus als Stahl
+57 | Eine Legierung aus Kupfer und Zinn | Eine Legierung aus Kupfer und Nickel | Eine Legierung aus Zink und Aluminium
+58 | Ein Kunststoff, der nach dem Aushärten nicht mehr schmelzbar ist | Ein gummielastischer Kunststoff, der nicht schmilzt | Ein Kunststoff, der nur mit Glasfasern verarbeitet werden kann
+59 | Thermoplaste | Duroplaste | Verbundwerkstoffe
+60 | Zwei gleiche Metalle reiben unter Last aneinander und verschweißen | Ein Metall wird durch Streustrom aus dem Bordnetz abgetragen | Ein Metall reagiert bei hoher Temperatur mit dem Sauerstoff der Luft
+61 | Er zündet das Gemisch beim ersten Arbeitstakt | Er versorgt das Bordnetz während des Startvorgangs | Er baut den Öldruck vor dem Motorstart auf
+62 | Er versorgt nur die Batterie, das Bordnetz wird immer aus der Batterie gespeist | Er liefert den Strom für den Starter | Er hält die Batteriespannung bei stehendem Motor konstant
+63 | ca. 12,0 V bis 12,6 V | ca. 15,5 V bis 16,5 V | ca. 12,6 V bis 13,0 V
+64 | Die Batterie ist vollständig geladen | Der Generator lädt mit zu hoher Spannung | Die Batterie hat einen Zellenschluss
+65 | Die Zündung einschalten | Den Keilrippenriemen entspannen | Das Pluskabel an der Batterie abklemmen
+66 | Nockenwelle und Ölpumpe | Generator, Starter und Zündverteiler | Kurbelwelle und Ausgleichswellen
+67 | Glatte, glänzende Rippen ohne Risse und leises Laufgeräusch | Ölfilm auf der Riemenrückseite ohne weitere Schäden | Gleichmäßige leichte Abnutzung der Beschriftung
+68 | Er regelt die Drehzahl des Starters | Er begrenzt den Starterstrom | Er trennt nach dem Start das Ritzel vom Anker
+69 | Er richtet den Wechselstrom gleich | Er begrenzt die Drehzahl des Generators | Er schaltet die Ladekontrollleuchte
+70 | Den Freilauf des Starters | Die Kompression des Motors | Den Regler des Generators
+71 | Ein Bauteil, das ein elektrisches Signal in eine Bewegung umsetzt | Ein Bauteil, das Signale speichert und verarbeitet | Ein Bauteil, das den Strom in einem Stromkreis begrenzt
+72 | Ein Fühler, der Messwerte an das Steuergerät liefert, z. B. ein NTC | Ein Speicher, der Kennfelder für das Steuergerät bereithält | Ein Schalter, den nur der Fahrer betätigt
+73 | Zündung ein, damit das Steuergerät die Trennung erkennt | Verriegelung lösen und am Kabel gerade herausziehen | Stecker vorher mit Kontaktspray fluten und unter Spannung trennen
+74 | Zu hohe Bordnetzspannung | Zu großer Leitungsquerschnitt | Vibrationen bei korrekt verriegeltem Stecker
+75 | Höhere Flächenpressung | Rauere Oberflächen | Höhere Gleitgeschwindigkeit
+76 | Eine Reparatur, die nur mit Originalneuteilen den Neuzustand wiederherstellt | Eine Reparatur, die innerhalb der vom Hersteller vorgegebenen Arbeitszeit bleibt | Eine Reparatur, bei der nur die Lohnkosten, nicht die Teile berechnet werden
+77 | Ein gebrauchtes Teil vom Verwerter ohne Aufarbeitung | Ein Neuteil eines Fremdherstellers in Erstausrüsterqualität | Ein Originalteil, das der Kunde selbst mitbringt
+78 | Ja, wenn die Reparaturstelle anschließend druckgeprüft wird | Ja, als Zwischenlösung bis zur nächsten Inspektion | Ja, wenn der Kunde die Reparatur schriftlich verlangt
+79 | Der Reihe nach alle Fahrwerksgelenke erneuern | Zuerst die Schwingungsdämpfer und Federn tauschen | Fehlerspeicher auslesen und die Stellglieddiagnose durchführen
+80 | Aus dem Wartungsplan des Fahrzeugs | Aus dem Serviceheft des Kunden | Aus der Betriebsanleitung des Fahrzeugs

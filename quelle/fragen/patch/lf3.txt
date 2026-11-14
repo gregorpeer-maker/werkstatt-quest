@@ -1,0 +1,79 @@
+1 | Aus dem Fahrzeugalter und dem Wunsch des Kunden, der Hersteller gibt nur Empfehlungen | Aus der Laufleistung allein, Zeitabstand und Einsatz spielen keine Rolle | Aus den Fehlerspeichereinträgen und dem Ergebnis der letzten Hauptuntersuchung
+2 | Die Menge an Verschleißteilen, die die Werkstatt auf Lager hält | Den bereits verbrauchten Anteil eines Bauteils seit dem Einbau | Die vom Hersteller zugesagte Mindestlaufleistung in Kilometern
+3 | Überwiegend Langstrecke mit betriebswarmem Motor | Fahren mit hochwertigem Kraftstoff und Longlife-Öl | Regelmäßige Fahrten bei mittlerer Drehzahl auf der Autobahn
+4 | Zahnriemenwechsel | Kühlmittelwechsel bei jeder Inspektion | Getriebeölwechsel
+5 | Zündspulen, Lambdasonde, Kraftstoffpumpe | Zündkerzen, Glühkerzen, Partikelfilter | Luftfilter, Thermostat, Kühlmittelpumpe
+6 | Aus der Betriebsanleitung im Handschuhfach | Aus dem Serviceheft der letzten Inspektion | Aus dem Fehlerspeicher des Motorsteuergeräts
+7 | Sofort beheben, weil festgestellte Mängel immer zum Auftrag gehören | Im Serviceheft eintragen, der Kunde liest es beim nächsten Service | Dem Kunden nur mitteilen, wenn er ausdrücklich danach fragt
+8 | Zündspannung, Brenndauer und Primärstrom | Wärmewert, Gewindesteigung und Anzugsmoment | Elektrodenabstand, Widerstand der Zündspule und Zündzeitpunkt
+9 | Zu mageres Gemisch, die Kerze läuft zu heiß | Zu fettes Gemisch bei Kurzstreckenbetrieb | Zu hoher Wärmewert, die Kerze erreicht ihre Freibrenntemperatur nicht
+10 | Zu mageres Gemisch oder Falschluft | Öl im Brennraum durch verschlissene Kolbenringe | Zu früher Zündzeitpunkt bei Volllast
+11 | Er treibt Generator und Klimakompressor an | Er treibt die Ölpumpe und die Ausgleichswellen unabhängig von der Kurbelwelle an | Er überträgt das Drehmoment der Kurbelwelle auf das Schwungrad
+12 | 1 : 2, die Nockenwelle dreht doppelt so schnell | 1 : 1, beide Wellen drehen gleich schnell | 4 : 1, die Nockenwelle dreht ein Viertel so schnell
+13 | Spannrolle, Nockenwellenrad und Ölpumpe | Umlenkrollen, Keilrippenriemen und Thermostat | Kurbelwellenrad, Wellendichtringe und Zündkerzen
+14 | Sie hat dasselbe Wechselintervall wie das Kühlmittel | Ihre Dichtung wird beim Abnehmen des Riemens immer beschädigt | Sie bestimmt die Riemenspannung und muss deshalb neu sein
+15 | Ein Motor, dessen Zahnriemen über einen Freilauf angetrieben wird | Ein Motor mit hydraulischem Ventilspielausgleich | Ein Motor, bei dem die Ventile bei Riemenriss von Federn offen gehalten werden
+16 | Nur nach dem Kilometerstand, das Alter spielt keine Rolle | Nach dem Ergebnis der Sichtprüfung bei jeder Inspektion | Nach dem Alter allein, weil Gummi unabhängig von der Laufleistung altert
+17 | Die Spannrolle lösen und den Riemen bei beliebiger Motorstellung abnehmen | Die Nockenwelle auf OT stellen, die Kurbelwelle darf sich frei drehen | Zylinder 1 auf UT stellen und das Kurbelwellenrad markieren
+18 | Den Motor mit dem Starter kurz durchdrehen und auf Geräusche achten | Die Riemenspannung bei laufendem Motor nachstellen | Die Arretierwerkzeuge eingesetzt lassen und den Motor starten
+19 | An der Nockenwelle in Motordrehrichtung | An der Kurbelwelle gegen die Motordrehrichtung | Am Schwungrad in beliebiger Richtung
+20 | Er darf nicht vor dem Einbau bei Raumtemperatur gelagert werden | Er darf nicht trocken montiert werden, sondern wird leicht eingeölt | Er darf nicht ohne Vordehnen aufgelegt werden
+21 | Die Lager der Rollen werden überlastet und heulen | Der Riemen dehnt sich nicht mehr aus und reißt bei Kälte | Die Kühlmittelpumpe fördert zu viel
+22 | Der Riemen springt über und die Steuerzeiten verstellen sich | Der Riemen flattert und schlägt an die Abdeckung | Die Nockenwelle eilt der Kurbelwelle vor
+23 | Der Motor läuft normal, nur der Verbrauch sinkt leicht | Es wird nur ein Fehler gespeichert, der Motorlauf ändert sich nicht | Die Ladekontrolle leuchtet und die Batterie wird nicht geladen
+24 | Sie läuft trocken und braucht keine Schmierung | Sie ist leichter und leiser als ein Zahnriemen | Sie kann sich nicht längen und braucht keinen Spanner
+25 | Heulgeräusch, das mit der Drehzahl ansteigt | Quietschen beim Kaltstart, das nach kurzer Zeit verschwindet | Blauer Rauch beim Start und hoher Ölverbrauch
+26 | Hersteller und Teilenummer der Kühlmittelpumpe | Riemenspannung in Hertz | Kompressionswerte der Zylinder
+27 | Der Druckverlust in Prozent je Zylinder | Der Verbrennungsdruck bei laufendem Motor | Der Saugrohrdruck beim Starten
+28 | Motor kalt, alle Zündkerzen ausgebaut, Drosselklappe geschlossen | Motor betriebswarm, nur die Kerze des geprüften Zylinders ausgebaut, Drosselklappe voll geöffnet | Motor betriebswarm, alle Zündkerzen ausgebaut, Drosselklappe geschlossen
+29 | Auf einen möglichst hohen Wert an Zylinder 1 | Auf die Zeit, bis der Höchstwert erreicht ist | Auf den Mittelwert aller Zylinder
+30 | Undichtes Einlassventil | Defekte Zylinderkopfdichtung zum Kühlkanal | Undichtes Auslassventil
+31 | Wie hoch der Verdichtungsdruck im Zylinder ist | Wie viel Öl der Motor verbraucht | Ob die Steuerzeiten stimmen
+32 | Im Überschneidungs-OT, beide Ventile sind leicht geöffnet | Im UT nach dem Arbeitstakt | Im Zünd-OT, das Einlassventil ist geöffnet
+33 | Blauer Abgasrauch, hoher Ölverbrauch und verölte Zündkerzen | Schwarzer Abgasrauch und hoher Kraftstoffverbrauch | Rasselgeräusche beim Kaltstart und Fehler zur Nockenwellenstellung
+34 | Mit dem Refraktometer am Kühlmittel | Mit dem Drucktester am Kühlerverschluss | Mit dem Abgastester am Endrohr
+35 | Der Motor verbrennt Kühlmittel | Das Gemisch ist zu fett | Der Partikelfilter regeneriert
+36 | Verbranntes Motoröl | Verdampfendes Kühlmittel im Brennraum | Zu mageres Gemisch
+37 | Mit dem Diagnosetester über den Öldruckschalter | Mit dem Manometer am Ölmessstabrohr | Mit dem Kompressionsdruckschreiber an der Zündkerzenbohrung
+38 | Kraftstoff im Öl durch defekte Einspritzventile | Überhitztes, gealtertes Öl | Abrieb von Kolbenringen
+39 | Den Siedepunkt und Wassergehalt der Bremsflüssigkeit | Die Verzögerung in m/s² bei einer Vollbremsung aus 50 km/h | Den Schlag und die Dickenabweichung der Bremsscheiben in mm
+40 | Die Leistung an der Kurbelwelle direkt ohne Verluste | Das Drehmoment am Schwungrad bei stehendem Fahrzeug | Die Zugkraft am Rad, die Leistung lässt sich daraus nicht ableiten
+41 | R134a | R744 in allen Fahrzeugen | R12
+42 | R134a ist brennbar | R134a zerstört die Ozonschicht | R134a greift die Dichtungen an
+43 | Er verflüssigt das Kältemittel durch Abkühlen | Er entspannt das Kältemittel und senkt den Druck | Er saugt flüssiges Kältemittel an und pumpt es zum Verdampfer
+44 | Das flüssige Kältemittel nimmt Wärme auf und verdampft | Das Kältemittel wird entspannt und kühlt stark ab | Das gasförmige Kältemittel wird verdichtet und erhitzt sich
+45 | Das Kältemittel wird flüssig und gibt Wärme an die Innenraumluft ab | Das Kältemittel wird verdichtet und kühlt dabei ab | Das Kältemittel kondensiert und entzieht der Außenluft Wärme
+46 | Es erhöht den Druck und verflüssigt das Kältemittel | Es schaltet den Kompressor bei Überdruck ab | Es trennt flüssiges und gasförmiges Kältemittel
+47 | Er trocknet die Luft, bevor sie in den Innenraum strömt | Er verdampft restliches flüssiges Kältemittel vor dem Kompressor | Er speichert das Kompressoröl und gibt es dosiert ab
+48 | Im Heizungskasten hinter dem Armaturenbrett | Direkt am Kompressor im Motorraum | Hinter dem Motorkühler vor dem Lüfter
+49 | Am Kondensator kondensiert das Kältemittel und tropft ab | Der Trockner gibt die gesammelte Feuchtigkeit ab | Das Expansionsventil lässt überschüssiges Kältemittel ab
+50 | Eine Unterweisung durch den Werkstattmeister genügt | Eine Schweißerprüfung für Kälteanlagen | Die abgeschlossene Lehre genügt
+51 | Evakuieren – Absaugen – Füllen – Dichtheit prüfen | Absaugen – Öl und Kältemittel füllen – Evakuieren – Dichtheit prüfen | Dichtheit prüfen – Absaugen – Füllen – Evakuieren
+52 | Das restliche Kältemittel wird verflüssigt und kann wiederverwendet werden | Der Kompressor wird entlastet und das Öl verteilt sich | Der Trockner wird regeneriert und muss nicht getauscht werden
+53 | Aus dem Druck, der sich beim Füllen einstellt | Aus der abgesaugten Menge | Aus der Größe des Kondensators
+54 | Mit Seifenwasser bei evakuierter Anlage | Mit dem Abgastester am Verdampfer | Mit dem Manometer bei ausgeschaltetem Kompressor allein
+55 | Es ist mit Motoröl mischbar und kann damit ergänzt werden | Es nimmt keine Feuchtigkeit auf und ist unbegrenzt haltbar | Es ist für alle Kältemittel und Kompressoren gleich
+56 | Bei jedem Klimaservice ohne Ausnahme | Nur wenn der Kompressor getauscht wird | Nie, er regeneriert sich beim Evakuieren
+57 | Zu viel Kompressoröl im Kondensator | Ein verstopfter Kraftstofffilter | Zu hohe Gebläsedrehzahl
+58 | Kältemittel absaugen und neu befüllen | Den Trockner erneuern | Das Expansionsventil reinigen
+59 | Gehörschutz und Sicherheitsschuhe | Atemschutzmaske und Schürze | Schweißerbrille und Lederhandschuhe
+60 | Es ist stark ätzend und zerstört die Haut chemisch | Es entzündet sich an der warmen Haut | Es dringt durch die Haut und wirkt giftig
+61 | Durch einen Freilauf an der Riemenscheibe | Durch den Thermostat im Kühlkreislauf | Durch den Unterdruck im Saugrohr
+62 | Er regelt die Gebläsedrehzahl nach dem Kältemitteldruck | Er misst die Füllmenge und zeigt sie im Kombiinstrument an | Er öffnet bei Überdruck und lässt Kältemittel ab
+63 | CO2, H2O und N2 | CO, CO2 und Ruß | HC, NOx und SO2
+64 | Kohlenmonoxid (CO), Wasserdampf (H2O) und Stickstoff (N2) | Stickoxide (NOx), Stickstoff (N2) und Kohlendioxid (CO2) | Kohlenwasserstoffe (HC), Sauerstoff (O2) und Wasserdampf (H2O)
+65 | Es riecht stechend und verätzt die Atemwege | Es ist schwerer als Luft und verdrängt den Sauerstoff am Boden | Es ist brennbar und explodiert bei Kontakt mit Luft
+66 | Es steht doppelt so viel Luft zur Verfügung wie nötig | Luft und Kraftstoff sind im Massenverhältnis 1 : 1 gemischt | Im Abgas ist kein Restsauerstoff mehr messbar
+67 | Luftüberschuss, mageres Gemisch | Luftmangel, mageres Gemisch | Luftüberschuss, fettes Gemisch
+68 | Die Abgastrübung und die Rußzahl | Der NOx-Gehalt und die Abgastemperatur | Der CO2-Gehalt und der Abgasgegendruck
+69 | Der CO-Gehalt bei erhöhtem Leerlauf | Der Lambdawert im Leerlauf | Der HC-Gehalt bei Volllast
+70 | Kalt, direkt nach dem Start | Im Notlauf mit abgezogener Lambdasonde | Bei beliebiger Temperatur, nur die Drehzahl zählt
+71 | Die Adaptionswerte der Getriebesteuerung | Die Codierung des Motorsteuergeräts | Der Softwarestand aller Steuergeräte
+72 | Die Wartung ist fällig | Das Steuergerät führt gerade einen Selbsttest durch | Der Katalysator hat seine Betriebstemperatur noch nicht erreicht
+73 | Der CO-Wert steigt, weil Abgas entweicht | Die Messwerte bleiben gleich, nur das Geräusch ändert sich | Der Lambdawert sinkt unter 1
+74 | Erstmals nach 3 Jahren, danach alle 2 Jahre | Erstmals nach 4 Jahren, danach jedes Jahr | Erstmals nach 2 Jahren, danach alle 2 Jahre
+75 | Fehlerspeicher löschen, Serviceintervall zurückstellen und Schlüssel übergeben | Rechnung schreiben, Altteile entsorgen und Termin für den nächsten Service vergeben | Nur die Kontrolle der Füllstände und des Reifendrucks
+76 | Der Stundenverrechnungssatz der Werkstatt in Euro | Die tatsächlich gebrauchte Arbeitszeit des Mechanikers | Der Restwert des Fahrzeugs nach der Reparatur
+77 | Der Hersteller verrechnet jede Reklamation mit einer Vertragsstrafe | Der Kunde hat Anspruch auf ein kostenloses Ersatzfahrzeug für einen Monat | Die Ersatzteile müssen in jedem Fall doppelt bezahlt werden
+78 | Es ersetzt die Rechnung gegenüber dem Kunden | Es legt die Arbeitswerte für die Abrechnung fest | Es dient nur der Werkstatt als interner Nachweis
+79 | Schlüssel und Rechnung übergeben, Fragen beantwortet das Serviceheft | Festgestellte Mängel nur erwähnen, wenn sie sicherheitsrelevant sind | Die Rechnung erklären und die Altteile ohne Rückfrage entsorgen

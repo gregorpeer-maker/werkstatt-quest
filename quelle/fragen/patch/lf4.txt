@@ -1,0 +1,83 @@
+1 | Die Räder einer Achse stehen vorne weiter auseinander als hinten | Die Räder sind oben nach innen zur Fahrzeugmitte geneigt | Die Vorderachse hat eine größere Spurweite als die Hinterachse
+2 | Das Rad ist oben nach außen geneigt | Das Rad steht vorne enger als hinten | Die Lenkachse ist nach hinten geneigt
+3 | Die Seitenführungskraft in der Kurve steigt, weil das Rad schräg steht | Die Lenkkräfte sinken, weil der Störkrafthebelarm kleiner wird | Der Reifenverschleiß sinkt, weil das Rad beim Lenken senkrecht bleibt
+4 | Der Abstand zwischen den Radaufstandspunkten einer Achse | Der Radius, den das kurvenäußere Vorderrad bei vollem Lenkeinschlag beschreibt | Der Abstand zwischen Radmitte und Durchstoßpunkt der Lenkachse in Fahrzeuglängsrichtung
+5 | Das Fahrzeug zieht bei einseitig stärkerer Bremskraft zur stärker gebremsten Seite | Die Lenkung stellt sich nach der Kurve schneller zurück | Die Lenkkräfte im Stand werden deutlich größer
+6 | Zu viel positiver Sturz oder zu viel Vorspur | Zu hoher Reifendruck | Zu wenig Nachlauf
+7 | Schwingungsdämpfer tauschen und Räder auswuchten | Fahrzeug entladen, Tank leeren und Batterie abklemmen | Spurstangen lösen und Lenkrad in beliebiger Stellung feststellen
+8 | Die Unwucht des Rades wird ermittelt und ausgeglichen | Der Höhenschlag des Reifens wird gemessen | Unterschiedliche Reifendrücke werden rechnerisch ausgeglichen
+9 | Die Vorderachse, weil sie gelenkt wird | Die Achse mit dem größeren Reifenverschleiß | Die Reihenfolge ist frei wählbar
+10 | Am Exzenter des Federbeins | An der Koppelstange des Stabilisators | Am Traggelenk des Querlenkers
+11 | Die Raddrehzahlsensoren anlernen | Das Lenkgetriebe entlüften | Den Gierratensensor ersetzen
+12 | Der Nachlauf ist links und rechts gleich groß | Die Räder sind nicht ausgewuchtet | Der Sturz an der Hinterachse ist zu positiv
+13 | Eine riemengetriebene Pumpe fördert Öl abhängig von der Motordrehzahl | Ein Elektromotor treibt dauernd eine Hydraulikpumpe mit konstantem Druck an | Ein Elektromotor ersetzt die Lenksäule, eine mechanische Verbindung besteht nicht
+14 | Sie arbeitet ohne Steuergerät und Sensoren | Sie liefert bei stehendem Motor die volle Lenkunterstützung | Sie braucht keine Bordnetzspannung
+15 | Der Raddrehzahlsensor | Der Gierratensensor | Der Querbeschleunigungssensor
+16 | Sie wandelt Drehzahl und Drehmoment des Motors | Sie dämpft die Drehschwingungen des Motors | Sie gleicht Drehzahlunterschiede zwischen den Antriebsrädern aus
+17 | Kupplungsscheibe, Pumpenrad und Ausrücklager | Druckplatte, Synchronring und Schaltmuffe | Lamellenpaket, Druckkolben und Membranfeder
+18 | Die Gänge lassen sich nur mit Kratzen einlegen | Das Fahrzeug ruckt beim Anfahren | Das Pedal bleibt nach dem Treten unten
+19 | Im Leerlauf Vollgas geben und die Drehzahl beobachten | Im 1. Gang mit getretener Kupplung Gas geben | Bei laufendem Motor den Rückwärtsgang ohne Kuppeln einlegen
+20 | Die Kupplung rutscht | Das Zweimassenschwungrad ist verschlissen | Die Kupplungsbeläge sind abgefahren
+21 | Zu geringes Spiel am Kupplungspedal | Ein zu dicker neuer Kupplungsbelag | Zu wenig Getriebeöl
+22 | Es speichert Energie für den Wiederstart bei Start-Stopp | Es gleicht die Unwucht der Kurbelwelle aus | Es erhöht das Anfahrdrehmoment
+23 | Die Kupplung rutscht in hohen Gängen unter Last | Die Gänge lassen sich nur mit Kratzen einlegen | Pfeifgeräusch bei getretenem Kupplungspedal
+24 | Die Kupplung wird hydraulisch statt mit Seilzug betätigt | Die Kupplung läuft im Ölbad und ist verschleißfrei | Die Kupplung hat zwei Scheiben für höheres Drehmoment
+25 | Die Druckplatte wird gleichmäßig vorgespannt | Das Schwungrad wird gegen Verdrehen blockiert | Die Membranfeder wird in Einbaulage gehalten
+26 | Ein Seilzug zieht am Ausrückhebel, die Flüssigkeit dämpft nur | Der Nehmerzylinder am Pedal drückt Flüssigkeit zum Geberzylinder am Getriebe | Der Bremskraftverstärker unterstützt das Auskuppeln mit Unterdruck
+27 | Es gleicht die Drehzahlunterschiede der Antriebsräder aus | Es trennt den Kraftfluss beim Anfahren und Schalten | Es erhöht die Motorleistung in den unteren Gängen
+28 | Im höchsten Gang | Im direkten Gang | Im 2. Gang
+29 | Sie verriegelt den eingelegten Gang gegen Herausspringen | Sie verhindert das Einlegen von zwei Gängen gleichzeitig | Sie trennt beim Schalten kurz den Kraftfluss
+30 | Das Ausrücklager | Das Führungslager der Getriebeeingangswelle | Die Schaltgabel dieses Gangs
+31 | Verschlissener Synchronring | Zu hoher Getriebeölstand | Rutschende Kupplung
+32 | Es übersetzt die Drehzahl ins Langsame | Es verteilt das Drehmoment immer auf das Rad mit der besseren Haftung | Es verbindet beide Antriebsräder starr miteinander
+33 | Er übersetzt die Drehzahl ins Schnelle und senkt das Drehmoment | Er gleicht Drehzahlunterschiede der Räder aus | Er trennt Getriebe und Antriebswellen im Leerlauf
+34 | Die Lamellenkupplung im Planetensatz | Das Zweimassenschwungrad | Die Überbrückungskupplung allein
+35 | Ein Planetengetriebe mit Wandler und Überbrückungskupplung | Ein Schaltgetriebe mit einer automatisierten Kupplung und Zugkraftunterbrechung | Zwei Kegelscheibenpaare mit Schubgliederband
+36 | Mit der Messuhr am Magnetstativ | Mit dem Messschieber über die Kopfhöhe | Mit Tuschierpaste auf der Richtplatte allein
+37 | Von außen nach innen, mit Drehmoment und Drehwinkel | Reihum im Uhrzeigersinn in drei Stufen | Von innen nach außen, nur mit dem Schlagschrauber auf Endmoment
+38 | Ihr Gewinde verschleißt beim Herausdrehen | Sie verlieren durch die Hitze ihre Härte | Ihre Köpfe werden beim Anziehen beschädigt
+39 | Das Ventil öffnet später und weniger weit | Die Nockenwelle läuft trocken | Klappergeräusche bei kaltem Motor
+40 | Das Ventil schließt nicht mehr und verbrennt | Die Kompression steigt | Der Ventilhub wird größer
+41 | Sie dämpfen das Aufsetzen des Ventils im Sitz | Sie verstellen die Steuerzeiten abhängig von der Drehzahl | Sie schmieren die Nockenwelle
+42 | Weißer Rauch bei warmem Motor und Kühlmittelverlust | Schwarzer Rauch beim Beschleunigen | Blauer Rauch nur unter Volllast bei hoher Drehzahl
+43 | Zu hoher Öldruck | Zu fettes Gemisch | Zu spät eingestellte Zündung allein
+44 | Thermostat bleibt offen | Zu hoher Frostschutzanteil bei Außentemperaturen unter null | Kühlerlüfter läuft dauernd
+45 | Der Thermostat bleibt geschlossen | Die Kühlmittelpumpe fördert nicht | Der Kühlerlüfter läuft nicht an
+46 | Mit dem CO2-Tester am Ausgleichsbehälter | Mit dem Refraktometer am Kühlmittel | Den Motor heißfahren und auf Dampf achten
+47 | Er begrenzt die Kühlmitteltemperatur auf 90 °C | Er entlüftet das System bei jedem Kaltstart | Er hält das System drucklos, damit kein Schlauch platzt
+48 | Er steuert das Öffnen und Schließen der Ventile | Er wandelt die Drehbewegung der Kurbelwelle in den Ventilhub um | Er gleicht die Massenkräfte des Motors aus
+49 | Es verbindet Kolben und Zylinderkopf | Es lagert die Kurbelwelle im Motorblock | Es überträgt die Drehbewegung auf die Nockenwelle
+50 | Mit dem Messschieber | Mit der Bügelmessschraube | Mit Haarlineal und Fühlerlehre
+51 | Mit der Fühlerlehre zwischen Lagerschale und Zapfen | Mit dem Messschieber an der Lagerschale | Mit der Messuhr am Pleuelfuß bei eingebautem Kolben
+52 | Tauchschmierung | Mischungsschmierung | Trockensumpfschmierung in jedem Serienmotor
+53 | Ölwanne – Ölfilter – Ölpumpe – Schmierstellen – zurück in die Ölwanne | Ölpumpe – Ölwanne – Schmierstellen – Ölfilter | Ölwanne – Ölpumpe – Schmierstellen – Ölfilter – zurück in die Ölwanne
+54 | Es hält den Öldruck im Leerlauf aufrecht | Es öffnet bei verstopftem Ölfilter einen Umgehungskanal | Es verhindert das Leerlaufen der Ölkanäle bei stehendem Motor
+55 | Zu zähes Öl bei Kälte | Klemmendes, geschlossenes Überdruckventil | Neuer Ölfilter mit Rücklaufsperre
+56 | Ausgabe – Verarbeitung – Eingabe | Regeln – Speichern – Anzeigen | Messen – Anzeigen – Löschen
+57 | Der Nockenwellensensor | Der Klopfsensor | Der Luftmassenmesser
+58 | Zur Messung der Motordrehzahl | Zur Erkennung von Zündaussetzern | Zur Berechnung der Motorlast
+59 | Er steigt | Er bleibt gleich | Er steigt erst und fällt dann
+60 | Parallelschaltung | Brückenschaltung | Stromteiler
+61 | Den Verbrennungsdruck im Zylinder | Den Zündzeitpunkt jedes Zylinders | Die Drehungleichförmigkeit der Kurbelwelle
+62 | Sie verstellt den Zündzeitpunkt in Richtung früh | Sie magert das Gemisch ab | Sie erhöht die Leerlaufdrehzahl
+63 | Durch Induktion beim Einschalten des Primärstroms | Durch Aufladen eines Kondensators auf Bordnetzspannung | Durch Gleichrichten der Generatorspannung
+64 | Genau im oberen Totpunkt | Kurz nach dem oberen Totpunkt im Arbeitstakt | Kurz vor dem unteren Totpunkt im Verdichtungstakt
+65 | Der Katalysator kühlt aus und arbeitet nicht mehr | Der Katalysator speichert zu viel Sauerstoff | Die Lambdasonde nach dem Katalysator misst fett
+66 | Den Kraftstoffanteil im Abgas | Den CO2-Gehalt im Abgas | Das Luftverhältnis im Saugrohr
+67 | ca. 0,1 V | ca. 0,45 V | ca. 2,5 V
+68 | Sie regelt das Gemisch bei Volllast | Sie misst die Abgastemperatur für den Bauteilschutz | Sie korrigiert die Einspritzmenge schneller als die erste Sonde
+69 | Ein Stellglied wird nach einem festen Kennfeld angesteuert, ohne das Ergebnis zu messen | Der Sollwert wird laufend an den gemessenen Istwert angepasst | Der Istwert wird gemessen und angezeigt, eine Korrektur erfolgt nicht
+70 | ca. 0,5 bis 1 bar | ca. 30 bis 50 bar | ca. 100 bis 200 bar
+71 | Einspritzventile und Kraftstoffdruckregler | Kraftstofffilter und Leitungen | Kurbelwellensensor und Zündspulen
+72 | Fehlerspeicher löschen, Probefahrt, dann das genannte Bauteil tauschen | Zuerst die Stellglieddiagnose, dann den Kunden befragen | Bauteile der Reihe nach tauschen, bis der Fehler verschwindet
+73 | Der Fehler betrifft das Fahrwerk | Der Fehler betrifft die Karosserie | Der Fehler ist ein vorläufiger Fehler (Pending)
+74 | Der Sensor ist defekt und muss ersetzt werden | Die Signalleitung hat sicher eine Unterbrechung | Das Steuergerät hat einen internen Fehler
+75 | Die Messwerte der letzten Abgasuntersuchung | Die Sollwerte des Herstellers für das Bauteil | Betriebsdaten der letzten Fahrt vor dem Abstellen
+76 | Der Tester liest die Istwerte der Sensoren aus | Das Steuergerät lernt die Endanschläge der Stellglieder | Der Tester löscht die Adaptionswerte
+77 | Mit der Spannungsmessung an einem Leitungsende gegen Plus | Mit der Strommessung parallel zur Leitung | Mit der Widerstandsmessung bei eingeschalteter Zündung
+78 | Eine Unterbrechung der Masseleitung | Einen Kurzschluss nach Plus | Einen zu großen Leitungsquerschnitt
+79 | Aus dem Fehlerspeichereintrag | Aus der Stellglieddiagnose | Aus dem Wartungsplan
+80 | Es verkürzt den Bremsweg auf jedem Untergrund | Es verhindert das Durchdrehen der Antriebsräder | Es verteilt die Bremskraft zwischen Vorder- und Hinterachse
+81 | Bremsdrucksensoren | Gierratensensor und Lenkwinkelsensor | Beschleunigungssensoren in den Rädern
+82 | Druck aufbauen, Druck verstärken, Druck abbauen | Bremsen, Lösen, Nachstellen | Druck halten, Druck umleiten, Druck speichern
+83 | Es bremst alle vier Räder gleich stark ab | Es erhöht die Motorleistung, um das Fahrzeug zu stabilisieren | Es lenkt aktiv gegen und gibt die Bremse frei

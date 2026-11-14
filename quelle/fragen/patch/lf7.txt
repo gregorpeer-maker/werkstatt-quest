@@ -1,0 +1,84 @@
+1 | Den Fehlerspeicher auslesen und den Eintrag löschen | Eine Probefahrt mit Datenlogger durchführen | Die Zündkerzen und Zündspulen sichtprüfen
+2 | Sonst werden die Adaptionswerte der Gemischbildung überschrieben | Sonst lässt sich der Fehlerspeicher nicht mehr löschen | Sonst wird die Codierung des Steuergeräts zurückgesetzt
+3 | Wie viele Fahrzyklen seit dem letzten Auftreten vergangen sind | Wie lange der Fehler insgesamt angelegen hat | Bei welchem Kilometerstand der Fehler zuerst auftrat
+4 | Ein statischer Fehler ist abgasrelevant, ein sporadischer nicht | Ein statischer Fehler schaltet die MIL ein, ein sporadischer nie | Ein sporadischer Fehler liegt im Moment der Abfrage an, ein statischer lag früher an
+5 | Der Tester liest alle Steuergeräte nacheinander automatisch aus | Der Hersteller führt die Diagnose per Fernzugriff durch | Der Tester steuert die Stellglieder der Reihe nach selbstständig an
+6 | Die Arbeitswerte für die Abrechnung lassen sich nachschlagen | Die Codierung des Steuergeräts lässt sich daraus ableiten | Die Sollwerte der Messwertblöcke werden damit überschrieben
+7 | An der Kraftstoffversorgung und am Raildruck | An der Motormechanik und den Steuerzeiten | An den Adaptionswerten der Gemischbildung
+8 | Mit Kältespray die verdächtigen Bauteile abkühlen | Den Fehlerspeicher löschen und den Motor im Leerlauf laufen lassen | Die Batterie abklemmen und die Adaptionswerte zurücksetzen
+9 | Um Steckverbindungen zu reinigen und Korrosion zu lösen | Um Falschluft im Ansaugtrakt hörbar zu machen | Um überhitzte Steuergeräte vor dem Ausbau abzukühlen
+10 | Das Fahrzeug wird auf einem Schwingungsprüfstand angeregt | Der Motor wird im Stand mit wechselnder Drehzahl geprüft | Die Stecker werden gezogen und auf Korrosion geprüft
+11 | Stellglieddiagnose bei stehendem Fahrzeug | Fehlerspeicher vor und nach der Fahrt vergleichen | Widerstandsmessungen bei abgeklemmter Batterie
+12 | Zwei Messleitungen werden vertauscht, um die Polung zu prüfen | Ein Bauteil wird probeweise durch ein Neuteil ersetzt | Zwei Steuergeräte werden zwischen zwei Fahrzeugen getauscht
+13 | Die Zündkerze von Zylinder 1 | Das Einspritzventil von Zylinder 3 | Die Ansteuerung im Motorsteuergerät für Zylinder 3
+14 | Neuteile können ab Werk defekt sein | Die Arbeitswerte lassen sich nicht abrechnen | Der Fehlerspeicher wird dadurch gelöscht
+15 | Die Codierung des Steuergeräts | Den Softwarestand aller Steuergeräte | Die Abschlusswiderstände des Datenbusses
+16 | Gespeicherte Werte vom Zeitpunkt des Fehlers | Sollwerte des Herstellers für jedes Bauteil | Lernwerte, die sich nur mit dem Tester ändern lassen
+17 | Durch Vergleich mit dem Wert eines anderen Fahrzeugtyps | Nur anhand des Fehlerspeichers | Durch den Mittelwert aus mehreren Zündungswechseln
+18 | Das Signal liegt innerhalb des elektrischen Messbereichs des Sensors | Das Signal ist frei von Störungen und Rauschen | Das Signal stimmt mit dem Ersatzwert des Steuergeräts überein
+19 | Der Motor hat eine Restwärme im Ansaugtrakt, beide Werte sind in Ordnung | Der Kühlmitteltemperaturfühler ist sicher defekt | Der Thermostat ist offen geblieben
+20 | Die kurzfristige Korrektur durch die Lambdaregelung | Den Verschleiß der Einspritzventile in Prozent | Die Abweichung des Raildrucks vom Sollwert
+21 | Zu geringer Kraftstoffdruck | Ein Luftmassenmesser, der zu wenig misst | Ein verstopfter Katalysator
+22 | Das Steuergerät muss Kraftstoff zugeben, das Gemisch ist ohne Korrektur zu mager | Die Lambdasonde ist ausgefallen und die Regelung abgeschaltet | Der Motor läuft im Notlauf mit festem Kennfeld
+23 | Er zeigt die Zündspannung je Zylinder | Er zählt die Zündungen seit dem Motorstart | Er zeigt die Brenndauer des Zündfunkens
+24 | Am Signal des Klopfsensors | An der Ionenstrommessung jeder Zündkerze in allen Motoren | Am Sprung der Lambdasonde
+25 | Ein Fehler wurde erkannt, aber noch nicht bestätigt | Die Prüfbereitschaft ist noch nicht gesetzt | Der Katalysator hat seine Betriebstemperatur noch nicht erreicht
+26 | Ein Fehler, der nach drei fehlerfreien Fahrzyklen gelöscht wurde | Ein Fehler, der dauerhaft gespeichert ist und nicht gelöscht werden kann | Ein Fehler, der die MIL sofort beim ersten Auftreten einschaltet
+27 | Sie zeigen, welche Fehler seit dem letzten Löschen aufgetreten sind | Sie zeigen, ob das Steuergerät richtig codiert ist | Sie zeigen die Adaptionswerte der Lambdaregelung
+28 | Sie bleiben gesetzt, nur die Fehlercodes werden gelöscht | Sie werden sofort neu gesetzt, sobald die Zündung eingeschaltet wird | Sie werden dauerhaft gesperrt, bis das Steuergerät neu codiert ist
+29 | Die Sollwerte des Herstellers für das betroffene Bauteil | Die Messwerte der letzten zehn Fahrzyklen | Die Häufigkeit des Fehlers seit dem letzten Löschen
+30 | Im Leerlauf bei kaltem Motor messen | Die Umgebungsdaten löschen und neu aufzeichnen | Den Motor im Stand bis 3000 1/min ohne Last drehen
+31 | Nur die Höchst- und Tiefstwerte jedes Messwerts vergleichen | Den Mittelwert jedes Messwerts mit dem Sollwert vergleichen | Nur den Messwert des im Fehlerspeicher genannten Sensors ansehen
+32 | Der Raildrucksensor zeigt zu hohe Werte an | Die Injektoren haben zu geringe Rücklaufmengen | Der Ladedruck ist zu hoch
+33 | Ob die Lambdaregelung aktiv ist | Ob der Katalysator arbeitet | Ob die Drosselklappe adaptiert ist
+34 | Die Sonde nach dem Katalysator ist defekt | Der Katalysator arbeitet besonders gut | Das Gemisch ist dauerhaft zu fett
+35 | Es misst Spannungen genauer als das Multimeter | Es belastet den Stromkreis weniger | Es kann auch Widerstände und Ströme direkt messen
+36 | Ein Rechtecksignal mit gleichbleibender Höhe | Eine Gleichspannung, die mit der Drehzahl steigt | Eine Wechselspannung mit gleichbleibender Höhe und Frequenz
+37 | Eine Sinusspannung, deren Höhe mit der Drehzahl steigt | Eine Gleichspannung proportional zur Drehzahl | Ein Rechtecksignal, dessen Höhe mit der Drehzahl steigt
+38 | Einen Abschlusswiderstand | Eine abgeschirmte Leitung | Ein Geberrad mit Dauermagneten
+39 | Zur Erkennung des Verdichtungstakts von Zylinder 1 | Zur Messung der Motordrehzahl | Zur Erkennung von Zündaussetzern
+40 | Die Signalspannung beider Sensoren | Die Motordrehzahl | Den Abstand der Sensoren zum Geberrad
+41 | Es bleibt konstant bei etwa 0,45 V | Es schwingt zwischen 0 V und 5 V | Es steigt langsam auf 0,9 V und bleibt dort
+42 | Sie springt bei Lambda 1 zwischen zwei Spannungswerten | Sie braucht keine Heizung | Sie misst den NOx-Gehalt im Abgas
+43 | Primärstrom und Schließwinkel | Den Verbrennungsdruck im Zylinder | Die Einspritzdauer
+44 | Kurzschluss im Sekundärkreis, z. B. verrußte Kerze | Zu fettes Gemisch | Zu kleiner Elektrodenabstand
+45 | Den Saugrohrdruck im Leerlauf aufzeichnen | Die Laufruhewerte im Leerlauf ablesen | Die Zündspannung mit dem Oszilloskop vergleichen
+46 | Die Spannung über den Spannungsfall an einem Messwiderstand | Den Widerstand der Leitung ohne Auftrennen | Die Leistung über Strom und Spannung zugleich
+47 | 70 % | 43 % | 3 %
+48 | Eine Sinusspannung, deren Höhe mit der Geschwindigkeit steigt | Ein Signal erst ab etwa 5 km/h | Eine Gleichspannung proportional zur Geschwindigkeit
+49 | An einer gleichmäßig niedrigeren Signalhöhe | An einer höheren Frequenz des Signals | An einem gleichmäßigen Versatz der Nulllinie
+50 | Ein Sensor ist für den Tempomat, einer für das Motorsteuergerät | Die Signale werden addiert, um genauer zu messen | Ein Sensor misst den Pedalweg, der andere die Pedalkraft
+51 | Das Steuergerät verwendet den höheren der beiden Werte | Das Steuergerät bildet den Mittelwert und arbeitet normal weiter | Der Motor wird sofort abgestellt
+52 | Den Luftmassenmesser ersetzen | Den Fehlerspeicher löschen genügt | Die Lambdasonden anlernen
+53 | Verstopfter Luftfilter | Zu fettes Gemisch | Defekte Lambdasonde
+54 | Die Einspritzmenge mit dem Messglas bestimmen | Den Kraftstoffdruck am Verteilerrohr messen | Das Strahlbild im ausgebauten Zustand prüfen
+55 | Mit dem Kompressionsdruckschreiber an der Zündkerzenbohrung | Mit dem Abgastester am Endrohr | Mit dem Unterdruckmanometer am Bremskraftverstärker
+56 | Eine sehr hohe Temperatur | Den zuletzt gemessenen Wert | Die Umgebungstemperatur
+57 | Kurzschluss der Signalleitung nach Masse | Unterbrechung der Versorgungsleitung | Der Sensor arbeitet im Sollbereich
+58 | Ein Sollwert aus dem Kennfeld bei Volllast | Der letzte gültige Messwert vor dem Abstellen | Ein Lernwert, der mit dem Tester eingegeben wird
+59 | Alle Steuergeräte teilen sich denselben Fehlerspeicher | Die Steuergeräte sind über eine gemeinsame Sicherung abgesichert | Das Gateway kopiert Fehler in alle Steuergeräte
+60 | Die Lambdaregelung und die Klopfregelung | Die Wegfahrsperre und die Zentralverriegelung | Die Ladespannung des Generators
+61 | Die Pinbelegung jedes Steuergerätesteckers | Die Einbauorte der Sicherungen und Relais | Die Softwarestände aller Steuergeräte
+62 | Es lernt die Endanschläge eines Stellglieds | Es spielt eine neue Softwareversion auf | Es schaltet den Komponentenschutz frei
+63 | Das Steuergerät wird an die Ausstattung angepasst | Eine neue Software wird aufgespielt | Der Fehlerspeicher wird zurückgesetzt
+64 | Eine eingeschaltete Zündung ohne Ladegerät genügt | Laufender Motor im Leerlauf | Abgeklemmte Batterie und externe 12-V-Versorgung über den Diagnosestecker
+65 | Das Update wird beim nächsten Zündungswechsel automatisch fortgesetzt | Nur der Fehlerspeicher wird gelöscht | Das Steuergerät arbeitet mit der alten Software normal weiter
+66 | Ein Gehäuse, das Steuergeräte vor Feuchtigkeit schützt | Eine Sicherung, die Steuergeräte vor Überspannung schützt | Eine Sperre, die das Löschen von Fehlercodes verhindert
+67 | Nur die Steckerform muss passen, die Software passt sich an | Das Steuergerät muss aus einem Fahrzeug gleichen Baujahrs stammen | Die Codierung wird immer automatisch vom Gateway übernommen
+68 | Ein Tester des Fahrzeugherstellers, andere Geräte können nichts auslesen | Ein Software-Update aller Steuergeräte | Eine neue Codierung des Gateways
+69 | Das Zurücksetzen aller Steuergeräte auf Werkseinstellung | Das Löschen der Adaptionswerte ohne neues Lernen | Die Codierung der Ausstattung
+70 | Die Batterie wieder gegen die alte tauschen | Die Steuergeräte neu codieren | Die Sicherungen der Komfortsysteme ersetzen
+71 | Fahrzeugdaten, Arbeitswerte und Ersatzteilpreise | Fehlercodes ohne Umgebungsdaten und die Unterschrift des Kunden | Nur die Messwerte nach der Reparatur
+72 | Um die Adaptionswerte zu löschen | Um die Readiness-Codes zurückzusetzen | Um das Serviceintervall zurückzustellen
+73 | Zusichern, dass der Fehler mit dem getauschten Teil sicher behoben ist | Nur die Rechnung erklären, technische Details verwirren | Den Fehler als Bedienfehler darstellen
+74 | Für Werbezwecke nutzen, wenn der Kunde nicht widerspricht | An den Fahrzeughersteller und Dritte ohne Einschränkung weitergeben | Nach dem Auftrag ungeschützt im Tester gespeichert lassen
+75 | Der Nockenwellensensor | Der Luftmassenmesser | Der Kühlmitteltemperaturfühler
+76 | Falschluft im Leerlauf | Defekte Lambdasonde nach dem Katalysator | Zu hohe Batteriespannung
+77 | Den Kraftstoffdruck und die Injektoren | Die Lambdasonden und den Katalysator | Die Zündkerzen und Zündspulen
+78 | Eine zu schwache Batterie | Abgenutzte Zündkerzen | Ein verstopfter Luftfilter
+79 | Die Kraftstoffpumpe | Die Abgasrückführung | Die Sekundärluft
+80 | Am Getriebeölstand | An den Magnetventilen der Schaltschieber | An der Wandlerüberbrückungskupplung
+81 | Der Fehlerspeicher wurde automatisch gelöscht | Das Steuergerät hat sich neu codiert | Die Glühlampe der Kontrollleuchte ist defekt
+82 | Der Ladeluftkühler ist undicht | Der Differenzdrucksensor ist sicher defekt | Die Abgasrückführung ist dauerhaft geschlossen
+83 | Die Leerlaufadaption der Drosselklappe | Die Zündkerzen | Den Kraftstoffdruck
+84 | Wenn kein Fehler mehr im Fehlerspeicher steht | Wenn das im Fehlerspeicher genannte Teil ersetzt wurde | Wenn die Probefahrt ohne Beanstandung verlaufen ist

@@ -1,0 +1,75 @@
+1 | Das Fahrwerk (Radaufhängung, Federung, Lenkung) | Der Kurbeltrieb (Kolben, Pleuel, Kurbelwelle) | Der Steuertrieb (Zahnriemen, Nockenwelle, Ventile)
+2 | Antriebsstrang | Karosserie | Lenkung
+3 | Wärmeenergie der Ansaugluft wird in chemische Energie und dann in Bewegung umgewandelt | Chemische Energie des Kraftstoffs wird direkt und ohne Wärmeverluste in mechanische Arbeit umgewandelt | Mechanische Energie der Kurbelwelle wird in Wärme und dann in chemische Energie umgewandelt
+4 | Die Karosserie ist auf einen tragenden Leiterrahmen aufgeschraubt, der alle Kräfte aufnimmt | Ein Gitterrohrrahmen trägt alle Lasten, die Außenhaut ist nur verkleidet | Nur der Hilfsrahmen (Fahrschemel) trägt Motor und Aufbau, die Karosserie bleibt unbelastet
+5 | Die Tragarme sitzen möglichst weit außen unter den Schwellerenden | Die Tragarme sitzen unter der Ölwanne und dem Tankboden | Die Tragarme sitzen an den Querlenkern der Radaufhängung
+6 | Zügig weiter anheben, damit das Fahrzeug nicht ins Pendeln kommt | Die Tragarme nachträglich unter Last in die richtige Stellung schieben | Das Fahrzeug an der Stoßstange kräftig schaukeln und gleichzeitig weiter anheben
+7 | Den Verletzten sofort aus dem Gefahrenbereich tragen, egal was passiert ist | Zuerst den Vorgesetzten suchen und den Unfall ins Verbandbuch eintragen | Sofort mit der Herzdruckmassage beginnen, ohne die Lage zu prüfen
+8 | 118 | 113 | 110
+9 | Das Auge mit einer neutralisierenden Lauge, z. B. Sodalösung, ausspülen | Das Auge mit einer sterilen Kompresse abdecken und sofort zum Arzt fahren | Die Säure mit einem sauberen Tuch vorsichtig aus dem Auge tupfen
+10 | Atemschutzmaske | Schweißerschild | Gehörschutz allein
+11 | Welche Schutzausrüstung der Hersteller für den Transport verwendet hat | In welcher Reihenfolge der Inhalt entsorgt werden muss | Welche Menge des Inhalts pro Tag verarbeitet werden darf
+12 | In der Betriebsanleitung des Fahrzeugs | Im Reparaturleitfaden des Herstellers | Auf dem Lieferschein des Großhändlers
+13 | Erst ab etwa 500 mA | Erst ab etwa 2 A | Schon ab etwa 0,5 mA
+14 | Beim Laden entstehen giftige Bleidämpfe | Beim Laden entsteht Kohlenmonoxid | Beim Laden verbraucht die Batterie den Sauerstoff der Raumluft
+15 | Zusammen mit Bremsflüssigkeit und Kühlmittel in den Sammelbehälter für Flüssigkeiten | In den Behälter für ölverschmutzte Betriebsmittel wie Putzlappen und Filter | In ein beliebiges dichtes Gebinde, das der Kunde wieder mitnimmt
+16 | Kundendaten, Fahrzeugdaten und der verbindliche Endpreis, die Arbeiten legt die Werkstatt fest | Fahrzeugdaten, die Arbeitswerte des Herstellers und die Unterschrift des Mechanikers | Kundendaten, Kilometerstand und die Zusage, alle gefundenen Mängel zu beheben
+17 | Den Mangel gleich mit beheben, wenn er die Verkehrssicherheit betrifft, und danach verrechnen | Den Mangel nur im Prüfprotokoll notieren, der Kunde sieht ihn bei der Abholung | Den Mangel bis zur nächsten Inspektion vormerken, wenn die Reparatur wenig kostet
+18 | Dem Kunden vorab den genauen Endpreis verbindlich zusagen | Die Garantieansprüche gegenüber dem Hersteller prüfen | Die Arbeitszeit des Mechanikers für die Abrechnung erfassen
+19 | Fehler einzelner Mitarbeiter finden und dokumentieren | Die Durchlaufzeit pro Fahrzeug so weit wie möglich verkürzen | Die Vorgaben des Herstellers durch eigene Abläufe ersetzen
+20 | Sie legt fest, welche Arbeitswerte abgerechnet werden | Sie ersetzt den Wartungsplan des Herstellers | Sie dient dem Kunden als Garantieurkunde für die erneuerten Teile
+21 | Die Übersicht der Werkstatt, welche Fahrzeuge wann zur Inspektion angemeldet sind | Die gesetzliche Vorgabe, wann ein Fahrzeug zur Hauptuntersuchung muss | Die Liste der Arbeitswerte, nach der die Inspektion abgerechnet wird
+22 | Nach einem festen Abstand von 15 000 km oder einem Jahr | Nach der vom Fahrer im Bordcomputer eingegebenen Jahresfahrleistung | Nach dem Ölstand, den der Ölstandsensor beim Starten misst
+23 | Sie stellt sich nach 100 km von selbst zurück | Sie wird nur bei der Hauptuntersuchung zurückgestellt | Sie bleibt stehen, damit der Kunde den Service nachweisen kann
+24 | Mit dem Multimeter an der Diagnosesteckdose | Mit dem Oszilloskop am Steuergerätestecker | Mit dem Diagnosetester an Klemme 30 der Batterie
+25 | Erste Inspektion mit Ölwechsel, Zündkerzenwechsel und Bremsflüssigkeitswechsel | Achsvermessung, Abgasuntersuchung und Hauptuntersuchung | Software aller Steuergeräte neu aufspielen und Fehlerspeicher codieren
+26 | Beim Messen vergleicht man mit einem Lehrdorn, beim Lehren liest man eine Skala ab | Messen erfolgt immer berührungslos, Lehren immer mit Berührung des Werkstücks | Beim Lehren erhält man einen genaueren Zahlenwert als beim Messen
+27 | Zum Messen von Rundlauf und Planlauf | Zum Messen von Spaltmaßen unter 0,1 mm | Zum Messen von Winkeln und Radien
+28 | Auf 0,1 mm | Auf 0,05 mm | Auf 0,001 mm
+29 | Mit dem Tiefenmaß des Messschiebers | Mit der Bügelmessschraube | Mit der Messuhr
+30 | Metrisches Gewinde mit 10 mm Kerndurchmesser | Schraube mit 10 mm Schlüsselweite | Metrisches Feingewinde mit 1,0 mm Steigung
+31 | Mit dem Gewindebohrer | Mit dem Kernlochbohrer | Mit dem Senker
+32 | Damit die Bohrung maßhaltig wird | Damit die Schnittgeschwindigkeit steigt | Damit sich kein Grat bildet
+33 | Zum Griff hin, die Säge schneidet beim Zurückziehen | Abwechselnd in beide Richtungen | Nach unten zum Werkstück, die Richtung längs ist egal
+34 | Das vorgeschriebene Anzugsmoment in daNm | Durchmesser und Steigung des Gewindes | Die Schlüsselweite und die Kopfhöhe
+35 | Eisenmetalle, Nichteisenmetalle und Leichtmetalle | Metalle, Kunststoffe und Hilfsstoffe | Naturstoffe, Kunststoffe und Betriebsstoffe
+36 | Messing | Bronze | Zink
+37 | Eisen mit mehr als 2 % Kohlenstoff | Eine Legierung aus Eisen und Kupfer | Reines Eisen, das durch Schmieden gehärtet wurde
+38 | Eisen reagiert mit dem Stickstoff der Luft | Der Kohlenstoff im Stahl oxidiert und löst das Gefüge auf | Stahl nimmt Wasser auf und quillt an der Oberfläche
+39 | Ansaugen – Verdichten – Ausstoßen – Arbeiten | Ansaugen – Arbeiten – Verdichten – Ausstoßen | Verdichten – Ansaugen – Arbeiten – Ausstoßen
+40 | Oberer Taktpunkt | Oberes Totvolumen | Öffnungstakt
+41 | Nur das Einlassventil ist noch ganz geöffnet | Beide Ventile sind kurz gleichzeitig geöffnet | Nur das Auslassventil ist geöffnet
+42 | Im Verdichtungstakt | Im Ausstoßtakt | Im Ansaugtakt
+43 | Gleich schnell | Doppelt so schnell | Ein Viertel so schnell
+44 | 1 – 2 – 4 – 3 | 1 – 4 – 3 – 2 | 1 – 2 – 3 – 4
+45 | Durch die Verdichtungswärme der Luft | Durch den Funken der Glühkerze | Durch die heißen Restgase im Brennraum
+46 | Er regelt die Temperatur des Kühlmittels | Er gibt die Wärme des Motoröls an das Kühlmittel ab | Er kühlt die Ansaugluft vor dem Motor
+47 | Er schaltet bei hoher Temperatur den Kühlerlüfter ein | Er öffnet bei Überdruck und lässt Kühlmittel in den Ausgleichsbehälter | Er misst die Kühlmitteltemperatur für die Anzeige im Kombiinstrument
+48 | Aus destilliertem Wasser und Spiritus | Aus Wasser und Bremsflüssigkeit auf Glykolbasis | Aus reinem Kühlerfrostschutz ohne Wasser
+49 | Der Thermostat schließt dann und der Motor überhitzt | Luft gelangt ins System und zerstört die Kühlmittelpumpe | Das Kühlmittel kühlt schlagartig ab und der Kühler reißt
+50 | Mit dem Säureheber | Mit dem Siedepunkt-Prüfgerät | Mit dem Kühlsystem-Drucktester
+51 | Feinabdichten zwischen Kolbenring und Zylinderwand | Kühlen von Kolben und Lagern | Schützen vor Korrosion
+52 | Die Viskosität bei 5 °C und bei 30 °C | Die Mindest-Wechselintervalle in 1000 km für Winter und Sommer | Den Reibwert bei Kälte und die Dichte bei Betriebstemperatur
+53 | Ölfilter und Öldruckschalter | Dichtring der Ablassschraube und Ölwannendichtung | Ölfilter und Ventildeckeldichtung
+54 | Fahrzeug steht waagrecht, Motor läuft im Leerlauf, Messstab ablesen | Sofort nach dem Abstellen des heißen Motors den Messstab ablesen | Bei kaltem Motor vor dem ersten Start ablesen, das Fahrzeug darf dabei schräg stehen
+55 | Nach der Viskosität, die auf dem alten Ölfilter steht | Nach der SAE-Klasse allein, die Freigabe ist nicht entscheidend | Nach der höchsten API-Klasse, die im Handel erhältlich ist
+56 | Zu niedrigen Ölstand: bei der nächsten Gelegenheit Öl nachfüllen | Zu hohe Öltemperatur: mit niedriger Drehzahl weiterfahren | Zu hohen Öldruck: die Drehzahl senken
+57 | Motoröl | Hydrauliköl der Servolenkung | Getriebeöl
+58 | 205 mm Breite, 55 mm Flankenhöhe, Radialreifen, 16 Zoll Felgendurchmesser | 205 mm Breite, Querschnittsverhältnis 55 %, Runflat-Reifen, 16 Zoll Felgenbreite | 205 mm Außendurchmesser, 55 % Tragfähigkeit, Radialreifen, 16 Zoll Felgendurchmesser
+59 | Den Geschwindigkeitsindex | Das Herstellungsdatum | Den höchstzulässigen Reifendruck in psi
+60 | Herstellung im 23. Monat nach dem Jahr 2024 | Herstellung am 23. Februar 2024 | Herstellung in der 24. Woche des Jahres 2023
+61 | Bei warmen Reifen direkt nach der Fahrt | Bei entlastetem Rad auf der Hebebühne | Bei voller Beladung nach 10 km Fahrt
+62 | Die Mitte der Lauffläche ist stärker abgefahren | Nur die Innenschulter ist einseitig abgefahren | Die Lauffläche zeigt einzelne Auswaschungen rundum
+63 | Das Fahrzeug zieht beim Bremsen einseitig | Das Lenkrad steht bei Geradeausfahrt schief | Das Lenkrad stellt sich nach der Kurve nicht zurück
+64 | Im Uhrzeigersinn reihum mit dem Drehmomentschlüssel | Über Kreuz mit dem Schlagschrauber auf volles Moment | Zuerst alle handfest, dann reihum mit Verlängerung nachziehen
+65 | Den Reifendruck um 0,2 bar erhöhen | Die Räder erneut auswuchten | Die Radschrauben lösen und mit Fett neu anziehen
+66 | Das angehobene Rad vorne und hinten fassen und einlenken | Das belastete Rad auf dem Boden seitlich drücken | Das Rad bei laufendem Motor im Gang drehen lassen
+67 | Auf die Härte des Gummis und die Farbe | Auf den festen Sitz der Radschrauben | Auf das Axialspiel der Antriebswelle
+68 | Reifendruck, Ölstand und die Stellung des Lenkrads | Beladung, Batteriespannung und Kühlmitteltemperatur | Leuchtweitenregulierung, Tankinhalt und Spureinstellung
+69 | Die Lampe vor dem Einbau mit Kontaktspray besprühen | Die Lampe nur bei eingeschaltetem Standlicht wechseln | Den Glaskolben vor dem Einbau mit einem Lappen leicht einölen
+70 | Mit dem Multimeter in Reihe zur Lampe | Mit dem Multimeter zwischen Lampe und Sicherung im Strompfad | Mit der Stromzange um die Zuleitung
+71 | Lichtschalter und Steuergerät | Generator und Batterie | Massepunkt und Kabelbaum
+72 | Sie begrenzt die Spannung im Stromkreis auf 12 V | Sie schützt den Verbraucher vor Unterspannung | Sie verringert den Strom, wenn die Leitung warm wird
+73 | ca. 12,0 V bis 12,2 V | ca. 13,8 V bis 14,4 V | ca. 11,5 V bis 11,8 V
+74 | Plus | Das Kabel zum Starter | Das Kabel zum Generator
+75 | Nennspannung, Ladestrom in A und Leistung in kW | Kapazität in Ah, Säuredichte und Innenwiderstand in Ω | Nennspannung, Ruhestrom in mA und Ladezeit in Stunden

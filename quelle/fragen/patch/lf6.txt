@@ -1,0 +1,79 @@
+1 | Sie zündet das Gemisch bei jedem Arbeitstakt wie eine Zündkerze | Sie erwärmt den Kraftstoff in der Einspritzleitung | Sie erwärmt die Ansaugluft im Saugrohr vor dem Einlassventil
+2 | Schnelleres Aufheizen des Innenraums | Schonung der Batterie nach dem Kaltstart | Höhere Leistung bei Volllast
+3 | Das Motorsteuergerät direkt über Klemme 15 ohne Leistungsstufe | Der Generatorregler | Der Zündstartschalter über Klemme 50
+4 | Er sinkt mit der Temperatur (NTC), dadurch steigt der Strom | Er bleibt konstant, der Strom wird nur über die Zeit begrenzt | Er steigt mit der Temperatur, dadurch steigt auch der Strom
+5 | Kurzschluss: Der Widerstand ist kleiner als der Messbereich | Der Widerstand liegt im Sollbereich | Überlast: Die Messspannung des Geräts ist zu hoch
+6 | Mit dem Multimeter im Widerstandsmessbereich bei eingeschalteter Glühanlage | Mit der Prüflampe gegen Masse | Mit dem Voltmeter an der Stromschiene
+7 | Sie brauchen ein PWM-Signal mit mindestens 24 V | Sie haben keinen Masseanschluss | Sie glühen an 12 V zu schwach und liefern falsche Messwerte
+8 | Kalten Motor verwenden und mit hohem Moment zügig lösen | Die Kerze mit dem Schlagschrauber losrütteln | Den Zylinderkopf vorher mit dem Brenner erwärmen
+9 | Die Abgasrückführung | Den Luftmassenmesser | Den Ladedrucksteller
+10 | Der Hauptstromkontakt schließt, danach spurt das Ritzel durch die Drehung ein | Der Anker dreht mit voller Drehzahl und der Freilauf schließt | Die Haltewicklung öffnet den Hauptstromkontakt
+11 | Er spurt das Ritzel in den Zahnkranz ein | Er begrenzt den Einschaltstrom des Starters | Er hält das Ritzel nach dem Start im Zahnkranz
+12 | Niedrigere Stromaufnahme im Kurzschluss durch den Vorwiderstand | Er kommt ohne Einrückmagnet aus | Höhere Ankerdrehzahl am Ritzel
+13 | Wegfahrsperre aktiv | Freilauf des Starters defekt | Zündstartschalter ohne Kontakt an Klemme 50
+14 | Die Hauptstromleitung an Klemme 30 und den Freilauf | Die Kompression und die Steuerzeiten | Den Generator und den Keilrippenriemen
+15 | Der Einrückmagnet zieht nicht an | Die Batterie ist tiefentladen | Die Hauptstromkontakte sind abgebrannt
+16 | Bis zu einer Minute, dann sofort erneut starten | So lange, bis der Motor anspringt | Höchstens eine Sekunde, sonst überhitzt die Batterie
+17 | Es schaltet im Schubbetrieb die Einspritzung ab | Es lässt den Motor im Stand mit abgesenkter Drehzahl laufen | Es startet den Motor automatisch beim Öffnen der Fahrertür
+18 | Klimaanlage auf höchster Kühlleistung | Motor kalt und Batterie mindestens halb geladen | Lenkrad voll eingeschlagen und Rückwärtsgang eingelegt
+19 | Der Generator kann die Batterie im Stand nicht laden | Die Batterie würde beim Abschalten überladen | Das Energiemanagement schont so den Starter
+20 | Größerer Generator, zweiter Starter und Zusatzbatterie in jedem Fahrzeug | Verstärkte Zündspulen und zweite Kraftstoffpumpe | Standard-Nassbatterie, verstärkter Generator und Batterietrennschalter
+21 | Der Batteriesensor | Der Bremslichtschalter | Der Kupplungspedalschalter
+22 | Er lädt die Batterie während der Stoppphase | Er versorgt den Starter beim Wiederstart mit höherer Spannung | Er begrenzt die Ladespannung des Generators
+23 | Die Steuergeräte werden über die Busleitungen mit Spannung versorgt | Jedes Signal bekommt eine eigene Leitung zum Steuergerät | Die Sensoren werden direkt an den Diagnosestecker angeschlossen
+24 | CAN-Tx und CAN-Rx | CAN-A und CAN-B | CAN-Data und CAN-Clock
+25 | Der Leitungswiderstand wird dadurch halbiert | Die Signale laufen dadurch schneller | Die Leitungen können so mehr Strom übertragen
+26 | ca. 0 V | ca. 5 V | ca. 3,5 V
+27 | CAN-High ca. 5 V, CAN-Low ca. 0 V | CAN-High ca. 2,5 V, CAN-Low ca. 2,5 V | CAN-High ca. 1,5 V, CAN-Low ca. 3,5 V
+28 | ca. 120 Ω | ca. 240 Ω | ca. 30 Ω
+29 | Der Bus ist in Ordnung | Die Busleitungen haben einen Kurzschluss zueinander | Ein Steuergerät sendet dauernd
+30 | Sie begrenzen den Strom auf den Busleitungen | Sie legen die Übertragungsrate fest | Sie erzeugen den rezessiven Pegel von 2,5 V
+31 | Das Steuergerät mit der höchsten Versorgungsspannung sendet zuerst | Das Gateway vergibt nacheinander Sendezeiten | Wer zuerst sendet, hat Vorrang, spätere Botschaften verfallen
+32 | Es terminiert die Busleitungen mit 120 Ω | Es versorgt die Steuergeräte mit Spannung | Es speichert die Fehlercodes aller Steuergeräte
+33 | Zweidraht-Bus mit verdrillten Leitungen und 500 kbit/s | Eindraht-Bus, bei dem jedes Steuergerät gleichberechtigt sendet | Optischer Bus mit Lichtwellenleiter in Ringstruktur
+34 | Der Bus arbeitet im Eindrahtbetrieb weiter | Nur das Steuergerät an der Kurzschlussstelle fällt aus | Die Übertragungsrate halbiert sich
+35 | P | C | B
+36 | CAN-High und CAN-Low verlaufen deckungsgleich | CAN-High zeigt ein Rechtecksignal, CAN-Low bleibt bei 0 V | Beide Signale verlaufen sinusförmig mit 2,5 V Mittelwert
+37 | Die Abschlusswiderstände in allen Steuergeräten | Die Software des Gateways | Die Raddrehzahlsensoren
+38 | Der Bus ist durch einen Kurzschluss blockiert | Der Bus sendet nur noch Diagnosebotschaften | Die Steuergeräte senden mit reduzierter Übertragungsrate
+39 | Mit Quetschverbindern, die Verdrillung wird auf einer längeren Strecke aufgelöst | Durch Überbrücken mit einer einzelnen abgeschirmten Leitung | Durch Verlöten mit einem Abzweig zu Masse
+40 | Dauerplus von der Batterie | Plus bei eingeschaltetem Starter | Geschaltetes Plus über den Lichtschalter
+41 | Geschaltetes Plus bei eingeschalteter Zündung | Masse an der Karosserie | Ausgang des Generators
+42 | Bei eingeschaltetem Verbraucher die Spannung gegen Masse messen | Eine stärkere Sicherung einsetzen und den Strom messen | Den Widerstand der Leitung zwischen beiden Enden messen
+43 | Eine Unterbrechung der Leitung | Ein zu hoher Übergangswiderstand an der Masse | Ein Kurzschluss nach Plus
+44 | Mit der Widerstandsmessung bei eingeschaltetem Verbraucher | Mit der Durchgangsprüfung bei abgeklemmter Batterie | Mit der Strommessung am Sicherungskasten
+45 | Unterdruckstellelemente an jedem neueren Fahrzeug | Elektromagnete im Türsteuergerät | Seilzüge vom Zentralsteuergerät
+46 | Durch einen festen Code, der nur einmal pro Fahrzeug vergeben wird | Durch eine stärkere Sendeleistung | Durch Infrarot statt Funk
+47 | Die Lesespule am Zündschloss | Das Türsteuergerät | Die Antenne der Zentralverriegelung
+48 | Die Scheibe fährt langsamer, wenn die Tür geöffnet ist | Die Scheibe bleibt stehen und lässt sich nur manuell öffnen | Der Fensterheber wird bei Überlast durch die Sicherung abgeschaltet
+49 | Die Fensterhebermotoren ersetzen | Den Einklemmschutz codieren | Die Türsteuergeräte neu programmieren
+50 | Über den Funkcode der Fernbedienung | Über das mechanische Profil des Schlüsselbarts | Über einen Fingerabdrucksensor am Startknopf
+51 | Der Starter dreht nicht und die Batterie wird abgeschaltet | Der Motor läuft nur im Notlauf mit begrenzter Drehzahl | Die Türen verriegeln sich und die Alarmanlage löst aus
+52 | Die Teile müssen nur mechanisch passen | Die Batterie muss für 30 Minuten abgeklemmt werden | Der Fehlerspeicher muss gelöscht werden
+53 | Er misst die Leitfähigkeit des Wassers zwischen zwei Kontakten | Er misst den Druck der Tropfen auf die Scheibe | Er misst die Luftfeuchtigkeit mit einem kapazitiven Fühler
+54 | Durch eine Rückstellfeder am Wischergestänge | Durch den Regensensor | Durch ein Zeitrelais, das nach fester Zeit abschaltet
+55 | Sie hält den Abstand zum Vordermann | Sie begrenzt die Höchstgeschwindigkeit des Fahrzeugs | Sie regelt die Motordrehzahl im Leerlauf
+56 | Durch Betätigen des Blinkers | Durch Gasgeben | Durch Einschalten des Lichts
+57 | Die Raddrehzahlsensoren | Eine Ultraschallsensorik im Stoßfänger | Den Regen-Licht-Sensor
+58 | Im Zentralsteuergerät | In der Batterie des Funkschlüssels | Im Sicherungskasten
+59 | Durch Messen des Drucks mit dem Manometer am Rail | Durch den Vergleich mit dem Ladedruck | Durch die Rücklaufmenge der Injektoren allein
+60 | Die Injektoren und ihre Abgleichwerte | Den Raildrucksensor ersetzen | Die Glühkerzen und das Glühzeitsteuergerät
+61 | Höheren Raildruck und schwarzen Rauch | Startprobleme nur bei warmem Motor | Erhöhten Ladedruck
+62 | Mit 12 V | Mit 5 V | Mit etwa 48 V
+63 | Mit dem Multimeter im Gleichspannungsbereich | Mit der Prüflampe am Injektorstecker | Mit dem Diagnosetester in der Stellglieddiagnose allein
+64 | Ein konstanter Strom über die gesamte Einspritzdauer | Zuerst ein niedriger Strom, dann ein hoher Haltestrom | Ein sinusförmiger Wechselstrom
+65 | Das Steuergerät schaltet den Motor bei jedem Fehler sofort ab | Das Steuergerät löscht den Fehler und arbeitet normal weiter | Das Steuergerät erhöht den Ladedruck, um den Fehler auszugleichen
+66 | Über ein festes Kennfeld ohne Rückmeldung des Ladedrucksensors | Über die Drosselklappe im Ansaugtrakt | Über die Einspritzmenge allein
+67 | Das Steuergerät erhöht die Einspritzmenge, der Motor rußt | Der Ladedruck steigt über den Sollwert | Die Abgasrückführung wird abgeschaltet und der Motor wird lauter
+68 | Lambdawert und Abgastemperatur | Luftmasse und Kühlmitteltemperatur | Raildruck und Ladedruck
+69 | Ein Fehler, der dauerhaft anliegt | Ein Fehler, der nur im Fehlerspeicher steht, aber nie aufgetreten ist | Ein Fehler, der nur bei der Hauptuntersuchung auffällt
+70 | Welche Teile die letzte Werkstatt getauscht hat | Wie viele Kilometer das Fahrzeug pro Jahr fährt | Welchen Kraftstoff der Kunde tankt
+71 | Durch Löschen des Fehlerspeichers | Durch Abklemmen der Batterie | Durch Erhöhen der Bordnetzspannung
+72 | Mit dem Multimeter | Mit dem Diagnosetester im Fehlerspeicher | Mit der Stromzange allein
+73 | Wie viel Spannung ein Kästchen in senkrechter Richtung darstellt | Bei welchem Pegel die Aufzeichnung startet | Wie lange das Signal gespeichert wird
+74 | Das Verhältnis von Spannung zu Strom | Die Anzahl der Impulse pro Sekunde | Den Anteil der Ausschaltzeit an der Einschaltzeit
+75 | Es ersetzt die Probefahrt | Es löscht die Adaptionswerte | Es dient nur der Garantieabrechnung mit dem Hersteller
+76 | 100 kbit/s | 125 kbit/s | 1 Mbit/s
+77 | Ein Steuergerät gibt den Takt vor, alle anderen antworten | Das Gateway teilt jedem Steuergerät eine Sendezeit zu | Mehrere Steuergeräte senden gleichzeitig auf getrennten Leitungen
+78 | Bei etwa 10 bis 20 A | Bei etwa 30 bis 50 A | Bei über 2000 A
+79 | Er legt fest, wie viel Spannung ein Kästchen darstellt | Er filtert Störungen aus dem Signal | Er speichert das Signal dauerhaft
