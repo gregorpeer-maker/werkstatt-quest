@@ -1,0 +1,65 @@
+# --- Grundgrößen und Stromkreis
+M Was ist elektrischer Strom? | Die gerichtete Bewegung von Ladungsträgern | Der Druck, mit dem Ladungen angetrieben werden | Die Fähigkeit eines Stoffes, Ladungen zu speichern | Die in einem Leiter gespeicherte Energie
+M Was ist die elektrische Spannung? | Der Antrieb der Ladungsträger, also der Unterschied der Ladungen zwischen zwei Punkten | Die Menge der Ladungsträger, die pro Sekunde fließt | Der Widerstand, den ein Leiter dem Strom entgegensetzt | Die Arbeit, die ein Verbraucher pro Sekunde verrichtet
+M Was beschreibt der elektrische Widerstand? | Wie stark ein Bauteil den Stromfluss hemmt | Wie viel Ladung eine Batterie speichert | Wie schnell sich die Spannung ändert | Wie viel Energie ein Verbraucher abgibt
+Z Ordne jeder Größe ihre Einheit zu. | Spannung = Volt | Stromstärke = Ampere | Widerstand = Ohm | Leistung = Watt
+Z Ordne jeder Größe ihr Formelzeichen zu. | Spannung = U | Stromstärke = I | Widerstand = R | Leistung = P
+M In welcher Einheit wird die elektrische Ladung angegeben? | Amperesekunde (Coulomb) | Volt | Watt | Ohm
+M Welche Teile braucht ein einfacher Stromkreis mindestens? | Spannungsquelle, Leitungen und Verbraucher | Spannungsquelle, Schalter und Sicherung | Verbraucher, Sicherung und Messgerät | Batterie, Relais und Schalter
+M Wann fließt in einem Stromkreis Strom? | Wenn der Stromkreis geschlossen ist und eine Spannung anliegt | Sobald eine Spannungsquelle angeschlossen ist, auch bei offenem Schalter | Nur wenn der Schalter direkt am Minuspol sitzt | Wenn der Widerstand unendlich groß ist
+M In welche Richtung fließt der Strom nach der technischen Stromrichtung? | Vom Pluspol über den Verbraucher zum Minuspol | Vom Minuspol über den Verbraucher zum Pluspol | Abwechselnd in beide Richtungen | Vom Verbraucher zu beiden Polen
+M In welche Richtung bewegen sich die Elektronen im Leiter tatsächlich? | Vom Minuspol zum Pluspol | Vom Pluspol zum Minuspol | Vom Verbraucher zur Spannungsquelle auf beiden Leitungen | Sie bewegen sich nicht, nur die Spannung wandert
+R Ohne Spannung kann in einem Stromkreis kein Strom fließen.
+F In einem offenen Stromkreis liegt an der Spannungsquelle keine Spannung an. || Die Spannung liegt an, es fließt nur kein Strom.
+M Was passiert mit dem Strom, wenn die Spannung bei gleichem Widerstand verdoppelt wird? | Er verdoppelt sich | Er halbiert sich | Er bleibt gleich | Er vervierfacht sich
+M Was passiert mit dem Strom, wenn der Widerstand bei gleicher Spannung verdoppelt wird? | Er halbiert sich | Er verdoppelt sich | Er bleibt gleich | Er sinkt auf ein Viertel
+M Wie lautet das Ohmsche Gesetz? | U = R · I | U = R / I | U = I / R | U = R + I
+# --- Leiter, Nichtleiter, Stromwirkungen
+M Welcher Stoff ist ein guter elektrischer Leiter? | Kupfer | Glas | Porzellan | Trockenes Holz
+M Welcher Stoff ist ein Nichtleiter (Isolator)? | Kunststoff (PVC) | Aluminium | Grafit | Salzwasser
+M Warum sind elektrische Leitungen meist aus Kupfer? | Kupfer leitet sehr gut und lässt sich gut verarbeiten | Kupfer ist das leichteste Metall | Kupfer rostet schneller als Stahl und zeigt Schäden an | Kupfer hat einen besonders hohen Widerstand
+M Wovon hängt der Widerstand einer Leitung ab? | Von Länge, Querschnitt und Werkstoff | Nur von der Farbe der Isolierung | Nur von der angelegten Spannung | Von der Stromrichtung
+M Wie ändert sich der Widerstand einer Leitung, wenn sie doppelt so lang ist? | Er verdoppelt sich | Er halbiert sich | Er bleibt gleich | Er vervierfacht sich
+M Wie ändert sich der Widerstand einer Leitung, wenn ihr Querschnitt doppelt so groß ist? | Er halbiert sich | Er verdoppelt sich | Er bleibt gleich | Er vervierfacht sich
+Z Ordne die Wirkung des Stroms dem Beispiel zu. | Wärmewirkung = Heckscheibenheizung | Lichtwirkung = LED | Magnetische Wirkung = Relais | Chemische Wirkung = Laden der Batterie
+M Warum wird ein Draht warm, wenn Strom fließt? | Elektrische Energie wird im Widerstand des Drahts in Wärme umgewandelt | Die Elektronen reiben an der Isolierung | Die Spannung verbraucht sich im Draht | Der Draht nimmt Wärme aus der Batterie auf
+M Welche Stromart liefert eine Batterie? | Gleichstrom | Wechselstrom | Drehstrom | Pulsierenden Wechselstrom
+M Was kennzeichnet Wechselstrom? | Er ändert ständig Richtung und Stärke | Er fließt immer in dieselbe Richtung | Er hat immer genau 12 V | Er kann nicht in Leitungen übertragen werden
+M Welche Spannung und Frequenz hat das Haushaltsnetz in Europa? | 230 V und 50 Hz | 110 V und 60 Hz | 400 V und 100 Hz | 230 V und 60 Hz
+M Welche Spannung hat das Bordnetz eines Pkw? | 12 V Gleichspannung | 12 V Wechselspannung | 24 V Wechselspannung | 48 V Drehstrom in jedem Fahrzeug
+# --- Messen mit dem Multimeter
+M Wie wird die Spannung gemessen? | Parallel zum Bauteil | In Reihe zum Bauteil | Bei aufgetrenntem Stromkreis zwischen den Leitungsenden | Mit dem Messgerät anstelle der Sicherung
+M Wie wird ein Strommessgerät (Amperemeter) angeschlossen? | In Reihe zum Verbraucher, der Stromkreis wird dafür aufgetrennt | Parallel zum Verbraucher | Parallel zur Spannungsquelle | Zwischen Pluspol und Masse ohne Verbraucher
+M Was passiert, wenn man im Strommessbereich direkt an Plus und Minus der Batterie misst? | Es entsteht ein Kurzschluss über das Messgerät, die Sicherung des Geräts löst aus | Das Gerät zeigt die Batteriespannung an | Das Gerät zeigt den Ladezustand an | Es passiert nichts, das Gerät hat einen hohen Innenwiderstand
+M In welche Buchse des Multimeters kommt die schwarze Messleitung? | COM | V/Ω | 10 A | mA
+M Wann darf der Widerstand eines Bauteils gemessen werden? | Nur wenn es spannungsfrei ist | Nur bei eingeschalteter Zündung | Nur unter Last | Bei laufendem Motor
+M Was bedeutet die Anzeige „OL“ oder „1“ ganz links bei der Widerstandsmessung? | Der Messbereich ist überschritten, zum Beispiel bei einer Unterbrechung | Der Widerstand beträgt genau 1 Ω | Die Leitung hat Durchgang | Die Batterie des Messgeräts ist leer
+M Was bedeutet ein Piepton bei der Durchgangsprüfung? | Die Verbindung ist niederohmig, die Leitung hat Durchgang | Die Leitung ist unterbrochen | Es liegt Spannung an | Der Messbereich ist zu klein
+M Was zeigt das Multimeter, wenn die Messleitungen bei einer Gleichspannungsmessung vertauscht sind? | Den Wert mit Minuszeichen | Den doppelten Wert | Null | Eine Fehlermeldung
+M Wie beginnt man mit der Messung, wenn die Größe des Werts unbekannt ist? | Mit dem größten Messbereich | Mit dem kleinsten Messbereich | Mit dem Widerstandsmessbereich | Mit der Durchgangsprüfung
+R Ein Spannungsmessgerät hat einen sehr hohen Innenwiderstand, damit es den Stromkreis kaum beeinflusst.
+F Ein Strommessgerät hat einen sehr hohen Innenwiderstand. || Es hat einen sehr kleinen Innenwiderstand, damit es den Strom kaum verändert.
+Z Ordne die Messung der Schaltung des Messgeräts zu. | Spannung = Parallel zum Verbraucher | Strom = In Reihe zum Verbraucher | Widerstand = Am spannungsfreien Bauteil | Durchgang = Am spannungsfreien Leiter mit Signalton
+# --- Sicherheit
+M Was ist ein Kurzschluss? | Eine fast widerstandslose Verbindung zwischen Plus und Minus | Eine Unterbrechung der Leitung | Ein zu hoher Widerstand im Stromkreis | Ein Verbraucher mit zu kleiner Leistung
+M Was passiert bei einem Kurzschluss ohne Sicherung? | Es fließt ein sehr hoher Strom, die Leitung kann glühen und brennen | Es fließt kein Strom mehr | Die Spannung steigt stark an | Der Verbraucher wird heller
+M Welche Aufgabe hat eine Sicherung? | Sie unterbricht den Stromkreis bei zu hohem Strom | Sie hält die Spannung konstant | Sie begrenzt den Strom auf den Nennwert und lässt ihn weiterfließen | Sie schützt vor zu niedriger Spannung
+M Wo wird die Sicherung im Stromkreis eingebaut? | Möglichst nahe an der Spannungsquelle in der Plusleitung | Direkt hinter dem Verbraucher in der Masseleitung | Parallel zum Verbraucher | An beliebiger Stelle, der Ort spielt keine Rolle
+M Was bedeutet die Zahl auf einer Kfz-Flachsicherung? | Den Nennstrom in Ampere | Die Spannung in Volt | Die Leistung in Watt | Den Widerstand in Ohm
+M Was ist entscheidend für die Gefahr bei einem Stromunfall? | Die Stromstärke durch den Körper und die Dauer | Nur die Höhe der Spannung | Nur die Frequenz | Die Farbe der Leitung
+M Warum ist die 12-V-Batterie trotz kleiner Spannung nicht harmlos? | Bei Kurzschluss fließen sehr hohe Ströme: Verbrennungs- und Brandgefahr | Die Spannung ist für den Körper lebensgefährlich | Sie erzeugt starke Röntgenstrahlung | Sie kann nur bei Regen gefährlich werden
+M Was machst du zuerst, wenn ein Kollege an einer spannungsführenden Anlage hängt? | Die Spannung abschalten, ohne dich selbst zu gefährden | Ihn sofort mit bloßen Händen wegziehen | Wasser holen | Den Vorgesetzten suchen
+R Schmuck wie Ringe und Uhren wird bei Arbeiten an der Batterie abgelegt, weil er einen Kurzschluss verursachen kann.
+F Eine durchgebrannte Sicherung darf mit einem Stück Draht überbrückt werden. || Dann fehlt der Schutz, die Leitung kann überhitzen und brennen.
+# --- Spannungsquellen und Bauteile
+M Welche Spannung hat eine neue AA-Batterie ungefähr? | 1,5 V | 1,2 V | 3,7 V | 9 V
+M Welche Nennspannung hat eine Zelle einer Bleibatterie? | 2 V | 1,5 V | 3,7 V | 12 V
+M Wie viele Zellen hat eine 12-V-Bleibatterie? | 6 | 4 | 8 | 12
+M Wie werden Batterien geschaltet, um eine höhere Spannung zu erhalten? | In Reihe | Parallel | Gemischt mit einem Widerstand | Gegeneinander
+M Was erreicht man, wenn man zwei gleiche Batterien parallel schaltet? | Die Kapazität verdoppelt sich, die Spannung bleibt gleich | Die Spannung verdoppelt sich | Die Spannung halbiert sich | Kapazität und Spannung verdoppeln sich
+M Was macht ein Schalter im Stromkreis? | Er öffnet oder schließt den Stromkreis | Er verringert die Spannung | Er speichert Strom | Er wandelt Gleichstrom in Wechselstrom um
+M Was ist die Masse im Fahrzeug? | Die Karosserie dient als gemeinsamer Rückleiter zum Minuspol der Batterie | Ein eigenes Kabel von jedem Verbraucher zum Pluspol | Das Gewicht der Batterie | Die Isolierung der Leitungen
+M Warum reicht im Fahrzeug meist eine Leitung zum Verbraucher? | Der Rückweg des Stroms führt über die Karosserie (Masse) | Gleichstrom braucht keinen Rückleiter | Der Verbraucher speichert den Strom | Der Strom fließt über die Luft zurück
+M Woran erkennt man eine Glühlampe mit defektem Glühfaden bei der Messung? | Der Widerstand ist unendlich groß (Unterbrechung) | Der Widerstand ist null | Der Widerstand entspricht dem Nennwert | Es liegt eine höhere Spannung an
+R Der Widerstand einer Glühlampe ist im kalten Zustand kleiner als im Betrieb.
+F Eine LED leuchtet unabhängig davon, wie herum sie angeschlossen ist. || Eine LED lässt den Strom nur in einer Richtung durch.

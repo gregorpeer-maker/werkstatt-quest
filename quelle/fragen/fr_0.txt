@@ -1,0 +1,118 @@
+# Fachrechnen Level 1 – Grundstufe: Grundrechnen und Einheiten
+# Diese Datei wird von gen_fr.py erzeugt. Änderungen bitte dort vornehmen.
+# --- Addieren und Subtrahieren mit Dezimalzahlen
+N Drei Ersatzteile kosten 59,9 €, 7,8 € und 22,8 €. Wie viel kosten sie zusammen? | 90,5 | € | 0,006 || Alle drei Beträge zusammenzählen. >> Komma unter Komma schreiben.
+N Drei Ersatzteile kosten 48,75 €, 34,5 € und 4,5 €. Wie viel kosten sie zusammen? | 87,75 | € | 0,006 || Alle drei Beträge zusammenzählen. >> Komma unter Komma schreiben.
+N Drei Ersatzteile kosten 24,9 €, 28,4 € und 22,8 €. Wie viel kosten sie zusammen? | 76,1 | € | 0,006 || Alle drei Beträge zusammenzählen. >> Komma unter Komma schreiben.
+N Drei Ersatzteile kosten 37,4 €, 13,6 € und 4,5 €. Wie viel kosten sie zusammen? | 55,5 | € | 0,006 || Alle drei Beträge zusammenzählen. >> Komma unter Komma schreiben.
+N Drei Ersatzteile kosten 59,9 €, 28,4 € und 15,25 €. Wie viel kosten sie zusammen? | 103,55 | € | 0,006 || Alle drei Beträge zusammenzählen. >> Komma unter Komma schreiben.
+N Drei Ersatzteile kosten 12,5 €, 13,6 € und 15,25 €. Wie viel kosten sie zusammen? | 41,35 | € | 0,006 || Alle drei Beträge zusammenzählen. >> Komma unter Komma schreiben.
+# --- Wechselgeld
+N Ein Kunde zahlt mit 100 €. Die Rechnung beträgt 68,25 €. Wie viel Wechselgeld bekommt er? | 31,75 | € | 0,006 || 100 € − 68,25 € >> Gegebener Betrag minus Rechnungsbetrag
+N Ein Kunde zahlt mit 100 €. Die Rechnung beträgt 81,6 €. Wie viel Wechselgeld bekommt er? | 18,4 | € | 0,006 || 100 € − 81,6 € >> Gegebener Betrag minus Rechnungsbetrag
+N Ein Kunde zahlt mit 100 €. Die Rechnung beträgt 46,9 €. Wie viel Wechselgeld bekommt er? | 53,1 | € | 0,006 || 100 € − 46,9 € >> Gegebener Betrag minus Rechnungsbetrag
+N Ein Kunde zahlt mit 200 €. Die Rechnung beträgt 46,9 €. Wie viel Wechselgeld bekommt er? | 153,1 | € | 0,006 || 200 € − 46,9 € >> Gegebener Betrag minus Rechnungsbetrag
+N Ein Kunde zahlt mit 100 €. Die Rechnung beträgt 37,85 €. Wie viel Wechselgeld bekommt er? | 62,15 | € | 0,006 || 100 € − 37,85 € >> Gegebener Betrag minus Rechnungsbetrag
+N Ein Kunde zahlt mit 200 €. Die Rechnung beträgt 68,25 €. Wie viel Wechselgeld bekommt er? | 131,75 | € | 0,006 || 200 € − 68,25 € >> Gegebener Betrag minus Rechnungsbetrag
+# --- Multiplizieren
+N Eine Zündkerze kostet 8,2 €. Was kosten 3 Zündkerzen? | 24,6 | € | 0,006 || 3 · 8,2 € >> Stückzahl mal Stückpreis
+N Eine Zündkerze kostet 3,75 €. Was kosten 3 Zündkerzen? | 11,25 | € | 0,006 || 3 · 3,75 € >> Stückzahl mal Stückpreis
+N Eine Zündkerze kostet 3,75 €. Was kosten 4 Zündkerzen? | 15 | € | 0,006 || 4 · 3,75 € >> Stückzahl mal Stückpreis
+N Eine Zündkerze kostet 8,2 €. Was kosten 5 Zündkerzen? | 41 | € | 0,006 || 5 · 8,2 € >> Stückzahl mal Stückpreis
+N Eine Zündkerze kostet 3,75 €. Was kosten 5 Zündkerzen? | 18,75 | € | 0,006 || 5 · 3,75 € >> Stückzahl mal Stückpreis
+N Eine Zündkerze kostet 11,5 €. Was kosten 5 Zündkerzen? | 57,5 | € | 0,006 || 5 · 11,5 € >> Stückzahl mal Stückpreis
+N Eine Zündkerze kostet 6,5 €. Was kosten 8 Zündkerzen? | 52 | € | 0,006 || 8 · 6,5 € >> Stückzahl mal Stückpreis
+# --- Dividieren
+N Ein Karton mit 10 Ölfiltern kostet 84 €. Was kostet ein Ölfilter? | 8,4 | € | 0,006 || 84 € : 10 >> Gesamtpreis durch Stückzahl
+N Ein Karton mit 4 Ölfiltern kostet 150 €. Was kostet ein Ölfilter? | 37,5 | € | 0,006 || 150 € : 4 >> Gesamtpreis durch Stückzahl
+N Ein Karton mit 8 Ölfiltern kostet 120 €. Was kostet ein Ölfilter? | 15 | € | 0,006 || 120 € : 8 >> Gesamtpreis durch Stückzahl
+N Ein Karton mit 5 Ölfiltern kostet 48 €. Was kostet ein Ölfilter? | 9,6 | € | 0,006 || 48 € : 5 >> Gesamtpreis durch Stückzahl
+N Ein Karton mit 10 Ölfiltern kostet 48 €. Was kostet ein Ölfilter? | 4,8 | € | 0,006 || 48 € : 10 >> Gesamtpreis durch Stückzahl
+N Ein Karton mit 4 Ölfiltern kostet 36 €. Was kostet ein Ölfilter? | 9 | € | 0,006 || 36 € : 4 >> Gesamtpreis durch Stückzahl
+N Ein Karton mit 10 Ölfiltern kostet 60 €. Was kostet ein Ölfilter? | 6 | € | 0,006 || 60 € : 10 >> Gesamtpreis durch Stückzahl
+# --- Runden
+N Runde 12,874 auf 1 Dezimalstelle. | 12,9 |  | 0 || Die nächste Stelle entscheidet: ab 5 wird aufgerundet. >> Schau auf die Stelle rechts daneben.
+N Runde 0,6749 auf 2 Dezimalstellen. | 0,67 |  | 0 || Die nächste Stelle entscheidet: ab 5 wird aufgerundet. >> Schau auf die Stelle rechts daneben.
+N Runde 8,3651 auf 1 Dezimalstelle. | 8,4 |  | 0 || Die nächste Stelle entscheidet: ab 5 wird aufgerundet. >> Schau auf die Stelle rechts daneben.
+N Runde 2,0449 auf 1 Dezimalstelle. | 2 |  | 0 || Die nächste Stelle entscheidet: ab 5 wird aufgerundet. >> Schau auf die Stelle rechts daneben.
+N Runde 7,995 auf 2 Dezimalstellen. | 8 |  | 0 || Die nächste Stelle entscheidet: ab 5 wird aufgerundet. >> Schau auf die Stelle rechts daneben.
+N Runde 19,498 auf 2 Dezimalstellen. | 19,5 |  | 0 || Die nächste Stelle entscheidet: ab 5 wird aufgerundet. >> Schau auf die Stelle rechts daneben.
+N Runde 45,123 auf 1 Dezimalstelle. | 45,1 |  | 0 || Die nächste Stelle entscheidet: ab 5 wird aufgerundet. >> Schau auf die Stelle rechts daneben.
+# --- Längen umrechnen
+N Rechne 450 mm in m um. | 0,45 | m | 0 || 1000 mm = 1 m >> Durch 1000
+N Rechne 250 cm in mm um. | 2500 | mm | 0 || 1 cm = 10 mm >> Mal 10
+N Rechne 120 cm in mm um. | 1200 | mm | 0 || 1 cm = 10 mm >> Mal 10
+N Rechne 1250 mm in m um. | 1,25 | m | 0 || 1000 mm = 1 m >> Durch 1000
+N Rechne 0,8 km in m um. | 800 | m | 0 || 1 km = 1000 m >> Mal 1000
+N Rechne 2,45 m in mm um. | 2450 | mm | 0 || 1 m = 1000 mm >> Mal 1000
+N Rechne 45,6 km in m um. | 45600 | m | 0 || 1 km = 1000 m >> Mal 1000
+N Rechne 2380 mm in m um. | 2,38 | m | 0 || 1000 mm = 1 m >> Durch 1000
+N Rechne 12 km in m um. | 12000 | m | 0 || 1 km = 1000 m >> Mal 1000
+# --- Volumen und Masse umrechnen
+N Rechne 3,25 kg in g um. | 3250 | g | 0 || 1 kg = 1000 g >> Mal 1000
+N Rechne 1,45 t in kg um. | 1450 | kg | 0 || 1 t = 1000 kg >> Mal 1000
+N Rechne 4750 ml in Liter um. | 4,75 | l | 0 || 1000 ml = 1 l >> Durch 1000
+N Rechne 16 t in kg um. | 16000 | kg | 0 || 1 t = 1000 kg >> Mal 1000
+N Rechne 0,9 t in kg um. | 900 | kg | 0 || 1 t = 1000 kg >> Mal 1000
+N Rechne 1,05 Liter in ml um. | 1050 | ml | 0 || 1 l = 1000 ml >> Mal 1000
+N Rechne 2,5 Liter in ml um. | 2500 | ml | 0 || 1 l = 1000 ml >> Mal 1000
+N Rechne 1,8 kg in g um. | 1800 | g | 0 || 1 kg = 1000 g >> Mal 1000
+N Rechne 350 ml in Liter um. | 0,35 | l | 0 || 1000 ml = 1 l >> Durch 1000
+# --- Zeit umrechnen
+N Eine Reparatur beginnt um 8:30 Uhr und dauert 140 Minuten. Wie viele Minuten nach 8:00 Uhr ist sie fertig? | 170 | min | 0 || 30 min + 140 min >> Startminute plus Dauer
+N Wie viele Stunden sind 210 Minuten? | 3,5 | h | 0,006 || 210 min : 60 >> 60 min = 1 h
+N Eine Reparatur beginnt um 8:30 Uhr und dauert 200 Minuten. Wie viele Minuten nach 8:00 Uhr ist sie fertig? | 230 | min | 0 || 30 min + 200 min >> Startminute plus Dauer
+N Eine Reparatur beginnt um 7:45 Uhr und dauert 140 Minuten. Wie viele Minuten nach 7:00 Uhr ist sie fertig? | 185 | min | 0 || 45 min + 140 min >> Startminute plus Dauer
+N Wie viele Stunden sind 36 Minuten? | 0,6 | h | 0,006 || 36 min : 60 >> 60 min = 1 h
+N Wie viele Minuten sind 2,25 Stunden? | 135 | min | 0 || 2,25 · 60 min >> 1 h = 60 min
+N Eine Reparatur beginnt um 8:15 Uhr und dauert 95 Minuten. Wie viele Minuten nach 8:00 Uhr ist sie fertig? | 110 | min | 0 || 15 min + 95 min >> Startminute plus Dauer
+N Wie viele Minuten sind 0,75 Stunden? | 45 | min | 0 || 0,75 · 60 min >> 1 h = 60 min
+# --- Elektrische Einheiten umrechnen
+N Rechne 1,5 kW in W um. | 1500 | W | 0 || 1 kW = 1000 W >> Mal 1000
+N Rechne 2,2 kΩ in Ω um. | 2200 | Ω | 0 || 1 kΩ = 1000 Ω >> Mal 1000
+N Rechne 20 mA in A um. | 0,02 | A | 0 || 1000 mA = 1 A >> Durch 1000
+N Rechne 0,47 kΩ in Ω um. | 470 | Ω | 0 || 1 kΩ = 1000 Ω >> Mal 1000
+N Rechne 0,75 kW in W um. | 750 | W | 0 || 1 kW = 1000 W >> Mal 1000
+N Rechne 4,7 kΩ in Ω um. | 4700 | Ω | 0 || 1 kΩ = 1000 Ω >> Mal 1000
+N Rechne 4,7 mA in A um. | 0,0047 | A | 0 || 1000 mA = 1 A >> Durch 1000
+# --- Prozent
+N Wie viel sind 50 % von 150 €? | 75 | € | 0,006 || 150 € · 50 / 100 >> Grundwert mal Prozentzahl durch 100
+N Wie viel sind 5 % von 120 €? | 6 | € | 0,006 || 120 € · 5 / 100 >> Grundwert mal Prozentzahl durch 100
+N Wie viel sind 25 % von 360 €? | 90 | € | 0,006 || 360 € · 25 / 100 >> Grundwert mal Prozentzahl durch 100
+N Wie viel sind 25 % von 80 €? | 20 | € | 0,006 || 80 € · 25 / 100 >> Grundwert mal Prozentzahl durch 100
+N Wie viel sind 10 % von 120 €? | 12 | € | 0,006 || 120 € · 10 / 100 >> Grundwert mal Prozentzahl durch 100
+N Wie viel sind 50 % von 360 €? | 180 | € | 0,006 || 360 € · 50 / 100 >> Grundwert mal Prozentzahl durch 100
+N Wie viel sind 50 % von 60 €? | 30 | € | 0,006 || 60 € · 50 / 100 >> Grundwert mal Prozentzahl durch 100
+N Wie viel sind 20 % von 80 €? | 16 | € | 0,006 || 80 € · 20 / 100 >> Grundwert mal Prozentzahl durch 100
+# --- Dreisatz
+N 4 Liter Motoröl kosten 18 €. Was kosten 6 Liter? | 27 | € | 0,006 || Ein Liter kostet 4,5 €, mal 6 >> Zuerst den Preis für 1 Liter ausrechnen.
+N 4 Liter Motoröl kosten 44 €. Was kosten 10 Liter? | 110 | € | 0,006 || Ein Liter kostet 11 €, mal 10 >> Zuerst den Preis für 1 Liter ausrechnen.
+N 4 Liter Motoröl kosten 56 €. Was kosten 8 Liter? | 112 | € | 0,006 || Ein Liter kostet 14 €, mal 8 >> Zuerst den Preis für 1 Liter ausrechnen.
+N 5 Liter Motoröl kosten 44 €. Was kosten 12 Liter? | 105,6 | € | 0,006 || Ein Liter kostet 8,8 €, mal 12 >> Zuerst den Preis für 1 Liter ausrechnen.
+N 4 Liter Motoröl kosten 56 €. Was kosten 12 Liter? | 168 | € | 0,006 || Ein Liter kostet 14 €, mal 12 >> Zuerst den Preis für 1 Liter ausrechnen.
+N 2 Liter Motoröl kosten 44 €. Was kosten 12 Liter? | 264 | € | 0,006 || Ein Liter kostet 22 €, mal 12 >> Zuerst den Preis für 1 Liter ausrechnen.
+# --- Fläche und Umfang
+N Ein Werkstattboden ist 6 m lang und 7,5 m breit. Wie groß ist die Fläche? | 45 | m² | 0,006 || A = Länge · Breite >> Länge mal Breite
+N Ein Werkstattboden ist 12 m lang und 7,5 m breit. Wie groß ist die Fläche? | 90 | m² | 0,006 || A = Länge · Breite >> Länge mal Breite
+N Ein Werkstattboden ist 4 m lang und 7,5 m breit. Wie groß ist die Fläche? | 30 | m² | 0,006 || A = Länge · Breite >> Länge mal Breite
+N Ein Werkstattboden ist 8 m lang und 2,5 m breit. Wie groß ist die Fläche? | 20 | m² | 0,006 || A = Länge · Breite >> Länge mal Breite
+N Ein Werkstattboden ist 15 m lang und 4,5 m breit. Wie groß ist die Fläche? | 67,5 | m² | 0,006 || A = Länge · Breite >> Länge mal Breite
+# --- Umfang
+N Ein rechteckiges Blech ist 8 m lang und 2,5 m breit. Wie groß ist der Umfang? | 21 | m | 0,006 || U = 2 · (Länge + Breite) >> Alle vier Seiten zusammenzählen.
+N Ein rechteckiges Blech ist 12 m lang und 4,5 m breit. Wie groß ist der Umfang? | 33 | m | 0,006 || U = 2 · (Länge + Breite) >> Alle vier Seiten zusammenzählen.
+N Ein rechteckiges Blech ist 8 m lang und 3 m breit. Wie groß ist der Umfang? | 22 | m | 0,006 || U = 2 · (Länge + Breite) >> Alle vier Seiten zusammenzählen.
+# --- Rechenregeln
+N Berechne: 20 + 4 · 3 | 32 |  | 0 || Punkt vor Strich: zuerst 4 · 3 >> Punktrechnung vor Strichrechnung
+N Berechne: 12 + 4 · 5 | 32 |  | 0 || Punkt vor Strich: zuerst 4 · 5 >> Punktrechnung vor Strichrechnung
+N Berechne: (48 + 4) · 5 | 260 |  | 0 || Zuerst die Klammer: 48 + 4 >> Klammer zuerst
+N Berechne: (12 + 6) · 2 | 36 |  | 0 || Zuerst die Klammer: 12 + 6 >> Klammer zuerst
+N Berechne: (20 + 8) · 5 | 140 |  | 0 || Zuerst die Klammer: 20 + 8 >> Klammer zuerst
+N Berechne: 12 + 8 · 5 | 52 |  | 0 || Punkt vor Strich: zuerst 8 · 5 >> Punktrechnung vor Strichrechnung
+# --- Arbeitskosten
+N Eine Werkstattstunde kostet 72 €. Was kosten 1,5 Stunden Arbeit? | 108 | € | 0,006 || 1,5 h · 72 €/h >> Stunden mal Stundensatz
+N Eine Werkstattstunde kostet 64 €. Was kosten 2,5 Stunden Arbeit? | 160 | € | 0,006 || 2,5 h · 64 €/h >> Stunden mal Stundensatz
+N Eine Werkstattstunde kostet 72 €. Was kosten 2,5 Stunden Arbeit? | 180 | € | 0,006 || 2,5 h · 72 €/h >> Stunden mal Stundensatz
+N Eine Werkstattstunde kostet 56 €. Was kosten 2 Stunden Arbeit? | 112 | € | 0,006 || 2 h · 56 €/h >> Stunden mal Stundensatz
+# --- Durchschnitt
+N Drei Reifen haben 31, 36 und 42 Zehntelmillimeter Profil mehr als das Minimum. Wie groß ist der Durchschnitt? | 36,3 | Zehntel-mm | 0,06 || Summe geteilt durch 3 >> Alle Werte zusammenzählen und durch die Anzahl teilen.
+N Drei Reifen haben 28, 36 und 42 Zehntelmillimeter Profil mehr als das Minimum. Wie groß ist der Durchschnitt? | 35,3 | Zehntel-mm | 0,06 || Summe geteilt durch 3 >> Alle Werte zusammenzählen und durch die Anzahl teilen.

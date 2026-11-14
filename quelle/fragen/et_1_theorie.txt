@@ -1,0 +1,65 @@
+# --- Reihen- und Parallelschaltung
+M Was gilt für den Strom in einer Reihenschaltung? | Er ist an jeder Stelle gleich groß | Er teilt sich auf die Widerstände auf | Er ist am größten Widerstand am kleinsten | Er nimmt von Widerstand zu Widerstand ab
+M Was gilt für die Spannung in einer Reihenschaltung? | Die Teilspannungen addieren sich zur Gesamtspannung | An jedem Widerstand liegt die volle Spannung | Die Spannung ist an allen Widerständen gleich | Die Gesamtspannung ist kleiner als jede Teilspannung
+M An welchem Widerstand einer Reihenschaltung fällt die größte Spannung ab? | Am größten Widerstand | Am kleinsten Widerstand | Am ersten Widerstand nach dem Pluspol | An allen gleich viel
+M Was gilt für die Spannung in einer Parallelschaltung? | An allen Widerständen liegt dieselbe Spannung | Die Teilspannungen addieren sich | Am kleinsten Widerstand liegt die größte Spannung | Die Spannung teilt sich im Verhältnis der Widerstände
+M Was gilt für den Gesamtwiderstand einer Parallelschaltung? | Er ist kleiner als der kleinste Einzelwiderstand | Er ist die Summe der Einzelwiderstände | Er ist so groß wie der größte Einzelwiderstand | Er ist der Mittelwert der Einzelwiderstände
+M Durch welchen Widerstand einer Parallelschaltung fließt der größte Strom? | Durch den kleinsten Widerstand | Durch den größten Widerstand | Durch alle gleich viel | Durch den Widerstand, der der Batterie am nächsten liegt
+M Warum sind die Verbraucher im Fahrzeug parallel geschaltet? | Jeder Verbraucher erhält die volle Bordspannung und kann einzeln geschaltet werden | So fließt durch alle Verbraucher derselbe Strom | So sinkt der Gesamtstrom | So genügt eine Sicherung für alle Verbraucher
+M Was passiert in einer Reihenschaltung von zwei Lampen, wenn eine durchbrennt? | Beide Lampen erlöschen | Die andere leuchtet heller | Die andere leuchtet unverändert weiter | Die Sicherung löst aus
+M Was passiert, wenn zu einer Parallelschaltung ein weiterer Verbraucher zugeschaltet wird? | Der Gesamtwiderstand sinkt und der Gesamtstrom steigt | Der Gesamtwiderstand steigt und der Gesamtstrom sinkt | Die Spannung an den anderen Verbrauchern sinkt auf die Hälfte | Gesamtwiderstand und Gesamtstrom bleiben gleich
+R In einer Parallelschaltung ist der Gesamtstrom die Summe der Teilströme.
+F In einer Reihenschaltung ist der Gesamtwiderstand kleiner als der kleinste Einzelwiderstand. || Das gilt für die Parallelschaltung. In Reihe addieren sich die Widerstände.
+# --- Leistung, Arbeit, Wirkungsgrad, Spannungsfall
+M Mit welcher Formel berechnet man die elektrische Leistung? | P = U · I | P = U / I | P = R · I | P = U · R
+M Was gibt die elektrische Arbeit (Energie) an? | Leistung mal Zeit | Spannung mal Widerstand | Strom durch Zeit | Leistung durch Zeit
+M In welcher Einheit rechnet der Stromversorger die elektrische Energie ab? | Kilowattstunde (kWh) | Kilowatt (kW) | Amperestunde (Ah) | Volt (V)
+M Was gibt der Wirkungsgrad an? | Das Verhältnis von abgegebener zu zugeführter Leistung | Die Summe aus Nutzleistung und Verlustleistung | Die Verlustleistung in Watt | Das Verhältnis von Spannung zu Strom
+M Warum ist der Wirkungsgrad immer kleiner als 100 %? | Bei jeder Energieumwandlung entstehen Verluste, meist als Wärme | Weil die Spannung im Betrieb steigt | Weil Energie im Verbraucher vernichtet wird | Weil der Strom im Verbraucher verbraucht wird
+M Was versteht man unter Spannungsfall? | Die Spannung, die an einem Widerstand oder einer Leitung abfällt, wenn Strom fließt | Das Absinken der Batteriespannung bei Kälte | Die Spannung, die bei offenem Stromkreis anliegt | Den Unterschied zwischen Wechsel- und Gleichspannung
+M Wann ist ein Spannungsfall an einer Leitung messbar? | Nur wenn Strom fließt, also unter Last | Nur bei ausgeschaltetem Verbraucher | Nur bei abgeklemmter Batterie | Immer, auch ohne Stromfluss
+M Welche Folge hat ein zu kleiner Leitungsquerschnitt? | Höherer Spannungsfall und Erwärmung der Leitung | Höhere Spannung am Verbraucher | Geringerer Strom durch die Sicherung bei gleicher Last | Geringerer Widerstand der Leitung
+M Eine Lampe leuchtet zu dunkel, an ihr werden nur 10,5 V statt 12,4 V gemessen. Was ist die wahrscheinlichste Ursache? | Ein Übergangswiderstand in der Zuleitung oder Masseverbindung | Eine zu starke Sicherung | Ein zu großer Leitungsquerschnitt | Eine zu hohe Batteriespannung
+R An einer intakten Masseverbindung fällt unter Last nur eine sehr kleine Spannung ab.
+# --- Batterie
+M Was gibt die Kapazität einer Batterie in Ah an? | Wie viel Ladung sie speichern kann, also Strom mal Zeit | Wie hoch die Spannung im Leerlauf ist | Wie groß der höchste Startstrom ist | Wie viel Leistung sie abgeben kann
+M Was gibt der Kälteprüfstrom einer Starterbatterie an? | Den Strom, den die Batterie bei −18 °C kurzzeitig liefern kann | Den Ladestrom bei Frost | Den Ruhestrom im Winter | Den Strom, bei dem die Batterie gefriert
+M Welche Ruhespannung deutet auf eine weitgehend entladene 12-V-Batterie hin? | Etwa 11,8 V oder weniger | Etwa 12,6 V | Etwa 13,2 V | Etwa 14,4 V
+M Was passiert chemisch beim Entladen einer Bleibatterie? | Die Säuredichte sinkt, an den Platten bildet sich Bleisulfat | Die Säuredichte steigt, die Platten lösen sich auf | Das Wasser verdampft, die Säure bleibt gleich | Es entsteht Knallgas an beiden Platten
+M Warum kann eine tiefentladene Batterie im Winter einfrieren? | Die Säure ist dann fast nur noch Wasser | Die Platten ziehen Wasser aus der Luft | Die Spannung senkt den Gefrierpunkt | Der Ladestrom kühlt die Batterie
+M Was ist Sulfatierung? | Grobkristallines Bleisulfat auf den Platten nach langer Entladung, die Batterie verliert Kapazität | Korrosion an den Polklemmen | Verdunsten der Säure bei Überladung | Ablagerung von Bleischlamm durch Vibrationen
+M Mit welcher Spannung wird eine 12-V-Batterie im Fahrzeug geladen? | Etwa 13,8 V bis 14,8 V | Genau 12,0 V | Etwa 16 V bis 18 V | Etwa 12,2 V bis 12,6 V
+M In welcher Reihenfolge wird ein Starthilfekabel angeklemmt? | Erst Plus an Plus, dann Minus der Spenderbatterie an einen Massepunkt des Pannenfahrzeugs | Erst Minus an Minus, dann Plus an Plus | Erst Plus an Minus, dann Minus an Plus | Die Reihenfolge ist beliebig
+R Beim Laden einer Bleibatterie entsteht Knallgas, deshalb sind Funken und offenes Feuer verboten.
+F Der Ladezustand einer Batterie lässt sich nur unter Last, aber nie über die Ruhespannung beurteilen. || Die Ruhespannung nach einigen Stunden Standzeit gibt einen guten Anhalt.
+# --- Elektromagnetismus, Relais, Induktion
+M Was entsteht um einen stromdurchflossenen Leiter? | Ein Magnetfeld | Ein elektrisches Vakuum | Eine Gegenspannung von 12 V | Ein Lichtbogen
+M Wodurch wird das Magnetfeld einer Spule stärker? | Durch mehr Windungen, höheren Strom und einen Eisenkern | Durch einen größeren Drahtquerschnitt allein | Durch eine längere Zuleitung | Durch eine kleinere Spannung
+M Was versteht man unter Induktion? | In einer Spule entsteht Spannung, wenn sich das Magnetfeld in ihr ändert | In einem Leiter entsteht Wärme, wenn Strom fließt | Ein Magnetfeld entsteht, wenn Strom durch einen Leiter fließt | Ein Kondensator lädt sich auf, wenn Spannung anliegt
+M Was passiert beim Abschalten einer Spule? | Das zusammenbrechende Magnetfeld erzeugt eine hohe Spannungsspitze | Die Spannung fällt sofort auf null ohne Nachwirkung | Der Strom steigt kurz auf das Doppelte | Die Spule speichert das Magnetfeld bis zum nächsten Einschalten
+M Wozu dient die Freilaufdiode (oder ein Widerstand) parallel zur Relaisspule? | Sie baut die Abschaltspannungsspitze ab und schützt das Steuergerät | Sie verstärkt den Steuerstrom | Sie hält das Relais nach dem Abschalten angezogen | Sie verhindert das Verpolen des Laststromkreises
+Z Ordne die Relaisklemmen zu. | 85 und 86 = Steuerstromkreis (Spule) | 30 = Eingang Laststromkreis | 87 = Ausgang Laststromkreis (Schließer) | 87a = Ausgang Öffner
+M Welchen Vorteil hat ein Relais? | Ein kleiner Steuerstrom schaltet einen großen Laststrom, Schalter und Leitungen werden entlastet | Es erhöht die Spannung im Laststromkreis | Es verringert den Laststrom | Es ersetzt die Sicherung
+M Ein Relais klickt hörbar, der Verbraucher arbeitet aber nicht. Wo liegt der Fehler wahrscheinlich? | Im Laststromkreis: Kontakte, Sicherung, Leitung oder Verbraucher | In der Relaisspule | Im Steuerschalter | In der Masse der Spule
+M Welchen Widerstand hat die Spule eines üblichen 12-V-Kfz-Relais ungefähr? | Etwa 60 bis 100 Ω | Etwa 0,5 Ω | Etwa 10 kΩ | Unendlich
+Z Ordne die Klemmenbezeichnungen zu. | Klemme 30 = Dauerplus von der Batterie | Klemme 15 = Geschaltetes Plus bei Zündung ein | Klemme 31 = Masse | Klemme 50 = Startersteuerung
+M Nach welchem Prinzip arbeitet ein Generator? | Durch Induktion: Ein Magnetfeld bewegt sich gegenüber einer Wicklung | Durch chemische Umwandlung wie in der Batterie | Durch Reibung zwischen Läufer und Ständer | Durch Wärmewirkung des Stroms
+M Nach welchem Prinzip arbeitet ein Elektromotor? | Auf einen stromdurchflossenen Leiter im Magnetfeld wirkt eine Kraft | Ein Magnetfeld erzeugt in einer ruhenden Spule Gleichstrom | Die Wärme des Stroms dehnt den Anker aus | Die Spannung zieht den Anker direkt an
+# --- Diode, Transistor, Kondensator
+M Was macht eine Diode? | Sie lässt Strom nur in einer Richtung durch | Sie begrenzt den Strom auf einen festen Wert | Sie speichert elektrische Ladung | Sie verstärkt kleine Ströme
+M Welche Spannung fällt an einer leitenden Siliziumdiode ungefähr ab? | Etwa 0,7 V | Etwa 0,1 V | Etwa 2,5 V | Etwa 12 V
+M Was macht eine Z-Diode (Zenerdiode)? | Sie leitet in Sperrrichtung ab einer bestimmten Spannung und begrenzt so die Spannung | Sie leuchtet in Durchlassrichtung | Sie sperrt in beiden Richtungen | Sie verstärkt Wechselspannungen
+M Wozu dienen die Dioden im Generator? | Sie richten den erzeugten Drehstrom gleich | Sie regeln die Ladespannung | Sie erzeugen das Magnetfeld im Läufer | Sie schützen die Batterie vor Überladung
+M Wozu braucht eine LED einen Vorwiderstand? | Er begrenzt den Strom, sonst wird die LED zerstört | Er erhöht die Spannung an der LED | Er macht aus Gleichstrom Wechselstrom | Er schützt vor falscher Polung
+M Wofür wird ein Transistor im Fahrzeug vor allem eingesetzt? | Als kontaktloser Schalter und als Verstärker | Als Energiespeicher | Als Gleichrichter im Generator | Als Sicherung
+M Wie heißen die drei Anschlüsse eines bipolaren Transistors? | Basis, Kollektor, Emitter | Anode, Kathode, Gate | Plus, Minus, Masse | Primär, Sekundär, Mittelanzapfung
+M Wie wird ein NPN-Transistor durchgeschaltet? | Ein kleiner Basisstrom steuert den größeren Kollektor-Emitter-Strom | Ein großer Basisstrom wird in einen kleinen Kollektorstrom umgewandelt | Der Emitter wird von der Masse getrennt | Der Kollektor wird mit der Basis kurzgeschlossen
+M Welchen Vorteil hat ein Transistor gegenüber einem Relais? | Er schaltet schnell, geräuschlos und ohne Verschleiß | Er verträgt beliebig hohe Ströme ohne Kühlung | Er trennt Steuer- und Laststromkreis galvanisch | Er braucht keinen Steuerstrom
+M Was macht ein Kondensator? | Er speichert elektrische Ladung | Er wandelt Strom in Wärme um | Er lässt Strom nur in einer Richtung durch | Er verstärkt die Spannung
+M Wie verhält sich ein Kondensator im Gleichstromkreis? | Es fließt nur beim Laden und Entladen kurz Strom, danach sperrt er | Er leitet dauerhaft wie ein Draht | Er leitet erst ab 0,7 V | Er wandelt den Gleichstrom in Wechselstrom um
+M In welcher Einheit wird die Kapazität eines Kondensators angegeben? | Farad | Henry | Ohm | Amperestunde
+M Was ist ein NTC-Widerstand? | Ein Heißleiter: Sein Widerstand sinkt mit steigender Temperatur | Ein Kaltleiter: Sein Widerstand steigt mit steigender Temperatur | Ein lichtabhängiger Widerstand | Ein spannungsabhängiger Widerstand
+M Was ist ein PTC-Widerstand? | Ein Kaltleiter: Sein Widerstand steigt mit steigender Temperatur | Ein Heißleiter: Sein Widerstand sinkt mit steigender Temperatur | Ein Widerstand, der sich mit dem Druck ändert | Ein Widerstand mit festem Wert
+R Ein Brückengleichrichter nutzt beide Halbwellen der Wechselspannung.
+F Eine Diode sperrt, wenn die Anode am Pluspol und die Kathode am Minuspol liegt. || In dieser Richtung leitet sie. Sie sperrt bei umgekehrter Polung.
+R Elektronische Bauteile können durch elektrostatische Entladung beschädigt werden.

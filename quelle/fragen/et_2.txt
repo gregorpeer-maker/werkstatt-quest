@@ -1,0 +1,117 @@
+# Elektrotechnik Level 3 – 2. Klasse KFZ
+# Diese Datei wird von gen_et.py erzeugt: Theorie aus et_2_theorie.txt, Rechenaufgaben aus Vorlagen.
+# --- Spannungsteiler und Sensorsignale
+M Was ist ein Spannungsteiler? | Eine Reihenschaltung von Widerständen, an denen sich die Gesamtspannung aufteilt | Eine Parallelschaltung, in der sich der Strom aufteilt | Ein Bauteil, das Wechselspannung in Gleichspannung teilt | Ein Transformator mit zwei Sekundärwicklungen
+M Wie verhalten sich die Teilspannungen an einem Spannungsteiler? | Wie die zugehörigen Widerstände | Umgekehrt wie die zugehörigen Widerstände | Sie sind immer gleich groß | Wie die Quadrate der Widerstände
+M Ein NTC-Temperaturfühler liegt mit einem Festwiderstand im Steuergerät an 5 V. Wie ändert sich die Signalspannung am Fühler, wenn der Motor warm wird? | Sie sinkt, weil der Widerstand des Fühlers sinkt | Sie steigt, weil der Widerstand des Fühlers sinkt | Sie bleibt gleich, nur der Strom ändert sich | Sie steigt, weil der Widerstand des Fühlers steigt
+M Welche Signalspannung misst das Steuergerät bei einem NTC-Fühler mit unterbrochener Leitung? | Etwa die volle Versorgungsspannung von 5 V | Etwa 0 V | Etwa die halbe Versorgungsspannung | Etwa 12 V
+M Welche Signalspannung misst das Steuergerät, wenn die Signalleitung des NTC-Fühlers Kurzschluss nach Masse hat? | Etwa 0 V | Etwa 5 V | Etwa 2,5 V | Etwa 12 V
+M Warum werden viele Sensoren mit stabilisierten 5 V statt mit Bordspannung versorgt? | Das Signal bleibt unabhängig von Schwankungen der Bordspannung | Die Sensoren verbrauchen dann weniger Strom | 5 V sind für den Mechaniker ungefährlicher | Die Leitungen dürfen dann dünner sein
+M Was ist ein Potenziometer? | Ein verstellbarer Spannungsteiler mit Schleifer | Ein Widerstand mit festem Wert | Ein temperaturabhängiger Widerstand | Ein Schalter mit zwei Stellungen
+M Welche Signalform liefert ein induktiver Drehzahlgeber? | Eine Wechselspannung, deren Höhe und Frequenz mit der Drehzahl steigen | Ein Rechtecksignal mit gleichbleibender Höhe | Eine Gleichspannung proportional zur Drehzahl | Ein PWM-Signal mit fester Frequenz
+M Welche Signalform liefert ein Hallgeber? | Ein Rechtecksignal mit gleichbleibender Höhe | Eine Sinusspannung, die mit der Drehzahl wächst | Eine Gleichspannung von 12 V | Eine Wechselspannung mit fester Frequenz
+M Wie viele Anschlüsse hat ein üblicher Hallgeber? | Drei: Versorgung, Masse und Signal | Zwei: Signal und Masse | Einen: Signal | Vier: zwei Versorgungen und zwei Signale
+M Wie prüft man einen induktiven Drehzahlgeber ohne Oszilloskop sinnvoll? | Spulenwiderstand messen und beim Durchdrehen die Wechselspannung messen | Gleichspannung am Stecker bei stehendem Motor messen | Den Strom in Reihe zur Signalleitung bei laufendem Motor messen | Die Versorgungsspannung von 5 V prüfen
+M Was erfasst der Heißfilm-Luftmassenmesser? | Die angesaugte Luftmasse über die Abkühlung eines beheizten Sensorelements | Den Saugrohrdruck über eine Membran | Die Luftmenge über eine Stauklappe mit Potenziometer | Den Sauerstoffgehalt der Ansaugluft
+M Nach welchem Prinzip arbeitet der Klopfsensor? | Piezoelektrisch: Schwingungen erzeugen eine Spannung | Induktiv über eine Spule und einen Magneten | Über einen temperaturabhängigen Widerstand | Über einen Hallgeber am Schwungrad
+M Welcher Sensor arbeitet mit dem piezoresistiven Prinzip und einer Membran? | Der Saugrohrdrucksensor | Der Kurbelwellensensor | Die Sprung-Lambdasonde | Der Kühlmitteltemperaturfühler
+Z Ordne den Sensor seinem Signal zu. | NTC-Fühler = Widerstand ändert sich mit der Temperatur | Hallgeber = Rechtecksignal | Induktivgeber = Wechselspannung | Potenziometer = Spannung je nach Stellung
+R Ein Sensorsignal wird immer mit dem Massebezug des Sensors beurteilt, eine schlechte Sensormasse verfälscht das Signal.
+F Ein Sensor mit 5-V-Versorgung darf zur Prüfung direkt mit 12 V versorgt werden. || Das kann den Sensor zerstören.
+# --- Steuergerät: Eingabe, Verarbeitung, Ausgabe
+M Was bedeutet das EVA-Prinzip? | Eingabe, Verarbeitung, Ausgabe | Einschalten, Verstärken, Ausschalten | Erfassen, Vergleichen, Anzeigen | Eingang, Verteiler, Ausgang
+Z Ordne die Bauteile dem EVA-Prinzip zu. | Sensor = Eingabe | Steuergerät = Verarbeitung | Aktor = Ausgabe | Kennfeld = Gespeicherte Sollwerte
+M Was ist ein Kennfeld? | Im Steuergerät gespeicherte Werte, die aus mehreren Eingangsgrößen eine Ausgangsgröße bestimmen | Der Schaltplan des Steuergeräts | Die Liste der gespeicherten Fehlercodes | Der Bereich, in dem ein Sensor messen kann
+M Wie schaltet ein Steuergerät die meisten Aktoren? | Es schaltet über eine Endstufe die Masse, das Plus liegt dauernd an | Es schaltet über ein Relais immer das Plus | Es verändert die Batteriespannung | Es schaltet beide Leitungen mechanisch
+M Was ist ein PWM-Signal? | Ein Rechtecksignal mit fester Frequenz, bei dem das Verhältnis von Ein- zu Auszeit verändert wird | Ein Signal, dessen Frequenz sich mit der Last ändert | Eine Gleichspannung, deren Höhe stufenlos verändert wird | Ein Sinussignal mit veränderlicher Höhe
+M Wozu wird ein Aktor mit PWM angesteuert? | Um seine Wirkung stufenlos zu dosieren, ohne viel Verlustwärme | Um ihn vor Verpolung zu schützen | Um den Leitungsquerschnitt zu verkleinern | Um die Bordspannung zu erhöhen
+M Wie unterscheidet sich Steuern von Regeln? | Beim Regeln wird das Ergebnis gemessen und rückgemeldet, beim Steuern nicht | Beim Steuern wird das Ergebnis gemessen und rückgemeldet, beim Regeln nicht | Steuern geschieht elektrisch, Regeln mechanisch | Es gibt keinen Unterschied
+M Was ist in einem Regelkreis die Regelabweichung? | Der Unterschied zwischen Sollwert und Istwert | Der Unterschied zwischen Eingangs- und Ausgangsspannung | Die Zeit, die der Regler zum Rechnen braucht | Der Verschleiß des Stellglieds
+M Was bedeutet Eigendiagnose eines Steuergeräts? | Es überwacht Sensoren, Aktoren und sich selbst und speichert erkannte Fehler | Es repariert defekte Sensoren selbst | Es wird nur vom Diagnosetester überwacht | Es zeigt jeden Fehler sofort im Display an
+M Was macht das Steuergerät, wenn ein Sensorsignal ausfällt? | Es rechnet mit einem Ersatzwert weiter und speichert einen Fehler | Es schaltet den Motor in jedem Fall sofort ab | Es ignoriert den Sensor ohne Eintrag | Es verdoppelt die Einspritzmenge
+# --- Zündanlage
+M Welche Aufgabe hat die Zündanlage? | Sie entzündet das verdichtete Gemisch zum richtigen Zeitpunkt mit einem Hochspannungsfunken | Sie erzeugt den Strom für das Bordnetz | Sie erwärmt den Brennraum vor dem Start | Sie dosiert den Kraftstoff
+M Aus welchen zwei Wicklungen besteht eine Zündspule? | Primärwicklung mit wenigen dicken und Sekundärwicklung mit vielen dünnen Windungen | Primärwicklung mit vielen dünnen und Sekundärwicklung mit wenigen dicken Windungen | Erregerwicklung und Ständerwicklung | Haltewicklung und Einzugswicklung
+M Wann entsteht der Zündfunke? | Beim Abschalten des Primärstroms | Beim Einschalten des Primärstroms | Während der Primärstrom konstant fließt | Wenn die Sekundärwicklung kurzgeschlossen wird
+M In welcher Größenordnung liegt die Zündspannung? | Bei mehreren zehntausend Volt | Bei etwa 400 Volt | Bei etwa 1000 Volt | Bei etwa 12 Volt
+M Was versteht man unter ruhender Hochspannungsverteilung? | Jeder Zylinder oder jedes Zylinderpaar hat eine eigene Zündspule, ein Verteiler fehlt | Ein Verteilerläufer verteilt die Hochspannung auf die Zylinder | Die Zündung arbeitet nur bei stehendem Motor | Eine Zündspule versorgt alle Zylinder über Zündkabel
+M Was bedeutet Zündzeitpunkt „früh“? | Die Zündung erfolgt weiter vor dem oberen Totpunkt | Die Zündung erfolgt nach dem oberen Totpunkt | Die Zündung erfolgt bei niedrigerer Drehzahl | Der Motor wurde früher gestartet
+M Warum wird der Zündzeitpunkt bei steigender Drehzahl nach früh verstellt? | Die Verbrennung braucht Zeit, bei hoher Drehzahl steht weniger Zeit zur Verfügung | Die Zündspule lädt bei hoher Drehzahl schneller | Das Gemisch brennt bei hoher Drehzahl langsamer ab und muss gebremst werden | Die Zündkerze wird bei hoher Drehzahl kälter
+M Was ist klopfende Verbrennung? | Gemischteile entzünden sich unkontrolliert von selbst und verursachen Druckspitzen | Die Zündung setzt aus und das Gemisch verbrennt im Auspuff | Die Flamme erlischt an der kalten Zylinderwand | Die Ventile schlagen auf den Kolben
+M Was gibt der Wärmewert einer Zündkerze an? | Wie gut die Kerze Wärme abführt | Wie heiß der Zündfunke ist | Wie hoch die Zündspannung sein muss | Wie lange die Kerze hält
+M Welche Folge hat ein zu großer Elektrodenabstand? | Der Zündspannungsbedarf steigt, es kann zu Aussetzern kommen | Der Zündspannungsbedarf sinkt, der Funke wird schwächer | Der Motor klopft | Der Zündzeitpunkt verstellt sich nach früh
+R Zündaussetzer können den Katalysator überhitzen, weil unverbrannter Kraftstoff im Katalysator verbrennt.
+F An der Sekundärseite der Zündanlage darf bei laufendem Motor ohne Schutz gearbeitet werden, weil der Strom klein ist. || Die Hochspannung ist gefährlich, besonders für Menschen mit Herzschrittmacher.
+# --- Lambdaregelung, Katalysator, EOBD
+M Was misst die Lambdasonde? | Den Restsauerstoff im Abgas | Den Kraftstoffanteil im Abgas | Die Abgastemperatur | Den Stickoxidgehalt
+M Welche Spannung gibt eine Sprungsonde bei magerem Gemisch ab? | Etwa 0,1 V | Etwa 0,9 V | Etwa 0,45 V | Etwa 5 V
+M Warum wird die Lambdasonde beheizt? | Sie arbeitet erst ab etwa 300 °C und ist so schneller betriebsbereit | Damit sie nicht einfriert | Damit das Abgas vor dem Katalysator wärmer wird | Damit der Sauerstoff an der Sonde verbrennt
+M Warum regelt die Lambdaregelung beim Dreiwegekatalysator auf λ = 1? | Nur in diesem engen Bereich werden CO, HC und NOx gleichzeitig gut umgewandelt | Der Motor hat bei λ = 1 die höchste Leistung | Der Verbrauch ist bei λ = 1 am niedrigsten | Die Sonde misst nur bei λ = 1 eine Spannung
+M Was tut das Steuergerät, wenn die Sonde „mager“ meldet? | Es verlängert die Einspritzzeit | Es verkürzt die Einspritzzeit | Es verstellt die Zündung nach spät | Es schaltet die Sondenheizung ab
+M Wie überwacht das Steuergerät den Katalysator? | Es vergleicht das Signal der Sonde nach dem Katalysator mit dem der Sonde davor | Es misst die Temperatur des Katalysators | Es misst den CO-Gehalt am Endrohr | Es zählt die Betriebsstunden
+M Was ist die Aufgabe der EOBD? | Abgasrelevante Systeme im Fahrbetrieb überwachen und Fehler anzeigen und speichern | Den Kraftstoffverbrauch anzeigen | Das Serviceintervall berechnen | Die Wegfahrsperre steuern
+M Wann schaltet die EOBD die Motorkontrollleuchte ein? | Wenn ein abgasrelevanter Fehler bestätigt wurde | Bei jedem sporadischen Signalfehler sofort | Nur bei der Abgasuntersuchung | Wenn der Service fällig ist
+M Was ist die Gemischadaption? | Das Steuergerät lernt dauerhafte Abweichungen und korrigiert die Grundeinspritzmenge | Die Lambdasonde wird neu kalibriert | Die Zündkerzen passen sich dem Gemisch an | Der Katalysator speichert Sauerstoff
+# --- ABS/ESP und Klimaanlage (elektrisch)
+M Welche Bauart haben aktive Raddrehzahlsensoren? | Hall- oder magnetoresistive Sensoren mit Versorgungsspannung | Induktive Sensoren ohne Versorgung | Potenziometer am Radlager | Piezosensoren in der Felge
+M Welchen Vorteil haben aktive gegenüber passiven Raddrehzahlsensoren? | Sie liefern auch bei sehr niedriger Geschwindigkeit ein auswertbares Signal | Sie brauchen keine Leitung | Sie messen zusätzlich den Reifendruck in bar | Sie sind unempfindlich gegen Unterbrechungen
+M Welche Sensoren braucht das ESP zusätzlich zu den Raddrehzahlsensoren? | Lenkwinkel-, Gierraten- und Querbeschleunigungssensor | Klopfsensor und Lambdasonde | Saugrohrdruck- und Luftmassensensor | Öldruck- und Öltemperatursensor
+M Womit schaltet das ABS-Steuergerät die Druckphasen? | Mit Magnetventilen im Hydraulikaggregat | Mit Relais in den Radbremszylindern | Mit dem Bremskraftverstärker | Mit Stellmotoren an den Bremssätteln
+M Wie wird der Klimakompressor mit Magnetkupplung eingeschaltet? | Eine Spule zieht die Kupplungsscheibe an die Riemenscheibe | Ein Stellmotor spannt den Riemen | Ein Unterdruckventil öffnet den Kältekreislauf | Der Thermostat schließt einen Kontakt im Kühlkreislauf
+M Warum schaltet das Steuergerät den Klimakompressor bei zu niedrigem Kältemitteldruck ab? | Der Kompressor würde ohne Kältemittel und Öl beschädigt | Der Verdampfer würde überhitzen | Der Motor würde zu viel Leistung abgeben | Die Batterie würde überladen
+M Welches Signal liefert der Drucksensor der Klimaanlage typischerweise? | Eine dem Druck proportionale Spannung oder ein PWM-Signal | Eine Wechselspannung mit druckabhängiger Höhe | Ein Schaltsignal nur beim Einschalten der Zündung | Einen Widerstandswert wie ein NTC
+# --- Messen mit dem Oszilloskop
+M Was zeigt das Oszilloskop? | Den Verlauf der Spannung über der Zeit | Den Widerstand über der Temperatur | Den Strom über der Spannung | Die Leistung über der Drehzahl
+M Was ist die Periodendauer eines Signals? | Die Zeit für eine vollständige Schwingung | Die Zeit, in der das Signal eingeschaltet ist | Die Anzahl der Schwingungen pro Sekunde | Der Abstand zwischen höchstem und tiefstem Wert
+M Was ist die Frequenz? | Die Anzahl der Schwingungen pro Sekunde | Die Dauer einer Schwingung | Die Höhe der Spannung | Das Verhältnis von Ein- zu Auszeit
+R Für Strommessungen mit dem Oszilloskop verwendet man eine Stromzange, die den Strom in eine Spannung umsetzt.
+F Mit einem Multimeter lässt sich die Form eines Rechtecksignals beurteilen. || Das Multimeter zeigt nur einen Mittelwert, die Signalform zeigt das Oszilloskop.
+# ===== Rechenaufgaben =====
+# --- Spannungsteiler
+N Spannungsteiler an 5 V: R1 = 2200 Ω (oben), R2 = 1000 Ω (unten). Welche Spannung liegt an R2? (auf 2 Dezimalen) | 1,56 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Die Spannung teilt sich im Verhältnis der Widerstände.
+N Spannungsteiler an 5 V: R1 = 1000 Ω (oben), R2 = 1000 Ω (unten). Welche Spannung liegt an R2? (auf 2 Dezimalen) | 2,5 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Die Spannung teilt sich im Verhältnis der Widerstände.
+N Spannungsteiler an 12 V: R1 = 470 Ω (oben), R2 = 330 Ω (unten). Welche Spannung liegt an R2? (auf 2 Dezimalen) | 4,95 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Die Spannung teilt sich im Verhältnis der Widerstände.
+N Spannungsteiler an 5 V: R1 = 1000 Ω (oben), R2 = 4000 Ω (unten). Welche Spannung liegt an R2? (auf 2 Dezimalen) | 4 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Die Spannung teilt sich im Verhältnis der Widerstände.
+N Spannungsteiler an 5 V: R1 = 10000 Ω (oben), R2 = 2500 Ω (unten). Welche Spannung liegt an R2? (auf 2 Dezimalen) | 1 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Die Spannung teilt sich im Verhältnis der Widerstände.
+N Spannungsteiler an 5 V: R1 = 3300 Ω (oben), R2 = 1700 Ω (unten). Welche Spannung liegt an R2? (auf 2 Dezimalen) | 1,7 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Die Spannung teilt sich im Verhältnis der Widerstände.
+N Spannungsteiler an 5 V: R1 = 680 Ω (oben), R2 = 320 Ω (unten). Welche Spannung liegt an R2? (auf 2 Dezimalen) | 1,6 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Die Spannung teilt sich im Verhältnis der Widerstände.
+# --- NTC am Spannungsteiler
+N Ein NTC-Fühler hat bei 20 °C einen Widerstand von 2500 Ω. Er liegt in Reihe mit 2500 Ω im Steuergerät an 5 V. Welche Signalspannung fällt am Fühler ab? (auf 2 Dezimalen) | 2,5 | V | 0,01 || UNTC = 5 V · RNTC / (RV + RNTC) >> Spannungsteiler aus Vorwiderstand und Fühler
+N Ein NTC-Fühler hat bei 90 °C einen Widerstand von 300 Ω. Er liegt in Reihe mit 2500 Ω im Steuergerät an 5 V. Welche Signalspannung fällt am Fühler ab? (auf 2 Dezimalen) | 0,54 | V | 0,01 || UNTC = 5 V · RNTC / (RV + RNTC) >> Spannungsteiler aus Vorwiderstand und Fühler
+N Ein NTC-Fühler hat bei 0 °C einen Widerstand von 5800 Ω. Er liegt in Reihe mit 2200 Ω im Steuergerät an 5 V. Welche Signalspannung fällt am Fühler ab? (auf 2 Dezimalen) | 3,62 | V | 0,01 || UNTC = 5 V · RNTC / (RV + RNTC) >> Spannungsteiler aus Vorwiderstand und Fühler
+N Ein NTC-Fühler hat bei 80 °C einen Widerstand von 250 Ω. Er liegt in Reihe mit 1000 Ω im Steuergerät an 5 V. Welche Signalspannung fällt am Fühler ab? (auf 2 Dezimalen) | 1 | V | 0,01 || UNTC = 5 V · RNTC / (RV + RNTC) >> Spannungsteiler aus Vorwiderstand und Fühler
+N Ein NTC-Fühler hat bei 40 °C einen Widerstand von 1200 Ω. Er liegt in Reihe mit 2500 Ω im Steuergerät an 5 V. Welche Signalspannung fällt am Fühler ab? (auf 2 Dezimalen) | 1,62 | V | 0,01 || UNTC = 5 V · RNTC / (RV + RNTC) >> Spannungsteiler aus Vorwiderstand und Fühler
+# --- Potenziometer
+N Ein Drosselklappenpotenziometer wird mit 5 V versorgt und steht bei 20 % seines Wegs. Welche Signalspannung gibt es ab? | 1 | V | 0,01 || U = 5 V · 20 / 100 >> Anteil des Wegs mal Versorgungsspannung
+N Ein Drosselklappenpotenziometer wird mit 5 V versorgt und steht bei 12 % seines Wegs. Welche Signalspannung gibt es ab? | 0,6 | V | 0,01 || U = 5 V · 12 / 100 >> Anteil des Wegs mal Versorgungsspannung
+N Ein Drosselklappenpotenziometer wird mit 5 V versorgt und steht bei 50 % seines Wegs. Welche Signalspannung gibt es ab? | 2,5 | V | 0,01 || U = 5 V · 50 / 100 >> Anteil des Wegs mal Versorgungsspannung
+N Ein Drosselklappenpotenziometer wird mit 5 V versorgt und steht bei 80 % seines Wegs. Welche Signalspannung gibt es ab? | 4 | V | 0,01 || U = 5 V · 80 / 100 >> Anteil des Wegs mal Versorgungsspannung
+# --- PWM und Frequenz
+N Ein PWM-Signal ist 3 ms eingeschaltet und 7 ms ausgeschaltet. Wie groß ist das Tastverhältnis in %? | 30 | % | 0,1 || Tastverhältnis = tein / T · 100 >> Einschaltzeit durch Periodendauer
+N Ein PWM-Signal ist 1 ms eingeschaltet und 4 ms ausgeschaltet. Wie groß ist das Tastverhältnis in %? | 20 | % | 0,1 || Tastverhältnis = tein / T · 100 >> Einschaltzeit durch Periodendauer
+N Ein Signal hat eine Periodendauer von 1 ms. Wie groß ist die Frequenz? | 1000 | Hz | 0,1 || f = 1 / T >> f = 1 / T, Millisekunden in Sekunden umrechnen
+N Ein Signal hat eine Periodendauer von 10 ms. Wie groß ist die Frequenz? | 100 | Hz | 0,1 || f = 1 / T >> f = 1 / T, Millisekunden in Sekunden umrechnen
+N Ein Signal hat eine Periodendauer von 4 ms. Wie groß ist die Frequenz? | 250 | Hz | 0,1 || f = 1 / T >> f = 1 / T, Millisekunden in Sekunden umrechnen
+N Ein PWM-Signal mit 12 V hat ein Tastverhältnis von 40 %. Wie groß ist die mittlere Spannung? | 4,8 | V | 0,01 || Umittel = U · Tastverhältnis >> Spannung mal Tastverhältnis
+N Ein PWM-Signal mit 12 V hat ein Tastverhältnis von 75 %. Wie groß ist die mittlere Spannung? | 9 | V | 0,01 || Umittel = U · Tastverhältnis >> Spannung mal Tastverhältnis
+N Ein Signal hat eine Periodendauer von 50 ms. Wie groß ist die Frequenz? | 20 | Hz | 0,1 || f = 1 / T >> f = 1 / T, Millisekunden in Sekunden umrechnen
+N Ein PWM-Signal ist 5 ms eingeschaltet und 5 ms ausgeschaltet. Wie groß ist das Tastverhältnis in %? | 50 | % | 0,1 || Tastverhältnis = tein / T · 100 >> Einschaltzeit durch Periodendauer
+N Ein PWM-Signal mit 12 V hat ein Tastverhältnis von 25 %. Wie groß ist die mittlere Spannung? | 3 | V | 0,01 || Umittel = U · Tastverhältnis >> Spannung mal Tastverhältnis
+N Ein PWM-Signal mit 14 V hat ein Tastverhältnis von 10 %. Wie groß ist die mittlere Spannung? | 1,4 | V | 0,01 || Umittel = U · Tastverhältnis >> Spannung mal Tastverhältnis
+N Ein PWM-Signal ist 6 ms eingeschaltet und 2 ms ausgeschaltet. Wie groß ist das Tastverhältnis in %? | 75 | % | 0,1 || Tastverhältnis = tein / T · 100 >> Einschaltzeit durch Periodendauer
+# --- LED-Vorwiderstand
+N Eine LED (2 V, 10 mA) soll an 5 V betrieben werden. Wie groß muss der Vorwiderstand sein? (auf ganze Ω) | 300 | Ω | 1 || R = (U − ULED) / I >> Am Vorwiderstand fällt die Restspannung ab.
+N Eine LED (1,8 V, 30 mA) soll an 12 V betrieben werden. Wie groß muss der Vorwiderstand sein? (auf ganze Ω) | 340 | Ω | 1 || R = (U − ULED) / I >> Am Vorwiderstand fällt die Restspannung ab.
+N Eine LED (2 V, 15 mA) soll an 14 V betrieben werden. Wie groß muss der Vorwiderstand sein? (auf ganze Ω) | 800 | Ω | 1 || R = (U − ULED) / I >> Am Vorwiderstand fällt die Restspannung ab.
+N Eine LED (3,2 V, 20 mA) soll an 12 V betrieben werden. Wie groß muss der Vorwiderstand sein? (auf ganze Ω) | 440 | Ω | 1 || R = (U − ULED) / I >> Am Vorwiderstand fällt die Restspannung ab.
+# --- Zündspule
+N Eine Zündspule hat primär 200 und sekundär 20000 Windungen. Die Primärspannung beim Abschalten erreicht 400 V. Welche Sekundärspannung entsteht ohne Verluste? (in kV) | 40 | kV | 0,1 || U2 = U1 · N2 / N1 >> Die Spannung wird im Verhältnis der Windungszahlen übersetzt.
+N Eine Zündspule hat primär 120 und sekundär 9600 Windungen. Die Primärspannung beim Abschalten erreicht 300 V. Welche Sekundärspannung entsteht ohne Verluste? (in kV) | 24 | kV | 0,1 || U2 = U1 · N2 / N1 >> Die Spannung wird im Verhältnis der Windungszahlen übersetzt.
+N Eine Zündspule hat primär 100 und sekundär 10000 Windungen. Die Primärspannung beim Abschalten erreicht 300 V. Welche Sekundärspannung entsteht ohne Verluste? (in kV) | 30 | kV | 0,1 || U2 = U1 · N2 / N1 >> Die Spannung wird im Verhältnis der Windungszahlen übersetzt.
+# --- Drehzahlsignal
+N Ein Geberrad mit 58 Zähnen erzeugt am Drehzahlsensor 2900 Impulse pro Sekunde. Wie groß ist die Drehzahl in 1/min? | 3000 | 1/min | 1 || n = f / z · 60 >> Impulse pro Sekunde durch Zähnezahl mal 60
+N Ein Geberrad mit 36 Zähnen erzeugt am Drehzahlsensor 1200 Impulse pro Sekunde. Wie groß ist die Drehzahl in 1/min? | 2000 | 1/min | 1 || n = f / z · 60 >> Impulse pro Sekunde durch Zähnezahl mal 60
+N Ein Geberrad mit 48 Zähnen erzeugt am Drehzahlsensor 1600 Impulse pro Sekunde. Wie groß ist die Drehzahl in 1/min? | 2000 | 1/min | 1 || n = f / z · 60 >> Impulse pro Sekunde durch Zähnezahl mal 60
+# --- Primärstrom
+N Die Primärwicklung einer Zündspule hat 0,75 Ω. Welcher Strom stellt sich an 13,5 V höchstens ein? (auf 1 Dezimale) | 18 | A | 0,1 || I = U / R >> Ohmsches Gesetz
+N Die Primärwicklung einer Zündspule hat 0,6 Ω. Welcher Strom stellt sich an 12 V höchstens ein? (auf 1 Dezimale) | 20 | A | 0,1 || I = U / R >> Ohmsches Gesetz

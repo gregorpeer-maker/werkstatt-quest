@@ -1,0 +1,117 @@
+# Elektrotechnik Level 5 – 4. Klasse KFZ
+# Diese Datei wird von gen_et.py erzeugt: Theorie aus et_4_theorie.txt, Rechenaufgaben aus Vorlagen.
+# --- Vernetzte Systeme
+M Warum werden Steuergeräte im Fahrzeug vernetzt? | Sensorsignale können mehrfach genutzt werden und es werden weniger Leitungen gebraucht | Jedes Steuergerät braucht dann keine eigene Spannungsversorgung | Die Steuergeräte werden dadurch kleiner | Die Diagnose ist nur so gesetzlich erlaubt
+M Welche Aufgabe hat das Gateway? | Es verbindet Bussysteme mit unterschiedlicher Geschwindigkeit und unterschiedlichem Protokoll | Es schließt den Bus mit 120 Ω ab | Es speichert zentral alle Fehlercodes | Es versorgt die Steuergeräte mit 5 V
+Z Ordne die Bussysteme zu. | CAN = Zweidraht-Bus mit Differenzsignal | LIN = Eindraht-Bus mit Master und Slaves | MOST = Lichtwellenleiter im Ring | FlexRay = Sehr schneller, zeitgesteuerter Bus
+M Was ist eine CAN-Botschaft? | Ein Datenpaket mit Kennung (Identifier) und Nutzdaten, das alle Teilnehmer empfangen | Eine Verbindung zwischen genau zwei Steuergeräten | Ein Spannungspegel von 2,5 V | Ein Fehlercode im Gateway
+M Wie entscheidet ein Steuergerät, ob eine CAN-Botschaft für es wichtig ist? | Anhand des Identifiers der Botschaft | Anhand der Leitungslänge | Anhand der Spannungshöhe | Das Gateway teilt es ihm mit
+M Welche Bitrate hat der LIN-Bus höchstens? | Etwa 20 kbit/s | Etwa 500 kbit/s | Etwa 1 Mbit/s | Etwa 10 Mbit/s
+M Wie fällt ein LIN-Bus bei Unterbrechung der Busleitung aus? | Alle Slaves hinter der Unterbrechung sind nicht mehr erreichbar | Der Bus arbeitet im Eindrahtbetrieb weiter | Der Master übernimmt die Aufgaben der Slaves | Nur die Diagnose fällt aus
+M Was passiert im MOST-Ring, wenn ein Steuergerät ausfällt oder der Lichtwellenleiter unterbrochen ist? | Der ganze Ring ist unterbrochen, die Kommunikation fällt aus | Die Daten laufen in der Gegenrichtung weiter | Nur das defekte Gerät fällt aus | Das Gateway überbrückt die Stelle automatisch
+M Was ist bei Lichtwellenleitern zu beachten? | Der Mindestbiegeradius darf nicht unterschritten und der Leiter nicht geknickt werden | Sie müssen verdrillt verlegt werden | Sie brauchen Abschlusswiderstände | Sie dürfen nur in Masseverbindungen enden
+M Wie liest man aus dem Fehlerspeicher, welches Steuergerät nicht mehr am Bus teilnimmt? | Mehrere Steuergeräte melden „keine Kommunikation“ mit demselben Teilnehmer | Das ausgefallene Steuergerät meldet seinen Ausfall selbst | Das Gateway löscht den Teilnehmer aus der Liste | Die Motorkontrollleuchte blinkt den Code aus
+M Alle Steuergeräte eines Busses melden Kommunikationsfehler untereinander. Was liegt nahe? | Ein Fehler auf der Busleitung selbst, zum Beispiel Kurzschluss | Ein einzelnes defektes Steuergerät am Ende der Leitung | Eine zu volle Batterie | Ein fehlendes Software-Update
+M Wie grenzt man einen Kurzschluss auf dem CAN-Bus ein? | Teilnehmer nacheinander abstecken und die Busspannung bzw. den Widerstand beobachten | Alle Steuergeräte gleichzeitig tauschen | Die Abschlusswiderstände entfernen | Den Fehlerspeicher mehrmals löschen
+M Welche Folge hat ein Steuergerät, das den Bus nicht einschlafen lässt? | Erhöhter Ruhestrom und entladene Batterie | Überladung der Batterie | Erhöhte Ladespannung | Kürzere Glühzeit
+M Was ist Diagnose über CAN bzw. der Diagnose-CAN? | Der Tester kommuniziert über das Gateway mit den Steuergeräten | Der Tester misst die Busspannung | Der Tester ersetzt das Gateway | Der Tester versorgt die Steuergeräte mit Spannung
+R Die Verdrillung der CAN-Leitungen darf bei einer Reparatur nur auf einer kurzen Strecke aufgehoben werden.
+F Beim LIN-Bus dürfen alle Teilnehmer jederzeit von sich aus senden. || Der Master fragt die Slaves ab.
+# --- Systemanalyse und geführte Fehlersuche
+M Was ist der erste Schritt einer Systemanalyse? | Sich einen Überblick verschaffen: Welche Sensoren, Steuergeräte und Aktoren gehören zum System | Das Steuergerät tauschen | Die Adaptionswerte löschen | Alle Stecker lösen und reinigen
+M Wozu dient ein Blockschaltbild? | Es zeigt die Teilsysteme und ihre Verbindungen in vereinfachter Form | Es zeigt jede Leitung mit Farbe und Querschnitt | Es zeigt die Einbaulage der Bauteile | Es zeigt die Messwerte der Sensoren
+M Was zeigt ein Stromlaufplan im Unterschied zum Blockschaltbild? | Alle Bauteile mit Anschlüssen, Leitungen, Klemmen und Steckern | Nur die Teilsysteme als Kästen | Nur die Einbauorte | Nur die Fehlercodes
+M Wie liest man einen Strompfad im Stromlaufplan? | Von Plus oben über Schalter und Verbraucher nach Masse unten | Von Masse oben nach Plus unten | Von rechts nach links | In beliebiger Richtung
+M Was sagt die Leitungsbezeichnung „1,5 ro/sw“ aus? | Querschnitt 1,5 mm², Grundfarbe Rot mit schwarzer Kennfarbe | Länge 1,5 m, rot oder schwarz | Strombelastbarkeit 1,5 A | Sicherung 1,5 A im roten und schwarzen Stromkreis
+M Wann spricht man von einem unplausiblen Signal? | Wenn das Signal im Messbereich liegt, aber nicht zu anderen Werten passt | Wenn das Signal 0 V beträgt | Wenn die Leitung unterbrochen ist | Wenn der Sensor nicht verbaut ist
+M Welche Fehlerarten unterscheidet die Eigendiagnose bei einer Signalleitung meist? | Kurzschluss nach Plus, Kurzschluss nach Masse, Unterbrechung, unplausibles Signal | Nur Kurzschluss und Wackelkontakt | Nur mechanische und elektrische Fehler | Nur statische Fehler
+M Der Fehlerspeicher meldet „Kurzschluss nach Plus“ an einem 5-V-Sensor. Was prüfst du? | Ob die Signalleitung Verbindung zu einer spannungsführenden Leitung hat | Ob die Signalleitung unterbrochen ist | Ob der Sensor Masseschluss hat | Ob die Batterie entladen ist
+M Wie prüft man eine Signalleitung auf Kurzschluss nach Masse? | Beide Stecker trennen und den Widerstand der Leitung gegen Masse messen | Den Strom in der Leitung bei laufendem Motor messen | Die Leitung mit 12 V beaufschlagen | Die Spannung zwischen den beiden Leitungsenden messen
+M Was ist eine Prüfbox (Breakout-Box)? | Ein Adapter zwischen Steuergerät und Kabelbaum, an dem alle Pins sicher gemessen werden können | Ein Gerät zum Löschen des Fehlerspeichers | Ein Ersatzsteuergerät | Ein Ladegerät für Steuergeräte
+M Warum misst man nicht mit Messspitzen direkt in Steuergerätestecker? | Die Kontakte können aufgeweitet werden und später Wackelkontakte verursachen | Die Spannung ist dort lebensgefährlich | Der Stecker verliert seine Codierung | Das Steuergerät löscht sich
+M Was bringt die Spannungsfallmessung gegenüber der Widerstandsmessung? | Sie prüft die Leitung unter Betriebsstrom und findet auch Übergangswiderstände | Sie funktioniert ohne Stromfluss | Sie ist spannungsfrei möglich | Sie zeigt den Leitungsquerschnitt an
+M Ein Aktor arbeitet in der Stellglieddiagnose nicht. Was misst du am Aktorstecker? | Versorgungsspannung und Ansteuersignal während der Ansteuerung | Den Widerstand des Steuergeräts | Die Kapazität der Batterie | Die Frequenz des CAN-Busses
+M Am Aktor liegen Versorgung und Ansteuersignal korrekt an, er arbeitet trotzdem nicht. Was folgt daraus? | Der Aktor selbst ist defekt | Das Steuergerät ist defekt | Die Leitung ist unterbrochen | Die Sicherung ist defekt
+M Was sind Sollwerte in der geführten Fehlersuche? | Vom Hersteller vorgegebene Werte, mit denen die Messwerte verglichen werden | Werte, die der Mechaniker schätzt | Die zuletzt gemessenen Werte | Die Werte eines anderen Fahrzeugs
+R Vor dem Trennen von Steuergerätesteckern wird die Zündung ausgeschaltet.
+F Ein Fehlerspeichereintrag nennt immer das defekte Bauteil. || Er nennt den betroffenen Stromkreis, die Ursache muss gesucht werden.
+# --- Wiederholung Grundlagen (LAP)
+M Welche Formel gilt für den Gesamtwiderstand zweier paralleler Widerstände? | R = R1 · R2 / (R1 + R2) | R = R1 + R2 | R = (R1 + R2) / 2 | R = R1 / R2
+M Wie ändert sich die Leistung eines Widerstands, wenn die Spannung halbiert wird? | Sie sinkt auf ein Viertel | Sie halbiert sich | Sie bleibt gleich | Sie verdoppelt sich
+M Was gilt für die Summe aller Ströme an einem Knotenpunkt? | Die zufließenden Ströme sind so groß wie die abfließenden | Die zufließenden Ströme sind größer als die abfließenden | Der größte Strom bestimmt alle anderen | Die Ströme heben sich zu null Volt auf
+M Was gilt für die Spannungen in einem geschlossenen Stromkreis (Masche)? | Die Summe der Teilspannungen ist gleich der Quellenspannung | Die Teilspannungen sind alle gleich groß | Die größte Teilspannung ist gleich der Quellenspannung | Die Summe der Teilspannungen ist größer als die Quellenspannung
+M Was ist der Innenwiderstand einer Batterie? | Der Widerstand in der Batterie, an dem bei Belastung Spannung abfällt | Der Widerstand der Polklemmen | Der Widerstand des Laders | Der Isolationswiderstand des Gehäuses
+M Warum sinkt die Klemmenspannung der Batterie beim Starten? | Am Innenwiderstand fällt bei hohem Strom Spannung ab | Der Starter erzeugt eine Gegenspannung von 12 V | Die Säure wird beim Starten kalt | Der Generator entnimmt Strom
+M Was ist der Unterschied zwischen einem Schließer und einem Öffner? | Der Schließer schließt den Kontakt bei Betätigung, der Öffner öffnet ihn | Der Schließer öffnet bei Betätigung, der Öffner schließt | Beide schließen, nur mit verschiedener Geschwindigkeit | Der Öffner arbeitet nur mit Wechselstrom
+M Welche Aufgabe hat ein Wechselrelais (Klemme 87 und 87a)? | Es schaltet zwischen zwei Stromkreisen um | Es schaltet zwei Stromkreise gleichzeitig ein | Es blinkt selbsttätig | Es verzögert das Einschalten
+M Wie prüft man eine Diode mit dem Multimeter? | Im Diodentest: In Durchlassrichtung etwa 0,5 bis 0,7 V, in Sperrrichtung keine Anzeige | Im Ohmbereich: In beiden Richtungen 0 Ω | Im Spannungsbereich an der Batterie | Im Strombereich in Reihe zur Batterie
+M Was bewirkt ein Glättungskondensator hinter einem Gleichrichter? | Er verringert die Welligkeit der Gleichspannung | Er erhöht die Frequenz | Er richtet die zweite Halbwelle gleich | Er begrenzt den Strom
+M Welcher Transformator-Grundsatz gilt für die Spannungen? | Sie verhalten sich wie die Windungszahlen | Sie verhalten sich umgekehrt wie die Windungszahlen | Sie sind immer gleich | Sie verhalten sich wie die Drahtquerschnitte
+M Warum arbeitet ein Transformator nicht mit reiner Gleichspannung? | Nur ein sich änderndes Magnetfeld induziert eine Spannung | Gleichspannung ist zu niedrig | Die Wicklungen sind dafür zu dünn | Gleichstrom erzeugt kein Magnetfeld
+M Was ist eine Schutzkleinspannung? | Eine so niedrige Spannung, dass beim Berühren keine Gefahr besteht, z. B. 12 V | Jede Spannung unter 230 V | Eine Spannung mit besonders kleinem Strom | Die Spannung eines FI-Schutzschalters
+M Was macht ein Fehlerstrom-Schutzschalter (FI/RCD) in der Werkstattinstallation? | Er schaltet ab, wenn hin- und rückfließender Strom nicht gleich groß sind | Er schaltet bei Überlast der Leitung ab | Er begrenzt die Spannung auf 230 V | Er schützt vor Blitzschlag
+M Was macht ein Leitungsschutzschalter? | Er schaltet bei Überlast und Kurzschluss ab | Er schaltet bei Fehlerstrom gegen Erde ab | Er misst den Energieverbrauch | Er schaltet bei Unterspannung ab
+M Welche Spannung liegt im 400/230-V-Netz zwischen einem Außenleiter und dem Neutralleiter? | 230 V | 400 V | 115 V | 690 V
+M Welche Farbe hat der Schutzleiter in der Hausinstallation? | Grün-Gelb | Blau | Braun | Schwarz
+M Was bedeutet der Effektivwert einer Wechselspannung? | Der Wert, der an einem Widerstand dieselbe Wärme erzeugt wie eine gleich große Gleichspannung | Der höchste Wert der Schwingung | Der Mittelwert über eine Periode, also null | Der Abstand zwischen positivem und negativem Scheitel
+# --- Wiederholung Fahrzeugelektrik (LAP)
+M Welche Klemme führt bei eingeschalteter Zündung Spannung, bei ausgeschalteter nicht? | Klemme 15 | Klemme 30 | Klemme 31 | Klemme 87a
+M Welche Klemme bezeichnet den Ausgang des Generators zur Batterie? | B+ | D− | 50 | 15
+M Welche Leitungsfarbe ist für Masse üblich? | Braun | Rot | Gelb | Grün
+M Wie erkennt die Lampenausfallkontrolle eine defekte Glühlampe? | Sie überwacht den Strom im Lampenstromkreis | Sie misst die Helligkeit mit einem Sensor | Sie misst die Temperatur der Lampe | Sie zählt die Betriebsstunden
+M Warum blinkt der Blinker schneller, wenn eine Lampe ausgefallen ist? | Der Blinkgeber erkennt den kleineren Strom und erhöht die Frequenz als Warnung | Die übrige Lampe erhält mehr Spannung | Der Widerstand im Stromkreis wird kleiner | Die Batterie liefert mehr Strom
+M Was ist beim Nachrüsten von LED-Leuchtmitteln elektrisch zu beachten? | Der geringere Strom kann die Lampenüberwachung auslösen | Die LED braucht eine höhere Bordspannung | Die Sicherung muss verstärkt werden | Die Masse muss getrennt werden
+M Welche Aufgabe hat der Kondensator bzw. die Entstörung im Bordnetz? | Störspannungen dämpfen, die zum Beispiel das Radio stören | Die Batterie beim Start stützen | Die Ladespannung erhöhen | Den Ruhestrom senken
+M Wie berechnet man den Strom einer Sicherung für einen Verbraucher? | Leistung durch Spannung, dann die nächstgrößere Sicherung wählen | Spannung durch Leistung | Leistung mal Spannung | Widerstand mal Spannung
+R Eine Leitung wird nach dem Strom und der Länge ausgelegt, damit Erwärmung und Spannungsfall klein bleiben.
+# ===== Rechenaufgaben =====
+# --- Gemischte Schaltung
+N R1 = 3 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 6 Ω und R3 = 12 Ω an 14 V. Wie groß ist der Gesamtstrom? (auf 2 Dezimalen) | 2 | A | 0,01 || I = U / (R1 + Rp) >> Zuerst den Gesamtwiderstand berechnen.
+N R1 = 5 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 10 Ω und R3 = 10 Ω. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 10 | Ω | 0,01 || Rp = R2 · R3 / (R2 + R3), dann R = R1 + Rp >> Zuerst die Parallelschaltung zusammenfassen.
+N R1 = 4 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 12 Ω und R3 = 6 Ω. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 8 | Ω | 0,01 || Rp = R2 · R3 / (R2 + R3), dann R = R1 + Rp >> Zuerst die Parallelschaltung zusammenfassen.
+N R1 = 3 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 6 Ω und R3 = 12 Ω. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 7 | Ω | 0,01 || Rp = R2 · R3 / (R2 + R3), dann R = R1 + Rp >> Zuerst die Parallelschaltung zusammenfassen.
+N R1 = 1 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 4 Ω und R3 = 4 Ω an 12 V. Wie groß ist der Gesamtstrom? (auf 2 Dezimalen) | 4 | A | 0,01 || I = U / (R1 + Rp) >> Zuerst den Gesamtwiderstand berechnen.
+N R1 = 2 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 6 Ω und R3 = 3 Ω. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 4 | Ω | 0,01 || Rp = R2 · R3 / (R2 + R3), dann R = R1 + Rp >> Zuerst die Parallelschaltung zusammenfassen.
+N R1 = 1 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 4 Ω und R3 = 4 Ω. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 3 | Ω | 0,01 || Rp = R2 · R3 / (R2 + R3), dann R = R1 + Rp >> Zuerst die Parallelschaltung zusammenfassen.
+N R1 = 10 Ω liegt in Reihe mit der Parallelschaltung aus R2 = 20 Ω und R3 = 30 Ω. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 22 | Ω | 0,01 || Rp = R2 · R3 / (R2 + R3), dann R = R1 + Rp >> Zuerst die Parallelschaltung zusammenfassen.
+# --- CAN-Bus
+N CAN-High hat 3,5 V, CAN-Low 1,5 V. Wie groß ist die Differenzspannung? | 2 | V | 0,05 || UDiff = UCAN-H − UCAN-L >> High minus Low
+N Zwischen CAN-High und CAN-Low liegen zwei Widerstände mit 120 Ω und 60 Ω parallel. Welchen Wert zeigt das Ohmmeter? | 40 | Ω | 0,5 || Parallel: R1 · R2 / (R1 + R2) >> Produkt durch Summe
+N Zwischen CAN-High und CAN-Low liegen zwei Widerstände mit 120 Ω und 240 Ω parallel. Welchen Wert zeigt das Ohmmeter? | 80 | Ω | 0,5 || Parallel: R1 · R2 / (R1 + R2) >> Produkt durch Summe
+N CAN-High hat 3,4 V, CAN-Low 1,6 V. Wie groß ist die Differenzspannung? | 1,8 | V | 0,05 || UDiff = UCAN-H − UCAN-L >> High minus Low
+N CAN-High hat 3,6 V, CAN-Low 1,4 V. Wie groß ist die Differenzspannung? | 2,2 | V | 0,05 || UDiff = UCAN-H − UCAN-L >> High minus Low
+# --- Übergangswiderstand
+N An einer Steckverbindung werden unter Last 0,8 V Spannungsfall gemessen, es fließen 10 A. Wie groß ist der Übergangswiderstand? (in mΩ) | 80 | mΩ | 1 || R = U / I, dann mal 1000 >> R = U / I
+N An einer Steckverbindung werden unter Last 0,3 V Spannungsfall gemessen, es fließen 60 A. Wie groß ist der Übergangswiderstand? (in mΩ) | 5 | mΩ | 1 || R = U / I, dann mal 1000 >> R = U / I
+N An einer Steckverbindung werden unter Last 2,4 V Spannungsfall gemessen, es fließen 8 A. Wie groß ist der Übergangswiderstand? (in mΩ) | 300 | mΩ | 1 || R = U / I, dann mal 1000 >> R = U / I
+N An einer Steckverbindung werden unter Last 1,2 V Spannungsfall gemessen, es fließen 15 A. Wie groß ist der Übergangswiderstand? (in mΩ) | 80 | mΩ | 1 || R = U / I, dann mal 1000 >> R = U / I
+N An einer Steckverbindung werden unter Last 1,5 V Spannungsfall gemessen, es fließen 5 A. Wie groß ist der Übergangswiderstand? (in mΩ) | 300 | mΩ | 1 || R = U / I, dann mal 1000 >> R = U / I
+# --- Verlustleistung
+N An einem korrodierten Massepunkt fallen 1,2 V ab, es fließen 15 A. Welche Leistung wird dort in Wärme umgesetzt? | 18 | W | 0,1 || P = U · I >> Spannungsfall mal Strom
+N An einem korrodierten Massepunkt fallen 0,5 V ab, es fließen 25 A. Welche Leistung wird dort in Wärme umgesetzt? | 12,5 | W | 0,1 || P = U · I >> Spannungsfall mal Strom
+N An einem korrodierten Massepunkt fallen 2 V ab, es fließen 20 A. Welche Leistung wird dort in Wärme umgesetzt? | 40 | W | 0,1 || P = U · I >> Spannungsfall mal Strom
+N An einem korrodierten Massepunkt fallen 0,6 V ab, es fließen 40 A. Welche Leistung wird dort in Wärme umgesetzt? | 24 | W | 0,1 || P = U · I >> Spannungsfall mal Strom
+# --- Unterspannung an der Lampe
+N Eine 12-V-Lampe mit 21 W liegt wegen 0,6 V Spannungsfall nur an 11,4 V. Auf wie viel Prozent sinkt ihre Leistung, wenn der Widerstand gleich bleibt? (auf ganze %) | 90 | % | 1 || P ändert sich mit U²: (11,4 / 12)² · 100 >> Die Leistung hängt vom Quadrat der Spannung ab.
+N Eine 12-V-Lampe mit 60 W liegt wegen 2 V Spannungsfall nur an 10 V. Auf wie viel Prozent sinkt ihre Leistung, wenn der Widerstand gleich bleibt? (auf ganze %) | 69 | % | 1 || P ändert sich mit U²: (10 / 12)² · 100 >> Die Leistung hängt vom Quadrat der Spannung ab.
+N Eine 12-V-Lampe mit 55 W liegt wegen 1,5 V Spannungsfall nur an 12 V. Auf wie viel Prozent sinkt ihre Leistung, wenn der Widerstand gleich bleibt? (auf ganze %) | 79 | % | 1 || P ändert sich mit U²: (12 / 13,5)² · 100 >> Die Leistung hängt vom Quadrat der Spannung ab.
+# --- Sicherung auswählen
+M Ein Verbraucher mit 90 W an 12 V soll abgesichert werden. Die Sicherung soll etwa 25 % über dem Betriebsstrom liegen. Welche Sicherung passt? | 10 A | 7,5 A | 15 A | 20 A || I = P / U = 7,5 A, mal 1,25 = 9,38 A, nächstgrößere Sicherung
+M Ein Verbraucher mit 180 W an 12 V soll abgesichert werden. Die Sicherung soll etwa 25 % über dem Betriebsstrom liegen. Welche Sicherung passt? | 20 A | 15 A | 25 A | 30 A || I = P / U = 15 A, mal 1,25 = 18,75 A, nächstgrößere Sicherung
+M Ein Verbraucher mit 120 W an 12 V soll abgesichert werden. Die Sicherung soll etwa 25 % über dem Betriebsstrom liegen. Welche Sicherung passt? | 15 A | 10 A | 20 A | 25 A || I = P / U = 10 A, mal 1,25 = 12,5 A, nächstgrößere Sicherung
+M Ein Verbraucher mit 55 W an 12 V soll abgesichert werden. Die Sicherung soll etwa 25 % über dem Betriebsstrom liegen. Welche Sicherung passt? | 7,5 A | 5 A | 10 A | 15 A || I = P / U = 4,58 A, mal 1,25 = 5,73 A, nächstgrößere Sicherung
+# --- Leitungsquerschnitt
+N Eine Kupferleitung von 6 m Länge soll bei 15 A höchstens 0,6 V Spannungsfall haben. Welcher Querschnitt ist mindestens nötig? Rechne mit ρ = 0,0178 Ω·mm²/m. (auf 2 Dezimalen) | 2,67 | mm² | 0,03 || A = ρ · l · I / Uv >> Zuerst den zulässigen Widerstand R = Uv / I, dann A = ρ · l / R
+N Eine Kupferleitung von 5 m Länge soll bei 8 A höchstens 0,25 V Spannungsfall haben. Welcher Querschnitt ist mindestens nötig? Rechne mit ρ = 0,0178 Ω·mm²/m. (auf 2 Dezimalen) | 2,85 | mm² | 0,03 || A = ρ · l · I / Uv >> Zuerst den zulässigen Widerstand R = Uv / I, dann A = ρ · l / R
+N Eine Kupferleitung von 3 m Länge soll bei 20 A höchstens 0,4 V Spannungsfall haben. Welcher Querschnitt ist mindestens nötig? Rechne mit ρ = 0,0178 Ω·mm²/m. (auf 2 Dezimalen) | 2,67 | mm² | 0,03 || A = ρ · l · I / Uv >> Zuerst den zulässigen Widerstand R = Uv / I, dann A = ρ · l / R
+# --- Stromkosten
+N Ein Gerät mit 3700 W läuft 6 Stunden. Die kWh kostet 0,28 €. Wie hoch sind die Stromkosten? | 6,22 | € | 0,01 || W = P · t in kWh, dann mal Preis >> Leistung in kW mal Stunden mal Preis
+N Ein Gerät mit 11000 W läuft 4 Stunden. Die kWh kostet 0,35 €. Wie hoch sind die Stromkosten? | 15,4 | € | 0,01 || W = P · t in kWh, dann mal Preis >> Leistung in kW mal Stunden mal Preis
+# --- Oszilloskop: Spannung
+N Auf dem Oszilloskop ist ein Signal 1,5 Kästchen hoch. Eingestellt sind 20 V pro Kästchen. Wie groß ist die Spannung? | 30 | V | 0,01 || Kästchen mal Volt pro Kästchen >> Höhe in Kästchen mal Einstellung
+N Auf dem Oszilloskop ist ein Signal 4,2 Kästchen hoch. Eingestellt sind 0,5 V pro Kästchen. Wie groß ist die Spannung? | 2,1 | V | 0,01 || Kästchen mal Volt pro Kästchen >> Höhe in Kästchen mal Einstellung
+N Auf dem Oszilloskop ist ein Signal 2,4 Kästchen hoch. Eingestellt sind 5 V pro Kästchen. Wie groß ist die Spannung? | 12 | V | 0,01 || Kästchen mal Volt pro Kästchen >> Höhe in Kästchen mal Einstellung
+# --- Oszilloskop: Frequenz
+N Eine Periode ist auf dem Oszilloskop 5 Kästchen breit. Eingestellt sind 10 ms pro Kästchen. Wie groß ist die Frequenz? (auf 1 Dezimale) | 20 | Hz | 0,2 || T = Kästchen · ms/Kästchen, f = 1 / T >> Zuerst die Periodendauer ausrechnen.
+N Eine Periode ist auf dem Oszilloskop 8 Kästchen breit. Eingestellt sind 0,5 ms pro Kästchen. Wie groß ist die Frequenz? (auf 1 Dezimale) | 250 | Hz | 0,2 || T = Kästchen · ms/Kästchen, f = 1 / T >> Zuerst die Periodendauer ausrechnen.
+N Eine Periode ist auf dem Oszilloskop 2,5 Kästchen breit. Eingestellt sind 2 ms pro Kästchen. Wie groß ist die Frequenz? (auf 1 Dezimale) | 200 | Hz | 0,2 || T = Kästchen · ms/Kästchen, f = 1 / T >> Zuerst die Periodendauer ausrechnen.

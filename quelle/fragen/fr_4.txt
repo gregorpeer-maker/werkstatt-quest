@@ -1,0 +1,117 @@
+# Fachrechnen Level 5 – 4. Klasse KFZ: Werkstattrechnen und Prüfungsvorbereitung
+# Diese Datei wird von gen_fr.py erzeugt. Änderungen bitte dort vornehmen.
+# --- Werkstattrechnung
+N Eine Reparatur umfasst 12 Arbeitswerte zu je 6,5 € und Teile für 84 €. Wie hoch ist der Nettobetrag? | 162 | € | 0,01 || Arbeit: 12 · 6,5 €, dazu die Teile >> Arbeitswerte mal Preis, dann die Teile dazuzählen
+N Eine Reparatur umfasst 30 Arbeitswerte zu je 6,5 € und Teile für 310 €. Wie hoch ist der Nettobetrag? | 505 | € | 0,01 || Arbeit: 30 · 6,5 €, dazu die Teile >> Arbeitswerte mal Preis, dann die Teile dazuzählen
+N Eine Reparatur umfasst 18 Arbeitswerte zu je 7 € und Teile für 126,5 €. Wie hoch ist der Nettobetrag? | 252,5 | € | 0,01 || Arbeit: 18 · 7 €, dazu die Teile >> Arbeitswerte mal Preis, dann die Teile dazuzählen
+N Eine Reparatur umfasst 25 Arbeitswerte zu je 6,8 € und Teile für 240 €. Wie hoch ist der Nettobetrag? | 410 | € | 0,01 || Arbeit: 25 · 6,8 €, dazu die Teile >> Arbeitswerte mal Preis, dann die Teile dazuzählen
+N Eine Reparatur umfasst 8 Arbeitswerte zu je 7,2 € und Teile für 39,9 €. Wie hoch ist der Nettobetrag? | 97,5 | € | 0,01 || Arbeit: 8 · 7,2 €, dazu die Teile >> Arbeitswerte mal Preis, dann die Teile dazuzählen
+# --- Bruttobetrag
+N Der Nettobetrag einer Rechnung ist 96 €. Wie hoch ist der Rechnungsbetrag mit 22 % MwSt.? | 117,12 | € | 0,01 || Brutto = Netto · 1,22 >> Netto mal 1,22
+N Der Nettobetrag einer Rechnung ist 1280 €. Wie hoch ist der Rechnungsbetrag mit 22 % MwSt.? | 1561,6 | € | 0,01 || Brutto = Netto · 1,22 >> Netto mal 1,22
+N Der Nettobetrag einer Rechnung ist 760 €. Wie hoch ist der Rechnungsbetrag mit 22 % MwSt.? | 927,2 | € | 0,01 || Brutto = Netto · 1,22 >> Netto mal 1,22
+N Der Nettobetrag einer Rechnung ist 185 €. Wie hoch ist der Rechnungsbetrag mit 22 % MwSt.? | 225,7 | € | 0,01 || Brutto = Netto · 1,22 >> Netto mal 1,22
+N Der Nettobetrag einer Rechnung ist 342,5 €. Wie hoch ist der Rechnungsbetrag mit 22 % MwSt.? | 417,85 | € | 0,01 || Brutto = Netto · 1,22 >> Netto mal 1,22
+N Der Nettobetrag einer Rechnung ist 57,4 €. Wie hoch ist der Rechnungsbetrag mit 22 % MwSt.? | 70,03 | € | 0,01 || Brutto = Netto · 1,22 >> Netto mal 1,22
+# --- Enthaltene Mehrwertsteuer
+N Eine Rechnung beträgt brutto 610 € mit 22 % MwSt. Wie viel Euro Mehrwertsteuer sind enthalten? | 110 | € | 0,01 || Netto = 610 € : 1,22, MwSt. = Brutto − Netto >> Zuerst den Nettobetrag ausrechnen.
+N Eine Rechnung beträgt brutto 1464 € mit 22 % MwSt. Wie viel Euro Mehrwertsteuer sind enthalten? | 264 | € | 0,01 || Netto = 1464 € : 1,22, MwSt. = Brutto − Netto >> Zuerst den Nettobetrag ausrechnen.
+N Eine Rechnung beträgt brutto 122 € mit 22 % MwSt. Wie viel Euro Mehrwertsteuer sind enthalten? | 22 | € | 0,01 || Netto = 122 € : 1,22, MwSt. = Brutto − Netto >> Zuerst den Nettobetrag ausrechnen.
+N Eine Rechnung beträgt brutto 244 € mit 22 % MwSt. Wie viel Euro Mehrwertsteuer sind enthalten? | 44 | € | 0,01 || Netto = 244 € : 1,22, MwSt. = Brutto − Netto >> Zuerst den Nettobetrag ausrechnen.
+N Eine Rechnung beträgt brutto 427 € mit 22 % MwSt. Wie viel Euro Mehrwertsteuer sind enthalten? | 77 | € | 0,01 || Netto = 427 € : 1,22, MwSt. = Brutto − Netto >> Zuerst den Nettobetrag ausrechnen.
+# --- Skonto
+N Eine Lieferantenrechnung über 2300 € wird mit 3 % Skonto bezahlt. Wie hoch ist der Zahlbetrag? | 2231 | € | 0,01 || 2300 € · 97 / 100 >> Es werden 97 % des Betrags bezahlt.
+N Eine Lieferantenrechnung über 850 € wird mit 2 % Skonto bezahlt. Wie hoch ist der Zahlbetrag? | 833 | € | 0,01 || 850 € · 98 / 100 >> Es werden 98 % des Betrags bezahlt.
+N Eine Lieferantenrechnung über 460 € wird mit 2 % Skonto bezahlt. Wie hoch ist der Zahlbetrag? | 450,8 | € | 0,01 || 460 € · 98 / 100 >> Es werden 98 % des Betrags bezahlt.
+N Eine Lieferantenrechnung über 1240 € wird mit 3 % Skonto bezahlt. Wie hoch ist der Zahlbetrag? | 1202,8 | € | 0,01 || 1240 € · 97 / 100 >> Es werden 97 % des Betrags bezahlt.
+# --- Teileaufschlag
+N Ein Ersatzteil kostet im Einkauf 40 €. Die Werkstatt schlägt 35 % auf. Wie hoch ist der Verkaufspreis netto? | 54 | € | 0,01 || 40 € · 1,35 >> Einkaufspreis mal (1 + Aufschlag)
+N Ein Ersatzteil kostet im Einkauf 260 €. Die Werkstatt schlägt 20 % auf. Wie hoch ist der Verkaufspreis netto? | 312 | € | 0,01 || 260 € · 1,2 >> Einkaufspreis mal (1 + Aufschlag)
+N Ein Ersatzteil kostet im Einkauf 75 €. Die Werkstatt schlägt 40 % auf. Wie hoch ist der Verkaufspreis netto? | 105 | € | 0,01 || 75 € · 1,4 >> Einkaufspreis mal (1 + Aufschlag)
+N Ein Ersatzteil kostet im Einkauf 120 €. Die Werkstatt schlägt 25 % auf. Wie hoch ist der Verkaufspreis netto? | 150 | € | 0,01 || 120 € · 1,25 >> Einkaufspreis mal (1 + Aufschlag)
+N Ein Ersatzteil kostet im Einkauf 18 €. Die Werkstatt schlägt 50 % auf. Wie hoch ist der Verkaufspreis netto? | 27 | € | 0,01 || 18 € · 1,5 >> Einkaufspreis mal (1 + Aufschlag)
+# --- Arbeitswerte
+N Eine Arbeit ist mit 50 Arbeitswerten zu je 6 Minuten vorgegeben. Wie viele Stunden sind das? | 5 | h | 0,01 || 50 · 6 min = 300 min, durch 60 >> Minuten ausrechnen und durch 60 teilen
+N Eine Arbeit ist mit 9 Arbeitswerten zu je 5 Minuten vorgegeben. Wie viele Stunden sind das? | 0,75 | h | 0,01 || 9 · 5 min = 45 min, durch 60 >> Minuten ausrechnen und durch 60 teilen
+N Eine Arbeit ist mit 15 Arbeitswerten zu je 6 Minuten vorgegeben. Wie viele Stunden sind das? | 1,5 | h | 0,01 || 15 · 6 min = 90 min, durch 60 >> Minuten ausrechnen und durch 60 teilen
+N Eine Arbeit ist mit 36 Arbeitswerten zu je 5 Minuten vorgegeben. Wie viele Stunden sind das? | 3 | h | 0,01 || 36 · 5 min = 180 min, durch 60 >> Minuten ausrechnen und durch 60 teilen
+N Eine Arbeit ist mit 24 Arbeitswerten zu je 5 Minuten vorgegeben. Wie viele Stunden sind das? | 2 | h | 0,01 || 24 · 5 min = 120 min, durch 60 >> Minuten ausrechnen und durch 60 teilen
+# --- Ohmsches Gesetz
+N An einem Widerstand von 4 Ω liegen 12 V an. Welcher Strom fließt? (auf 2 Dezimalen) | 3 | A | 0,01 || I = U / R >> I = U / R
+N Bei 14 V fließen 20 A. Wie groß ist der Widerstand? | 0,7 | Ω | 0,01 || R = U / I >> R = U / I
+N An einem Widerstand von 250 Ω liegen 5 V an. Welcher Strom fließt? (auf 2 Dezimalen) | 0,02 | A | 0,01 || I = U / R >> I = U / R
+N An einem Widerstand von 8 Ω liegen 24 V an. Welcher Strom fließt? (auf 2 Dezimalen) | 3 | A | 0,01 || I = U / R >> I = U / R
+N Durch einen Widerstand von 4 Ω fließen 3 A. Wie groß ist die Spannung? | 12 | V | 0,01 || U = R · I >> U = R · I
+N Bei 5 V fließen 0,02 A. Wie groß ist der Widerstand? | 250 | Ω | 0,01 || R = U / I >> R = U / I
+N Durch einen Widerstand von 0,05 Ω fließen 150 A. Wie groß ist die Spannung? | 7,5 | V | 0,01 || U = R · I >> U = R · I
+N Durch einen Widerstand von 2,4 Ω fließen 5 A. Wie groß ist die Spannung? | 12 | V | 0,01 || U = R · I >> U = R · I
+N Bei 12 V fließen 0,25 A. Wie groß ist der Widerstand? | 48 | Ω | 0,01 || R = U / I >> R = U / I
+N Durch einen Widerstand von 120 Ω fließen 0,1 A. Wie groß ist die Spannung? | 12 | V | 0,01 || U = R · I >> U = R · I
+N Bei 12 V fließen 5 A. Wie groß ist der Widerstand? | 2,4 | Ω | 0,01 || R = U / I >> R = U / I
+# --- Elektrische Leistung
+N Bei 400 V fließen 32 A. Wie groß ist die Leistung? | 12800 | W | 1 || P = U · I >> P = U · I
+N Ein Verbraucher hat 55 W an 12 V. Welcher Strom fließt? (auf 2 Dezimalen) | 4,58 | A | 0,01 || I = P / U >> I = P / U
+N Ein Verbraucher hat 2000 W an 230 V. Welcher Strom fließt? (auf 2 Dezimalen) | 8,7 | A | 0,01 || I = P / U >> I = P / U
+N Ein Verbraucher hat 120 W an 12 V. Welcher Strom fließt? (auf 2 Dezimalen) | 10 | A | 0,01 || I = P / U >> I = P / U
+N Bei 12 V fließen 15 A. Wie groß ist die Leistung? | 180 | W | 1 || P = U · I >> P = U · I
+N Ein Verbraucher hat 21 W an 12 V. Welcher Strom fließt? (auf 2 Dezimalen) | 1,75 | A | 0,01 || I = P / U >> I = P / U
+N Bei 13,5 V fließen 90 A. Wie groß ist die Leistung? | 1215 | W | 1 || P = U · I >> P = U · I
+N Ein Verbraucher hat 11000 W an 400 V. Welcher Strom fließt? (auf 2 Dezimalen) | 27,5 | A | 0,01 || I = P / U >> I = P / U
+# --- Reihen- und Parallelschaltung
+N R1 = 100 Ω und R2 = 200 Ω liegen in Reihe an 12 V. Welche Spannung fällt an R2 ab? (auf 2 Dezimalen) | 8 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Spannungsteiler: Die Spannung teilt sich im Verhältnis der Widerstände.
+N R1 = 4 Ω und R2 = 12 Ω sind parallel geschaltet. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 3 | Ω | 0,01 || R = R1 · R2 / (R1 + R2) >> Parallel: Produkt durch Summe
+N R1 = 10 Ω und R2 = 15 Ω sind parallel geschaltet. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 6 | Ω | 0,01 || R = R1 · R2 / (R1 + R2) >> Parallel: Produkt durch Summe
+N R1 = 60 Ω und R2 = 40 Ω sind parallel geschaltet. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 24 | Ω | 0,01 || R = R1 · R2 / (R1 + R2) >> Parallel: Produkt durch Summe
+N R1 = 1 Ω und R2 = 3 Ω liegen in Reihe an 12 V. Welche Spannung fällt an R2 ab? (auf 2 Dezimalen) | 9 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Spannungsteiler: Die Spannung teilt sich im Verhältnis der Widerstände.
+N Drei Widerstände mit 10 Ω, 22 Ω und 47 Ω sind in Reihe geschaltet. Wie groß ist der Gesamtwiderstand? | 79 | Ω | 0,06 || Reihe: R = R1 + R2 + R3 >> In Reihe werden Widerstände addiert.
+N R1 = 220 Ω und R2 = 330 Ω liegen in Reihe an 5 V. Welche Spannung fällt an R2 ab? (auf 2 Dezimalen) | 3 | V | 0,01 || U2 = U · R2 / (R1 + R2) >> Spannungsteiler: Die Spannung teilt sich im Verhältnis der Widerstände.
+N R1 = 20 Ω und R2 = 30 Ω sind parallel geschaltet. Wie groß ist der Gesamtwiderstand? (auf 2 Dezimalen) | 12 | Ω | 0,01 || R = R1 · R2 / (R1 + R2) >> Parallel: Produkt durch Summe
+N Drei Widerstände mit 100 Ω, 220 Ω und 330 Ω sind in Reihe geschaltet. Wie groß ist der Gesamtwiderstand? | 650 | Ω | 0,06 || Reihe: R = R1 + R2 + R3 >> In Reihe werden Widerstände addiert.
+N Drei Widerstände mit 2 Ω, 4 Ω und 6 Ω sind in Reihe geschaltet. Wie groß ist der Gesamtwiderstand? | 12 | Ω | 0,06 || Reihe: R = R1 + R2 + R3 >> In Reihe werden Widerstände addiert.
+N Drei Widerstände mit 1,5 Ω, 2,5 Ω und 4 Ω sind in Reihe geschaltet. Wie groß ist der Gesamtwiderstand? | 8 | Ω | 0,06 || Reihe: R = R1 + R2 + R3 >> In Reihe werden Widerstände addiert.
+# --- Batterie
+N Eine Batterie mit 60 Ah wird mit 4 A entladen. Nach wie vielen Stunden ist sie rechnerisch leer? | 15 | h | 0,1 || t = Q / I >> Kapazität durch Strom
+N Eine Hochvoltbatterie hat 58 kWh bei 350 V. Wie groß ist ihre Kapazität in Ah? (auf ganze Ah) | 166 | Ah | 1 || Q = W / U, kWh in Wh umrechnen >> Energie in Wh durch Spannung
+N Eine Hochvoltbatterie hat 100 kWh bei 800 V. Wie groß ist ihre Kapazität in Ah? (auf ganze Ah) | 125 | Ah | 1 || Q = W / U, kWh in Wh umrechnen >> Energie in Wh durch Spannung
+N Eine Batterie mit 44 Ah wird mit 8 A entladen. Nach wie vielen Stunden ist sie rechnerisch leer? | 5,5 | h | 0,1 || t = Q / I >> Kapazität durch Strom
+N Eine Batterie mit 70 Ah wird mit 0,05 A entladen. Nach wie vielen Stunden ist sie rechnerisch leer? | 1400 | h | 0,1 || t = Q / I >> Kapazität durch Strom
+N Eine Batterie mit 95 Ah wird mit 2,5 A entladen. Nach wie vielen Stunden ist sie rechnerisch leer? | 38 | h | 0,1 || t = Q / I >> Kapazität durch Strom
+N Eine Hochvoltbatterie hat 77 kWh bei 400 V. Wie groß ist ihre Kapazität in Ah? (auf ganze Ah) | 192 | Ah | 1 || Q = W / U, kWh in Wh umrechnen >> Energie in Wh durch Spannung
+# --- Laden
+N Wie viele Stunden dauert es, 77 kWh mit 50 kW Ladeleistung nachzuladen? (auf 1 Dezimale) | 1,5 | h | 0,1 || t = W / P >> Energie durch Leistung
+N Eine Ladung von 70 kWh kostet 0,69 € pro kWh. Wie hoch sind die Kosten? | 48,3 | € | 0,01 || Kosten = Energie · Preis >> kWh mal Preis je kWh
+N Wie viele Stunden dauert es, 50 kWh mit 22 kW Ladeleistung nachzuladen? (auf 1 Dezimale) | 2,3 | h | 0,1 || t = W / P >> Energie durch Leistung
+N Wie viele Stunden dauert es, 36 kWh mit 3,6 kW Ladeleistung nachzuladen? (auf 1 Dezimale) | 10 | h | 0,1 || t = W / P >> Energie durch Leistung
+N Wie viele Stunden dauert es, 44 kWh mit 11 kW Ladeleistung nachzuladen? (auf 1 Dezimale) | 4 | h | 0,1 || t = W / P >> Energie durch Leistung
+N Eine Ladung von 45 kWh kostet 0,32 € pro kWh. Wie hoch sind die Kosten? | 14,4 | € | 0,01 || Kosten = Energie · Preis >> kWh mal Preis je kWh
+N Eine Ladung von 38 kWh kostet 0,28 € pro kWh. Wie hoch sind die Kosten? | 10,64 | € | 0,01 || Kosten = Energie · Preis >> kWh mal Preis je kWh
+N Eine Ladung von 60 kWh kostet 0,55 € pro kWh. Wie hoch sind die Kosten? | 33 | € | 0,01 || Kosten = Energie · Preis >> kWh mal Preis je kWh
+# --- Kraftstoffkosten
+N Ein Auto verbraucht 7,8 l/100 km, der Liter kostet 1,9 €. Wie hoch sind die Kraftstoffkosten für 12000 km? | 1778,4 | € | 0,5 || 7,8 l/100 km · 12000 km / 100 · 1,9 € >> Zuerst die Liter für die Strecke ausrechnen.
+N Ein Auto verbraucht 5,2 l/100 km, der Liter kostet 1,75 €. Wie hoch sind die Kraftstoffkosten für 20000 km? | 1820 | € | 0,5 || 5,2 l/100 km · 20000 km / 100 · 1,75 € >> Zuerst die Liter für die Strecke ausrechnen.
+N Ein Auto verbraucht 4,6 l/100 km, der Liter kostet 1,7 €. Wie hoch sind die Kraftstoffkosten für 25000 km? | 1955 | € | 0,5 || 4,6 l/100 km · 25000 km / 100 · 1,7 € >> Zuerst die Liter für die Strecke ausrechnen.
+N Ein Auto verbraucht 6,5 l/100 km, der Liter kostet 1,85 €. Wie hoch sind die Kraftstoffkosten für 15000 km? | 1803,75 | € | 0,5 || 6,5 l/100 km · 15000 km / 100 · 1,85 € >> Zuerst die Liter für die Strecke ausrechnen.
+# --- Abbremsung
+N Auf dem Bremsenprüfstand beträgt die Summe der Bremskräfte 9000 N, die Gewichtskraft des Fahrzeugs 15000 N. Wie groß ist die Abbremsung in %? | 60 | % | 0,1 || z = Bremskraft / Gewichtskraft · 100 >> Bremskraft durch Gewichtskraft mal 100
+N Auf dem Bremsenprüfstand beträgt die Summe der Bremskräfte 6500 N, die Gewichtskraft des Fahrzeugs 13000 N. Wie groß ist die Abbremsung in %? | 50 | % | 0,1 || z = Bremskraft / Gewichtskraft · 100 >> Bremskraft durch Gewichtskraft mal 100
+N Auf dem Bremsenprüfstand beträgt die Summe der Bremskräfte 10400 N, die Gewichtskraft des Fahrzeugs 16000 N. Wie groß ist die Abbremsung in %? | 65 | % | 0,1 || z = Bremskraft / Gewichtskraft · 100 >> Bremskraft durch Gewichtskraft mal 100
+N Auf dem Bremsenprüfstand beträgt die Summe der Bremskräfte 11900 N, die Gewichtskraft des Fahrzeugs 17000 N. Wie groß ist die Abbremsung in %? | 70 | % | 0,1 || z = Bremskraft / Gewichtskraft · 100 >> Bremskraft durch Gewichtskraft mal 100
+N Auf dem Bremsenprüfstand beträgt die Summe der Bremskräfte 7200 N, die Gewichtskraft des Fahrzeugs 12000 N. Wie groß ist die Abbremsung in %? | 60 | % | 0,1 || z = Bremskraft / Gewichtskraft · 100 >> Bremskraft durch Gewichtskraft mal 100
+# --- Bremskraftdifferenz
+N Bremskraft links 2500 N, rechts 2000 N. Wie groß ist die Differenz in % des größeren Werts? | 20 | % | 0,1 || (2500 − 2000) / 2500 · 100 >> Unterschied durch den größeren Wert mal 100
+N Bremskraft links 2200 N, rechts 1980 N. Wie groß ist die Differenz in % des größeren Werts? | 10 | % | 0,1 || (2200 − 1980) / 2200 · 100 >> Unterschied durch den größeren Wert mal 100
+N Bremskraft links 1800 N, rechts 1530 N. Wie groß ist die Differenz in % des größeren Werts? | 15 | % | 0,1 || (1800 − 1530) / 1800 · 100 >> Unterschied durch den größeren Wert mal 100
+N Bremskraft links 1600 N, rechts 1040 N. Wie groß ist die Differenz in % des größeren Werts? | 35 | % | 0,1 || (1600 − 1040) / 1600 · 100 >> Unterschied durch den größeren Wert mal 100
+N Bremskraft links 3000 N, rechts 2100 N. Wie groß ist die Differenz in % des größeren Werts? | 30 | % | 0,1 || (3000 − 2100) / 3000 · 100 >> Unterschied durch den größeren Wert mal 100
+# --- Wiederholung Motor, Bremsen, Antrieb
+N Bohrung 82 mm, Hub 92,8 mm, 4 Zylinder. Wie groß ist der Gesamthubraum? (auf ganze cm³) | 1960 | cm³ | 3 || VH = π / 4 · d² · s · z, in cm rechnen >> Zuerst den Hubraum eines Zylinders in cm³
+N Bohrung 74 mm, Hub 77 mm, 3 Zylinder. Wie groß ist der Gesamthubraum? (auf ganze cm³) | 993 | cm³ | 3 || VH = π / 4 · d² · s · z, in cm rechnen >> Zuerst den Hubraum eines Zylinders in cm³
+N Verbrauch: 55 Liter auf 610 km. Wie viel sind das pro 100 km? (auf 1 Dezimale) | 9 | l/100 km | 0,1 || Liter / km · 100 >> Liter durch km mal 100
+N Bohrung 80 mm, Hub 90 mm, 4 Zylinder. Wie groß ist der Gesamthubraum? (auf ganze cm³) | 1810 | cm³ | 3 || VH = π / 4 · d² · s · z, in cm rechnen >> Zuerst den Hubraum eines Zylinders in cm³
+N Ein Motor gibt 130 Nm bei 5500 1/min ab. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 74,9 | kW | 0,3 || P = 2 · π · M · n mit n = 91,67 1/s >> Drehzahl in 1/s umrechnen
+N Am Hauptbremszylinder (4 cm²) wirken 600 N. Welche Kraft wirkt am Radbremskolben mit 10 cm²? | 1500 | N | 1 || F2 = F1 · A2 / A1 >> Gleicher Druck auf beiden Seiten
+N Ein Motor gibt 180 Nm bei 3500 1/min ab. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 66 | kW | 0,3 || P = 2 · π · M · n mit n = 58,33 1/s >> Drehzahl in 1/s umrechnen
+N Verbrauch: 47 Liter auf 720 km. Wie viel sind das pro 100 km? (auf 1 Dezimale) | 6,5 | l/100 km | 0,1 || Liter / km · 100 >> Liter durch km mal 100
+N Am Hauptbremszylinder (2,5 cm²) wirken 350 N. Welche Kraft wirkt am Radbremskolben mit 12,5 cm²? | 1750 | N | 1 || F2 = F1 · A2 / A1 >> Gleicher Druck auf beiden Seiten
+N Ein Motor gibt 350 Nm bei 1750 1/min ab. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 64,1 | kW | 0,3 || P = 2 · π · M · n mit n = 29,17 1/s >> Drehzahl in 1/s umrechnen
+N Bohrung 84 mm, Hub 90 mm, 6 Zylinder. Wie groß ist der Gesamthubraum? (auf ganze cm³) | 2993 | cm³ | 3 || VH = π / 4 · d² · s · z, in cm rechnen >> Zuerst den Hubraum eines Zylinders in cm³

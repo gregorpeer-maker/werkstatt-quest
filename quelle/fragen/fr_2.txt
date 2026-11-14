@@ -1,0 +1,120 @@
+# Fachrechnen Level 3 – 2. Klasse KFZ (FR · LJ 2)
+# Diese Datei wird von gen_fr.py erzeugt. Änderungen bitte dort vornehmen.
+# --- Durchschnittsgeschwindigkeit
+N Ein Fahrzeug fährt 45 km in 0,75 Stunden. Wie hoch ist die Durchschnittsgeschwindigkeit? | 60 | km/h | 0,06 || v = s / t >> Weg durch Zeit
+N Ein Fahrzeug fährt 96 km in 1,5 Stunden. Wie hoch ist die Durchschnittsgeschwindigkeit? | 64 | km/h | 0,06 || v = s / t >> Weg durch Zeit
+N Ein Fahrzeug fährt 126 km in 1,75 Stunden. Wie hoch ist die Durchschnittsgeschwindigkeit? | 72 | km/h | 0,06 || v = s / t >> Weg durch Zeit
+N Ein Fahrzeug fährt 330 km in 4 Stunden. Wie hoch ist die Durchschnittsgeschwindigkeit? | 82,5 | km/h | 0,06 || v = s / t >> Weg durch Zeit
+N Ein Fahrzeug fährt 210 km in 3 Stunden. Wie hoch ist die Durchschnittsgeschwindigkeit? | 70 | km/h | 0,06 || v = s / t >> Weg durch Zeit
+# --- Weg
+N Ein Fahrzeug fährt 0,2 Stunden lang mit 50 km/h. Wie weit kommt es? | 10 | km | 0,06 || s = v · t >> Geschwindigkeit mal Zeit
+N Ein Fahrzeug fährt 2,5 Stunden lang mit 90 km/h. Wie weit kommt es? | 225 | km | 0,06 || s = v · t >> Geschwindigkeit mal Zeit
+N Ein Fahrzeug fährt 0,5 Stunden lang mit 72 km/h. Wie weit kommt es? | 36 | km | 0,06 || s = v · t >> Geschwindigkeit mal Zeit
+N Ein Fahrzeug fährt 3 Stunden lang mit 130 km/h. Wie weit kommt es? | 390 | km | 0,06 || s = v · t >> Geschwindigkeit mal Zeit
+# --- km/h und m/s
+N Rechne 108 km/h in m/s um. | 30 | m/s | 0,06 || 108 : 3,6 >> km/h durch 3,6
+N Rechne 126 km/h in m/s um. | 35 | m/s | 0,06 || 126 : 3,6 >> km/h durch 3,6
+N Rechne 90 km/h in m/s um. | 25 | m/s | 0,06 || 90 : 3,6 >> km/h durch 3,6
+N Rechne 12 m/s in km/h um. | 43,2 | km/h | 0,06 || 12 · 3,6 >> m/s mal 3,6
+N Rechne 36 km/h in m/s um. | 10 | m/s | 0,06 || 36 : 3,6 >> km/h durch 3,6
+N Rechne 35 m/s in km/h um. | 126 | km/h | 0,06 || 35 · 3,6 >> m/s mal 3,6
+N Rechne 5 m/s in km/h um. | 18 | km/h | 0,06 || 5 · 3,6 >> m/s mal 3,6
+N Rechne 25 m/s in km/h um. | 90 | km/h | 0,06 || 25 · 3,6 >> m/s mal 3,6
+N Rechne 30 m/s in km/h um. | 108 | km/h | 0,06 || 30 · 3,6 >> m/s mal 3,6
+# --- Kolbengeschwindigkeit
+N Ein Motor hat 92 mm Hub und dreht mit 3600 1/min. Wie groß ist die mittlere Kolbengeschwindigkeit? (auf 1 Dezimale) | 11 | m/s | 0,1 || vm = 2 · s · n = 2 · 0,092 m · 60 1/s >> Hub in m und Drehzahl in 1/s umrechnen, dann vm = 2 · s · n
+N Ein Motor hat 90 mm Hub und dreht mit 6000 1/min. Wie groß ist die mittlere Kolbengeschwindigkeit? (auf 1 Dezimale) | 18 | m/s | 0,1 || vm = 2 · s · n = 2 · 0,09 m · 100 1/s >> Hub in m und Drehzahl in 1/s umrechnen, dann vm = 2 · s · n
+N Ein Motor hat 80 mm Hub und dreht mit 3000 1/min. Wie groß ist die mittlere Kolbengeschwindigkeit? (auf 1 Dezimale) | 8 | m/s | 0,1 || vm = 2 · s · n = 2 · 0,08 m · 50 1/s >> Hub in m und Drehzahl in 1/s umrechnen, dann vm = 2 · s · n
+N Ein Motor hat 75 mm Hub und dreht mit 2400 1/min. Wie groß ist die mittlere Kolbengeschwindigkeit? (auf 1 Dezimale) | 6 | m/s | 0,1 || vm = 2 · s · n = 2 · 0,075 m · 40 1/s >> Hub in m und Drehzahl in 1/s umrechnen, dann vm = 2 · s · n
+N Ein Motor hat 86 mm Hub und dreht mit 4500 1/min. Wie groß ist die mittlere Kolbengeschwindigkeit? (auf 1 Dezimale) | 12,9 | m/s | 0,1 || vm = 2 · s · n = 2 · 0,086 m · 75 1/s >> Hub in m und Drehzahl in 1/s umrechnen, dann vm = 2 · s · n
+# --- Umfangsgeschwindigkeit
+N Eine Riemenscheibe mit 200 mm Durchmesser dreht mit 1500 1/min. Wie groß ist die Umfangsgeschwindigkeit? (auf 1 Dezimale) | 15,7 | m/s | 0,1 || v = π · d · n = π · 0,2 m · 25 1/s >> Durchmesser in m, Drehzahl in 1/s, dann v = π · d · n
+N Eine Riemenscheibe mit 80 mm Durchmesser dreht mit 6000 1/min. Wie groß ist die Umfangsgeschwindigkeit? (auf 1 Dezimale) | 25,1 | m/s | 0,1 || v = π · d · n = π · 0,08 m · 100 1/s >> Durchmesser in m, Drehzahl in 1/s, dann v = π · d · n
+N Eine Riemenscheibe mit 120 mm Durchmesser dreht mit 3000 1/min. Wie groß ist die Umfangsgeschwindigkeit? (auf 1 Dezimale) | 18,8 | m/s | 0,1 || v = π · d · n = π · 0,12 m · 50 1/s >> Durchmesser in m, Drehzahl in 1/s, dann v = π · d · n
+N Eine Riemenscheibe mit 150 mm Durchmesser dreht mit 2400 1/min. Wie groß ist die Umfangsgeschwindigkeit? (auf 1 Dezimale) | 18,8 | m/s | 0,1 || v = π · d · n = π · 0,15 m · 40 1/s >> Durchmesser in m, Drehzahl in 1/s, dann v = π · d · n
+N Eine Riemenscheibe mit 250 mm Durchmesser dreht mit 900 1/min. Wie groß ist die Umfangsgeschwindigkeit? (auf 1 Dezimale) | 11,8 | m/s | 0,1 || v = π · d · n = π · 0,25 m · 15 1/s >> Durchmesser in m, Drehzahl in 1/s, dann v = π · d · n
+# --- Fahrgeschwindigkeit
+N Ein Rad hat einen Abrolldurchmesser von 0,63 m und dreht mit 1200 1/min. Wie schnell fährt das Fahrzeug in km/h? (auf ganze km/h) | 143 | km/h | 1 || v = π · d · n = π · 0,63 m · 20 1/s, dann mal 3,6 >> Erst m/s ausrechnen, dann mal 3,6
+N Ein Rad hat einen Abrolldurchmesser von 0,64 m und dreht mit 900 1/min. Wie schnell fährt das Fahrzeug in km/h? (auf ganze km/h) | 109 | km/h | 1 || v = π · d · n = π · 0,64 m · 15 1/s, dann mal 3,6 >> Erst m/s ausrechnen, dann mal 3,6
+N Ein Rad hat einen Abrolldurchmesser von 0,62 m und dreht mit 600 1/min. Wie schnell fährt das Fahrzeug in km/h? (auf ganze km/h) | 70 | km/h | 1 || v = π · d · n = π · 0,62 m · 10 1/s, dann mal 3,6 >> Erst m/s ausrechnen, dann mal 3,6
+N Ein Rad hat einen Abrolldurchmesser von 0,66 m und dreht mit 480 1/min. Wie schnell fährt das Fahrzeug in km/h? (auf ganze km/h) | 60 | km/h | 1 || v = π · d · n = π · 0,66 m · 8 1/s, dann mal 3,6 >> Erst m/s ausrechnen, dann mal 3,6
+N Ein Rad hat einen Abrolldurchmesser von 0,6 m und dreht mit 750 1/min. Wie schnell fährt das Fahrzeug in km/h? (auf ganze km/h) | 85 | km/h | 1 || v = π · d · n = π · 0,6 m · 12,5 1/s, dann mal 3,6 >> Erst m/s ausrechnen, dann mal 3,6
+# --- Beschleunigung
+N Ein Auto beschleunigt in 10 s von 0 auf 100 km/h. Wie groß ist die mittlere Beschleunigung? (auf 2 Dezimalen) | 2,78 | m/s² | 0,02 || a = v / t = 27,78 m/s : 10 s >> Geschwindigkeit zuerst in m/s umrechnen, dann a = v / t
+N Ein Auto beschleunigt in 6 s von 0 auf 54 km/h. Wie groß ist die mittlere Beschleunigung? (auf 2 Dezimalen) | 2,5 | m/s² | 0,02 || a = v / t = 15 m/s : 6 s >> Geschwindigkeit zuerst in m/s umrechnen, dann a = v / t
+N Ein Auto beschleunigt in 5 s von 0 auf 72 km/h. Wie groß ist die mittlere Beschleunigung? (auf 2 Dezimalen) | 4 | m/s² | 0,02 || a = v / t = 20 m/s : 5 s >> Geschwindigkeit zuerst in m/s umrechnen, dann a = v / t
+N Ein Auto beschleunigt in 12 s von 0 auf 108 km/h. Wie groß ist die mittlere Beschleunigung? (auf 2 Dezimalen) | 2,5 | m/s² | 0,02 || a = v / t = 30 m/s : 12 s >> Geschwindigkeit zuerst in m/s umrechnen, dann a = v / t
+N Ein Auto beschleunigt in 10 s von 0 auf 90 km/h. Wie groß ist die mittlere Beschleunigung? (auf 2 Dezimalen) | 2,5 | m/s² | 0,02 || a = v / t = 25 m/s : 10 s >> Geschwindigkeit zuerst in m/s umrechnen, dann a = v / t
+N Ein Auto beschleunigt in 8 s von 0 auf 100 km/h. Wie groß ist die mittlere Beschleunigung? (auf 2 Dezimalen) | 3,47 | m/s² | 0,02 || a = v / t = 27,78 m/s : 8 s >> Geschwindigkeit zuerst in m/s umrechnen, dann a = v / t
+# --- Verzögerung
+N Ein Auto bremst in 6 s von 108 km/h bis zum Stillstand. Wie groß ist die Verzögerung? | 5 | m/s² | 0,02 || a = v / t = 30 m/s : 6 s >> Geschwindigkeit in m/s, dann durch die Bremszeit
+N Ein Auto bremst in 3 s von 54 km/h bis zum Stillstand. Wie groß ist die Verzögerung? | 5 | m/s² | 0,02 || a = v / t = 15 m/s : 3 s >> Geschwindigkeit in m/s, dann durch die Bremszeit
+N Ein Auto bremst in 5 s von 90 km/h bis zum Stillstand. Wie groß ist die Verzögerung? | 5 | m/s² | 0,02 || a = v / t = 25 m/s : 5 s >> Geschwindigkeit in m/s, dann durch die Bremszeit
+N Ein Auto bremst in 2 s von 50,4 km/h bis zum Stillstand. Wie groß ist die Verzögerung? | 7 | m/s² | 0,02 || a = v / t = 14 m/s : 2 s >> Geschwindigkeit in m/s, dann durch die Bremszeit
+N Ein Auto bremst in 4 s von 72 km/h bis zum Stillstand. Wie groß ist die Verzögerung? | 5 | m/s² | 0,02 || a = v / t = 20 m/s : 4 s >> Geschwindigkeit in m/s, dann durch die Bremszeit
+# --- Reaktionsweg
+N Ein Fahrer fährt 72 km/h und hat eine Reaktionszeit von 0,8 s. Wie lang ist der Reaktionsweg? (auf 1 Dezimale) | 16 | m | 0,1 || sR = v · tR = 20 m/s · 0,8 s >> Geschwindigkeit in m/s mal Reaktionszeit
+N Ein Fahrer fährt 90 km/h und hat eine Reaktionszeit von 1 s. Wie lang ist der Reaktionsweg? (auf 1 Dezimale) | 25 | m | 0,1 || sR = v · tR = 25 m/s · 1 s >> Geschwindigkeit in m/s mal Reaktionszeit
+N Ein Fahrer fährt 50 km/h und hat eine Reaktionszeit von 1 s. Wie lang ist der Reaktionsweg? (auf 1 Dezimale) | 13,9 | m | 0,1 || sR = v · tR = 13,89 m/s · 1 s >> Geschwindigkeit in m/s mal Reaktionszeit
+N Ein Fahrer fährt 130 km/h und hat eine Reaktionszeit von 1,2 s. Wie lang ist der Reaktionsweg? (auf 1 Dezimale) | 43,3 | m | 0,1 || sR = v · tR = 36,11 m/s · 1,2 s >> Geschwindigkeit in m/s mal Reaktionszeit
+N Ein Fahrer fährt 36 km/h und hat eine Reaktionszeit von 1 s. Wie lang ist der Reaktionsweg? (auf 1 Dezimale) | 10 | m | 0,1 || sR = v · tR = 10 m/s · 1 s >> Geschwindigkeit in m/s mal Reaktionszeit
+N Ein Fahrer fährt 108 km/h und hat eine Reaktionszeit von 1 s. Wie lang ist der Reaktionsweg? (auf 1 Dezimale) | 30 | m | 0,1 || sR = v · tR = 30 m/s · 1 s >> Geschwindigkeit in m/s mal Reaktionszeit
+# --- Bremsweg
+N Ein Auto bremst aus 54 km/h mit einer Verzögerung von 6 m/s². Wie lang ist der Bremsweg? (auf 1 Dezimale) | 18,8 | m | 0,2 || sB = v² / (2 · a) mit v = 15 m/s >> sB = v² / (2 · a), v in m/s
+N Ein Auto bremst aus 126 km/h mit einer Verzögerung von 7 m/s². Wie lang ist der Bremsweg? (auf 1 Dezimale) | 87,5 | m | 0,2 || sB = v² / (2 · a) mit v = 35 m/s >> sB = v² / (2 · a), v in m/s
+N Ein Auto bremst aus 108 km/h mit einer Verzögerung von 8 m/s². Wie lang ist der Bremsweg? (auf 1 Dezimale) | 56,2 | m | 0,2 || sB = v² / (2 · a) mit v = 30 m/s >> sB = v² / (2 · a), v in m/s
+N Ein Auto bremst aus 90 km/h mit einer Verzögerung von 7 m/s². Wie lang ist der Bremsweg? (auf 1 Dezimale) | 44,6 | m | 0,2 || sB = v² / (2 · a) mit v = 25 m/s >> sB = v² / (2 · a), v in m/s
+N Ein Auto bremst aus 50 km/h mit einer Verzögerung von 7,5 m/s². Wie lang ist der Bremsweg? (auf 1 Dezimale) | 12,9 | m | 0,2 || sB = v² / (2 · a) mit v = 13,89 m/s >> sB = v² / (2 · a), v in m/s
+N Ein Auto bremst aus 72 km/h mit einer Verzögerung von 8 m/s². Wie lang ist der Bremsweg? (auf 1 Dezimale) | 25 | m | 0,2 || sB = v² / (2 · a) mit v = 20 m/s >> sB = v² / (2 · a), v in m/s
+# --- Anhalteweg
+N Der Reaktionsweg beträgt 20 m, der Bremsweg 31,3 m. Wie lang ist der Anhalteweg? | 51,3 | m | 0,06 || Anhalteweg = Reaktionsweg + Bremsweg >> Beide Wege zusammenzählen.
+N Der Reaktionsweg beträgt 12,5 m, der Bremsweg 13,9 m. Wie lang ist der Anhalteweg? | 26,4 | m | 0,06 || Anhalteweg = Reaktionsweg + Bremsweg >> Beide Wege zusammenzählen.
+N Der Reaktionsweg beträgt 27,8 m, der Bremsweg 55,1 m. Wie lang ist der Anhalteweg? | 82,9 | m | 0,06 || Anhalteweg = Reaktionsweg + Bremsweg >> Beide Wege zusammenzählen.
+N Der Reaktionsweg beträgt 25 m, der Bremsweg 44,6 m. Wie lang ist der Anhalteweg? | 69,6 | m | 0,06 || Anhalteweg = Reaktionsweg + Bremsweg >> Beide Wege zusammenzählen.
+# --- Kräfte
+N Zwei Kräfte von 500 N und 1200 N wirken im rechten Winkel zueinander. Wie groß ist die Resultierende? | 1300 | N | 1 || FR = √(F1² + F2²) >> Kräfteparallelogramm mit rechtem Winkel: Satz des Pythagoras
+N Zwei Kräfte von 1500 N und 700 N wirken in dieselbe Richtung. Wie groß ist die Resultierende? | 2200 | N | 0 || Gleiche Richtung: Kräfte addieren >> Zusammenzählen
+N Zwei Kräfte von 300 N und 450 N wirken in dieselbe Richtung. Wie groß ist die Resultierende? | 750 | N | 0 || Gleiche Richtung: Kräfte addieren >> Zusammenzählen
+N Zwei Kräfte von 800 N und 350 N wirken genau entgegengesetzt. Wie groß ist die Resultierende? | 450 | N | 0 || Entgegengesetzt: Kräfte abziehen >> Größere minus kleinere Kraft
+N Zwei Kräfte von 500 N und 180 N wirken genau entgegengesetzt. Wie groß ist die Resultierende? | 320 | N | 0 || Entgegengesetzt: Kräfte abziehen >> Größere minus kleinere Kraft
+N Zwei Kräfte von 120 N und 80 N wirken in dieselbe Richtung. Wie groß ist die Resultierende? | 200 | N | 0 || Gleiche Richtung: Kräfte addieren >> Zusammenzählen
+N Zwei Kräfte von 1200 N und 900 N wirken genau entgegengesetzt. Wie groß ist die Resultierende? | 300 | N | 0 || Entgegengesetzt: Kräfte abziehen >> Größere minus kleinere Kraft
+N Zwei Kräfte von 90 N und 120 N wirken im rechten Winkel zueinander. Wie groß ist die Resultierende? | 150 | N | 1 || FR = √(F1² + F2²) >> Kräfteparallelogramm mit rechtem Winkel: Satz des Pythagoras
+N Zwei Kräfte von 600 N und 800 N wirken im rechten Winkel zueinander. Wie groß ist die Resultierende? | 1000 | N | 1 || FR = √(F1² + F2²) >> Kräfteparallelogramm mit rechtem Winkel: Satz des Pythagoras
+# --- Hebelgesetz
+N An einem Hebel wirkt eine Kraft von 200 N am Hebelarm 0,6 m. Welche Kraft entsteht am anderen Hebelarm von 0,15 m? | 800 | N | 1 || F1 · l1 = F2 · l2, also F2 = 200 N · 0,6 m : 0,15 m >> Hebelgesetz: Kraft mal Hebelarm ist auf beiden Seiten gleich.
+N An einem Hebel wirkt eine Kraft von 150 N am Hebelarm 0,8 m. Welche Kraft entsteht am anderen Hebelarm von 0,2 m? | 600 | N | 1 || F1 · l1 = F2 · l2, also F2 = 150 N · 0,8 m : 0,2 m >> Hebelgesetz: Kraft mal Hebelarm ist auf beiden Seiten gleich.
+N An einem Hebel wirkt eine Kraft von 120 N am Hebelarm 1 m. Welche Kraft entsteht am anderen Hebelarm von 0,25 m? | 480 | N | 1 || F1 · l1 = F2 · l2, also F2 = 120 N · 1 m : 0,25 m >> Hebelgesetz: Kraft mal Hebelarm ist auf beiden Seiten gleich.
+N An einem Hebel wirkt eine Kraft von 250 N am Hebelarm 0,45 m. Welche Kraft entsteht am anderen Hebelarm von 0,09 m? | 1250 | N | 1 || F1 · l1 = F2 · l2, also F2 = 250 N · 0,45 m : 0,09 m >> Hebelgesetz: Kraft mal Hebelarm ist auf beiden Seiten gleich.
+N An einem Hebel wirkt eine Kraft von 400 N am Hebelarm 0,3 m. Welche Kraft entsteht am anderen Hebelarm von 0,1 m? | 1200 | N | 1 || F1 · l1 = F2 · l2, also F2 = 400 N · 0,3 m : 0,1 m >> Hebelgesetz: Kraft mal Hebelarm ist auf beiden Seiten gleich.
+# --- Drehmoment
+N An einem Schlüssel mit 0,5 m Länge wirkt eine Kraft von 90 N. Wie groß ist das Drehmoment? | 45 | Nm | 0,06 || M = F · r >> Kraft mal Hebelarm
+N Eine Schraube soll mit 25 Nm angezogen werden. Der Schlüssel ist 0,2 m lang. Welche Kraft ist nötig? | 125 | N | 1 || F = M / r >> Drehmoment durch Hebelarm
+N Am Radumfang wirkt eine Antriebskraft von 2000 N. Der Raddurchmesser beträgt 0,62 m. Wie groß ist das Drehmoment am Rad? | 620 | Nm | 1 || M = F · r mit r = d / 2 >> Der Hebelarm ist der Radius, also der halbe Durchmesser.
+N An einem Schlüssel mit 0,45 m Länge wirkt eine Kraft von 300 N. Wie groß ist das Drehmoment? | 135 | Nm | 0,06 || M = F · r >> Kraft mal Hebelarm
+N Am Radumfang wirkt eine Antriebskraft von 1500 N. Der Raddurchmesser beträgt 0,6 m. Wie groß ist das Drehmoment am Rad? | 450 | Nm | 1 || M = F · r mit r = d / 2 >> Der Hebelarm ist der Radius, also der halbe Durchmesser.
+N Eine Schraube soll mit 200 Nm angezogen werden. Der Schlüssel ist 0,5 m lang. Welche Kraft ist nötig? | 400 | N | 1 || F = M / r >> Drehmoment durch Hebelarm
+N An einem Schlüssel mit 0,4 m Länge wirkt eine Kraft von 120 N. Wie groß ist das Drehmoment? | 48 | Nm | 0,06 || M = F · r >> Kraft mal Hebelarm
+N Am Radumfang wirkt eine Antriebskraft von 3200 N. Der Raddurchmesser beträgt 0,64 m. Wie groß ist das Drehmoment am Rad? | 1024 | Nm | 1 || M = F · r mit r = d / 2 >> Der Hebelarm ist der Radius, also der halbe Durchmesser.
+N Eine Schraube soll mit 90 Nm angezogen werden. Der Schlüssel ist 0,3 m lang. Welche Kraft ist nötig? | 300 | N | 1 || F = M / r >> Drehmoment durch Hebelarm
+# --- Druck
+N In einem Bremszylinder herrschen 120 bar. Die Kolbenfläche beträgt 3 cm². Welche Kraft übt der Kolben aus? | 3600 | N | 1 || F = p · A, mit 1 bar = 10 N/cm² >> Druck in N/cm² umrechnen, dann mal Fläche
+N Eine Kraft von 1000 N wirkt auf eine Kolbenfläche von 5 cm². Wie groß ist der Druck in bar? | 20 | bar | 0,06 || p = F / A in N/cm², dann durch 10 >> 10 N/cm² sind 1 bar.
+N Eine Kraft von 4500 N wirkt auf eine Kolbenfläche von 15 cm². Wie groß ist der Druck in bar? | 30 | bar | 0,06 || p = F / A in N/cm², dann durch 10 >> 10 N/cm² sind 1 bar.
+N In einem Bremszylinder herrschen 40 bar. Die Kolbenfläche beträgt 12,5 cm². Welche Kraft übt der Kolben aus? | 5000 | N | 1 || F = p · A, mit 1 bar = 10 N/cm² >> Druck in N/cm² umrechnen, dann mal Fläche
+N Eine Kraft von 600 N wirkt auf eine Kolbenfläche von 2 cm². Wie groß ist der Druck in bar? | 30 | bar | 0,06 || p = F / A in N/cm², dann durch 10 >> 10 N/cm² sind 1 bar.
+N Eine Kraft von 2400 N wirkt auf eine Kolbenfläche von 8 cm². Wie groß ist der Druck in bar? | 30 | bar | 0,06 || p = F / A in N/cm², dann durch 10 >> 10 N/cm² sind 1 bar.
+N In einem Bremszylinder herrschen 80 bar. Die Kolbenfläche beträgt 5 cm². Welche Kraft übt der Kolben aus? | 4000 | N | 1 || F = p · A, mit 1 bar = 10 N/cm² >> Druck in N/cm² umrechnen, dann mal Fläche
+N Eine Kraft von 900 N wirkt auf eine Kolbenfläche von 4,5 cm². Wie groß ist der Druck in bar? | 20 | bar | 0,06 || p = F / A in N/cm², dann durch 10 >> 10 N/cm² sind 1 bar.
+# --- Flächenpressung
+N Ein Bremsbelag mit 50 cm² Fläche wird mit 8000 N angepresst. Wie groß ist die Flächenpressung in N/cm²? | 160 | N/cm² | 0,06 || p = F / A >> Kraft durch Fläche
+N Ein Bremsbelag mit 30 cm² Fläche wird mit 4500 N angepresst. Wie groß ist die Flächenpressung in N/cm²? | 150 | N/cm² | 0,06 || p = F / A >> Kraft durch Fläche
+N Ein Bremsbelag mit 24 cm² Fläche wird mit 3000 N angepresst. Wie groß ist die Flächenpressung in N/cm²? | 125 | N/cm² | 0,06 || p = F / A >> Kraft durch Fläche
+# --- Hydraulische Übersetzung
+N Hydraulik: Am Geberkolben mit 4 cm² wirken 500 N. Wie groß ist die Kraft am Nehmerkolben mit 18 cm²? | 2250 | N | 1 || F2 = F1 · A2 / A1 >> Der Druck ist überall gleich: F1 / A1 = F2 / A2
+N Hydraulik: Am Geberkolben mit 1,5 cm² wirken 80 N. Wie groß ist die Kraft am Nehmerkolben mit 9 cm²? | 480 | N | 1 || F2 = F1 · A2 / A1 >> Der Druck ist überall gleich: F1 / A1 = F2 / A2
+N Hydraulik: Am Geberkolben mit 3 cm² wirken 300 N. Wie groß ist die Kraft am Nehmerkolben mit 12 cm²? | 1200 | N | 1 || F2 = F1 · A2 / A1 >> Der Druck ist überall gleich: F1 / A1 = F2 / A2
+N Hydraulik: Am Geberkolben mit 2 cm² wirken 100 N. Wie groß ist die Kraft am Nehmerkolben mit 10 cm²? | 500 | N | 1 || F2 = F1 · A2 / A1 >> Der Druck ist überall gleich: F1 / A1 = F2 / A2
+# --- Absolutdruck
+N Ein Reifen hat 2,5 bar Überdruck. Wie groß ist der Absolutdruck bei 1 bar Luftdruck? | 3,5 | bar | 0,06 || pabs = pe + pamb >> Überdruck plus Luftdruck
+N Ein Reifen hat 1,8 bar Überdruck. Wie groß ist der Absolutdruck bei 1 bar Luftdruck? | 2,8 | bar | 0,06 || pabs = pe + pamb >> Überdruck plus Luftdruck

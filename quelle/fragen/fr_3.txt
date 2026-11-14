@@ -1,0 +1,126 @@
+# Fachrechnen Level 4 – 3. Klasse KFZ (FR · LJ 3)
+# Diese Datei wird von gen_fr.py erzeugt. Änderungen bitte dort vornehmen.
+# --- Hubraum
+N Bohrung d = 76 mm, Hub s = 86 mm. Wie groß ist der Hubraum eines Zylinders in cm³? (auf 1 Dezimale) | 390,1 | cm³ | 1 || Vh = π / 4 · d² · s = 0,7854 · (7,6 cm)² · 8,6 cm >> In cm rechnen: Vh = π / 4 · d² · s
+N Bohrung d = 95 mm, Hub s = 87 mm. Wie groß ist der Hubraum eines Zylinders in cm³? (auf 1 Dezimale) | 616,7 | cm³ | 1 || Vh = π / 4 · d² · s = 0,7854 · (9,5 cm)² · 8,7 cm >> In cm rechnen: Vh = π / 4 · d² · s
+N Bohrung d = 82 mm, Hub s = 92,8 mm. Wie groß ist der Hubraum eines Zylinders in cm³? (auf 1 Dezimale) | 490,1 | cm³ | 1 || Vh = π / 4 · d² · s = 0,7854 · (8,2 cm)² · 9,28 cm >> In cm rechnen: Vh = π / 4 · d² · s
+N Bohrung d = 80 mm, Hub s = 90 mm. Wie groß ist der Hubraum eines Zylinders in cm³? (auf 1 Dezimale) | 452,4 | cm³ | 1 || Vh = π / 4 · d² · s = 0,7854 · (8 cm)² · 9 cm >> In cm rechnen: Vh = π / 4 · d² · s
+N Bohrung d = 72 mm, Hub s = 82 mm. Wie groß ist der Hubraum eines Zylinders in cm³? (auf 1 Dezimale) | 333,9 | cm³ | 1 || Vh = π / 4 · d² · s = 0,7854 · (7,2 cm)² · 8,2 cm >> In cm rechnen: Vh = π / 4 · d² · s
+# --- Gesamthubraum
+N Ein Zylinder hat 499,6 cm³ Hubraum, der Motor hat 4 Zylinder. Wie groß ist der Gesamthubraum? | 1998,4 | cm³ | 0,06 || VH = Vh · z >> Einzelhubraum mal Zylinderzahl
+N Ein Zylinder hat 333 cm³ Hubraum, der Motor hat 3 Zylinder. Wie groß ist der Gesamthubraum? | 999 | cm³ | 0,06 || VH = Vh · z >> Einzelhubraum mal Zylinderzahl
+N Ein Zylinder hat 399,5 cm³ Hubraum, der Motor hat 4 Zylinder. Wie groß ist der Gesamthubraum? | 1598 | cm³ | 0,06 || VH = Vh · z >> Einzelhubraum mal Zylinderzahl
+N Ein Zylinder hat 498 cm³ Hubraum, der Motor hat 6 Zylinder. Wie groß ist der Gesamthubraum? | 2988 | cm³ | 0,06 || VH = Vh · z >> Einzelhubraum mal Zylinderzahl
+# --- Verdichtungsverhältnis
+N Hubraum Vh = 500 cm³, Verdichtungsraum Vc = 50 cm³. Wie groß ist das Verdichtungsverhältnis ε? (auf 1 Dezimale) | 11 |  | 0,1 || ε = (Vh + Vc) / Vc >> ε = (Vh + Vc) / Vc
+N Hubraum Vh = 475 cm³, Verdichtungsraum Vc = 25 cm³. Wie groß ist das Verdichtungsverhältnis ε? (auf 1 Dezimale) | 20 |  | 0,1 || ε = (Vh + Vc) / Vc >> ε = (Vh + Vc) / Vc
+N Hubraum Vh = 360 cm³, Verdichtungsraum Vc = 40 cm³. Wie groß ist das Verdichtungsverhältnis ε? (auf 1 Dezimale) | 10 |  | 0,1 || ε = (Vh + Vc) / Vc >> ε = (Vh + Vc) / Vc
+N Hubraum Vh = 450 cm³, Verdichtungsraum Vc = 50 cm³. Wie groß ist das Verdichtungsverhältnis ε? (auf 1 Dezimale) | 10 |  | 0,1 || ε = (Vh + Vc) / Vc >> ε = (Vh + Vc) / Vc
+N Hubraum Vh = 400 cm³, Verdichtungsraum Vc = 40 cm³. Wie groß ist das Verdichtungsverhältnis ε? (auf 1 Dezimale) | 11 |  | 0,1 || ε = (Vh + Vc) / Vc >> ε = (Vh + Vc) / Vc
+# --- Verdichtungsraum
+N Hubraum Vh = 500 cm³, Verdichtungsverhältnis ε = 11. Wie groß ist der Verdichtungsraum? (auf 1 Dezimale) | 50 | cm³ | 0,2 || Vc = Vh / (ε − 1) >> Vc = Vh / (ε − 1)
+N Hubraum Vh = 450 cm³, Verdichtungsverhältnis ε = 10. Wie groß ist der Verdichtungsraum? (auf 1 Dezimale) | 50 | cm³ | 0,2 || Vc = Vh / (ε − 1) >> Vc = Vh / (ε − 1)
+N Hubraum Vh = 400 cm³, Verdichtungsverhältnis ε = 9. Wie groß ist der Verdichtungsraum? (auf 1 Dezimale) | 50 | cm³ | 0,2 || Vc = Vh / (ε − 1) >> Vc = Vh / (ε − 1)
+N Hubraum Vh = 490 cm³, Verdichtungsverhältnis ε = 17. Wie groß ist der Verdichtungsraum? (auf 1 Dezimale) | 30,6 | cm³ | 0,2 || Vc = Vh / (ε − 1) >> Vc = Vh / (ε − 1)
+# --- Mechanische Arbeit
+N Eine Kraft von 15000 N verschiebt einen Körper um 0,5 m. Wie groß ist die verrichtete Arbeit? | 7500 | Nm | 0 || W = F · s >> Kraft mal Weg
+N Eine Kraft von 1200 N verschiebt einen Körper um 3 m. Wie groß ist die verrichtete Arbeit? | 3600 | Nm | 0 || W = F · s >> Kraft mal Weg
+N Eine Kraft von 800 N verschiebt einen Körper um 25 m. Wie groß ist die verrichtete Arbeit? | 20000 | Nm | 0 || W = F · s >> Kraft mal Weg
+N Eine Kraft von 250 N verschiebt einen Körper um 40 m. Wie groß ist die verrichtete Arbeit? | 10000 | Nm | 0 || W = F · s >> Kraft mal Weg
+# --- Leistung
+N In 8 s wird eine Arbeit von 18000 Nm verrichtet. Wie groß ist die Leistung in Watt? | 2250 | W | 0 || P = W / t >> Arbeit durch Zeit
+N In 60 s wird eine Arbeit von 120000 Nm verrichtet. Wie groß ist die Leistung in Watt? | 2000 | W | 0 || P = W / t >> Arbeit durch Zeit
+N In 5 s wird eine Arbeit von 7500 Nm verrichtet. Wie groß ist die Leistung in Watt? | 1500 | W | 0 || P = W / t >> Arbeit durch Zeit
+N In 4 s wird eine Arbeit von 6000 Nm verrichtet. Wie groß ist die Leistung in Watt? | 1500 | W | 0 || P = W / t >> Arbeit durch Zeit
+# --- Leistung aus Drehmoment und Drehzahl
+N M = 320 Nm bei n = 1800 1/min. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 60,3 | kW | 0,3 || P = 2 · π · M · n = 2 · π · 320 Nm · 30 1/s >> Drehzahl in 1/s, dann P = 2 · π · M · n, Ergebnis durch 1000
+N M = 110 Nm bei n = 6000 1/min. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 69,1 | kW | 0,3 || P = 2 · π · M · n = 2 · π · 110 Nm · 100 1/s >> Drehzahl in 1/s, dann P = 2 · π · M · n, Ergebnis durch 1000
+N M = 400 Nm bei n = 2400 1/min. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 100,5 | kW | 0,3 || P = 2 · π · M · n = 2 · π · 400 Nm · 40 1/s >> Drehzahl in 1/s, dann P = 2 · π · M · n, Ergebnis durch 1000
+N M = 250 Nm bei n = 3600 1/min. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 94,2 | kW | 0,3 || P = 2 · π · M · n = 2 · π · 250 Nm · 60 1/s >> Drehzahl in 1/s, dann P = 2 · π · M · n, Ergebnis durch 1000
+N M = 150 Nm bei n = 4200 1/min. Wie groß ist die Leistung in kW? (auf 1 Dezimale) | 66 | kW | 0,3 || P = 2 · π · M · n = 2 · π · 150 Nm · 70 1/s >> Drehzahl in 1/s, dann P = 2 · π · M · n, Ergebnis durch 1000
+# --- Drehmoment aus Leistung
+N Ein Motor leistet 140 kW bei 3500 1/min. Wie groß ist das Drehmoment? (auf ganze Nm) | 382 | Nm | 2 || M = P / (2 · π · n) mit n = 58,33 1/s >> M = P / (2 · π · n), Leistung in W und Drehzahl in 1/s
+N Ein Motor leistet 90 kW bei 4500 1/min. Wie groß ist das Drehmoment? (auf ganze Nm) | 191 | Nm | 2 || M = P / (2 · π · n) mit n = 75 1/s >> M = P / (2 · π · n), Leistung in W und Drehzahl in 1/s
+N Ein Motor leistet 110 kW bei 4000 1/min. Wie groß ist das Drehmoment? (auf ganze Nm) | 263 | Nm | 2 || M = P / (2 · π · n) mit n = 66,67 1/s >> M = P / (2 · π · n), Leistung in W und Drehzahl in 1/s
+N Ein Motor leistet 55 kW bei 2500 1/min. Wie groß ist das Drehmoment? (auf ganze Nm) | 210 | Nm | 2 || M = P / (2 · π · n) mit n = 41,67 1/s >> M = P / (2 · π · n), Leistung in W und Drehzahl in 1/s
+# --- Wirkungsgrad
+N Zugeführte Leistung 120 kW, abgegebene Leistung 42 kW. Wie groß ist der Wirkungsgrad in %? (auf 1 Dezimale) | 35 | % | 0,1 || η = Pab / Pzu · 100 % >> Abgegebene durch zugeführte Leistung
+N Ein Motor gibt 74 kW ab. Der Wirkungsgrad der Kraftübertragung beträgt 88 %. Wie groß ist die Leistung an den Rädern? (auf 1 Dezimale) | 65,1 | kW | 0,1 || PRad = PMotor · η >> Motorleistung mal Wirkungsgrad
+N Ein Motor gibt 120 kW ab. Der Wirkungsgrad der Kraftübertragung beträgt 85 %. Wie groß ist die Leistung an den Rädern? (auf 1 Dezimale) | 102 | kW | 0,1 || PRad = PMotor · η >> Motorleistung mal Wirkungsgrad
+N Ein Motor gibt 150 kW ab. Der Wirkungsgrad der Kraftübertragung beträgt 90 %. Wie groß ist die Leistung an den Rädern? (auf 1 Dezimale) | 135 | kW | 0,1 || PRad = PMotor · η >> Motorleistung mal Wirkungsgrad
+N Zugeführte Leistung 200 kW, abgegebene Leistung 76 kW. Wie groß ist der Wirkungsgrad in %? (auf 1 Dezimale) | 38 | % | 0,1 || η = Pab / Pzu · 100 % >> Abgegebene durch zugeführte Leistung
+N Zugeführte Leistung 60 kW, abgegebene Leistung 24 kW. Wie groß ist der Wirkungsgrad in %? (auf 1 Dezimale) | 40 | % | 0,1 || η = Pab / Pzu · 100 % >> Abgegebene durch zugeführte Leistung
+# --- kW und PS
+N Rechne 85 kW in PS um. (auf ganze PS) | 116 | PS | 1 || 1 kW = 1,36 PS >> kW mal 1,36
+N Rechne 140 kW in PS um. (auf ganze PS) | 190 | PS | 1 || 1 kW = 1,36 PS >> kW mal 1,36
+N Rechne 110 kW in PS um. (auf ganze PS) | 150 | PS | 1 || 1 kW = 1,36 PS >> kW mal 1,36
+N Rechne 150 PS in kW um. (auf ganze kW) | 110 | kW | 1 || 1 PS = 0,735 kW >> PS durch 1,36
+# --- Reibungskraft
+N Normalkraft 6000 N, Reibungszahl μ = 0,1 (Eis). Wie groß ist die Reibungskraft? | 600 | N | 1 || FR = μ · FN >> Reibungszahl mal Normalkraft
+N Normalkraft 4000 N, Reibungszahl μ = 0,5 (nasser Asphalt). Wie groß ist die Reibungskraft? | 2000 | N | 1 || FR = μ · FN >> Reibungszahl mal Normalkraft
+N Normalkraft 4500 N, Reibungszahl μ = 0,3 (Schnee). Wie groß ist die Reibungskraft? | 1350 | N | 1 || FR = μ · FN >> Reibungszahl mal Normalkraft
+N Normalkraft 5000 N, Reibungszahl μ = 0,8 (trockener Asphalt). Wie groß ist die Reibungskraft? | 4000 | N | 1 || FR = μ · FN >> Reibungszahl mal Normalkraft
+# --- Reibungsleistung
+N Eine Reibungskraft von 250 N wirkt bei einer Gleitgeschwindigkeit von 12 m/s. Wie groß ist die Reibungsleistung? | 3000 | W | 1 || PR = FR · v >> Kraft mal Geschwindigkeit
+N Eine Reibungskraft von 400 N wirkt bei einer Gleitgeschwindigkeit von 5 m/s. Wie groß ist die Reibungsleistung? | 2000 | W | 1 || PR = FR · v >> Kraft mal Geschwindigkeit
+N Eine Reibungskraft von 600 N wirkt bei einer Gleitgeschwindigkeit von 8 m/s. Wie groß ist die Reibungsleistung? | 4800 | W | 1 || PR = FR · v >> Kraft mal Geschwindigkeit
+# --- Dynamisches Grundgesetz
+N Ein Fahrzeug mit 1350 kg wird mit 6 m/s² verzögert. Wie groß ist die Bremskraft? | 8100 | N | 1 || F = m · a >> Dynamisches Grundgesetz: Masse mal Beschleunigung
+N Ein Fahrzeug mit 1200 kg wird mit 2,5 m/s² verzögert. Wie groß ist die Bremskraft? | 3000 | N | 1 || F = m · a >> Dynamisches Grundgesetz: Masse mal Beschleunigung
+N Ein Fahrzeug mit 1800 kg wird mit 8 m/s² verzögert. Wie groß ist die Bremskraft? | 14400 | N | 1 || F = m · a >> Dynamisches Grundgesetz: Masse mal Beschleunigung
+N Ein Fahrzeug mit 1000 kg wird mit 3,2 m/s² verzögert. Wie groß ist die Bremskraft? | 3200 | N | 1 || F = m · a >> Dynamisches Grundgesetz: Masse mal Beschleunigung
+# --- Bewegungsenergie
+N Ein Fahrzeug mit 1200 kg fährt 20 m/s. Wie groß ist die Bewegungsenergie in kJ? | 240 | kJ | 0,5 || Ekin = m · v² / 2, dann durch 1000 >> Ekin = m · v² / 2
+N Ein Fahrzeug mit 1400 kg fährt 10 m/s. Wie groß ist die Bewegungsenergie in kJ? | 70 | kJ | 0,5 || Ekin = m · v² / 2, dann durch 1000 >> Ekin = m · v² / 2
+N Ein Fahrzeug mit 1500 kg fährt 30 m/s. Wie groß ist die Bewegungsenergie in kJ? | 675 | kJ | 0,5 || Ekin = m · v² / 2, dann durch 1000 >> Ekin = m · v² / 2
+N Ein Fahrzeug mit 1000 kg fährt 25 m/s. Wie groß ist die Bewegungsenergie in kJ? | 312,5 | kJ | 0,5 || Ekin = m · v² / 2, dann durch 1000 >> Ekin = m · v² / 2
+# --- Bremsarbeit
+N Eine Bremskraft von 9000 N wirkt auf einem Bremsweg von 40 m. Wie groß ist die Bremsarbeit in kJ? | 360 | kJ | 0,06 || W = F · s, dann durch 1000 >> Kraft mal Weg
+N Eine Bremskraft von 10500 N wirkt auf einem Bremsweg von 32 m. Wie groß ist die Bremsarbeit in kJ? | 336 | kJ | 0,06 || W = F · s, dann durch 1000 >> Kraft mal Weg
+N Eine Bremskraft von 7500 N wirkt auf einem Bremsweg von 60 m. Wie groß ist die Bremsarbeit in kJ? | 450 | kJ | 0,06 || W = F · s, dann durch 1000 >> Kraft mal Weg
+# --- Gesamtübersetzung
+N Getriebeübersetzung 1, Achsübersetzung 4,1. Wie groß ist die Gesamtübersetzung? (auf 2 Dezimalen) | 4,1 |  | 0,01 || iges = iG · iA >> Einzelübersetzungen malnehmen
+N Getriebeübersetzung 2,1, Achsübersetzung 4,4. Wie groß ist die Gesamtübersetzung? (auf 2 Dezimalen) | 9,24 |  | 0,01 || iges = iG · iA >> Einzelübersetzungen malnehmen
+N Getriebeübersetzung 1,3, Achsübersetzung 3,2. Wie groß ist die Gesamtübersetzung? (auf 2 Dezimalen) | 4,16 |  | 0,01 || iges = iG · iA >> Einzelübersetzungen malnehmen
+N Getriebeübersetzung 3,5, Achsübersetzung 3,9. Wie groß ist die Gesamtübersetzung? (auf 2 Dezimalen) | 13,65 |  | 0,01 || iges = iG · iA >> Einzelübersetzungen malnehmen
+N Getriebeübersetzung 0,8, Achsübersetzung 3,4. Wie groß ist die Gesamtübersetzung? (auf 2 Dezimalen) | 2,72 |  | 0,01 || iges = iG · iA >> Einzelübersetzungen malnehmen
+# --- Raddrehzahl
+N Motordrehzahl 1800 1/min, Gesamtübersetzung 3,6. Wie groß ist die Raddrehzahl? | 500 | 1/min | 1 || nRad = nMotor / iges >> Drehzahl durch Übersetzung
+N Motordrehzahl 2400 1/min, Gesamtübersetzung 4. Wie groß ist die Raddrehzahl? | 600 | 1/min | 1 || nRad = nMotor / iges >> Drehzahl durch Übersetzung
+N Motordrehzahl 3000 1/min, Gesamtübersetzung 12. Wie groß ist die Raddrehzahl? | 250 | 1/min | 1 || nRad = nMotor / iges >> Drehzahl durch Übersetzung
+N Motordrehzahl 4500 1/min, Gesamtübersetzung 9. Wie groß ist die Raddrehzahl? | 500 | 1/min | 1 || nRad = nMotor / iges >> Drehzahl durch Übersetzung
+# --- Drehmoment am Rad
+N Motordrehmoment 250 Nm, Gesamtübersetzung 10, Wirkungsgrad 0,88. Wie groß ist das Drehmoment an den Antriebsrädern? | 2200 | Nm | 1 || MRad = MMotor · iges · η >> Drehmoment mal Übersetzung mal Wirkungsgrad
+N Motordrehmoment 150 Nm, Gesamtübersetzung 14, Wirkungsgrad 0,92. Wie groß ist das Drehmoment an den Antriebsrädern? | 1932 | Nm | 1 || MRad = MMotor · iges · η >> Drehmoment mal Übersetzung mal Wirkungsgrad
+N Motordrehmoment 320 Nm, Gesamtübersetzung 8, Wirkungsgrad 0,9. Wie groß ist das Drehmoment an den Antriebsrädern? | 2304 | Nm | 1 || MRad = MMotor · iges · η >> Drehmoment mal Übersetzung mal Wirkungsgrad
+# --- Antriebskraft
+N Das Drehmoment an den Antriebsrädern beträgt 2160 Nm, der Radhalbmesser 0,3 m. Wie groß ist die Antriebskraft? | 7200 | N | 2 || F = M / r >> Drehmoment durch Radhalbmesser
+N Das Drehmoment an den Antriebsrädern beträgt 1500 Nm, der Radhalbmesser 0,3 m. Wie groß ist die Antriebskraft? | 5000 | N | 2 || F = M / r >> Drehmoment durch Radhalbmesser
+N Das Drehmoment an den Antriebsrädern beträgt 2880 Nm, der Radhalbmesser 0,32 m. Wie groß ist die Antriebskraft? | 9000 | N | 2 || F = M / r >> Drehmoment durch Radhalbmesser
+N Das Drehmoment an den Antriebsrädern beträgt 1800 Nm, der Radhalbmesser 0,32 m. Wie groß ist die Antriebskraft? | 5625 | N | 2 || F = M / r >> Drehmoment durch Radhalbmesser
+# --- Fahrwiderstandsleistung
+N Die Summe der Fahrwiderstände beträgt 900 N bei 30 m/s. Welche Leistung ist an den Rädern nötig? (in kW, auf 1 Dezimale) | 27 | kW | 0,1 || P = F · v, dann durch 1000 >> Kraft mal Geschwindigkeit
+N Die Summe der Fahrwiderstände beträgt 450 N bei 20 m/s. Welche Leistung ist an den Rädern nötig? (in kW, auf 1 Dezimale) | 9 | kW | 0,1 || P = F · v, dann durch 1000 >> Kraft mal Geschwindigkeit
+N Die Summe der Fahrwiderstände beträgt 1200 N bei 36 m/s. Welche Leistung ist an den Rädern nötig? (in kW, auf 1 Dezimale) | 43,2 | kW | 0,1 || P = F · v, dann durch 1000 >> Kraft mal Geschwindigkeit
+N Die Summe der Fahrwiderstände beträgt 750 N bei 27,8 m/s. Welche Leistung ist an den Rädern nötig? (in kW, auf 1 Dezimale) | 20,9 | kW | 0,1 || P = F · v, dann durch 1000 >> Kraft mal Geschwindigkeit
+# --- Hubraumleistung
+N Ein Motor leistet 85 kW bei 1,598 Litern Hubraum. Wie groß ist die Hubraumleistung? (auf 1 Dezimale) | 53,2 | kW/l | 0,1 || PH = P / VH >> Leistung durch Hubraum in Litern
+N Ein Motor leistet 140 kW bei 1,984 Litern Hubraum. Wie groß ist die Hubraumleistung? (auf 1 Dezimale) | 70,6 | kW/l | 0,1 || PH = P / VH >> Leistung durch Hubraum in Litern
+N Ein Motor leistet 180 kW bei 2,979 Litern Hubraum. Wie groß ist die Hubraumleistung? (auf 1 Dezimale) | 60,4 | kW/l | 0,1 || PH = P / VH >> Leistung durch Hubraum in Litern
+N Ein Motor leistet 70 kW bei 0,999 Litern Hubraum. Wie groß ist die Hubraumleistung? (auf 1 Dezimale) | 70,1 | kW/l | 0,1 || PH = P / VH >> Leistung durch Hubraum in Litern
+# --- Leistungsgewicht
+N Ein Fahrzeug wiegt 1250 kg und leistet 81 kW. Wie groß ist das Leistungsgewicht? (auf 1 Dezimale) | 15,4 | kg/kW | 0,1 || Leistungsgewicht = Masse / Leistung >> Masse durch Leistung
+N Ein Fahrzeug wiegt 1800 kg und leistet 150 kW. Wie groß ist das Leistungsgewicht? (auf 1 Dezimale) | 12 | kg/kW | 0,1 || Leistungsgewicht = Masse / Leistung >> Masse durch Leistung
+N Ein Fahrzeug wiegt 1100 kg und leistet 55 kW. Wie groß ist das Leistungsgewicht? (auf 1 Dezimale) | 20 | kg/kW | 0,1 || Leistungsgewicht = Masse / Leistung >> Masse durch Leistung
+N Ein Fahrzeug wiegt 1400 kg und leistet 100 kW. Wie groß ist das Leistungsgewicht? (auf 1 Dezimale) | 14 | kg/kW | 0,1 || Leistungsgewicht = Masse / Leistung >> Masse durch Leistung
+# --- Streckenverbrauch
+N Ein Fahrzeug verbraucht 27 Liter auf 450 km. Wie hoch ist der Streckenverbrauch pro 100 km? (auf 1 Dezimale) | 6 | l/100 km | 0,1 || Verbrauch = Liter / km · 100 >> Liter durch Kilometer mal 100
+N Ein Fahrzeug verbraucht 51 Liter auf 680 km. Wie hoch ist der Streckenverbrauch pro 100 km? (auf 1 Dezimale) | 7,5 | l/100 km | 0,1 || Verbrauch = Liter / km · 100 >> Liter durch Kilometer mal 100
+N Ein Fahrzeug verbraucht 42 Liter auf 600 km. Wie hoch ist der Streckenverbrauch pro 100 km? (auf 1 Dezimale) | 7 | l/100 km | 0,1 || Verbrauch = Liter / km · 100 >> Liter durch Kilometer mal 100
+N Ein Fahrzeug verbraucht 33 Liter auf 750 km. Wie hoch ist der Streckenverbrauch pro 100 km? (auf 1 Dezimale) | 4,4 | l/100 km | 0,1 || Verbrauch = Liter / km · 100 >> Liter durch Kilometer mal 100
+N Ein Fahrzeug verbraucht 18,2 Liter auf 280 km. Wie hoch ist der Streckenverbrauch pro 100 km? (auf 1 Dezimale) | 6,5 | l/100 km | 0,1 || Verbrauch = Liter / km · 100 >> Liter durch Kilometer mal 100
+# --- Spezifischer Verbrauch
+N Ein Motor verbraucht 30 kg Kraftstoff pro Stunde bei 125 kW. Wie groß ist der spezifische Verbrauch in g/kWh? | 240 | g/kWh | 1 || be = B / P = 30000 g/h : 125 kW >> Verbrauch in g/h durch Leistung in kW
+N Ein Motor verbraucht 15 kg Kraftstoff pro Stunde bei 60 kW. Wie groß ist der spezifische Verbrauch in g/kWh? | 250 | g/kWh | 1 || be = B / P = 15000 g/h : 60 kW >> Verbrauch in g/h durch Leistung in kW
+N Ein Motor verbraucht 12,6 kg Kraftstoff pro Stunde bei 60 kW. Wie groß ist der spezifische Verbrauch in g/kWh? | 210 | g/kWh | 1 || be = B / P = 12600 g/h : 60 kW >> Verbrauch in g/h durch Leistung in kW
+N Ein Motor verbraucht 18 kg Kraftstoff pro Stunde bei 80 kW. Wie groß ist der spezifische Verbrauch in g/kWh? | 225 | g/kWh | 1 || be = B / P = 18000 g/h : 80 kW >> Verbrauch in g/h durch Leistung in kW

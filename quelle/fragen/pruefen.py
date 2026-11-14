@@ -78,7 +78,7 @@ def load_all(folder):
 if __name__ == '__main__':
     folder = os.path.dirname(os.path.abspath(__file__))
     qs = load_all(folder)
-    seen = collections.Counter(q['text'] for q in qs)
+    seen = collections.Counter((q['world'], q['text']) for q in qs)
     for t, c in seen.items():
         if c > 1:
             print('DOPPELT:', t)
