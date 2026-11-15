@@ -14,6 +14,13 @@ src = os.path.join(here, 'werkstatt-quest.html')
 s = open(src, encoding='utf-8').read()
 a, b = s.index('/*FILE_Q_START*/'), s.index('/*FILE_Q_END*/')
 s = s[:a] + '/*FILE_Q_START*/\nconst FILE_Q=' + json.dumps(qs, ensure_ascii=False, separators=(',', ':')) + ';\n' + s[b:]
+# Online-Speicher (Adresse und öffentlicher Schlüssel) aus cloud/cloud.json einsetzen
+import datetime
+cfgp = os.path.join(here, 'cloud', 'cloud.json')
+cfg = json.load(open(cfgp, encoding='utf-8')) if os.path.exists(cfgp) else {}
+a, b = s.index('/*CLOUD_START*/'), s.index('/*CLOUD_END*/')
+s = s[:a] + '/*CLOUD_START*/' + json.dumps({'url': cfg.get('url', ''), 'key': cfg.get('key', '')}) + s[b:]
+s = re.sub(r"APPV='[^']*'", "APPV='%s'" % datetime.date.today().isoformat(), s, count=1)
 open(src, 'w', encoding='utf-8').write(s)
 print(len(qs), 'Fragen aus Dateien eingesetzt')
 

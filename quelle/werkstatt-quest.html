@@ -297,22 +297,23 @@ function toast(t){const e=document.createElement('div');e.className='toast';e.te
 
 /* ---------- UI-Zustand ---------- */
 const JOIN=(()=>{try{const m=/^#duell-([A-Za-z]{4})$/.exec(location.hash);return m?m[1].toUpperCase():''}catch(e){return ''}})();
-let ui={joinCode:JOIN,view:S.current&&S.players[S.current]?(JOIN?'duel':'map'):'login',quiz:null,teacher:false,tTab:'fragen',fW:'kfz',fL:0,edit:null,game:null,armed:null};
+const JOINK=(()=>{try{const m=/^#klasse-([A-Za-z0-9]{5})$/.exec(location.hash);return m?m[1].toUpperCase():''}catch(e){return ''}})();
+let ui={joinCode:JOIN,joinK:JOINK,rkT:'klasse',view:S.current&&S.players[S.current]?(JOIN?'duel':JOINK?'ranking':'map'):'login',quiz:null,teacher:false,tTab:'fragen',fW:'kfz',fL:0,edit:null,game:null,armed:null};
 let stopGame=()=>{};
-function go(v){if(ui.duel&&v!=='duel')duelEnd();stopGame();stopGame=()=>{};ui.view=v;ui.armed=null;render();window.scrollTo(0,0)}
+function go(v){if(ui.duel&&v!=='duel')duelEnd();if(v==='feedback'&&ui.view!=='feedback')ui.fbFrom=ui.view;stopGame();stopGame=()=>{};ui.view=v;ui.armed=null;render();window.scrollTo(0,0);if(v==='ranking'&&P()&&P().grp)cloudSync(null,true)}
 
 function header(){
  if(ui.view==='login')return '';
- const p=P();const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(ui.view.startsWith('teacher')&&id==='teacherLogin')?'on':''}" onclick="go('${id}')">${t}</button>`;
+ const p=P();const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(id==='more'&&['share','feedback','teacherLogin'].includes(ui.view))?'on':''}" onclick="go('${id}')">${t}</button>`;
  return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div>
  ${p?`<span class="muted small">👤 ${esc(S.current)} · ${LEVELS[cls(p)]}</span><span class="tok">🪙 ${p.tokens}</span><span class="tok" style="background:#1d2b44;color:#9cc3ff">⭐ ${rankInfo(p.xp).r+1}</span>`:''}
- <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('share','📤 Teilen')}${n('support','💛 Unterstützen')}${n('ranking','🏆 Rangliste')}${n('teacherLogin','🔒 Lehrer')}<button class="ghost" onclick="logout()">Spieler wechseln</button></nav></div></header>`}
+ <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('ranking','🏆 Rangliste')}${n('support','💛 Spenden')}${n('more','☰ Mehr')}</nav></div></header>`}
 
 function render(){
  const v=ui.view;let h='';
  if(v==='login')h=vLogin();else if(v==='map')h=vMap();else if(v==='quiz')h=vQuiz();else if(v==='result')h=vResult();
  else if(v==='arcade')h=vArcade();else if(v==='ranking')h=vRanking();else if(v==='teacherLogin')h=ui.teacher?vTeacher():vTeacherLogin();
- else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();else if(v==='support')h=vSupport();
+ else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();else if(v==='support')h=vSupport();else if(v==='more')h=vMore();else if(v==='feedback')h=vFeedback();
  document.getElementById('app').innerHTML=header()+`<main class="wrap">${h}</main>`;
  if(v==='game')startGame();if(v==='share')shareQR('shqr','shqrbox',shareUrl());if(v==='support')shareQR('spqr','spqrbox',PAYPAL);
 }
@@ -330,7 +331,7 @@ function login(name){const quick=!!name;name=(name||document.getElementById('nm'
  const c=quick?'':document.getElementById('cl').value;
  if(!S.players[name]){if(c===''){toast('Bitte deine Klasse wählen');return}S.players[name]={tokens:0,earned:0,done:{},right:{},games:[],bests:{},created:Date.now(),cls:+c}}
  else if(c!=='')S.players[name].cls=+c;
- S.current=name;save();go(ui.joinCode?'duel':'map')}
+ S.current=name;save();go(ui.joinCode?'duel':ui.joinK?'ranking':'map')}
 function logout(){S.current=null;save();go('login')}
 
 /* ---------- Karte ---------- */
@@ -378,7 +379,7 @@ function vQuiz(){const z=ui.quiz,it=z.qs[z.i],q=it.q,w=WORLDS.find(x=>x.id===z.w
   if(q.type==='mc')sol=q.options[q.answer];else if(q.type==='tf')sol=q.answer?'Richtig':'Falsch';
   else if(q.type==='num')sol=fmt(q.answer)+' '+q.unit;else sol=q.pairs.map(p=>p[0]+' → '+p[1]).join(' · ');
   fb=`<div class="fb ${z.ok?'ok':'no'}"><b>${z.ok&&z.duel?'✅ Richtig! +2 🪙':z.ok?'✅ Richtig! +'+ptsFor(z.l,it.hinted)+' 🪙 · +'+xpFor(z.l,it.hinted)+' XP'+(it.hinted?' (mit Tipp)':''):'❌ Leider falsch.'}</b>${z.ok?'':`<div>Lösung: <b>${esc(sol)}</b></div>`}${q.explain?`<div class="muted small" style="margin-top:4px">💡 ${esc(q.explain)}</div>`:''}</div>
-  <div class="row" style="margin-top:12px"><button class="primary" onclick="nextQ()">${z.i+1<z.qs.length?'Weiter ▶':'Ergebnis anzeigen'}</button></div>`}
+  <div class="row" style="margin-top:12px"><button class="primary" onclick="nextQ()">${z.i+1<z.qs.length?'Weiter ▶':'Ergebnis anzeigen'}</button>${cloudOn()&&!z.duel?'<button class="ghost small" style="margin-left:auto" onclick="fbFrage()">🐞 Frage melden</button>':''}</div>`}
  return (z.duel&&ui.duel?`<div class="row"><b>⚔️ Duell – ${w.icon} ${lvls(z.w)[z.l].n}</b><span style="margin-left:auto"><b>⏱️ <span id="dt">${ui.duel.left}</span> s</b> <span class="muted small">· Frage ${z.i+1} / ${z.qs.length}</span></span></div><div id="dbar" style="background:var(--panel);border-radius:var(--radius);padding:10px 14px;margin:6px 0">${duelBarHtml()}</div>`:`<div class="row"><b>${w.icon} ${w.name} – ${lvls(z.w)[z.l].n}</b><span class="muted small" style="margin-left:auto">✔ ${rightN(P(),z.w,z.l)} / ${needFor(z.w,z.l)} · Frage ${z.i+1} / ${z.qs.length}</span></div>`)+`
  <div class="bar"><i style="width:${(z.i+(z.answered?1:0))/z.qs.length*100}%"></i></div>
  <div class="card"><span class="pill">${TYPES[q.type]}</span><div class="qtext">${esc(q.text)}</div>${hb}${body}${fb}</div>
@@ -388,7 +389,7 @@ function useHint(){const z=ui.quiz,it=z.qs[z.i],q=it.q;if(z.answered||it.hinted)
  if(!q.hint&&q.type==='mc')it.removed=shuffle(q.options.map((_,i)=>i).filter(i=>i!==q.answer)).slice(0,Math.min(2,q.options.length-2));
  if(!q.hint&&q.type==='match'){for(const k in it.m.pairs)if(it.m.pairs[k]===0)delete it.m.pairs[k];it.m.pairs[0]=0}
  render()}
-function settle(ok,pick){const z=ui.quiz,it=z.qs[z.i];z.answered=true;z.ok=ok;it.pick=pick;
+function settle(ok,pick){const z=ui.quiz,it=z.qs[z.i];z.answered=true;z.ok=ok;it.pick=pick;ui.lastQ=it.q.id+': '+String(it.q.text).slice(0,90);
  if(z.duel){const d=ui.duel;if(d){clearInterval(d.iv);d.me.ans[z.i]=ok;duelSend({t:'ans',i:z.i,ok})}if(ok)z.correct++;render();try{fx(ok)}catch(e){}return}
  if(ok){const pt=ptsFor(z.l,it.hinted),x=xpFor(z.l,it.hinted),pl=P(),k=z.w+'-'+z.l;pl.right=pl.right||{};const rr=pl.right[k]||(pl.right[k]=[]);if(!rr.includes(it.q.id))rr.push(it.q.id);z.correct++;z.earned+=pt;z.xp=(z.xp||0)+x;P().tokens+=pt;P().earned+=pt;addXP(x);save()}render();try{fx(ok)}catch(e){}}
 /* ---------- Antwort-Animationen ---------- */
@@ -430,7 +431,7 @@ function nextQ(){const z=ui.quiz;if(z.duel){duelNext();return}if(z.i+1<z.qs.leng
  const pct=Math.round(z.correct/z.qs.length*100),key=z.w+'-'+z.l,p=P(),d=p.done[key]||{best:0,passed:false};
  z.pct=pct;z.newPass=false;z.bonus=0;
  if(passed(z.w,z.l)&&!z.was){d.passed=true;z.newPass=true;z.bonus=PASS_BONUS;p.tokens+=PASS_BONUS;p.earned+=PASS_BONUS;z.xp=(z.xp||0)+PASS_XP;addXP(PASS_XP)}
- d.best=Math.max(d.best,pct);p.done[key]=d;save();go('result')}
+ d.best=Math.max(d.best,pct);p.done[key]=d;save();cloudSync(null,true);go('result')}
 function vResult(){const z=ui.quiz,L=lvls(z.w),ok=passed(z.w,z.l),hasNext=z.l+1<L.length,n=rightN(P(),z.w,z.l),nd=needFor(z.w,z.l);
  return `<div class="card" style="text-align:center"><div style="font-size:3rem">${z.newPass?'🏆':z.correct*2>=z.qs.length?'👍':'🔁'}</div>
  <h1>${z.correct} von ${z.qs.length} richtig</h1>
@@ -480,7 +481,7 @@ function duelNext(){const z=ui.quiz,d=ui.duel;if(!d){go('map');return}
  d.me.done=true;d.me.score=z.correct;d.me.time=Math.round((performance.now()-d.t0)/100)/10;d.status='done';duelSend({t:'done',score:d.me.score,time:d.me.time});ui.view='duel';render();window.scrollTo(0,0);duelFinish()}
 function duelFinish(){const d=ui.duel;if(!d||!d.me.done||!d.opp.done||d.res)return;
  const a=d.me.score,b=d.opp.score;d.res=a>b||(a===b&&d.me.time<d.opp.time)?'win':a===b&&d.me.time===d.opp.time?'draw':'lose';
- d.gain=a*2+(d.res==='win'?10:d.res==='draw'?5:0);d.xp=d.res==='win'?20:5;const p=P();p.tokens+=d.gain;p.earned+=d.gain;addXP(d.xp);p.duels=p.duels||{w:0,l:0,d:0};p.duels[d.res==='win'?'w':d.res==='lose'?'l':'d']++;save();if(ui.view==='duel')render()}
+ d.gain=a*2+(d.res==='win'?10:d.res==='draw'?5:0);d.xp=d.res==='win'?20:5;const p=P();p.tokens+=d.gain;p.earned+=d.gain;addXP(d.xp);p.duels=p.duels||{w:0,l:0,d:0};p.duels[d.res==='win'?'w':d.res==='lose'?'l':'d']++;save();cloudSync(null,true);if(ui.view==='duel')render()}
 function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button class="ghost" onclick="duelEnd();render()">Abbrechen</button>`;
  if(!d){const ws=visibleWorlds(),w=ws.some(x=>x.id===ui.dW)?ui.dW:ws[0].id,ls=lvls(w).map((L,l)=>({L,l})).filter(x=>levelOpen(w,x.l)&&qCount(w,x.l));
   return `<h1>⚔️ Quiz-Duell</h1><p class="muted">Tritt online gegen einen Mitschüler an: ${DUEL_N} gleiche Fragen, ${DUEL_T} Sekunden pro Frage, ohne Tipps. Es gewinnt, wer mehr richtig hat, bei Gleichstand der Schnellere. Jede richtige Antwort bringt 2 🪙, der Sieg zusätzlich 10 🪙 und 20 XP.</p>
@@ -501,6 +502,96 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
  <table style="max-width:360px;margin:0 auto"><tr><th></th><th>Richtig</th><th>Zeit</th></tr><tr><td><b>Du</b></td><td>${d.me.score} / ${d.n}</td><td>${fmt(d.me.time)} s</td></tr><tr><td><b>${esc(d.opp.name)}</b></td><td>${d.opp.score} / ${d.n}</td><td>${d.opp.left?'abgebrochen':fmt(d.opp.time)+' s'}</td></tr></table>
  <p>Verdient: <b class="price">${d.gain} 🪙</b> · <b style="color:#9cc3ff">+${d.xp} XP</b></p>
  <div class="row" style="justify-content:center;margin-top:10px"><button class="primary" onclick="duelEnd();render()">Neues Duell</button><button class="ghost" onclick="go('map')">Zur Karte</button></div></div>${bars}`}
+
+/* ---------- Online: Klassenrangliste, Wunsch- und Fehlerliste ---------- */
+const APP_ID='werkstatt-quest',APPV='2026-11-15';
+const CLOUD=/*CLOUD_START*/{"url": "", "key": ""}/*CLOUD_END*/;
+const cloudOn=()=>{try{return !!(CLOUD.url&&CLOUD.key)&&!/claude|anthropic/.test(location.hostname)}catch(e){return false}};
+const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Online-Kennwort ist falsch.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
+async function rpc(fn,args){let r;try{const h={apikey:CLOUD.key,'Content-Type':'application/json'};if(CLOUD.key.startsWith('eyJ'))h.Authorization='Bearer '+CLOUD.key;
+  r=await fetch(CLOUD.url.replace(/\/$/,'')+'/rest/v1/rpc/'+fn,{method:'POST',headers:h,body:JSON.stringify(args||{})})}catch(e){throw new Error('Keine Verbindung zum Server. Prüfe das Internet.')}
+ const t=await r.text();let d=null;try{d=t?JSON.parse(t):null}catch(e){}
+ if(!r.ok){const m=(d&&d.message)||'';throw new Error(CLOUD_MSG[m]||('Der Server meldet einen Fehler ('+(m||r.status)+').'))}return d}
+const rnd16=()=>{try{return [...crypto.getRandomValues(new Uint8Array(16))].map(b=>b.toString(16).padStart(2,'0')).join('')}catch(e){return Array.from({length:32},()=>Math.floor(Math.random()*16).toString(16)).join('')}};
+function pIds(p){if(!p.pid||!p.sec){const h=rnd16();p.pid=h.slice(0,8)+'-'+h.slice(8,12)+'-4'+h.slice(13,16)+'-8'+h.slice(17,20)+'-'+h.slice(20,32);p.sec=rnd16();save()}return p}
+let syncBusy=false;
+async function cloudSync(code,quiet){const p=P();if(!cloudOn()||!p)return;const c=String(code||(p.grp&&p.grp.code)||'').toUpperCase();if(!c||syncBusy)return;pIds(p);syncBusy=true;ui.bErr='';
+ try{const d=await rpc('wq_sync',{p_code:c,p_player:p.pid,p_secret:p.sec,p_name:S.current,p_cls:cls(p),p_xp:p.xp|0,p_levels:passedCount(p),p_wins:(p.duels||{}).w|0});
+  if(P()===p&&d&&d.code){p.grp={code:d.code,name:d.name};ui.board=d;ui.joinK='';save()}}
+ catch(e){ui.bErr=e.message;if(!quiet)toast(e.message)}
+ syncBusy=false;if(ui.view==='ranking')render()}
+function klasseJoin(){const c=(document.getElementById('kC').value||'').trim().toUpperCase();if(!/^[A-Z0-9]{5}$/.test(c)){toast('Der Klassencode hat 5 Zeichen');return}ui.joinK=c;cloudSync(c)}
+async function klasseLeave(){const p=P();if(ui.armed!=='leave'){ui.armed='leave';render();return}ui.armed=null;try{await rpc('wq_leave',{p_code:p.grp.code,p_player:p.pid,p_secret:p.sec})}catch(e){}delete p.grp;ui.board=null;save();toast('Du hast die Klasse verlassen');render()}
+const klasseInvite=g=>'Komm in unsere Klasse „'+g.name+'“ bei Werkstatt-Quest! 🏆 Code: '+g.code+' – hier öffnen: '+shareUrl()+'#klasse-'+g.code;
+function vRanking(){if(!cloudOn())return vRankLocal();
+ const t=`<div class="tabs"><button class="${ui.rkT==='klasse'?'on':''}" onclick="ui.rkT='klasse';render()">🏫 Meine Klasse</button><button class="${ui.rkT==='lokal'?'on':''}" onclick="ui.rkT='lokal';render()">📱 Dieses Gerät</button></div>`;
+ return ui.rkT==='lokal'?vRankLocal(t):vRankClass(t)}
+function vRankClass(t){const p=P(),g=p.grp,b=ui.board&&g&&ui.board.code===g.code?ui.board:null,err=ui.bErr?`<p style="color:#ff8a8d">${esc(ui.bErr)}</p>`:'';
+ if(!g)return `<h1>🏆 Rangliste</h1>${t}<div class="card" style="max-width:480px"><h2 style="margin-top:0">Klasse beitreten</h2>
+  <p class="muted small">Gib den Code ein, den du von deiner Lehrperson bekommen hast. Dein Vorname, deine Klasse und deine Punkte sind dann für alle sichtbar, die den Code kennen.</p>
+  <label>Klassencode</label><input id="kC" maxlength="5" value="${esc(ui.joinK||'')}" autocomplete="off" autocapitalize="characters" spellcheck="false" style="text-transform:uppercase;font-size:1.4rem;letter-spacing:.3em;max-width:200px" onkeydown="if(event.key==='Enter')klasseJoin()">
+  <div class="row" style="margin-top:12px"><button class="primary" onclick="klasseJoin()">Beitreten</button></div>${err}</div>`;
+ const rows=b?b.board:[],sum=rows.reduce((a,r)=>a+(r.xp|0),0),me=rows.findIndex(r=>r.id===p.pid);
+ return `<h1>🏆 Rangliste</h1>${t}
+ <div class="card"><div class="row"><b>🏫 ${esc(g.name)}</b><span class="pill">Code ${esc(g.code)}</span><span class="muted small" style="margin-left:auto">${b?rows.length+' Spieler':''}</span></div>
+ <div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:10px;text-align:center"><div><div class="big">${b?sum:'…'}</div><div class="muted small">XP der ganzen Klasse</div></div><div><div class="big">${b&&rows.length?Math.round(sum/rows.length):'…'}</div><div class="muted small">XP im Schnitt</div></div><div><div class="big">${me>=0?(me+1)+'.':'–'}</div><div class="muted small">dein Platz</div></div></div></div>
+ <div class="card">${b?`<table><tr><th>#</th><th>Name</th><th>⭐ Rang</th><th>XP</th><th>Level</th><th>⚔️</th></tr>${rows.map((r,i)=>`<tr ${r.id===p.pid?'style="background:#2b2410"':''}><td>${i<3?['🥇','🥈','🥉'][i]:i+1}</td><td>${esc(r.name)}</td><td class="small">${rankInfo(r.xp).name}</td><td><b>${r.xp|0}</b></td><td>${r.levels|0}</td><td>${r.wins|0}</td></tr>`).join('')}</table>`:(err||'<p class="muted">Die Rangliste wird geladen …</p>')}</div>
+ ${b?err:''}<div class="row"><button onclick="cloudSync()">🔄 Aktualisieren</button><a class="sharebtn wa" target="_blank" rel="noopener" href="${esc(waLink(klasseInvite(g)))}">🟢 Mitschüler einladen</a><button class="ghost ${ui.armed==='leave'?'danger':''}" style="margin-left:auto" onclick="klasseLeave()">${ui.armed==='leave'?'Wirklich verlassen?':'Klasse verlassen'}</button></div>`}
+
+/* ---------- Wunsch oder Fehler melden ---------- */
+function fbKind(k){ui.fb.kind=k;render()}
+function fbFrage(){ui.fb={kind:'fehler',text:'Frage '+ui.lastQ+'\n\nWas stimmt nicht: ',img:''};go('feedback')}
+function fbImg(inp){const f=inp.files&&inp.files[0];if(!f)return;if(!/^image\//.test(f.type)){toast('Bitte ein Bild auswählen');return}
+ const rd=new FileReader();rd.onload=()=>{const im=new Image();im.onload=()=>{let max=1280,q=.75,out='';
+   for(let n=0;n<6;n++){const k=Math.min(1,max/Math.max(im.width,im.height)),cv=document.createElement('canvas');cv.width=Math.max(1,Math.round(im.width*k));cv.height=Math.max(1,Math.round(im.height*k));
+    const x=cv.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,cv.width,cv.height);x.drawImage(im,0,0,cv.width,cv.height);out=cv.toDataURL('image/jpeg',q);if(out.length<600000)break;max=Math.round(max*.75);q=Math.max(.5,q-.08)}
+   if(out.length>=690000){toast('Das Bild ist zu groß');return}ui.fb.img=out;render()};im.onerror=()=>toast('Das Bild konnte nicht gelesen werden');im.src=rd.result};rd.readAsDataURL(f)}
+async function fbSend(){const f=ui.fb,p=P();if(!f||f.busy)return;if((f.text||'').trim().length<3){toast('Bitte beschreibe kurz, worum es geht.');return}f.busy=true;render();
+ try{await rpc('wq_feedback_add',{p_app:APP_ID,p_kind:f.kind,p_body:f.text,p_ctx:{version:APPV,bereich:ui.fbFrom||'',frage:ui.lastQ||'',klasse:LEVELS[cls(p)],bildschirm:innerWidth+'x'+innerHeight,geraet:String(navigator.userAgent).slice(0,160)},p_image:f.img||'',p_name:S.current,p_code:(p.grp&&p.grp.code)||''});
+  const back=ui.fbFrom==='quiz'&&ui.quiz&&!ui.quiz.duel?'quiz':'map';ui.fb=null;toast('Danke! Deine Meldung ist angekommen. ✔');go(back)}
+ catch(e){f.busy=false;toast(e.message);render()}}
+function vFeedback(){if(!cloudOn())return `<h1>💡 Wunsch oder Fehler</h1><div class="card"><p>Diese Funktion ist noch nicht eingerichtet.</p></div>`;
+ const f=ui.fb||(ui.fb={kind:'wunsch',text:'',img:''});
+ return `<h1>💡 Wunsch oder Fehler melden</h1><p class="muted">Sag, was fehlt oder nicht stimmt. Die Meldung geht an deine Lehrperson. Mitgeschickt werden dein Vorname, deine Klasse und in welchem Teil des Spiels du warst.</p>
+ <div class="card"><div class="tabs"><button class="${f.kind==='wunsch'?'on':''}" onclick="fbKind('wunsch')">💡 Wunsch</button><button class="${f.kind==='fehler'?'on':''}" onclick="fbKind('fehler')">🐞 Fehler</button></div>
+ <label>${f.kind==='fehler'?'Was ist passiert, und was hast du erwartet?':'Was wünschst du dir?'}</label><textarea id="fbT" maxlength="3000" style="min-height:130px" oninput="ui.fb.text=this.value">${esc(f.text)}</textarea>
+ <label>Bildschirmfoto oder Bild (freiwillig)</label><input id="fbF" type="file" accept="image/*" onchange="fbImg(this)">
+ ${f.img?`<div style="margin-top:8px"><img src="${esc(f.img)}" alt="Vorschau des Bildes" style="max-height:220px;border-radius:8px;border:1px solid #3a4456"><div><button class="ghost small" onclick="ui.fb.img='';render()">Bild entfernen</button></div></div>`:''}
+ <p class="muted small">Bildschirmfoto am Handy: Ein/Aus-Taste und Leiser gleichzeitig drücken. Am Computer: Windows + Umschalt + S.</p>
+ <div class="row" style="margin-top:12px"><button class="primary" ${f.busy?'disabled':''} onclick="fbSend()">${f.busy?'Wird gesendet …':'Absenden'}</button><button class="ghost" onclick="ui.fb=null;go(ui.fbFrom==='quiz'&&ui.quiz?'quiz':'map')">Abbrechen</button></div></div>`}
+function vMore(){const it=(act,i,t,d)=>`<button class="lv" onclick="${act}"><span style="font-size:1.6rem">${i}</span><span><b>${t}</b><br><span class="muted small">${d}</span></span></button>`;
+ return `<h1>☰ Mehr</h1><div class="card">${it("go('share')",'📤','Spiel teilen','Per WhatsApp, Link oder QR-Code')}${cloudOn()?it("go('feedback')",'💡','Wunsch oder Fehler melden','Auch mit Bildschirmfoto'):''}${it("go('support')",'💛','Spenden','Das Projekt freiwillig unterstützen')}${it("go('teacherLogin')",'🔒','Lehrer-Bereich','Fragen, Einstellungen, Klassen und Meldungen')}${it('logout()','👤','Spieler wechseln','Abmelden und anderen Spieler wählen')}</div>`}
+
+/* ---------- Lehrer: Klassen und Meldungen ---------- */
+const ADMK='werkstattQuest_admin';
+const adminKey=()=>{try{return localStorage.getItem(ADMK)||''}catch(e){return (ui.on&&ui.on.key)||''}};
+async function onlineLogin(){const k=document.getElementById('oK').value;const o=ui.on=ui.on||{};o.err='';try{await rpc('wq_admin_check',{p_admin:k});try{localStorage.setItem(ADMK,k)}catch(e){}ui.on={key:k};render()}catch(e){o.err=e.message;render()}}
+function onlineLogout(){try{localStorage.removeItem(ADMK)}catch(e){}ui.on={};render()}
+async function onlineLoad(){const o=ui.on,k=adminKey()||o.key;o.loading=true;try{const [c,f]=await Promise.all([rpc('wq_class_list',{p_admin:k,p_app:APP_ID}),rpc('wq_feedback_list',{p_admin:k,p_app:APP_ID})]);o.classes=c||[];o.fb=f||[];o.loaded=true;o.err=''}
+ catch(e){o.err=e.message;if(/Kennwort/.test(e.message)){try{localStorage.removeItem(ADMK)}catch(x){}o.key=''}o.loaded=false;o.failed=true}o.loading=false;if(ui.view==='teacherLogin')render()}
+async function onlineDo(fn,args,after){const o=ui.on;try{const r=await rpc(fn,Object.assign({p_admin:adminKey()||o.key},args));if(after)after(r);o.loaded=false;o.failed=false;render()}catch(e){toast(e.message)}}
+function klasseNeu(){const n=(document.getElementById('kN').value||'').trim();if(!n){toast('Bitte einen Namen für die Klasse eingeben');return}onlineDo('wq_class_create',{p_app:APP_ID,p_name:n},c=>toast('Klasse angelegt. Code: '+c))}
+function klasseWeg(c){if(ui.armed!=='kd:'+c){ui.armed='kd:'+c;render();return}ui.armed=null;if(ui.on.open&&ui.on.open.code===c)ui.on.open=null;onlineDo('wq_class_delete',{p_code:c})}
+async function klasseZeig(c){const o=ui.on;if(o.open&&o.open.code===c){o.open=null;render();return}try{o.open=await rpc('wq_board',{p_code:c});render()}catch(e){toast(e.message)}}
+function spielerWeg(c,id){if(ui.armed!=='rm:'+id){ui.armed='rm:'+id;render();return}ui.armed=null;onlineDo('wq_player_remove',{p_code:c,p_player:id},()=>{ui.on.open=null})}
+async function fbBild(id){const o=ui.on;o.img=o.img||{};if(o.img[id]){delete o.img[id];render();return}try{const d=await rpc('wq_feedback_image',{p_admin:adminKey()||o.key,p_id:id});if(typeof d==='string'&&/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(d)){o.img[id]=d;render()}else toast('Das Bild ist nicht lesbar')}catch(e){toast(e.message)}}
+function fbWeg(id){if(ui.armed!=='fd:'+id){ui.armed='fd:'+id;render();return}ui.armed=null;onlineDo('wq_feedback_delete',{p_id:id})}
+function vOnline(){if(!cloudOn())return `<div class="card"><h2 style="margin-top:0">Noch nicht eingerichtet</h2><p>Klassenrangliste und Wunsch- und Fehlerliste brauchen einen Online-Speicher. Sobald Adresse und Schlüssel des Speichers im Spiel hinterlegt sind, erscheinen hier die Klassen und die Meldungen.</p></div>`;
+ const o=ui.on=ui.on||{},k=adminKey()||o.key;
+ if(!k)return `<div class="card" style="max-width:440px"><h2 style="margin-top:0">Online-Kennwort</h2><p class="muted small">Das Kennwort, das beim Einrichten des Online-Speichers festgelegt wurde. Es wird nur auf diesem Gerät gespeichert.</p><input type="password" id="oK" onkeydown="if(event.key==='Enter')onlineLogin()"><div class="row" style="margin-top:12px"><button class="primary" onclick="onlineLogin()">Anmelden</button></div>${o.err?`<p style="color:#ff8a8d">${esc(o.err)}</p>`:''}</div>`;
+ if(!o.loaded){if(!o.loading&&!o.failed)onlineLoad();return `<div class="card"><p class="muted">${o.failed?esc(o.err||'Laden fehlgeschlagen.'):'Wird geladen …'}</p>${o.failed?'<button onclick="ui.on.failed=false;render()">Nochmal versuchen</button>':''}</div>`}
+ const dt=x=>{try{return new Date(x).toLocaleString('de-DE',{dateStyle:'short',timeStyle:'short'})}catch(e){return ''}};
+ const kl=o.classes.map(c=>`<div class="qitem" style="flex-wrap:wrap"><div class="t"><b>${esc(c.name)}</b> <span class="pill" style="color:var(--accent);font-weight:800;letter-spacing:.15em">${esc(c.code)}</span><div class="muted small">${c.players|0} Spieler · ${c.xp|0} XP zusammen · angelegt ${dt(c.created_at)}</div></div>
+  <button class="small" onclick="klasseZeig('${esc(c.code)}')">${o.open&&o.open.code===c.code?'Schließen':'Rangliste'}</button><a class="sharebtn wa" style="padding:.4rem .7rem" target="_blank" rel="noopener" href="${esc(waLink(klasseInvite(c)))}">Einladen</a><button class="small ${ui.armed==='kd:'+c.code?'danger':''}" onclick="klasseWeg('${esc(c.code)}')">${ui.armed==='kd:'+c.code?'Klasse wirklich löschen?':'🗑️'}</button>
+  ${o.open&&o.open.code===c.code?`<div style="width:100%"><p class="small muted" style="margin:.4rem 0">Einladungslink: ${esc(shareUrl()+'#klasse-'+c.code)}</p>${o.open.board.length?`<table><tr><th>#</th><th>Name</th><th>XP</th><th>Level</th><th>⚔️</th><th>zuletzt</th><th></th></tr>${o.open.board.map((r,i)=>`<tr><td>${i+1}</td><td>${esc(r.name)}</td><td><b>${r.xp|0}</b></td><td>${r.levels|0}</td><td>${r.wins|0}</td><td class="small">${dt(r.at)}</td><td><button class="small ${ui.armed==='rm:'+r.id?'danger':''}" onclick="spielerWeg('${esc(c.code)}','${esc(r.id)}')">${ui.armed==='rm:'+r.id?'Entfernen?':'✕'}</button></td></tr>`).join('')}</table>`:'<p class="muted small">Noch niemand beigetreten.</p>'}</div>`:''}</div>`).join('');
+ const fl=o.fb.map(f=>{const c=f.ctx||{};return `<div class="qitem" style="flex-wrap:wrap;${f.done?'opacity:.55':''}"><div class="t"><span class="pill">${f.kind==='fehler'?'🐞 Fehler':'💡 Wunsch'}</span><span class="muted small">${dt(f.created_at)} · ${esc(f.name||'ohne Namen')}${f.class_code?' · Klasse '+esc(f.class_code):''}</span>
+  <div style="white-space:pre-wrap;margin:.3rem 0">${esc(f.body)}</div><div class="muted small">${[c.bereich&&'Bereich: '+c.bereich,c.frage&&'Frage: '+c.frage,c.klasse,c.bildschirm,c.version&&'Version '+c.version].filter(Boolean).map(esc).join(' · ')}</div>
+  ${o.img&&o.img[f.id]?`<img src="${esc(o.img[f.id])}" alt="Bild zur Meldung" style="max-width:100%;border-radius:8px;margin-top:6px;border:1px solid #3a4456">`:''}</div>
+  <div class="row">${f.has_image?`<button class="small" onclick="fbBild(${f.id|0})">${o.img&&o.img[f.id]?'Bild schließen':'🖼️ Bild'}</button>`:''}<button class="small" onclick="onlineDo('wq_feedback_set',{p_id:${f.id|0},p_done:${!f.done}})">${f.done?'Wieder öffnen':'✔ Erledigt'}</button><button class="small ${ui.armed==='fd:'+f.id?'danger':''}" onclick="fbWeg(${f.id|0})">${ui.armed==='fd:'+f.id?'Wirklich löschen?':'🗑️'}</button></div></div>`}).join('');
+ return `<div class="card"><div class="row"><h2 style="margin:0">🏫 Klassen</h2><button class="ghost small" style="margin-left:auto" onclick="ui.on.loaded=false;ui.on.failed=false;render()">🔄 Neu laden</button><button class="ghost small" onclick="onlineLogout()">Online abmelden</button></div>
+ <p class="muted small">Lege für jede Klasse eine Gruppe an und gib den Code weiter. Die Schüler treten unter „Rangliste“ bei.</p>${kl||'<p class="muted">Noch keine Klasse angelegt.</p>'}
+ <div class="row" style="margin-top:12px"><input id="kN" maxlength="40" placeholder="Name der Klasse, z. B. 1. KFZ 2026/27" style="flex:1;min-width:180px" onkeydown="if(event.key==='Enter')klasseNeu()"><button class="primary" onclick="klasseNeu()">＋ Klasse anlegen</button></div></div>
+ <div class="card"><h2 style="margin-top:0">💡 Wünsche und Fehler <span class="muted small">(${o.fb.filter(f=>!f.done).length} offen)</span></h2>${fl||'<p class="muted">Noch keine Meldungen.</p>'}</div>`}
 
 /* ---------- Teilen ---------- */
 const SHARE_HOME='https://gregorpeer-maker.github.io/werkstatt-quest/';
@@ -726,19 +817,19 @@ function gDrag(el){el.innerHTML=`<canvas id="dc" width="320" height="300"></canv
  stopGame=()=>{T.forEach(clearTimeout);cancelAnimationFrame(raf);window.removeEventListener('keydown',kd)}}
 
 /* ---------- Rangliste ---------- */
-function vRanking(){if(ui.rk==null)ui.rk=cls(P());const f=ui.rk;
+function vRankLocal(pre){if(ui.rk==null)ui.rk=cls(P());const f=ui.rk;
  const tabs=`<div class="tabs"><button class="${f==='all'?'on':''}" onclick="ui.rk='all';render()">Alle</button>${LEVELS.map((L,l)=>`<button class="${f===l?'on':''}" onclick="ui.rk=${l};render()">${L}</button>`).join('')}</div>`;
  const list=Object.entries(S.players).filter(([n,p])=>f==='all'||cls(p)===f).map(([n,p])=>({n,c:cls(p),x:p.xp|0,lv:passedCount(p),g:p.games.length})).sort((a,b)=>b.x-a.x||b.lv-a.lv);
- return `<h1>🏆 Rangliste</h1><p class="muted small">Sortiert nach Erfahrungspunkten (XP). Gilt für dieses Gerät.</p>${tabs}
+ return `<h1>🏆 Rangliste</h1>${pre||''}<p class="muted small">Sortiert nach Erfahrungspunkten (XP). Gilt für dieses Gerät.</p>${tabs}
  <div class="card">${list.length?`<table><tr><th>#</th><th>Name</th><th>Klasse</th><th>⭐ Rang</th><th>XP</th><th>Level</th></tr>${list.map((r,i)=>`<tr ${r.n===S.current?'style="background:#2b2410"':''}><td>${i<3?['🥇','🥈','🥉'][i]:i+1}</td><td>${esc(r.n)}</td><td class="small">${LEVELS[r.c]}</td><td class="small">${rankInfo(r.x).name}</td><td><b>${r.x}</b></td><td>${r.lv}</td></tr>`).join('')}</table>`:'<p class="muted">Noch keine Spieler in dieser Klasse.</p>'}</div>`}
 
 /* ---------- Lehrer-Bereich ---------- */
 function vTeacherLogin(){return `<div class="card" style="max-width:400px"><h1>🔒 Lehrer-Bereich</h1><label>Passwort</label><input type="password" id="pw" onkeydown="if(event.key==='Enter')tLogin()"><div class="row" style="margin-top:12px"><button class="primary" onclick="tLogin()">Anmelden</button></div></div>`}
 function tLogin(){if(document.getElementById('pw').value===S.settings.pw){ui.teacher=true;render()}else toast('Falsches Passwort')}
 function vTeacher(){const t=ui.tTab,tb=(id,n)=>`<button class="${t===id?'on':''}" onclick="ui.tTab='${id}';ui.edit=null;ui.armed=null;render()">${n}</button>`;
- let b='';if(t==='fragen')b=ui.edit?vEdit():vQList();else if(t==='einst')b=vSettings();else if(t==='spieler')b=vPlayers();else b=vExport();
+ let b='';if(t==='fragen')b=ui.edit?vEdit():vQList();else if(t==='einst')b=vSettings();else if(t==='spieler')b=vPlayers();else if(t==='online')b=vOnline();else b=vExport();
  return `<div class="row"><h1>🔒 Lehrer-Bereich</h1><button class="ghost" style="margin-left:auto" onclick="ui.teacher=false;go('map')">Abmelden</button></div>
- <div class="tabs">${tb('fragen','📝 Fragen')}${tb('einst','⚙️ Einstellungen')}${tb('spieler','👥 Spieler')}${tb('export','💾 Sichern / Laden')}</div>${b}`}
+ <div class="tabs">${tb('fragen','📝 Fragen')}${tb('einst','⚙️ Einstellungen')}${tb('spieler','👥 Spieler')}${tb('export','💾 Sichern / Laden')}${tb('online','☁️ Klassen und Meldungen')}</div>${b}`}
 function vQList(){const qs=Q().filter(q=>q.world===ui.fW&&q.level===ui.fL);
  return `<div class="card"><div class="row"><select onchange="ui.fW=this.value;ui.fL=Math.min(ui.fL,lvls(ui.fW).length-1);render()" style="max-width:200px">${WORLDS.map(w=>`<option value="${w.id}" ${w.id===ui.fW?'selected':''}>${w.icon} ${w.name}</option>`).join('')}</select>
  <select onchange="ui.fL=+this.value;render()" style="max-width:260px">${lvOpts(ui.fW,ui.fL)}</select>
