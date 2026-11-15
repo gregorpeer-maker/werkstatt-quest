@@ -73,6 +73,10 @@ canvas{background:#2b2f36;border-radius:12px;max-width:100%;touch-action:none}
 .big{font-size:2rem;font-weight:800}
 .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--accent);color:#1b1300;font-weight:700;padding:.7rem 1.1rem;border-radius:12px;z-index:20;box-shadow:0 6px 20px rgba(0,0,0,.4)}
 .small{font-size:.85rem}
+.sharebtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;border:0;border-radius:10px;padding:.7rem 1rem;background:var(--panel2);color:var(--text);font-weight:600;cursor:pointer}
+.sharebtn.wa{background:#25d366;color:#06200f;font-weight:800}
+.sharebtn.big{display:flex;font-size:1.15rem;padding:1rem}
+.sharegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin:10px 0 4px}
 /* ---------- Neue Spiele ---------- */
 .blink{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:360px;margin:12px auto}
 .blink button{aspect-ratio:1;font-size:2.2rem;padding:0;background:#151a22;border:3px solid var(--c);opacity:.6;transition:none}
@@ -292,7 +296,8 @@ const passedCount=p=>WORLDS.reduce((s,w)=>s+lvls(w.id).filter((_,l)=>passedP(p,w
 function toast(t){const e=document.createElement('div');e.className='toast';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2200)}
 
 /* ---------- UI-Zustand ---------- */
-let ui={view:S.current&&S.players[S.current]?'map':'login',quiz:null,teacher:false,tTab:'fragen',fW:'kfz',fL:0,edit:null,game:null,armed:null};
+const JOIN=(()=>{try{const m=/^#duell-([A-Za-z]{4})$/.exec(location.hash);return m?m[1].toUpperCase():''}catch(e){return ''}})();
+let ui={joinCode:JOIN,view:S.current&&S.players[S.current]?(JOIN?'duel':'map'):'login',quiz:null,teacher:false,tTab:'fragen',fW:'kfz',fL:0,edit:null,game:null,armed:null};
 let stopGame=()=>{};
 function go(v){if(ui.duel&&v!=='duel')duelEnd();stopGame();stopGame=()=>{};ui.view=v;ui.armed=null;render();window.scrollTo(0,0)}
 
@@ -301,15 +306,15 @@ function header(){
  const p=P();const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(ui.view.startsWith('teacher')&&id==='teacherLogin')?'on':''}" onclick="go('${id}')">${t}</button>`;
  return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div>
  ${p?`<span class="muted small">👤 ${esc(S.current)} · ${LEVELS[cls(p)]}</span><span class="tok">🪙 ${p.tokens}</span><span class="tok" style="background:#1d2b44;color:#9cc3ff">⭐ ${rankInfo(p.xp).r+1}</span>`:''}
- <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('ranking','🏆 Rangliste')}${n('teacherLogin','🔒 Lehrer')}<button class="ghost" onclick="logout()">Spieler wechseln</button></nav></div></header>`}
+ <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('share','📤 Teilen')}${n('ranking','🏆 Rangliste')}${n('teacherLogin','🔒 Lehrer')}<button class="ghost" onclick="logout()">Spieler wechseln</button></nav></div></header>`}
 
 function render(){
  const v=ui.view;let h='';
  if(v==='login')h=vLogin();else if(v==='map')h=vMap();else if(v==='quiz')h=vQuiz();else if(v==='result')h=vResult();
  else if(v==='arcade')h=vArcade();else if(v==='ranking')h=vRanking();else if(v==='teacherLogin')h=ui.teacher?vTeacher():vTeacherLogin();
- else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();
+ else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();
  document.getElementById('app').innerHTML=header()+`<main class="wrap">${h}</main>`;
- if(v==='game')startGame();
+ if(v==='game')startGame();if(v==='share')shareQR();
 }
 
 /* ---------- Login ---------- */
@@ -325,7 +330,7 @@ function login(name){const quick=!!name;name=(name||document.getElementById('nm'
  const c=quick?'':document.getElementById('cl').value;
  if(!S.players[name]){if(c===''){toast('Bitte deine Klasse wählen');return}S.players[name]={tokens:0,earned:0,done:{},right:{},games:[],bests:{},created:Date.now(),cls:+c}}
  else if(c!=='')S.players[name].cls=+c;
- S.current=name;save();go('map')}
+ S.current=name;save();go(ui.joinCode?'duel':'map')}
 function logout(){S.current=null;save();go('login')}
 
 /* ---------- Karte ---------- */
@@ -483,11 +488,12 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
   <div class="grid g2"><div class="card"><h2 style="margin-top:0">Duell erstellen</h2><label>Themenwelt</label><select id="dW" onchange="ui.dW=this.value;render()">${ws.map(x=>`<option value="${x.id}" ${x.id===w?'selected':''}>${x.icon} ${x.name}</option>`).join('')}</select>
   <label>Level (nur deine offenen Level)</label><select id="dL">${ls.map(x=>`<option value="${x.l}">${esc(x.L.n)} – ${esc(x.L.t)}</option>`).join('')}</select>
   <div class="row" style="margin-top:12px"><button class="primary" ${ls.length?'':'disabled'} onclick="duelHost()">Code erzeugen</button></div></div>
-  <div class="card"><h2 style="margin-top:0">Duell beitreten</h2><label>Code deines Gegners</label><input id="dC" maxlength="4" autocomplete="off" autocapitalize="characters" spellcheck="false" style="text-transform:uppercase;font-size:1.4rem;letter-spacing:.3em;max-width:180px" onkeydown="if(event.key==='Enter')duelJoin()">
+  <div class="card"><h2 style="margin-top:0">Duell beitreten</h2><label>Code deines Gegners</label><input id="dC" maxlength="4" value="${esc(ui.joinCode||'')}" autocomplete="off" autocapitalize="characters" spellcheck="false" style="text-transform:uppercase;font-size:1.4rem;letter-spacing:.3em;max-width:180px" onkeydown="if(event.key==='Enter')duelJoin()">
   <div class="row" style="margin-top:12px"><button class="primary" onclick="duelJoin()">Beitreten</button></div></div></div>`}
  if(d.status==='err')return `<h1>⚔️ Quiz-Duell</h1><div class="card"><p><b>Das hat nicht geklappt.</b></p><p>${esc(d.msg)}</p><button class="primary" onclick="duelEnd();render()">Zurück</button></div>`;
  if(d.status==='load')return `<h1>⚔️ Quiz-Duell</h1><div class="card" style="text-align:center"><p class="big">⏳</p><p>${d.role==='host'?'Das Duell wird vorbereitet …':'Verbindung zu <b>'+esc(d.code)+'</b> wird aufgebaut …'}</p>${back}</div>`;
- if(d.status==='wait')return `<h1>⚔️ Quiz-Duell</h1><div class="card" style="text-align:center"><p>Gib deinem Gegner diesen Code. Er wählt „Duell beitreten“.</p><p class="big" style="letter-spacing:.3em;color:var(--accent);font-size:3rem;margin:.3rem 0">${esc(d.code)}</p><p class="muted small">${WORLDS.find(x=>x.id===d.w).name} · ${esc(lvls(d.w)[d.l].n)} · Das Duell startet, sobald dein Gegner beitritt.</p>${back}</div>`;
+ if(d.status==='wait')return `<h1>⚔️ Quiz-Duell</h1><div class="card" style="text-align:center"><p>Gib deinem Gegner diesen Code. Er wählt „Duell beitreten“.</p><p class="big" style="letter-spacing:.3em;color:var(--accent);font-size:3rem;margin:.3rem 0">${esc(d.code)}</p><p class="muted small">${WORLDS.find(x=>x.id===d.w).name} · ${esc(lvls(d.w)[d.l].n)} · Das Duell startet, sobald dein Gegner beitritt.</p>
+ <div class="row" style="justify-content:center;margin-bottom:10px"><a class="sharebtn wa" target="_blank" rel="noopener" href="${esc(waLink(duelInvite(d.code)))}">🟢 Code per WhatsApp schicken</a><button onclick="shareMore(duelInvite('${d.code}'))">Andere App …</button></div>${back}</div>`;
  const bars=`<div class="card" style="padding:10px 14px">${duelBarHtml()}</div>`;
  if(!d.res)return `<h1>⚔️ Quiz-Duell</h1><div class="card" style="text-align:center"><p class="big">${d.me.score} von ${d.n} richtig</p><p>Du bist fertig. Warte auf <b>${esc(d.opp.name)}</b> …</p></div><div id="dbar">${bars}</div>${back}`;
  return `<h1>⚔️ Quiz-Duell</h1><div class="card" style="text-align:center"><div style="font-size:3rem">${d.res==='win'?'🏆':d.res==='draw'?'🤝':'💪'}</div>
@@ -495,6 +501,30 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
  <table style="max-width:360px;margin:0 auto"><tr><th></th><th>Richtig</th><th>Zeit</th></tr><tr><td><b>Du</b></td><td>${d.me.score} / ${d.n}</td><td>${fmt(d.me.time)} s</td></tr><tr><td><b>${esc(d.opp.name)}</b></td><td>${d.opp.score} / ${d.n}</td><td>${d.opp.left?'abgebrochen':fmt(d.opp.time)+' s'}</td></tr></table>
  <p>Verdient: <b class="price">${d.gain} 🪙</b> · <b style="color:#9cc3ff">+${d.xp} XP</b></p>
  <div class="row" style="justify-content:center;margin-top:10px"><button class="primary" onclick="duelEnd();render()">Neues Duell</button><button class="ghost" onclick="go('map')">Zur Karte</button></div></div>${bars}`}
+
+/* ---------- Teilen ---------- */
+const SHARE_HOME='https://gregorpeer-maker.github.io/werkstatt-quest/';
+const shareUrl=()=>{try{const h=location.hostname;if(location.protocol==='https:'&&h&&!/claude|anthropic|localhost/.test(h))return location.origin+location.pathname.replace(/index\.html$/,'')}catch(e){}return SHARE_HOME};
+const shareText=()=>'Probier Werkstatt-Quest aus: ein Lernquiz für KFZ-Technik, Elektrotechnik und Fachrechnen mit Spielhalle und Quiz-Duell. 🛠️ '+shareUrl();
+const duelInvite=code=>'Tritt meinem Quiz-Duell in Werkstatt-Quest bei! ⚔️ Code: '+code+' – hier öffnen: '+shareUrl()+'#duell-'+code;
+const waLink=t=>'https://wa.me/?text='+encodeURIComponent(t);
+function shareCopy(t){const done=()=>toast('Kopiert ✔'),fb=()=>{const e=document.getElementById('shl');if(e){e.focus();e.select();toast('Link markiert, bitte kopieren')}};
+ try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}}
+function shareMore(t){if(navigator.share){navigator.share({title:'Werkstatt-Quest',text:t}).catch(()=>{})}else shareCopy(t)}
+function shareQR(){const el=document.getElementById('shqr');if(!el)return;const draw=()=>{try{const q=qrcode(0,'M');q.addData(shareUrl());q.make();el.innerHTML=q.createSvgTag({cellSize:5,margin:3});const sv=el.querySelector('svg');if(sv){sv.style.cssText='width:min(240px,70vw);height:auto;border-radius:10px;display:block;margin:0 auto'}document.getElementById('shqrbox').hidden=false}catch(e){}};
+ if(window.qrcode)return draw();const sc=document.createElement('script');sc.src='qrcode.js';sc.onload=draw;document.head.appendChild(sc)}
+function vShare(){const u=shareUrl(),t=shareText(),e=encodeURIComponent;
+ return `<h1>📤 Spiel teilen</h1><p class="muted">Schick deinen Freunden den Link zum Spiel. Jeder spielt mit seinem eigenen Spielstand auf seinem Gerät.</p>
+ <div class="card"><a class="sharebtn wa big" target="_blank" rel="noopener" href="${esc(waLink(t))}">🟢 Per WhatsApp teilen</a>
+ <div class="sharegrid">
+ <a class="sharebtn" target="_blank" rel="noopener" href="https://t.me/share/url?url=${e(u)}&text=${e('Probier Werkstatt-Quest aus: Lernquiz mit Spielhalle und Quiz-Duell 🛠️')}">✈️ Telegram</a>
+ <a class="sharebtn" href="sms:?&body=${e(t)}">💬 SMS</a>
+ <a class="sharebtn" href="mailto:?subject=${e('Werkstatt-Quest')}&body=${e(t)}">✉️ E-Mail</a>
+ <a class="sharebtn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${e(u)}">📘 Facebook</a>
+ ${navigator.share?`<button class="sharebtn" onclick="shareMore(shareText())">📲 Weitere Apps …</button>`:''}
+ </div>
+ <label>Link zum Spiel</label><div class="row"><input id="shl" readonly value="${esc(u)}" style="flex:1;min-width:0" onfocus="this.select()"><button class="primary" onclick="shareCopy(shareUrl())">📋 Kopieren</button></div></div>
+ <div class="card" id="shqrbox" hidden style="text-align:center"><h2 style="margin-top:0">QR-Code</h2><p class="muted small">Zum Abscannen direkt vom Bildschirm, zum Beispiel in der Klasse.</p><div id="shqr"></div></div>`}
 
 /* ---------- Spielhalle ---------- */
 function vArcade(){const p=P();
