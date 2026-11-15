@@ -314,15 +314,15 @@ function header(){
  const p=P();const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(ui.view.startsWith('teacher')&&id==='teacherLogin')?'on':''}" onclick="go('${id}')">${t}</button>`;
  return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div>
  ${p?`<span class="muted small">👤 ${esc(S.current)} · ${LEVELS[cls(p)]}</span><span class="tok">🪙 ${p.tokens}</span><span class="tok" style="background:#1d2b44;color:#9cc3ff">⭐ ${rankInfo(p.xp).r+1}</span>`:''}
- <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('share','📤 Teilen')}${n('ranking','🏆 Rangliste')}${n('teacherLogin','🔒 Lehrer')}<button class="ghost" onclick="logout()">Spieler wechseln</button></nav></div></header>`}
+ <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('share','📤 Teilen')}${n('support','💛 Unterstützen')}${n('ranking','🏆 Rangliste')}${n('teacherLogin','🔒 Lehrer')}<button class="ghost" onclick="logout()">Spieler wechseln</button></nav></div></header>`}
 
 function render(){
  const v=ui.view;let h='';
  if(v==='login')h=vLogin();else if(v==='map')h=vMap();else if(v==='quiz')h=vQuiz();else if(v==='result')h=vResult();
  else if(v==='arcade')h=vArcade();else if(v==='ranking')h=vRanking();else if(v==='teacherLogin')h=ui.teacher?vTeacher():vTeacherLogin();
- else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();
+ else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();else if(v==='support')h=vSupport();
  document.getElementById('app').innerHTML=header()+`<main class="wrap">${h}</main>`;
- if(v==='game')startGame();if(v==='share')shareQR();
+ if(v==='game')startGame();if(v==='share')shareQR('shqr','shqrbox',shareUrl());if(v==='support')shareQR('spqr','spqrbox',PAYPAL);
 }
 
 /* ---------- Login ---------- */
@@ -519,8 +519,16 @@ const waLink=t=>'https://wa.me/?text='+encodeURIComponent(t);
 function shareCopy(t){const done=()=>toast('Kopiert ✔'),fb=()=>{const e=document.getElementById('shl');if(e){e.focus();e.select();toast('Link markiert, bitte kopieren')}};
  try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}}
 function shareMore(t){if(navigator.share){navigator.share({title:'Werkstatt-Quest',text:t}).catch(()=>{})}else shareCopy(t)}
-function shareQR(){const el=document.getElementById('shqr');if(!el)return;const draw=()=>{try{const q=qrcode(0,'M');q.addData(shareUrl());q.make();el.innerHTML=q.createSvgTag({cellSize:5,margin:3});const sv=el.querySelector('svg');if(sv){sv.style.cssText='width:min(240px,70vw);height:auto;border-radius:10px;display:block;margin:0 auto'}document.getElementById('shqrbox').hidden=false}catch(e){}};
+function shareQR(id,box,txt){const el=document.getElementById(id);if(!el)return;const draw=()=>{try{const q=qrcode(0,'M');q.addData(txt);q.make();el.innerHTML=q.createSvgTag({cellSize:5,margin:3});const sv=el.querySelector('svg');if(sv){sv.style.cssText='width:min(240px,70vw);height:auto;border-radius:10px;display:block;margin:0 auto'}document.getElementById(box).hidden=false}catch(e){}};
  if(window.qrcode)return draw();const sc=document.createElement('script');sc.src='qrcode.js';sc.onload=draw;document.head.appendChild(sc)}
+const PAYPAL='https://www.paypal.com/qrcodes/p2pqrc/8E7H69NDDZX5U';
+function vSupport(){return `<h1>💛 Projekt unterstützen</h1>
+ <div class="card"><p>Werkstatt-Quest ist kostenlos, ohne Werbung und ohne Anmeldung. Das Spiel entsteht in der Freizeit.</p>
+ <p>Wenn du erwachsen bist und die Weiterentwicklung unterstützen möchtest, freut sich der Entwickler über einen freiwilligen Beitrag. Zum Spielen ist er nicht nötig: Es gibt dafür keine Token und keine Vorteile im Spiel.</p>
+ <a class="sharebtn big" style="background:#ffc439;color:#111;font-weight:800" target="_blank" rel="noopener" href="${PAYPAL}">💛 Mit PayPal unterstützen</a>
+ <p class="muted small" style="margin:10px 0 0">Der Knopf öffnet PayPal. Dort siehst du den Empfänger und legst den Betrag selbst fest.</p></div>
+ <div class="card" id="spqrbox" hidden style="text-align:center"><h2 style="margin-top:0">Am Computer?</h2><p class="muted small">Scanne den Code mit der Kamera oder der PayPal-App auf dem Handy.</p><div id="spqr"></div></div>
+ <div class="card"><h2 style="margin-top:0">Anders helfen</h2><p style="margin-bottom:10px">Am meisten hilft es, wenn du das Spiel weitergibst.</p><button class="primary" onclick="go('share')">📤 Spiel teilen</button></div>`}
 function vShare(){const u=shareUrl(),t=shareText(),e=encodeURIComponent;
  return `<h1>📤 Spiel teilen</h1><p class="muted">Schick deinen Freunden den Link zum Spiel. Jeder spielt mit seinem eigenen Spielstand auf seinem Gerät.</p>
  <div class="card"><a class="sharebtn wa big" target="_blank" rel="noopener" href="${esc(waLink(t))}">🟢 Per WhatsApp teilen</a>
