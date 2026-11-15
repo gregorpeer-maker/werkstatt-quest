@@ -1,0 +1,105 @@
+# Italienisch Level 1 – erzeugt von gen_sprache.py aus vokabeln.txt und it_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Guten Morgen“ auf Italienisch? | Buongiorno | Buonasera | Buonanotte | Arrivederci
+M Was bedeutet „Per favore“? | Bitte | Danke | Entschuldigung | Gern geschehen
+M Was heißt „Ich verstehe nicht“? | Non capisco | Non lo so | Non posso | Non voglio
+M Was bedeutet „Dov'è il martello?“ | Wo ist der Hammer? | Wem gehört der Hammer? | Was kostet der Hammer? | Wer hat den Hammer?
+M Was heißt „Können Sie mir helfen?“ | Mi può aiutare? | Mi può chiamare? | Mi può pagare? | Mi può aspettare?
+M Was bedeutet „Attenzione!“ | Achtung! | Wartung! | Anmeldung! | Ordnung!
+R „Grazie“ heißt „Danke“.
+F „Domani“ heißt „heute“. || „Domani“ heißt „morgen“, „oggi“ heißt „heute“.
+# --- Deutsch → Italienisch
+M Was heißt „die Werkstatt“ auf Italienisch? | l'officina | il capo | l'ufficio | il cliente
+M Was heißt „der Mechaniker“ auf Italienisch? | il meccanico | il banco da lavoro | il magazzino | il ponte sollevatore
+M Was heißt „der Lehrling“ auf Italienisch? | l'apprendista | l'ufficio | il ponte sollevatore | l'officina
+M Was heißt „der Chef“ auf Italienisch? | il capo | il ponte sollevatore | il cliente | il meccanico
+M Was heißt „der Kunde“ auf Italienisch? | il cliente | il banco da lavoro | il magazzino | l'ufficio
+M Was heißt „die Hebebühne“ auf Italienisch? | il ponte sollevatore | il posto di lavoro | il cliente | il magazzino
+M Was heißt „die Werkbank“ auf Italienisch? | il banco da lavoro | il meccanico | l'apprendista | l'officina
+M Was heißt „das Lager“ auf Italienisch? | il magazzino | l'apprendista | il capo | il meccanico
+M Was heißt „das Büro“ auf Italienisch? | l'ufficio | il banco da lavoro | l'apprendista | il cliente
+M Was heißt „der Arbeitsplatz“ auf Italienisch? | il posto di lavoro | il capo | il cliente | il ponte sollevatore
+M Was heißt „der Hammer“ auf Italienisch? | il martello | la lima | il trapano | la punta da trapano
+M Was heißt „der Schraubendreher“ auf Italienisch? | il cacciavite | la sega | la vite | la punta da trapano
+M Was heißt „die Zange“ auf Italienisch? | la pinza | la rondella | il cric | il trapano
+M Was heißt „der Schraubenschlüssel“ auf Italienisch? | la chiave | il martello | la vite | il calibro
+M Was heißt „der Drehmomentschlüssel“ auf Italienisch? | la chiave dinamometrica | la rondella | la sega | il cacciavite
+M Was heißt „die Säge“ auf Italienisch? | la sega | la chiave | la chiave dinamometrica | il cric
+M Was heißt „die Feile“ auf Italienisch? | la lima | la rondella | il dado | il calibro
+M Was heißt „der Bohrer“ auf Italienisch? | la punta da trapano | il martello | il dado | il cacciavite
+M Was heißt „die Bohrmaschine“ auf Italienisch? | il trapano | il cacciavite | il dado | il calibro
+M Was heißt „der Wagenheber“ auf Italienisch? | il cric | il dado | il cacciavite | la lima
+M Was heißt „der Messschieber“ auf Italienisch? | il calibro | il cric | la vite | il dado
+M Was heißt „die Schraube“ auf Italienisch? | la vite | il dado | la punta da trapano | la pinza
+M Was heißt „die Mutter“ auf Italienisch? | il dado | la chiave | la rondella | la pinza
+M Was heißt „die Unterlegscheibe“ auf Italienisch? | la rondella | la chiave | il calibro | il cacciavite
+M Was heißt „das Auto“ auf Italienisch? | la macchina | il faro | la ruota | il paraurti
+M Was heißt „das Rad“ auf Italienisch? | la ruota | il parabrezza | lo specchietto | il paraurti
+M Was heißt „der Reifen“ auf Italienisch? | lo pneumatico | il faro | la portiera | il cofano
+M Was heißt „die Autotür“ auf Italienisch? | la portiera | il faro | il bagagliaio | la ruota
+M Was heißt „die Motorhaube“ auf Italienisch? | il cofano | il faro | il bagagliaio | la macchina
+M Was heißt „der Kofferraum“ auf Italienisch? | il bagagliaio | la macchina | il paraurti | il cofano
+M Was heißt „die Windschutzscheibe“ auf Italienisch? | il parabrezza | il tergicristallo | la ruota | la portiera
+M Was heißt „der Scheinwerfer“ auf Italienisch? | il faro | la targa | il bagagliaio | il tergicristallo
+M Was heißt „der Außenspiegel“ auf Italienisch? | lo specchietto | lo pneumatico | la ruota | la macchina
+M Was heißt „die Stoßstange“ auf Italienisch? | il paraurti | lo pneumatico | il tergicristallo | la macchina
+M Was heißt „das Kennzeichen“ auf Italienisch? | la targa | lo specchietto | il parabrezza | lo pneumatico
+M Was heißt „der Scheibenwischer“ auf Italienisch? | il tergicristallo | la portiera | la targa | lo pneumatico
+M Was heißt „das Lenkrad“ auf Italienisch? | il volante | il pedale | il sedile | la leva del cambio
+M Was heißt „der Sitz“ auf Italienisch? | il sedile | la leva del cambio | il freno a mano | il cruscotto
+M Was heißt „der Sicherheitsgurt“ auf Italienisch? | la cintura di sicurezza | il sedile | il volante | il freno a mano
+M Was heißt „das Pedal“ auf Italienisch? | il pedale | la leva del cambio | il clacson | il cruscotto
+M Was heißt „der Schalthebel“ auf Italienisch? | la leva del cambio | il volante | il clacson | il pedale
+M Was heißt „die Handbremse“ auf Italienisch? | il freno a mano | il sedile | il pedale | il volante
+M Was heißt „das Armaturenbrett“ auf Italienisch? | il cruscotto | il freno a mano | il clacson | il volante
+M Was heißt „die Hupe“ auf Italienisch? | il clacson | il sedile | la leva del cambio | il freno a mano
+M Was heißt „die Schutzbrille“ auf Italienisch? | gli occhiali protettivi | l'uscita di emergenza | il pericolo | l'incidente
+M Was heißt „die Handschuhe“ auf Italienisch? | i guanti | il pericolo | gli occhiali protettivi | l'incidente
+M Was heißt „die Sicherheitsschuhe“ auf Italienisch? | le scarpe antinfortunistiche | l'estintore | il pericolo | la protezione per l'udito
+M Was heißt „der Gehörschutz“ auf Italienisch? | la protezione per l'udito | l'estintore | la cassetta di pronto soccorso | gli occhiali protettivi
+M Was heißt „der Feuerlöscher“ auf Italienisch? | l'estintore | gli occhiali protettivi | il pericolo | la protezione per l'udito
+M Was heißt „der Verbandskasten“ auf Italienisch? | la cassetta di pronto soccorso | la protezione per l'udito | l'incidente | gli occhiali protettivi
+M Was heißt „die Gefahr“ auf Italienisch? | il pericolo | i guanti | la cassetta di pronto soccorso | l'incidente
+M Was heißt „der Notausgang“ auf Italienisch? | l'uscita di emergenza | la protezione per l'udito | l'incidente | la cassetta di pronto soccorso
+M Was heißt „der Unfall“ auf Italienisch? | l'incidente | la cassetta di pronto soccorso | le scarpe antinfortunistiche | gli occhiali protettivi
+M Was heißt „sauber“ auf Italienisch? | pulito | a sinistra | davanti | a destra
+M Was heißt „schmutzig“ auf Italienisch? | sporco | a destra | pulito | rotto
+M Was heißt „kaputt“ auf Italienisch? | rotto | nuovo | sporco | a destra
+M Was heißt „neu“ auf Italienisch? | nuovo | a destra | a sinistra | sporco
+M Was heißt „alt“ auf Italienisch? | vecchio | sporco | nuovo | pulito
+M Was heißt „links“ auf Italienisch? | a sinistra | dietro | a destra | vecchio
+M Was heißt „rechts“ auf Italienisch? | a destra | dietro | rotto | pulito
+M Was heißt „vorne“ auf Italienisch? | davanti | a destra | nuovo | sporco
+M Was heißt „hinten“ auf Italienisch? | dietro | nuovo | rotto | a destra
+# --- Italienisch → Deutsch
+M Was bedeutet „l'officina“? | die Werkstatt | der Chef | das Lager | die Werkbank
+M Was bedeutet „il capo“? | der Chef | der Lehrling | der Kunde | der Arbeitsplatz
+M Was bedeutet „il banco da lavoro“? | die Werkbank | das Lager | der Lehrling | der Arbeitsplatz
+M Was bedeutet „il posto di lavoro“? | der Arbeitsplatz | die Hebebühne | das Büro | der Kunde
+M Was bedeutet „la pinza“? | die Zange | der Messschieber | die Säge | der Schraubenschlüssel
+M Was bedeutet „la sega“? | die Säge | der Messschieber | der Schraubenschlüssel | die Schraube
+M Was bedeutet „il trapano“? | die Bohrmaschine | der Schraubenschlüssel | der Hammer | die Feile
+M Was bedeutet „la vite“? | die Schraube | der Hammer | der Bohrer | die Unterlegscheibe
+M Was bedeutet „la macchina“? | das Auto | der Scheinwerfer | der Außenspiegel | das Kennzeichen
+M Was bedeutet „la portiera“? | die Autotür | die Motorhaube | der Scheibenwischer | das Auto
+M Was bedeutet „il faro“? | der Scheinwerfer | der Scheibenwischer | der Außenspiegel | das Auto
+M Was bedeutet „la targa“? | das Kennzeichen | die Windschutzscheibe | der Scheibenwischer | der Scheinwerfer
+M Was bedeutet „il sedile“? | der Sitz | die Handbremse | das Lenkrad | das Pedal
+M Was bedeutet „la leva del cambio“? | der Schalthebel | das Pedal | das Lenkrad | die Handbremse
+M Was bedeutet „il clacson“? | die Hupe | der Sitz | das Armaturenbrett | der Sicherheitsgurt
+M Was bedeutet „le scarpe antinfortunistiche“? | die Sicherheitsschuhe | der Feuerlöscher | die Schutzbrille | der Notausgang
+M Was bedeutet „la cassetta di pronto soccorso“? | der Verbandskasten | der Feuerlöscher | die Schutzbrille | der Unfall
+M Was bedeutet „l'incidente“? | der Unfall | der Feuerlöscher | die Schutzbrille | die Sicherheitsschuhe
+M Was bedeutet „rotto“? | kaputt | vorne | sauber | hinten
+M Was bedeutet „a sinistra“? | links | sauber | vorne | alt
+# --- Zuordnen
+Z Ordne zu: Werkstatt (Teil 1). | die Werkstatt = l'officina | der Mechaniker = il meccanico | der Lehrling = l'apprendista | der Chef = il capo
+Z Ordne zu: Werkstatt (Teil 2). | der Kunde = il cliente | die Hebebühne = il ponte sollevatore | die Werkbank = il banco da lavoro | das Lager = il magazzino
+Z Ordne zu: Werkzeuge (Teil 1). | der Hammer = il martello | der Schraubendreher = il cacciavite | die Zange = la pinza | der Schraubenschlüssel = la chiave
+Z Ordne zu: Werkzeuge (Teil 2). | der Drehmomentschlüssel = la chiave dinamometrica | die Säge = la sega | die Feile = la lima | der Bohrer = la punta da trapano
+Z Ordne zu: Werkzeuge (Teil 3). | die Bohrmaschine = il trapano | der Wagenheber = il cric | der Messschieber = il calibro | die Schraube = la vite
+Z Ordne zu: Autoteile außen (Teil 1). | das Auto = la macchina | das Rad = la ruota | der Reifen = lo pneumatico | die Autotür = la portiera
+Z Ordne zu: Autoteile außen (Teil 2). | die Motorhaube = il cofano | der Kofferraum = il bagagliaio | die Windschutzscheibe = il parabrezza | der Scheinwerfer = il faro
+Z Ordne zu: Autoteile außen (Teil 3). | der Außenspiegel = lo specchietto | die Stoßstange = il paraurti | das Kennzeichen = la targa | der Scheibenwischer = il tergicristallo
+Z Ordne zu: Autoteile innen (Teil 1). | das Lenkrad = il volante | der Sitz = il sedile | der Sicherheitsgurt = la cintura di sicurezza | das Pedal = il pedale
+Z Ordne zu: Autoteile innen (Teil 2). | der Schalthebel = la leva del cambio | die Handbremse = il freno a mano | das Armaturenbrett = il cruscotto | die Hupe = il clacson

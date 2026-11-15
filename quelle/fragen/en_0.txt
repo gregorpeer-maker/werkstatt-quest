@@ -1,0 +1,105 @@
+# Englisch Level 1 – erzeugt von gen_sprache.py aus vokabeln.txt und en_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Guten Morgen“ auf Englisch? | Good morning | Good evening | Good night | Goodbye
+M Was bedeutet „Excuse me“? | Entschuldigung | Bitte sehr | Danke | Auf Wiedersehen
+M Was heißt „Ich verstehe nicht“? | I don't understand | I don't know | I can't | I don't want to
+M Was bedeutet „Where is the hammer?“ | Wo ist der Hammer? | Wem gehört der Hammer? | Was kostet der Hammer? | Wer hat den Hammer?
+M Was heißt „Können Sie mir helfen?“ | Can you help me? | Can you call me? | Can you pay me? | Can you wait for me?
+M Was bedeutet „Watch out!“ | Achtung! | Schau hinaus! | Uhr ab! | Warte draußen!
+R „Thank you“ heißt „Danke“.
+F „Tomorrow“ heißt „heute“. || „Tomorrow“ heißt „morgen“, „today“ heißt „heute“.
+# --- Deutsch → Englisch
+M Was heißt „die Werkstatt“ auf Englisch? | workshop | mechanic | customer | workbench
+M Was heißt „der Mechaniker“ auf Englisch? | mechanic | vehicle lift | workshop | workbench
+M Was heißt „der Lehrling“ auf Englisch? | apprentice | workshop | office | boss
+M Was heißt „der Chef“ auf Englisch? | boss | customer | mechanic | apprentice
+M Was heißt „der Kunde“ auf Englisch? | customer | mechanic | office | boss
+M Was heißt „die Hebebühne“ auf Englisch? | vehicle lift | mechanic | apprentice | stockroom
+M Was heißt „die Werkbank“ auf Englisch? | workbench | apprentice | boss | office
+M Was heißt „das Lager“ auf Englisch? | stockroom | boss | vehicle lift | workbench
+M Was heißt „das Büro“ auf Englisch? | office | boss | workshop | customer
+M Was heißt „der Arbeitsplatz“ auf Englisch? | workplace | stockroom | customer | apprentice
+M Was heißt „der Hammer“ auf Englisch? | hammer | nut | file | saw
+M Was heißt „der Schraubendreher“ auf Englisch? | screwdriver | saw | nut | jack
+M Was heißt „die Zange“ auf Englisch? | pliers | spanner | jack | torque wrench
+M Was heißt „der Schraubenschlüssel“ auf Englisch? | spanner | screwdriver | hammer | drill
+M Was heißt „der Drehmomentschlüssel“ auf Englisch? | torque wrench | file | hammer | saw
+M Was heißt „die Säge“ auf Englisch? | saw | screwdriver | spanner | hammer
+M Was heißt „die Feile“ auf Englisch? | file | nut | drill bit | spanner
+M Was heißt „der Bohrer“ auf Englisch? | drill bit | hammer | spanner | jack
+M Was heißt „die Bohrmaschine“ auf Englisch? | drill | torque wrench | nut | file
+M Was heißt „der Wagenheber“ auf Englisch? | jack | washer | torque wrench | vernier caliper
+M Was heißt „der Messschieber“ auf Englisch? | vernier caliper | pliers | washer | drill bit
+M Was heißt „die Schraube“ auf Englisch? | screw | pliers | hammer | file
+M Was heißt „die Mutter“ auf Englisch? | nut | jack | drill | washer
+M Was heißt „die Unterlegscheibe“ auf Englisch? | washer | nut | hammer | screwdriver
+M Was heißt „das Auto“ auf Englisch? | car | wiper | tyre | wheel
+M Was heißt „das Rad“ auf Englisch? | wheel | wiper | tyre | headlight
+M Was heißt „der Reifen“ auf Englisch? | tyre | wiper | bonnet | bumper
+M Was heißt „die Autotür“ auf Englisch? | door | wheel | mirror | bonnet
+M Was heißt „die Motorhaube“ auf Englisch? | bonnet | headlight | bumper | car
+M Was heißt „der Kofferraum“ auf Englisch? | boot | mirror | car | number plate
+M Was heißt „die Windschutzscheibe“ auf Englisch? | windscreen | headlight | car | tyre
+M Was heißt „der Scheinwerfer“ auf Englisch? | headlight | car | tyre | mirror
+M Was heißt „der Außenspiegel“ auf Englisch? | mirror | tyre | headlight | wiper
+M Was heißt „die Stoßstange“ auf Englisch? | bumper | mirror | windscreen | tyre
+M Was heißt „das Kennzeichen“ auf Englisch? | number plate | tyre | car | mirror
+M Was heißt „der Scheibenwischer“ auf Englisch? | wiper | boot | number plate | windscreen
+M Was heißt „das Lenkrad“ auf Englisch? | steering wheel | seat belt | gear lever | dashboard
+M Was heißt „der Sitz“ auf Englisch? | seat | seat belt | pedal | gear lever
+M Was heißt „der Sicherheitsgurt“ auf Englisch? | seat belt | horn | gear lever | handbrake
+M Was heißt „das Pedal“ auf Englisch? | pedal | handbrake | dashboard | horn
+M Was heißt „der Schalthebel“ auf Englisch? | gear lever | steering wheel | horn | seat belt
+M Was heißt „die Handbremse“ auf Englisch? | handbrake | gear lever | seat belt | steering wheel
+M Was heißt „das Armaturenbrett“ auf Englisch? | dashboard | horn | seat belt | gear lever
+M Was heißt „die Hupe“ auf Englisch? | horn | seat belt | pedal | seat
+M Was heißt „die Schutzbrille“ auf Englisch? | safety goggles | fire extinguisher | accident | ear protection
+M Was heißt „die Handschuhe“ auf Englisch? | gloves | danger | first-aid kit | emergency exit
+M Was heißt „die Sicherheitsschuhe“ auf Englisch? | safety shoes | fire extinguisher | ear protection | accident
+M Was heißt „der Gehörschutz“ auf Englisch? | ear protection | emergency exit | fire extinguisher | gloves
+M Was heißt „der Feuerlöscher“ auf Englisch? | fire extinguisher | gloves | danger | first-aid kit
+M Was heißt „der Verbandskasten“ auf Englisch? | first-aid kit | fire extinguisher | gloves | emergency exit
+M Was heißt „die Gefahr“ auf Englisch? | danger | safety shoes | emergency exit | ear protection
+M Was heißt „der Notausgang“ auf Englisch? | emergency exit | accident | gloves | safety goggles
+M Was heißt „der Unfall“ auf Englisch? | accident | safety shoes | emergency exit | gloves
+M Was heißt „sauber“ auf Englisch? | clean | dirty | on the right | at the back
+M Was heißt „schmutzig“ auf Englisch? | dirty | old | broken | at the back
+M Was heißt „kaputt“ auf Englisch? | broken | dirty | at the front | on the right
+M Was heißt „neu“ auf Englisch? | new | old | at the back | on the left
+M Was heißt „alt“ auf Englisch? | old | broken | at the back | dirty
+M Was heißt „links“ auf Englisch? | on the left | at the back | old | dirty
+M Was heißt „rechts“ auf Englisch? | on the right | at the back | broken | at the front
+M Was heißt „vorne“ auf Englisch? | at the front | new | on the left | broken
+M Was heißt „hinten“ auf Englisch? | at the back | new | on the left | at the front
+# --- Englisch → Deutsch
+M Was bedeutet „workshop“? | die Werkstatt | der Mechaniker | der Chef | die Hebebühne
+M Was bedeutet „boss“? | der Chef | das Lager | die Werkbank | das Büro
+M Was bedeutet „workbench“? | die Werkbank | das Büro | der Mechaniker | der Kunde
+M Was bedeutet „workplace“? | der Arbeitsplatz | der Chef | der Mechaniker | das Lager
+M Was bedeutet „pliers“? | die Zange | die Säge | die Mutter | die Schraube
+M Was bedeutet „saw“? | die Säge | der Wagenheber | die Unterlegscheibe | die Schraube
+M Was bedeutet „drill“? | die Bohrmaschine | der Hammer | die Unterlegscheibe | die Mutter
+M Was bedeutet „screw“? | die Schraube | der Drehmomentschlüssel | der Schraubenschlüssel | der Bohrer
+M Was bedeutet „car“? | das Auto | der Reifen | die Motorhaube | die Stoßstange
+M Was bedeutet „door“? | die Autotür | die Windschutzscheibe | der Scheinwerfer | der Reifen
+M Was bedeutet „headlight“? | der Scheinwerfer | der Kofferraum | der Außenspiegel | das Rad
+M Was bedeutet „number plate“? | das Kennzeichen | die Windschutzscheibe | der Scheinwerfer | der Reifen
+M Was bedeutet „seat“? | der Sitz | das Pedal | der Sicherheitsgurt | das Armaturenbrett
+M Was bedeutet „gear lever“? | der Schalthebel | die Handbremse | das Armaturenbrett | der Sicherheitsgurt
+M Was bedeutet „horn“? | die Hupe | der Schalthebel | der Sicherheitsgurt | das Lenkrad
+M Was bedeutet „safety shoes“? | die Sicherheitsschuhe | die Gefahr | der Notausgang | der Gehörschutz
+M Was bedeutet „first-aid kit“? | der Verbandskasten | die Sicherheitsschuhe | die Handschuhe | der Feuerlöscher
+M Was bedeutet „accident“? | der Unfall | die Gefahr | die Handschuhe | der Gehörschutz
+M Was bedeutet „broken“? | kaputt | neu | schmutzig | alt
+M Was bedeutet „on the left“? | links | schmutzig | vorne | neu
+# --- Zuordnen
+Z Ordne zu: Werkstatt (Teil 1). | die Werkstatt = workshop | der Mechaniker = mechanic | der Lehrling = apprentice | der Chef = boss
+Z Ordne zu: Werkstatt (Teil 2). | der Kunde = customer | die Hebebühne = vehicle lift | die Werkbank = workbench | das Lager = stockroom
+Z Ordne zu: Werkzeuge (Teil 1). | der Hammer = hammer | der Schraubendreher = screwdriver | die Zange = pliers | der Schraubenschlüssel = spanner
+Z Ordne zu: Werkzeuge (Teil 2). | der Drehmomentschlüssel = torque wrench | die Säge = saw | die Feile = file | der Bohrer = drill bit
+Z Ordne zu: Werkzeuge (Teil 3). | die Bohrmaschine = drill | der Wagenheber = jack | der Messschieber = vernier caliper | die Schraube = screw
+Z Ordne zu: Autoteile außen (Teil 1). | das Auto = car | das Rad = wheel | der Reifen = tyre | die Autotür = door
+Z Ordne zu: Autoteile außen (Teil 2). | die Motorhaube = bonnet | der Kofferraum = boot | die Windschutzscheibe = windscreen | der Scheinwerfer = headlight
+Z Ordne zu: Autoteile außen (Teil 3). | der Außenspiegel = mirror | die Stoßstange = bumper | das Kennzeichen = number plate | der Scheibenwischer = wiper
+Z Ordne zu: Autoteile innen (Teil 1). | das Lenkrad = steering wheel | der Sitz = seat | der Sicherheitsgurt = seat belt | das Pedal = pedal
+Z Ordne zu: Autoteile innen (Teil 2). | der Schalthebel = gear lever | die Handbremse = handbrake | das Armaturenbrett = dashboard | die Hupe = horn

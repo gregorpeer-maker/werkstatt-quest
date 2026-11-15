@@ -1,0 +1,105 @@
+# Italienisch Level 4 – erzeugt von gen_sprache.py aus vokabeln.txt und it_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Die Kontrollleuchte ist an“? | La spia è accesa | La spia è spenta | La spia è rotta | La spia lampeggia
+M Was bedeutet „Togliere tensione“? | Spannungsfrei schalten | Spannung messen | Spannung erhöhen | Spannung anlegen
+M Was heißt „Der Partikelfilter ist verstopft“? | Il filtro antiparticolato è intasato | Il filtro antiparticolato è pulito | Il filtro antiparticolato è nuovo | Il filtro antiparticolato è smontato
+M Was bedeutet „La batteria si scarica di notte“? | Die Batterie entlädt sich über Nacht | Die Batterie lädt sich über Nacht | Die Batterie wird nachts getauscht | Die Batterie ist nachts kalt
+M Was heißt „Ich messe den Widerstand“? | Misuro la resistenza | Misuro la tensione | Misuro la corrente | Misuro la pressione
+M Was bedeutet „Il motore va in recovery“? | Der Motor geht in den Notlauf | Der Motor wird repariert | Der Motor läuft warm | Der Motor geht aus
+R „Pericolo alta tensione“ heißt „Gefahr Hochspannung“.
+F „Ricaricare“ heißt „entladen“. || „Ricaricare“ heißt „aufladen“.
+# --- Deutsch → Italienisch
+M Was heißt „die Spannung“ auf Italienisch? | la tensione | lo schema elettrico | il cortocircuito | la resistenza
+M Was heißt „der Strom“ auf Italienisch? | la corrente | lo schema elettrico | il relè | la resistenza
+M Was heißt „der Widerstand“ auf Italienisch? | la resistenza | il cortocircuito | il multimetro | la tensione
+M Was heißt „die Masse“ auf Italienisch? | la massa | la resistenza | il multimetro | il cablaggio
+M Was heißt „der Kurzschluss“ auf Italienisch? | il cortocircuito | il multimetro | l'interruttore | la massa
+M Was heißt „die Unterbrechung“ auf Italienisch? | l'interruzione | la corrente | il relè | la massa
+M Was heißt „das Relais“ auf Italienisch? | il relè | lo schema elettrico | il cortocircuito | il multimetro
+M Was heißt „der Schalter“ auf Italienisch? | l'interruttore | il cablaggio | la massa | il conduttore
+M Was heißt „der Schaltplan“ auf Italienisch? | lo schema elettrico | la resistenza | il conduttore | il relè
+M Was heißt „der Kabelbaum“ auf Italienisch? | il cablaggio | l'interruttore | l'interruzione | la corrente
+M Was heißt „das Multimeter“ auf Italienisch? | il multimetro | l'interruttore | la corrente | il cablaggio
+M Was heißt „die Leitung“ auf Italienisch? | il conduttore | lo schema elettrico | l'interruttore | il relè
+M Was heißt „das Elektroauto“ auf Italienisch? | l'auto elettrica | l'alta tensione | la colonnina di ricarica | il cavo di ricarica
+M Was heißt „das Hybridfahrzeug“ auf Italienisch? | il veicolo ibrido | il motore elettrico | l'auto elettrica | i guanti isolanti
+M Was heißt „die Hochspannung“ auf Italienisch? | l'alta tensione | il cavo di ricarica | i guanti isolanti | l'autonomia
+M Was heißt „die Ladestation“ auf Italienisch? | la colonnina di ricarica | l'isolamento | l'auto elettrica | il cavo di ricarica
+M Was heißt „das Ladekabel“ auf Italienisch? | il cavo di ricarica | i guanti isolanti | l'alta tensione | l'inverter
+M Was heißt „der Elektromotor“ auf Italienisch? | il motore elettrico | la colonnina di ricarica | il veicolo ibrido | i guanti isolanti
+M Was heißt „der Wechselrichter“ auf Italienisch? | l'inverter | l'alta tensione | il cavo di ricarica | i guanti isolanti
+M Was heißt „die Isolierung“ auf Italienisch? | l'isolamento | l'autonomia | il motore elettrico | il veicolo ibrido
+M Was heißt „die Reichweite“ auf Italienisch? | l'autonomia | l'auto elettrica | l'inverter | il motore elettrico
+M Was heißt „die isolierenden Handschuhe“ auf Italienisch? | i guanti isolanti | il cavo di ricarica | l'autonomia | l'isolamento
+M Was heißt „der Dieselmotor“ auf Italienisch? | il motore diesel | la candeletta | il turbocompressore | la pressione
+M Was heißt „der Injektor“ auf Italienisch? | l'iniettore | la pressione | il turbocompressore | l'intercooler
+M Was heißt „die Hochdruckpumpe“ auf Italienisch? | la pompa ad alta pressione | la pressione | il filtro del gasolio | la candeletta
+M Was heißt „der Turbolader“ auf Italienisch? | il turbocompressore | il motore diesel | il gasolio | la pompa ad alta pressione
+M Was heißt „der Ladeluftkühler“ auf Italienisch? | l'intercooler | la pressione | il filtro del gasolio | il gasolio
+M Was heißt „die Glühkerze“ auf Italienisch? | la candeletta | l'intercooler | il filtro del gasolio | il motore diesel
+M Was heißt „der Kraftstofffilter“ auf Italienisch? | il filtro del gasolio | la pompa ad alta pressione | l'iniettore | l'intercooler
+M Was heißt „der Dieselkraftstoff“ auf Italienisch? | il gasolio | l'intercooler | la candeletta | l'iniettore
+M Was heißt „der Druck“ auf Italienisch? | la pressione | l'intercooler | il filtro del gasolio | il turbocompressore
+M Was heißt „der Partikelfilter“ auf Italienisch? | il filtro antiparticolato | la rigenerazione | l'urea | gli ossidi di azoto
+M Was heißt „die Abgasrückführung“ auf Italienisch? | il ricircolo dei gas di scarico | il filtro antiparticolato | gli ossidi di azoto | la fuliggine
+M Was heißt „der Ruß“ auf Italienisch? | la fuliggine | la rigenerazione | l'urea | il ricircolo dei gas di scarico
+M Was heißt „die Stickoxide“ auf Italienisch? | gli ossidi di azoto | il filtro antiparticolato | il ricircolo dei gas di scarico | l'urea
+M Was heißt „die Regeneration“ auf Italienisch? | la rigenerazione | il ricircolo dei gas di scarico | la fuliggine | l'urea
+M Was heißt „der Harnstoff“ auf Italienisch? | l'urea | il ricircolo dei gas di scarico | il filtro antiparticolato | gli ossidi di azoto
+M Was heißt „das Starten“ auf Italienisch? | l'avviamento | il caricabatterie | la tensione di carica | l'assorbimento a riposo
+M Was heißt „das Vorglühen“ auf Italienisch? | il preriscaldamento | il caricabatterie | l'avviamento | il sistema start-stop
+M Was heißt „die Ladespannung“ auf Italienisch? | la tensione di carica | il caricabatterie | il preriscaldamento | il sistema start-stop
+M Was heißt „das Ladegerät“ auf Italienisch? | il caricabatterie | il sistema start-stop | la tensione di carica | il preriscaldamento
+M Was heißt „der Ruhestrom“ auf Italienisch? | l'assorbimento a riposo | il preriscaldamento | il caricabatterie | l'avviamento
+M Was heißt „das Start-Stopp-System“ auf Italienisch? | il sistema start-stop | la tensione di carica | il caricabatterie | l'avviamento
+M Was heißt „die Zentralverriegelung“ auf Italienisch? | la chiusura centralizzata | il sensore pioggia | l'alzacristalli | la linea dati
+M Was heißt „der Fensterheber“ auf Italienisch? | l'alzacristalli | il regolatore di velocità | la linea dati | l'airbag
+M Was heißt „die Wegfahrsperre“ auf Italienisch? | l'immobilizzatore | l'alzacristalli | la linea dati | il telecomando
+M Was heißt „der Airbag“ auf Italienisch? | l'airbag | l'immobilizzatore | il regolatore di velocità | il telecomando
+M Was heißt „der Tempomat“ auf Italienisch? | il regolatore di velocità | l'airbag | il sensore pioggia | il telecomando
+M Was heißt „der Regensensor“ auf Italienisch? | il sensore pioggia | l'alzacristalli | l'immobilizzatore | il telecomando
+M Was heißt „die Datenleitung“ auf Italienisch? | la linea dati | l'antifurto | l'immobilizzatore | l'airbag
+M Was heißt „das Netzwerk“ auf Italienisch? | la rete | l'immobilizzatore | il regolatore di velocità | l'alzacristalli
+M Was heißt „die Fernbedienung“ auf Italienisch? | il telecomando | la rete | il sensore pioggia | la chiusura centralizzata
+M Was heißt „die Alarmanlage“ auf Italienisch? | l'antifurto | l'alzacristalli | la chiusura centralizzata | l'immobilizzatore
+# --- Italienisch → Deutsch
+M Was bedeutet „la tensione“? | die Spannung | das Multimeter | der Widerstand | der Schalter
+M Was bedeutet „la corrente“? | der Strom | der Schaltplan | der Widerstand | die Masse
+M Was bedeutet „la massa“? | die Masse | die Unterbrechung | der Widerstand | der Schalter
+M Was bedeutet „l'interruzione“? | die Unterbrechung | das Multimeter | die Masse | der Kabelbaum
+M Was bedeutet „l'interruttore“? | der Schalter | der Kurzschluss | die Spannung | der Schaltplan
+M Was bedeutet „il cablaggio“? | der Kabelbaum | die Leitung | der Strom | der Kurzschluss
+M Was bedeutet „il multimetro“? | das Multimeter | das Relais | der Kurzschluss | die Spannung
+M Was bedeutet „l'auto elettrica“? | das Elektroauto | das Hybridfahrzeug | der Wechselrichter | die Reichweite
+M Was bedeutet „l'alta tensione“? | die Hochspannung | die Ladestation | das Hybridfahrzeug | der Wechselrichter
+M Was bedeutet „il cavo di ricarica“? | das Ladekabel | das Elektroauto | der Wechselrichter | die Hochspannung
+M Was bedeutet „l'inverter“? | der Wechselrichter | die isolierenden Handschuhe | das Elektroauto | der Elektromotor
+M Was bedeutet „l'autonomia“? | die Reichweite | die Hochspannung | der Wechselrichter | die Ladestation
+M Was bedeutet „i guanti isolanti“? | die isolierenden Handschuhe | die Reichweite | der Elektromotor | die Ladestation
+M Was bedeutet „l'iniettore“? | der Injektor | der Turbolader | die Hochdruckpumpe | der Ladeluftkühler
+M Was bedeutet „il turbocompressore“? | der Turbolader | die Hochdruckpumpe | der Injektor | die Glühkerze
+M Was bedeutet „la candeletta“? | die Glühkerze | der Injektor | der Ladeluftkühler | der Dieselmotor
+M Was bedeutet „il gasolio“? | der Dieselkraftstoff | der Ladeluftkühler | der Turbolader | der Dieselmotor
+M Was bedeutet „il filtro antiparticolato“? | der Partikelfilter | der Harnstoff | der Ruß | die Regeneration
+M Was bedeutet „il ricircolo dei gas di scarico“? | die Abgasrückführung | der Harnstoff | die Stickoxide | der Partikelfilter
+M Was bedeutet „gli ossidi di azoto“? | die Stickoxide | der Harnstoff | der Partikelfilter | der Ruß
+M Was bedeutet „l'urea“? | der Harnstoff | der Partikelfilter | der Ruß | die Abgasrückführung
+M Was bedeutet „il preriscaldamento“? | das Vorglühen | der Ruhestrom | das Starten | die Ladespannung
+M Was bedeutet „il caricabatterie“? | das Ladegerät | das Start-Stopp-System | die Ladespannung | das Starten
+M Was bedeutet „il sistema start-stop“? | das Start-Stopp-System | die Ladespannung | der Ruhestrom | das Starten
+M Was bedeutet „la chiusura centralizzata“? | die Zentralverriegelung | der Fensterheber | die Fernbedienung | der Regensensor
+M Was bedeutet „l'immobilizzatore“? | die Wegfahrsperre | die Zentralverriegelung | der Regensensor | der Airbag
+M Was bedeutet „il regolatore di velocità“? | der Tempomat | der Airbag | die Fernbedienung | die Wegfahrsperre
+M Was bedeutet „la linea dati“? | die Datenleitung | der Tempomat | die Alarmanlage | das Netzwerk
+M Was bedeutet „il telecomando“? | die Fernbedienung | der Airbag | die Zentralverriegelung | der Regensensor
+# --- Zuordnen
+Z Ordne zu: Elektrik (Teil 1). | die Spannung = la tensione | der Strom = la corrente | der Widerstand = la resistenza | die Masse = la massa
+Z Ordne zu: Elektrik (Teil 2). | der Kurzschluss = il cortocircuito | die Unterbrechung = l'interruzione | das Relais = il relè | der Schalter = l'interruttore
+Z Ordne zu: Elektrik (Teil 3). | der Schaltplan = lo schema elettrico | der Kabelbaum = il cablaggio | das Multimeter = il multimetro | die Leitung = il conduttore
+Z Ordne zu: Hochvolt (Teil 1). | das Elektroauto = l'auto elettrica | das Hybridfahrzeug = il veicolo ibrido | die Hochspannung = l'alta tensione | die Ladestation = la colonnina di ricarica
+Z Ordne zu: Hochvolt (Teil 2). | das Ladekabel = il cavo di ricarica | der Elektromotor = il motore elettrico | der Wechselrichter = l'inverter | die Isolierung = l'isolamento
+Z Ordne zu: Diesel (Teil 1). | der Dieselmotor = il motore diesel | der Injektor = l'iniettore | die Hochdruckpumpe = la pompa ad alta pressione | der Turbolader = il turbocompressore
+Z Ordne zu: Diesel (Teil 2). | der Ladeluftkühler = l'intercooler | die Glühkerze = la candeletta | der Kraftstofffilter = il filtro del gasolio | der Dieselkraftstoff = il gasolio
+Z Ordne zu: Abgasnachbehandlung (Teil 1). | der Partikelfilter = il filtro antiparticolato | die Abgasrückführung = il ricircolo dei gas di scarico | der Ruß = la fuliggine | die Stickoxide = gli ossidi di azoto
+Z Ordne zu: Starten und Laden (Teil 1). | das Starten = l'avviamento | das Vorglühen = il preriscaldamento | die Ladespannung = la tensione di carica | das Ladegerät = il caricabatterie
+Z Ordne zu: Komfort und Vernetzung (Teil 1). | die Zentralverriegelung = la chiusura centralizzata | der Fensterheber = l'alzacristalli | die Wegfahrsperre = l'immobilizzatore | der Airbag = l'airbag

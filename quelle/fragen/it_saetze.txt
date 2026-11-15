@@ -1,0 +1,46 @@
+# Sätze und Wendungen Italienisch, je Level 8 Fragen
+## 0
+M Was heißt „Guten Morgen“ auf Italienisch? | Buongiorno | Buonasera | Buonanotte | Arrivederci
+M Was bedeutet „Per favore“? | Bitte | Danke | Entschuldigung | Gern geschehen
+M Was heißt „Ich verstehe nicht“? | Non capisco | Non lo so | Non posso | Non voglio
+M Was bedeutet „Dov'è il martello?“ | Wo ist der Hammer? | Wem gehört der Hammer? | Was kostet der Hammer? | Wer hat den Hammer?
+M Was heißt „Können Sie mir helfen?“ | Mi può aiutare? | Mi può chiamare? | Mi può pagare? | Mi può aspettare?
+M Was bedeutet „Attenzione!“ | Achtung! | Wartung! | Anmeldung! | Ordnung!
+R „Grazie“ heißt „Danke“.
+F „Domani“ heißt „heute“. || „Domani“ heißt „morgen“, „oggi“ heißt „heute“.
+## 1
+M Was heißt „Ich wechsle das Öl“? | Cambio l'olio | Controllo l'olio | Aggiungo l'olio | Compro l'olio
+M Was bedeutet „Le pastiglie sono consumate“? | Die Bremsbeläge sind abgenutzt | Die Bremsbeläge sind neu | Die Bremsbeläge fehlen | Die Bremsbeläge sind bestellt
+M Was heißt „Der Reifendruck ist zu niedrig“? | La pressione degli pneumatici è troppo bassa | La pressione degli pneumatici è troppo alta | Lo pneumatico è troppo vecchio | Lo pneumatico è troppo largo
+M Was bedeutet „La macchina è pronta“? | Das Auto ist fertig | Das Auto ist kaputt | Das Auto ist verkauft | Das Auto ist unterwegs
+M Was heißt „Die Batterie ist leer“? | La batteria è scarica | La batteria è carica | La batteria è nuova | La batteria è rotta
+M Was bedeutet „Devo sostituire la lampadina“? | Ich muss die Glühlampe ersetzen | Ich muss die Glühlampe prüfen | Ich muss die Glühlampe reinigen | Ich muss die Glühlampe bestellen
+R „Stringere“ heißt „anziehen“ (eine Schraube).
+F „Svitare“ heißt „festschrauben“. || „Svitare“ heißt „abschrauben“, „avvitare“ heißt „festschrauben“.
+## 2
+M Was heißt „Der Motor überhitzt“? | Il motore si surriscalda | Il motore si spegne | Il motore non parte | Il motore perde olio
+M Was bedeutet „La frizione slitta“? | Die Kupplung rutscht | Die Kupplung trennt nicht | Die Kupplung ist neu | Die Kupplung rupft
+M Was heißt „Der Zahnriemen muss gewechselt werden“? | Bisogna sostituire la cinghia di distribuzione | Bisogna controllare la cinghia di distribuzione | Bisogna tendere la cinghia di distribuzione | Bisogna pulire la cinghia di distribuzione
+M Was bedeutet „Il climatizzatore non raffredda“? | Die Klimaanlage kühlt nicht | Die Klimaanlage heizt nicht | Die Klimaanlage ist laut | Die Klimaanlage riecht
+M Was heißt „Ich lese den Fehlerspeicher aus“? | Leggo la memoria guasti | Cancello la memoria guasti | Salvo la memoria guasti | Stampo la memoria guasti
+M Was bedeutet „C'è una perdita d'olio“? | Es gibt einen Ölverlust | Es gibt zu viel Öl | Es fehlt der Ölfilter | Das Öl ist zu alt
+R „Il motore non parte“ heißt „Der Motor springt nicht an“.
+F „Accendere“ heißt „ausschalten“. || „Accendere“ heißt „einschalten“, „spegnere“ heißt „ausschalten“.
+## 3
+M Was heißt „Die Kontrollleuchte ist an“? | La spia è accesa | La spia è spenta | La spia è rotta | La spia lampeggia
+M Was bedeutet „Togliere tensione“? | Spannungsfrei schalten | Spannung messen | Spannung erhöhen | Spannung anlegen
+M Was heißt „Der Partikelfilter ist verstopft“? | Il filtro antiparticolato è intasato | Il filtro antiparticolato è pulito | Il filtro antiparticolato è nuovo | Il filtro antiparticolato è smontato
+M Was bedeutet „La batteria si scarica di notte“? | Die Batterie entlädt sich über Nacht | Die Batterie lädt sich über Nacht | Die Batterie wird nachts getauscht | Die Batterie ist nachts kalt
+M Was heißt „Ich messe den Widerstand“? | Misuro la resistenza | Misuro la tensione | Misuro la corrente | Misuro la pressione
+M Was bedeutet „Il motore va in recovery“? | Der Motor geht in den Notlauf | Der Motor wird repariert | Der Motor läuft warm | Der Motor geht aus
+R „Pericolo alta tensione“ heißt „Gefahr Hochspannung“.
+F „Ricaricare“ heißt „entladen“. || „Ricaricare“ heißt „aufladen“.
+## 4
+M Was heißt „Wann kann ich das Auto abholen?“ | Quando posso ritirare la macchina? | Quando posso pagare la macchina? | Dove posso lasciare la macchina? | Quanto costa la macchina?
+M Was bedeutet „Quanto costa la riparazione?“ | Was kostet die Reparatur? | Wie lange dauert die Reparatur? | Wer macht die Reparatur? | Wann beginnt die Reparatur?
+M Was heißt „Wir müssen ein Ersatzteil bestellen“? | Dobbiamo ordinare un pezzo di ricambio | Dobbiamo montare un pezzo di ricambio | Dobbiamo pagare un pezzo di ricambio | Dobbiamo cercare un pezzo di ricambio
+M Was bedeutet „La revisione è scaduta“? | Die Hauptuntersuchung ist abgelaufen | Die Hauptuntersuchung ist bestanden | Die Hauptuntersuchung ist morgen | Die Hauptuntersuchung ist bezahlt
+M Was heißt „Bitte unterschreiben Sie hier“? | Firmi qui, per favore | Paghi qui, per favore | Aspetti qui, per favore | Parcheggi qui, per favore
+M Was bedeutet „Il rumore si sente solo a freddo“? | Das Geräusch hört man nur bei kaltem Motor | Das Geräusch hört man nur beim Bremsen | Das Geräusch hört man nur in Kurven | Das Geräusch hört man nur bei Regen
+R „Il preventivo“ ist der Kostenvoranschlag.
+F „La fattura“ ist die Garantie. || „La fattura“ ist die Rechnung, die Garantie heißt „la garanzia“.

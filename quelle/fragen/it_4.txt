@@ -1,0 +1,105 @@
+# Italienisch Level 5 – erzeugt von gen_sprache.py aus vokabeln.txt und it_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Wann kann ich das Auto abholen?“ | Quando posso ritirare la macchina? | Quando posso pagare la macchina? | Dove posso lasciare la macchina? | Quanto costa la macchina?
+M Was bedeutet „Quanto costa la riparazione?“ | Was kostet die Reparatur? | Wie lange dauert die Reparatur? | Wer macht die Reparatur? | Wann beginnt die Reparatur?
+M Was heißt „Wir müssen ein Ersatzteil bestellen“? | Dobbiamo ordinare un pezzo di ricambio | Dobbiamo montare un pezzo di ricambio | Dobbiamo pagare un pezzo di ricambio | Dobbiamo cercare un pezzo di ricambio
+M Was bedeutet „La revisione è scaduta“? | Die Hauptuntersuchung ist abgelaufen | Die Hauptuntersuchung ist bestanden | Die Hauptuntersuchung ist morgen | Die Hauptuntersuchung ist bezahlt
+M Was heißt „Bitte unterschreiben Sie hier“? | Firmi qui, per favore | Paghi qui, per favore | Aspetti qui, per favore | Parcheggi qui, per favore
+M Was bedeutet „Il rumore si sente solo a freddo“? | Das Geräusch hört man nur bei kaltem Motor | Das Geräusch hört man nur beim Bremsen | Das Geräusch hört man nur in Kurven | Das Geräusch hört man nur bei Regen
+R „Il preventivo“ ist der Kostenvoranschlag.
+F „La fattura“ ist die Garantie. || „La fattura“ ist die Rechnung, die Garantie heißt „la garanzia“.
+# --- Deutsch → Italienisch
+M Was heißt „der Kostenvoranschlag“ auf Italienisch? | il preventivo | la fattura | l'appuntamento | la manodopera
+M Was heißt „die Rechnung“ auf Italienisch? | la fattura | il pagamento | la garanzia | il preventivo
+M Was heißt „die Mehrwertsteuer“ auf Italienisch? | l'IVA | la fattura | il pagamento | la firma
+M Was heißt „die Garantie“ auf Italienisch? | la garanzia | l'appuntamento | lo sconto | l'ordine di lavoro
+M Was heißt „der Termin“ auf Italienisch? | l'appuntamento | l'IVA | la manodopera | l'ordine di lavoro
+M Was heißt „der Arbeitsauftrag“ auf Italienisch? | l'ordine di lavoro | la consegna | il prezzo | la garanzia
+M Was heißt „die Unterschrift“ auf Italienisch? | la firma | il preventivo | la fattura | il pagamento
+M Was heißt „das Ersatzteil“ auf Italienisch? | il pezzo di ricambio | l'appuntamento | il prezzo | la firma
+M Was heißt „die Lieferung“ auf Italienisch? | la consegna | lo sconto | il prezzo | la garanzia
+M Was heißt „der Preis“ auf Italienisch? | il prezzo | la consegna | il pezzo di ricambio | l'IVA
+M Was heißt „der Rabatt“ auf Italienisch? | lo sconto | la consegna | l'IVA | il preventivo
+M Was heißt „die Arbeitskosten“ auf Italienisch? | la manodopera | l'IVA | il pezzo di ricambio | il pagamento
+M Was heißt „die Bezahlung“ auf Italienisch? | il pagamento | la fattura | il preventivo | l'IVA
+M Was heißt „der Fahrzeugschein“ auf Italienisch? | il libretto di circolazione | il proprietario | il numero di telaio | la patente
+M Was heißt „der Führerschein“ auf Italienisch? | la patente | il proprietario | l'anno di costruzione | il chilometraggio
+M Was heißt „die Fahrgestellnummer“ auf Italienisch? | il numero di telaio | l'assicurazione | il libretto di circolazione | l'anno di costruzione
+M Was heißt „die Versicherung“ auf Italienisch? | l'assicurazione | l'anno di costruzione | il libretto di circolazione | il numero di telaio
+M Was heißt „der Kilometerstand“ auf Italienisch? | il chilometraggio | l'assicurazione | il libretto di circolazione | l'anno di costruzione
+M Was heißt „das Baujahr“ auf Italienisch? | l'anno di costruzione | il chilometraggio | il libretto di circolazione | il numero di telaio
+M Was heißt „der Fahrzeughalter“ auf Italienisch? | il proprietario | l'anno di costruzione | il libretto di circolazione | il chilometraggio
+M Was heißt „die Hauptuntersuchung“ auf Italienisch? | la revisione | superato | il banco prova freni | respinto
+M Was heißt „der Mangel“ auf Italienisch? | il difetto | il verbale di revisione | la scadenza | la sicurezza stradale
+M Was heißt „der Prüfbericht“ auf Italienisch? | il verbale di revisione | la scadenza | la sicurezza stradale | la revisione
+M Was heißt „der Bremsenprüfstand“ auf Italienisch? | il banco prova freni | superato | respinto | il difetto
+M Was heißt „bestanden“ auf Italienisch? | superato | il banco prova freni | il difetto | la scadenza
+M Was heißt „nicht bestanden“ auf Italienisch? | respinto | superato | la revisione | il banco prova freni
+M Was heißt „die Verkehrssicherheit“ auf Italienisch? | la sicurezza stradale | la revisione | il banco prova freni | la scadenza
+M Was heißt „die Frist“ auf Italienisch? | la scadenza | superato | la sicurezza stradale | il banco prova freni
+M Was heißt „die Störung“ auf Italienisch? | il guasto | il giro di prova | la sostituzione | il rumore
+M Was heißt „das Geräusch“ auf Italienisch? | il rumore | il giro di prova | la riparazione | la causa
+M Was heißt „die Vibration“ auf Italienisch? | la vibrazione | l'aggiornamento software | saltuariamente | il guasto
+M Was heißt „die Probefahrt“ auf Italienisch? | il giro di prova | saltuariamente | il rumore | la vibrazione
+M Was heißt „die Ursache“ auf Italienisch? | la causa | il rumore | saltuariamente | la vibrazione
+M Was heißt „die Reparatur“ auf Italienisch? | la riparazione | l'aggiornamento software | saltuariamente | il guasto
+M Was heißt „der Austausch“ auf Italienisch? | la sostituzione | il rumore | la causa | il guasto
+M Was heißt „die Kontrollleuchte“ auf Italienisch? | la spia | saltuariamente | la sostituzione | la riparazione
+M Was heißt „gelegentlich“ auf Italienisch? | saltuariamente | il giro di prova | la vibrazione | la causa
+M Was heißt „die Software-Aktualisierung“ auf Italienisch? | l'aggiornamento software | la riparazione | la vibrazione | saltuariamente
+M Was heißt „die Lehrabschlussprüfung“ auf Italienisch? | l'esame di fine apprendistato | la sicurezza sul lavoro | l'esperienza | l'operaio qualificato
+M Was heißt „die Berufsschule“ auf Italienisch? | la scuola professionale | il maestro artigiano | l'esperienza | l'operaio qualificato
+M Was heißt „der Facharbeiter“ auf Italienisch? | l'operaio qualificato | la sicurezza sul lavoro | l'esame di fine apprendistato | la candidatura
+M Was heißt „der Meister“ auf Italienisch? | il maestro artigiano | la sicurezza sul lavoro | la scuola professionale | la formazione continua
+M Was heißt „die Arbeitssicherheit“ auf Italienisch? | la sicurezza sul lavoro | la formazione continua | l'esame di fine apprendistato | la scuola professionale
+M Was heißt „die Weiterbildung“ auf Italienisch? | la formazione continua | l'esperienza | il maestro artigiano | l'esame di fine apprendistato
+M Was heißt „der Lebenslauf“ auf Italienisch? | il curriculum vitae | il maestro artigiano | l'operaio qualificato | la sicurezza sul lavoro
+M Was heißt „die Bewerbung“ auf Italienisch? | la candidatura | la formazione continua | l'attestato | l'operaio qualificato
+M Was heißt „die Bescheinigung“ auf Italienisch? | l'attestato | l'esame di fine apprendistato | la candidatura | il curriculum vitae
+M Was heißt „die Erfahrung“ auf Italienisch? | l'esperienza | la formazione continua | l'operaio qualificato | il maestro artigiano
+M Was heißt „die Entsorgung“ auf Italienisch? | lo smaltimento | il riciclaggio | i rifiuti | la sostanza pericolosa
+M Was heißt „das Altöl“ auf Italienisch? | l'olio usato | l'ambiente | lo smaltimento | il riciclaggio
+M Was heißt „der Abfall“ auf Italienisch? | i rifiuti | la sostanza pericolosa | lo smaltimento | l'ambiente
+M Was heißt „das Recycling“ auf Italienisch? | il riciclaggio | lo smaltimento | la sostanza pericolosa | l'olio usato
+M Was heißt „die Umwelt“ auf Italienisch? | l'ambiente | l'olio usato | la sostanza pericolosa | il riciclaggio
+M Was heißt „der Gefahrstoff“ auf Italienisch? | la sostanza pericolosa | i rifiuti | lo smaltimento | il riciclaggio
+# --- Italienisch → Deutsch
+M Was bedeutet „il preventivo“? | der Kostenvoranschlag | das Ersatzteil | die Unterschrift | die Rechnung
+M Was bedeutet „la fattura“? | die Rechnung | die Garantie | die Mehrwertsteuer | die Bezahlung
+M Was bedeutet „la garanzia“? | die Garantie | das Ersatzteil | die Unterschrift | der Rabatt
+M Was bedeutet „l'ordine di lavoro“? | der Arbeitsauftrag | der Termin | die Mehrwertsteuer | der Rabatt
+M Was bedeutet „il pezzo di ricambio“? | das Ersatzteil | der Arbeitsauftrag | die Rechnung | die Bezahlung
+M Was bedeutet „il prezzo“? | der Preis | die Garantie | die Mehrwertsteuer | die Arbeitskosten
+M Was bedeutet „la manodopera“? | die Arbeitskosten | die Garantie | der Preis | das Ersatzteil
+M Was bedeutet „il libretto di circolazione“? | der Fahrzeugschein | der Führerschein | der Kilometerstand | das Baujahr
+M Was bedeutet „il numero di telaio“? | die Fahrgestellnummer | der Fahrzeughalter | der Kilometerstand | der Fahrzeugschein
+M Was bedeutet „il chilometraggio“? | der Kilometerstand | der Führerschein | das Baujahr | der Fahrzeughalter
+M Was bedeutet „il proprietario“? | der Fahrzeughalter | die Versicherung | der Führerschein | der Kilometerstand
+M Was bedeutet „il difetto“? | der Mangel | die Frist | der Prüfbericht | nicht bestanden
+M Was bedeutet „il banco prova freni“? | der Bremsenprüfstand | nicht bestanden | die Frist | der Mangel
+M Was bedeutet „respinto“? | nicht bestanden | der Mangel | bestanden | die Hauptuntersuchung
+M Was bedeutet „la scadenza“? | die Frist | der Prüfbericht | die Hauptuntersuchung | bestanden
+M Was bedeutet „il guasto“? | die Störung | die Probefahrt | gelegentlich | das Geräusch
+M Was bedeutet „la vibrazione“? | die Vibration | die Probefahrt | die Software-Aktualisierung | das Geräusch
+M Was bedeutet „la causa“? | die Ursache | das Geräusch | die Probefahrt | die Kontrollleuchte
+M Was bedeutet „la sostituzione“? | der Austausch | die Reparatur | die Software-Aktualisierung | die Probefahrt
+M Was bedeutet „saltuariamente“? | gelegentlich | die Reparatur | die Vibration | die Störung
+M Was bedeutet „l'esame di fine apprendistato“? | die Lehrabschlussprüfung | der Facharbeiter | der Lebenslauf | die Weiterbildung
+M Was bedeutet „l'operaio qualificato“? | der Facharbeiter | die Weiterbildung | die Bescheinigung | die Berufsschule
+M Was bedeutet „la sicurezza sul lavoro“? | die Arbeitssicherheit | die Bewerbung | die Berufsschule | die Weiterbildung
+M Was bedeutet „il curriculum vitae“? | der Lebenslauf | der Meister | die Berufsschule | die Arbeitssicherheit
+M Was bedeutet „l'attestato“? | die Bescheinigung | die Arbeitssicherheit | die Lehrabschlussprüfung | der Meister
+M Was bedeutet „lo smaltimento“? | die Entsorgung | das Altöl | das Recycling | der Gefahrstoff
+M Was bedeutet „i rifiuti“? | der Abfall | das Recycling | die Entsorgung | das Altöl
+M Was bedeutet „l'ambiente“? | die Umwelt | der Abfall | die Entsorgung | das Altöl
+# --- Zuordnen
+Z Ordne zu: Büro und Rechnung (Teil 1). | der Kostenvoranschlag = il preventivo | die Rechnung = la fattura | die Mehrwertsteuer = l'IVA | die Garantie = la garanzia
+Z Ordne zu: Büro und Rechnung (Teil 2). | der Termin = l'appuntamento | der Arbeitsauftrag = l'ordine di lavoro | die Unterschrift = la firma | das Ersatzteil = il pezzo di ricambio
+Z Ordne zu: Büro und Rechnung (Teil 3). | die Lieferung = la consegna | der Preis = il prezzo | der Rabatt = lo sconto | die Arbeitskosten = la manodopera
+Z Ordne zu: Fahrzeugdokumente (Teil 1). | der Fahrzeugschein = il libretto di circolazione | der Führerschein = la patente | die Fahrgestellnummer = il numero di telaio | die Versicherung = l'assicurazione
+Z Ordne zu: Hauptuntersuchung (Teil 1). | die Hauptuntersuchung = la revisione | der Mangel = il difetto | der Prüfbericht = il verbale di revisione | der Bremsenprüfstand = il banco prova freni
+Z Ordne zu: Hauptuntersuchung (Teil 2). | bestanden = superato | nicht bestanden = respinto | die Verkehrssicherheit = la sicurezza stradale | die Frist = la scadenza
+Z Ordne zu: Fehler und Diagnose (Teil 1). | die Störung = il guasto | das Geräusch = il rumore | die Vibration = la vibrazione | die Probefahrt = il giro di prova
+Z Ordne zu: Fehler und Diagnose (Teil 2). | die Ursache = la causa | die Reparatur = la riparazione | der Austausch = la sostituzione | die Kontrollleuchte = la spia
+Z Ordne zu: Beruf und Prüfung (Teil 1). | die Lehrabschlussprüfung = l'esame di fine apprendistato | die Berufsschule = la scuola professionale | der Facharbeiter = l'operaio qualificato | der Meister = il maestro artigiano
+Z Ordne zu: Beruf und Prüfung (Teil 2). | die Arbeitssicherheit = la sicurezza sul lavoro | die Weiterbildung = la formazione continua | der Lebenslauf = il curriculum vitae | die Bewerbung = la candidatura

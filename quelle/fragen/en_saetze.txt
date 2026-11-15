@@ -1,0 +1,46 @@
+# Sätze und Wendungen Englisch, je Level 8 Fragen
+## 0
+M Was heißt „Guten Morgen“ auf Englisch? | Good morning | Good evening | Good night | Goodbye
+M Was bedeutet „Excuse me“? | Entschuldigung | Bitte sehr | Danke | Auf Wiedersehen
+M Was heißt „Ich verstehe nicht“? | I don't understand | I don't know | I can't | I don't want to
+M Was bedeutet „Where is the hammer?“ | Wo ist der Hammer? | Wem gehört der Hammer? | Was kostet der Hammer? | Wer hat den Hammer?
+M Was heißt „Können Sie mir helfen?“ | Can you help me? | Can you call me? | Can you pay me? | Can you wait for me?
+M Was bedeutet „Watch out!“ | Achtung! | Schau hinaus! | Uhr ab! | Warte draußen!
+R „Thank you“ heißt „Danke“.
+F „Tomorrow“ heißt „heute“. || „Tomorrow“ heißt „morgen“, „today“ heißt „heute“.
+## 1
+M Was heißt „Ich wechsle das Öl“? | I'm changing the oil | I'm checking the oil | I'm topping up the oil | I'm buying the oil
+M Was bedeutet „The brake pads are worn“? | Die Bremsbeläge sind abgenutzt | Die Bremsbeläge sind neu | Die Bremsbeläge fehlen | Die Bremsbeläge sind bestellt
+M Was heißt „Der Reifendruck ist zu niedrig“? | The tyre pressure is too low | The tyre pressure is too high | The tyre is too old | The tyre is too wide
+M Was bedeutet „Your car is ready“? | Ihr Auto ist fertig | Ihr Auto ist kaputt | Ihr Auto ist verkauft | Ihr Auto ist unterwegs
+M Was heißt „Die Batterie ist leer“? | The battery is flat | The battery is charged | The battery is new | The battery is cracked
+M Was bedeutet „I need to replace the bulb“? | Ich muss die Glühlampe ersetzen | Ich muss die Glühlampe prüfen | Ich muss die Glühlampe reinigen | Ich muss die Glühlampe bestellen
+R „To tighten“ heißt „anziehen“ (eine Schraube).
+F „To loosen“ heißt „festziehen“. || „To loosen“ heißt „lösen“.
+## 2
+M Was heißt „Der Motor überhitzt“? | The engine is overheating | The engine is stalling | The engine won't start | The engine is leaking oil
+M Was bedeutet „The clutch is slipping“? | Die Kupplung rutscht | Die Kupplung trennt nicht | Die Kupplung ist neu | Die Kupplung rupft
+M Was heißt „Der Zahnriemen muss gewechselt werden“? | The timing belt has to be replaced | The timing belt has to be checked | The timing belt has to be tensioned | The timing belt has to be cleaned
+M Was bedeutet „The air conditioning isn't cooling“? | Die Klimaanlage kühlt nicht | Die Klimaanlage heizt nicht | Die Klimaanlage ist laut | Die Klimaanlage riecht
+M Was heißt „Ich lese den Fehlerspeicher aus“? | I'm reading out the fault memory | I'm clearing the fault memory | I'm saving the fault memory | I'm printing the fault memory
+M Was bedeutet „There is an oil leak“? | Es gibt einen Ölverlust | Es gibt zu viel Öl | Es fehlt der Ölfilter | Das Öl ist zu alt
+R „The engine won't start“ heißt „Der Motor springt nicht an“.
+F „To switch on“ heißt „ausschalten“. || „To switch on“ heißt „einschalten“, „to switch off“ heißt „ausschalten“.
+## 3
+M Was heißt „Die Kontrollleuchte ist an“? | The warning light is on | The warning light is off | The warning light is broken | The warning light is flashing
+M Was bedeutet „to de-energise the system“? | Die Anlage spannungsfrei schalten | Die Spannung messen | Die Spannung erhöhen | Die Anlage einschalten
+M Was heißt „Der Partikelfilter ist verstopft“? | The particulate filter is clogged | The particulate filter is clean | The particulate filter is new | The particulate filter is removed
+M Was bedeutet „The battery goes flat overnight“? | Die Batterie entlädt sich über Nacht | Die Batterie lädt sich über Nacht | Die Batterie wird nachts getauscht | Die Batterie ist nachts kalt
+M Was heißt „Ich messe den Widerstand“? | I'm measuring the resistance | I'm measuring the voltage | I'm measuring the current | I'm measuring the pressure
+M Was bedeutet „The engine goes into limp mode“? | Der Motor geht in den Notlauf | Der Motor wird repariert | Der Motor läuft warm | Der Motor geht aus
+R „Danger: high voltage“ heißt „Gefahr Hochspannung“.
+F „To charge“ heißt „entladen“. || „To charge“ heißt „laden“, „to discharge“ heißt „entladen“.
+## 4
+M Was heißt „Wann kann ich das Auto abholen?“ | When can I pick up the car? | When can I pay for the car? | Where can I leave the car? | How much is the car?
+M Was bedeutet „How much is the repair?“ | Was kostet die Reparatur? | Wie lange dauert die Reparatur? | Wer macht die Reparatur? | Wann beginnt die Reparatur?
+M Was heißt „Wir müssen ein Ersatzteil bestellen“? | We have to order a spare part | We have to fit a spare part | We have to pay for a spare part | We have to look for a spare part
+M Was bedeutet „The test certificate has expired“? | Die Prüfbescheinigung ist abgelaufen | Die Prüfbescheinigung ist ausgestellt | Die Prüfbescheinigung kommt morgen | Die Prüfbescheinigung ist bezahlt
+M Was heißt „Bitte unterschreiben Sie hier“? | Please sign here | Please pay here | Please wait here | Please park here
+M Was bedeutet „The noise only occurs when the engine is cold“? | Das Geräusch tritt nur bei kaltem Motor auf | Das Geräusch tritt nur beim Bremsen auf | Das Geräusch tritt nur in Kurven auf | Das Geräusch tritt nur bei Regen auf
+R „Estimate“ ist der Kostenvoranschlag.
+F „Invoice“ ist die Garantie. || „Invoice“ ist die Rechnung, die Garantie heißt „warranty“.

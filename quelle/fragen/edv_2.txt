@@ -1,0 +1,106 @@
+# EDV Level 3 – 2. Klasse KFZ: Word für Auftrag und Brief
+# Erzeugt von gen_edv.py; handgeschriebene Fragen stehen in edv_2_extra.txt.
+# --- Word für Arbeitsauftrag und Geschäftsbrief (handgeschrieben)
+M Wie springt man in einer Word-Tabelle in die nächste Zelle? | Mit der Tabulatortaste | Mit der Eingabetaste | Mit der Leertaste | Mit Strg + Eingabe
+M Was passiert, wenn man in der letzten Zelle einer Tabelle die Tabulatortaste drückt? | Es wird eine neue Zeile angefügt | Der Cursor verlässt die Tabelle | Die Tabelle wird gelöscht | Die Zelle wird geteilt
+M Wie fügt man mitten in einer Tabelle eine Zeile ein? | Rechtsklick in die Zeile, dann Einfügen und „Zeile oberhalb“ oder „unterhalb“ | Mit der Eingabetaste am Zeilenende | Mit der Leertaste | Über Datei und Neu
+M Wie ändert man die Breite einer Tabellenspalte? | Die Trennlinie mit der Maus ziehen oder die Breite in den Tabelleneigenschaften eingeben | Leerzeichen in die Zellen tippen | Die Schrift vergrößern | Den Seitenrand verschieben
+M Wie wiederholt man die Überschriftenzeile einer langen Tabelle auf jeder Seite? | Mit „Überschriften wiederholen“ im Tabellenlayout | Durch Kopieren der Zeile auf jede Seite | Mit einer Kopfzeile | Mit einem Seitenumbruch
+M Wie richtet man Zahlen in einer Tabellenspalte sinnvoll aus? | Rechtsbündig oder am Dezimaltabstopp | Linksbündig | Zentriert | Im Blocksatz
+M Du brauchst für einen Arbeitsauftrag eine Tabelle mit 4 Spalten und 12 Zeilen. Wie viele Zellen hat sie? | 48 | 16 | 36 | 52
+M Was gehört in den Briefkopf eines Geschäftsbriefs? | Name, Anschrift und Kontaktdaten des Absenders | Die Unterschrift des Empfängers | Der Anlagenvermerk | Die Grußformel
+M Wie viele Leerzeilen stehen im Geschäftsbrief üblicherweise zwischen Anrede und Text? | Eine | Keine | Drei | Fünf
+M Wie lautet die übliche Anrede, wenn der Ansprechpartner nicht bekannt ist? | Sehr geehrte Damen und Herren, | Hallo zusammen, | An alle, | Sehr geehrter Betrieb,
+M Welches Satzzeichen steht nach der Anrede im deutschen Geschäftsbrief? | Ein Komma, danach geht es klein weiter | Ein Ausrufezeichen | Ein Doppelpunkt | Ein Punkt
+M Wie schreibt man das Datum im Geschäftsbrief nach der Norm numerisch? | 2026-11-15 oder 15.11.2026 | 15/11/26 | 11-15-2026 | 15.November.26
+M Wo steht im Geschäftsbrief der Betreff? | Über der Anrede, ohne das Wort „Betreff“ | Unter der Grußformel | In der Fußzeile | Vor dem Anschriftfeld
+M Wie wird der Betreff üblicherweise hervorgehoben? | Durch Fettdruck, ohne Punkt am Ende | Durch Unterstreichen und Großbuchstaben mit Punkt | Durch rote Schrift | Durch Anführungszeichen
+M Was steht am Ende eines Geschäftsbriefs vor der Unterschrift? | Die Grußformel, zum Beispiel „Mit freundlichen Grüßen“ | Der Betreff | Das Datum | Die Anrede
+M Warum verschickt man einen Kostenvoranschlag besser als PDF statt als Word-Datei? | Er sieht bei jedem Empfänger gleich aus und lässt sich nicht einfach ändern | Die PDF-Datei ist immer kleiner | Word-Dateien lassen sich nicht verschicken | PDF-Dateien brauchen kein Programm zum Öffnen
+M Wozu verwendet man eine Dokumentvorlage für Arbeitsaufträge? | Jeder neue Auftrag hat denselben Aufbau, das Original bleibt unverändert | Die Datei wird dadurch kleiner | Die Vorlage druckt automatisch | Die Vorlage rechnet die Preise aus
+M Welche Angabe gehört in den Arbeitsauftrag einer Werkstatt? | Kundendaten, Fahrzeugdaten mit Kennzeichen und Kilometerstand sowie die gewünschten Arbeiten | Nur die Telefonnummer der Werkstatt | Nur der Name des Mechanikers | Der Kaufpreis des Fahrzeugs
+M Wie fügt man ein Kästchen zum Ankreuzen in eine Checkliste ein? | Über Einfügen und Symbol oder als Kontrollkästchen aus den Entwicklertools | Mit der Tabulatortaste | Über Layout und Spalten | Mit einem Rechtsklick auf die Seitenzahl
+M Wie verhindert man, dass ein Bild den Text verschiebt? | Den Textumbruch des Bildes passend einstellen, zum Beispiel „Quadrat“ | Das Bild in eine Kopfzeile legen | Das Bild als Zeichen formatieren und Leerzeilen einfügen | Die Seitenränder vergrößern
+M Wie öffnet man die Kopfzeile zum Bearbeiten? | Mit einem Doppelklick in den oberen Seitenrand | Mit einem Rechtsklick auf die Taskleiste | Mit der Eingabetaste am Seitenanfang | Mit Strg + K
+M Was zeigt das Feld „Seite X von Y“ in der Fußzeile? | Die aktuelle Seitennummer und die Gesamtzahl der Seiten | Das Datum und die Uhrzeit | Den Dateinamen und den Pfad | Die Zahl der Wörter
+M Wozu nutzt man Formatvorlagen für Überschriften? | Einheitliches Aussehen und Grundlage für ein automatisches Inhaltsverzeichnis | Damit die Datei schneller druckt | Damit die Überschriften geschützt sind | Damit die Rechtschreibprüfung sie überspringt
+M Was braucht man für einen Serienbrief? | Ein Hauptdokument und eine Datenquelle mit den Empfängerdaten | Zwei Drucker | Eine Tabelle mit Formeln | Ein Bild pro Empfänger
+M Wie druckt man nur die Seiten 2 bis 4 eines Dokuments? | Im Druckdialog bei den Seiten „2-4“ eingeben | Die anderen Seiten vorher löschen | Den Drucker zweimal starten | Das Dokument als Bild speichern
+M Was bedeutet „beidseitig drucken“? | Vorder- und Rückseite des Blatts werden bedruckt | Zwei Seiten werden nebeneinander auf eine Blattseite gedruckt | Das Dokument wird zweimal gedruckt | Es wird in Farbe und Schwarzweiß gedruckt
+R Eine Tabelle ohne sichtbare Rahmenlinien eignet sich gut, um Text sauber in Spalten auszurichten.
+F Ein PDF kann der Empfänger genauso leicht ändern wie ein Word-Dokument. || Ein PDF ist für die Weitergabe gedacht und lässt sich nicht ohne Weiteres bearbeiten.
+R In der Kopfzeile eines Arbeitsauftrags stehen typischerweise Name und Logo der Werkstatt.
+F Im Geschäftsbrief steht die Grußformel vor der Anrede. || Die Anrede eröffnet den Brief, die Grußformel schließt ihn ab.
+R Mit „Änderungen nachverfolgen“ sieht man, wer was im Dokument geändert hat.
+# --- Begriffe
+M Was ist bzw. bedeutet „Tabelle“? | Raster aus Zeilen und Spalten für geordnete Angaben | Dateiformat, das auf jedem Gerät gleich aussieht und sich kaum ändern lässt | Trennung, nach der andere Seiteneinstellungen gelten können | Ausrichtung, bei der das Blatt höher als breit ist
+M Was ist bzw. bedeutet „Tabellenzelle“? | Einzelnes Feld einer Tabelle | Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen | Funktion, die jede Bearbeitung sichtbar markiert | Mehrere Felder einer Tabelle zu einem zusammenfassen
+M Was ist bzw. bedeutet „Zellen verbinden“? | Mehrere Felder einer Tabelle zu einem zusammenfassen | Einstellung, wie Text um ein Bild herumfließt | Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen | Anmerkung am Seitenende, auf die eine hochgestellte Zahl verweist
+M Was ist bzw. bedeutet „Kopfzeile“? | Bereich am oberen Seitenrand, der auf jeder Seite wiederholt wird | Blasser Schriftzug oder Bild hinter dem Text | Einstellung, wie Text um ein Bild herumfließt | Platzhalter, der beim Seriendruck durch einen Wert ersetzt wird
+M Was ist bzw. bedeutet „Fußzeile“? | Bereich am unteren Seitenrand, der auf jeder Seite wiederholt wird | Blasser Schriftzug oder Bild hinter dem Text | Zeile im Geschäftsbrief mit Zeichen, Datum und Ansprechpartner | Bereich am oberen Seitenrand, der auf jeder Seite wiederholt wird
+M Was ist bzw. bedeutet „Seitenzahl“? | Feld, das die Nummer der jeweiligen Seite automatisch anzeigt | Abschluss eines Briefs vor der Unterschrift | Dateiformat, das auf jedem Gerät gleich aussieht und sich kaum ändern lässt | Raster aus Zeilen und Spalten für geordnete Angaben
+M Was ist bzw. bedeutet „Formatvorlage“? | Gespeicherte Kombination von Formatierungen mit einem Namen | Zeile im Geschäftsbrief mit Zeichen, Datum und Ansprechpartner | Automatisch erzeugte Liste der Überschriften mit Seitenzahlen | Bereich im Geschäftsbrief für die Adresse des Empfängers
+M Was ist bzw. bedeutet „Dokumentvorlage“? | Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen | Bereich am unteren Seitenrand, der auf jeder Seite wiederholt wird | Anmerkung am Seitenende, auf die eine hochgestellte Zahl verweist | Einzelnes Feld einer Tabelle
+M Was ist bzw. bedeutet „Inhaltsverzeichnis“? | Automatisch erzeugte Liste der Überschriften mit Seitenzahlen | Abschluss eines Briefs vor der Unterschrift | Dateiformat, das auf jedem Gerät gleich aussieht und sich kaum ändern lässt | Mehrere Felder einer Tabelle zu einem zusammenfassen
+M Was ist bzw. bedeutet „Serienbrief“? | Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird | Frei verschiebbarer Rahmen mit Text | Blasser Schriftzug oder Bild hinter dem Text | Einstellung, wie Text um ein Bild herumfließt
+M Was ist bzw. bedeutet „Datenquelle“? | Liste mit den Adressen und Angaben für einen Serienbrief | Ausrichtung, bei der das Blatt höher als breit ist | Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird | Dateiformat, das auf jedem Gerät gleich aussieht und sich kaum ändern lässt
+M Was ist bzw. bedeutet „Seriendruckfeld“? | Platzhalter, der beim Seriendruck durch einen Wert ersetzt wird | Hinweis am Briefende auf beigelegte Unterlagen | Funktion, die jede Bearbeitung sichtbar markiert | Ausrichtung, bei der das Blatt breiter als hoch ist
+M Was ist bzw. bedeutet „Textfeld“? | Frei verschiebbarer Rahmen mit Text | Einstellung, wie Text um ein Bild herumfließt | Blasser Schriftzug oder Bild hinter dem Text | Zeile im Geschäftsbrief mit Zeichen, Datum und Ansprechpartner
+M Was ist bzw. bedeutet „Textumbruch“? | Einstellung, wie Text um ein Bild herumfließt | Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird | Feld, in das der Benutzer später etwas einträgt oder ankreuzt | Bereich am unteren Seitenrand, der auf jeder Seite wiederholt wird
+M Was ist bzw. bedeutet „Abschnittswechsel“? | Trennung, nach der andere Seiteneinstellungen gelten können | Mehrere Felder einer Tabelle zu einem zusammenfassen | Einzelnes Feld einer Tabelle | Blasser Schriftzug oder Bild hinter dem Text
+M Was ist bzw. bedeutet „Querformat“? | Ausrichtung, bei der das Blatt breiter als hoch ist | Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird | Gespeicherte Kombination von Formatierungen mit einem Namen | Einstellung, wie Text um ein Bild herumfließt
+M Was ist bzw. bedeutet „Hochformat“? | Ausrichtung, bei der das Blatt höher als breit ist | Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird | Blasser Schriftzug oder Bild hinter dem Text | Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen
+M Was ist bzw. bedeutet „Fußnote“? | Anmerkung am Seitenende, auf die eine hochgestellte Zahl verweist | Funktion, die jede Bearbeitung sichtbar markiert | Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird | Dateiformat, das auf jedem Gerät gleich aussieht und sich kaum ändern lässt
+M Was ist bzw. bedeutet „PDF“? | Dateiformat, das auf jedem Gerät gleich aussieht und sich kaum ändern lässt | Blasser Schriftzug oder Bild hinter dem Text | Einstellung, wie Text um ein Bild herumfließt | Zeile im Geschäftsbrief mit Zeichen, Datum und Ansprechpartner
+M Was ist bzw. bedeutet „Anschriftfeld“? | Bereich im Geschäftsbrief für die Adresse des Empfängers | Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen | Bereich am unteren Seitenrand, der auf jeder Seite wiederholt wird | Raster aus Zeilen und Spalten für geordnete Angaben
+M Was ist bzw. bedeutet „Betreffzeile“? | Kurze Angabe, worum es in einem Brief geht | Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen | Raster aus Zeilen und Spalten für geordnete Angaben | Ausrichtung, bei der das Blatt breiter als hoch ist
+M Was ist bzw. bedeutet „Bezugszeichenzeile“? | Zeile im Geschäftsbrief mit Zeichen, Datum und Ansprechpartner | Frei verschiebbarer Rahmen mit Text | Mehrere Felder einer Tabelle zu einem zusammenfassen | Ausrichtung, bei der das Blatt höher als breit ist
+M Was ist bzw. bedeutet „Grußformel“? | Abschluss eines Briefs vor der Unterschrift | Hinweis am Briefende auf beigelegte Unterlagen | Feld, in das der Benutzer später etwas einträgt oder ankreuzt | Ausrichtung, bei der das Blatt breiter als hoch ist
+M Was ist bzw. bedeutet „Anlagenvermerk“? | Hinweis am Briefende auf beigelegte Unterlagen | Feld, das die Nummer der jeweiligen Seite automatisch anzeigt | Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird | Einzelnes Feld einer Tabelle
+M Was ist bzw. bedeutet „Formularfeld“? | Feld, in das der Benutzer später etwas einträgt oder ankreuzt | Ausrichtung, bei der das Blatt breiter als hoch ist | Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen | Bereich im Geschäftsbrief für die Adresse des Empfängers
+M Was ist bzw. bedeutet „Wasserzeichen“? | Blasser Schriftzug oder Bild hinter dem Text | Abschluss eines Briefs vor der Unterschrift | Bereich am unteren Seitenrand, der auf jeder Seite wiederholt wird | Feld, in das der Benutzer später etwas einträgt oder ankreuzt
+M Was ist bzw. bedeutet „Kommentar“? | Anmerkung am Rand, die nicht zum Text gehört | Gespeicherte Kombination von Formatierungen mit einem Namen | Automatisch erzeugte Liste der Überschriften mit Seitenzahlen | Bereich am oberen Seitenrand, der auf jeder Seite wiederholt wird
+M Was ist bzw. bedeutet „Änderungen nachverfolgen“? | Funktion, die jede Bearbeitung sichtbar markiert | Gespeicherte Kombination von Formatierungen mit einem Namen | Bereich im Geschäftsbrief für die Adresse des Empfängers | Anmerkung am Seitenende, auf die eine hochgestellte Zahl verweist
+# --- Begriffe erkennen
+M Welcher Begriff passt zu dieser Beschreibung? „Raster aus Zeilen und Spalten für geordnete Angaben“ | Tabelle | Seitenzahl | Hochformat | Grußformel
+M Welcher Begriff passt zu dieser Beschreibung? „Einzelnes Feld einer Tabelle“ | Tabellenzelle | PDF | Formatvorlage | Serienbrief
+M Welcher Begriff passt zu dieser Beschreibung? „Mehrere Felder einer Tabelle zu einem zusammenfassen“ | Zellen verbinden | Tabellenzelle | Wasserzeichen | Bezugszeichenzeile
+M Welcher Begriff passt zu dieser Beschreibung? „Bereich am oberen Seitenrand, der auf jeder Seite wiederholt wird“ | Kopfzeile | Hochformat | Tabellenzelle | Textfeld
+M Welcher Begriff passt zu dieser Beschreibung? „Bereich am unteren Seitenrand, der auf jeder Seite wiederholt wird“ | Fußzeile | Abschnittswechsel | Datenquelle | Seitenzahl
+M Welcher Begriff passt zu dieser Beschreibung? „Feld, das die Nummer der jeweiligen Seite automatisch anzeigt“ | Seitenzahl | Seriendruckfeld | Betreffzeile | Anlagenvermerk
+M Welcher Begriff passt zu dieser Beschreibung? „Gespeicherte Kombination von Formatierungen mit einem Namen“ | Formatvorlage | Anlagenvermerk | Serienbrief | Textumbruch
+M Welcher Begriff passt zu dieser Beschreibung? „Muster, aus dem neue Dokumente mit gleichem Aufbau entstehen“ | Dokumentvorlage | Kommentar | Hochformat | Zellen verbinden
+M Welcher Begriff passt zu dieser Beschreibung? „Automatisch erzeugte Liste der Überschriften mit Seitenzahlen“ | Inhaltsverzeichnis | Grußformel | Fußzeile | Serienbrief
+M Welcher Begriff passt zu dieser Beschreibung? „Dokument, das mit Daten aus einer Liste für viele Empfänger erstellt wird“ | Serienbrief | Textumbruch | Datenquelle | Querformat
+M Welcher Begriff passt zu dieser Beschreibung? „Liste mit den Adressen und Angaben für einen Serienbrief“ | Datenquelle | Anlagenvermerk | Fußzeile | Querformat
+M Welcher Begriff passt zu dieser Beschreibung? „Platzhalter, der beim Seriendruck durch einen Wert ersetzt wird“ | Seriendruckfeld | Grußformel | Änderungen nachverfolgen | Formatvorlage
+M Welcher Begriff passt zu dieser Beschreibung? „Frei verschiebbarer Rahmen mit Text“ | Textfeld | Querformat | Kommentar | Formularfeld
+M Welcher Begriff passt zu dieser Beschreibung? „Einstellung, wie Text um ein Bild herumfließt“ | Textumbruch | Seriendruckfeld | PDF | Dokumentvorlage
+M Welcher Begriff passt zu dieser Beschreibung? „Trennung, nach der andere Seiteneinstellungen gelten können“ | Abschnittswechsel | Seriendruckfeld | PDF | Fußzeile
+M Welcher Begriff passt zu dieser Beschreibung? „Ausrichtung, bei der das Blatt breiter als hoch ist“ | Querformat | Hochformat | Anlagenvermerk | Tabellenzelle
+M Welcher Begriff passt zu dieser Beschreibung? „Ausrichtung, bei der das Blatt höher als breit ist“ | Hochformat | Grußformel | Anschriftfeld | Anlagenvermerk
+M Welcher Begriff passt zu dieser Beschreibung? „Anmerkung am Seitenende, auf die eine hochgestellte Zahl verweist“ | Fußnote | Textfeld | Dokumentvorlage | Betreffzeile
+M Welcher Begriff passt zu dieser Beschreibung? „Dateiformat, das auf jedem Gerät gleich aussieht und sich kaum ändern lässt“ | PDF | Fußnote | Wasserzeichen | Seriendruckfeld
+M Welcher Begriff passt zu dieser Beschreibung? „Bereich im Geschäftsbrief für die Adresse des Empfängers“ | Anschriftfeld | Querformat | Dokumentvorlage | Inhaltsverzeichnis
+M Welcher Begriff passt zu dieser Beschreibung? „Kurze Angabe, worum es in einem Brief geht“ | Betreffzeile | Textfeld | Tabellenzelle | Abschnittswechsel
+M Welcher Begriff passt zu dieser Beschreibung? „Zeile im Geschäftsbrief mit Zeichen, Datum und Ansprechpartner“ | Bezugszeichenzeile | Grußformel | Kopfzeile | Anlagenvermerk
+M Welcher Begriff passt zu dieser Beschreibung? „Abschluss eines Briefs vor der Unterschrift“ | Grußformel | Bezugszeichenzeile | Anlagenvermerk | Textumbruch
+M Welcher Begriff passt zu dieser Beschreibung? „Hinweis am Briefende auf beigelegte Unterlagen“ | Anlagenvermerk | Kopfzeile | Kommentar | Tabelle
+M Welcher Begriff passt zu dieser Beschreibung? „Feld, in das der Benutzer später etwas einträgt oder ankreuzt“ | Formularfeld | Tabellenzelle | Anschriftfeld | Textumbruch
+M Welcher Begriff passt zu dieser Beschreibung? „Blasser Schriftzug oder Bild hinter dem Text“ | Wasserzeichen | Betreffzeile | Fußnote | Kommentar
+M Welcher Begriff passt zu dieser Beschreibung? „Anmerkung am Rand, die nicht zum Text gehört“ | Kommentar | Serienbrief | Fußnote | Kopfzeile
+M Welcher Begriff passt zu dieser Beschreibung? „Funktion, die jede Bearbeitung sichtbar markiert“ | Änderungen nachverfolgen | Tabelle | Dokumentvorlage | Textumbruch
+# --- Menüband
+M In welchem Register von Word findest du: Tabelle einfügen? | Einfügen | Ansicht | Referenzen | Überprüfen
+M In welchem Register von Word findest du: Kopf- und Fußzeile? | Einfügen | Layout | Entwurf | Referenzen
+M In welchem Register von Word findest du: Seitenzahl? | Einfügen | Entwurf | Ansicht | Sendungen
+M In welchem Register von Word findest du: Textfeld? | Einfügen | Ansicht | Layout | Datei
+M In welchem Register von Word findest du: Spalten? | Layout | Einfügen | Ansicht | Entwurf
+M In welchem Register von Word findest du: Abschnittswechsel (Umbrüche)? | Layout | Referenzen | Einfügen | Sendungen
+M In welchem Register von Word findest du: Inhaltsverzeichnis? | Referenzen | Datei | Sendungen | Überprüfen
+M In welchem Register von Word findest du: Fußnote einfügen? | Referenzen | Sendungen | Datei | Überprüfen
+M In welchem Register von Word findest du: Seriendruck starten? | Sendungen | Überprüfen | Referenzen | Datei
+M In welchem Register von Word findest du: Kommentar einfügen? | Überprüfen | Layout | Einfügen | Entwurf
+M In welchem Register von Word findest du: Änderungen nachverfolgen? | Überprüfen | Datei | Referenzen | Start
+M In welchem Register von Word findest du: Wasserzeichen? | Entwurf | Referenzen | Layout | Start
+M In welchem Register von Word findest du: Als PDF exportieren? | Datei | Überprüfen | Sendungen | Start

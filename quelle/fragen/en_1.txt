@@ -1,0 +1,105 @@
+# Englisch Level 2 – erzeugt von gen_sprache.py aus vokabeln.txt und en_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Ich wechsle das Öl“? | I'm changing the oil | I'm checking the oil | I'm topping up the oil | I'm buying the oil
+M Was bedeutet „The brake pads are worn“? | Die Bremsbeläge sind abgenutzt | Die Bremsbeläge sind neu | Die Bremsbeläge fehlen | Die Bremsbeläge sind bestellt
+M Was heißt „Der Reifendruck ist zu niedrig“? | The tyre pressure is too low | The tyre pressure is too high | The tyre is too old | The tyre is too wide
+M Was bedeutet „Your car is ready“? | Ihr Auto ist fertig | Ihr Auto ist kaputt | Ihr Auto ist verkauft | Ihr Auto ist unterwegs
+M Was heißt „Die Batterie ist leer“? | The battery is flat | The battery is charged | The battery is new | The battery is cracked
+M Was bedeutet „I need to replace the bulb“? | Ich muss die Glühlampe ersetzen | Ich muss die Glühlampe prüfen | Ich muss die Glühlampe reinigen | Ich muss die Glühlampe bestellen
+R „To tighten“ heißt „anziehen“ (eine Schraube).
+F „To loosen“ heißt „festziehen“. || „To loosen“ heißt „lösen“.
+# --- Deutsch → Englisch
+M Was heißt „die Wartung“ auf Englisch? | maintenance | oil change | oil level | drain plug
+M Was heißt „der Service (die Inspektion)“ auf Englisch? | service | maintenance schedule | spark plug | gasket
+M Was heißt „der Ölwechsel“ auf Englisch? | oil change | gasket | coolant | antifreeze
+M Was heißt „das Motoröl“ auf Englisch? | engine oil | gasket | maintenance | coolant
+M Was heißt „der Ölfilter“ auf Englisch? | oil filter | maintenance | air filter | service
+M Was heißt „der Luftfilter“ auf Englisch? | air filter | oil change | spark plug | gasket
+M Was heißt „der Ölstand“ auf Englisch? | oil level | service | spark plug | drain plug
+M Was heißt „die Ablassschraube“ auf Englisch? | drain plug | spark plug | oil filter | gasket
+M Was heißt „die Dichtung“ auf Englisch? | gasket | coolant | air filter | maintenance schedule
+M Was heißt „das Kühlmittel“ auf Englisch? | coolant | oil level | drain plug | maintenance
+M Was heißt „der Frostschutz“ auf Englisch? | antifreeze | engine oil | oil level | oil change
+M Was heißt „die Zündkerze“ auf Englisch? | spark plug | maintenance | oil filter | coolant
+M Was heißt „der Wartungsplan“ auf Englisch? | maintenance schedule | spark plug | oil filter | air filter
+M Was heißt „die Felge“ auf Englisch? | rim | tyre pressure | spare wheel | tread
+M Was heißt „der Reifendruck“ auf Englisch? | tyre pressure | tyre valve | wheel bearing | spare wheel
+M Was heißt „das Reifenprofil“ auf Englisch? | tread | wheel bolt | spare wheel | rim
+M Was heißt „die Radschraube“ auf Englisch? | wheel bolt | winter tyre | wheel balancing | spare wheel
+M Was heißt „das Auswuchten“ auf Englisch? | wheel balancing | wheel bearing | spare wheel | wheel bolt
+M Was heißt „das Reifenventil“ auf Englisch? | tyre valve | tread | rim | tyre pressure
+M Was heißt „der Winterreifen“ auf Englisch? | winter tyre | tyre pressure | wheel bearing | tread
+M Was heißt „das Reserverad“ auf Englisch? | spare wheel | rim | winter tyre | wheel bearing
+M Was heißt „das Radlager“ auf Englisch? | wheel bearing | rim | wheel bolt | wheel balancing
+M Was heißt „die Bremse“ auf Englisch? | brake | brake servo | brake pedal | brake fluid
+M Was heißt „die Bremsbeläge“ auf Englisch? | brake pads | brake fluid | brake disc | brake servo
+M Was heißt „die Bremsscheibe“ auf Englisch? | brake disc | brake pads | brake line | brake pedal
+M Was heißt „der Bremssattel“ auf Englisch? | brake caliper | brake line | brake disc | drum brake
+M Was heißt „die Bremsflüssigkeit“ auf Englisch? | brake fluid | brake | brake line | brake pedal
+M Was heißt „die Bremsleitung“ auf Englisch? | brake line | brake fluid | brake pads | drum brake
+M Was heißt „die Trommelbremse“ auf Englisch? | drum brake | brake servo | brake | brake pedal
+M Was heißt „der Bremskraftverstärker“ auf Englisch? | brake servo | brake disc | brake line | drum brake
+M Was heißt „das Bremspedal“ auf Englisch? | brake pedal | brake fluid | brake | brake caliper
+M Was heißt „der Stoßdämpfer“ auf Englisch? | shock absorber | drive shaft | joint | track rod
+M Was heißt „die Feder“ auf Englisch? | spring | shock absorber | control arm | joint
+M Was heißt „die Lenkung“ auf Englisch? | steering | track rod | shock absorber | axle
+M Was heißt „das Gelenk“ auf Englisch? | joint | gaiter | spring | control arm
+M Was heißt „die Antriebswelle“ auf Englisch? | drive shaft | track rod | joint | gaiter
+M Was heißt „die Manschette“ auf Englisch? | gaiter | control arm | track rod | steering
+M Was heißt „der Querlenker“ auf Englisch? | control arm | joint | axle | shock absorber
+M Was heißt „die Spurstange“ auf Englisch? | track rod | shock absorber | axle | control arm
+M Was heißt „die Achse“ auf Englisch? | axle | steering | spring | shock absorber
+M Was heißt „der Auspuff“ auf Englisch? | exhaust | exhaust gas | silencer | catalytic converter
+M Was heißt „der Schalldämpfer“ auf Englisch? | silencer | exhaust | welding | exhaust gas
+M Was heißt „der Katalysator“ auf Englisch? | catalytic converter | exhaust gas | welding | silencer
+M Was heißt „das Abgas“ auf Englisch? | exhaust gas | welding | catalytic converter | silencer
+M Was heißt „das Schweißen“ auf Englisch? | welding | exhaust gas | silencer | catalytic converter
+M Was heißt „der Rost“ auf Englisch? | rust | exhaust | catalytic converter | silencer
+M Was heißt „die Batterie“ auf Englisch? | battery | main beam | alternator | fuse
+M Was heißt „die Glühlampe“ auf Englisch? | bulb | cable | indicator | main beam
+M Was heißt „das Abblendlicht“ auf Englisch? | dipped headlights | fuse | connector | main beam
+M Was heißt „das Fernlicht“ auf Englisch? | main beam | alternator | bulb | dipped headlights
+M Was heißt „der Blinker“ auf Englisch? | indicator | main beam | bulb | fuse
+M Was heißt „das Bremslicht“ auf Englisch? | brake light | alternator | cable | indicator
+M Was heißt „die Sicherung“ auf Englisch? | fuse | indicator | battery | main beam
+M Was heißt „das Kabel“ auf Englisch? | cable | alternator | brake light | battery
+M Was heißt „der Stecker“ auf Englisch? | connector | bulb | cable | fuse
+M Was heißt „der Starter“ auf Englisch? | starter motor | bulb | main beam | battery
+M Was heißt „der Generator“ auf Englisch? | alternator | brake light | starter motor | bulb
+# --- Englisch → Deutsch
+M Was bedeutet „maintenance“? | die Wartung | der Service (die Inspektion) | der Luftfilter | der Ölstand
+M Was bedeutet „oil change“? | der Ölwechsel | die Dichtung | das Motoröl | der Frostschutz
+M Was bedeutet „oil filter“? | der Ölfilter | das Motoröl | das Kühlmittel | der Luftfilter
+M Was bedeutet „oil level“? | der Ölstand | das Kühlmittel | der Wartungsplan | die Zündkerze
+M Was bedeutet „coolant“? | das Kühlmittel | der Ölstand | der Ölfilter | die Wartung
+M Was bedeutet „spark plug“? | die Zündkerze | der Frostschutz | der Luftfilter | der Service (die Inspektion)
+M Was bedeutet „rim“? | die Felge | das Radlager | das Auswuchten | das Reifenventil
+M Was bedeutet „tread“? | das Reifenprofil | das Auswuchten | die Felge | das Reifenventil
+M Was bedeutet „tyre valve“? | das Reifenventil | das Radlager | das Reserverad | die Felge
+M Was bedeutet „spare wheel“? | das Reserverad | das Reifenventil | der Reifendruck | das Reifenprofil
+M Was bedeutet „brake“? | die Bremse | die Bremsflüssigkeit | das Bremspedal | die Bremsscheibe
+M Was bedeutet „brake caliper“? | der Bremssattel | die Bremsleitung | die Bremsbeläge | die Bremse
+M Was bedeutet „brake line“? | die Bremsleitung | die Trommelbremse | der Bremssattel | die Bremsbeläge
+M Was bedeutet „brake servo“? | der Bremskraftverstärker | die Bremsscheibe | die Bremsflüssigkeit | die Bremse
+M Was bedeutet „shock absorber“? | der Stoßdämpfer | die Feder | die Antriebswelle | die Lenkung
+M Was bedeutet „joint“? | das Gelenk | die Feder | die Spurstange | der Querlenker
+M Was bedeutet „gaiter“? | die Manschette | der Querlenker | die Antriebswelle | der Stoßdämpfer
+M Was bedeutet „track rod“? | die Spurstange | der Querlenker | der Stoßdämpfer | die Feder
+M Was bedeutet „silencer“? | der Schalldämpfer | das Abgas | der Katalysator | das Schweißen
+M Was bedeutet „exhaust gas“? | das Abgas | der Auspuff | der Rost | der Katalysator
+M Was bedeutet „rust“? | der Rost | der Auspuff | das Abgas | der Schalldämpfer
+M Was bedeutet „bulb“? | die Glühlampe | der Starter | das Fernlicht | das Abblendlicht
+M Was bedeutet „indicator“? | der Blinker | das Fernlicht | der Stecker | das Abblendlicht
+M Was bedeutet „fuse“? | die Sicherung | das Bremslicht | das Abblendlicht | der Blinker
+M Was bedeutet „connector“? | der Stecker | die Sicherung | die Glühlampe | das Kabel
+# --- Zuordnen
+Z Ordne zu: Wartung und Öl (Teil 1). | die Wartung = maintenance | der Service (die Inspektion) = service | der Ölwechsel = oil change | das Motoröl = engine oil
+Z Ordne zu: Wartung und Öl (Teil 2). | der Ölfilter = oil filter | der Luftfilter = air filter | der Ölstand = oil level | die Ablassschraube = drain plug
+Z Ordne zu: Wartung und Öl (Teil 3). | die Dichtung = gasket | das Kühlmittel = coolant | der Frostschutz = antifreeze | die Zündkerze = spark plug
+Z Ordne zu: Räder und Reifen (Teil 1). | die Felge = rim | der Reifendruck = tyre pressure | das Reifenprofil = tread | die Radschraube = wheel bolt
+Z Ordne zu: Räder und Reifen (Teil 2). | das Auswuchten = wheel balancing | das Reifenventil = tyre valve | der Winterreifen = winter tyre | das Reserverad = spare wheel
+Z Ordne zu: Bremsen (Teil 1). | die Bremse = brake | die Bremsbeläge = brake pads | die Bremsscheibe = brake disc | der Bremssattel = brake caliper
+Z Ordne zu: Bremsen (Teil 2). | die Bremsflüssigkeit = brake fluid | die Bremsleitung = brake line | die Trommelbremse = drum brake | der Bremskraftverstärker = brake servo
+Z Ordne zu: Fahrwerk und Lenkung (Teil 1). | der Stoßdämpfer = shock absorber | die Feder = spring | die Lenkung = steering | das Gelenk = joint
+Z Ordne zu: Fahrwerk und Lenkung (Teil 2). | die Antriebswelle = drive shaft | die Manschette = gaiter | der Querlenker = control arm | die Spurstange = track rod
+Z Ordne zu: Abgasanlage (Teil 1). | der Auspuff = exhaust | der Schalldämpfer = silencer | der Katalysator = catalytic converter | das Abgas = exhaust gas

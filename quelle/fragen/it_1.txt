@@ -1,0 +1,105 @@
+# Italienisch Level 2 – erzeugt von gen_sprache.py aus vokabeln.txt und it_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Ich wechsle das Öl“? | Cambio l'olio | Controllo l'olio | Aggiungo l'olio | Compro l'olio
+M Was bedeutet „Le pastiglie sono consumate“? | Die Bremsbeläge sind abgenutzt | Die Bremsbeläge sind neu | Die Bremsbeläge fehlen | Die Bremsbeläge sind bestellt
+M Was heißt „Der Reifendruck ist zu niedrig“? | La pressione degli pneumatici è troppo bassa | La pressione degli pneumatici è troppo alta | Lo pneumatico è troppo vecchio | Lo pneumatico è troppo largo
+M Was bedeutet „La macchina è pronta“? | Das Auto ist fertig | Das Auto ist kaputt | Das Auto ist verkauft | Das Auto ist unterwegs
+M Was heißt „Die Batterie ist leer“? | La batteria è scarica | La batteria è carica | La batteria è nuova | La batteria è rotta
+M Was bedeutet „Devo sostituire la lampadina“? | Ich muss die Glühlampe ersetzen | Ich muss die Glühlampe prüfen | Ich muss die Glühlampe reinigen | Ich muss die Glühlampe bestellen
+R „Stringere“ heißt „anziehen“ (eine Schraube).
+F „Svitare“ heißt „festschrauben“. || „Svitare“ heißt „abschrauben“, „avvitare“ heißt „festschrauben“.
+# --- Deutsch → Italienisch
+M Was heißt „die Wartung“ auf Italienisch? | la manutenzione | l'antigelo | il filtro dell'olio | il liquido di raffreddamento
+M Was heißt „der Service (die Inspektion)“ auf Italienisch? | il tagliando | la candela | il liquido di raffreddamento | il filtro dell'olio
+M Was heißt „der Ölwechsel“ auf Italienisch? | il cambio dell'olio | la guarnizione | il filtro dell'olio | il livello dell'olio
+M Was heißt „das Motoröl“ auf Italienisch? | l'olio motore | il filtro dell'olio | il cambio dell'olio | il tagliando
+M Was heißt „der Ölfilter“ auf Italienisch? | il filtro dell'olio | l'olio motore | la guarnizione | il livello dell'olio
+M Was heißt „der Luftfilter“ auf Italienisch? | il filtro dell'aria | il tappo di scarico | l'olio motore | il tagliando
+M Was heißt „der Ölstand“ auf Italienisch? | il livello dell'olio | l'olio motore | il tagliando | l'antigelo
+M Was heißt „die Ablassschraube“ auf Italienisch? | il tappo di scarico | il livello dell'olio | il piano di manutenzione | l'olio motore
+M Was heißt „die Dichtung“ auf Italienisch? | la guarnizione | il piano di manutenzione | la candela | il livello dell'olio
+M Was heißt „das Kühlmittel“ auf Italienisch? | il liquido di raffreddamento | la guarnizione | il tagliando | il filtro dell'aria
+M Was heißt „der Frostschutz“ auf Italienisch? | l'antigelo | la manutenzione | il filtro dell'olio | il liquido di raffreddamento
+M Was heißt „die Zündkerze“ auf Italienisch? | la candela | il cambio dell'olio | il filtro dell'olio | il tagliando
+M Was heißt „der Wartungsplan“ auf Italienisch? | il piano di manutenzione | l'antigelo | il liquido di raffreddamento | il tappo di scarico
+M Was heißt „die Felge“ auf Italienisch? | il cerchione | la valvola dello pneumatico | la ruota di scorta | il battistrada
+M Was heißt „der Reifendruck“ auf Italienisch? | la pressione degli pneumatici | il cerchione | la valvola dello pneumatico | il bullone della ruota
+M Was heißt „das Reifenprofil“ auf Italienisch? | il battistrada | il cuscinetto della ruota | la ruota di scorta | lo pneumatico invernale
+M Was heißt „die Radschraube“ auf Italienisch? | il bullone della ruota | l'equilibratura | lo pneumatico invernale | la valvola dello pneumatico
+M Was heißt „das Auswuchten“ auf Italienisch? | l'equilibratura | il battistrada | il cuscinetto della ruota | la ruota di scorta
+M Was heißt „das Reifenventil“ auf Italienisch? | la valvola dello pneumatico | lo pneumatico invernale | il bullone della ruota | il cerchione
+M Was heißt „der Winterreifen“ auf Italienisch? | lo pneumatico invernale | la valvola dello pneumatico | il cerchione | il battistrada
+M Was heißt „das Reserverad“ auf Italienisch? | la ruota di scorta | il bullone della ruota | il cuscinetto della ruota | il cerchione
+M Was heißt „das Radlager“ auf Italienisch? | il cuscinetto della ruota | l'equilibratura | la valvola dello pneumatico | la pressione degli pneumatici
+M Was heißt „die Bremse“ auf Italienisch? | il freno | il servofreno | il pedale del freno | il tubo del freno
+M Was heißt „die Bremsbeläge“ auf Italienisch? | le pastiglie dei freni | il freno | il servofreno | la pinza del freno
+M Was heißt „die Bremsscheibe“ auf Italienisch? | il disco freno | il pedale del freno | il freno a tamburo | le pastiglie dei freni
+M Was heißt „der Bremssattel“ auf Italienisch? | la pinza del freno | il disco freno | il pedale del freno | il servofreno
+M Was heißt „die Bremsflüssigkeit“ auf Italienisch? | il liquido dei freni | il freno | il freno a tamburo | le pastiglie dei freni
+M Was heißt „die Bremsleitung“ auf Italienisch? | il tubo del freno | le pastiglie dei freni | il pedale del freno | il disco freno
+M Was heißt „die Trommelbremse“ auf Italienisch? | il freno a tamburo | il pedale del freno | il servofreno | il tubo del freno
+M Was heißt „der Bremskraftverstärker“ auf Italienisch? | il servofreno | il tubo del freno | il liquido dei freni | il pedale del freno
+M Was heißt „das Bremspedal“ auf Italienisch? | il pedale del freno | il tubo del freno | il disco freno | il servofreno
+M Was heißt „der Stoßdämpfer“ auf Italienisch? | l'ammortizzatore | il semiasse | l'asse | lo sterzo
+M Was heißt „die Feder“ auf Italienisch? | la molla | il semiasse | l'ammortizzatore | la cuffia
+M Was heißt „die Lenkung“ auf Italienisch? | lo sterzo | l'asse | il braccio oscillante | l'ammortizzatore
+M Was heißt „das Gelenk“ auf Italienisch? | il giunto | il semiasse | l'ammortizzatore | l'asse
+M Was heißt „die Antriebswelle“ auf Italienisch? | il semiasse | l'asse | il braccio oscillante | lo sterzo
+M Was heißt „die Manschette“ auf Italienisch? | la cuffia | l'ammortizzatore | l'asse | il braccio oscillante
+M Was heißt „der Querlenker“ auf Italienisch? | il braccio oscillante | la molla | la cuffia | l'ammortizzatore
+M Was heißt „die Spurstange“ auf Italienisch? | il tirante dello sterzo | la molla | l'asse | il giunto
+M Was heißt „die Achse“ auf Italienisch? | l'asse | l'ammortizzatore | la molla | lo sterzo
+M Was heißt „der Auspuff“ auf Italienisch? | lo scarico | la marmitta | il catalizzatore | il gas di scarico
+M Was heißt „der Schalldämpfer“ auf Italienisch? | la marmitta | la ruggine | il catalizzatore | la saldatura
+M Was heißt „der Katalysator“ auf Italienisch? | il catalizzatore | la ruggine | la marmitta | lo scarico
+M Was heißt „das Abgas“ auf Italienisch? | il gas di scarico | la ruggine | la marmitta | il catalizzatore
+M Was heißt „das Schweißen“ auf Italienisch? | la saldatura | lo scarico | la ruggine | la marmitta
+M Was heißt „der Rost“ auf Italienisch? | la ruggine | il gas di scarico | la marmitta | il catalizzatore
+M Was heißt „die Batterie“ auf Italienisch? | la batteria | il motorino d'avviamento | la lampadina | gli anabbaglianti
+M Was heißt „die Glühlampe“ auf Italienisch? | la lampadina | gli abbaglianti | il cavo | il motorino d'avviamento
+M Was heißt „das Abblendlicht“ auf Italienisch? | gli anabbaglianti | la freccia | la luce di stop | il cavo
+M Was heißt „das Fernlicht“ auf Italienisch? | gli abbaglianti | la freccia | il cavo | gli anabbaglianti
+M Was heißt „der Blinker“ auf Italienisch? | la freccia | il connettore | l'alternatore | gli abbaglianti
+M Was heißt „das Bremslicht“ auf Italienisch? | la luce di stop | il fusibile | la batteria | gli abbaglianti
+M Was heißt „die Sicherung“ auf Italienisch? | il fusibile | la batteria | il cavo | gli anabbaglianti
+M Was heißt „das Kabel“ auf Italienisch? | il cavo | l'alternatore | la freccia | la batteria
+M Was heißt „der Stecker“ auf Italienisch? | il connettore | gli anabbaglianti | la batteria | la luce di stop
+M Was heißt „der Starter“ auf Italienisch? | il motorino d'avviamento | la batteria | la luce di stop | l'alternatore
+M Was heißt „der Generator“ auf Italienisch? | l'alternatore | gli anabbaglianti | il cavo | il fusibile
+# --- Italienisch → Deutsch
+M Was bedeutet „la manutenzione“? | die Wartung | der Ölstand | die Dichtung | der Service (die Inspektion)
+M Was bedeutet „il cambio dell'olio“? | der Ölwechsel | die Dichtung | der Service (die Inspektion) | der Luftfilter
+M Was bedeutet „il filtro dell'olio“? | der Ölfilter | das Motoröl | die Zündkerze | die Ablassschraube
+M Was bedeutet „il livello dell'olio“? | der Ölstand | die Zündkerze | der Luftfilter | der Ölfilter
+M Was bedeutet „il liquido di raffreddamento“? | das Kühlmittel | die Wartung | der Luftfilter | die Zündkerze
+M Was bedeutet „la candela“? | die Zündkerze | der Ölwechsel | der Ölstand | der Luftfilter
+M Was bedeutet „il cerchione“? | die Felge | der Reifendruck | das Radlager | das Reserverad
+M Was bedeutet „il battistrada“? | das Reifenprofil | die Radschraube | der Winterreifen | der Reifendruck
+M Was bedeutet „la valvola dello pneumatico“? | das Reifenventil | die Radschraube | das Reifenprofil | der Winterreifen
+M Was bedeutet „la ruota di scorta“? | das Reserverad | das Reifenventil | der Reifendruck | die Felge
+M Was bedeutet „il freno“? | die Bremse | das Bremspedal | die Trommelbremse | die Bremsleitung
+M Was bedeutet „la pinza del freno“? | der Bremssattel | die Trommelbremse | die Bremsflüssigkeit | der Bremskraftverstärker
+M Was bedeutet „il tubo del freno“? | die Bremsleitung | die Bremsbeläge | die Bremsscheibe | die Bremse
+M Was bedeutet „il servofreno“? | der Bremskraftverstärker | der Bremssattel | die Bremsbeläge | das Bremspedal
+M Was bedeutet „l'ammortizzatore“? | der Stoßdämpfer | die Achse | das Gelenk | die Feder
+M Was bedeutet „il giunto“? | das Gelenk | der Stoßdämpfer | die Achse | die Antriebswelle
+M Was bedeutet „la cuffia“? | die Manschette | die Antriebswelle | die Achse | der Querlenker
+M Was bedeutet „il tirante dello sterzo“? | die Spurstange | der Querlenker | der Stoßdämpfer | die Lenkung
+M Was bedeutet „la marmitta“? | der Schalldämpfer | der Katalysator | der Auspuff | das Schweißen
+M Was bedeutet „il gas di scarico“? | das Abgas | das Schweißen | der Schalldämpfer | der Auspuff
+M Was bedeutet „la ruggine“? | der Rost | der Auspuff | das Schweißen | der Schalldämpfer
+M Was bedeutet „la lampadina“? | die Glühlampe | das Fernlicht | die Sicherung | die Batterie
+M Was bedeutet „la freccia“? | der Blinker | das Bremslicht | die Batterie | das Fernlicht
+M Was bedeutet „il fusibile“? | die Sicherung | der Blinker | das Bremslicht | der Stecker
+M Was bedeutet „il connettore“? | der Stecker | das Kabel | die Batterie | die Sicherung
+# --- Zuordnen
+Z Ordne zu: Wartung und Öl (Teil 1). | die Wartung = la manutenzione | der Service (die Inspektion) = il tagliando | der Ölwechsel = il cambio dell'olio | das Motoröl = l'olio motore
+Z Ordne zu: Wartung und Öl (Teil 2). | der Ölfilter = il filtro dell'olio | der Luftfilter = il filtro dell'aria | der Ölstand = il livello dell'olio | die Ablassschraube = il tappo di scarico
+Z Ordne zu: Wartung und Öl (Teil 3). | die Dichtung = la guarnizione | das Kühlmittel = il liquido di raffreddamento | der Frostschutz = l'antigelo | die Zündkerze = la candela
+Z Ordne zu: Räder und Reifen (Teil 1). | die Felge = il cerchione | der Reifendruck = la pressione degli pneumatici | das Reifenprofil = il battistrada | die Radschraube = il bullone della ruota
+Z Ordne zu: Räder und Reifen (Teil 2). | das Auswuchten = l'equilibratura | das Reifenventil = la valvola dello pneumatico | der Winterreifen = lo pneumatico invernale | das Reserverad = la ruota di scorta
+Z Ordne zu: Bremsen (Teil 1). | die Bremse = il freno | die Bremsbeläge = le pastiglie dei freni | die Bremsscheibe = il disco freno | der Bremssattel = la pinza del freno
+Z Ordne zu: Bremsen (Teil 2). | die Bremsflüssigkeit = il liquido dei freni | die Bremsleitung = il tubo del freno | die Trommelbremse = il freno a tamburo | der Bremskraftverstärker = il servofreno
+Z Ordne zu: Fahrwerk und Lenkung (Teil 1). | der Stoßdämpfer = l'ammortizzatore | die Feder = la molla | die Lenkung = lo sterzo | das Gelenk = il giunto
+Z Ordne zu: Fahrwerk und Lenkung (Teil 2). | die Antriebswelle = il semiasse | die Manschette = la cuffia | der Querlenker = il braccio oscillante | die Spurstange = il tirante dello sterzo
+Z Ordne zu: Abgasanlage (Teil 1). | der Auspuff = lo scarico | der Schalldämpfer = la marmitta | der Katalysator = il catalizzatore | das Abgas = il gas di scarico

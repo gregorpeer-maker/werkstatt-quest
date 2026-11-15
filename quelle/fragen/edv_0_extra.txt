@@ -1,0 +1,9 @@
+# --- Sicherheit und Umgang (handgeschrieben)
+M Welches Passwort ist am sichersten? | Ein langes Passwort aus zufälligen Wörtern, Zahlen und Zeichen, das nur für einen Dienst gilt | Der eigene Vorname mit Geburtsjahr | Ein kurzes Passwort, das für alle Dienste gleich ist | Die Ziffernfolge 12345678 mit einem Ausrufezeichen
+M Du bekommst eine E-Mail mit Anhang von einem unbekannten Absender. Was machst du? | Den Anhang nicht öffnen und die Nachricht melden oder löschen | Den Anhang öffnen, um zu sehen, was es ist | Die Nachricht an alle Kollegen weiterleiten | Auf die Nachricht antworten und nach dem Absender fragen
+M Was passiert mit ungespeicherten Änderungen, wenn der Computer plötzlich ausgeht? | Sie gehen in der Regel verloren, weil sie nur im Arbeitsspeicher lagen | Sie liegen sicher im Papierkorb | Sie werden automatisch per E-Mail verschickt | Sie bleiben auf dem Bildschirm gespeichert
+M Was ist der Unterschied zwischen „Speichern“ und „Speichern unter“? | „Speichern unter“ fragt nach Name und Ort und legt so eine neue Datei an | „Speichern“ legt immer eine Kopie an | „Speichern unter“ druckt das Dokument | Es gibt keinen Unterschied
+R Ein Backup sollte auf einem anderen Datenträger liegen als das Original.
+F Eine Datei im Papierkorb ist endgültig gelöscht und kann nicht zurückgeholt werden. || Solange der Papierkorb nicht geleert wurde, lässt sie sich wiederherstellen.
+R Updates schließen Sicherheitslücken und sollten zeitnah installiert werden.
+F Ein Passwort darf man Kollegen weitergeben, wenn man ihnen vertraut. || Zugangsdaten sind persönlich. Jeder braucht einen eigenen Zugang.

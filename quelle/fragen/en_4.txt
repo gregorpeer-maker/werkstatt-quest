@@ -1,0 +1,105 @@
+# Englisch Level 5 – erzeugt von gen_sprache.py aus vokabeln.txt und en_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Wann kann ich das Auto abholen?“ | When can I pick up the car? | When can I pay for the car? | Where can I leave the car? | How much is the car?
+M Was bedeutet „How much is the repair?“ | Was kostet die Reparatur? | Wie lange dauert die Reparatur? | Wer macht die Reparatur? | Wann beginnt die Reparatur?
+M Was heißt „Wir müssen ein Ersatzteil bestellen“? | We have to order a spare part | We have to fit a spare part | We have to pay for a spare part | We have to look for a spare part
+M Was bedeutet „The test certificate has expired“? | Die Prüfbescheinigung ist abgelaufen | Die Prüfbescheinigung ist ausgestellt | Die Prüfbescheinigung kommt morgen | Die Prüfbescheinigung ist bezahlt
+M Was heißt „Bitte unterschreiben Sie hier“? | Please sign here | Please pay here | Please wait here | Please park here
+M Was bedeutet „The noise only occurs when the engine is cold“? | Das Geräusch tritt nur bei kaltem Motor auf | Das Geräusch tritt nur beim Bremsen auf | Das Geräusch tritt nur in Kurven auf | Das Geräusch tritt nur bei Regen auf
+R „Estimate“ ist der Kostenvoranschlag.
+F „Invoice“ ist die Garantie. || „Invoice“ ist die Rechnung, die Garantie heißt „warranty“.
+# --- Deutsch → Englisch
+M Was heißt „der Kostenvoranschlag“ auf Englisch? | estimate | spare part | VAT | discount
+M Was heißt „die Rechnung“ auf Englisch? | invoice | delivery | signature | VAT
+M Was heißt „die Mehrwertsteuer“ auf Englisch? | VAT | signature | spare part | invoice
+M Was heißt „die Garantie“ auf Englisch? | warranty | labour costs | price | signature
+M Was heißt „der Termin“ auf Englisch? | appointment | work order | warranty | labour costs
+M Was heißt „der Arbeitsauftrag“ auf Englisch? | work order | spare part | warranty | signature
+M Was heißt „die Unterschrift“ auf Englisch? | signature | spare part | price | discount
+M Was heißt „das Ersatzteil“ auf Englisch? | spare part | price | delivery | labour costs
+M Was heißt „die Lieferung“ auf Englisch? | delivery | invoice | spare part | labour costs
+M Was heißt „der Preis“ auf Englisch? | price | appointment | estimate | spare part
+M Was heißt „der Rabatt“ auf Englisch? | discount | delivery | signature | labour costs
+M Was heißt „die Arbeitskosten“ auf Englisch? | labour costs | price | appointment | warranty
+M Was heißt „die Bezahlung“ auf Englisch? | payment | price | spare part | labour costs
+M Was heißt „der Fahrzeugschein“ auf Englisch? | registration document | owner | year of manufacture | insurance
+M Was heißt „der Führerschein“ auf Englisch? | driving licence | owner | registration document | mileage
+M Was heißt „die Fahrgestellnummer“ auf Englisch? | chassis number | insurance | mileage | owner
+M Was heißt „die Versicherung“ auf Englisch? | insurance | driving licence | owner | mileage
+M Was heißt „der Kilometerstand“ auf Englisch? | mileage | insurance | chassis number | registration document
+M Was heißt „das Baujahr“ auf Englisch? | year of manufacture | insurance | owner | chassis number
+M Was heißt „der Fahrzeughalter“ auf Englisch? | owner | insurance | driving licence | chassis number
+M Was heißt „die Hauptuntersuchung“ auf Englisch? | roadworthiness test | defect | road safety | passed
+M Was heißt „der Mangel“ auf Englisch? | defect | test report | deadline | passed
+M Was heißt „der Prüfbericht“ auf Englisch? | test report | failed | road safety | roadworthiness test
+M Was heißt „der Bremsenprüfstand“ auf Englisch? | brake tester | road safety | test report | failed
+M Was heißt „bestanden“ auf Englisch? | passed | brake tester | defect | failed
+M Was heißt „nicht bestanden“ auf Englisch? | failed | passed | defect | deadline
+M Was heißt „die Verkehrssicherheit“ auf Englisch? | road safety | defect | test report | brake tester
+M Was heißt „die Frist“ auf Englisch? | deadline | test report | failed | brake tester
+M Was heißt „die Störung“ auf Englisch? | fault | repair | warning light | replacement
+M Was heißt „das Geräusch“ auf Englisch? | noise | vibration | occasionally | software update
+M Was heißt „die Vibration“ auf Englisch? | vibration | software update | replacement | fault
+M Was heißt „die Probefahrt“ auf Englisch? | test drive | fault | replacement | repair
+M Was heißt „die Ursache“ auf Englisch? | cause | software update | noise | fault
+M Was heißt „die Reparatur“ auf Englisch? | repair | fault | test drive | vibration
+M Was heißt „der Austausch“ auf Englisch? | replacement | cause | warning light | noise
+M Was heißt „die Kontrollleuchte“ auf Englisch? | warning light | test drive | repair | noise
+M Was heißt „gelegentlich“ auf Englisch? | occasionally | software update | test drive | noise
+M Was heißt „die Software-Aktualisierung“ auf Englisch? | software update | repair | replacement | warning light
+M Was heißt „die Lehrabschlussprüfung“ auf Englisch? | final apprenticeship exam | CV | further training | skilled worker
+M Was heißt „die Berufsschule“ auf Englisch? | vocational school | experience | certificate | master craftsman
+M Was heißt „der Facharbeiter“ auf Englisch? | skilled worker | final apprenticeship exam | vocational school | master craftsman
+M Was heißt „der Meister“ auf Englisch? | master craftsman | job application | occupational safety | vocational school
+M Was heißt „die Arbeitssicherheit“ auf Englisch? | occupational safety | vocational school | final apprenticeship exam | CV
+M Was heißt „die Weiterbildung“ auf Englisch? | further training | CV | vocational school | certificate
+M Was heißt „der Lebenslauf“ auf Englisch? | CV | job application | vocational school | skilled worker
+M Was heißt „die Bewerbung“ auf Englisch? | job application | further training | master craftsman | occupational safety
+M Was heißt „die Bescheinigung“ auf Englisch? | certificate | CV | job application | master craftsman
+M Was heißt „die Erfahrung“ auf Englisch? | experience | further training | occupational safety | skilled worker
+M Was heißt „die Entsorgung“ auf Englisch? | disposal | environment | waste | waste oil
+M Was heißt „das Altöl“ auf Englisch? | waste oil | disposal | environment | waste
+M Was heißt „der Abfall“ auf Englisch? | waste | waste oil | disposal | hazardous substance
+M Was heißt „das Recycling“ auf Englisch? | recycling | waste | environment | waste oil
+M Was heißt „die Umwelt“ auf Englisch? | environment | waste | waste oil | hazardous substance
+M Was heißt „der Gefahrstoff“ auf Englisch? | hazardous substance | waste oil | environment | waste
+# --- Englisch → Deutsch
+M Was bedeutet „estimate“? | der Kostenvoranschlag | der Termin | die Garantie | das Ersatzteil
+M Was bedeutet „invoice“? | die Rechnung | die Bezahlung | der Rabatt | die Garantie
+M Was bedeutet „warranty“? | die Garantie | die Mehrwertsteuer | der Termin | die Arbeitskosten
+M Was bedeutet „work order“? | der Arbeitsauftrag | die Bezahlung | der Termin | die Mehrwertsteuer
+M Was bedeutet „spare part“? | das Ersatzteil | die Unterschrift | der Arbeitsauftrag | der Preis
+M Was bedeutet „price“? | der Preis | die Lieferung | die Mehrwertsteuer | das Ersatzteil
+M Was bedeutet „labour costs“? | die Arbeitskosten | die Rechnung | die Mehrwertsteuer | die Lieferung
+M Was bedeutet „registration document“? | der Fahrzeugschein | die Versicherung | der Fahrzeughalter | der Kilometerstand
+M Was bedeutet „chassis number“? | die Fahrgestellnummer | der Führerschein | der Fahrzeughalter | der Kilometerstand
+M Was bedeutet „mileage“? | der Kilometerstand | der Führerschein | der Fahrzeugschein | der Fahrzeughalter
+M Was bedeutet „owner“? | der Fahrzeughalter | die Fahrgestellnummer | das Baujahr | die Versicherung
+M Was bedeutet „defect“? | der Mangel | die Hauptuntersuchung | die Frist | nicht bestanden
+M Was bedeutet „brake tester“? | der Bremsenprüfstand | der Prüfbericht | die Verkehrssicherheit | nicht bestanden
+M Was bedeutet „failed“? | nicht bestanden | die Hauptuntersuchung | die Verkehrssicherheit | der Prüfbericht
+M Was bedeutet „deadline“? | die Frist | der Prüfbericht | der Bremsenprüfstand | bestanden
+M Was bedeutet „fault“? | die Störung | die Probefahrt | der Austausch | die Reparatur
+M Was bedeutet „vibration“? | die Vibration | das Geräusch | die Störung | die Ursache
+M Was bedeutet „cause“? | die Ursache | die Probefahrt | die Software-Aktualisierung | gelegentlich
+M Was bedeutet „replacement“? | der Austausch | gelegentlich | die Vibration | die Ursache
+M Was bedeutet „occasionally“? | gelegentlich | die Störung | die Ursache | die Kontrollleuchte
+M Was bedeutet „final apprenticeship exam“? | die Lehrabschlussprüfung | die Berufsschule | die Bescheinigung | die Bewerbung
+M Was bedeutet „skilled worker“? | der Facharbeiter | der Meister | die Arbeitssicherheit | die Bewerbung
+M Was bedeutet „occupational safety“? | die Arbeitssicherheit | die Bewerbung | die Erfahrung | die Lehrabschlussprüfung
+M Was bedeutet „CV“? | der Lebenslauf | die Bescheinigung | der Meister | die Arbeitssicherheit
+M Was bedeutet „certificate“? | die Bescheinigung | der Meister | der Lebenslauf | die Bewerbung
+M Was bedeutet „disposal“? | die Entsorgung | das Recycling | der Abfall | die Umwelt
+M Was bedeutet „waste“? | der Abfall | das Recycling | die Umwelt | das Altöl
+M Was bedeutet „environment“? | die Umwelt | der Gefahrstoff | die Entsorgung | der Abfall
+# --- Zuordnen
+Z Ordne zu: Büro und Rechnung (Teil 1). | der Kostenvoranschlag = estimate | die Rechnung = invoice | die Mehrwertsteuer = VAT | die Garantie = warranty
+Z Ordne zu: Büro und Rechnung (Teil 2). | der Termin = appointment | der Arbeitsauftrag = work order | die Unterschrift = signature | das Ersatzteil = spare part
+Z Ordne zu: Büro und Rechnung (Teil 3). | die Lieferung = delivery | der Preis = price | der Rabatt = discount | die Arbeitskosten = labour costs
+Z Ordne zu: Fahrzeugdokumente (Teil 1). | der Fahrzeugschein = registration document | der Führerschein = driving licence | die Fahrgestellnummer = chassis number | die Versicherung = insurance
+Z Ordne zu: Hauptuntersuchung (Teil 1). | die Hauptuntersuchung = roadworthiness test | der Mangel = defect | der Prüfbericht = test report | der Bremsenprüfstand = brake tester
+Z Ordne zu: Hauptuntersuchung (Teil 2). | bestanden = passed | nicht bestanden = failed | die Verkehrssicherheit = road safety | die Frist = deadline
+Z Ordne zu: Fehler und Diagnose (Teil 1). | die Störung = fault | das Geräusch = noise | die Vibration = vibration | die Probefahrt = test drive
+Z Ordne zu: Fehler und Diagnose (Teil 2). | die Ursache = cause | die Reparatur = repair | der Austausch = replacement | die Kontrollleuchte = warning light
+Z Ordne zu: Beruf und Prüfung (Teil 1). | die Lehrabschlussprüfung = final apprenticeship exam | die Berufsschule = vocational school | der Facharbeiter = skilled worker | der Meister = master craftsman
+Z Ordne zu: Beruf und Prüfung (Teil 2). | die Arbeitssicherheit = occupational safety | die Weiterbildung = further training | der Lebenslauf = CV | die Bewerbung = job application

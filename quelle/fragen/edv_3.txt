@@ -1,0 +1,108 @@
+# EDV Level 4 – 3. Klasse KFZ: Excel
+# Erzeugt von gen_edv.py; handgeschriebene Fragen stehen in edv_3_extra.txt.
+# --- Excel (handgeschrieben)
+M Was passiert mit dem Bezug A1 in der Formel =A1*2, wenn man sie eine Zeile nach unten kopiert? | Er wird zu A2 | Er bleibt A1 | Er wird zu B1 | Er wird zu $A$1
+M Was passiert mit dem Bezug $B$1 in der Formel =A1*$B$1, wenn man sie nach unten kopiert? | Er bleibt $B$1 | Er wird zu $B$2 | Er wird zu C1 | Er wird zu B1
+M Welches Trennzeichen steht in deutschen Excel-Formeln zwischen den Angaben einer Funktion? | Das Semikolon | Das Komma | Der Doppelpunkt | Der Schrägstrich
+R In Excel beginnt jede Formel mit einem Gleichheitszeichen.
+F Die Formel =SUMME(A1;A5) addiert alle Zellen von A1 bis A5. || Mit Semikolon werden nur A1 und A5 addiert. Der Bereich wird mit Doppelpunkt geschrieben: A1:A5.
+# --- Begriffe
+M Was ist bzw. bedeutet „Arbeitsmappe“? | Excel-Datei, die ein oder mehrere Tabellenblätter enthält | Schnittpunkt von Spalte und Zeile, zum Beispiel B3 | Mehrere zusammenhängende Zellen, zum Beispiel A1:A10 | Funktion, die nur Zeilen mit bestimmten Werten anzeigt
+M Was ist bzw. bedeutet „Tabellenblatt“? | Einzelne Tabelle innerhalb einer Excel-Datei | Vorgefertigte Rechenanweisung mit Namen, zum Beispiel SUMME | Angabe in einer Formel, aus welcher Zelle der Wert stammt | Einstellung, wie ein Wert angezeigt wird, zum Beispiel als Währung
+M Was ist bzw. bedeutet „Zelle“? | Schnittpunkt von Spalte und Zeile, zum Beispiel B3 | Kleines Quadrat an der Zellecke zum Kopieren und Fortsetzen von Reihen | Zeilen nach den Werten einer Spalte ordnen | Angabe in einer Formel, aus welcher Zelle der Wert stammt
+M Was ist bzw. bedeutet „Zellbezug“? | Angabe in einer Formel, aus welcher Zelle der Wert stammt | Grafische Darstellung von Zahlen aus der Tabelle | Feld links oben, das die Adresse der aktiven Zelle zeigt | Zeilen nach den Werten einer Spalte ordnen
+M Was ist bzw. bedeutet „Relativer Bezug“? | Bezug, der sich beim Kopieren der Formel mitverschiebt | Schnittpunkt von Spalte und Zeile, zum Beispiel B3 | Kleines Quadrat an der Zellecke zum Kopieren und Fortsetzen von Reihen | Feld links oben, das die Adresse der aktiven Zelle zeigt
+M Was ist bzw. bedeutet „Absoluter Bezug“? | Bezug mit Dollarzeichen, der beim Kopieren gleich bleibt | Einzelne Tabelle innerhalb einer Excel-Datei | Angabe in einer Formel, aus welcher Zelle der Wert stammt | Funktion, die nur Zeilen mit bestimmten Werten anzeigt
+M Was ist bzw. bedeutet „Formel“? | Rechenanweisung, die mit einem Gleichheitszeichen beginnt | Zeilen nach den Werten einer Spalte ordnen | Bezug, der sich beim Kopieren der Formel mitverschiebt | Mehrere zusammenhängende Zellen, zum Beispiel A1:A10
+M Was ist bzw. bedeutet „Funktion“? | Vorgefertigte Rechenanweisung mit Namen, zum Beispiel SUMME | Einstellung, wie ein Wert angezeigt wird, zum Beispiel als Währung | Excel-Datei, die ein oder mehrere Tabellenblätter enthält | Grafische Darstellung von Zahlen aus der Tabelle
+M Was ist bzw. bedeutet „Bereich“? | Mehrere zusammenhängende Zellen, zum Beispiel A1:A10 | Grafische Darstellung von Zahlen aus der Tabelle | Kleines Quadrat an der Zellecke zum Kopieren und Fortsetzen von Reihen | Funktion, die nur Zeilen mit bestimmten Werten anzeigt
+M Was ist bzw. bedeutet „Ausfüllkästchen“? | Kleines Quadrat an der Zellecke zum Kopieren und Fortsetzen von Reihen | Einzelne Tabelle innerhalb einer Excel-Datei | Vorgefertigte Rechenanweisung mit Namen, zum Beispiel SUMME | Angabe in einer Formel, aus welcher Zelle der Wert stammt
+M Was ist bzw. bedeutet „Zahlenformat“? | Einstellung, wie ein Wert angezeigt wird, zum Beispiel als Währung | Formatierung, die sich nach dem Zellinhalt richtet | Bezug, der sich beim Kopieren der Formel mitverschiebt | Schnittpunkt von Spalte und Zeile, zum Beispiel B3
+M Was ist bzw. bedeutet „Bedingte Formatierung“? | Formatierung, die sich nach dem Zellinhalt richtet | Rechenanweisung, die mit einem Gleichheitszeichen beginnt | Kleines Quadrat an der Zellecke zum Kopieren und Fortsetzen von Reihen | Zeilen nach den Werten einer Spalte ordnen
+M Was ist bzw. bedeutet „Filter“? | Funktion, die nur Zeilen mit bestimmten Werten anzeigt | Angabe in einer Formel, aus welcher Zelle der Wert stammt | Vorgefertigte Rechenanweisung mit Namen, zum Beispiel SUMME | Grafische Darstellung von Zahlen aus der Tabelle
+M Was ist bzw. bedeutet „Sortieren“? | Zeilen nach den Werten einer Spalte ordnen | Zeilen oder Spalten beim Scrollen sichtbar halten | Mehrere zusammenhängende Zellen, zum Beispiel A1:A10 | Feld links oben, das die Adresse der aktiven Zelle zeigt
+M Was ist bzw. bedeutet „Diagramm“? | Grafische Darstellung von Zahlen aus der Tabelle | Vorgefertigte Rechenanweisung mit Namen, zum Beispiel SUMME | Excel-Datei, die ein oder mehrere Tabellenblätter enthält | Zeile über der Tabelle, die den Inhalt der aktiven Zelle zeigt
+M Was ist bzw. bedeutet „Bearbeitungsleiste“? | Zeile über der Tabelle, die den Inhalt der aktiven Zelle zeigt | Mehrere zusammenhängende Zellen, zum Beispiel A1:A10 | Zeilen oder Spalten beim Scrollen sichtbar halten | Funktion, die nur Zeilen mit bestimmten Werten anzeigt
+M Was ist bzw. bedeutet „Namenfeld“? | Feld links oben, das die Adresse der aktiven Zelle zeigt | Bezug, der sich beim Kopieren der Formel mitverschiebt | Formatierung, die sich nach dem Zellinhalt richtet | Einzelne Tabelle innerhalb einer Excel-Datei
+M Was ist bzw. bedeutet „Fixieren“? | Zeilen oder Spalten beim Scrollen sichtbar halten | Zeile über der Tabelle, die den Inhalt der aktiven Zelle zeigt | Bezug mit Dollarzeichen, der beim Kopieren gleich bleibt | Bezug, der sich beim Kopieren der Formel mitverschiebt
+# --- Begriffe erkennen
+M Welcher Begriff passt zu dieser Beschreibung? „Excel-Datei, die ein oder mehrere Tabellenblätter enthält“ | Arbeitsmappe | Absoluter Bezug | Relativer Bezug | Diagramm
+M Welcher Begriff passt zu dieser Beschreibung? „Einzelne Tabelle innerhalb einer Excel-Datei“ | Tabellenblatt | Formel | Namenfeld | Zelle
+M Welcher Begriff passt zu dieser Beschreibung? „Schnittpunkt von Spalte und Zeile, zum Beispiel B3“ | Zelle | Formel | Sortieren | Arbeitsmappe
+M Welcher Begriff passt zu dieser Beschreibung? „Angabe in einer Formel, aus welcher Zelle der Wert stammt“ | Zellbezug | Bedingte Formatierung | Bereich | Bearbeitungsleiste
+M Welcher Begriff passt zu dieser Beschreibung? „Bezug, der sich beim Kopieren der Formel mitverschiebt“ | Relativer Bezug | Formel | Zelle | Filter
+M Welcher Begriff passt zu dieser Beschreibung? „Bezug mit Dollarzeichen, der beim Kopieren gleich bleibt“ | Absoluter Bezug | Diagramm | Arbeitsmappe | Tabellenblatt
+M Welcher Begriff passt zu dieser Beschreibung? „Rechenanweisung, die mit einem Gleichheitszeichen beginnt“ | Formel | Bedingte Formatierung | Relativer Bezug | Zelle
+M Welcher Begriff passt zu dieser Beschreibung? „Vorgefertigte Rechenanweisung mit Namen, zum Beispiel SUMME“ | Funktion | Ausfüllkästchen | Formel | Bedingte Formatierung
+M Welcher Begriff passt zu dieser Beschreibung? „Mehrere zusammenhängende Zellen, zum Beispiel A1:A10“ | Bereich | Arbeitsmappe | Fixieren | Relativer Bezug
+M Welcher Begriff passt zu dieser Beschreibung? „Kleines Quadrat an der Zellecke zum Kopieren und Fortsetzen von Reihen“ | Ausfüllkästchen | Arbeitsmappe | Zelle | Relativer Bezug
+M Welcher Begriff passt zu dieser Beschreibung? „Einstellung, wie ein Wert angezeigt wird, zum Beispiel als Währung“ | Zahlenformat | Formel | Absoluter Bezug | Bedingte Formatierung
+M Welcher Begriff passt zu dieser Beschreibung? „Formatierung, die sich nach dem Zellinhalt richtet“ | Bedingte Formatierung | Sortieren | Tabellenblatt | Funktion
+M Welcher Begriff passt zu dieser Beschreibung? „Funktion, die nur Zeilen mit bestimmten Werten anzeigt“ | Filter | Fixieren | Relativer Bezug | Ausfüllkästchen
+M Welcher Begriff passt zu dieser Beschreibung? „Zeilen nach den Werten einer Spalte ordnen“ | Sortieren | Absoluter Bezug | Zelle | Tabellenblatt
+M Welcher Begriff passt zu dieser Beschreibung? „Grafische Darstellung von Zahlen aus der Tabelle“ | Diagramm | Namenfeld | Sortieren | Zelle
+M Welcher Begriff passt zu dieser Beschreibung? „Zeile über der Tabelle, die den Inhalt der aktiven Zelle zeigt“ | Bearbeitungsleiste | Formel | Diagramm | Zahlenformat
+M Welcher Begriff passt zu dieser Beschreibung? „Feld links oben, das die Adresse der aktiven Zelle zeigt“ | Namenfeld | Bedingte Formatierung | Sortieren | Bearbeitungsleiste
+M Welcher Begriff passt zu dieser Beschreibung? „Zeilen oder Spalten beim Scrollen sichtbar halten“ | Fixieren | Zahlenformat | Tabellenblatt | Funktion
+# --- Funktionen
+M Welche Excel-Funktion addiert alle Zahlen eines Bereichs? | SUMME | SUMMEWENN | HEUTE | RUNDEN
+M Welche Excel-Funktion berechnet den Durchschnitt? | MITTELWERT | SUMME | SVERWEIS | ANZAHL2
+M Welche Excel-Funktion liefert den größten Wert? | MAX | RUNDEN | SUMMEWENN | MITTELWERT
+M Welche Excel-Funktion liefert den kleinsten Wert? | MIN | ANZAHL | HEUTE | SVERWEIS
+M Welche Excel-Funktion zählt die Zellen, die Zahlen enthalten? | ANZAHL | MAX | WENN | SVERWEIS
+M Welche Excel-Funktion zählt alle nicht leeren Zellen? | ANZAHL2 | SVERWEIS | HEUTE | SUMMEWENN
+M Welche Excel-Funktion gibt je nach Bedingung einen von zwei Werten aus? | WENN | SUMMEWENN | MITTELWERT | ANZAHL
+M Welche Excel-Funktion rundet auf eine angegebene Stellenzahl? | RUNDEN | SUMMEWENN | MAX | ZÄHLENWENN
+M Welche Excel-Funktion liefert das aktuelle Datum? | HEUTE | ANZAHL2 | ANZAHL | SUMMEWENN
+M Welche Excel-Funktion sucht einen Wert in der ersten Spalte und gibt einen Wert derselben Zeile zurück? | SVERWEIS | SUMMEWENN | MIN | ANZAHL2
+M Welche Excel-Funktion zählt die Zellen, die eine Bedingung erfüllen? | ZÄHLENWENN | RUNDEN | ANZAHL | SUMME
+M Welche Excel-Funktion addiert nur die Zahlen, die eine Bedingung erfüllen? | SUMMEWENN | SVERWEIS | ANZAHL | MIN
+M Was macht die Excel-Funktion SUMME? | Sie addiert alle Zahlen eines Bereichs | Sie gibt je nach Bedingung einen von zwei Werten aus | Sie zählt alle nicht leeren Zellen | Sie sucht einen Wert in der ersten Spalte und gibt einen Wert derselben Zeile zurück
+M Was macht die Excel-Funktion MITTELWERT? | Sie berechnet den Durchschnitt | Sie liefert den kleinsten Wert | Sie sucht einen Wert in der ersten Spalte und gibt einen Wert derselben Zeile zurück | Sie gibt je nach Bedingung einen von zwei Werten aus
+M Was macht die Excel-Funktion MAX? | Sie liefert den größten Wert | Sie zählt alle nicht leeren Zellen | Sie rundet auf eine angegebene Stellenzahl | Sie sucht einen Wert in der ersten Spalte und gibt einen Wert derselben Zeile zurück
+M Was macht die Excel-Funktion MIN? | Sie liefert den kleinsten Wert | Sie addiert alle Zahlen eines Bereichs | Sie liefert den größten Wert | Sie addiert nur die Zahlen, die eine Bedingung erfüllen
+M Was macht die Excel-Funktion ANZAHL? | Sie zählt die Zellen, die Zahlen enthalten | Sie addiert nur die Zahlen, die eine Bedingung erfüllen | Sie berechnet den Durchschnitt | Sie zählt alle nicht leeren Zellen
+M Was macht die Excel-Funktion ANZAHL2? | Sie zählt alle nicht leeren Zellen | Sie addiert nur die Zahlen, die eine Bedingung erfüllen | Sie zählt die Zellen, die Zahlen enthalten | Sie addiert alle Zahlen eines Bereichs
+M Was macht die Excel-Funktion WENN? | Sie gibt je nach Bedingung einen von zwei Werten aus | Sie rundet auf eine angegebene Stellenzahl | Sie addiert nur die Zahlen, die eine Bedingung erfüllen | Sie liefert den kleinsten Wert
+M Was macht die Excel-Funktion RUNDEN? | Sie rundet auf eine angegebene Stellenzahl | Sie addiert alle Zahlen eines Bereichs | Sie zählt die Zellen, die Zahlen enthalten | Sie liefert den größten Wert
+M Was macht die Excel-Funktion HEUTE? | Sie liefert das aktuelle Datum | Sie zählt die Zellen, die Zahlen enthalten | Sie sucht einen Wert in der ersten Spalte und gibt einen Wert derselben Zeile zurück | Sie liefert den größten Wert
+M Was macht die Excel-Funktion SVERWEIS? | Sie sucht einen Wert in der ersten Spalte und gibt einen Wert derselben Zeile zurück | Sie gibt je nach Bedingung einen von zwei Werten aus | Sie zählt alle nicht leeren Zellen | Sie berechnet den Durchschnitt
+M Was macht die Excel-Funktion ZÄHLENWENN? | Sie zählt die Zellen, die eine Bedingung erfüllen | Sie liefert den größten Wert | Sie rundet auf eine angegebene Stellenzahl | Sie zählt die Zellen, die Zahlen enthalten
+M Was macht die Excel-Funktion SUMMEWENN? | Sie addiert nur die Zahlen, die eine Bedingung erfüllen | Sie liefert das aktuelle Datum | Sie zählt alle nicht leeren Zellen | Sie liefert den größten Wert
+# --- Fehlermeldungen
+M Was bedeutet die Anzeige #DIV/0! in einer Excel-Zelle? | Es wird durch null oder eine leere Zelle geteilt | Die Spalte ist zu schmal für den Wert | Die Formel verweist auf eine gelöschte Zelle | Der gesuchte Wert wurde nicht gefunden
+M Was bedeutet die Anzeige #NAME? in einer Excel-Zelle? | Excel kennt den Namen der Funktion nicht, meist ein Tippfehler | Die Formel rechnet mit Text statt mit einer Zahl | Die Spalte ist zu schmal für den Wert | Es wird durch null oder eine leere Zelle geteilt
+M Was bedeutet die Anzeige #WERT! in einer Excel-Zelle? | Die Formel rechnet mit Text statt mit einer Zahl | Es wird durch null oder eine leere Zelle geteilt | Der gesuchte Wert wurde nicht gefunden | Die Spalte ist zu schmal für den Wert
+M Was bedeutet die Anzeige #BEZUG! in einer Excel-Zelle? | Die Formel verweist auf eine gelöschte Zelle | Die Spalte ist zu schmal für den Wert | Die Formel rechnet mit Text statt mit einer Zahl | Der gesuchte Wert wurde nicht gefunden
+M Was bedeutet die Anzeige ##### in einer Excel-Zelle? | Die Spalte ist zu schmal für den Wert | Die Formel verweist auf eine gelöschte Zelle | Excel kennt den Namen der Funktion nicht, meist ein Tippfehler | Der gesuchte Wert wurde nicht gefunden
+M Was bedeutet die Anzeige #NV in einer Excel-Zelle? | Der gesuchte Wert wurde nicht gefunden | Es wird durch null oder eine leere Zelle geteilt | Die Formel verweist auf eine gelöschte Zelle | Excel kennt den Namen der Funktion nicht, meist ein Tippfehler
+# --- Was zeigt die Zelle an?
+N A1 = 12, B1 = 8, C1 = 20. Was zeigt die Zelle mit der Formel =A1+B1*C1 an? | 172 |  | 0 || Punkt vor Strich: zuerst B1*C1 >> Excel rechnet Punkt vor Strich.
+N A1 = 12, B1 = 8, C1 = 20. Was zeigt die Zelle mit der Formel =(A1+B1)*C1 an? | 400 |  | 0 || Zuerst die Klammer >> Klammern werden zuerst gerechnet.
+N A1 = 25, B1 = 25, C1 = 30. Was zeigt die Zelle mit der Formel =A1+B1*C1 an? | 775 |  | 0 || Punkt vor Strich: zuerst B1*C1 >> Excel rechnet Punkt vor Strich.
+N A1 = 25, B1 = 25, C1 = 30. Was zeigt die Zelle mit der Formel =(A1+B1)*C1 an? | 1500 |  | 0 || Zuerst die Klammer >> Klammern werden zuerst gerechnet.
+N A1 = 8, B1 = 8, C1 = 30. Was zeigt die Zelle mit der Formel =A1+B1*C1 an? | 248 |  | 0 || Punkt vor Strich: zuerst B1*C1 >> Excel rechnet Punkt vor Strich.
+N A1 = 8, B1 = 8, C1 = 30. Was zeigt die Zelle mit der Formel =(A1+B1)*C1 an? | 480 |  | 0 || Zuerst die Klammer >> Klammern werden zuerst gerechnet.
+N A1 = 10, A2 = 4, A3 = 6, A4 = 25. Was ergibt =SUMME(A1:A4)? | 45 |  | 0 || Alle vier Werte addieren >> SUMME addiert den ganzen Bereich.
+N A1 = 10, A2 = 4, A3 = 6, A4 = 25. Was ergibt =MITTELWERT(A1:A4)? | 11,25 |  | 0,01 || Summe geteilt durch 4 >> Summe durch Anzahl
+N A1 = 10, A2 = 4, A3 = 6, A4 = 25. Was ergibt =MAX(A1:A4)-MIN(A1:A4)? | 21 |  | 0 || Größter minus kleinster Wert >> MAX liefert den größten, MIN den kleinsten Wert.
+N A1 = 8, A2 = 6, A3 = 6, A4 = 25. Was ergibt =SUMME(A1:A4)? | 45 |  | 0 || Alle vier Werte addieren >> SUMME addiert den ganzen Bereich.
+N A1 = 8, A2 = 6, A3 = 6, A4 = 25. Was ergibt =MITTELWERT(A1:A4)? | 11,25 |  | 0,01 || Summe geteilt durch 4 >> Summe durch Anzahl
+N A1 = 8, A2 = 6, A3 = 6, A4 = 25. Was ergibt =MAX(A1:A4)-MIN(A1:A4)? | 19 |  | 0 || Größter minus kleinster Wert >> MAX liefert den größten, MIN den kleinsten Wert.
+N A1 = 15, A2 = 50, A3 = 20, A4 = 15. Was ergibt =SUMME(A1:A4)? | 100 |  | 0 || Alle vier Werte addieren >> SUMME addiert den ganzen Bereich.
+N A1 = 15, A2 = 50, A3 = 20, A4 = 15. Was ergibt =MITTELWERT(A1:A4)? | 25 |  | 0,01 || Summe geteilt durch 4 >> Summe durch Anzahl
+N A1 = 15, A2 = 50, A3 = 20, A4 = 15. Was ergibt =MAX(A1:A4)-MIN(A1:A4)? | 35 |  | 0 || Größter minus kleinster Wert >> MAX liefert den größten, MIN den kleinsten Wert.
+N A1 = 200 (Nettobetrag). Was ergibt =A1*1,22? | 244 |  | 0,01 || Netto mal 1,22 ergibt den Bruttobetrag mit 22 % MwSt. >> Mal 1,22
+N A1 = 200. Was ergibt =A1*22%? | 44 |  | 0,01 || 22 % sind 0,22 >> 22 % von A1
+N A1 = 85 (Nettobetrag). Was ergibt =A1*1,22? | 103,7 |  | 0,01 || Netto mal 1,22 ergibt den Bruttobetrag mit 22 % MwSt. >> Mal 1,22
+N A1 = 85. Was ergibt =A1*22%? | 18,7 |  | 0,01 || 22 % sind 0,22 >> 22 % von A1
+N A1 = 1250 (Nettobetrag). Was ergibt =A1*1,22? | 1525 |  | 0,01 || Netto mal 1,22 ergibt den Bruttobetrag mit 22 % MwSt. >> Mal 1,22
+N A1 = 1250. Was ergibt =A1*22%? | 275 |  | 0,01 || 22 % sind 0,22 >> 22 % von A1
+N A1 = 12,3456. Was ergibt =RUNDEN(A1;2)? | 12,35 |  | 0 || Auf 2 Stellen nach dem Komma runden >> Die zweite Angabe ist die Zahl der Nachkommastellen.
+N A1 = 7,849. Was ergibt =RUNDEN(A1;1)? | 7,8 |  | 0 || Auf 1 Stellen nach dem Komma runden >> Die zweite Angabe ist die Zahl der Nachkommastellen.
+N A1 = 199,5. Was ergibt =RUNDEN(A1;0)? | 200 |  | 0 || Auf 0 Stellen nach dem Komma runden >> Die zweite Angabe ist die Zahl der Nachkommastellen.
+N A1 = 8. Was ergibt =WENN(A1>10;A1*2;A1+5)? | 13 |  | 0 || Ist A1 größer als 10, gilt der erste Wert, sonst der zweite. >> Zuerst prüfen, ob die Bedingung stimmt.
+N A1 = 15. Was ergibt =WENN(A1>10;A1*2;A1+5)? | 30 |  | 0 || Ist A1 größer als 10, gilt der erste Wert, sonst der zweite. >> Zuerst prüfen, ob die Bedingung stimmt.
+N A1 = 30. Was ergibt =WENN(A1>10;A1*2;A1+5)? | 60 |  | 0 || Ist A1 größer als 10, gilt der erste Wert, sonst der zweite. >> Zuerst prüfen, ob die Bedingung stimmt.
+N A1 = 45, B1 = 60. Die Zelle mit =A1/B1 ist als Prozent formatiert. Welche Zahl steht vor dem Prozentzeichen? | 75 | % | 0 || 45 : 60 = 0,75 >> Als Prozent wird der Wert mal 100 angezeigt.
+N A1 = 12, B1 = 48. Die Zelle mit =A1/B1 ist als Prozent formatiert. Welche Zahl steht vor dem Prozentzeichen? | 25 | % | 0 || 12 : 48 = 0,25 >> Als Prozent wird der Wert mal 100 angezeigt.

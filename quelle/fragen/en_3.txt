@@ -1,0 +1,105 @@
+# Englisch Level 4 – erzeugt von gen_sprache.py aus vokabeln.txt und en_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Die Kontrollleuchte ist an“? | The warning light is on | The warning light is off | The warning light is broken | The warning light is flashing
+M Was bedeutet „to de-energise the system“? | Die Anlage spannungsfrei schalten | Die Spannung messen | Die Spannung erhöhen | Die Anlage einschalten
+M Was heißt „Der Partikelfilter ist verstopft“? | The particulate filter is clogged | The particulate filter is clean | The particulate filter is new | The particulate filter is removed
+M Was bedeutet „The battery goes flat overnight“? | Die Batterie entlädt sich über Nacht | Die Batterie lädt sich über Nacht | Die Batterie wird nachts getauscht | Die Batterie ist nachts kalt
+M Was heißt „Ich messe den Widerstand“? | I'm measuring the resistance | I'm measuring the voltage | I'm measuring the current | I'm measuring the pressure
+M Was bedeutet „The engine goes into limp mode“? | Der Motor geht in den Notlauf | Der Motor wird repariert | Der Motor läuft warm | Der Motor geht aus
+R „Danger: high voltage“ heißt „Gefahr Hochspannung“.
+F „To charge“ heißt „entladen“. || „To charge“ heißt „laden“, „to discharge“ heißt „entladen“.
+# --- Deutsch → Englisch
+M Was heißt „die Spannung“ auf Englisch? | voltage | resistance | current | wiring diagram
+M Was heißt „der Strom“ auf Englisch? | current | multimeter | open circuit | short circuit
+M Was heißt „der Widerstand“ auf Englisch? | resistance | wire | current | earth
+M Was heißt „die Masse“ auf Englisch? | earth | relay | multimeter | open circuit
+M Was heißt „der Kurzschluss“ auf Englisch? | short circuit | earth | wiring diagram | current
+M Was heißt „die Unterbrechung“ auf Englisch? | open circuit | multimeter | wiring diagram | short circuit
+M Was heißt „das Relais“ auf Englisch? | relay | voltage | switch | resistance
+M Was heißt „der Schalter“ auf Englisch? | switch | current | wiring diagram | short circuit
+M Was heißt „der Schaltplan“ auf Englisch? | wiring diagram | wire | open circuit | voltage
+M Was heißt „der Kabelbaum“ auf Englisch? | wiring harness | wire | resistance | current
+M Was heißt „das Multimeter“ auf Englisch? | multimeter | relay | earth | short circuit
+M Was heißt „die Leitung“ auf Englisch? | wire | wiring diagram | current | voltage
+M Was heißt „das Elektroauto“ auf Englisch? | electric car | range | hybrid vehicle | charging station
+M Was heißt „das Hybridfahrzeug“ auf Englisch? | hybrid vehicle | electric car | charging cable | electric motor
+M Was heißt „die Hochspannung“ auf Englisch? | high voltage | insulation | electric motor | hybrid vehicle
+M Was heißt „die Ladestation“ auf Englisch? | charging station | high voltage | range | inverter
+M Was heißt „das Ladekabel“ auf Englisch? | charging cable | range | hybrid vehicle | insulating gloves
+M Was heißt „der Elektromotor“ auf Englisch? | electric motor | insulating gloves | hybrid vehicle | inverter
+M Was heißt „der Wechselrichter“ auf Englisch? | inverter | high voltage | insulation | electric car
+M Was heißt „die Isolierung“ auf Englisch? | insulation | hybrid vehicle | insulating gloves | high voltage
+M Was heißt „die Reichweite“ auf Englisch? | range | high voltage | inverter | electric car
+M Was heißt „die isolierenden Handschuhe“ auf Englisch? | insulating gloves | hybrid vehicle | inverter | electric motor
+M Was heißt „der Dieselmotor“ auf Englisch? | diesel engine | high-pressure pump | fuel filter | diesel fuel
+M Was heißt „der Injektor“ auf Englisch? | injector | fuel filter | intercooler | diesel engine
+M Was heißt „die Hochdruckpumpe“ auf Englisch? | high-pressure pump | intercooler | diesel fuel | injector
+M Was heißt „der Turbolader“ auf Englisch? | turbocharger | high-pressure pump | diesel engine | intercooler
+M Was heißt „der Ladeluftkühler“ auf Englisch? | intercooler | injector | fuel filter | high-pressure pump
+M Was heißt „die Glühkerze“ auf Englisch? | glow plug | pressure | diesel engine | diesel fuel
+M Was heißt „der Kraftstofffilter“ auf Englisch? | fuel filter | diesel engine | intercooler | pressure
+M Was heißt „der Dieselkraftstoff“ auf Englisch? | diesel fuel | intercooler | glow plug | turbocharger
+M Was heißt „der Druck“ auf Englisch? | pressure | intercooler | injector | fuel filter
+M Was heißt „der Partikelfilter“ auf Englisch? | particulate filter | exhaust gas recirculation | nitrogen oxides | soot
+M Was heißt „die Abgasrückführung“ auf Englisch? | exhaust gas recirculation | urea | nitrogen oxides | particulate filter
+M Was heißt „der Ruß“ auf Englisch? | soot | exhaust gas recirculation | urea | regeneration
+M Was heißt „die Stickoxide“ auf Englisch? | nitrogen oxides | soot | urea | exhaust gas recirculation
+M Was heißt „die Regeneration“ auf Englisch? | regeneration | nitrogen oxides | urea | soot
+M Was heißt „der Harnstoff“ auf Englisch? | urea | soot | regeneration | exhaust gas recirculation
+M Was heißt „das Starten“ auf Englisch? | starting | preheating | parasitic drain | charging voltage
+M Was heißt „das Vorglühen“ auf Englisch? | preheating | starting | parasitic drain | stop-start system
+M Was heißt „die Ladespannung“ auf Englisch? | charging voltage | battery charger | stop-start system | preheating
+M Was heißt „das Ladegerät“ auf Englisch? | battery charger | charging voltage | preheating | starting
+M Was heißt „der Ruhestrom“ auf Englisch? | parasitic drain | charging voltage | preheating | battery charger
+M Was heißt „das Start-Stopp-System“ auf Englisch? | stop-start system | starting | preheating | battery charger
+M Was heißt „die Zentralverriegelung“ auf Englisch? | central locking | cruise control | immobiliser | window regulator
+M Was heißt „der Fensterheber“ auf Englisch? | window regulator | rain sensor | airbag | central locking
+M Was heißt „die Wegfahrsperre“ auf Englisch? | immobiliser | window regulator | central locking | remote control
+M Was heißt „der Airbag“ auf Englisch? | airbag | alarm system | remote control | cruise control
+M Was heißt „der Tempomat“ auf Englisch? | cruise control | network | central locking | airbag
+M Was heißt „der Regensensor“ auf Englisch? | rain sensor | window regulator | network | data line
+M Was heißt „die Datenleitung“ auf Englisch? | data line | alarm system | central locking | window regulator
+M Was heißt „das Netzwerk“ auf Englisch? | network | cruise control | immobiliser | airbag
+M Was heißt „die Fernbedienung“ auf Englisch? | remote control | cruise control | immobiliser | rain sensor
+M Was heißt „die Alarmanlage“ auf Englisch? | alarm system | remote control | window regulator | cruise control
+# --- Englisch → Deutsch
+M Was bedeutet „voltage“? | die Spannung | das Multimeter | der Kurzschluss | der Strom
+M Was bedeutet „current“? | der Strom | die Spannung | der Kurzschluss | das Relais
+M Was bedeutet „earth“? | die Masse | das Multimeter | der Schalter | der Schaltplan
+M Was bedeutet „open circuit“? | die Unterbrechung | das Multimeter | der Widerstand | der Strom
+M Was bedeutet „switch“? | der Schalter | die Leitung | das Relais | die Unterbrechung
+M Was bedeutet „wiring harness“? | der Kabelbaum | die Leitung | der Strom | das Multimeter
+M Was bedeutet „multimeter“? | das Multimeter | der Kurzschluss | die Leitung | der Schalter
+M Was bedeutet „electric car“? | das Elektroauto | die Ladestation | der Wechselrichter | die isolierenden Handschuhe
+M Was bedeutet „high voltage“? | die Hochspannung | die Reichweite | der Elektromotor | das Elektroauto
+M Was bedeutet „charging cable“? | das Ladekabel | das Hybridfahrzeug | die Ladestation | die isolierenden Handschuhe
+M Was bedeutet „inverter“? | der Wechselrichter | das Ladekabel | die isolierenden Handschuhe | die Reichweite
+M Was bedeutet „range“? | die Reichweite | das Ladekabel | der Wechselrichter | der Elektromotor
+M Was bedeutet „insulating gloves“? | die isolierenden Handschuhe | die Reichweite | das Elektroauto | der Wechselrichter
+M Was bedeutet „injector“? | der Injektor | die Hochdruckpumpe | der Dieselkraftstoff | der Turbolader
+M Was bedeutet „turbocharger“? | der Turbolader | der Ladeluftkühler | der Dieselmotor | der Kraftstofffilter
+M Was bedeutet „glow plug“? | die Glühkerze | der Dieselmotor | der Turbolader | der Dieselkraftstoff
+M Was bedeutet „diesel fuel“? | der Dieselkraftstoff | der Kraftstofffilter | die Hochdruckpumpe | die Glühkerze
+M Was bedeutet „particulate filter“? | der Partikelfilter | der Ruß | die Stickoxide | der Harnstoff
+M Was bedeutet „exhaust gas recirculation“? | die Abgasrückführung | der Harnstoff | die Regeneration | der Ruß
+M Was bedeutet „nitrogen oxides“? | die Stickoxide | die Regeneration | der Partikelfilter | die Abgasrückführung
+M Was bedeutet „urea“? | der Harnstoff | die Regeneration | die Stickoxide | der Partikelfilter
+M Was bedeutet „preheating“? | das Vorglühen | das Start-Stopp-System | das Starten | das Ladegerät
+M Was bedeutet „battery charger“? | das Ladegerät | das Vorglühen | das Start-Stopp-System | der Ruhestrom
+M Was bedeutet „stop-start system“? | das Start-Stopp-System | das Ladegerät | das Vorglühen | die Ladespannung
+M Was bedeutet „central locking“? | die Zentralverriegelung | der Airbag | der Fensterheber | der Tempomat
+M Was bedeutet „immobiliser“? | die Wegfahrsperre | der Tempomat | der Regensensor | die Fernbedienung
+M Was bedeutet „cruise control“? | der Tempomat | der Airbag | die Alarmanlage | das Netzwerk
+M Was bedeutet „data line“? | die Datenleitung | die Zentralverriegelung | der Airbag | die Fernbedienung
+M Was bedeutet „remote control“? | die Fernbedienung | der Regensensor | das Netzwerk | die Zentralverriegelung
+# --- Zuordnen
+Z Ordne zu: Elektrik (Teil 1). | die Spannung = voltage | der Strom = current | der Widerstand = resistance | die Masse = earth
+Z Ordne zu: Elektrik (Teil 2). | der Kurzschluss = short circuit | die Unterbrechung = open circuit | das Relais = relay | der Schalter = switch
+Z Ordne zu: Elektrik (Teil 3). | der Schaltplan = wiring diagram | der Kabelbaum = wiring harness | das Multimeter = multimeter | die Leitung = wire
+Z Ordne zu: Hochvolt (Teil 1). | das Elektroauto = electric car | das Hybridfahrzeug = hybrid vehicle | die Hochspannung = high voltage | die Ladestation = charging station
+Z Ordne zu: Hochvolt (Teil 2). | das Ladekabel = charging cable | der Elektromotor = electric motor | der Wechselrichter = inverter | die Isolierung = insulation
+Z Ordne zu: Diesel (Teil 1). | der Dieselmotor = diesel engine | der Injektor = injector | die Hochdruckpumpe = high-pressure pump | der Turbolader = turbocharger
+Z Ordne zu: Diesel (Teil 2). | der Ladeluftkühler = intercooler | die Glühkerze = glow plug | der Kraftstofffilter = fuel filter | der Dieselkraftstoff = diesel fuel
+Z Ordne zu: Abgasnachbehandlung (Teil 1). | der Partikelfilter = particulate filter | die Abgasrückführung = exhaust gas recirculation | der Ruß = soot | die Stickoxide = nitrogen oxides
+Z Ordne zu: Starten und Laden (Teil 1). | das Starten = starting | das Vorglühen = preheating | die Ladespannung = charging voltage | das Ladegerät = battery charger
+Z Ordne zu: Komfort und Vernetzung (Teil 1). | die Zentralverriegelung = central locking | der Fensterheber = window regulator | die Wegfahrsperre = immobiliser | der Airbag = airbag

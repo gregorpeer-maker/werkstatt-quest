@@ -1,0 +1,105 @@
+# Italienisch Level 3 – erzeugt von gen_sprache.py aus vokabeln.txt und it_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Der Motor überhitzt“? | Il motore si surriscalda | Il motore si spegne | Il motore non parte | Il motore perde olio
+M Was bedeutet „La frizione slitta“? | Die Kupplung rutscht | Die Kupplung trennt nicht | Die Kupplung ist neu | Die Kupplung rupft
+M Was heißt „Der Zahnriemen muss gewechselt werden“? | Bisogna sostituire la cinghia di distribuzione | Bisogna controllare la cinghia di distribuzione | Bisogna tendere la cinghia di distribuzione | Bisogna pulire la cinghia di distribuzione
+M Was bedeutet „Il climatizzatore non raffredda“? | Die Klimaanlage kühlt nicht | Die Klimaanlage heizt nicht | Die Klimaanlage ist laut | Die Klimaanlage riecht
+M Was heißt „Ich lese den Fehlerspeicher aus“? | Leggo la memoria guasti | Cancello la memoria guasti | Salvo la memoria guasti | Stampo la memoria guasti
+M Was bedeutet „C'è una perdita d'olio“? | Es gibt einen Ölverlust | Es gibt zu viel Öl | Es fehlt der Ölfilter | Das Öl ist zu alt
+R „Il motore non parte“ heißt „Der Motor springt nicht an“.
+F „Accendere“ heißt „ausschalten“. || „Accendere“ heißt „einschalten“, „spegnere“ heißt „ausschalten“.
+# --- Deutsch → Italienisch
+M Was heißt „der Motor“ auf Italienisch? | il motore | la valvola | la cinghia di distribuzione | la pompa dell'olio
+M Was heißt „der Kolben“ auf Italienisch? | il pistone | la catena di distribuzione | la cinghia di distribuzione | la pompa dell'olio
+M Was heißt „der Zylinder“ auf Italienisch? | il cilindro | la pompa dell'olio | la guarnizione della testata | la compressione
+M Was heißt „das Ventil (im Motor)“ auf Italienisch? | la valvola | la coppa dell'olio | la compressione | la pompa dell'olio
+M Was heißt „die Kurbelwelle“ auf Italienisch? | l'albero motore | la catena di distribuzione | il tenditore | la guarnizione della testata
+M Was heißt „die Nockenwelle“ auf Italienisch? | l'albero a camme | il cilindro | il pistone | il motore
+M Was heißt „der Zylinderkopf“ auf Italienisch? | la testata | la pompa dell'olio | la biella | la coppa dell'olio
+M Was heißt „die Zylinderkopfdichtung“ auf Italienisch? | la guarnizione della testata | la coppa dell'olio | la compressione | il cilindro
+M Was heißt „die Pleuelstange“ auf Italienisch? | la biella | la cinghia di distribuzione | la guarnizione della testata | la compressione
+M Was heißt „die Ölwanne“ auf Italienisch? | la coppa dell'olio | il pistone | l'albero a camme | la testata
+M Was heißt „die Ölpumpe“ auf Italienisch? | la pompa dell'olio | la testata | la catena di distribuzione | la coppa dell'olio
+M Was heißt „der Zahnriemen“ auf Italienisch? | la cinghia di distribuzione | il tenditore | il cilindro | l'albero a camme
+M Was heißt „die Steuerkette“ auf Italienisch? | la catena di distribuzione | la valvola | la pompa dell'olio | l'albero motore
+M Was heißt „die Spannrolle“ auf Italienisch? | il tenditore | la coppa dell'olio | la guarnizione della testata | la pompa dell'olio
+M Was heißt „die Kompression“ auf Italienisch? | la compressione | la pompa dell'olio | la cinghia di distribuzione | la guarnizione della testata
+M Was heißt „der Kühler“ auf Italienisch? | il radiatore | il surriscaldamento | il termostato | il manicotto
+M Was heißt „die Kühlmittelpumpe“ auf Italienisch? | la pompa dell'acqua | il surriscaldamento | il termostato | la ventola
+M Was heißt „der Thermostat“ auf Italienisch? | il termostato | il radiatore | il manicotto | il surriscaldamento
+M Was heißt „der Lüfter“ auf Italienisch? | la ventola | il manicotto | il termostato | la pompa dell'acqua
+M Was heißt „der Kühlerschlauch“ auf Italienisch? | il manicotto | la ventola | la pompa dell'acqua | il termostato
+M Was heißt „die Überhitzung“ auf Italienisch? | il surriscaldamento | la ventola | la pompa dell'acqua | il radiatore
+M Was heißt „die Kupplung“ auf Italienisch? | la frizione | la marcia | il cambio | la retromarcia
+M Was heißt „das Getriebe“ auf Italienisch? | il cambio | la marcia | la frizione | la retromarcia
+M Was heißt „der Gang“ auf Italienisch? | la marcia | il differenziale | il volano | la retromarcia
+M Was heißt „das Schwungrad“ auf Italienisch? | il volano | il differenziale | la retromarcia | il cambio
+M Was heißt „das Differenzial“ auf Italienisch? | il differenziale | l'olio del cambio | la retromarcia | il cambio
+M Was heißt „das Automatikgetriebe“ auf Italienisch? | il cambio automatico | l'olio del cambio | il volano | il differenziale
+M Was heißt „der Rückwärtsgang“ auf Italienisch? | la retromarcia | la marcia | la frizione | il cambio
+M Was heißt „das Getriebeöl“ auf Italienisch? | l'olio del cambio | il cambio automatico | la retromarcia | il volano
+M Was heißt „die Klimaanlage“ auf Italienisch? | il climatizzatore | il condensatore | l'evaporatore | il compressore
+M Was heißt „das Kältemittel“ auf Italienisch? | il gas refrigerante | la perdita | il compressore | il climatizzatore
+M Was heißt „der Kompressor“ auf Italienisch? | il compressore | il climatizzatore | il gas refrigerante | il condensatore
+M Was heißt „der Kondensator (Klima)“ auf Italienisch? | il condensatore | il climatizzatore | il gas refrigerante | il filtro abitacolo
+M Was heißt „der Verdampfer“ auf Italienisch? | l'evaporatore | il condensatore | il climatizzatore | il compressore
+M Was heißt „der Innenraumfilter“ auf Italienisch? | il filtro abitacolo | il condensatore | il gas refrigerante | l'evaporatore
+M Was heißt „die Undichtigkeit“ auf Italienisch? | la perdita | l'evaporatore | il compressore | il gas refrigerante
+M Was heißt „die Abgasuntersuchung“ auf Italienisch? | il controllo dei gas di scarico | la sonda lambda | la potenza | il carburante
+M Was heißt „die Lambdasonde“ auf Italienisch? | la sonda lambda | la potenza | il consumo | il numero di giri
+M Was heißt „der Kraftstoff“ auf Italienisch? | il carburante | il consumo | la benzina | la coppia
+M Was heißt „das Benzin“ auf Italienisch? | la benzina | il carburante | la potenza | il controllo dei gas di scarico
+M Was heißt „der Verbrauch“ auf Italienisch? | il consumo | il controllo dei gas di scarico | la coppia | la sonda lambda
+M Was heißt „die Leistung“ auf Italienisch? | la potenza | il numero di giri | la benzina | la sonda lambda
+M Was heißt „das Drehmoment“ auf Italienisch? | la coppia | il numero di giri | il carburante | la benzina
+M Was heißt „die Drehzahl“ auf Italienisch? | il numero di giri | la benzina | la sonda lambda | la potenza
+M Was heißt „die Achsvermessung“ auf Italienisch? | l'assetto ruote | lo strumento di diagnosi | la campanatura | la convergenza
+M Was heißt „die Spur“ auf Italienisch? | la convergenza | l'iniettore | la campanatura | la memoria guasti
+M Was heißt „der Sturz“ auf Italienisch? | la campanatura | l'assetto ruote | la bobina d'accensione | l'iniettore
+M Was heißt „der Sensor“ auf Italienisch? | il sensore | l'assetto ruote | l'iniettore | la centralina
+M Was heißt „das Steuergerät“ auf Italienisch? | la centralina | il sensore | la bobina d'accensione | il codice di errore
+M Was heißt „der Fehlerspeicher“ auf Italienisch? | la memoria guasti | il codice di errore | la campanatura | lo strumento di diagnosi
+M Was heißt „der Fehlercode“ auf Italienisch? | il codice di errore | la convergenza | il sensore | la campanatura
+M Was heißt „das Diagnosegerät“ auf Italienisch? | lo strumento di diagnosi | l'iniettore | la centralina | la campanatura
+M Was heißt „die Zündspule“ auf Italienisch? | la bobina d'accensione | la convergenza | l'assetto ruote | la memoria guasti
+M Was heißt „das Einspritzventil“ auf Italienisch? | l'iniettore | la centralina | l'assetto ruote | la convergenza
+# --- Italienisch → Deutsch
+M Was bedeutet „il motore“? | der Motor | der Zylinderkopf | das Ventil (im Motor) | die Ölwanne
+M Was bedeutet „il pistone“? | der Kolben | das Ventil (im Motor) | die Zylinderkopfdichtung | die Nockenwelle
+M Was bedeutet „la valvola“? | das Ventil (im Motor) | die Steuerkette | die Ölwanne | der Zylinder
+M Was bedeutet „l'albero a camme“? | die Nockenwelle | die Steuerkette | der Zylinder | die Ölpumpe
+M Was bedeutet „la guarnizione della testata“? | die Zylinderkopfdichtung | die Pleuelstange | die Ölpumpe | der Zylinderkopf
+M Was bedeutet „la coppa dell'olio“? | die Ölwanne | die Steuerkette | das Ventil (im Motor) | die Pleuelstange
+M Was bedeutet „la cinghia di distribuzione“? | der Zahnriemen | das Ventil (im Motor) | der Kolben | die Ölwanne
+M Was bedeutet „il tenditore“? | die Spannrolle | die Steuerkette | die Kurbelwelle | die Nockenwelle
+M Was bedeutet „il radiatore“? | der Kühler | der Thermostat | die Überhitzung | der Lüfter
+M Was bedeutet „il termostato“? | der Thermostat | der Lüfter | der Kühler | die Überhitzung
+M Was bedeutet „il manicotto“? | der Kühlerschlauch | die Kühlmittelpumpe | die Überhitzung | der Thermostat
+M Was bedeutet „la frizione“? | die Kupplung | der Gang | das Differenzial | das Schwungrad
+M Was bedeutet „la marcia“? | der Gang | das Schwungrad | der Rückwärtsgang | das Differenzial
+M Was bedeutet „il differenziale“? | das Differenzial | die Kupplung | das Schwungrad | das Getriebe
+M Was bedeutet „la retromarcia“? | der Rückwärtsgang | das Getriebeöl | das Automatikgetriebe | das Schwungrad
+M Was bedeutet „l'olio del cambio“? | das Getriebeöl | das Getriebe | die Kupplung | der Gang
+M Was bedeutet „il gas refrigerante“? | das Kältemittel | die Undichtigkeit | die Klimaanlage | der Verdampfer
+M Was bedeutet „il condensatore“? | der Kondensator (Klima) | das Kältemittel | der Verdampfer | der Innenraumfilter
+M Was bedeutet „il filtro abitacolo“? | der Innenraumfilter | die Undichtigkeit | die Klimaanlage | der Kompressor
+M Was bedeutet „il controllo dei gas di scarico“? | die Abgasuntersuchung | der Verbrauch | die Lambdasonde | das Benzin
+M Was bedeutet „il carburante“? | der Kraftstoff | die Abgasuntersuchung | das Drehmoment | die Lambdasonde
+M Was bedeutet „il consumo“? | der Verbrauch | die Lambdasonde | die Abgasuntersuchung | die Drehzahl
+M Was bedeutet „la coppia“? | das Drehmoment | der Kraftstoff | die Drehzahl | die Leistung
+M Was bedeutet „l'assetto ruote“? | die Achsvermessung | der Fehlercode | das Einspritzventil | das Steuergerät
+M Was bedeutet „la campanatura“? | der Sturz | die Spur | der Fehlerspeicher | die Zündspule
+M Was bedeutet „la centralina“? | das Steuergerät | das Diagnosegerät | der Sensor | der Sturz
+M Was bedeutet „il codice di errore“? | der Fehlercode | die Spur | das Einspritzventil | das Diagnosegerät
+M Was bedeutet „la bobina d'accensione“? | die Zündspule | der Sturz | der Sensor | die Spur
+# --- Zuordnen
+Z Ordne zu: Motor (Teil 1). | der Motor = il motore | der Kolben = il pistone | der Zylinder = il cilindro | das Ventil (im Motor) = la valvola
+Z Ordne zu: Motor (Teil 2). | die Kurbelwelle = l'albero motore | die Nockenwelle = l'albero a camme | der Zylinderkopf = la testata | die Zylinderkopfdichtung = la guarnizione della testata
+Z Ordne zu: Motor (Teil 3). | die Pleuelstange = la biella | die Ölwanne = la coppa dell'olio | die Ölpumpe = la pompa dell'olio | der Zahnriemen = la cinghia di distribuzione
+Z Ordne zu: Kühlung (Teil 1). | der Kühler = il radiatore | die Kühlmittelpumpe = la pompa dell'acqua | der Thermostat = il termostato | der Lüfter = la ventola
+Z Ordne zu: Kupplung und Getriebe (Teil 1). | die Kupplung = la frizione | das Getriebe = il cambio | der Gang = la marcia | das Schwungrad = il volano
+Z Ordne zu: Kupplung und Getriebe (Teil 2). | das Differenzial = il differenziale | das Automatikgetriebe = il cambio automatico | der Rückwärtsgang = la retromarcia | das Getriebeöl = l'olio del cambio
+Z Ordne zu: Klimaanlage (Teil 1). | die Klimaanlage = il climatizzatore | das Kältemittel = il gas refrigerante | der Kompressor = il compressore | der Kondensator (Klima) = il condensatore
+Z Ordne zu: Abgas und Motorwerte (Teil 1). | die Abgasuntersuchung = il controllo dei gas di scarico | die Lambdasonde = la sonda lambda | der Kraftstoff = il carburante | das Benzin = la benzina
+Z Ordne zu: Abgas und Motorwerte (Teil 2). | der Verbrauch = il consumo | die Leistung = la potenza | das Drehmoment = la coppia | die Drehzahl = il numero di giri
+Z Ordne zu: Vermessung und Diagnose (Teil 1). | die Achsvermessung = l'assetto ruote | die Spur = la convergenza | der Sturz = la campanatura | der Sensor = il sensore

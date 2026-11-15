@@ -1,0 +1,108 @@
+# EDV Level 1 – Grundstufe: Computer-Grundlagen
+# Erzeugt von gen_edv.py; handgeschriebene Fragen stehen in edv_0_extra.txt.
+# --- Sicherheit und Umgang (handgeschrieben)
+M Welches Passwort ist am sichersten? | Ein langes Passwort aus zufälligen Wörtern, Zahlen und Zeichen, das nur für einen Dienst gilt | Der eigene Vorname mit Geburtsjahr | Ein kurzes Passwort, das für alle Dienste gleich ist | Die Ziffernfolge 12345678 mit einem Ausrufezeichen
+M Du bekommst eine E-Mail mit Anhang von einem unbekannten Absender. Was machst du? | Den Anhang nicht öffnen und die Nachricht melden oder löschen | Den Anhang öffnen, um zu sehen, was es ist | Die Nachricht an alle Kollegen weiterleiten | Auf die Nachricht antworten und nach dem Absender fragen
+M Was passiert mit ungespeicherten Änderungen, wenn der Computer plötzlich ausgeht? | Sie gehen in der Regel verloren, weil sie nur im Arbeitsspeicher lagen | Sie liegen sicher im Papierkorb | Sie werden automatisch per E-Mail verschickt | Sie bleiben auf dem Bildschirm gespeichert
+M Was ist der Unterschied zwischen „Speichern“ und „Speichern unter“? | „Speichern unter“ fragt nach Name und Ort und legt so eine neue Datei an | „Speichern“ legt immer eine Kopie an | „Speichern unter“ druckt das Dokument | Es gibt keinen Unterschied
+R Ein Backup sollte auf einem anderen Datenträger liegen als das Original.
+F Eine Datei im Papierkorb ist endgültig gelöscht und kann nicht zurückgeholt werden. || Solange der Papierkorb nicht geleert wurde, lässt sie sich wiederherstellen.
+R Updates schließen Sicherheitslücken und sollten zeitnah installiert werden.
+F Ein Passwort darf man Kollegen weitergeben, wenn man ihnen vertraut. || Zugangsdaten sind persönlich. Jeder braucht einen eigenen Zugang.
+# --- Begriffe
+M Was ist bzw. bedeutet „Hardware“? | Alle Teile eines Computers, die man anfassen kann | Arbeitsfläche, die nach dem Anmelden auf dem Bildschirm erscheint | Daten aus dem Internet auf das eigene Gerät laden | Programme und Daten, die auf dem Computer laufen
+M Was ist bzw. bedeutet „Software“? | Programme und Daten, die auf dem Computer laufen | Programm, das Daten ausspäht, verschlüsselt oder zerstört | Daten aus dem Internet auf das eigene Gerät laden | Neuere Version, die Fehler behebt und Sicherheitslücken schließt
+M Was ist bzw. bedeutet „Betriebssystem“? | Grundprogramm, das den Computer steuert und andere Programme startet | Funkverbindung zum lokalen Netzwerk | Ablage für gelöschte Dateien, aus der sie wiederhergestellt werden können | Kürzel hinter dem Punkt, das den Dateityp angibt
+M Was ist bzw. bedeutet „Browser“? | Programm zum Anzeigen von Internetseiten | Kürzel hinter dem Punkt, das den Dateityp angibt | Behälter, in dem Dateien und weitere Ordner abgelegt werden | Funkverbindung zum lokalen Netzwerk
+M Was ist bzw. bedeutet „Ordner“? | Behälter, in dem Dateien und weitere Ordner abgelegt werden | Speicherplatz auf Servern im Internet | Daten aus dem Internet auf das eigene Gerät laden | Ablage für gelöschte Dateien, aus der sie wiederhergestellt werden können
+M Was ist bzw. bedeutet „Datei“? | Gespeicherte Einheit von Daten mit Namen und Endung | Behälter, in dem Dateien und weitere Ordner abgelegt werden | Leiste mit Startmenü und den geöffneten Programmen | Dauerhafter Speicher für Programme und Dateien
+M Was ist bzw. bedeutet „Dateiendung“? | Kürzel hinter dem Punkt, das den Dateityp angibt | Programm zum Anzeigen von Internetseiten | Arbeitsfläche, die nach dem Anmelden auf dem Bildschirm erscheint | Neuere Version, die Fehler behebt und Sicherheitslücken schließt
+M Was ist bzw. bedeutet „Arbeitsspeicher (RAM)“? | Schneller Speicher, dessen Inhalt beim Ausschalten verloren geht | Neuere Version, die Fehler behebt und Sicherheitslücken schließt | Programme und Daten, die auf dem Computer laufen | Verweis, der beim Anklicken eine Seite oder Datei öffnet
+M Was ist bzw. bedeutet „Festplatte oder SSD“? | Dauerhafter Speicher für Programme und Dateien | Grundprogramm, das den Computer steuert und andere Programme startet | Kleiner, steckbarer Datenträger zum Mitnehmen | Leiste mit Startmenü und den geöffneten Programmen
+M Was ist bzw. bedeutet „Prozessor (CPU)“? | Baustein, der die Befehle der Programme ausführt | Sicherungskopie von Daten auf einem zweiten Datenträger | Grundprogramm, das den Computer steuert und andere Programme startet | Neuere Version, die Fehler behebt und Sicherheitslücken schließt
+M Was ist bzw. bedeutet „USB-Stick“? | Kleiner, steckbarer Datenträger zum Mitnehmen | Dauerhafter Speicher für Programme und Dateien | Ablage für gelöschte Dateien, aus der sie wiederhergestellt werden können | Daten aus dem Internet auf das eigene Gerät laden
+M Was ist bzw. bedeutet „Cloud“? | Speicherplatz auf Servern im Internet | Alle Teile eines Computers, die man anfassen kann | Grundprogramm, das den Computer steuert und andere Programme startet | Arbeitsfläche, die nach dem Anmelden auf dem Bildschirm erscheint
+M Was ist bzw. bedeutet „Download“? | Daten aus dem Internet auf das eigene Gerät laden | Kürzel hinter dem Punkt, das den Dateityp angibt | Daten vom eigenen Gerät ins Internet übertragen | Baustein, der die Befehle der Programme ausführt
+M Was ist bzw. bedeutet „Upload“? | Daten vom eigenen Gerät ins Internet übertragen | Programme und Daten, die auf dem Computer laufen | Ablage für gelöschte Dateien, aus der sie wiederhergestellt werden können | Gespeicherte Einheit von Daten mit Namen und Endung
+M Was ist bzw. bedeutet „WLAN“? | Funkverbindung zum lokalen Netzwerk | Programme und Daten, die auf dem Computer laufen | Programm, das Daten ausspäht, verschlüsselt oder zerstört | Geheime Zeichenfolge zum Schutz eines Zugangs
+M Was ist bzw. bedeutet „Passwort“? | Geheime Zeichenfolge zum Schutz eines Zugangs | Programme und Daten, die auf dem Computer laufen | Arbeitsfläche, die nach dem Anmelden auf dem Bildschirm erscheint | Dauerhafter Speicher für Programme und Dateien
+M Was ist bzw. bedeutet „Schadsoftware“? | Programm, das Daten ausspäht, verschlüsselt oder zerstört | Datei, die zusammen mit einer E-Mail verschickt wird | Kürzel hinter dem Punkt, das den Dateityp angibt | Leiste mit Startmenü und den geöffneten Programmen
+M Was ist bzw. bedeutet „Update“? | Neuere Version, die Fehler behebt und Sicherheitslücken schließt | Datei, die zusammen mit einer E-Mail verschickt wird | Daten aus dem Internet auf das eigene Gerät laden | Schneller Speicher, dessen Inhalt beim Ausschalten verloren geht
+M Was ist bzw. bedeutet „Backup“? | Sicherungskopie von Daten auf einem zweiten Datenträger | Leiste mit Startmenü und den geöffneten Programmen | Daten vom eigenen Gerät ins Internet übertragen | Kürzel hinter dem Punkt, das den Dateityp angibt
+M Was ist bzw. bedeutet „Papierkorb“? | Ablage für gelöschte Dateien, aus der sie wiederhergestellt werden können | Dauerhafter Speicher für Programme und Dateien | Behälter, in dem Dateien und weitere Ordner abgelegt werden | Programm, das Daten ausspäht, verschlüsselt oder zerstört
+M Was ist bzw. bedeutet „Desktop“? | Arbeitsfläche, die nach dem Anmelden auf dem Bildschirm erscheint | Kleiner, steckbarer Datenträger zum Mitnehmen | Funkverbindung zum lokalen Netzwerk | Daten vom eigenen Gerät ins Internet übertragen
+M Was ist bzw. bedeutet „Taskleiste“? | Leiste mit Startmenü und den geöffneten Programmen | Schneller Speicher, dessen Inhalt beim Ausschalten verloren geht | Speicherplatz auf Servern im Internet | Sicherungskopie von Daten auf einem zweiten Datenträger
+M Was ist bzw. bedeutet „E-Mail-Anhang“? | Datei, die zusammen mit einer E-Mail verschickt wird | Leiste mit Startmenü und den geöffneten Programmen | Arbeitsfläche, die nach dem Anmelden auf dem Bildschirm erscheint | Daten aus dem Internet auf das eigene Gerät laden
+M Was ist bzw. bedeutet „Link“? | Verweis, der beim Anklicken eine Seite oder Datei öffnet | Behälter, in dem Dateien und weitere Ordner abgelegt werden | Grundprogramm, das den Computer steuert und andere Programme startet | Alle Teile eines Computers, die man anfassen kann
+# --- Begriffe erkennen
+M Welcher Begriff passt zu dieser Beschreibung? „Alle Teile eines Computers, die man anfassen kann“ | Hardware | Prozessor (CPU) | E-Mail-Anhang | WLAN
+M Welcher Begriff passt zu dieser Beschreibung? „Programme und Daten, die auf dem Computer laufen“ | Software | Taskleiste | Arbeitsspeicher (RAM) | Desktop
+M Welcher Begriff passt zu dieser Beschreibung? „Grundprogramm, das den Computer steuert und andere Programme startet“ | Betriebssystem | Software | Prozessor (CPU) | Papierkorb
+M Welcher Begriff passt zu dieser Beschreibung? „Programm zum Anzeigen von Internetseiten“ | Browser | Download | Ordner | Update
+M Welcher Begriff passt zu dieser Beschreibung? „Behälter, in dem Dateien und weitere Ordner abgelegt werden“ | Ordner | Desktop | Betriebssystem | Download
+M Welcher Begriff passt zu dieser Beschreibung? „Gespeicherte Einheit von Daten mit Namen und Endung“ | Datei | Hardware | Dateiendung | Arbeitsspeicher (RAM)
+M Welcher Begriff passt zu dieser Beschreibung? „Kürzel hinter dem Punkt, das den Dateityp angibt“ | Dateiendung | Download | Update | Datei
+M Welcher Begriff passt zu dieser Beschreibung? „Schneller Speicher, dessen Inhalt beim Ausschalten verloren geht“ | Arbeitsspeicher (RAM) | Backup | Download | Desktop
+M Welcher Begriff passt zu dieser Beschreibung? „Dauerhafter Speicher für Programme und Dateien“ | Festplatte oder SSD | Papierkorb | Upload | E-Mail-Anhang
+M Welcher Begriff passt zu dieser Beschreibung? „Baustein, der die Befehle der Programme ausführt“ | Prozessor (CPU) | Betriebssystem | Schadsoftware | Update
+M Welcher Begriff passt zu dieser Beschreibung? „Kleiner, steckbarer Datenträger zum Mitnehmen“ | USB-Stick | Upload | Hardware | Prozessor (CPU)
+M Welcher Begriff passt zu dieser Beschreibung? „Speicherplatz auf Servern im Internet“ | Cloud | Link | Dateiendung | Datei
+M Welcher Begriff passt zu dieser Beschreibung? „Daten aus dem Internet auf das eigene Gerät laden“ | Download | Passwort | Hardware | Backup
+M Welcher Begriff passt zu dieser Beschreibung? „Daten vom eigenen Gerät ins Internet übertragen“ | Upload | Betriebssystem | Dateiendung | Ordner
+M Welcher Begriff passt zu dieser Beschreibung? „Funkverbindung zum lokalen Netzwerk“ | WLAN | Software | Browser | Schadsoftware
+M Welcher Begriff passt zu dieser Beschreibung? „Geheime Zeichenfolge zum Schutz eines Zugangs“ | Passwort | WLAN | Prozessor (CPU) | Cloud
+M Welcher Begriff passt zu dieser Beschreibung? „Programm, das Daten ausspäht, verschlüsselt oder zerstört“ | Schadsoftware | Backup | Download | WLAN
+M Welcher Begriff passt zu dieser Beschreibung? „Neuere Version, die Fehler behebt und Sicherheitslücken schließt“ | Update | Download | USB-Stick | Schadsoftware
+M Welcher Begriff passt zu dieser Beschreibung? „Sicherungskopie von Daten auf einem zweiten Datenträger“ | Backup | Papierkorb | Download | Prozessor (CPU)
+M Welcher Begriff passt zu dieser Beschreibung? „Ablage für gelöschte Dateien, aus der sie wiederhergestellt werden können“ | Papierkorb | E-Mail-Anhang | Schadsoftware | Taskleiste
+M Welcher Begriff passt zu dieser Beschreibung? „Arbeitsfläche, die nach dem Anmelden auf dem Bildschirm erscheint“ | Desktop | Ordner | Dateiendung | WLAN
+M Welcher Begriff passt zu dieser Beschreibung? „Leiste mit Startmenü und den geöffneten Programmen“ | Taskleiste | USB-Stick | Prozessor (CPU) | Ordner
+M Welcher Begriff passt zu dieser Beschreibung? „Datei, die zusammen mit einer E-Mail verschickt wird“ | E-Mail-Anhang | Schadsoftware | Dateiendung | Link
+M Welcher Begriff passt zu dieser Beschreibung? „Verweis, der beim Anklicken eine Seite oder Datei öffnet“ | Link | Prozessor (CPU) | Backup | Browser
+# --- Tastenkombinationen
+M Mit welcher Tastenkombination kannst du: Markiertes kopieren? | Strg + C | Alt + Tab | Strg + V | Strg + A
+M Mit welcher Tastenkombination kannst du: Kopiertes einfügen? | Strg + V | Strg + Z | Strg + P | Strg + A
+M Mit welcher Tastenkombination kannst du: Markiertes ausschneiden? | Strg + X | Alt + Tab | Strg + S | Strg + P
+M Mit welcher Tastenkombination kannst du: Letzten Schritt rückgängig machen? | Strg + Z | Alt + F4 | Strg + S | Strg + A
+M Mit welcher Tastenkombination kannst du: Alles markieren? | Strg + A | Strg + P | Alt + F4 | Strg + Z
+M Mit welcher Tastenkombination kannst du: Speichern? | Strg + S | Alt + Tab | Strg + P | Alt + F4
+M Mit welcher Tastenkombination kannst du: Drucken? | Strg + P | Strg + V | Alt + F4 | Strg + A
+M Mit welcher Tastenkombination kannst du: Suchen? | Strg + F | Strg + A | Strg + P | Alt + Tab
+M Mit welcher Tastenkombination kannst du: Neues Dokument anlegen? | Strg + N | Strg + O | Strg + S | Strg + Z
+M Mit welcher Tastenkombination kannst du: Datei öffnen? | Strg + O | Strg + Z | Alt + Tab | Alt + F4
+M Mit welcher Tastenkombination kannst du: Aktives Fenster schließen? | Alt + F4 | Strg + V | Strg + O | Alt + Tab
+M Mit welcher Tastenkombination kannst du: Zwischen geöffneten Fenstern wechseln? | Alt + Tab | Strg + C | Strg + V | Strg + X
+# --- Dateitypen
+M Welche Dateiendung hat üblicherweise ein Word-Dokument? | .docx | .pptx | .mp4 | .xlsx
+M Welche Dateiendung hat üblicherweise eine Excel-Arbeitsmappe? | .xlsx | .pptx | .exe | .csv
+M Welche Dateiendung hat üblicherweise eine PowerPoint-Präsentation? | .pptx | .txt | .jpg | .png
+M Welche Dateiendung hat üblicherweise ein PDF-Dokument? | .pdf | .mp3 | .png | .mp4
+M Welche Dateiendung hat üblicherweise ein Foto? | .jpg | .xlsx | .mp3 | .docx
+M Welche Dateiendung hat üblicherweise ein Bild mit durchsichtigem Hintergrund? | .png | .xlsx | .mp4 | .mp3
+M Welche Dateiendung hat üblicherweise eine Musikdatei? | .mp3 | .png | .zip | .csv
+M Welche Dateiendung hat üblicherweise ein Video? | .mp4 | .xlsx | .mp3 | .csv
+M Welche Dateiendung hat üblicherweise ein gepacktes Archiv? | .zip | .pdf | .png | .xlsx
+M Welche Dateiendung hat üblicherweise eine reine Textdatei? | .txt | .pdf | .pptx | .exe
+M Welche Dateiendung hat üblicherweise ein ausführbares Windows-Programm? | .exe | .pdf | .xlsx | .mp3
+M Welche Dateiendung hat üblicherweise eine Tabelle mit Trennzeichen? | .csv | .txt | .pdf | .exe
+M Was ist eine Datei mit der Endung .docx üblicherweise? | Ein Word-Dokument | Eine Tabelle mit Trennzeichen | Ein Video | Ein gepacktes Archiv
+M Was ist eine Datei mit der Endung .xlsx üblicherweise? | Eine Excel-Arbeitsmappe | Ein PDF-Dokument | Ein Word-Dokument | Eine Musikdatei
+M Was ist eine Datei mit der Endung .pptx üblicherweise? | Eine PowerPoint-Präsentation | Ein Video | Ein Foto | Ein PDF-Dokument
+M Was ist eine Datei mit der Endung .pdf üblicherweise? | Ein PDF-Dokument | Eine reine Textdatei | Eine Excel-Arbeitsmappe | Ein gepacktes Archiv
+M Was ist eine Datei mit der Endung .jpg üblicherweise? | Ein Foto | Eine PowerPoint-Präsentation | Ein Word-Dokument | Eine Excel-Arbeitsmappe
+M Was ist eine Datei mit der Endung .png üblicherweise? | Ein Bild mit durchsichtigem Hintergrund | Ein Foto | Eine Excel-Arbeitsmappe | Eine reine Textdatei
+# --- Speichergrößen
+N Wie viele Megabyte (MB) sind 2 Gigabyte (GB)? Rechne mit 1 GB = 1000 MB. | 2000 | MB | 0 || 1 GB = 1000 MB >> Mal 1000
+N Wie viele Megabyte (MB) sind 16 Gigabyte (GB)? Rechne mit 1 GB = 1000 MB. | 16000 | MB | 0 || 1 GB = 1000 MB >> Mal 1000
+N Wie viele Megabyte (MB) sind 0,5 Gigabyte (GB)? Rechne mit 1 GB = 1000 MB. | 500 | MB | 0 || 1 GB = 1000 MB >> Mal 1000
+N Wie viele Megabyte (MB) sind 250 Gigabyte (GB)? Rechne mit 1 GB = 1000 MB. | 250000 | MB | 0 || 1 GB = 1000 MB >> Mal 1000
+N Wie viele Gigabyte (GB) sind 4500 Megabyte (MB)? Rechne mit 1000 MB = 1 GB. | 4,5 | GB | 0 || 1000 MB = 1 GB >> Durch 1000
+N Wie viele Gigabyte (GB) sind 750 Megabyte (MB)? Rechne mit 1000 MB = 1 GB. | 0,75 | GB | 0 || 1000 MB = 1 GB >> Durch 1000
+N Wie viele Gigabyte (GB) sind 32000 Megabyte (MB)? Rechne mit 1000 MB = 1 GB. | 32 | GB | 0 || 1000 MB = 1 GB >> Durch 1000
+N Wie viele Bit sind 3 Byte? | 24 | Bit | 0 || 1 Byte = 8 Bit >> Mal 8
+N Wie viele Bit sind 12 Byte? | 96 | Bit | 0 || 1 Byte = 8 Bit >> Mal 8
+N Ein USB-Stick hat 32 GB frei. Ein Foto braucht 4 MB. Wie viele Fotos passen darauf? Rechne mit 1 GB = 1000 MB. | 8000 | Fotos | 0 || 32 GB = 32000 MB, geteilt durch 4 MB >> Zuerst GB in MB umrechnen.
+N Ein USB-Stick hat 64 GB frei. Ein Foto braucht 8 MB. Wie viele Fotos passen darauf? Rechne mit 1 GB = 1000 MB. | 8000 | Fotos | 0 || 64 GB = 64000 MB, geteilt durch 8 MB >> Zuerst GB in MB umrechnen.
+N Ein USB-Stick hat 16 GB frei. Ein Foto braucht 5 MB. Wie viele Fotos passen darauf? Rechne mit 1 GB = 1000 MB. | 3200 | Fotos | 0 || 16 GB = 16000 MB, geteilt durch 5 MB >> Zuerst GB in MB umrechnen.
+N Wie viele Terabyte (TB) Speicher braucht man für 4 Sicherungen zu je 2 TB? | 8 | TB | 0 || Anzahl mal Größe >> Malnehmen
+N Wie viele Terabyte (TB) Speicher braucht man für 3 Sicherungen zu je 1,5 TB? | 4,5 | TB | 0 || Anzahl mal Größe >> Malnehmen

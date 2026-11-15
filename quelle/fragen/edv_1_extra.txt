@@ -1,0 +1,21 @@
+# --- Word Grundlagen (handgeschrieben)
+M Wie rückt man Text in Word sauber ein? | Mit Tabstopp oder Einzug | Mit mehreren Leerzeichen hintereinander | Mit mehreren Eingabetasten | Mit einem Textfeld in jeder Zeile
+M Wie erzeugt man mehr Abstand zwischen zwei Absätzen? | Über den Absatzabstand „Vor“ oder „Nach“ | Mit mehreren leeren Absätzen | Mit einer größeren Schrift im leeren Absatz | Mit der Leertaste
+M Was passiert, wenn man einen markierten Text überschreibt? | Der markierte Text wird durch die Eingabe ersetzt | Die Eingabe wird hinter dem Text eingefügt | Der Text wird fett | Der Text wird in die Zwischenablage kopiert
+M Wie markiert man ein einzelnes Wort am schnellsten? | Mit einem Doppelklick auf das Wort | Mit einem Dreifachklick auf das Wort | Mit einem Rechtsklick auf das Wort | Mit Strg + A
+M Was markiert ein Dreifachklick in den Text? | Den ganzen Absatz | Das Wort | Die Zeile | Das ganze Dokument
+M Was zeigt eine rote Wellenlinie unter einem Wort? | Einen möglichen Rechtschreibfehler | Einen Grammatikfehler | Einen Kommentar | Einen Link
+M Was zeigt eine blaue Doppellinie oder blaue Wellenlinie unter einem Text? | Einen möglichen Grammatik- oder Stilfehler | Einen sicheren Rechtschreibfehler | Einen geschützten Bereich | Eine Tabelle
+M Mit welcher Taste löscht man das Zeichen rechts vom Cursor? | Entf | Rücktaste | Esc | Einfg
+M Mit welcher Taste löscht man das Zeichen links vom Cursor? | Rücktaste | Entf | Tab | Pos1
+M Wie schreibt man das Zeichen @ auf einer deutschen Tastatur? | AltGr + Q | Umschalt + 2 | Strg + A | AltGr + E
+M Wie schreibt man das Eurozeichen auf einer deutschen Tastatur? | AltGr + E | AltGr + Q | Umschalt + 4 | Strg + E
+M Was bewirkt die Feststelltaste? | Alle Buchstaben werden groß geschrieben, bis sie wieder gelöst wird | Der Cursor springt an den Zeilenanfang | Die Tastatur wird gesperrt | Der Text wird fett
+M In welchem Format speichert Word ein Dokument standardmäßig? | .docx | .pdf | .txt | .xlsx
+M Wozu dient das Lineal über dem Text? | Zum Ablesen und Setzen von Rändern, Einzügen und Tabstopps | Zum Messen der Schriftgröße | Zum Zählen der Wörter | Zum Zeichnen von Linien
+M Welcher Zeilenabstand ist für gut lesbare Texte üblich? | Einfach bis 1,5-zeilig | Dreifach | Genau 0 Punkt | Zehnfach
+M Was ist beim Schreiben von Maßangaben wie „12 V“ üblich? | Zwischen Zahl und Einheit steht ein Leerzeichen | Zahl und Einheit werden zusammengeschrieben | Die Einheit wird kursiv gesetzt | Die Einheit steht vor der Zahl
+R Mit „Rückgängig“ lassen sich in Word mehrere Arbeitsschritte nacheinander zurücknehmen.
+F Die Rechtschreibprüfung erkennt jeden Fehler, auch falsch verwendete richtige Wörter. || Sie erkennt zum Beispiel „Reifen“ statt „reifen“ oft nicht. Selbst lesen bleibt nötig.
+R Formatierungszeichen wie die Absatzmarke werden nicht mitgedruckt.
+F In Word sollte man am Ende jeder Zeile die Eingabetaste drücken. || Word bricht die Zeile automatisch um. Die Eingabetaste beendet den Absatz.

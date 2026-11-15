@@ -1,0 +1,318 @@
+# Vokabelliste für Italienisch und Englisch. Format:  deutsch | italienisch | englisch
+# "## n" beginnt ein Level (0 = Grundstufe … 4 = 4. Klasse), "# Thema" eine Themengruppe.
+# Aus dieser Liste erzeugt gen_sprache.py die Dateien it_*.txt und en_*.txt.
+## 0
+# Werkstatt
+die Werkstatt | l'officina | workshop
+der Mechaniker | il meccanico | mechanic
+der Lehrling | l'apprendista | apprentice
+der Chef | il capo | boss
+der Kunde | il cliente | customer
+die Hebebühne | il ponte sollevatore | vehicle lift
+die Werkbank | il banco da lavoro | workbench
+das Lager | il magazzino | stockroom
+das Büro | l'ufficio | office
+der Arbeitsplatz | il posto di lavoro | workplace
+# Werkzeuge
+der Hammer | il martello | hammer
+der Schraubendreher | il cacciavite | screwdriver
+die Zange | la pinza | pliers
+der Schraubenschlüssel | la chiave | spanner
+der Drehmomentschlüssel | la chiave dinamometrica | torque wrench
+die Säge | la sega | saw
+die Feile | la lima | file
+der Bohrer | la punta da trapano | drill bit
+die Bohrmaschine | il trapano | drill
+der Wagenheber | il cric | jack
+der Messschieber | il calibro | vernier caliper
+die Schraube | la vite | screw
+die Mutter | il dado | nut
+die Unterlegscheibe | la rondella | washer
+# Autoteile außen
+das Auto | la macchina | car
+das Rad | la ruota | wheel
+der Reifen | lo pneumatico | tyre
+die Autotür | la portiera | door
+die Motorhaube | il cofano | bonnet
+der Kofferraum | il bagagliaio | boot
+die Windschutzscheibe | il parabrezza | windscreen
+der Scheinwerfer | il faro | headlight
+der Außenspiegel | lo specchietto | mirror
+die Stoßstange | il paraurti | bumper
+das Kennzeichen | la targa | number plate
+der Scheibenwischer | il tergicristallo | wiper
+# Autoteile innen
+das Lenkrad | il volante | steering wheel
+der Sitz | il sedile | seat
+der Sicherheitsgurt | la cintura di sicurezza | seat belt
+das Pedal | il pedale | pedal
+der Schalthebel | la leva del cambio | gear lever
+die Handbremse | il freno a mano | handbrake
+das Armaturenbrett | il cruscotto | dashboard
+die Hupe | il clacson | horn
+# Sicherheit
+die Schutzbrille | gli occhiali protettivi | safety goggles
+die Handschuhe | i guanti | gloves
+die Sicherheitsschuhe | le scarpe antinfortunistiche | safety shoes
+der Gehörschutz | la protezione per l'udito | ear protection
+der Feuerlöscher | l'estintore | fire extinguisher
+der Verbandskasten | la cassetta di pronto soccorso | first-aid kit
+die Gefahr | il pericolo | danger
+der Notausgang | l'uscita di emergenza | emergency exit
+der Unfall | l'incidente | accident
+# Grundwörter
+sauber | pulito | clean
+schmutzig | sporco | dirty
+kaputt | rotto | broken
+neu | nuovo | new
+alt | vecchio | old
+links | a sinistra | on the left
+rechts | a destra | on the right
+vorne | davanti | at the front
+hinten | dietro | at the back
+## 1
+# Wartung und Öl
+die Wartung | la manutenzione | maintenance
+der Service (die Inspektion) | il tagliando | service
+der Ölwechsel | il cambio dell'olio | oil change
+das Motoröl | l'olio motore | engine oil
+der Ölfilter | il filtro dell'olio | oil filter
+der Luftfilter | il filtro dell'aria | air filter
+der Ölstand | il livello dell'olio | oil level
+die Ablassschraube | il tappo di scarico | drain plug
+die Dichtung | la guarnizione | gasket
+das Kühlmittel | il liquido di raffreddamento | coolant
+der Frostschutz | l'antigelo | antifreeze
+die Zündkerze | la candela | spark plug
+der Wartungsplan | il piano di manutenzione | maintenance schedule
+# Räder und Reifen
+die Felge | il cerchione | rim
+der Reifendruck | la pressione degli pneumatici | tyre pressure
+das Reifenprofil | il battistrada | tread
+die Radschraube | il bullone della ruota | wheel bolt
+das Auswuchten | l'equilibratura | wheel balancing
+das Reifenventil | la valvola dello pneumatico | tyre valve
+der Winterreifen | lo pneumatico invernale | winter tyre
+das Reserverad | la ruota di scorta | spare wheel
+das Radlager | il cuscinetto della ruota | wheel bearing
+# Bremsen
+die Bremse | il freno | brake
+die Bremsbeläge | le pastiglie dei freni | brake pads
+die Bremsscheibe | il disco freno | brake disc
+der Bremssattel | la pinza del freno | brake caliper
+die Bremsflüssigkeit | il liquido dei freni | brake fluid
+die Bremsleitung | il tubo del freno | brake line
+die Trommelbremse | il freno a tamburo | drum brake
+der Bremskraftverstärker | il servofreno | brake servo
+das Bremspedal | il pedale del freno | brake pedal
+# Fahrwerk und Lenkung
+der Stoßdämpfer | l'ammortizzatore | shock absorber
+die Feder | la molla | spring
+die Lenkung | lo sterzo | steering
+das Gelenk | il giunto | joint
+die Antriebswelle | il semiasse | drive shaft
+die Manschette | la cuffia | gaiter
+der Querlenker | il braccio oscillante | control arm
+die Spurstange | il tirante dello sterzo | track rod
+die Achse | l'asse | axle
+# Abgasanlage
+der Auspuff | lo scarico | exhaust
+der Schalldämpfer | la marmitta | silencer
+der Katalysator | il catalizzatore | catalytic converter
+das Abgas | il gas di scarico | exhaust gas
+das Schweißen | la saldatura | welding
+der Rost | la ruggine | rust
+# Licht und Batterie
+die Batterie | la batteria | battery
+die Glühlampe | la lampadina | bulb
+das Abblendlicht | gli anabbaglianti | dipped headlights
+das Fernlicht | gli abbaglianti | main beam
+der Blinker | la freccia | indicator
+das Bremslicht | la luce di stop | brake light
+die Sicherung | il fusibile | fuse
+das Kabel | il cavo | cable
+der Stecker | il connettore | connector
+der Starter | il motorino d'avviamento | starter motor
+der Generator | l'alternatore | alternator
+## 2
+# Motor
+der Motor | il motore | engine
+der Kolben | il pistone | piston
+der Zylinder | il cilindro | cylinder
+das Ventil (im Motor) | la valvola | valve
+die Kurbelwelle | l'albero motore | crankshaft
+die Nockenwelle | l'albero a camme | camshaft
+der Zylinderkopf | la testata | cylinder head
+die Zylinderkopfdichtung | la guarnizione della testata | head gasket
+die Pleuelstange | la biella | connecting rod
+die Ölwanne | la coppa dell'olio | oil sump
+die Ölpumpe | la pompa dell'olio | oil pump
+der Zahnriemen | la cinghia di distribuzione | timing belt
+die Steuerkette | la catena di distribuzione | timing chain
+die Spannrolle | il tenditore | tensioner
+die Kompression | la compressione | compression
+# Kühlung
+der Kühler | il radiatore | radiator
+die Kühlmittelpumpe | la pompa dell'acqua | water pump
+der Thermostat | il termostato | thermostat
+der Lüfter | la ventola | fan
+der Kühlerschlauch | il manicotto | hose
+die Überhitzung | il surriscaldamento | overheating
+# Kupplung und Getriebe
+die Kupplung | la frizione | clutch
+das Getriebe | il cambio | gearbox
+der Gang | la marcia | gear
+das Schwungrad | il volano | flywheel
+das Differenzial | il differenziale | differential
+das Automatikgetriebe | il cambio automatico | automatic gearbox
+der Rückwärtsgang | la retromarcia | reverse gear
+das Getriebeöl | l'olio del cambio | gearbox oil
+# Klimaanlage
+die Klimaanlage | il climatizzatore | air conditioning
+das Kältemittel | il gas refrigerante | refrigerant
+der Kompressor | il compressore | compressor
+der Kondensator (Klima) | il condensatore | condenser
+der Verdampfer | l'evaporatore | evaporator
+der Innenraumfilter | il filtro abitacolo | cabin filter
+die Undichtigkeit | la perdita | leak
+# Abgas und Motorwerte
+die Abgasuntersuchung | il controllo dei gas di scarico | emissions test
+die Lambdasonde | la sonda lambda | oxygen sensor
+der Kraftstoff | il carburante | fuel
+das Benzin | la benzina | petrol
+der Verbrauch | il consumo | consumption
+die Leistung | la potenza | power
+das Drehmoment | la coppia | torque
+die Drehzahl | il numero di giri | engine speed
+# Vermessung und Diagnose
+die Achsvermessung | l'assetto ruote | wheel alignment
+die Spur | la convergenza | toe
+der Sturz | la campanatura | camber
+der Sensor | il sensore | sensor
+das Steuergerät | la centralina | control unit
+der Fehlerspeicher | la memoria guasti | fault memory
+der Fehlercode | il codice di errore | fault code
+das Diagnosegerät | lo strumento di diagnosi | diagnostic tool
+die Zündspule | la bobina d'accensione | ignition coil
+das Einspritzventil | l'iniettore | injector
+## 3
+# Elektrik
+die Spannung | la tensione | voltage
+der Strom | la corrente | current
+der Widerstand | la resistenza | resistance
+die Masse | la massa | earth
+der Kurzschluss | il cortocircuito | short circuit
+die Unterbrechung | l'interruzione | open circuit
+das Relais | il relè | relay
+der Schalter | l'interruttore | switch
+der Schaltplan | lo schema elettrico | wiring diagram
+der Kabelbaum | il cablaggio | wiring harness
+das Multimeter | il multimetro | multimeter
+die Leitung | il conduttore | wire
+# Hochvolt
+das Elektroauto | l'auto elettrica | electric car
+das Hybridfahrzeug | il veicolo ibrido | hybrid vehicle
+die Hochspannung | l'alta tensione | high voltage
+die Ladestation | la colonnina di ricarica | charging station
+das Ladekabel | il cavo di ricarica | charging cable
+der Elektromotor | il motore elettrico | electric motor
+der Wechselrichter | l'inverter | inverter
+die Isolierung | l'isolamento | insulation
+die Reichweite | l'autonomia | range
+die isolierenden Handschuhe | i guanti isolanti | insulating gloves
+# Diesel
+der Dieselmotor | il motore diesel | diesel engine
+der Injektor | l'iniettore | injector
+die Hochdruckpumpe | la pompa ad alta pressione | high-pressure pump
+der Turbolader | il turbocompressore | turbocharger
+der Ladeluftkühler | l'intercooler | intercooler
+die Glühkerze | la candeletta | glow plug
+der Kraftstofffilter | il filtro del gasolio | fuel filter
+der Dieselkraftstoff | il gasolio | diesel fuel
+der Druck | la pressione | pressure
+# Abgasnachbehandlung
+der Partikelfilter | il filtro antiparticolato | particulate filter
+die Abgasrückführung | il ricircolo dei gas di scarico | exhaust gas recirculation
+der Ruß | la fuliggine | soot
+die Stickoxide | gli ossidi di azoto | nitrogen oxides
+die Regeneration | la rigenerazione | regeneration
+der Harnstoff | l'urea | urea
+# Starten und Laden
+das Starten | l'avviamento | starting
+das Vorglühen | il preriscaldamento | preheating
+die Ladespannung | la tensione di carica | charging voltage
+das Ladegerät | il caricabatterie | battery charger
+der Ruhestrom | l'assorbimento a riposo | parasitic drain
+das Start-Stopp-System | il sistema start-stop | stop-start system
+# Komfort und Vernetzung
+die Zentralverriegelung | la chiusura centralizzata | central locking
+der Fensterheber | l'alzacristalli | window regulator
+die Wegfahrsperre | l'immobilizzatore | immobiliser
+der Airbag | l'airbag | airbag
+der Tempomat | il regolatore di velocità | cruise control
+der Regensensor | il sensore pioggia | rain sensor
+die Datenleitung | la linea dati | data line
+das Netzwerk | la rete | network
+die Fernbedienung | il telecomando | remote control
+die Alarmanlage | l'antifurto | alarm system
+## 4
+# Büro und Rechnung
+der Kostenvoranschlag | il preventivo | estimate
+die Rechnung | la fattura | invoice
+die Mehrwertsteuer | l'IVA | VAT
+die Garantie | la garanzia | warranty
+der Termin | l'appuntamento | appointment
+der Arbeitsauftrag | l'ordine di lavoro | work order
+die Unterschrift | la firma | signature
+das Ersatzteil | il pezzo di ricambio | spare part
+die Lieferung | la consegna | delivery
+der Preis | il prezzo | price
+der Rabatt | lo sconto | discount
+die Arbeitskosten | la manodopera | labour costs
+die Bezahlung | il pagamento | payment
+# Fahrzeugdokumente
+der Fahrzeugschein | il libretto di circolazione | registration document
+der Führerschein | la patente | driving licence
+die Fahrgestellnummer | il numero di telaio | chassis number
+die Versicherung | l'assicurazione | insurance
+der Kilometerstand | il chilometraggio | mileage
+das Baujahr | l'anno di costruzione | year of manufacture
+der Fahrzeughalter | il proprietario | owner
+# Hauptuntersuchung
+die Hauptuntersuchung | la revisione | roadworthiness test
+der Mangel | il difetto | defect
+der Prüfbericht | il verbale di revisione | test report
+der Bremsenprüfstand | il banco prova freni | brake tester
+bestanden | superato | passed
+nicht bestanden | respinto | failed
+die Verkehrssicherheit | la sicurezza stradale | road safety
+die Frist | la scadenza | deadline
+# Fehler und Diagnose
+die Störung | il guasto | fault
+das Geräusch | il rumore | noise
+die Vibration | la vibrazione | vibration
+die Probefahrt | il giro di prova | test drive
+die Ursache | la causa | cause
+die Reparatur | la riparazione | repair
+der Austausch | la sostituzione | replacement
+die Kontrollleuchte | la spia | warning light
+gelegentlich | saltuariamente | occasionally
+die Software-Aktualisierung | l'aggiornamento software | software update
+# Beruf und Prüfung
+die Lehrabschlussprüfung | l'esame di fine apprendistato | final apprenticeship exam
+die Berufsschule | la scuola professionale | vocational school
+der Facharbeiter | l'operaio qualificato | skilled worker
+der Meister | il maestro artigiano | master craftsman
+die Arbeitssicherheit | la sicurezza sul lavoro | occupational safety
+die Weiterbildung | la formazione continua | further training
+der Lebenslauf | il curriculum vitae | CV
+die Bewerbung | la candidatura | job application
+die Bescheinigung | l'attestato | certificate
+die Erfahrung | l'esperienza | experience
+# Umwelt
+die Entsorgung | lo smaltimento | disposal
+das Altöl | l'olio usato | waste oil
+der Abfall | i rifiuti | waste
+das Recycling | il riciclaggio | recycling
+die Umwelt | l'ambiente | environment
+der Gefahrstoff | la sostanza pericolosa | hazardous substance

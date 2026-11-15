@@ -1,0 +1,107 @@
+# EDV Level 2 – 1. Klasse KFZ: Word Grundlagen
+# Erzeugt von gen_edv.py; handgeschriebene Fragen stehen in edv_1_extra.txt.
+# --- Word Grundlagen (handgeschrieben)
+M Wie rückt man Text in Word sauber ein? | Mit Tabstopp oder Einzug | Mit mehreren Leerzeichen hintereinander | Mit mehreren Eingabetasten | Mit einem Textfeld in jeder Zeile
+M Wie erzeugt man mehr Abstand zwischen zwei Absätzen? | Über den Absatzabstand „Vor“ oder „Nach“ | Mit mehreren leeren Absätzen | Mit einer größeren Schrift im leeren Absatz | Mit der Leertaste
+M Was passiert, wenn man einen markierten Text überschreibt? | Der markierte Text wird durch die Eingabe ersetzt | Die Eingabe wird hinter dem Text eingefügt | Der Text wird fett | Der Text wird in die Zwischenablage kopiert
+M Wie markiert man ein einzelnes Wort am schnellsten? | Mit einem Doppelklick auf das Wort | Mit einem Dreifachklick auf das Wort | Mit einem Rechtsklick auf das Wort | Mit Strg + A
+M Was markiert ein Dreifachklick in den Text? | Den ganzen Absatz | Das Wort | Die Zeile | Das ganze Dokument
+M Was zeigt eine rote Wellenlinie unter einem Wort? | Einen möglichen Rechtschreibfehler | Einen Grammatikfehler | Einen Kommentar | Einen Link
+M Was zeigt eine blaue Doppellinie oder blaue Wellenlinie unter einem Text? | Einen möglichen Grammatik- oder Stilfehler | Einen sicheren Rechtschreibfehler | Einen geschützten Bereich | Eine Tabelle
+M Mit welcher Taste löscht man das Zeichen rechts vom Cursor? | Entf | Rücktaste | Esc | Einfg
+M Mit welcher Taste löscht man das Zeichen links vom Cursor? | Rücktaste | Entf | Tab | Pos1
+M Wie schreibt man das Zeichen @ auf einer deutschen Tastatur? | AltGr + Q | Umschalt + 2 | Strg + A | AltGr + E
+M Wie schreibt man das Eurozeichen auf einer deutschen Tastatur? | AltGr + E | AltGr + Q | Umschalt + 4 | Strg + E
+M Was bewirkt die Feststelltaste? | Alle Buchstaben werden groß geschrieben, bis sie wieder gelöst wird | Der Cursor springt an den Zeilenanfang | Die Tastatur wird gesperrt | Der Text wird fett
+M In welchem Format speichert Word ein Dokument standardmäßig? | .docx | .pdf | .txt | .xlsx
+M Wozu dient das Lineal über dem Text? | Zum Ablesen und Setzen von Rändern, Einzügen und Tabstopps | Zum Messen der Schriftgröße | Zum Zählen der Wörter | Zum Zeichnen von Linien
+M Welcher Zeilenabstand ist für gut lesbare Texte üblich? | Einfach bis 1,5-zeilig | Dreifach | Genau 0 Punkt | Zehnfach
+M Was ist beim Schreiben von Maßangaben wie „12 V“ üblich? | Zwischen Zahl und Einheit steht ein Leerzeichen | Zahl und Einheit werden zusammengeschrieben | Die Einheit wird kursiv gesetzt | Die Einheit steht vor der Zahl
+R Mit „Rückgängig“ lassen sich in Word mehrere Arbeitsschritte nacheinander zurücknehmen.
+F Die Rechtschreibprüfung erkennt jeden Fehler, auch falsch verwendete richtige Wörter. || Sie erkennt zum Beispiel „Reifen“ statt „reifen“ oft nicht. Selbst lesen bleibt nötig.
+R Formatierungszeichen wie die Absatzmarke werden nicht mitgedruckt.
+F In Word sollte man am Ende jeder Zeile die Eingabetaste drücken. || Word bricht die Zeile automatisch um. Die Eingabetaste beendet den Absatz.
+# --- Begriffe
+M Was ist bzw. bedeutet „Schriftart“? | Aussehen der Buchstaben, zum Beispiel Arial oder Calibri | Automatisches Trennen langer Wörter am Zeilenende | Pinsel, der die Formatierung auf anderen Text kopiert | Speicher, in dem Kopiertes bis zum Einfügen liegt
+M Was ist bzw. bedeutet „Schriftgrad“? | Größe der Schrift, angegeben in Punkt | Ausrichtung, bei der die Zeilen am linken Rand beginnen und rechts flattern | Liste, deren Einträge mit einem Punkt oder Zeichen beginnen | Abstand eines Absatzes vom linken oder rechten Seitenrand
+M Was ist bzw. bedeutet „Absatz“? | Textabschnitt, der mit der Eingabetaste beendet wird | Ausrichtung, bei der die Zeilen am linken Rand beginnen und rechts flattern | Befehl, der den folgenden Text auf einer neuen Seite beginnen lässt | Feste Position, an die der Cursor mit der Tabulatortaste springt
+M Was ist bzw. bedeutet „Zeilenabstand“? | Abstand zwischen den Zeilen innerhalb eines Absatzes | Abstand eines Absatzes vom linken oder rechten Seitenrand | Speicher, in dem Kopiertes bis zum Einfügen liegt | Liste, deren Einträge fortlaufende Zahlen tragen
+M Was ist bzw. bedeutet „Einzug“? | Abstand eines Absatzes vom linken oder rechten Seitenrand | Größe der Schrift, angegeben in Punkt | Ausrichtung, bei der alle Zeilen links und rechts bündig abschließen | Liste, deren Einträge fortlaufende Zahlen tragen
+M Was ist bzw. bedeutet „Tabstopp“? | Feste Position, an die der Cursor mit der Tabulatortaste springt | Leerzeichen, an dem die Zeile nicht umbrochen wird | Freier Bereich zwischen Text und Blattkante | Pinsel, der die Formatierung auf anderen Text kopiert
+M Was ist bzw. bedeutet „Blocksatz“? | Ausrichtung, bei der alle Zeilen links und rechts bündig abschließen | Ausrichtung, bei der die Zeilen am linken Rand beginnen und rechts flattern | Speicher, in dem Kopiertes bis zum Einfügen liegt | Aussehen der Buchstaben, zum Beispiel Arial oder Calibri
+M Was ist bzw. bedeutet „Zentriert“? | Ausrichtung, bei der jede Zeile mittig zwischen den Rändern steht | Aussehen der Buchstaben, zum Beispiel Arial oder Calibri | Textabschnitt, der mit der Eingabetaste beendet wird | Speicher, in dem Kopiertes bis zum Einfügen liegt
+M Was ist bzw. bedeutet „Linksbündig“? | Ausrichtung, bei der die Zeilen am linken Rand beginnen und rechts flattern | Liste, deren Einträge fortlaufende Zahlen tragen | Ausrichtung, bei der alle Zeilen links und rechts bündig abschließen | Freier Bereich zwischen Text und Blattkante
+M Was ist bzw. bedeutet „Aufzählung“? | Liste, deren Einträge mit einem Punkt oder Zeichen beginnen | Feste Position, an die der Cursor mit der Tabulatortaste springt | Aussehen der Buchstaben, zum Beispiel Arial oder Calibri | Freier Bereich zwischen Text und Blattkante
+M Was ist bzw. bedeutet „Nummerierung“? | Liste, deren Einträge fortlaufende Zahlen tragen | Größe der Schrift, angegeben in Punkt | Textabschnitt, der mit der Eingabetaste beendet wird | Sichtbar gemachte Leerzeichen, Tabulatoren und Absatzmarken
+M Was ist bzw. bedeutet „Seitenrand“? | Freier Bereich zwischen Text und Blattkante | Feste Position, an die der Cursor mit der Tabulatortaste springt | Automatisches Trennen langer Wörter am Zeilenende | Textabschnitt, der mit der Eingabetaste beendet wird
+M Was ist bzw. bedeutet „Formatierungszeichen“? | Sichtbar gemachte Leerzeichen, Tabulatoren und Absatzmarken | Größe der Schrift, angegeben in Punkt | Speicher, in dem Kopiertes bis zum Einfügen liegt | Liste, deren Einträge mit einem Punkt oder Zeichen beginnen
+M Was ist bzw. bedeutet „Silbentrennung“? | Automatisches Trennen langer Wörter am Zeilenende | Sichtbar gemachte Leerzeichen, Tabulatoren und Absatzmarken | Abstand zwischen den Zeilen innerhalb eines Absatzes | Aussehen der Buchstaben, zum Beispiel Arial oder Calibri
+M Was ist bzw. bedeutet „Rechtschreibprüfung“? | Funktion, die falsch geschriebene Wörter rot unterstreicht | Abstand zwischen den Zeilen innerhalb eines Absatzes | Liste, deren Einträge mit einem Punkt oder Zeichen beginnen | Automatisches Trennen langer Wörter am Zeilenende
+M Was ist bzw. bedeutet „Zwischenablage“? | Speicher, in dem Kopiertes bis zum Einfügen liegt | Textabschnitt, der mit der Eingabetaste beendet wird | Liste, deren Einträge mit einem Punkt oder Zeichen beginnen | Ausrichtung, bei der alle Zeilen links und rechts bündig abschließen
+M Was ist bzw. bedeutet „Format übertragen“? | Pinsel, der die Formatierung auf anderen Text kopiert | Ausrichtung, bei der die Zeilen am linken Rand beginnen und rechts flattern | Befehl, der den folgenden Text auf einer neuen Seite beginnen lässt | Automatisches Trennen langer Wörter am Zeilenende
+M Was ist bzw. bedeutet „Seitenumbruch“? | Befehl, der den folgenden Text auf einer neuen Seite beginnen lässt | Liste, deren Einträge mit einem Punkt oder Zeichen beginnen | Abstand eines Absatzes vom linken oder rechten Seitenrand | Leerzeichen, an dem die Zeile nicht umbrochen wird
+M Was ist bzw. bedeutet „Geschütztes Leerzeichen“? | Leerzeichen, an dem die Zeile nicht umbrochen wird | Sichtbar gemachte Leerzeichen, Tabulatoren und Absatzmarken | Anzeige, wie das Dokument auf Papier aussehen wird | Ausrichtung, bei der jede Zeile mittig zwischen den Rändern steht
+M Was ist bzw. bedeutet „Druckvorschau“? | Anzeige, wie das Dokument auf Papier aussehen wird | Textabschnitt, der mit der Eingabetaste beendet wird | Funktion, die falsch geschriebene Wörter rot unterstreicht | Abstand zwischen den Zeilen innerhalb eines Absatzes
+# --- Begriffe erkennen
+M Welcher Begriff passt zu dieser Beschreibung? „Aussehen der Buchstaben, zum Beispiel Arial oder Calibri“ | Schriftart | Einzug | Linksbündig | Absatz
+M Welcher Begriff passt zu dieser Beschreibung? „Größe der Schrift, angegeben in Punkt“ | Schriftgrad | Nummerierung | Druckvorschau | Aufzählung
+M Welcher Begriff passt zu dieser Beschreibung? „Textabschnitt, der mit der Eingabetaste beendet wird“ | Absatz | Nummerierung | Schriftart | Rechtschreibprüfung
+M Welcher Begriff passt zu dieser Beschreibung? „Abstand zwischen den Zeilen innerhalb eines Absatzes“ | Zeilenabstand | Geschütztes Leerzeichen | Seitenrand | Silbentrennung
+M Welcher Begriff passt zu dieser Beschreibung? „Abstand eines Absatzes vom linken oder rechten Seitenrand“ | Einzug | Tabstopp | Seitenrand | Nummerierung
+M Welcher Begriff passt zu dieser Beschreibung? „Feste Position, an die der Cursor mit der Tabulatortaste springt“ | Tabstopp | Blocksatz | Seitenrand | Formatierungszeichen
+M Welcher Begriff passt zu dieser Beschreibung? „Ausrichtung, bei der alle Zeilen links und rechts bündig abschließen“ | Blocksatz | Tabstopp | Seitenrand | Format übertragen
+M Welcher Begriff passt zu dieser Beschreibung? „Ausrichtung, bei der jede Zeile mittig zwischen den Rändern steht“ | Zentriert | Tabstopp | Zwischenablage | Einzug
+M Welcher Begriff passt zu dieser Beschreibung? „Ausrichtung, bei der die Zeilen am linken Rand beginnen und rechts flattern“ | Linksbündig | Zentriert | Silbentrennung | Seitenumbruch
+M Welcher Begriff passt zu dieser Beschreibung? „Liste, deren Einträge mit einem Punkt oder Zeichen beginnen“ | Aufzählung | Zeilenabstand | Schriftgrad | Einzug
+M Welcher Begriff passt zu dieser Beschreibung? „Liste, deren Einträge fortlaufende Zahlen tragen“ | Nummerierung | Schriftart | Rechtschreibprüfung | Zentriert
+M Welcher Begriff passt zu dieser Beschreibung? „Freier Bereich zwischen Text und Blattkante“ | Seitenrand | Geschütztes Leerzeichen | Linksbündig | Rechtschreibprüfung
+M Welcher Begriff passt zu dieser Beschreibung? „Sichtbar gemachte Leerzeichen, Tabulatoren und Absatzmarken“ | Formatierungszeichen | Seitenumbruch | Seitenrand | Silbentrennung
+M Welcher Begriff passt zu dieser Beschreibung? „Automatisches Trennen langer Wörter am Zeilenende“ | Silbentrennung | Zentriert | Nummerierung | Seitenumbruch
+M Welcher Begriff passt zu dieser Beschreibung? „Funktion, die falsch geschriebene Wörter rot unterstreicht“ | Rechtschreibprüfung | Einzug | Format übertragen | Seitenrand
+M Welcher Begriff passt zu dieser Beschreibung? „Speicher, in dem Kopiertes bis zum Einfügen liegt“ | Zwischenablage | Seitenumbruch | Formatierungszeichen | Zeilenabstand
+M Welcher Begriff passt zu dieser Beschreibung? „Pinsel, der die Formatierung auf anderen Text kopiert“ | Format übertragen | Seitenumbruch | Rechtschreibprüfung | Silbentrennung
+M Welcher Begriff passt zu dieser Beschreibung? „Befehl, der den folgenden Text auf einer neuen Seite beginnen lässt“ | Seitenumbruch | Schriftgrad | Absatz | Formatierungszeichen
+M Welcher Begriff passt zu dieser Beschreibung? „Leerzeichen, an dem die Zeile nicht umbrochen wird“ | Geschütztes Leerzeichen | Linksbündig | Zeilenabstand | Format übertragen
+M Welcher Begriff passt zu dieser Beschreibung? „Anzeige, wie das Dokument auf Papier aussehen wird“ | Druckvorschau | Geschütztes Leerzeichen | Schriftgrad | Zentriert
+# --- Tastenkombinationen
+M Mit welcher Tastenkombination kannst du: Text fett setzen? | Strg + Umschalt + F | Strg + Pos1 | Strg + R | Strg + E
+M Mit welcher Tastenkombination kannst du: Text kursiv setzen? | Strg + Umschalt + K | F12 | Strg + Eingabe | Strg + Y
+M Mit welcher Tastenkombination kannst du: Text unterstreichen? | Strg + Umschalt + U | Strg + Y | Strg + B | F7
+M Mit welcher Tastenkombination kannst du: Absatz zentrieren? | Strg + E | Strg + Pos1 | Strg + Umschalt + F | Strg + B
+M Mit welcher Tastenkombination kannst du: Absatz linksbündig ausrichten? | Strg + L | Strg + Umschalt + K | Strg + E | Umschalt + Eingabe
+M Mit welcher Tastenkombination kannst du: Absatz rechtsbündig ausrichten? | Strg + R | Strg + E | Umschalt + Eingabe | Strg + B
+M Mit welcher Tastenkombination kannst du: Absatz im Blocksatz ausrichten? | Strg + B | Strg + Umschalt + U | Strg + R | F12
+M Mit welcher Tastenkombination kannst du: Letzten Schritt wiederholen? | Strg + Y | Strg + Umschalt + U | Strg + Pos1 | Strg + Umschalt + F
+M Mit welcher Tastenkombination kannst du: Seitenumbruch einfügen? | Strg + Eingabe | Umschalt + Eingabe | Strg + L | Strg + Umschalt + F
+M Mit welcher Tastenkombination kannst du: Suchen und Ersetzen öffnen? | Strg + H | Strg + L | Strg + E | Strg + R
+M Mit welcher Tastenkombination kannst du: Speichern unter öffnen? | F12 | Strg + L | F7 | Strg + Umschalt + U
+M Mit welcher Tastenkombination kannst du: Rechtschreibprüfung starten? | F7 | Strg + Umschalt + F | Umschalt + Eingabe | Strg + E
+M Mit welcher Tastenkombination kannst du: Neue Zeile ohne neuen Absatz? | Umschalt + Eingabe | Strg + Y | Strg + Umschalt + K | Strg + Ende
+M Mit welcher Tastenkombination kannst du: Zum Anfang des Dokuments springen? | Strg + Pos1 | Strg + Umschalt + F | Strg + Eingabe | Strg + Y
+M Mit welcher Tastenkombination kannst du: Zum Ende des Dokuments springen? | Strg + Ende | Strg + Eingabe | Strg + Umschalt + U | Strg + L
+M Was bewirkt in Word die Tastenkombination Strg + Umschalt + F? | Text fett setzen | Seitenumbruch einfügen | Absatz linksbündig ausrichten | Zum Anfang des Dokuments springen
+M Was bewirkt in Word die Tastenkombination Strg + Umschalt + K? | Text kursiv setzen | Text unterstreichen | Neue Zeile ohne neuen Absatz | Speichern unter öffnen
+M Was bewirkt in Word die Tastenkombination Strg + Umschalt + U? | Text unterstreichen | Absatz linksbündig ausrichten | Absatz rechtsbündig ausrichten | Speichern unter öffnen
+M Was bewirkt in Word die Tastenkombination Strg + E? | Absatz zentrieren | Speichern unter öffnen | Absatz linksbündig ausrichten | Letzten Schritt wiederholen
+M Was bewirkt in Word die Tastenkombination Strg + L? | Absatz linksbündig ausrichten | Rechtschreibprüfung starten | Text fett setzen | Absatz im Blocksatz ausrichten
+M Was bewirkt in Word die Tastenkombination Strg + R? | Absatz rechtsbündig ausrichten | Zum Anfang des Dokuments springen | Rechtschreibprüfung starten | Suchen und Ersetzen öffnen
+M Was bewirkt in Word die Tastenkombination Strg + B? | Absatz im Blocksatz ausrichten | Rechtschreibprüfung starten | Speichern unter öffnen | Suchen und Ersetzen öffnen
+M Was bewirkt in Word die Tastenkombination Strg + Y? | Letzten Schritt wiederholen | Text unterstreichen | Text fett setzen | Text kursiv setzen
+M Was bewirkt in Word die Tastenkombination Strg + Eingabe? | Seitenumbruch einfügen | Suchen und Ersetzen öffnen | Letzten Schritt wiederholen | Speichern unter öffnen
+M Was bewirkt in Word die Tastenkombination Strg + H? | Suchen und Ersetzen öffnen | Neue Zeile ohne neuen Absatz | Absatz linksbündig ausrichten | Text fett setzen
+M Was bewirkt in Word die Tastenkombination F12? | Speichern unter öffnen | Absatz linksbündig ausrichten | Zum Anfang des Dokuments springen | Letzten Schritt wiederholen
+M Was bewirkt in Word die Tastenkombination F7? | Rechtschreibprüfung starten | Absatz linksbündig ausrichten | Suchen und Ersetzen öffnen | Absatz rechtsbündig ausrichten
+M Was bewirkt in Word die Tastenkombination Umschalt + Eingabe? | Neue Zeile ohne neuen Absatz | Absatz linksbündig ausrichten | Suchen und Ersetzen öffnen | Text kursiv setzen
+M Was bewirkt in Word die Tastenkombination Strg + Pos1? | Zum Anfang des Dokuments springen | Suchen und Ersetzen öffnen | Text unterstreichen | Speichern unter öffnen
+M Was bewirkt in Word die Tastenkombination Strg + Ende? | Zum Ende des Dokuments springen | Zum Anfang des Dokuments springen | Text unterstreichen | Absatz rechtsbündig ausrichten
+# --- Menüband
+M In welchem Register von Word findest du: Schriftart und Schriftgrad? | Start | Sendungen | Überprüfen | Layout
+M In welchem Register von Word findest du: Aufzählungszeichen? | Start | Sendungen | Referenzen | Überprüfen
+M In welchem Register von Word findest du: Formatvorlagen? | Start | Ansicht | Datei | Referenzen
+M In welchem Register von Word findest du: Bild einfügen? | Einfügen | Ansicht | Referenzen | Datei
+M In welchem Register von Word findest du: Symbol einfügen? | Einfügen | Datei | Sendungen | Start
+M In welchem Register von Word findest du: Seitenränder? | Layout | Überprüfen | Entwurf | Start
+M In welchem Register von Word findest du: Hoch- oder Querformat? | Layout | Entwurf | Start | Referenzen
+M In welchem Register von Word findest du: Rechtschreibung und Grammatik? | Überprüfen | Referenzen | Layout | Sendungen
+M In welchem Register von Word findest du: Lineal einblenden? | Ansicht | Einfügen | Datei | Sendungen
+M In welchem Register von Word findest du: Drucken? | Datei | Überprüfen | Layout | Entwurf

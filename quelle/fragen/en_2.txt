@@ -1,0 +1,105 @@
+# Englisch Level 3 – erzeugt von gen_sprache.py aus vokabeln.txt und en_saetze.txt
+# --- Sätze und Wendungen
+M Was heißt „Der Motor überhitzt“? | The engine is overheating | The engine is stalling | The engine won't start | The engine is leaking oil
+M Was bedeutet „The clutch is slipping“? | Die Kupplung rutscht | Die Kupplung trennt nicht | Die Kupplung ist neu | Die Kupplung rupft
+M Was heißt „Der Zahnriemen muss gewechselt werden“? | The timing belt has to be replaced | The timing belt has to be checked | The timing belt has to be tensioned | The timing belt has to be cleaned
+M Was bedeutet „The air conditioning isn't cooling“? | Die Klimaanlage kühlt nicht | Die Klimaanlage heizt nicht | Die Klimaanlage ist laut | Die Klimaanlage riecht
+M Was heißt „Ich lese den Fehlerspeicher aus“? | I'm reading out the fault memory | I'm clearing the fault memory | I'm saving the fault memory | I'm printing the fault memory
+M Was bedeutet „There is an oil leak“? | Es gibt einen Ölverlust | Es gibt zu viel Öl | Es fehlt der Ölfilter | Das Öl ist zu alt
+R „The engine won't start“ heißt „Der Motor springt nicht an“.
+F „To switch on“ heißt „ausschalten“. || „To switch on“ heißt „einschalten“, „to switch off“ heißt „ausschalten“.
+# --- Deutsch → Englisch
+M Was heißt „der Motor“ auf Englisch? | engine | tensioner | head gasket | timing belt
+M Was heißt „der Kolben“ auf Englisch? | piston | crankshaft | timing belt | head gasket
+M Was heißt „der Zylinder“ auf Englisch? | cylinder | compression | connecting rod | engine
+M Was heißt „das Ventil (im Motor)“ auf Englisch? | valve | crankshaft | connecting rod | timing belt
+M Was heißt „die Kurbelwelle“ auf Englisch? | crankshaft | oil sump | valve | head gasket
+M Was heißt „die Nockenwelle“ auf Englisch? | camshaft | head gasket | connecting rod | timing chain
+M Was heißt „der Zylinderkopf“ auf Englisch? | cylinder head | engine | oil sump | valve
+M Was heißt „die Zylinderkopfdichtung“ auf Englisch? | head gasket | connecting rod | compression | crankshaft
+M Was heißt „die Pleuelstange“ auf Englisch? | connecting rod | tensioner | piston | engine
+M Was heißt „die Ölwanne“ auf Englisch? | oil sump | cylinder | valve | tensioner
+M Was heißt „die Ölpumpe“ auf Englisch? | oil pump | valve | timing chain | timing belt
+M Was heißt „der Zahnriemen“ auf Englisch? | timing belt | crankshaft | oil pump | camshaft
+M Was heißt „die Steuerkette“ auf Englisch? | timing chain | camshaft | head gasket | valve
+M Was heißt „die Spannrolle“ auf Englisch? | tensioner | oil sump | valve | cylinder head
+M Was heißt „die Kompression“ auf Englisch? | compression | camshaft | tensioner | cylinder head
+M Was heißt „der Kühler“ auf Englisch? | radiator | fan | overheating | water pump
+M Was heißt „die Kühlmittelpumpe“ auf Englisch? | water pump | radiator | hose | fan
+M Was heißt „der Thermostat“ auf Englisch? | thermostat | water pump | fan | hose
+M Was heißt „der Lüfter“ auf Englisch? | fan | water pump | overheating | thermostat
+M Was heißt „der Kühlerschlauch“ auf Englisch? | hose | fan | radiator | overheating
+M Was heißt „die Überhitzung“ auf Englisch? | overheating | fan | hose | thermostat
+M Was heißt „die Kupplung“ auf Englisch? | clutch | differential | gearbox | gear
+M Was heißt „das Getriebe“ auf Englisch? | gearbox | clutch | reverse gear | gearbox oil
+M Was heißt „der Gang“ auf Englisch? | gear | flywheel | gearbox | automatic gearbox
+M Was heißt „das Schwungrad“ auf Englisch? | flywheel | gearbox | differential | reverse gear
+M Was heißt „das Differenzial“ auf Englisch? | differential | gearbox oil | flywheel | reverse gear
+M Was heißt „das Automatikgetriebe“ auf Englisch? | automatic gearbox | gearbox oil | reverse gear | flywheel
+M Was heißt „der Rückwärtsgang“ auf Englisch? | reverse gear | gearbox | flywheel | automatic gearbox
+M Was heißt „das Getriebeöl“ auf Englisch? | gearbox oil | differential | gearbox | clutch
+M Was heißt „die Klimaanlage“ auf Englisch? | air conditioning | leak | condenser | evaporator
+M Was heißt „das Kältemittel“ auf Englisch? | refrigerant | condenser | leak | compressor
+M Was heißt „der Kompressor“ auf Englisch? | compressor | cabin filter | leak | evaporator
+M Was heißt „der Kondensator (Klima)“ auf Englisch? | condenser | compressor | refrigerant | leak
+M Was heißt „der Verdampfer“ auf Englisch? | evaporator | cabin filter | compressor | refrigerant
+M Was heißt „der Innenraumfilter“ auf Englisch? | cabin filter | evaporator | condenser | refrigerant
+M Was heißt „die Undichtigkeit“ auf Englisch? | leak | condenser | compressor | evaporator
+M Was heißt „die Abgasuntersuchung“ auf Englisch? | emissions test | fuel | oxygen sensor | petrol
+M Was heißt „die Lambdasonde“ auf Englisch? | oxygen sensor | engine speed | fuel | petrol
+M Was heißt „der Kraftstoff“ auf Englisch? | fuel | emissions test | torque | engine speed
+M Was heißt „das Benzin“ auf Englisch? | petrol | fuel | oxygen sensor | torque
+M Was heißt „der Verbrauch“ auf Englisch? | consumption | emissions test | engine speed | torque
+M Was heißt „die Leistung“ auf Englisch? | power | fuel | oxygen sensor | consumption
+M Was heißt „das Drehmoment“ auf Englisch? | torque | power | consumption | petrol
+M Was heißt „die Drehzahl“ auf Englisch? | engine speed | fuel | torque | consumption
+M Was heißt „die Achsvermessung“ auf Englisch? | wheel alignment | control unit | fault memory | diagnostic tool
+M Was heißt „die Spur“ auf Englisch? | toe | fault code | ignition coil | injector
+M Was heißt „der Sturz“ auf Englisch? | camber | wheel alignment | ignition coil | fault code
+M Was heißt „der Sensor“ auf Englisch? | sensor | wheel alignment | fault code | camber
+M Was heißt „das Steuergerät“ auf Englisch? | control unit | sensor | fault code | camber
+M Was heißt „der Fehlerspeicher“ auf Englisch? | fault memory | control unit | camber | diagnostic tool
+M Was heißt „der Fehlercode“ auf Englisch? | fault code | diagnostic tool | injector | control unit
+M Was heißt „das Diagnosegerät“ auf Englisch? | diagnostic tool | toe | fault memory | injector
+M Was heißt „die Zündspule“ auf Englisch? | ignition coil | wheel alignment | sensor | diagnostic tool
+M Was heißt „das Einspritzventil“ auf Englisch? | injector | wheel alignment | toe | fault code
+# --- Englisch → Deutsch
+M Was bedeutet „engine“? | der Motor | die Pleuelstange | die Zylinderkopfdichtung | die Kurbelwelle
+M Was bedeutet „piston“? | der Kolben | der Motor | die Zylinderkopfdichtung | die Pleuelstange
+M Was bedeutet „valve“? | das Ventil (im Motor) | die Ölpumpe | die Spannrolle | der Zahnriemen
+M Was bedeutet „camshaft“? | die Nockenwelle | die Steuerkette | die Kompression | der Zahnriemen
+M Was bedeutet „head gasket“? | die Zylinderkopfdichtung | der Motor | der Zylinder | der Zahnriemen
+M Was bedeutet „oil sump“? | die Ölwanne | der Kolben | die Nockenwelle | der Zylinder
+M Was bedeutet „timing belt“? | der Zahnriemen | das Ventil (im Motor) | die Kurbelwelle | die Spannrolle
+M Was bedeutet „tensioner“? | die Spannrolle | der Zylinderkopf | die Pleuelstange | die Ölwanne
+M Was bedeutet „radiator“? | der Kühler | der Thermostat | der Lüfter | die Kühlmittelpumpe
+M Was bedeutet „thermostat“? | der Thermostat | der Kühlerschlauch | der Lüfter | die Überhitzung
+M Was bedeutet „hose“? | der Kühlerschlauch | die Kühlmittelpumpe | der Thermostat | der Lüfter
+M Was bedeutet „clutch“? | die Kupplung | das Automatikgetriebe | der Gang | das Getriebe
+M Was bedeutet „gear“? | der Gang | der Rückwärtsgang | das Getriebeöl | die Kupplung
+M Was bedeutet „differential“? | das Differenzial | das Getriebe | der Rückwärtsgang | das Getriebeöl
+M Was bedeutet „reverse gear“? | der Rückwärtsgang | das Differenzial | das Getriebe | die Kupplung
+M Was bedeutet „gearbox oil“? | das Getriebeöl | die Kupplung | das Schwungrad | der Rückwärtsgang
+M Was bedeutet „refrigerant“? | das Kältemittel | der Kompressor | die Undichtigkeit | die Klimaanlage
+M Was bedeutet „condenser“? | der Kondensator (Klima) | die Undichtigkeit | der Verdampfer | die Klimaanlage
+M Was bedeutet „cabin filter“? | der Innenraumfilter | die Klimaanlage | der Verdampfer | das Kältemittel
+M Was bedeutet „emissions test“? | die Abgasuntersuchung | das Drehmoment | das Benzin | der Kraftstoff
+M Was bedeutet „fuel“? | der Kraftstoff | das Drehmoment | das Benzin | die Drehzahl
+M Was bedeutet „consumption“? | der Verbrauch | der Kraftstoff | das Drehmoment | das Benzin
+M Was bedeutet „torque“? | das Drehmoment | der Kraftstoff | die Leistung | die Lambdasonde
+M Was bedeutet „wheel alignment“? | die Achsvermessung | das Steuergerät | das Diagnosegerät | der Fehlercode
+M Was bedeutet „camber“? | der Sturz | das Steuergerät | das Einspritzventil | der Fehlerspeicher
+M Was bedeutet „control unit“? | das Steuergerät | der Sensor | der Fehlercode | der Fehlerspeicher
+M Was bedeutet „fault code“? | der Fehlercode | das Steuergerät | der Sensor | die Achsvermessung
+M Was bedeutet „ignition coil“? | die Zündspule | das Steuergerät | das Diagnosegerät | die Spur
+# --- Zuordnen
+Z Ordne zu: Motor (Teil 1). | der Motor = engine | der Kolben = piston | der Zylinder = cylinder | das Ventil (im Motor) = valve
+Z Ordne zu: Motor (Teil 2). | die Kurbelwelle = crankshaft | die Nockenwelle = camshaft | der Zylinderkopf = cylinder head | die Zylinderkopfdichtung = head gasket
+Z Ordne zu: Motor (Teil 3). | die Pleuelstange = connecting rod | die Ölwanne = oil sump | die Ölpumpe = oil pump | der Zahnriemen = timing belt
+Z Ordne zu: Kühlung (Teil 1). | der Kühler = radiator | die Kühlmittelpumpe = water pump | der Thermostat = thermostat | der Lüfter = fan
+Z Ordne zu: Kupplung und Getriebe (Teil 1). | die Kupplung = clutch | das Getriebe = gearbox | der Gang = gear | das Schwungrad = flywheel
+Z Ordne zu: Kupplung und Getriebe (Teil 2). | das Differenzial = differential | das Automatikgetriebe = automatic gearbox | der Rückwärtsgang = reverse gear | das Getriebeöl = gearbox oil
+Z Ordne zu: Klimaanlage (Teil 1). | die Klimaanlage = air conditioning | das Kältemittel = refrigerant | der Kompressor = compressor | der Kondensator (Klima) = condenser
+Z Ordne zu: Abgas und Motorwerte (Teil 1). | die Abgasuntersuchung = emissions test | die Lambdasonde = oxygen sensor | der Kraftstoff = fuel | das Benzin = petrol
+Z Ordne zu: Abgas und Motorwerte (Teil 2). | der Verbrauch = consumption | die Leistung = power | das Drehmoment = torque | die Drehzahl = engine speed
+Z Ordne zu: Vermessung und Diagnose (Teil 1). | die Achsvermessung = wheel alignment | die Spur = toe | der Sturz = camber | der Sensor = sensor

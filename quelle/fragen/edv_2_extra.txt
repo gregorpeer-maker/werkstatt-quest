@@ -1,0 +1,32 @@
+# --- Word für Arbeitsauftrag und Geschäftsbrief (handgeschrieben)
+M Wie springt man in einer Word-Tabelle in die nächste Zelle? | Mit der Tabulatortaste | Mit der Eingabetaste | Mit der Leertaste | Mit Strg + Eingabe
+M Was passiert, wenn man in der letzten Zelle einer Tabelle die Tabulatortaste drückt? | Es wird eine neue Zeile angefügt | Der Cursor verlässt die Tabelle | Die Tabelle wird gelöscht | Die Zelle wird geteilt
+M Wie fügt man mitten in einer Tabelle eine Zeile ein? | Rechtsklick in die Zeile, dann Einfügen und „Zeile oberhalb“ oder „unterhalb“ | Mit der Eingabetaste am Zeilenende | Mit der Leertaste | Über Datei und Neu
+M Wie ändert man die Breite einer Tabellenspalte? | Die Trennlinie mit der Maus ziehen oder die Breite in den Tabelleneigenschaften eingeben | Leerzeichen in die Zellen tippen | Die Schrift vergrößern | Den Seitenrand verschieben
+M Wie wiederholt man die Überschriftenzeile einer langen Tabelle auf jeder Seite? | Mit „Überschriften wiederholen“ im Tabellenlayout | Durch Kopieren der Zeile auf jede Seite | Mit einer Kopfzeile | Mit einem Seitenumbruch
+M Wie richtet man Zahlen in einer Tabellenspalte sinnvoll aus? | Rechtsbündig oder am Dezimaltabstopp | Linksbündig | Zentriert | Im Blocksatz
+M Du brauchst für einen Arbeitsauftrag eine Tabelle mit 4 Spalten und 12 Zeilen. Wie viele Zellen hat sie? | 48 | 16 | 36 | 52
+M Was gehört in den Briefkopf eines Geschäftsbriefs? | Name, Anschrift und Kontaktdaten des Absenders | Die Unterschrift des Empfängers | Der Anlagenvermerk | Die Grußformel
+M Wie viele Leerzeilen stehen im Geschäftsbrief üblicherweise zwischen Anrede und Text? | Eine | Keine | Drei | Fünf
+M Wie lautet die übliche Anrede, wenn der Ansprechpartner nicht bekannt ist? | Sehr geehrte Damen und Herren, | Hallo zusammen, | An alle, | Sehr geehrter Betrieb,
+M Welches Satzzeichen steht nach der Anrede im deutschen Geschäftsbrief? | Ein Komma, danach geht es klein weiter | Ein Ausrufezeichen | Ein Doppelpunkt | Ein Punkt
+M Wie schreibt man das Datum im Geschäftsbrief nach der Norm numerisch? | 2026-11-15 oder 15.11.2026 | 15/11/26 | 11-15-2026 | 15.November.26
+M Wo steht im Geschäftsbrief der Betreff? | Über der Anrede, ohne das Wort „Betreff“ | Unter der Grußformel | In der Fußzeile | Vor dem Anschriftfeld
+M Wie wird der Betreff üblicherweise hervorgehoben? | Durch Fettdruck, ohne Punkt am Ende | Durch Unterstreichen und Großbuchstaben mit Punkt | Durch rote Schrift | Durch Anführungszeichen
+M Was steht am Ende eines Geschäftsbriefs vor der Unterschrift? | Die Grußformel, zum Beispiel „Mit freundlichen Grüßen“ | Der Betreff | Das Datum | Die Anrede
+M Warum verschickt man einen Kostenvoranschlag besser als PDF statt als Word-Datei? | Er sieht bei jedem Empfänger gleich aus und lässt sich nicht einfach ändern | Die PDF-Datei ist immer kleiner | Word-Dateien lassen sich nicht verschicken | PDF-Dateien brauchen kein Programm zum Öffnen
+M Wozu verwendet man eine Dokumentvorlage für Arbeitsaufträge? | Jeder neue Auftrag hat denselben Aufbau, das Original bleibt unverändert | Die Datei wird dadurch kleiner | Die Vorlage druckt automatisch | Die Vorlage rechnet die Preise aus
+M Welche Angabe gehört in den Arbeitsauftrag einer Werkstatt? | Kundendaten, Fahrzeugdaten mit Kennzeichen und Kilometerstand sowie die gewünschten Arbeiten | Nur die Telefonnummer der Werkstatt | Nur der Name des Mechanikers | Der Kaufpreis des Fahrzeugs
+M Wie fügt man ein Kästchen zum Ankreuzen in eine Checkliste ein? | Über Einfügen und Symbol oder als Kontrollkästchen aus den Entwicklertools | Mit der Tabulatortaste | Über Layout und Spalten | Mit einem Rechtsklick auf die Seitenzahl
+M Wie verhindert man, dass ein Bild den Text verschiebt? | Den Textumbruch des Bildes passend einstellen, zum Beispiel „Quadrat“ | Das Bild in eine Kopfzeile legen | Das Bild als Zeichen formatieren und Leerzeilen einfügen | Die Seitenränder vergrößern
+M Wie öffnet man die Kopfzeile zum Bearbeiten? | Mit einem Doppelklick in den oberen Seitenrand | Mit einem Rechtsklick auf die Taskleiste | Mit der Eingabetaste am Seitenanfang | Mit Strg + K
+M Was zeigt das Feld „Seite X von Y“ in der Fußzeile? | Die aktuelle Seitennummer und die Gesamtzahl der Seiten | Das Datum und die Uhrzeit | Den Dateinamen und den Pfad | Die Zahl der Wörter
+M Wozu nutzt man Formatvorlagen für Überschriften? | Einheitliches Aussehen und Grundlage für ein automatisches Inhaltsverzeichnis | Damit die Datei schneller druckt | Damit die Überschriften geschützt sind | Damit die Rechtschreibprüfung sie überspringt
+M Was braucht man für einen Serienbrief? | Ein Hauptdokument und eine Datenquelle mit den Empfängerdaten | Zwei Drucker | Eine Tabelle mit Formeln | Ein Bild pro Empfänger
+M Wie druckt man nur die Seiten 2 bis 4 eines Dokuments? | Im Druckdialog bei den Seiten „2-4“ eingeben | Die anderen Seiten vorher löschen | Den Drucker zweimal starten | Das Dokument als Bild speichern
+M Was bedeutet „beidseitig drucken“? | Vorder- und Rückseite des Blatts werden bedruckt | Zwei Seiten werden nebeneinander auf eine Blattseite gedruckt | Das Dokument wird zweimal gedruckt | Es wird in Farbe und Schwarzweiß gedruckt
+R Eine Tabelle ohne sichtbare Rahmenlinien eignet sich gut, um Text sauber in Spalten auszurichten.
+F Ein PDF kann der Empfänger genauso leicht ändern wie ein Word-Dokument. || Ein PDF ist für die Weitergabe gedacht und lässt sich nicht ohne Weiteres bearbeiten.
+R In der Kopfzeile eines Arbeitsauftrags stehen typischerweise Name und Logo der Werkstatt.
+F Im Geschäftsbrief steht die Grußformel vor der Anrede. || Die Anrede eröffnet den Brief, die Grußformel schließt ihn ab.
+R Mit „Änderungen nachverfolgen“ sieht man, wer was im Dokument geändert hat.
