@@ -37,3 +37,14 @@ update wq_config set value = wq_h('NEUES-KENNWORT') where key = 'admin_hash';
 
 - Das kostenlose Supabase-Projekt wird nach längerer Zeit ohne Zugriffe pausiert und muss dann im Supabase-Konto wieder gestartet werden.
 - Die Rangliste ist ein Ansporn, kein Leistungsnachweis: Wer sich auskennt, kann seinen Punktestand auf dem eigenen Gerät verändern.
+
+## E-Mail bei neuer Meldung (freiwillig)
+
+Das Spiel kann bei jeder neuen Meldung eine E-Mail an die Lehrperson auslösen. Dafür wird der
+kostenlose Dienst Web3Forms benutzt.
+
+1. Auf https://web3forms.com die eigene E-Mail-Adresse eintragen und „Create Access Key“ wählen.
+2. Den Schlüssel aus der Bestätigungs-E-Mail in `cloud.json` bei `mail` eintragen und neu bauen.
+
+Mitgeschickt werden Art und Text der Meldung, aber kein Name und kein Bild. Der Schlüssel steht
+im Spiel und ist öffentlich; mit ihm kann man nur E-Mails an die hinterlegte Adresse auslösen.

@@ -513,7 +513,7 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
 
 /* ---------- Online: Klassenrangliste, Wunsch- und Fehlerliste ---------- */
 const APP_ID='werkstatt-quest',APPV='2026-11-16';
-const CLOUD=/*CLOUD_START*/{"url": "https://mjygmzphevqwnfmzjosl.supabase.co", "key": "sb_publishable_YpG4csWpZTbvb1RSu9gS7w_mYkLWpEf"}/*CLOUD_END*/;
+const CLOUD=/*CLOUD_START*/{"url": "https://mjygmzphevqwnfmzjosl.supabase.co", "key": "sb_publishable_YpG4csWpZTbvb1RSu9gS7w_mYkLWpEf", "mail": ""}/*CLOUD_END*/;
 const cloudOn=()=>{try{return !!(CLOUD.url&&CLOUD.key)&&!/claude|anthropic/.test(location.hostname)}catch(e){return false}};
 const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Online-Kennwort ist falsch.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
 async function rpc(fn,args){let r;try{const h={apikey:CLOUD.key,'Content-Type':'application/json'};if(CLOUD.key.startsWith('eyJ'))h.Authorization='Bearer '+CLOUD.key;
@@ -556,8 +556,12 @@ function fbImg(inp){const f=inp.files&&inp.files[0];if(!f)return;if(!/^image\//.
    if(out.length>=690000){toast('Das Bild ist zu groß');return}ui.fb.img=out;render()};im.onerror=()=>toast('Das Bild konnte nicht gelesen werden');im.src=rd.result};rd.readAsDataURL(f)}
 async function fbSend(){const f=ui.fb,p=P();if(!f||f.busy)return;if((f.text||'').trim().length<3){toast('Bitte beschreibe kurz, worum es geht.');return}f.busy=true;render();
  try{await rpc('wq_feedback_add',{p_app:APP_ID,p_kind:f.kind,p_body:f.text,p_ctx:{version:APPV,bereich:ui.fbFrom||'',frage:ui.lastQ||'',klasse:LEVELS[cls(p)],bildschirm:innerWidth+'x'+innerHeight,geraet:String(navigator.userAgent).slice(0,160)},p_image:f.img||'',p_name:S.current,p_code:(p.grp&&p.grp.code)||''});
-  const back=ui.fbFrom==='quiz'&&ui.quiz&&!ui.quiz.duel?'quiz':'map';ui.fb=null;toast('Danke! Deine Meldung ist angekommen. ✔');go(back)}
+  fbMail(f);const back=ui.fbFrom==='quiz'&&ui.quiz&&!ui.quiz.duel?'quiz':'map';ui.fb=null;toast('Danke! Deine Meldung ist angekommen. ✔');go(back)}
  catch(e){f.busy=false;toast(e.message);render()}}
+// Benachrichtigung per E-Mail an die Lehrperson (nur wenn ein Schlüssel hinterlegt ist). Der Name des Schülers wird nicht mitgeschickt.
+function fbMail(f){if(!CLOUD.mail)return;try{fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+  body:JSON.stringify({access_key:CLOUD.mail,subject:'Werkstatt-Quest: '+(f.kind==='fehler'?'neuer Fehler gemeldet':'neuer Wunsch'),from_name:'Werkstatt-Quest',
+   message:(f.kind==='fehler'?'Fehler':'Wunsch')+':\n\n'+String(f.text).slice(0,800)+'\n\n'+(f.img?'Mit Bild. ':'')+'Alle Meldungen: Spiel öffnen, Mehr, Lehrer-Bereich, Klassen und Meldungen.\n'+shareUrl()})}).catch(()=>{})}catch(e){}}
 function vFeedback(){if(!cloudOn())return `<h1>💡 Wunsch oder Fehler</h1><div class="card"><p>Diese Funktion ist noch nicht eingerichtet.</p></div>`;
  const f=ui.fb||(ui.fb={kind:'wunsch',text:'',img:''});
  return `<h1>💡 Wunsch oder Fehler melden</h1><p class="muted">Sag, was fehlt oder nicht stimmt. Die Meldung geht an deine Lehrperson. Mitgeschickt werden dein Vorname, deine Klasse und in welchem Teil des Spiels du warst.</p>
