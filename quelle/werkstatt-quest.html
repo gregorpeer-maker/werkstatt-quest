@@ -76,6 +76,14 @@ canvas{background:#2b2f36;border-radius:12px;max-width:100%;touch-action:none}
 .sharebtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;border:0;border-radius:10px;padding:.7rem 1rem;background:var(--panel2);color:var(--text);font-weight:600;cursor:pointer}
 .sharebtn.wa{background:#25d366;color:#06200f;font-weight:800}
 .sharebtn.big{display:flex;font-size:1.15rem;padding:1rem}
+.calc{max-width:340px;margin-top:8px;background:#151a22;border:1px solid #3a4456;border-radius:12px;padding:10px}
+.cdisp{background:#0b0e13;border-radius:8px;padding:8px 10px;min-height:58px;text-align:right;font-variant-numeric:tabular-nums}
+.cdisp #cD{font-size:1.5rem;font-weight:700;word-break:break-all}
+.ckeys{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:8px}
+.ckeys button{padding:.7rem 0;font-size:1.15rem;font-weight:700;background:#2f3848}
+.ckeys button.cop{background:#232b38;color:var(--accent)}
+.ckeys button.primary{background:var(--accent);color:#1b1300}
+.cuse{width:100%;margin-top:8px;background:#173a2a;border:1px solid var(--ok);font-weight:700}
 .sharegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin:10px 0 4px}
 /* ---------- Neue Spiele ---------- */
 .blink{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:360px;margin:12px auto}
@@ -382,7 +390,7 @@ function vQuiz(){const z=ui.quiz,it=z.qs[z.i],q=it.q,w=WORLDS.find(x=>x.id===z.w
   <div class="row" style="margin-top:12px"><button class="primary" onclick="nextQ()">${z.i+1<z.qs.length?'Weiter ▶':'Ergebnis anzeigen'}</button>${cloudOn()&&!z.duel?'<button class="ghost small" style="margin-left:auto" onclick="fbFrage()">🐞 Frage melden</button>':''}</div>`}
  return (z.duel&&ui.duel?`<div class="row"><b>⚔️ Duell – ${w.icon} ${lvls(z.w)[z.l].n}</b><span style="margin-left:auto"><b>⏱️ <span id="dt">${ui.duel.left}</span> s</b> <span class="muted small">· Frage ${z.i+1} / ${z.qs.length}</span></span></div><div id="dbar" style="background:var(--panel);border-radius:var(--radius);padding:10px 14px;margin:6px 0">${duelBarHtml()}</div>`:`<div class="row"><b>${w.icon} ${w.name} – ${lvls(z.w)[z.l].n}</b><span class="muted small" style="margin-left:auto">✔ ${rightN(P(),z.w,z.l)} / ${needFor(z.w,z.l)} · Frage ${z.i+1} / ${z.qs.length}</span></div>`)+`
  <div class="bar"><i style="width:${(z.i+(z.answered?1:0))/z.qs.length*100}%"></i></div>
- <div class="card"><span class="pill">${TYPES[q.type]}</span><div class="qtext">${esc(q.text)}</div>${hb}${body}${fb}</div>
+ <div class="card"><span class="pill">${TYPES[q.type]}</span><div class="qtext">${esc(q.text)}</div>${hb}${body}${z.w==='fr'?calcHtml(z.answered):''}${fb}</div>
  <button class="ghost small" onclick="go('map')">${z.duel?'Duell abbrechen':'Abbrechen'}</button>`}
 const hintAvail=q=>!!q.hint||q.type==='mc'||q.type==='match';
 function useHint(){const z=ui.quiz,it=z.qs[z.i],q=it.q;if(z.answered||it.hinted)return;it.hinted=true;
@@ -427,7 +435,7 @@ function mSel(i){const m=ui.quiz.qs[ui.quiz.i].m;m.sel=m.sel===i?null:i;render()
 function mPair(r){const m=ui.quiz.qs[ui.quiz.i].m;if(m.sel==null){toast('Zuerst links einen Begriff wählen');return}
  for(const k in m.pairs)if(m.pairs[k]===r)delete m.pairs[k];m.pairs[m.sel]=r;m.sel=null;render()}
 function answerMatch(){const z=ui.quiz,it=z.qs[z.i];settle(it.q.pairs.every((_,i)=>it.m.pairs[i]===i),null)}
-function nextQ(){const z=ui.quiz;if(z.duel){duelNext();return}if(z.i+1<z.qs.length){z.i++;z.answered=false;z.ok=false;render();window.scrollTo(0,0);return}
+function nextQ(){const z=ui.quiz;if(ui.calc)ui.calc.x='';if(z.duel){duelNext();return}if(z.i+1<z.qs.length){z.i++;z.answered=false;z.ok=false;render();window.scrollTo(0,0);return}
  const pct=Math.round(z.correct/z.qs.length*100),key=z.w+'-'+z.l,p=P(),d=p.done[key]||{best:0,passed:false};
  z.pct=pct;z.newPass=false;z.bonus=0;
  if(passed(z.w,z.l)&&!z.was){d.passed=true;z.newPass=true;z.bonus=PASS_BONUS;p.tokens+=PASS_BONUS;p.earned+=PASS_BONUS;z.xp=(z.xp||0)+PASS_XP;addXP(PASS_XP)}
@@ -504,7 +512,7 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
  <div class="row" style="justify-content:center;margin-top:10px"><button class="primary" onclick="duelEnd();render()">Neues Duell</button><button class="ghost" onclick="go('map')">Zur Karte</button></div></div>${bars}`}
 
 /* ---------- Online: Klassenrangliste, Wunsch- und Fehlerliste ---------- */
-const APP_ID='werkstatt-quest',APPV='2026-11-15';
+const APP_ID='werkstatt-quest',APPV='2026-11-16';
 const CLOUD=/*CLOUD_START*/{"url": "", "key": ""}/*CLOUD_END*/;
 const cloudOn=()=>{try{return !!(CLOUD.url&&CLOUD.key)&&!/claude|anthropic/.test(location.hostname)}catch(e){return false}};
 const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Online-Kennwort ist falsch.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
@@ -592,6 +600,33 @@ function vOnline(){if(!cloudOn())return `<div class="card"><h2 style="margin-top
  <p class="muted small">Lege für jede Klasse eine Gruppe an und gib den Code weiter. Die Schüler treten unter „Rangliste“ bei.</p>${kl||'<p class="muted">Noch keine Klasse angelegt.</p>'}
  <div class="row" style="margin-top:12px"><input id="kN" maxlength="40" placeholder="Name der Klasse, z. B. 1. KFZ 2026/27" style="flex:1;min-width:180px" onkeydown="if(event.key==='Enter')klasseNeu()"><button class="primary" onclick="klasseNeu()">＋ Klasse anlegen</button></div></div>
  <div class="card"><h2 style="margin-top:0">💡 Wünsche und Fehler <span class="muted small">(${o.fb.filter(f=>!f.done).length} offen)</span></h2>${fl||'<p class="muted">Noch keine Meldungen.</p>'}</div>`}
+
+/* ---------- Taschenrechner (nur Fachrechnen) ---------- */
+function calcEval(src){const t=String(src).replace(/\s/g,'');let i=0;
+ const pk=()=>t[i],eat=c=>{if(t[i]===c){i++;return true}return false};
+ function num(){let j=i;while(/[0-9]/.test(t[j]||''))j++;if(t[j]===','){j++;while(/[0-9]/.test(t[j]||''))j++}if(j===i)throw 0;const v=parseFloat(t.slice(i,j).replace(',','.'));i=j;if(isNaN(v))throw 0;return v}
+ function prim(){if(eat('(')){const v=expr();if(!eat(')')&&i<t.length)throw 0;return v}if(eat('√')){const v=prim();if(v<0)throw 0;return Math.sqrt(v)}if(eat('π'))return Math.PI;return num()}
+ function post(){let v=prim();for(;;){if(eat('%'))v/=100;else if(eat('²'))v*=v;else return v}}
+ function un(){if(eat('-'))return -un();if(eat('+'))return un();return post()}
+ function pow(){const b=un();return eat('^')?Math.pow(b,pow()):b}
+ function term(){let v=pow();for(;;){if(eat('*'))v*=pow();else if(eat('/')){const d=pow();if(d===0)throw 0;v/=d}else if(i<t.length&&/[(√π0-9]/.test(pk()))v*=pow();else return v}}
+ function expr(){let v=term();for(;;){if(eat('+'))v+=term();else if(eat('-'))v-=term();else return v}}
+ const v=expr();if(i<t.length||!isFinite(v))throw 0;return v}
+const calcFmt=v=>{let s=Math.abs(v)>=1e12||(v!==0&&Math.abs(v)<1e-6)?v.toExponential(6):String(+v.toPrecision(10));return s.replace('.',',')};
+const calcShow=x=>x.replace(/\*/g,'×').replace(/\//g,'÷').replace(/-/g,'−')||'0';
+function calcPaint(){const c=ui.calc,d=document.getElementById('cD'),r=document.getElementById('cR');if(d)d.textContent=calcShow(c.x);if(r){let t='';try{if(c.x&&/[^0-9,]/.test(c.x))t='= '+calcFmt(calcEval(c.x))}catch(e){}r.textContent=c.err?'Das lässt sich so nicht rechnen':t}}
+function calcKey(k){const c=ui.calc||(ui.calc={x:''});c.err=false;
+ if(k==='C')c.x='';else if(k==='<')c.x=c.x.slice(0,-1);
+ else if(k==='='){try{c.x=calcFmt(calcEval(c.x))}catch(e){c.err=true}}
+ else if(c.x.length<60)c.x+=k;
+ calcPaint()}
+function calcUse(){const c=ui.calc||(ui.calc={x:''}),n=document.getElementById('numin');if(!n||n.disabled)return;try{const v=calcFmt(calcEval(c.x));c.x=v;c.err=false;n.value=v;n.focus();toast('Ergebnis eingetragen: '+v)}catch(e){c.err=true}calcPaint()}
+function calcToggle(){const c=ui.calc||(ui.calc={x:''});c.open=!c.open;const e=document.getElementById('calc'),b=document.getElementById('cT');if(e)e.hidden=!c.open;if(b)b.textContent=c.open?'🧮 Taschenrechner schließen':'🧮 Taschenrechner';if(c.open)calcPaint()}
+function calcHtml(done){const c=ui.calc||(ui.calc={x:''}),K=[['(','('],[')',')'],['√','√'],['x²','²'],['⌫','<'],['7','7'],['8','8'],['9','9'],['÷','/'],['C','C'],['4','4'],['5','5'],['6','6'],['×','*'],['π','π'],['1','1'],['2','2'],['3','3'],['−','-'],['%','%'],['0','0'],[',',','],['xʸ','^'],['+','+'],['=','=']];
+ return `<div style="margin-top:12px"><button class="ghost small" id="cT" onclick="calcToggle()">${c.open?'🧮 Taschenrechner schließen':'🧮 Taschenrechner'}</button>
+ <div id="calc" class="calc" ${c.open?'':'hidden'}><div class="cdisp"><div id="cD" aria-live="polite">${esc(calcShow(c.x))}</div><div id="cR" class="muted small"></div></div>
+ <div class="ckeys">${K.map(([l,k])=>`<button class="${/[0-9,]/.test(k)?'':k==='='?'primary':'cop'}" onclick="calcKey('${k}')" aria-label="${k==='<'?'Letztes Zeichen löschen':k==='C'?'Alles löschen':l}">${l}</button>`).join('')}</div>
+ ${done?'':'<button class="cuse" onclick="calcUse()">➜ Ergebnis ins Antwortfeld</button>'}</div></div>`}
 
 /* ---------- Teilen ---------- */
 const SHARE_HOME='https://gregorpeer-maker.github.io/werkstatt-quest/';
