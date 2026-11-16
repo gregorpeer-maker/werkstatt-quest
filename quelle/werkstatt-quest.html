@@ -390,7 +390,7 @@ function vQuiz(){const z=ui.quiz,it=z.qs[z.i],q=it.q,w=WORLDS.find(x=>x.id===z.w
   <div class="row" style="margin-top:12px"><button class="primary" onclick="nextQ()">${z.i+1<z.qs.length?'Weiter ▶':'Ergebnis anzeigen'}</button>${cloudOn()&&!z.duel?'<button class="ghost small" style="margin-left:auto" onclick="fbFrage()">🐞 Frage melden</button>':''}</div>`}
  return (z.duel&&ui.duel?`<div class="row"><b>⚔️ Duell – ${w.icon} ${lvls(z.w)[z.l].n}</b><span style="margin-left:auto"><b>⏱️ <span id="dt">${ui.duel.left}</span> s</b> <span class="muted small">· Frage ${z.i+1} / ${z.qs.length}</span></span></div><div id="dbar" style="background:var(--panel);border-radius:var(--radius);padding:10px 14px;margin:6px 0">${duelBarHtml()}</div>`:`<div class="row"><b>${w.icon} ${w.name} – ${lvls(z.w)[z.l].n}</b><span class="muted small" style="margin-left:auto">✔ ${rightN(P(),z.w,z.l)} / ${needFor(z.w,z.l)} · Frage ${z.i+1} / ${z.qs.length}</span></div>`)+`
  <div class="bar"><i style="width:${(z.i+(z.answered?1:0))/z.qs.length*100}%"></i></div>
- <div class="card"><span class="pill">${TYPES[q.type]}</span><div class="qtext">${esc(q.text)}</div>${hb}${body}${z.w==='fr'?calcHtml(z.answered):''}${fb}</div>
+ <div class="card"><span class="pill">${TYPES[q.type]}</span><div class="qtext">${esc(q.text)}</div>${hb}${body}${(z.w==='fr'||z.w==='et')&&q.type==='num'?calcHtml(z.answered):''}${fb}</div>
  <button class="ghost small" onclick="go('map')">${z.duel?'Duell abbrechen':'Abbrechen'}</button>`}
 const hintAvail=q=>!!q.hint||q.type==='mc'||q.type==='match';
 function useHint(){const z=ui.quiz,it=z.qs[z.i],q=it.q;if(z.answered||it.hinted)return;it.hinted=true;
@@ -601,7 +601,7 @@ function vOnline(){if(!cloudOn())return `<div class="card"><h2 style="margin-top
  <div class="row" style="margin-top:12px"><input id="kN" maxlength="40" placeholder="Name der Klasse, z. B. 1. KFZ 2026/27" style="flex:1;min-width:180px" onkeydown="if(event.key==='Enter')klasseNeu()"><button class="primary" onclick="klasseNeu()">＋ Klasse anlegen</button></div></div>
  <div class="card"><h2 style="margin-top:0">💡 Wünsche und Fehler <span class="muted small">(${o.fb.filter(f=>!f.done).length} offen)</span></h2>${fl||'<p class="muted">Noch keine Meldungen.</p>'}</div>`}
 
-/* ---------- Taschenrechner (nur Fachrechnen) ---------- */
+/* ---------- Taschenrechner (Rechenaufgaben in Fachrechnen und Elektrotechnik) ---------- */
 function calcEval(src){const t=String(src).replace(/\s/g,'');let i=0;
  const pk=()=>t[i],eat=c=>{if(t[i]===c){i++;return true}return false};
  function num(){let j=i;while(/[0-9]/.test(t[j]||''))j++;if(t[j]===','){j++;while(/[0-9]/.test(t[j]||''))j++}if(j===i)throw 0;const v=parseFloat(t.slice(i,j).replace(',','.'));i=j;if(isNaN(v))throw 0;return v}
