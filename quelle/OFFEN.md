@@ -1,16 +1,17 @@
 # Offene Vorhaben
 
-## Alpenfront Südtirol auf GitHub bringen (vorgemerkt, noch nicht begonnen)
+Zurzeit keine.
 
-Entscheidung: Alpenfront soll wie Werkstatt-Quest auf GitHub laufen.
+## Erledigt: Alpenfront Südtirol auf GitHub (November 2026)
 
-Zu tun:
+Alpenfront läuft jetzt wie Werkstatt-Quest auf GitHub, im eigenen Repository
+`gregorpeer-maker/alpenfrontsuedtirol`: https://gregorpeer-maker.github.io/alpenfrontsuedtirol/
 
-1. Spieldatei aus dem Artefakt „Alpenfront Südtirol“ auf claude.ai holen und vollständig lesen.
-2. Mehrspieler-Modus umbauen: Er nutzt bisher eine Funktion von claude.ai (Räume) und läuft außerhalb nicht.
-   Ersatz wie beim Quiz-Duell über eine direkte Verbindung zwischen den Geräten (PeerJS).
-3. Einbauen wie in Werkstatt-Quest: Spenden-Knopf (PayPal), Teilen (WhatsApp, Link, QR-Code),
-   Wunsch- und Fehlerliste mit Bild und E-Mail-Hinweis. Der Online-Speicher aus `cloud/` kann mitbenutzt werden
-   (eigene Kennung für das Spiel, damit die Meldungen getrennt bleiben).
-4. Eigenes Repository oder Unterordner anlegen, GitHub Pages einschalten, App-Paket (Symbol, Offline-Betrieb) erzeugen.
-5. Ob eine Rangliste zu einem Strategiespiel passt, vorher mit dem Auftraggeber klären.
+1. Spieldatei aus dem Artefakt übernommen.
+2. Mehrspieler (1 gegen 1) läuft über PeerJS wie das Quiz-Duell, mit Einladungslink per WhatsApp.
+3. Spenden-Knopf (PayPal), Teilen (WhatsApp, Link, QR-Code) und Wunsch- und Fehlerliste mit Bild,
+   Spielszene und E-Mail-Hinweis sind eingebaut. Die Meldungen nutzen den Online-Speicher aus `cloud/`
+   unter der Kennung `alpenfront`. Sie erscheinen nicht im Lehrer-Bereich von Werkstatt-Quest, sondern
+   in Alpenfront unter „Melden“ → „Meldungen ansehen“ (gleiches Online-Kennwort).
+4. GitHub Pages ist eingeschaltet, App-Paket mit Symbol und Offline-Betrieb ist vorhanden.
+5. Rangliste: entschieden, dass es für Alpenfront keine gibt.
