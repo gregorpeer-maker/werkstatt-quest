@@ -48,3 +48,13 @@ kostenlose Dienst Web3Forms benutzt.
 
 Mitgeschickt werden Art und Text der Meldung, aber kein Name und kein Bild. Der Schlüssel steht
 im Spiel und ist öffentlich; mit ihm kann man nur E-Mails an die hinterlegte Adresse auslösen.
+
+## Update 1: Klassenstufe über den Klassencode
+
+Seit diesem Update wählen neue Schüler ihre Klasse nicht mehr selbst. Sie melden sich mit Vorname und
+Klassencode an und bekommen die Klassenstufe der Klasse.
+
+1. Im Supabase SQL Editor den Inhalt von `update_1_klassenstufe.sql` einfügen und `Run` drücken.
+   Das Lehrer-Kennwort bleibt erhalten. Nicht das ganze `supabase.sql` erneut ausführen, sonst wird das Kennwort zurückgesetzt.
+2. Im Spiel unter „Klassen und Meldungen“ bei jeder bestehenden Klasse die richtige Klassenstufe einstellen.
+   Bestehende Klassen stehen nach dem Update auf „Grundstufe“.

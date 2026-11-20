@@ -312,13 +312,13 @@ function go(v){if(ui.duel&&v!=='duel')duelEnd();if(v==='feedback'&&ui.view!=='fe
 
 function header(){
  if(ui.view==='login')return '';
- const p=P();const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(id==='more'&&['share','feedback','teacherLogin'].includes(ui.view))?'on':''}" onclick="go('${id}')">${t}</button>`;
+ const p=P();if(!p)return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div><nav><button onclick="ui.teacher=false;go('login')">◀ Zur Anmeldung</button></nav></div></header>`;const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(id==='more'&&['share','feedback','teacherLogin'].includes(ui.view))?'on':''}" onclick="go('${id}')">${t}</button>`;
  return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div>
  ${p?`<span class="muted small">👤 ${esc(S.current)} · ${LEVELS[cls(p)]}</span><span class="tok">🪙 ${p.tokens}</span><span class="tok" style="background:#1d2b44;color:#9cc3ff">⭐ ${rankInfo(p.xp).r+1}</span>`:''}
  <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('ranking','🏆 Rangliste')}${n('support','💛 Spenden')}${n('more','☰ Mehr')}</nav></div></header>`}
 
 function render(){
- const v=ui.view;let h='';
+ if(!P()&&ui.view!=='login'&&ui.view!=='teacherLogin')ui.view='login';const v=ui.view;let h='';
  if(v==='login')h=vLogin();else if(v==='map')h=vMap();else if(v==='quiz')h=vQuiz();else if(v==='result')h=vResult();
  else if(v==='arcade')h=vArcade();else if(v==='ranking')h=vRanking();else if(v==='teacherLogin')h=ui.teacher?vTeacher():vTeacherLogin();
  else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();else if(v==='support')h=vSupport();else if(v==='more')h=vMore();else if(v==='feedback')h=vFeedback();
@@ -330,12 +330,22 @@ function render(){
 function vLogin(){const names=Object.keys(S.players).sort((a,b)=>a.localeCompare(b));
  return `<div style="max-width:440px;margin:6vh auto 0" class="card">
  <h1>🛠️ Werkstatt-Quest</h1><p class="muted">Löse Aufgaben, sammle Token 🪙 und schalte neue Level und Spiele frei.</p>
- <label>Dein Vorname</label><input id="nm" maxlength="20" placeholder="z. B. Lukas" onkeydown="if(event.key==='Enter')login()">
- <label>Deine Klasse</label><select id="cl"><option value="">– bitte wählen –</option>${LEVELS.map((L,l)=>`<option value="${l}">${L}</option>`).join('')}</select>
- <div class="row" style="margin-top:12px"><button class="primary" onclick="login()">Los geht's</button></div>
+ <label>Dein Vorname</label><input id="nm" maxlength="20" value="${esc(ui.lgName||'')}" placeholder="z. B. Lukas" onkeydown="if(event.key==='Enter')login()">
+ ${cloudOn()?`<label>Klassencode</label><input id="kc" maxlength="5" value="${esc(ui.joinK||'')}" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="K7Q2M" style="text-transform:uppercase;letter-spacing:.25em;font-size:1.2rem" onkeydown="if(event.key==='Enter')login()">
+ <p class="muted small" style="margin:.4rem 0 0">Den Code bekommst du von deiner Lehrperson. Er legt deine Klasse fest.</p>`:`<label>Deine Klasse</label><select id="cl"><option value="">– bitte wählen –</option>${LEVELS.map((L,l)=>`<option value="${l}">${L}</option>`).join('')}</select>`}
+ <div class="row" style="margin-top:12px"><button class="primary" id="lgo" ${ui.lgBusy?'disabled':''} onclick="login()">${ui.lgBusy?'Klasse wird geprüft …':"Los geht's"}</button></div>
  ${names.length?`<h2>Schon dabei?</h2><div class="row">${names.map(n=>`<button onclick="login(${esc(JSON.stringify(n))})">${esc(n)} <span class="muted small">${LEVELS[cls(S.players[n])]}</span></button>`).join('')}</div>`:''}
- <p class="muted small" style="margin-top:18px">Der Fortschritt wird nur auf diesem Gerät gespeichert.</p></div>`}
-function login(name){const quick=!!name;name=(name||document.getElementById('nm').value||'').trim().slice(0,20);if(!name){toast('Bitte Vornamen eingeben');return}
+ <p class="muted small" style="margin-top:18px">Der Fortschritt wird auf diesem Gerät gespeichert.</p>
+ <p class="small" style="margin:.4rem 0 0"><a href="#" onclick="ui.teacher=false;go('teacherLogin');return false" style="color:var(--muted)">🔒 Für Lehrpersonen: Lehrer-Bereich</a></p></div>`}
+async function login(name){const quick=!!name;name=(name||document.getElementById('nm').value||'').trim().slice(0,20);if(!name){toast('Bitte Vornamen eingeben');return}
+ if(!quick&&cloudOn()){const code=(document.getElementById('kc').value||'').trim().toUpperCase();
+  if(!/^[A-Z0-9]{5}$/.test(code)){toast('Bitte den Klassencode mit 5 Zeichen eingeben');return}
+  if(ui.lgBusy)return;ui.lgBusy=true;ui.lgName=name;ui.joinK=code;render();let d=null;
+  try{d=await rpc('wq_board',{p_code:code})}catch(e){ui.lgBusy=false;render();toast(e.message);return}
+  ui.lgBusy=false;
+  if(!d||typeof d.stufe!=='number'){render();toast('Diese Klasse hat noch keine Klassenstufe. Bitte die Lehrperson, den Online-Speicher zu aktualisieren.');return}
+  const np=S.players[name]||(S.players[name]={tokens:0,earned:0,done:{},right:{},games:[],bests:{},created:Date.now()});
+  np.cls=d.stufe;np.grp={code:d.code,name:d.name};ui.board=null;ui.joinK='';ui.lgName='';S.current=name;save();cloudSync(d.code,true);go(ui.joinCode?'duel':'map');toast('Willkommen in der Klasse „'+d.name+'“ ✔');return}
  const c=quick?'':document.getElementById('cl').value;
  if(!S.players[name]){if(c===''){toast('Bitte deine Klasse wählen');return}S.players[name]={tokens:0,earned:0,done:{},right:{},games:[],bests:{},created:Date.now(),cls:+c}}
  else if(c!=='')S.players[name].cls=+c;
@@ -512,7 +522,7 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
  <div class="row" style="justify-content:center;margin-top:10px"><button class="primary" onclick="duelEnd();render()">Neues Duell</button><button class="ghost" onclick="go('map')">Zur Karte</button></div></div>${bars}`}
 
 /* ---------- Online: Klassenrangliste, Wunsch- und Fehlerliste ---------- */
-const APP_ID='werkstatt-quest',APPV='2026-11-18';
+const APP_ID='werkstatt-quest',APPV='2026-11-20';
 const CLOUD=/*CLOUD_START*/{"url": "https://mjygmzphevqwnfmzjosl.supabase.co", "key": "sb_publishable_YpG4csWpZTbvb1RSu9gS7w_mYkLWpEf", "mail": "6e1d54a2-d2d4-4267-8d64-da4e14c3a645"}/*CLOUD_END*/;
 const cloudOn=()=>{try{return !!(CLOUD.url&&CLOUD.key)&&!/claude|anthropic/.test(location.hostname)}catch(e){return false}};
 const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Online-Kennwort ist falsch.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
@@ -525,7 +535,7 @@ function pIds(p){if(!p.pid||!p.sec){const h=rnd16();p.pid=h.slice(0,8)+'-'+h.sli
 let syncBusy=false;
 async function cloudSync(code,quiet){const p=P();if(!cloudOn()||!p)return;const c=String(code||(p.grp&&p.grp.code)||'').toUpperCase();if(!c||syncBusy)return;pIds(p);syncBusy=true;ui.bErr='';
  try{const d=await rpc('wq_sync',{p_code:c,p_player:p.pid,p_secret:p.sec,p_name:S.current,p_cls:cls(p),p_xp:p.xp|0,p_levels:passedCount(p),p_wins:(p.duels||{}).w|0});
-  if(P()===p&&d&&d.code){p.grp={code:d.code,name:d.name};ui.board=d;ui.joinK='';save()}}
+  if(P()===p&&d&&d.code){const ch=typeof d.stufe==='number'&&d.stufe!==cls(p);p.grp={code:d.code,name:d.name};if(typeof d.stufe==='number')p.cls=d.stufe;ui.board=d;ui.joinK='';save();if(ch&&ui.view!=='ranking')render()}}
  catch(e){ui.bErr=e.message;if(!quiet)toast(e.message)}
  syncBusy=false;if(ui.view==='ranking')render()}
 function klasseJoin(){const c=(document.getElementById('kC').value||'').trim().toUpperCase();if(!/^[A-Z0-9]{5}$/.test(c)){toast('Der Klassencode hat 5 Zeichen');return}ui.joinK=c;cloudSync(c)}
@@ -536,7 +546,7 @@ function vRanking(){if(!cloudOn())return vRankLocal();
  return ui.rkT==='lokal'?vRankLocal(t):vRankClass(t)}
 function vRankClass(t){const p=P(),g=p.grp,b=ui.board&&g&&ui.board.code===g.code?ui.board:null,err=ui.bErr?`<p style="color:#ff8a8d">${esc(ui.bErr)}</p>`:'';
  if(!g)return `<h1>🏆 Rangliste</h1>${t}<div class="card" style="max-width:480px"><h2 style="margin-top:0">Klasse beitreten</h2>
-  <p class="muted small">Gib den Code ein, den du von deiner Lehrperson bekommen hast. Dein Vorname, deine Klasse und deine Punkte sind dann für alle sichtbar, die den Code kennen.</p>
+  <p class="muted small">Gib den Code ein, den du von deiner Lehrperson bekommen hast. Der Code legt auch deine Klassenstufe fest. Dein Vorname und deine Punkte sind für alle sichtbar, die den Code kennen.</p>
   <label>Klassencode</label><input id="kC" maxlength="5" value="${esc(ui.joinK||'')}" autocomplete="off" autocapitalize="characters" spellcheck="false" style="text-transform:uppercase;font-size:1.4rem;letter-spacing:.3em;max-width:200px" onkeydown="if(event.key==='Enter')klasseJoin()">
   <div class="row" style="margin-top:12px"><button class="primary" onclick="klasseJoin()">Beitreten</button></div>${err}</div>`;
  const rows=b?b.board:[],sum=rows.reduce((a,r)=>a+(r.xp|0),0),me=rows.findIndex(r=>r.id===p.pid);
@@ -582,7 +592,7 @@ function onlineLogout(){try{localStorage.removeItem(ADMK)}catch(e){}ui.on={};ren
 async function onlineLoad(){const o=ui.on,k=adminKey()||o.key;o.loading=true;try{const [c,f]=await Promise.all([rpc('wq_class_list',{p_admin:k,p_app:APP_ID}),rpc('wq_feedback_list',{p_admin:k,p_app:APP_ID})]);o.classes=c||[];o.fb=f||[];o.loaded=true;o.err=''}
  catch(e){o.err=e.message;if(/Kennwort/.test(e.message)){try{localStorage.removeItem(ADMK)}catch(x){}o.key=''}o.loaded=false;o.failed=true}o.loading=false;if(ui.view==='teacherLogin')render()}
 async function onlineDo(fn,args,after){const o=ui.on;try{const r=await rpc(fn,Object.assign({p_admin:adminKey()||o.key},args));if(after)after(r);o.loaded=false;o.failed=false;render()}catch(e){toast(e.message)}}
-function klasseNeu(){const n=(document.getElementById('kN').value||'').trim();if(!n){toast('Bitte einen Namen für die Klasse eingeben');return}onlineDo('wq_class_create',{p_app:APP_ID,p_name:n},c=>toast('Klasse angelegt. Code: '+c))}
+function klasseNeu(){const n=(document.getElementById('kN').value||'').trim();if(!n){toast('Bitte einen Namen für die Klasse eingeben');return}onlineDo('wq_class_create',{p_app:APP_ID,p_name:n,p_stufe:+document.getElementById('kS').value},c=>toast('Klasse angelegt. Code: '+c))}
 function klasseWeg(c){if(ui.armed!=='kd:'+c){ui.armed='kd:'+c;render();return}ui.armed=null;if(ui.on.open&&ui.on.open.code===c)ui.on.open=null;onlineDo('wq_class_delete',{p_code:c})}
 async function klasseZeig(c){const o=ui.on;if(o.open&&o.open.code===c){o.open=null;render();return}try{o.open=await rpc('wq_board',{p_code:c});render()}catch(e){toast(e.message)}}
 function spielerWeg(c,id){if(ui.armed!=='rm:'+id){ui.armed='rm:'+id;render();return}ui.armed=null;onlineDo('wq_player_remove',{p_code:c,p_player:id},()=>{ui.on.open=null})}
@@ -593,7 +603,8 @@ function vOnline(){if(!cloudOn())return `<div class="card"><h2 style="margin-top
  if(!k)return `<div class="card" style="max-width:440px"><h2 style="margin-top:0">Online-Kennwort</h2><p class="muted small">Das Kennwort, das beim Einrichten des Online-Speichers festgelegt wurde. Es wird nur auf diesem Gerät gespeichert.</p><input type="password" id="oK" onkeydown="if(event.key==='Enter')onlineLogin()"><div class="row" style="margin-top:12px"><button class="primary" onclick="onlineLogin()">Anmelden</button></div>${o.err?`<p style="color:#ff8a8d">${esc(o.err)}</p>`:''}</div>`;
  if(!o.loaded){if(!o.loading&&!o.failed)onlineLoad();return `<div class="card"><p class="muted">${o.failed?esc(o.err||'Laden fehlgeschlagen.'):'Wird geladen …'}</p>${o.failed?'<button onclick="ui.on.failed=false;render()">Nochmal versuchen</button>':''}</div>`}
  const dt=x=>{try{return new Date(x).toLocaleString('de-DE',{dateStyle:'short',timeStyle:'short'})}catch(e){return ''}};
- const kl=o.classes.map(c=>`<div class="qitem" style="flex-wrap:wrap"><div class="t"><b>${esc(c.name)}</b> <span class="pill" style="color:var(--accent);font-weight:800;letter-spacing:.15em">${esc(c.code)}</span><div class="muted small">${c.players|0} Spieler · ${c.xp|0} XP zusammen · angelegt ${dt(c.created_at)}</div></div>
+ const kl=o.classes.map(c=>`<div class="qitem" style="flex-wrap:wrap"><div class="t"><b>${esc(c.name)}</b> <span class="pill" style="color:var(--accent);font-weight:800;letter-spacing:.15em">${esc(c.code)}</span><div class="muted small">${c.players|0} Spieler · ${c.xp|0} XP zusammen · angelegt ${dt(c.created_at)}</div>
+  <label class="small" style="margin:.4rem 0 .2rem">Klassenstufe</label><select style="max-width:200px;padding:.35rem" onchange="onlineDo('wq_class_set_stufe',{p_code:'${esc(c.code)}',p_stufe:+this.value},()=>toast('Klassenstufe geändert. Die Schüler übernehmen sie beim nächsten Abgleich.'))">${LEVELS.map((L,l)=>`<option value="${l}" ${l===(c.stufe|0)?'selected':''}>${L}</option>`).join('')}</select></div>
   <button class="small" onclick="klasseZeig('${esc(c.code)}')">${o.open&&o.open.code===c.code?'Schließen':'Rangliste'}</button><a class="sharebtn wa" style="padding:.4rem .7rem" target="_blank" rel="noopener" href="${esc(waLink(klasseInvite(c)))}">Einladen</a><button class="small ${ui.armed==='kd:'+c.code?'danger':''}" onclick="klasseWeg('${esc(c.code)}')">${ui.armed==='kd:'+c.code?'Klasse wirklich löschen?':'🗑️'}</button>
   ${o.open&&o.open.code===c.code?`<div style="width:100%"><p class="small muted" style="margin:.4rem 0">Einladungslink: ${esc(shareUrl()+'#klasse-'+c.code)}</p>${o.open.board.length?`<table><tr><th>#</th><th>Name</th><th>XP</th><th>Level</th><th>⚔️</th><th>zuletzt</th><th></th></tr>${o.open.board.map((r,i)=>`<tr><td>${i+1}</td><td>${esc(r.name)}</td><td><b>${r.xp|0}</b></td><td>${r.levels|0}</td><td>${r.wins|0}</td><td class="small">${dt(r.at)}</td><td><button class="small ${ui.armed==='rm:'+r.id?'danger':''}" onclick="spielerWeg('${esc(c.code)}','${esc(r.id)}')">${ui.armed==='rm:'+r.id?'Entfernen?':'✕'}</button></td></tr>`).join('')}</table>`:'<p class="muted small">Noch niemand beigetreten.</p>'}</div>`:''}</div>`).join('');
  const fl=o.fb.map(f=>{const c=f.ctx||{};return `<div class="qitem" style="flex-wrap:wrap;${f.done?'opacity:.55':''}"><div class="t"><span class="pill">${f.kind==='fehler'?'🐞 Fehler':'💡 Wunsch'}</span><span class="muted small">${dt(f.created_at)} · ${esc(f.name||'ohne Namen')}${f.class_code?' · Klasse '+esc(f.class_code):''}</span>
@@ -601,8 +612,8 @@ function vOnline(){if(!cloudOn())return `<div class="card"><h2 style="margin-top
   ${o.img&&o.img[f.id]?`<img src="${esc(o.img[f.id])}" alt="Bild zur Meldung" style="max-width:100%;border-radius:8px;margin-top:6px;border:1px solid #3a4456">`:''}</div>
   <div class="row">${f.has_image?`<button class="small" onclick="fbBild(${f.id|0})">${o.img&&o.img[f.id]?'Bild schließen':'🖼️ Bild'}</button>`:''}<button class="small" onclick="onlineDo('wq_feedback_set',{p_id:${f.id|0},p_done:${!f.done}})">${f.done?'Wieder öffnen':'✔ Erledigt'}</button><button class="small ${ui.armed==='fd:'+f.id?'danger':''}" onclick="fbWeg(${f.id|0})">${ui.armed==='fd:'+f.id?'Wirklich löschen?':'🗑️'}</button></div></div>`}).join('');
  return `<div class="card"><div class="row"><h2 style="margin:0">🏫 Klassen</h2><button class="ghost small" style="margin-left:auto" onclick="ui.on.loaded=false;ui.on.failed=false;render()">🔄 Neu laden</button><button class="ghost small" onclick="onlineLogout()">Online abmelden</button></div>
- <p class="muted small">Lege für jede Klasse eine Gruppe an und gib den Code weiter. Die Schüler treten unter „Rangliste“ bei.</p>${kl||'<p class="muted">Noch keine Klasse angelegt.</p>'}
- <div class="row" style="margin-top:12px"><input id="kN" maxlength="40" placeholder="Name der Klasse, z. B. 1. KFZ 2026/27" style="flex:1;min-width:180px" onkeydown="if(event.key==='Enter')klasseNeu()"><button class="primary" onclick="klasseNeu()">＋ Klasse anlegen</button></div></div>
+ <p class="muted small">Lege für jede Klasse eine Gruppe mit Klassenstufe an und gib den Code weiter. Neue Schüler melden sich mit dem Code an und bekommen so ihre Klassenstufe. Zum neuen Schuljahr stellst du hier die Klassenstufe um.</p>${kl||'<p class="muted">Noch keine Klasse angelegt.</p>'}
+ <div class="row" style="margin-top:12px"><input id="kN" maxlength="40" placeholder="Name der Klasse, z. B. 1. KFZ 2026/27" style="flex:1;min-width:180px" onkeydown="if(event.key==='Enter')klasseNeu()"><select id="kS" style="max-width:170px">${LEVELS.map((L,l)=>`<option value="${l}">${L}</option>`).join('')}</select><button class="primary" onclick="klasseNeu()">＋ Klasse anlegen</button></div></div>
  <div class="card"><h2 style="margin-top:0">💡 Wünsche und Fehler <span class="muted small">(${o.fb.filter(f=>!f.done).length} offen)</span></h2>${fl||'<p class="muted">Noch keine Meldungen.</p>'}</div>`}
 
 /* ---------- Taschenrechner (Rechenaufgaben in Fachrechnen und Elektrotechnik) ---------- */
@@ -921,7 +932,7 @@ function saveSettings(){const s=S.settings,g=id=>document.getElementById(id);s.p
 function vPlayers(){const names=Object.keys(S.players);return `<div class="card">${names.length?`<table><tr><th>Name</th><th>Klasse</th><th>🪙</th><th>XP</th><th>Level</th><th></th></tr>${names.map(n=>{const p=S.players[n];
  return `<tr><td>${esc(n)}</td><td><select style="padding:.3rem;min-width:110px" onchange='setCls(${esc(JSON.stringify(n))},this.value)'>${LEVELS.map((L,l)=>`<option value="${l}" ${l===cls(p)?'selected':''}>${L}</option>`).join('')}</select></td><td>${p.tokens}</td><td>${p.xp|0}</td><td>${passedCount(p)}</td><td><button class="small ${ui.armed==='p:'+n?'danger':''}" onclick='delPlayer(${esc(JSON.stringify(n))})'>${ui.armed==='p:'+n?'Wirklich?':'🗑️'}</button></td></tr>`}).join('')}</table>`:'<p class="muted">Keine Spieler.</p>'}
  <div class="row" style="margin-top:12px"><button class="${ui.armed==='all'?'danger':''}" onclick="delAll()">${ui.armed==='all'?'Wirklich ALLE Spieler löschen?':'Alle Spieler löschen (neues Schuljahr)'}</button></div></div>`}
-function setCls(n,v){S.players[n].cls=+v;save();toast('Klasse geändert ✔')}
+function setCls(n,v){const p=S.players[n];p.cls=+v;save();toast(p.grp&&cloudOn()?'Geändert. Beim nächsten Abgleich gilt wieder die Klassenstufe der Online-Klasse.':'Klasse geändert ✔')}
 function delPlayer(n){if(ui.armed!=='p:'+n){ui.armed='p:'+n;render();return}delete S.players[n];if(S.current===n)S.current=null;ui.armed=null;save();render()}
 function delAll(){if(ui.armed!=='all'){ui.armed='all';render();return}S.players={};S.current=null;ui.armed=null;save();toast('Alle Spieler gelöscht');render()}
 function vExport(){const json=JSON.stringify({app:'werkstatt-quest',version:3,questions:Q(),settings:{perRound:S.settings.perRound,need:S.settings.need,allOpen:S.settings.allOpen}},null,1);
