@@ -79,3 +79,10 @@ Fragen pro Runde, Aufstiegsgrenze und „Alle Level offen“ werden online gespe
 auch bei den Schülern.
 
 1. Im Supabase SQL Editor den Inhalt von `update_3_einstellungen.sql` einfügen und `Run` drücken.
+
+## Update 4: Auf mehreren Geräten weiterspielen
+
+Der Spielstand wird online gesichert. Mit einem kurzen Code (15 Minuten gültig) übernimmt man ihn auf ein
+weiteres Gerät; danach bleiben die Geräte abgeglichen.
+
+1. Im Supabase SQL Editor den Inhalt von `update_4_spielstand.sql` einfügen und `Run` drücken.

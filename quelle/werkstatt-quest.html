@@ -305,14 +305,15 @@ function toast(t){const e=document.createElement('div');e.className='toast';e.te
 
 /* ---------- UI-Zustand ---------- */
 const JOIN=(()=>{try{const m=/^#duell-([A-Za-z]{4})$/.exec(location.hash);return m?m[1].toUpperCase():''}catch(e){return ''}})();
+const JOING=(()=>{try{const m=/^#geraet-([A-Za-z0-9]{6})$/.exec(location.hash);return m?m[1].toUpperCase():''}catch(e){return ''}})();
 const JOINK=(()=>{try{const m=/^#klasse-([A-Za-z0-9]{5})$/.exec(location.hash);return m?m[1].toUpperCase():''}catch(e){return ''}})();
-let ui={joinCode:JOIN,joinK:JOINK,rkT:'klasse',view:S.current&&S.players[S.current]?(JOIN?'duel':JOINK?'ranking':'map'):'login',quiz:null,teacher:false,tTab:'fragen',fW:'kfz',fL:0,edit:null,game:null,armed:null};
+let ui={joinCode:JOIN,joinK:JOINK,joinG:JOING,devIn:!!JOING,rkT:'klasse',view:S.current&&S.players[S.current]?(JOIN?'duel':JOINK?'ranking':'map'):'login',quiz:null,teacher:false,tTab:'fragen',fW:'kfz',fL:0,edit:null,game:null,armed:null};
 let stopGame=()=>{};
 function go(v){if(ui.duel&&v!=='duel')duelEnd();if(v==='feedback'&&ui.view!=='feedback')ui.fbFrom=ui.view;stopGame();stopGame=()=>{};ui.view=v;ui.armed=null;render();window.scrollTo(0,0);if(v==='ranking'&&P()&&P().grp)cloudSync(null,true)}
 
 function header(){
  if(ui.view==='login')return '';
- const p=P();if(!p)return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div><nav><button onclick="ui.teacher=false;go('login')">◀ Zur Anmeldung</button></nav></div></header>`;const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(id==='more'&&['share','feedback','teacherLogin'].includes(ui.view))?'on':''}" onclick="go('${id}')">${t}</button>`;
+ const p=P();if(!p)return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div><nav><button onclick="ui.teacher=false;go('login')">◀ Zur Anmeldung</button></nav></div></header>`;const n=(id,t)=>`<button class="${ui.view===id||(ui.view.startsWith('game')&&id==='arcade')||(id==='more'&&['share','feedback','teacherLogin','device'].includes(ui.view))?'on':''}" onclick="go('${id}')">${t}</button>`;
  return `<header><div class="wrap"><div class="logo">🛠️ Werkstatt<span>-Quest</span></div>
  ${p?`<span class="muted small">👤 ${esc(S.current)} · ${LEVELS[cls(p)]}</span><span class="tok">🪙 ${p.tokens}</span><span class="tok" style="background:#1d2b44;color:#9cc3ff">⭐ ${rankInfo(p.xp).r+1}</span>`:''}
  <nav>${n('map','🗺️ Karte')}${n('arcade','🎮 Spielhalle')}${n('duel','⚔️ Duell')}${n('ranking','🏆 Rangliste')}${n('support','💛 Spenden')}${n('more','☰ Mehr')}</nav></div></header>`}
@@ -321,7 +322,7 @@ function render(){
  if(!P()&&ui.view!=='login'&&ui.view!=='teacherLogin')ui.view='login';const v=ui.view;let h='';
  if(v==='login')h=vLogin();else if(v==='map')h=vMap();else if(v==='quiz')h=vQuiz();else if(v==='result')h=vResult();
  else if(v==='arcade')h=vArcade();else if(v==='ranking')h=vRanking();else if(v==='teacherLogin')h=ui.teacher?vTeacher():vTeacherLogin();
- else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();else if(v==='support')h=vSupport();else if(v==='more')h=vMore();else if(v==='feedback')h=vFeedback();
+ else if(v==='game')h=vGame();else if(v==='duel')h=vDuel();else if(v==='share')h=vShare();else if(v==='support')h=vSupport();else if(v==='more')h=vMore();else if(v==='device')h=vDevice();else if(v==='feedback')h=vFeedback();
  document.getElementById('app').innerHTML=header()+`<main class="wrap">${h}</main>`;
  if(v==='game')startGame();if(v==='share')shareQR('shqr','shqrbox',shareUrl());if(v==='support')shareQR('spqr','spqrbox',PAYPAL);
 }
@@ -335,7 +336,9 @@ function vLogin(){const names=Object.keys(S.players).sort((a,b)=>a.localeCompare
  <p class="muted small" style="margin:.4rem 0 0">Den Code bekommst du von deiner Lehrperson. Er legt deine Klasse fest.</p>`:`<label>Deine Klasse</label><select id="cl"><option value="">– bitte wählen –</option>${LEVELS.map((L,l)=>`<option value="${l}">${L}</option>`).join('')}</select>`}
  <div class="row" style="margin-top:12px"><button class="primary" id="lgo" ${ui.lgBusy?'disabled':''} onclick="login()">${ui.lgBusy?'Klasse wird geprüft …':"Los geht's"}</button></div>
  ${names.length?`<h2>Schon dabei?</h2><div class="row">${names.map(n=>`<button onclick="login(${esc(JSON.stringify(n))})">${esc(n)} <span class="muted small">${LEVELS[cls(S.players[n])]}</span></button>`).join('')}</div>`:''}
- <p class="muted small" style="margin-top:18px">Der Fortschritt wird auf diesem Gerät gespeichert.</p>
+ ${cloudOn()?`<div style="margin-top:16px;border-top:1px solid #2a3240;padding-top:12px">${ui.devIn?`<h2 style="margin:0 0 .3rem">📲 Spielstand übernehmen</h2><p class="muted small" style="margin:0">Code vom anderen Gerät eingeben (dort unter ☰ Mehr → Auf anderem Gerät weiterspielen).</p>
+ <div class="row" style="margin-top:8px"><input id="gc" maxlength="6" value="${esc(ui.joinG||'')}" autocomplete="off" autocapitalize="characters" spellcheck="false" style="text-transform:uppercase;letter-spacing:.3em;font-size:1.3rem;max-width:200px" onkeydown="if(event.key==='Enter')devRedeem()"><button class="primary" ${ui.devBusy?'disabled':''} onclick="devRedeem()">${ui.devBusy?'Wird geladen …':'Übernehmen'}</button></div>`:`<button class="ghost small" onclick="ui.devIn=true;render()">📲 Ich spiele schon auf einem anderen Gerät</button>`}</div>`:''}
+ <p class="muted small" style="margin-top:18px">${cloudOn()?'Der Fortschritt wird auf diesem Gerät und online gesichert.':'Der Fortschritt wird auf diesem Gerät gespeichert.'}</p>
  <p class="small" style="margin:.4rem 0 0"><a href="#" onclick="ui.teacher=false;go('teacherLogin');return false" style="color:var(--muted)">🔒 Für Lehrpersonen: Lehrer-Bereich</a></p></div>`}
 async function login(name){const quick=!!name;name=(name||document.getElementById('nm').value||'').trim().slice(0,20);if(!name){toast('Bitte Vornamen eingeben');return}
  if(!quick&&cloudOn()){const code=(document.getElementById('kc').value||'').trim().toUpperCase();
@@ -449,7 +452,7 @@ function nextQ(){const z=ui.quiz;if(ui.calc)ui.calc.x='';if(z.duel){duelNext();r
  const pct=Math.round(z.correct/z.qs.length*100),key=z.w+'-'+z.l,p=P(),d=p.done[key]||{best:0,passed:false};
  z.pct=pct;z.newPass=false;z.bonus=0;
  if(passed(z.w,z.l)&&!z.was){d.passed=true;z.newPass=true;z.bonus=PASS_BONUS;p.tokens+=PASS_BONUS;p.earned+=PASS_BONUS;z.xp=(z.xp||0)+PASS_XP;addXP(PASS_XP)}
- d.best=Math.max(d.best,pct);p.done[key]=d;save();cloudSync(null,true);go('result')}
+ d.best=Math.max(d.best,pct);p.done[key]=d;save();cloudSync(null,true);progSync();go('result')}
 function vResult(){const z=ui.quiz,L=lvls(z.w),ok=passed(z.w,z.l),hasNext=z.l+1<L.length,n=rightN(P(),z.w,z.l),nd=needFor(z.w,z.l);
  return `<div class="card" style="text-align:center"><div style="font-size:3rem">${z.newPass?'🏆':z.correct*2>=z.qs.length?'👍':'🔁'}</div>
  <h1>${z.correct} von ${z.qs.length} richtig</h1>
@@ -499,7 +502,7 @@ function duelNext(){const z=ui.quiz,d=ui.duel;if(!d){go('map');return}
  d.me.done=true;d.me.score=z.correct;d.me.time=Math.round((performance.now()-d.t0)/100)/10;d.status='done';duelSend({t:'done',score:d.me.score,time:d.me.time});ui.view='duel';render();window.scrollTo(0,0);duelFinish()}
 function duelFinish(){const d=ui.duel;if(!d||!d.me.done||!d.opp.done||d.res)return;
  const a=d.me.score,b=d.opp.score;d.res=a>b||(a===b&&d.me.time<d.opp.time)?'win':a===b&&d.me.time===d.opp.time?'draw':'lose';
- d.gain=a*2+(d.res==='win'?10:d.res==='draw'?5:0);d.xp=d.res==='win'?20:5;const p=P();p.tokens+=d.gain;p.earned+=d.gain;addXP(d.xp);p.duels=p.duels||{w:0,l:0,d:0};p.duels[d.res==='win'?'w':d.res==='lose'?'l':'d']++;save();cloudSync(null,true);if(ui.view==='duel')render()}
+ d.gain=a*2+(d.res==='win'?10:d.res==='draw'?5:0);d.xp=d.res==='win'?20:5;const p=P();p.tokens+=d.gain;p.earned+=d.gain;addXP(d.xp);p.duels=p.duels||{w:0,l:0,d:0};p.duels[d.res==='win'?'w':d.res==='lose'?'l':'d']++;save();cloudSync(null,true);progSync();if(ui.view==='duel')render()}
 function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button class="ghost" onclick="duelEnd();render()">Abbrechen</button>`;
  if(!d){const ws=visibleWorlds(),w=ws.some(x=>x.id===ui.dW)?ui.dW:ws[0].id,ls=lvls(w).map((L,l)=>({L,l})).filter(x=>levelOpen(w,x.l)&&qCount(w,x.l));
   return `<h1>⚔️ Quiz-Duell</h1><p class="muted">Tritt online gegen einen Mitschüler an: ${DUEL_N} gleiche Fragen, ${DUEL_T} Sekunden pro Frage, ohne Tipps. Es gewinnt, wer mehr richtig hat, bei Gleichstand der Schnellere. Jede richtige Antwort bringt 2 🪙, der Sieg zusätzlich 10 🪙 und 20 XP.</p>
@@ -525,7 +528,7 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
 const APP_ID='werkstatt-quest',APPV='2026-11-23';
 const CLOUD=/*CLOUD_START*/{"url": "https://mjygmzphevqwnfmzjosl.supabase.co", "key": "sb_publishable_YpG4csWpZTbvb1RSu9gS7w_mYkLWpEf", "mail": "6e1d54a2-d2d4-4267-8d64-da4e14c3a645"}/*CLOUD_END*/;
 const cloudOn=()=>{try{return !!(CLOUD.url&&CLOUD.key)&&!/claude|anthropic/.test(location.hostname)}catch(e){return false}};
-const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Kennwort ist falsch.',KENNWORT_ZU_KURZ:'Das neue Kennwort braucht mindestens 8 Zeichen.',EINSTELLUNGEN_UNGUELTIG:'Die Einstellungen sind ungültig.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
+const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Kennwort ist falsch.',KENNWORT_ZU_KURZ:'Das neue Kennwort braucht mindestens 8 Zeichen.',EINSTELLUNGEN_UNGUELTIG:'Die Einstellungen sind ungültig.',CODE_UNGUELTIG:'Dieser Code ist falsch oder abgelaufen. Erzeuge auf dem anderen Gerät einen neuen.',SPIELSTAND_UNGUELTIG:'Der Spielstand ist zu groß oder beschädigt.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
 async function rpc(fn,args){let r;try{const h={apikey:CLOUD.key,'Content-Type':'application/json'};if(CLOUD.key.startsWith('eyJ'))h.Authorization='Bearer '+CLOUD.key;
   r=await fetch(CLOUD.url.replace(/\/$/,'')+'/rest/v1/rpc/'+fn,{method:'POST',headers:h,body:JSON.stringify(args||{})})}catch(e){throw new Error('Keine Verbindung zum Server. Prüfe das Internet.')}
  const t=await r.text();let d=null;try{d=t?JSON.parse(t):null}catch(e){}
@@ -582,7 +585,7 @@ function vFeedback(){if(!cloudOn())return `<h1>💡 Wunsch oder Fehler</h1><div 
  <p class="muted small">Bildschirmfoto am Handy: Ein/Aus-Taste und Leiser gleichzeitig drücken. Am Computer: Windows + Umschalt + S.</p>
  <div class="row" style="margin-top:12px"><button class="primary" ${f.busy?'disabled':''} onclick="fbSend()">${f.busy?'Wird gesendet …':'Absenden'}</button><button class="ghost" onclick="ui.fb=null;go(ui.fbFrom==='quiz'&&ui.quiz?'quiz':'map')">Abbrechen</button></div></div>`}
 function vMore(){const it=(act,i,t,d)=>`<button class="lv" onclick="${act}"><span style="font-size:1.6rem">${i}</span><span><b>${t}</b><br><span class="muted small">${d}</span></span></button>`;
- return `<h1>☰ Mehr</h1><div class="card">${it("go('share')",'📤','Spiel teilen','Per WhatsApp, Link oder QR-Code')}${cloudOn()?it("go('feedback')",'💡','Wunsch oder Fehler melden','Auch mit Bildschirmfoto'):''}${it("go('support')",'💛','Spenden','Das Projekt freiwillig unterstützen')}${it("go('teacherLogin')",'🔒','Lehrer-Bereich','Fragen, Einstellungen, Klassen und Meldungen')}${it('logout()','👤','Spieler wechseln','Abmelden und anderen Spieler wählen')}</div>`}
+ return `<h1>☰ Mehr</h1><div class="card">${it("go('share')",'📤','Spiel teilen','Per WhatsApp, Link oder QR-Code')}${cloudOn()?it("go('feedback')",'💡','Wunsch oder Fehler melden','Auch mit Bildschirmfoto'):''}${cloudOn()?it("go('device')",'📲','Auf anderem Gerät weiterspielen','Spielstand mit einem Code übertragen'):''}${it("go('support')",'💛','Spenden','Das Projekt freiwillig unterstützen')}${it("go('teacherLogin')",'🔒','Lehrer-Bereich','Fragen, Einstellungen, Klassen und Meldungen')}${it('logout()','👤','Spieler wechseln','Abmelden und anderen Spieler wählen')}</div>`}
 
 /* ---------- Lehrer: Klassen und Meldungen ---------- */
 const ADMK='werkstattQuest_admin';
@@ -645,6 +648,45 @@ function calcHtml(done){const c=ui.calc||(ui.calc={x:''}),K=[['(','('],[')',')']
  <div class="ckeys">${K.map(([l,k])=>`<button class="${/[0-9,]/.test(k)?'':k==='='?'primary':'cop'}" onclick="calcKey('${k}')" aria-label="${k==='<'?'Letztes Zeichen löschen':k==='C'?'Alles löschen':l}">${l}</button>`).join('')}</div>
  ${done?'':'<button class="cuse" onclick="calcUse()">➜ Ergebnis ins Antwortfeld</button>'}</div></div>`}
 
+/* ---------- Spielstand auf mehreren Geräten ---------- */
+const LOWER_BEST=new Set(['react','memory','wheel','drag']);
+// Zwei Spielstände desselben Spielers zusammenführen: nichts Erreichtes geht verloren
+function mergeP(a,b){if(!b)return a;if(!a)return JSON.parse(JSON.stringify(b));const o=Object.assign({},b,a);
+ const ea=a.earned|0,eb=b.earned|0,sa=Math.max(0,ea-(a.tokens|0)),sb=Math.max(0,eb-(b.tokens|0));
+ o.games=[...new Set([...(a.games||[]),...(b.games||[])])];const paid=o.games.reduce((t,id)=>t+((GAMES.find(g=>g.id===id)||{}).price|0),0);
+ o.earned=Math.max(ea,eb,paid);o.tokens=Math.max(0,o.earned-Math.max(sa,sb,paid));o.xp=Math.max(a.xp|0,b.xp|0);
+ o.done={};for(const k of new Set([...Object.keys(a.done||{}),...Object.keys(b.done||{})])){const x=(a.done||{})[k]||{},y=(b.done||{})[k]||{};o.done[k]={best:Math.max(x.best|0,y.best|0),passed:!!(x.passed||y.passed)}}
+ o.right={};for(const k of new Set([...Object.keys(a.right||{}),...Object.keys(b.right||{})]))o.right[k]=[...new Set([...((a.right||{})[k]||[]),...((b.right||{})[k]||[])])];
+ o.bests=Object.assign({},b.bests||{});for(const k in (a.bests||{})){const x=a.bests[k],y=o.bests[k];o.bests[k]=y==null?x:LOWER_BEST.has(k)?Math.min(x,y):Math.max(x,y)}
+ const da=a.duels||{},db=b.duels||{};o.duels={w:Math.max(da.w|0,db.w|0),l:Math.max(da.l|0,db.l|0),d:Math.max(da.d|0,db.d|0)};
+ o.created=Math.min(a.created||Date.now(),b.created||Date.now());o.grp=a.grp||b.grp;o.cls=a.cls!=null?a.cls:b.cls;return o}
+const pData=p=>{const o=Object.assign({},p);delete o.sec;delete o.pid;return o};
+let progBusy=false,progAgain=false;
+async function progSync(){const p=P(),name=S.current;if(!cloudOn()||!p)return;if(progBusy){progAgain=true;return}progBusy=true;pIds(p);
+ try{const r=await rpc('wq_progress_load',{p_player:p.pid,p_secret:p.sec});
+  if(r&&r.data&&S.players[name]===p){const m=mergeP(p,r.data);const keep={pid:p.pid,sec:p.sec};Object.keys(p).forEach(k=>delete p[k]);Object.assign(p,m,keep);save();if(['map','arcade','ranking'].includes(ui.view))render()}
+  await rpc('wq_progress_save',{p_player:p.pid,p_secret:p.sec,p_name:name,p_data:pData(p)})}catch(e){}
+ progBusy=false;if(progAgain){progAgain=false;progSync()}}
+async function devCode(){const p=P();if(!p)return;ui.dev={busy:true};render();pIds(p);
+ try{await rpc('wq_progress_save',{p_player:p.pid,p_secret:p.sec,p_name:S.current,p_data:pData(p)});const c=await rpc('wq_link_create',{p_player:p.pid,p_secret:p.sec});ui.dev={code:c,until:Date.now()+15*60000}}
+ catch(e){ui.dev={err:/wq_link_create|wq_progress_save|Could not find|PGRST202/.test(e.message)?'Diese Funktion ist noch nicht eingerichtet. Deine Lehrperson muss in Supabase das Update 4 ausführen.':e.message}}
+ render();if(ui.dev.code)shareQR('dvqr','dvqrbox',shareUrl()+'#geraet-'+ui.dev.code)}
+async function devRedeem(){const c=(document.getElementById('gc').value||'').trim().toUpperCase();if(!/^[A-Z0-9]{6}$/.test(c)){toast('Der Code hat 6 Zeichen');return}
+ if(ui.devBusy)return;ui.devBusy=true;ui.joinG=c;render();
+ try{const r=await rpc('wq_link_use',{p_code:c});const name=String(r.name||'').slice(0,20);if(!name||!r.data)throw new Error('Der Spielstand ist leer.');
+  const old=S.players[name];if(old&&old.grp&&old.pid&&old.pid!==r.player)rpc('wq_leave',{p_code:old.grp.code,p_player:old.pid,p_secret:old.sec}).catch(()=>{});
+  const m=mergeP(old,r.data);m.pid=r.player;m.sec=r.secret;S.players[name]=m;S.current=name;ui.devBusy=false;ui.devIn=false;ui.joinG='';save();
+  toast('Spielstand von „'+name+'“ übernommen ✔');progSync();cloudSync(null,true);go('map')}
+ catch(e){ui.devBusy=false;render();toast(/wq_link_use|Could not find|PGRST202/.test(e.message)?'Diese Funktion ist noch nicht eingerichtet (Update 4 in Supabase).':e.message)}}
+function vDevice(){const d=ui.dev||{};
+ return `<h1>📲 Auf anderem Gerät weiterspielen</h1><p class="muted">Dein Spielstand wird online gesichert. Mit einem Code holst du ihn auf ein weiteres Gerät, zum Beispiel vom Handy auf den Computer. Danach bleiben beide Geräte abgeglichen.</p>
+ <div class="card"><h2 style="margin-top:0">1. Code erzeugen</h2>
+ ${d.code?`<p>Dein Code, gültig für 15 Minuten und nur einmal verwendbar:</p><p class="big" style="letter-spacing:.3em;color:var(--accent);font-size:2.6rem;margin:.2rem 0">${esc(d.code)}</p>
+  <div class="card" id="dvqrbox" hidden style="text-align:center;background:#151a22"><p class="muted small">Oder mit dem anderen Gerät abscannen:</p><div id="dvqr"></div></div>`:d.err?`<p style="color:#ff8a8d">${esc(d.err)}</p>`:''}
+ <button class="${d.code?'ghost':'primary'}" ${d.busy?'disabled':''} onclick="devCode()">${d.busy?'Wird erzeugt …':d.code?'Neuen Code erzeugen':'Code erzeugen'}</button></div>
+ <div class="card"><h2 style="margin-top:0">2. Auf dem anderen Gerät eingeben</h2><ol style="margin:0;padding-left:1.2rem;line-height:1.6"><li>Spiel öffnen: <b>${esc(shareUrl())}</b></li><li>Auf der Anmeldeseite <b>„📲 Ich spiele schon auf einem anderen Gerät“</b> antippen. Ist dort schon jemand angemeldet: zuerst ☰ Mehr → Spieler wechseln.</li><li>Code eingeben und <b>Übernehmen</b> antippen.</li></ol>
+ <p class="muted small" style="margin-top:8px">Hat das andere Gerät schon einen Spieler mit demselben Namen, werden beide Spielstände zusammengeführt. Es geht nichts verloren.</p></div>`}
+
 /* ---------- Teilen ---------- */
 const SHARE_HOME='https://gregorpeer-maker.github.io/werkstatt-quest/';
 const shareUrl=()=>{try{const h=location.hostname;if(location.protocol==='https:'&&h&&!/claude|anthropic|localhost/.test(h))return location.origin+location.pathname.replace(/index\.html$/,'')}catch(e){}return SHARE_HOME};
@@ -685,7 +727,7 @@ function vArcade(){const p=P();
  ${b!=null?`<p class="small">Bestwert: <b>${bestTxt(g.id,b)}</b></p>`:''}
  ${own?`<button class="primary" onclick="play('${g.id}')">Spielen ▶</button>`:`<button ${p.tokens>=g.price?'':'disabled'} onclick="buy('${g.id}')">Freischalten für <span class="price">${g.price} 🪙</span></button>${p.tokens<g.price?`<p class="muted small" style="margin:.5rem 0 0">Dir fehlen noch ${g.price-p.tokens} 🪙</p>`:''}`}</div>`}).join('')}</div>`}
 function bestTxt(id,b){const g=GAMES.find(x=>x.id===id);return id==='react'?b+' ms':id==='memory'?b+' Züge':fmt(b)+' '+((g&&g.unit)||'Punkte')}
-function buy(id){const g=GAMES.find(x=>x.id===id),p=P();if(p.tokens<g.price)return;p.tokens-=g.price;p.games.push(id);save();toast(g.name+' freigeschaltet! 🎉');render()}
+function buy(id){const g=GAMES.find(x=>x.id===id),p=P();if(p.tokens<g.price)return;p.tokens-=g.price;p.games.push(id);save();progSync();toast(g.name+' freigeschaltet! 🎉');render()}
 function play(id){ui.game=id;go('game')}
 function setBest(id,val,lowerBetter){const p=P(),b=p.bests[id];if(b==null||(lowerBetter?val<b:val>b)){p.bests[id]=val;save();return true}return false}
 function vGame(){const g=GAMES.find(x=>x.id===ui.game);return `<div class="row"><h1>${g.icon} ${g.name}</h1><button class="ghost" style="margin-left:auto" onclick="go('arcade')">◀ Zurück</button></div><div id="gm" class="card game"></div>`}
@@ -976,7 +1018,8 @@ function resetQ(){if(ui.armed!=='reset'){ui.armed='reset';render();return}S.ques
 function applySettings(d){if(!d||typeof d!=='object')return false;const s=S.settings;
  if(d.perRound!=null)s.perRound=Math.min(30,Math.max(1,d.perRound|0));if(d.need!=null)s.need=Math.min(100,Math.max(1,d.need|0));if(d.allOpen!=null)s.allOpen=!!d.allOpen;save();return true}
 async function loadSettings(){if(!cloudOn())return;try{const d=await rpc('wq_settings_get',{p_app:APP_ID});if(applySettings(d)&&['map','result','teacherLogin'].includes(ui.view)&&!ui.edit)render()}catch(e){}}
-render();loadSettings();
+render();loadSettings();progSync();
+try{document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')progSync()})}catch(e){}
 </script>
 </body>
 </html>
