@@ -72,3 +72,10 @@ Kennwort vergessen: Im Supabase SQL Editor ausführen und danach mit dem neuen K
 ```sql
 update wq_config set value = wq_h('NEUES-KENNWORT') where key = 'admin_hash';
 ```
+
+## Update 3: Einstellungen auf allen Geräten
+
+Fragen pro Runde, Aufstiegsgrenze und „Alle Level offen“ werden online gespeichert und gelten auf allen Geräten,
+auch bei den Schülern.
+
+1. Im Supabase SQL Editor den Inhalt von `update_3_einstellungen.sql` einfügen und `Run` drücken.

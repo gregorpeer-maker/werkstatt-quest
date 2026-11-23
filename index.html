@@ -533,7 +533,7 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
 const APP_ID='werkstatt-quest',APPV='2026-11-23';
 const CLOUD=/*CLOUD_START*/{"url": "https://mjygmzphevqwnfmzjosl.supabase.co", "key": "sb_publishable_YpG4csWpZTbvb1RSu9gS7w_mYkLWpEf", "mail": "6e1d54a2-d2d4-4267-8d64-da4e14c3a645"}/*CLOUD_END*/;
 const cloudOn=()=>{try{return !!(CLOUD.url&&CLOUD.key)&&!/claude|anthropic/.test(location.hostname)}catch(e){return false}};
-const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Kennwort ist falsch.',KENNWORT_ZU_KURZ:'Das neue Kennwort braucht mindestens 8 Zeichen.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
+const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Kennwort ist falsch.',KENNWORT_ZU_KURZ:'Das neue Kennwort braucht mindestens 8 Zeichen.',EINSTELLUNGEN_UNGUELTIG:'Die Einstellungen sind ungültig.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
 async function rpc(fn,args){let r;try{const h={apikey:CLOUD.key,'Content-Type':'application/json'};if(CLOUD.key.startsWith('eyJ'))h.Authorization='Bearer '+CLOUD.key;
   r=await fetch(CLOUD.url.replace(/\/$/,'')+'/rest/v1/rpc/'+fn,{method:'POST',headers:h,body:JSON.stringify(args||{})})}catch(e){throw new Error('Keine Verbindung zum Server. Prüfe das Internet.')}
  const t=await r.text();let d=null;try{d=t?JSON.parse(t):null}catch(e){}
@@ -886,7 +886,7 @@ function vRankLocal(pre){if(ui.rk==null)ui.rk=cls(P());const f=ui.rk;
 /* ---------- Lehrer-Bereich ---------- */
 function vTeacherLogin(){return `<div class="card" style="max-width:400px"><h1>🔒 Lehrer-Bereich</h1><label>${cloudOn()?'Lehrer-Kennwort':'Passwort'}</label><input type="password" id="pw" autocomplete="current-password" onkeydown="if(event.key==='Enter')tLogin()"><div class="row" style="margin-top:12px"><button class="primary" ${ui.tBusy?'disabled':''} onclick="tLogin()">${ui.tBusy?'Wird geprüft …':'Anmelden'}</button></div>
  ${cloudOn()?'<p class="muted small" style="margin-top:10px">Das Kennwort gilt auf allen Geräten und wird online geprüft. Dafür braucht das Gerät Internet.</p>':''}</div>`}
-async function tLogin(){const pw=document.getElementById('pw').value;if(!pw){toast('Bitte das Kennwort eingeben');return}
+async function tLogin(){loadSettings();const pw=document.getElementById('pw').value;if(!pw){toast('Bitte das Kennwort eingeben');return}
  if(!cloudOn()){if(pw===S.settings.pw){ui.teacher=true;render()}else toast('Falsches Passwort');return}
  if(ui.tBusy)return;ui.tBusy=true;render();
  try{await rpc('wq_admin_check',{p_admin:pw});ui.tBusy=false;ui.on={key:pw};ui.teacher=true;render()}catch(e){ui.tBusy=false;render();toast(e.message)}}
@@ -944,12 +944,17 @@ function vSettings(){const s=S.settings;return `<div class="card">
  <label>Richtig gelöste Fragen zum Aufsteigen (hat ein Level weniger Fragen, gilt die Hälfte seiner Fragen)</label><input id="sP" type="number" min="1" max="100" value="${(s.need|0)||50}" style="max-width:120px">
  <label style="display:flex;gap:8px;align-items:center;color:var(--text)"><input id="sA" type="checkbox" style="width:auto" ${s.allOpen?'checked':''}> Alle Level für alle Schüler offen (sonst: frühere Klassen und das erste Level der eigenen Klasse offen, Aufstieg über richtig gelöste Fragen)</label>
  ${cloudOn()?'':'<label>Neues Lehrer-Passwort (leer lassen = unverändert)</label><input id="sPW" type="password" style="max-width:260px">'}
- <div class="row" style="margin-top:12px"><button class="primary" onclick="saveSettings()">Speichern</button></div><p class="muted small" style="margin-top:8px">Diese Einstellungen gelten für dieses Gerät.</p></div>
+ <div class="row" style="margin-top:12px"><button class="primary" onclick="saveSettings()">Speichern</button></div><p class="muted small" style="margin-top:8px">${cloudOn()?'Diese Einstellungen werden online gespeichert und gelten auf allen Geräten, auch bei den Schülern. Schüler-Geräte übernehmen sie beim nächsten Öffnen des Spiels.':'Diese Einstellungen gelten für dieses Gerät.'}</p></div>
  ${cloudOn()?`<div class="card"><h2 style="margin-top:0">🔑 Lehrer-Kennwort ändern</h2><p class="muted small">Das neue Kennwort gilt sofort auf allen Geräten. Andere Geräte, auf denen der Lehrer-Bereich gerade offen ist, werden abgemeldet.</p>
  <label>Neues Kennwort (mindestens 8 Zeichen)</label><input id="sPW" type="password" autocomplete="new-password" style="max-width:260px">
  <label>Neues Kennwort wiederholen</label><input id="sPW2" type="password" autocomplete="new-password" style="max-width:260px">
  <div class="row" style="margin-top:12px"><button class="primary" onclick="pwChange()">Kennwort ändern</button></div></div>`:''}`}
-function saveSettings(){const s=S.settings,g=id=>document.getElementById(id);s.perRound=Math.min(30,Math.max(1,parseInt(g('sR').value)||5));s.need=Math.min(100,Math.max(1,parseInt(g('sP').value)||50));s.allOpen=g('sA').checked;
+async function saveSettings(){const g=id=>document.getElementById(id);
+ if(cloudOn()){const d={perRound:Math.min(30,Math.max(1,parseInt(g('sR').value)||5)),need:Math.min(100,Math.max(1,parseInt(g('sP').value)||50)),allOpen:g('sA').checked};
+  try{await rpc('wq_settings_set',{p_admin:adminKey(),p_app:APP_ID,p_data:d});applySettings(d);toast('Gespeichert. Gilt ab sofort auf allen Geräten. ✔');render()}
+  catch(e){if(adminFail(e))return;toast(/wq_settings_set|Could not find|PGRST202/.test(e.message)?'Online-Speichern ist noch nicht eingerichtet: Bitte in Supabase das Update 3 ausführen.':e.message)}
+  return}
+ const s=S.settings;s.perRound=Math.min(30,Math.max(1,parseInt(g('sR').value)||5));s.need=Math.min(100,Math.max(1,parseInt(g('sP').value)||50));s.allOpen=g('sA').checked;
  if(g('sPW')&&g('sPW').value.trim())s.pw=g('sPW').value.trim();save();toast('Einstellungen gespeichert ✔');render()}
 function vPlayers(){const names=Object.keys(S.players);return `<div class="card">${names.length?`<table><tr><th>Name</th><th>Klasse</th><th>🪙</th><th>XP</th><th>Level</th><th></th></tr>${names.map(n=>{const p=S.players[n];
  return `<tr><td>${esc(n)}</td><td><select style="padding:.3rem;min-width:110px" onchange='setCls(${esc(JSON.stringify(n))},this.value)'>${LEVELS.map((L,l)=>`<option value="${l}" ${l===cls(p)?'selected':''}>${L}</option>`).join('')}</select></td><td>${p.tokens}</td><td>${p.xp|0}</td><td>${passedCount(p)}</td><td><button class="small ${ui.armed==='p:'+n?'danger':''}" onclick='delPlayer(${esc(JSON.stringify(n))})'>${ui.armed==='p:'+n?'Wirklich?':'🗑️'}</button></td></tr>`}).join('')}</table>`:'<p class="muted">Keine Spieler.</p>'}
@@ -975,7 +980,11 @@ function doImport(){try{const d=JSON.parse(document.getElementById('imp').value)
  save();toast(qs.length+' Fragen geladen ✔');render()}catch(e){toast('Der Text ist kein gültiger Fragen-Export')}}
 function resetQ(){if(ui.armed!=='reset'){ui.armed='reset';render();return}S.questions=null;S.deleted=[];ui.armed=null;save();toast('Standard-Fragen wiederhergestellt');render()}
 
-render();
+// Online-Einstellungen laden (gelten auf allen Geräten). Ohne Verbindung gelten die zuletzt geladenen.
+function applySettings(d){if(!d||typeof d!=='object')return false;const s=S.settings;
+ if(d.perRound!=null)s.perRound=Math.min(30,Math.max(1,d.perRound|0));if(d.need!=null)s.need=Math.min(100,Math.max(1,d.need|0));if(d.allOpen!=null)s.allOpen=!!d.allOpen;save();return true}
+async function loadSettings(){if(!cloudOn())return;try{const d=await rpc('wq_settings_get',{p_app:APP_ID});if(applySettings(d)&&['map','result','teacherLogin'].includes(ui.view)&&!ui.edit)render()}catch(e){}}
+render();loadSettings();
 </script>
 <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
 </body>
