@@ -268,6 +268,19 @@ end $$;
 
 grant execute on function wq_class_create(text, text, text, int), wq_class_list(text, text), wq_class_set_stufe(text, text, int), wq_board(text) to anon, authenticated;
 
+-- ---------- Update 2 (Kennwort ändern), bei Neuinstallation gleich mit ausgeführt ----------
+
+create or replace function wq_admin_change(p_admin text, p_new text) returns boolean
+language plpgsql security definer set search_path = public as $$
+begin
+  perform wq_admin(p_admin);
+  if length(coalesce(p_new, '')) < 8 then raise exception 'KENNWORT_ZU_KURZ'; end if;
+  update wq_config set value = wq_h(p_new) where key = 'admin_hash';
+  return found;
+end $$;
+
+grant execute on function wq_admin_change(text, text) to anon, authenticated;
+
 -- ===== HIER DAS LEHRER-KENNWORT EINTRAGEN (zwischen den Hochkommas), dann Run =====
 insert into wq_config(key, value) values ('admin_hash', wq_h('HIER-EIN-LANGES-KENNWORT-EINTRAGEN'))
 on conflict (key) do update set value = excluded.value;

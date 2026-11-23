@@ -58,3 +58,17 @@ Klassencode an und bekommen die Klassenstufe der Klasse.
    Das Lehrer-Kennwort bleibt erhalten. Nicht das ganze `supabase.sql` erneut ausführen, sonst wird das Kennwort zurückgesetzt.
 2. Im Spiel unter „Klassen und Meldungen“ bei jeder bestehenden Klasse die richtige Klassenstufe einstellen.
    Bestehende Klassen stehen nach dem Update auf „Grundstufe“.
+
+## Update 2: Ein Lehrer-Kennwort für alle Geräte
+
+Seit diesem Update ist das Online-Kennwort auch das Kennwort für den Lehrer-Bereich, auf jedem Gerät.
+Ändert man es im Spiel, gilt das neue Kennwort sofort überall.
+
+1. Im Supabase SQL Editor den Inhalt von `update_2_kennwort.sql` einfügen und `Run` drücken.
+2. Im Spiel unter Lehrer-Bereich → Einstellungen lässt sich das Kennwort dann ändern (mindestens 8 Zeichen).
+
+Kennwort vergessen: Im Supabase SQL Editor ausführen und danach mit dem neuen Kennwort anmelden:
+
+```sql
+update wq_config set value = wq_h('NEUES-KENNWORT') where key = 'admin_hash';
+```

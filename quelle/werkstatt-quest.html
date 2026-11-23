@@ -525,7 +525,7 @@ function vDuel(){const d=ui.duel,p=P(),st=p.duels||{w:0,l:0,d:0},back=`<button c
 const APP_ID='werkstatt-quest',APPV='2026-11-23';
 const CLOUD=/*CLOUD_START*/{"url": "https://mjygmzphevqwnfmzjosl.supabase.co", "key": "sb_publishable_YpG4csWpZTbvb1RSu9gS7w_mYkLWpEf", "mail": "6e1d54a2-d2d4-4267-8d64-da4e14c3a645"}/*CLOUD_END*/;
 const cloudOn=()=>{try{return !!(CLOUD.url&&CLOUD.key)&&!/claude|anthropic/.test(location.hostname)}catch(e){return false}};
-const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Online-Kennwort ist falsch.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
+const CLOUD_MSG={KLASSE_UNBEKANNT:'Diesen Klassencode gibt es nicht.',KLASSE_VOLL:'Diese Klasse ist voll.',NICHT_ERLAUBT:'Dieser Platz gehört zu einem anderen Gerät.',KENNWORT_FALSCH:'Das Kennwort ist falsch.',KENNWORT_ZU_KURZ:'Das neue Kennwort braucht mindestens 8 Zeichen.',TEXT_FEHLT:'Bitte beschreibe kurz, worum es geht.',BILD_ZU_GROSS:'Das Bild ist zu groß.',ZU_VIELE_MELDUNGEN:'Gerade kommen zu viele Meldungen. Versuch es später noch einmal.',NAME_FEHLT:'Bitte einen Namen eingeben.',ANGABEN_FEHLEN:'Es fehlen Angaben.'};
 async function rpc(fn,args){let r;try{const h={apikey:CLOUD.key,'Content-Type':'application/json'};if(CLOUD.key.startsWith('eyJ'))h.Authorization='Bearer '+CLOUD.key;
   r=await fetch(CLOUD.url.replace(/\/$/,'')+'/rest/v1/rpc/'+fn,{method:'POST',headers:h,body:JSON.stringify(args||{})})}catch(e){throw new Error('Keine Verbindung zum Server. Prüfe das Internet.')}
  const t=await r.text();let d=null;try{d=t?JSON.parse(t):null}catch(e){}
@@ -586,17 +586,19 @@ function vMore(){const it=(act,i,t,d)=>`<button class="lv" onclick="${act}"><spa
 
 /* ---------- Lehrer: Klassen und Meldungen ---------- */
 const ADMK='werkstattQuest_admin';
-const adminKey=()=>{try{return localStorage.getItem(ADMK)||''}catch(e){return (ui.on&&ui.on.key)||''}};
-async function onlineLogin(){const k=document.getElementById('oK').value;const o=ui.on=ui.on||{};o.err='';try{await rpc('wq_admin_check',{p_admin:k});try{localStorage.setItem(ADMK,k)}catch(e){}ui.on={key:k};render()}catch(e){o.err=e.message;render()}}
+try{localStorage.removeItem(ADMK)}catch(e){}
+const adminKey=()=>(ui.on&&ui.on.key)||'';
+function adminFail(e){if(/Kennwort ist falsch/.test(e.message)){ui.teacher=false;ui.on={};toast('Das Kennwort wurde geändert. Bitte mit dem neuen Kennwort anmelden.');if(ui.view==='teacherLogin')render();return true}return false}
+async function onlineLogin(){const k=document.getElementById('oK').value;const o=ui.on=ui.on||{};o.err='';try{await rpc('wq_admin_check',{p_admin:k});ui.on={key:k};render()}catch(e){o.err=e.message;render()}}
 function onlineLogout(){try{localStorage.removeItem(ADMK)}catch(e){}ui.on={};render()}
 async function onlineLoad(){const o=ui.on,k=adminKey()||o.key;o.loading=true;try{const [c,f]=await Promise.all([rpc('wq_class_list',{p_admin:k,p_app:APP_ID}),rpc('wq_feedback_list',{p_admin:k,p_app:APP_ID})]);o.classes=c||[];o.fb=f||[];o.loaded=true;o.err=''}
- catch(e){o.err=e.message;if(/Kennwort/.test(e.message)){try{localStorage.removeItem(ADMK)}catch(x){}o.key=''}o.loaded=false;o.failed=true}o.loading=false;if(ui.view==='teacherLogin')render()}
-async function onlineDo(fn,args,after){const o=ui.on;try{const r=await rpc(fn,Object.assign({p_admin:adminKey()||o.key},args));if(after)after(r);o.loaded=false;o.failed=false;render()}catch(e){toast(e.message)}}
+ catch(e){if(adminFail(e))return;o.err=e.message;o.loaded=false;o.failed=true}o.loading=false;if(ui.view==='teacherLogin')render()}
+async function onlineDo(fn,args,after){const o=ui.on;try{const r=await rpc(fn,Object.assign({p_admin:adminKey()||o.key},args));if(after)after(r);o.loaded=false;o.failed=false;render()}catch(e){if(!adminFail(e))toast(e.message)}}
 function klasseNeu(){const n=(document.getElementById('kN').value||'').trim();if(!n){toast('Bitte einen Namen für die Klasse eingeben');return}onlineDo('wq_class_create',{p_app:APP_ID,p_name:n,p_stufe:+document.getElementById('kS').value},c=>toast('Klasse angelegt. Code: '+c))}
 function klasseWeg(c){if(ui.armed!=='kd:'+c){ui.armed='kd:'+c;render();return}ui.armed=null;if(ui.on.open&&ui.on.open.code===c)ui.on.open=null;onlineDo('wq_class_delete',{p_code:c})}
 async function klasseZeig(c){const o=ui.on;if(o.open&&o.open.code===c){o.open=null;render();return}try{o.open=await rpc('wq_board',{p_code:c});render()}catch(e){toast(e.message)}}
 function spielerWeg(c,id){if(ui.armed!=='rm:'+id){ui.armed='rm:'+id;render();return}ui.armed=null;onlineDo('wq_player_remove',{p_code:c,p_player:id},()=>{ui.on.open=null})}
-async function fbBild(id){const o=ui.on;o.img=o.img||{};if(o.img[id]){delete o.img[id];render();return}try{const d=await rpc('wq_feedback_image',{p_admin:adminKey()||o.key,p_id:id});if(typeof d==='string'&&/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(d)){o.img[id]=d;render()}else toast('Das Bild ist nicht lesbar')}catch(e){toast(e.message)}}
+async function fbBild(id){const o=ui.on;o.img=o.img||{};if(o.img[id]){delete o.img[id];render();return}try{const d=await rpc('wq_feedback_image',{p_admin:adminKey()||o.key,p_id:id});if(typeof d==='string'&&/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(d)){o.img[id]=d;render()}else toast('Das Bild ist nicht lesbar')}catch(e){if(!adminFail(e))toast(e.message)}}
 function fbWeg(id){if(ui.armed!=='fd:'+id){ui.armed='fd:'+id;render();return}ui.armed=null;onlineDo('wq_feedback_delete',{p_id:id})}
 function vOnline(){if(!cloudOn())return `<div class="card"><h2 style="margin-top:0">Noch nicht eingerichtet</h2><p>Klassenrangliste und Wunsch- und Fehlerliste brauchen einen Online-Speicher. Sobald Adresse und Schlüssel des Speichers im Spiel hinterlegt sind, erscheinen hier die Klassen und die Meldungen.</p></div>`;
  const o=ui.on=ui.on||{},k=adminKey()||o.key;
@@ -611,7 +613,7 @@ function vOnline(){if(!cloudOn())return `<div class="card"><h2 style="margin-top
   <div style="white-space:pre-wrap;margin:.3rem 0">${esc(f.body)}</div><div class="muted small">${[c.bereich&&'Bereich: '+c.bereich,c.frage&&'Frage: '+c.frage,c.klasse,c.bildschirm,c.version&&'Version '+c.version].filter(Boolean).map(esc).join(' · ')}</div>
   ${o.img&&o.img[f.id]?`<img src="${esc(o.img[f.id])}" alt="Bild zur Meldung" style="max-width:100%;border-radius:8px;margin-top:6px;border:1px solid #3a4456">`:''}</div>
   <div class="row">${f.has_image?`<button class="small" onclick="fbBild(${f.id|0})">${o.img&&o.img[f.id]?'Bild schließen':'🖼️ Bild'}</button>`:''}<button class="small" onclick="onlineDo('wq_feedback_set',{p_id:${f.id|0},p_done:${!f.done}})">${f.done?'Wieder öffnen':'✔ Erledigt'}</button><button class="small ${ui.armed==='fd:'+f.id?'danger':''}" onclick="fbWeg(${f.id|0})">${ui.armed==='fd:'+f.id?'Wirklich löschen?':'🗑️'}</button></div></div>`}).join('');
- return `<div class="card"><div class="row"><h2 style="margin:0">🏫 Klassen</h2><button class="ghost small" style="margin-left:auto" onclick="ui.on.loaded=false;ui.on.failed=false;render()">🔄 Neu laden</button><button class="ghost small" onclick="onlineLogout()">Online abmelden</button></div>
+ return `<div class="card"><div class="row"><h2 style="margin:0">🏫 Klassen</h2><button class="ghost small" style="margin-left:auto" onclick="ui.on.loaded=false;ui.on.failed=false;render()">🔄 Neu laden</button></div>
  <p class="muted small">Lege für jede Klasse eine Gruppe mit Klassenstufe an und gib den Code weiter. Neue Schüler melden sich mit dem Code an und bekommen so ihre Klassenstufe. Zum neuen Schuljahr stellst du hier die Klassenstufe um.</p>${kl||'<p class="muted">Noch keine Klasse angelegt.</p>'}
  <div class="row" style="margin-top:12px"><input id="kN" maxlength="40" placeholder="Name der Klasse, z. B. 1. KFZ 2026/27" style="flex:1;min-width:180px" onkeydown="if(event.key==='Enter')klasseNeu()"><select id="kS" style="max-width:170px">${LEVELS.map((L,l)=>`<option value="${l}">${L}</option>`).join('')}</select><button class="primary" onclick="klasseNeu()">＋ Klasse anlegen</button></div></div>
  <div class="card"><h2 style="margin-top:0">💡 Wünsche und Fehler <span class="muted small">(${o.fb.filter(f=>!f.done).length} offen)</span></h2>${fl||'<p class="muted">Noch keine Meldungen.</p>'}</div>`}
@@ -874,11 +876,19 @@ function vRankLocal(pre){if(ui.rk==null)ui.rk=cls(P());const f=ui.rk;
  <div class="card">${list.length?`<table><tr><th>#</th><th>Name</th><th>Klasse</th><th>⭐ Rang</th><th>XP</th><th>Level</th></tr>${list.map((r,i)=>`<tr ${r.n===S.current?'style="background:#2b2410"':''}><td>${i<3?['🥇','🥈','🥉'][i]:i+1}</td><td>${esc(r.n)}</td><td class="small">${LEVELS[r.c]}</td><td class="small">${rankInfo(r.x).name}</td><td><b>${r.x}</b></td><td>${r.lv}</td></tr>`).join('')}</table>`:'<p class="muted">Noch keine Spieler in dieser Klasse.</p>'}</div>`}
 
 /* ---------- Lehrer-Bereich ---------- */
-function vTeacherLogin(){return `<div class="card" style="max-width:400px"><h1>🔒 Lehrer-Bereich</h1><label>Passwort</label><input type="password" id="pw" onkeydown="if(event.key==='Enter')tLogin()"><div class="row" style="margin-top:12px"><button class="primary" onclick="tLogin()">Anmelden</button></div></div>`}
-function tLogin(){if(document.getElementById('pw').value===S.settings.pw){ui.teacher=true;render()}else toast('Falsches Passwort')}
+function vTeacherLogin(){return `<div class="card" style="max-width:400px"><h1>🔒 Lehrer-Bereich</h1><label>${cloudOn()?'Lehrer-Kennwort':'Passwort'}</label><input type="password" id="pw" autocomplete="current-password" onkeydown="if(event.key==='Enter')tLogin()"><div class="row" style="margin-top:12px"><button class="primary" ${ui.tBusy?'disabled':''} onclick="tLogin()">${ui.tBusy?'Wird geprüft …':'Anmelden'}</button></div>
+ ${cloudOn()?'<p class="muted small" style="margin-top:10px">Das Kennwort gilt auf allen Geräten und wird online geprüft. Dafür braucht das Gerät Internet.</p>':''}</div>`}
+async function tLogin(){const pw=document.getElementById('pw').value;if(!pw){toast('Bitte das Kennwort eingeben');return}
+ if(!cloudOn()){if(pw===S.settings.pw){ui.teacher=true;render()}else toast('Falsches Passwort');return}
+ if(ui.tBusy)return;ui.tBusy=true;render();
+ try{await rpc('wq_admin_check',{p_admin:pw});ui.tBusy=false;ui.on={key:pw};ui.teacher=true;render()}catch(e){ui.tBusy=false;render();toast(e.message)}}
+async function pwChange(){const g=id=>document.getElementById(id).value,a=g('sPW'),b=g('sPW2');
+ if(a.length<8){toast('Das neue Kennwort braucht mindestens 8 Zeichen.');return}if(a!==b){toast('Die beiden Eingaben stimmen nicht überein.');return}
+ try{await rpc('wq_admin_change',{p_admin:adminKey(),p_new:a});ui.on.key=a;document.getElementById('sPW').value='';document.getElementById('sPW2').value='';toast('Kennwort geändert. Es gilt ab sofort auf allen Geräten. ✔')}
+ catch(e){if(adminFail(e))return;toast(/wq_admin_change|Could not find|PGRST202/.test(e.message)?'Das Ändern ist noch nicht eingerichtet: Bitte in Supabase das Update 2 ausführen.':e.message)}}
 function vTeacher(){const t=ui.tTab,tb=(id,n)=>`<button class="${t===id?'on':''}" onclick="ui.tTab='${id}';ui.edit=null;ui.armed=null;render()">${n}</button>`;
  let b='';if(t==='fragen')b=ui.edit?vEdit():vQList();else if(t==='einst')b=vSettings();else if(t==='spieler')b=vPlayers();else if(t==='online')b=vOnline();else b=vExport();
- return `<div class="row"><h1>🔒 Lehrer-Bereich</h1><button class="ghost" style="margin-left:auto" onclick="ui.teacher=false;go('map')">Abmelden</button></div>
+ return `<div class="row"><h1>🔒 Lehrer-Bereich</h1><button class="ghost" style="margin-left:auto" onclick="ui.teacher=false;ui.on={};go('map')">Abmelden</button></div>
  <div class="tabs">${tb('fragen','📝 Fragen')}${tb('einst','⚙️ Einstellungen')}${tb('spieler','👥 Spieler')}${tb('export','💾 Sichern / Laden')}${tb('online','☁️ Klassen und Meldungen')}</div>${b}`}
 function vQList(){const qs=Q().filter(q=>q.world===ui.fW&&q.level===ui.fL);
  return `<div class="card"><div class="row"><select onchange="ui.fW=this.value;ui.fL=Math.min(ui.fL,lvls(ui.fW).length-1);render()" style="max-width:200px">${WORLDS.map(w=>`<option value="${w.id}" ${w.id===ui.fW?'selected':''}>${w.icon} ${w.name}</option>`).join('')}</select>
@@ -925,10 +935,14 @@ function vSettings(){const s=S.settings;return `<div class="card">
  <label>Fragen pro Runde</label><input id="sR" type="number" min="1" max="30" value="${s.perRound}" style="max-width:120px">
  <label>Richtig gelöste Fragen zum Aufsteigen (hat ein Level weniger Fragen, gilt die Hälfte seiner Fragen)</label><input id="sP" type="number" min="1" max="100" value="${(s.need|0)||50}" style="max-width:120px">
  <label style="display:flex;gap:8px;align-items:center;color:var(--text)"><input id="sA" type="checkbox" style="width:auto" ${s.allOpen?'checked':''}> Alle Level für alle Schüler offen (sonst: frühere Klassen und das erste Level der eigenen Klasse offen, Aufstieg über richtig gelöste Fragen)</label>
- <label>Neues Lehrer-Passwort (leer lassen = unverändert)</label><input id="sPW" type="password" style="max-width:260px">
- <div class="row" style="margin-top:12px"><button class="primary" onclick="saveSettings()">Speichern</button></div></div>`}
+ ${cloudOn()?'':'<label>Neues Lehrer-Passwort (leer lassen = unverändert)</label><input id="sPW" type="password" style="max-width:260px">'}
+ <div class="row" style="margin-top:12px"><button class="primary" onclick="saveSettings()">Speichern</button></div><p class="muted small" style="margin-top:8px">Diese Einstellungen gelten für dieses Gerät.</p></div>
+ ${cloudOn()?`<div class="card"><h2 style="margin-top:0">🔑 Lehrer-Kennwort ändern</h2><p class="muted small">Das neue Kennwort gilt sofort auf allen Geräten. Andere Geräte, auf denen der Lehrer-Bereich gerade offen ist, werden abgemeldet.</p>
+ <label>Neues Kennwort (mindestens 8 Zeichen)</label><input id="sPW" type="password" autocomplete="new-password" style="max-width:260px">
+ <label>Neues Kennwort wiederholen</label><input id="sPW2" type="password" autocomplete="new-password" style="max-width:260px">
+ <div class="row" style="margin-top:12px"><button class="primary" onclick="pwChange()">Kennwort ändern</button></div></div>`:''}`}
 function saveSettings(){const s=S.settings,g=id=>document.getElementById(id);s.perRound=Math.min(30,Math.max(1,parseInt(g('sR').value)||5));s.need=Math.min(100,Math.max(1,parseInt(g('sP').value)||50));s.allOpen=g('sA').checked;
- if(g('sPW').value.trim())s.pw=g('sPW').value.trim();save();toast('Einstellungen gespeichert ✔');render()}
+ if(g('sPW')&&g('sPW').value.trim())s.pw=g('sPW').value.trim();save();toast('Einstellungen gespeichert ✔');render()}
 function vPlayers(){const names=Object.keys(S.players);return `<div class="card">${names.length?`<table><tr><th>Name</th><th>Klasse</th><th>🪙</th><th>XP</th><th>Level</th><th></th></tr>${names.map(n=>{const p=S.players[n];
  return `<tr><td>${esc(n)}</td><td><select style="padding:.3rem;min-width:110px" onchange='setCls(${esc(JSON.stringify(n))},this.value)'>${LEVELS.map((L,l)=>`<option value="${l}" ${l===cls(p)?'selected':''}>${L}</option>`).join('')}</select></td><td>${p.tokens}</td><td>${p.xp|0}</td><td>${passedCount(p)}</td><td><button class="small ${ui.armed==='p:'+n?'danger':''}" onclick='delPlayer(${esc(JSON.stringify(n))})'>${ui.armed==='p:'+n?'Wirklich?':'🗑️'}</button></td></tr>`}).join('')}</table>`:'<p class="muted">Keine Spieler.</p>'}
  <div class="row" style="margin-top:12px"><button class="${ui.armed==='all'?'danger':''}" onclick="delAll()">${ui.armed==='all'?'Wirklich ALLE Spieler löschen?':'Alle Spieler löschen (neues Schuljahr)'}</button></div></div>`}
